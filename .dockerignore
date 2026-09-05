@@ -12,10 +12,11 @@ dist
 .gitignore
 
 # Docker's own files — the build does not need them inside /app.
+# nginx.conf is deliberately NOT ignored: the runtime stage copies it
+# out of the build context into /etc/nginx/conf.d/.
 Dockerfile
 .dockerignore
 docker-compose.yml
-nginx.conf
 
 # Editor and OS noise.
 .DS_Store
