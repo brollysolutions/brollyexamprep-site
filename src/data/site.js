@@ -34,6 +34,18 @@ export const POPULAR_EXAMS = [
 ]
 
 /**
+ * The external mock-test platform. Papers that have no question bank in
+ * src/data/mock-tests/ are attempted there instead of on this site, so a link
+ * to one leaves the SPA and must be a plain <a>, not a react-router <Link>.
+ *
+ * The slug is reused as-is, so /mock-tests/telangana-police-si/ here and
+ * mocktest.brollyexamprep.com/telangana-police-si/ there stay in step.
+ */
+export const MOCKTEST_ORIGIN = 'https://mocktest.brollyexamprep.com'
+
+export const mockTestUrl = (slug) => `${MOCKTEST_ORIGIN}/${slug}/`
+
+/**
  * The cards on the home page and the Mock Tests hub. Both the spec line and
  * the link come from the question banks, so a card can never advertise a test
  * that is not actually there.

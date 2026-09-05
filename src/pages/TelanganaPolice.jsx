@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import Icon, { Arrow } from '../components/Icon'
 import { PageHero, SectionHead, useJsonLd, useMeta, useTitle } from '../components/ui'
 import { FaqSection, FinalCta } from './home/sections'
+import { mockTestUrl } from '../data/site'
 
 /**
  * Telangana Police SI & Constable — /government-exams/state/telangana/telangana-police/
@@ -300,12 +301,22 @@ export default function TelanganaPolice() {
         ]}
         actions={
           <>
-            <Link className="btn btn--y" to="/mock-tests/telangana-police-si/">
+            <a
+              className="btn btn--y"
+              href={mockTestUrl('telangana-police-si')}
+              target="_blank"
+              rel="noreferrer"
+            >
               Start Free Mock SI
-            </Link>
-            <Link className="btn btn--y" to="/mock-tests/telangana-police-constable/">
+            </a>
+            <a
+              className="btn btn--y"
+              href={mockTestUrl('telangana-police-constable')}
+              target="_blank"
+              rel="noreferrer"
+            >
               Start Free Mock Constable
-            </Link>
+            </a>
           </>
         }
       />
