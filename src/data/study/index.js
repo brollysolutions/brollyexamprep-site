@@ -37,6 +37,21 @@ import profitLoss from './profit-loss'
 import ratioProportion from './ratio-proportion'
 import timeWork from './time-work'
 import timeSpeedDistance from './time-speed-distance'
+import codingDecoding from './coding-decoding'
+import series from './series'
+import bloodRelations from './blood-relations'
+import syllogism from './syllogism'
+import seatingArrangement from './seating-arrangement'
+import puzzles from './puzzles'
+import grammar from './grammar'
+import vocabulary from './vocabulary'
+import readingComprehension from './reading-comprehension'
+import paraJumbles from './para-jumbles'
+import errorDetection from './error-detection'
+import clozeTest from './cloze-test'
+import ancientIndia from './ancient-india'
+import medievalIndia from './medieval-india'
+import modernIndia from './modern-india'
 
 /** Listed in teaching order, which is also the order the subject page shows. */
 export const TOPICS = [
@@ -46,6 +61,21 @@ export const TOPICS = [
   ratioProportion,
   timeWork,
   timeSpeedDistance,
+  codingDecoding,
+  series,
+  bloodRelations,
+  syllogism,
+  seatingArrangement,
+  puzzles,
+  grammar,
+  vocabulary,
+  readingComprehension,
+  paraJumbles,
+  errorDetection,
+  clozeTest,
+  ancientIndia,
+  medievalIndia,
+  modernIndia,
 ]
 
 /** Display copy for a subject landing page. */
@@ -56,6 +86,86 @@ export const SUBJECTS = {
     lead: [
       'Quantitative Aptitude is the section that decides most competitive exam results, because it is the one where speed and accuracy diverge most sharply between candidates.',
       'The topics below are written to be read in order. Number System and Percentages come first because almost everything else is built on them — Profit & Loss is percentages applied to trade, and Time & Work and Time, Speed & Distance are both ratio problems in disguise.',
+    ],
+  },
+  reasoning: {
+    name: 'Reasoning',
+    eyebrow: 'Verbal, analytical and non-verbal reasoning',
+    lead: [
+      'Reasoning is the section where preparation shows up fastest. Nothing here has to be memorised the way formulas do — every topic is a method, and a method you have drilled ten times is a method you can execute under a sectional timer.',
+      'Read them in the order below. Coding-Decoding and Series come first because both reduce to knowing the alphabet as numbers, and Blood Relations introduces the habit of drawing rather than reasoning in your head. Syllogism, Seating Arrangement and Puzzles come last: they carry the most marks in a banking paper and they all depend on the same discipline of branching on paper instead of guessing.',
+    ],
+  },
+  english: {
+    name: 'English',
+    eyebrow: 'Grammar, vocabulary and comprehension',
+    lead: [
+      'English decides more results than its mark count suggests, because it is the section with a sectional cut-off in almost every banking and insurance exam — and the one candidates most often leave until last.',
+      'Read Grammar first: error detection is grammar applied under time pressure, and cloze is grammar plus a sense of direction, so the same rules pay three times over. Vocabulary rewards daily work rather than intensive work, and Reading Comprehension, Para Jumbles and Cloze Test are each a technique more than a body of knowledge.',
+    ],
+  },
+  history: {
+    name: 'History',
+    eyebrow: 'Ancient, medieval and modern India',
+    lead: [
+      'History is examined as pairings far more than as narrative: which site had the dockyard, which ruler introduced which coin, which movement was withdrawn after which incident. Reading it as a story is enjoyable and does not prepare you for that.',
+      'These three topics run in order, and modern India is the one to start with if time is short — it carries more marks than ancient and medieval combined in almost every exam, and it is the period where exact dates are actually asked.',
+    ],
+  },
+  geography: {
+    name: 'Geography',
+    eyebrow: 'Physical, Indian and world geography',
+    lead: [
+      'Geography rewards maps more than it rewards notes. A candidate who can place the ranges, rivers and passes on a blank outline will answer most questions faster than one who has memorised lists of them.',
+      'Physical geography comes first because it explains the rest — monsoon, soils and drainage all follow from relief and latitude. Indian geography then applies it, and world geography covers the regions and resources that exams actually ask about.',
+    ],
+  },
+  polity: {
+    name: 'Indian Polity',
+    eyebrow: 'Institutions, federalism and governance',
+    lead: [
+      'Polity is the most predictable scoring block in general studies, because the institutions it describes are fixed and the questions repeat. What changes between exams is the depth — SSC asks which article, UPSC asks how two institutions interact.',
+      'These topics cover the working of the state rather than the text of the Constitution, which is treated separately. Read Parliament first: the executive is accountable to it, and the judiciary is defined against it.',
+    ],
+  },
+  constitution: {
+    name: 'Constitution',
+    eyebrow: 'Making, rights and amendment',
+    lead: [
+      'The Constitution is examined article by article, which makes it unusually learnable — the numbers do not move. Where counts do move, such as the number of amendments, this material says so rather than presenting a figure that will age.',
+      'Start with the making and the Preamble, which explain why the document looks as it does, then the rights and duties, and finally the amendment process and the basic structure doctrine that limits it.',
+    ],
+  },
+  economy: {
+    name: 'Indian Economy',
+    eyebrow: 'Concepts, money and public finance',
+    lead: [
+      'Economy questions divide into two kinds: definitions that never change, and figures that change every year. This material concentrates on the first and flags the second, because a memorised growth rate is worth nothing twelve months later.',
+      'Read the basic concepts first — national income, inflation, unemployment — because money and banking and public finance both assume them.',
+    ],
+  },
+  environment: {
+    name: 'Environment',
+    eyebrow: 'Ecology, biodiversity and climate',
+    lead: [
+      'Environment has grown from a handful of questions to a substantial block, particularly in UPSC Prelims, and it overlaps heavily with current affairs — protected-area counts, species status and treaty ratifications all move.',
+      'Ecology comes first because it supplies the vocabulary; biodiversity and conservation then apply it to India, and the climate section covers the institutions and agreements that questions name.',
+    ],
+  },
+  science: {
+    name: 'Science & Technology',
+    eyebrow: 'General science and applied technology',
+    lead: [
+      'Two different things sit under this heading. General science is stable school-level physics, chemistry and biology, and it is where the reliable marks are. Applied technology — space, defence, computing — is closer to current affairs and dates quickly.',
+      'This material treats the stable science in depth and gives the applied side as durable principles plus the landmark programmes, flagging anything that will move.',
+    ],
+  },
+  'art-culture': {
+    name: 'Art & Culture',
+    eyebrow: 'Architecture, performing arts and heritage',
+    lead: [
+      'Art and culture is the most under-prepared block in general studies and one of the most heavily asked in UPSC Prelims. It is almost entirely pairings — style with dynasty, dance form with state, instrument with category.',
+      'Architecture comes first because it anchors the chronology to the history syllabus; the performing arts and the literature and heritage sections then cover what the history pages do not.',
     ],
   },
 }

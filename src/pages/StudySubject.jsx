@@ -122,11 +122,19 @@ export default function StudySubject() {
             <SectionHead
               eyebrow="Nothing here yet"
               title={`${name} notes are being written`}
-              lead="Quantitative Aptitude is fully written today. Start there while the rest catch up."
+              lead="Quantitative Aptitude, Reasoning, English and History are complete today. Start with one of those while the rest catch up."
             />
-            <Link className="btn btn--y" to="/study-material/quantitative-aptitude/">
-              Quantitative Aptitude
-            </Link>
+            <div className="phero__cta">
+              <Link className="btn btn--y" to="/study-material/quantitative-aptitude/">
+                Quantitative Aptitude
+              </Link>
+              <Link className="btn btn--o" to="/study-material/reasoning/">
+                Reasoning
+              </Link>
+              <Link className="btn btn--o" to="/study-material/english/">
+                English
+              </Link>
+            </div>
           </div>
         </section>
       )}
