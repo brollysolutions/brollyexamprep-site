@@ -1,0 +1,29 @@
+# Anything listed here is never sent to the Docker daemon as build context.
+
+# Reinstalled inside the image from package-lock.json.
+node_modules
+
+# Rebuilt inside the image by `npm run build`.
+dist
+
+# Git history carries ~168 MB of previous-paper PDFs. Shipping it to the
+# daemon would slow every build down for no benefit.
+.git
+.gitignore
+
+# Docker's own files — the build does not need them inside /app.
+Dockerfile
+.dockerignore
+docker-compose.yml
+nginx.conf
+
+# Editor and OS noise.
+.DS_Store
+*.local
+.vscode
+.idea
+
+# Strategy documents — not part of the built site.
+Brolly-SEO-GEO-AEO-Strategy.doc
+Brolly-SEO-GEO-AEO-Strategy.md
+Brolly-SEO-GEO-AEO-Strategy-Google-Docs.html
