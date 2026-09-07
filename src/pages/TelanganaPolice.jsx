@@ -300,16 +300,24 @@ export default function TelanganaPolice() {
           { label: 'Telangana Police SI & Constable' },
         ]}
         actions={
-          // The mock platform has no separate SI and Constable URLs — the post
-          // is chosen inside the app — so this is one link, not two.
-          <a
-            className="btn btn--y"
-            href={MOCKTEST_TESTS_URL}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Start Free Mock Test
-          </a>
+          <>
+            <a
+              className="btn btn--y"
+              href={MOCKTEST_TESTS_URL}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Start Free SI Mock Test
+            </a>
+            <a
+              className="btn btn--o"
+              href={MOCKTEST_TESTS_URL}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Start Constable Free Mock Test
+            </a>
+          </>
         }
       />
 
