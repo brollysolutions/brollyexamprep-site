@@ -15,7 +15,7 @@ export default {
   title: 'Series',
   seoTitle: 'Number and Alphabet Series for Competitive Exams | Types, Tricks & Practice',
   metaDescription:
-    'Complete Series study material for SSC, banking and railway exams — number series types, wrong number series, letter and alphabet series, alphanumeric series for bank exams and mixed alternating series, with solved examples and practice questions.',
+    'Complete Series study material for SSC, banking and railway exams — number series types, wrong number series, letter and alphabet series.',
   readMinutes: 18,
   lead: [
     'Series questions are pure pattern recognition under a clock, which makes them the most trainable topic in the paper. There is no theory to learn — only a fixed order of checks that you run until something fits, and enough familiarity with squares, cubes and the alphabet that the fit is obvious rather than discovered.',

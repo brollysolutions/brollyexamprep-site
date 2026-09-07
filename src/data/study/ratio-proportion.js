@@ -13,7 +13,7 @@ export default {
   title: 'Ratio & Proportion',
   seoTitle: 'Ratio and Proportion for Competitive Exams | Formulas & Practice',
   metaDescription:
-    'Complete Ratio and Proportion study material for SSC, banking and railway exams — chaining ratios, the k-method, mean and third proportional, componendo and dividendo, partnership, alligation and mixtures, solved examples and practice questions.',
+    'Complete Ratio and Proportion study material for SSC, banking and railway exams — chaining ratios, the k-method, mean and third proportional.',
   readMinutes: 20,
   lead: [
     'Ratio and Proportion is the structural topic of the arithmetic section. Partnership, alligation, mixtures, ages, time-and-work and speed problems are all ratio questions underneath, which is why fluency here quietly raises your score on topics that never mention the word "ratio".',

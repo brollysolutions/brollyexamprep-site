@@ -767,16 +767,6 @@ function structuredData() {
     },
     {
       '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Government Exams', item: `${ORIGIN}/government-exams/` },
-        { '@type': 'ListItem', position: 2, name: 'State Government Exams', item: `${ORIGIN}/government-exams/state/` },
-        { '@type': 'ListItem', position: 3, name: 'Telangana', item: `${ORIGIN}/government-exams/state/telangana/` },
-        { '@type': 'ListItem', position: 4, name: 'Telangana Police', item: CANONICAL },
-      ],
-    },
-    {
-      '@context': 'https://schema.org',
       '@type': 'FAQPage',
       mainEntity: FAQS.map((faq) => ({
         '@type': 'Question',

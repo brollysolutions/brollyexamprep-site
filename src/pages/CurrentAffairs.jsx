@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import LinkColumns from '../components/LinkColumns'
-import { PageHero, SectionHead, Tile, useTitle } from '../components/ui'
+import { PageHero, SectionHead, Tile, canonicalFor, useSeo } from '../components/ui'
 import { NAV } from '../data/nav'
 import { CURRENT_AFFAIRS_TILES } from '../data/site'
 import { FinalCta } from './home/sections'
@@ -8,7 +8,12 @@ import { FinalCta } from './home/sections'
 const SECTION = NAV[4]
 
 export default function CurrentAffairs() {
-  useTitle('Daily Current Affairs for Competitive Exams')
+  useSeo({
+    title: 'Daily Current Affairs for Competitive Exams | Brolly Exam Prep',
+    description:
+      'Daily, weekly and monthly current affairs for competitive exams, organised by topic and by exam, with quizzes and PDFs for revision.',
+    canonical: canonicalFor('/current-affairs/'),
+  })
 
   return (
     <>

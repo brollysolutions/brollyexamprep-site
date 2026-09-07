@@ -52,6 +52,51 @@ import clozeTest from './cloze-test'
 import ancientIndia from './ancient-india'
 import medievalIndia from './medieval-india'
 import modernIndia from './modern-india'
+import physicalGeography from './physical-geography'
+import indianGeography from './indian-geography'
+import worldGeography from './world-geography'
+import parliament from './parliament'
+import executive from './executive'
+import judiciaryFederalism from './judiciary-federalism'
+import makingOfTheConstitution from './making-of-the-constitution'
+import fundamentalRights from './fundamental-rights'
+import amendments from './amendments'
+import economicBasics from './economic-basics'
+import moneyAndBanking from './money-and-banking'
+import publicFinance from './public-finance'
+import ecologyAndEcosystems from './ecology-and-ecosystems'
+import biodiversity from './biodiversity'
+import climateChange from './climate-change'
+import everydayScience from './everyday-science'
+import spaceAndDefence from './space-and-defence'
+import emergingTechnology from './emerging-technology'
+import architecture from './architecture'
+import performingArts from './performing-arts'
+import literatureHeritage from './literature-heritage'
+import mechanics from './mechanics'
+import heatLightSound from './heat-light-sound'
+import electricityMagnetism from './electricity-magnetism'
+import atomicStructure from './atomic-structure'
+import chemicalBonding from './chemical-bonding'
+import organicChemistry from './organic-chemistry'
+import algebra from './algebra'
+import geometryMensuration from './geometry-mensuration'
+import trigonometry from './trigonometry'
+import cellAndGenetics from './cell-and-genetics'
+import humanPhysiology from './human-physiology'
+import plantsAndHealth from './plants-and-health'
+import staticGk from './static-gk'
+import internationalOrganisations from './international-organisations'
+import awardsSportsBooks from './awards-sports-books'
+import rcStrategy from './rc-strategy'
+import paraSummary from './para-summary'
+import criticalReasoning from './critical-reasoning'
+import dataInterpretation from './data-interpretation'
+import logicalReasoningSets from './logical-reasoning-sets'
+import setSelection from './set-selection'
+import legalPrinciples from './legal-principles'
+import legalSystem from './legal-system'
+import contractTortCrime from './contract-tort-crime'
 
 /** Listed in teaching order, which is also the order the subject page shows. */
 export const TOPICS = [
@@ -76,6 +121,51 @@ export const TOPICS = [
   ancientIndia,
   medievalIndia,
   modernIndia,
+  physicalGeography,
+  indianGeography,
+  worldGeography,
+  parliament,
+  executive,
+  judiciaryFederalism,
+  makingOfTheConstitution,
+  fundamentalRights,
+  amendments,
+  economicBasics,
+  moneyAndBanking,
+  publicFinance,
+  ecologyAndEcosystems,
+  biodiversity,
+  climateChange,
+  everydayScience,
+  spaceAndDefence,
+  emergingTechnology,
+  architecture,
+  performingArts,
+  literatureHeritage,
+  mechanics,
+  heatLightSound,
+  electricityMagnetism,
+  atomicStructure,
+  chemicalBonding,
+  organicChemistry,
+  algebra,
+  geometryMensuration,
+  trigonometry,
+  cellAndGenetics,
+  humanPhysiology,
+  plantsAndHealth,
+  staticGk,
+  internationalOrganisations,
+  awardsSportsBooks,
+  rcStrategy,
+  paraSummary,
+  criticalReasoning,
+  dataInterpretation,
+  logicalReasoningSets,
+  setSelection,
+  legalPrinciples,
+  legalSystem,
+  contractTortCrime,
 ]
 
 /** Display copy for a subject landing page. */
@@ -166,6 +256,70 @@ export const SUBJECTS = {
     lead: [
       'Art and culture is the most under-prepared block in general studies and one of the most heavily asked in UPSC Prelims. It is almost entirely pairings — style with dynasty, dance form with state, instrument with category.',
       'Architecture comes first because it anchors the chronology to the history syllabus; the performing arts and the literature and heritage sections then cover what the history pages do not.',
+    ],
+  },
+  physics: {
+    name: 'Physics',
+    eyebrow: 'Mechanics, heat, light and electricity',
+    lead: [
+      'Physics appears in two guises. In general awareness papers it is asked as school-level facts — which mirror is used in a headlight, why a swimming pool looks shallower than it is. In JEE, NEET and engineering entrance papers it is asked as problems, and the same concepts have to be usable rather than merely known.',
+      'These topics are written to serve both. The concept is stated plainly enough for a general studies candidate, and the formula sheet and worked examples go far enough for an entrance paper.',
+    ],
+  },
+  chemistry: {
+    name: 'Chemistry',
+    eyebrow: 'Structure, bonding and reactions',
+    lead: [
+      'Chemistry is the most systematic of the sciences at this level: the periodic table explains the properties, the properties explain the bonding, and the bonding explains the reactions. Learnt in that order it needs remarkably little memorising.',
+      'Start with atomic structure and the periodic table, because everything after it is an application. Everyday and applied chemistry comes last, and it is the block that general awareness papers draw on most heavily.',
+    ],
+  },
+  mathematics: {
+    name: 'Mathematics',
+    eyebrow: 'Algebra, geometry and trigonometry',
+    lead: [
+      'This is school mathematics as competitive exams use it — the algebra, geometry and trigonometry that sit behind quantitative aptitude questions and that entrance papers test directly.',
+      'It complements the Quantitative Aptitude section rather than repeating it: arithmetic topics such as percentages and time and work are covered there, while the structural mathematics that those topics rely on is covered here.',
+    ],
+  },
+  biology: {
+    name: 'Biology',
+    eyebrow: 'Cells, the human body and health',
+    lead: [
+      'Biology carries more general-awareness marks than physics and chemistry combined, because questions about vitamins, diseases and the human body are asked by every exam from RRB Group D to UPSC Prelims.',
+      'The cell comes first because genetics and physiology both depend on it; the human body follows; and nutrition, disease and health round it off, which is the block most heavily examined and most closely tied to current affairs.',
+    ],
+  },
+  'general-knowledge': {
+    name: 'General Knowledge',
+    eyebrow: 'Static GK for every exam',
+    lead: [
+      'Static general knowledge is the material that does not change — national symbols, superlatives, the first holders of offices, organisations and their headquarters, awards and their fields. It is the cheapest block in any general awareness paper because it needs no reasoning at all.',
+      'Everything here is chosen for being genuinely static. Anything that moves between exam cycles — current office-holders, latest award winners, recent rankings — belongs to current affairs and is flagged as such rather than printed as a fact that will age.',
+    ],
+  },
+  varc: {
+    name: 'VARC',
+    eyebrow: 'Verbal Ability and Reading Comprehension',
+    lead: [
+      'VARC is the CAT and XAT section that candidates find hardest to improve, because it rewards reading habits built over months rather than formulas learnt in a week. It is also the section where a method makes the largest difference to a score.',
+      'These topics treat it as a set of techniques: how to read a passage under a timer, how to attack the non-RC question types, and how to reason about arguments rather than about facts. The English pages cover grammar and vocabulary, which VARC assumes rather than tests directly.',
+    ],
+  },
+  dilr: {
+    name: 'DILR',
+    eyebrow: 'Data Interpretation and Logical Reasoning',
+    lead: [
+      'DILR is the section that decides CAT percentiles, because the sets vary enormously in difficulty and choosing which to attempt matters more than solving quickly. Two candidates of equal ability can differ by twenty percentile points on selection alone.',
+      'Read the data interpretation and logical reasoning topics for the techniques, and the set-selection topic for the skill that actually converts them into a score.',
+    ],
+  },
+  'legal-reasoning': {
+    name: 'Legal Reasoning',
+    eyebrow: 'Principles, facts and the Indian legal system',
+    lead: [
+      'Legal reasoning in CLAT and AILET is not a test of legal knowledge. It gives you the principle you need and asks whether you can apply it to a set of facts without letting your own sense of fairness interfere — which is precisely the discipline the questions are designed to break.',
+      'Start with the principle-and-fact method, because it is the format of nearly every question. The legal system and the substantive law topics then supply the background that comprehension passages assume.',
     ],
   },
 }

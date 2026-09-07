@@ -1,9 +1,14 @@
 import { Link } from 'react-router-dom'
-import { PageHero, useTitle } from '../components/ui'
+import { PageHero, canonicalFor, useSeo } from '../components/ui'
 import { CoursesSection, FacultySection, FinalCta } from './home/sections'
 
 export default function Courses() {
-  useTitle('Courses & Test Series')
+  useSeo({
+    title: 'Courses & Test Series | Brolly Exam Prep',
+    description:
+      'Courses and test series for SSC, banking, railway and state exams, combining recorded lessons, practice sets and full-length mock tests.',
+    canonical: canonicalFor('/courses/'),
+  })
 
   return (
     <>

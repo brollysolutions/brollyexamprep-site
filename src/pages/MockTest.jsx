@@ -1,12 +1,27 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { Arrow } from '../components/Icon'
-import { PageHero, SectionHead, useTitle } from '../components/ui'
+import { PageHero, SectionHead, canonicalFor, useSeo } from '../components/ui'
 import { getTest, orderedQuestions, specOf, TESTS } from '../data/mock-tests'
 import { humanise } from '../lib/labels'
 import { FinalCta } from './home/sections'
+import MockTests, { isMockFamily } from './MockTests'
 
 const LETTERS = ['A', 'B', 'C', 'D']
+
+/**
+ * /mock-tests/:slug/ carries two kinds of URL. Most name a paper, but the
+ * "Find by exam" nav links name an exam family — /mock-tests/ssc/ and the
+ * rest. Those used to fall through to this page and render "Mock Test Not
+ * Found", so six linked URLs answered with a soft 404. Dispatching here sends
+ * a family to the listing instead, and only one of the two components ever
+ * mounts, so only one of them sets the page title.
+ */
+export function MockTestRoute() {
+  const { slug } = useParams()
+  if (!getTest(slug) && isMockFamily(slug)) return <MockTests familySlug={slug} />
+  return <MockTest />
+}
 
 /** 754 → "12:34". The clock never shows a negative time. */
 function clock(seconds) {
@@ -41,7 +56,19 @@ export default function MockTest() {
   const [left, setLeft] = useState(0)
   const [reviewOnly, setReviewOnly] = useState('all')
 
-  useTitle(test ? `${test.title} — Free Online Test` : 'Mock Test Not Found')
+  useSeo(
+    test
+      ? {
+          title: `${test.title} - Free Online Test | Brolly Exam Prep`,
+          description: `Take the ${test.title} free online mock test - full length, timed, with instant scoring, detailed solutions and a performance breakdown.`,
+          canonical: canonicalFor(`/mock-tests/${slug}/`),
+        }
+      : {
+          title: 'Mock Test Not Found | Brolly Exam Prep',
+          // Nothing to index when the slug matches no test.
+          robots: 'noindex, follow',
+        },
+  )
 
   const submit = useCallback(() => {
     setPhase('result')

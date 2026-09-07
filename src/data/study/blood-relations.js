@@ -13,7 +13,7 @@ export default {
   title: 'Blood Relations',
   seoTitle: 'Blood Relations Reasoning for Competitive Exams | Tricks & Practice',
   metaDescription:
-    'Complete Blood Relations study material for SSC, banking and railway exams — the family-tree notation, relation vocabulary, pointing-to-a-photograph questions, coded blood relations and family puzzles, with solved examples and practice questions.',
+    'Complete Blood Relations study material for SSC, banking and railway exams — the family-tree notation, relation vocabulary.',
   readMinutes: 17,
   lead: [
     'Blood Relations is a topic where almost nobody fails at reasoning and almost everybody fails at bookkeeping. Read "his mother is the only daughter of my father" in your head and you will convince yourself of two different answers in thirty seconds. Draw it, and the answer is unarguable.',

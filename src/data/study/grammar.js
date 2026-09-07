@@ -13,7 +13,7 @@ export default {
   title: 'Grammar',
   seoTitle: 'English Grammar for Competitive Exams | Rules, Examples & Practice',
   metaDescription:
-    'Complete English Grammar study material for SSC, banking and state exams — subject-verb agreement, tenses and sequence of tenses, articles, prepositions, pronouns and modifiers, active and passive voice, direct and indirect speech and conditionals, with solved examples and practice questions.',
+    'Complete English Grammar study material for SSC, banking and state exams — subject-verb agreement, tenses and sequence of tenses, articles, prepositions.',
   readMinutes: 22,
   lead: [
     'Grammar is the one part of the English section you can make deterministic. Vocabulary depends on what you happen to have read and comprehension on how fast you read, but grammar is a finite list of rules that examiners return to year after year — and roughly a dozen of them account for most of the marks.',

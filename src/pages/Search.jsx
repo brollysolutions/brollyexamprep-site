@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import Icon from '../components/Icon'
-import { PageHero, SectionHead, Tile, useTitle } from '../components/ui'
+import { PageHero, SectionHead, Tile, canonicalFor, useSeo } from '../components/ui'
 import { LINK_INDEX, POPULAR_SEARCHES } from '../data/nav'
 
 /** Searches the flattened nav index — every exam, subject and resource page. */
@@ -24,7 +24,14 @@ export default function Search() {
   const initial = params.get('q') || ''
   const [query, setQuery] = useState(initial)
 
-  useTitle(initial ? `Search: ${initial}` : 'Search')
+  // Search result pages are generated from a query string rather than being
+  // documents of their own, so they are deliberately kept out of the index.
+  useSeo({
+    title: initial ? `Search: ${initial} | Brolly Exam Prep` : 'Search | Brolly Exam Prep',
+    description: 'Search Brolly Exam Prep for exams, study material, mock tests and previous-year papers.',
+    canonical: canonicalFor('/search/'),
+    robots: 'noindex, follow',
+  })
 
   const results = useMemo(() => findMatches(initial), [initial])
 

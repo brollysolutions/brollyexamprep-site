@@ -1,0 +1,19 @@
+# https://brollyexamprep.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Query-string and account pages. These carry a noindex tag as well; the
+# disallow simply saves crawl budget that would be spent re-fetching them.
+Disallow: /search/
+Disallow: /login/
+Disallow: /register/
+Disallow: /*?q=
+
+# CSS, JavaScript and images must stay crawlable — Google renders the page and
+# will misjudge it if the assets that lay it out are blocked.
+Allow: /assets/
+Allow: /*.css$
+Allow: /*.js$
+
+Sitemap: https://brollyexamprep.com/sitemap.xml

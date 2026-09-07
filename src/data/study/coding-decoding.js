@@ -14,7 +14,7 @@ export default {
   title: 'Coding-Decoding',
   seoTitle: 'Coding-Decoding Reasoning for Competitive Exams | Tricks & Practice',
   metaDescription:
-    'Complete Coding-Decoding study material for SSC, banking and railway exams — alphabet positions, letter-shift codes, number codes, message and Chinese coding, new-pattern banking coding and conditional coding, with solved examples and practice questions.',
+    'Complete Coding-Decoding study material for SSC, banking and railway exams — alphabet positions, letter-shift codes, number codes, message and Chinese coding.',
   readMinutes: 18,
   lead: [
     'Coding-Decoding is the topic candidates most often get wrong for a reason that has nothing to do with reasoning: they do not know the alphabet well enough. Every question in this chapter is a pattern hidden in letter positions, and if you have to count from A on your fingers, you will run out of time before you find it.',

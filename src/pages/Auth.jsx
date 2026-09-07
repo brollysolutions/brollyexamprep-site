@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../components/Logo'
-import { useTitle } from '../components/ui'
+import { canonicalFor, useSeo } from '../components/ui'
 
 const BENEFITS = [
   'Save every mock attempt and compare them over time',
@@ -18,7 +18,22 @@ function AuthShell({ mode }) {
   const isRegister = mode === 'register'
   const [submitted, setSubmitted] = useState(false)
 
-  useTitle(isRegister ? 'Create Free Account' : 'Login')
+  // Account pages carry no content for a searcher, so they stay out of the index.
+  useSeo(
+    isRegister
+      ? {
+          title: 'Create Free Account | Brolly Exam Prep',
+          description: 'Create a free Brolly Exam Prep account to track practice, save mock tests and follow exam updates.',
+          canonical: canonicalFor('/register/'),
+          robots: 'noindex, follow',
+        }
+      : {
+          title: 'Login | Brolly Exam Prep',
+          description: 'Log in to Brolly Exam Prep to continue your courses, mock tests and saved study material.',
+          canonical: canonicalFor('/login/'),
+          robots: 'noindex, follow',
+        },
+  )
 
   return (
     <section className="auth">

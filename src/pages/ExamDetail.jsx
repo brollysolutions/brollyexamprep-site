@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import Icon, { Arrow } from '../components/Icon'
-import { PageHero, SectionHead, Tile, useTitle } from '../components/ui'
+import { PageHero, SectionHead, Tile, canonicalFor, useSeo } from '../components/ui'
 import { LINK_INDEX } from '../data/nav'
 import { PREP_SUBLINKS } from '../data/site'
 import { humanise } from '../lib/labels'
@@ -57,7 +57,15 @@ export default function ExamDetail() {
     ? PREP_SUBLINKS.find(([, slug]) => slug === resource)?.[0] || humanise(resource)
     : null
 
-  useTitle(resourceLabel ? `${examName} ${resourceLabel}` : examName)
+  useSeo({
+    title: resourceLabel
+      ? `${examName} ${resourceLabel} | Brolly Exam Prep`
+      : `${examName} | Brolly Exam Prep`,
+    description: resourceLabel
+      ? `${examName} ${resourceLabel.toLowerCase()} - full details, preparation guidance and free practice material for the ${examName} exam.`
+      : `${examName} exam guide - eligibility, syllabus, exam pattern, application dates, previous-year papers and free mock tests.`,
+    canonical: canonicalFor(path),
+  })
 
   const trail = [
     { label: rootName, to: `/${root}/` },

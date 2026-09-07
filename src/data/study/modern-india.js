@@ -13,7 +13,7 @@ export default {
   title: 'Modern India',
   seoTitle: 'Modern Indian History & Freedom Struggle | Notes, Dates & Practice',
   metaDescription:
-    'Complete Modern India study material for UPSC, SSC and state exams — European arrival and Company rule, land revenue systems, the Revolt of 1857, socio-religious reform, the Indian National Congress, the Gandhian mass movements, revolutionary nationalism and the road to Partition, with solved examples and practice questions.',
+    'Complete Modern India study material for UPSC, SSC and state exams — European arrival and Company rule, land revenue systems, the Revolt of 1857.',
   readMinutes: 26,
   lead: [
     'Modern India carries more marks than ancient and medieval combined in almost every exam, and it is the one period where exact dates are routinely asked. It is also the period where causation is examined: why the Non-Cooperation Movement was withdrawn, why the Simon Commission was boycotted, why 1935 mattered.',

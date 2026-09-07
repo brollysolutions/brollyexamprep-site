@@ -14,7 +14,7 @@ export default {
   title: 'Ancient India',
   seoTitle: 'Ancient India History for Competitive Exams | Notes, Dates & Practice',
   metaDescription:
-    'Complete Ancient India study material for UPSC, SSC and state exams — sources, the Indus Valley Civilisation, the Vedic age, Buddhism and Jainism, the Mahajanapadas, the Mauryan empire, post-Mauryan dynasties, the Sangam age and the Gupta period, with solved examples and practice questions.',
+    'Complete Ancient India study material for UPSC, SSC and state exams — sources, the Indus Valley Civilisation, the Vedic age, Buddhism and Jainism.',
   readMinutes: 24,
   lead: [
     'Ancient India is the part of the syllabus where candidates read the most and score the least, because it is usually studied as a narrative and tested as a set of pairings. Almost no question asks you to explain the Harappan economy; a great many ask which site had the dockyard, who deciphered the Ashokan edicts, and which Veda contains the Gayatri Mantra.',

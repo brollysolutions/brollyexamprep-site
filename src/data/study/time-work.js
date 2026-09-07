@@ -13,7 +13,7 @@ export default {
   title: 'Time & Work',
   seoTitle: 'Time and Work for Competitive Exams | LCM Method, Pipes & Practice',
   metaDescription:
-    'Complete Time and Work study material for SSC, banking and railway exams — the LCM units method, combined work, efficiency ratios, man-days, pipes and cisterns, alternate-day working and wage sharing, with solved examples and practice questions.',
+    'Complete Time and Work study material for SSC, banking and railway exams — the LCM units method, combined work, efficiency ratios, man-days.',
   readMinutes: 20,
   lead: [
     'Time and Work has a reputation for fiddly fractions, and it is entirely undeserved. Adding 1/12 and 1/18 under exam pressure is slow and error-prone, but the same question in whole units — the LCM method — is mental arithmetic.',

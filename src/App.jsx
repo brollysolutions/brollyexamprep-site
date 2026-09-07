@@ -12,7 +12,7 @@ import Practice from './pages/Practice'
 import CurrentAffairs from './pages/CurrentAffairs'
 import ExamUpdates from './pages/ExamUpdates'
 import MockTests from './pages/MockTests'
-import MockTest from './pages/MockTest'
+import { MockTestRoute } from './pages/MockTest'
 import PreviousYearPapers from './pages/PreviousYearPapers'
 import Courses from './pages/Courses'
 import ExamDetail from './pages/ExamDetail'
@@ -53,7 +53,7 @@ export default function App() {
         <Route path="/mock-tests/" element={<MockTests />} />
         <Route path="/mock-tests/free/" element={<MockTests />} />
         {/* One attemptable paper per slug; unknown slugs get a "not live yet" page. */}
-        <Route path="/mock-tests/:slug/" element={<MockTest />} />
+        <Route path="/mock-tests/:slug/" element={<MockTestRoute />} />
         <Route path="/previous-year-papers/" element={<PreviousYearPapers />} />
         <Route path="/courses/" element={<Courses />} />
 

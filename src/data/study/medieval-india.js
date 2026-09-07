@@ -14,7 +14,7 @@ export default {
   title: 'Medieval India',
   seoTitle: 'Medieval India History for Competitive Exams | Sultanate, Mughals & Practice',
   metaDescription:
-    'Complete Medieval India study material for UPSC, SSC and state exams — the Cholas and the tripartite struggle, Turkish invasions, the Delhi Sultanate and its administration, Vijayanagara and the Bahmanis, the Bhakti and Sufi movements, the Mughal empire and the Marathas, with solved examples and practice questions.',
+    'Complete Medieval India study material for UPSC, SSC and state exams — the Cholas and the tripartite struggle, Turkish invasions.',
   readMinutes: 25,
   lead: [
     'Medieval India generates more direct factual questions than any other block of the history syllabus, and they take a very narrow set of forms: which ruler introduced what, which battle was fought in which year and between whom, and which saint belonged to which order. Reading the period as a story does not prepare you for that; learning it as a set of tables does.',

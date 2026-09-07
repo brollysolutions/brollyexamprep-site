@@ -9,6 +9,32 @@ import { FinalCta } from './home/sections'
 const ORIGIN = 'https://brollyexamprep.com'
 
 /**
+ * The subject's meta description: what it covers, named topic by topic.
+ *
+ * A search result shows roughly 160 characters, so the topic list is filled to
+ * that budget rather than run out in full — a subject with a dozen topics
+ * would otherwise produce a description that is cut off mid-word.
+ */
+function subjectDescription(name, written) {
+  const closing = '. Concepts, solved examples and practice questions.'
+  if (!written || !written.length) {
+    return `${name} study material and topic notes for competitive exams on Brolly Exam Prep.`
+  }
+
+  const opening = `${name} study material for competitive exams — `
+  const listed = []
+  for (const topic of written) {
+    const next = [...listed, topic.title].join(', ')
+    if (opening.length + next.length + closing.length > 158) break
+    listed.push(topic.title)
+  }
+
+  return listed.length
+    ? opening + listed.join(', ') + closing
+    : `${name} study material for competitive exams${closing}`
+}
+
+/**
  * A subject landing page — /study-material/:subject/
  *
  * Splits the subject's nav links into topics that are actually written and
@@ -25,10 +51,7 @@ export default function StudySubject() {
   const planned = plannedFor(subject)
 
   const canonical = `${ORIGIN}/study-material/${subject}/`
-  const description =
-    meta && written.length
-      ? `${name} study material for competitive exams — ${written.map((t) => t.title).join(', ')}. Concepts, formulas, solved examples and practice questions.`
-      : `${name} study material and topic notes for competitive exams on Brolly Exam Prep.`
+  const description = subjectDescription(name, meta && written)
 
   useTitle(`${name} Study Material for Competitive Exams`, { exact: true })
   useMeta({ description, canonical })
@@ -122,17 +145,17 @@ export default function StudySubject() {
             <SectionHead
               eyebrow="Nothing here yet"
               title={`${name} notes are being written`}
-              lead="Quantitative Aptitude, Reasoning, English and History are complete today. Start with one of those while the rest catch up."
+              lead="This subject has no topics yet. Every other subject in the library is complete — browse them all, or start with the section that carries the most marks in your exam."
             />
             <div className="phero__cta">
-              <Link className="btn btn--y" to="/study-material/quantitative-aptitude/">
+              <Link className="btn btn--y" to="/study-material/">
+                Browse All Subjects
+              </Link>
+              <Link className="btn btn--o" to="/study-material/quantitative-aptitude/">
                 Quantitative Aptitude
               </Link>
-              <Link className="btn btn--o" to="/study-material/reasoning/">
-                Reasoning
-              </Link>
-              <Link className="btn btn--o" to="/study-material/english/">
-                English
+              <Link className="btn btn--o" to="/study-material/general-knowledge/">
+                General Knowledge
               </Link>
             </div>
           </div>
@@ -180,14 +203,6 @@ function structuredData({ name, description, canonical, written }) {
         name: topic.title,
         url: `${canonical}${topic.slug}/`,
       })),
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Study Material', item: `${ORIGIN}/study-material/` },
-        { '@type': 'ListItem', position: 2, name, item: canonical },
-      ],
     },
   ]
 }

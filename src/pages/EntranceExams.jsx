@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import LinkColumns from '../components/LinkColumns'
-import { PageHero, SectionHead, Tile, useTitle } from '../components/ui'
+import { PageHero, SectionHead, Tile, canonicalFor, useSeo } from '../components/ui'
 import { NAV } from '../data/nav'
 import { FinalCta } from './home/sections'
 
@@ -18,7 +18,12 @@ const STREAMS = [
 ]
 
 export default function EntranceExams() {
-  useTitle('Entrance Exams')
+  useSeo({
+    title: 'Entrance Exams | Brolly Exam Prep',
+    description:
+      'Entrance exam guides for JEE, NEET, CAT, CLAT, CUET, GATE and GRE - syllabus, exam pattern, previous papers and free preparation material.',
+    canonical: canonicalFor('/entrance-exams/'),
+  })
 
   return (
     <>

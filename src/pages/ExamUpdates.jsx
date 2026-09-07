@@ -1,13 +1,18 @@
 import { Link } from 'react-router-dom'
 import LinkColumns from '../components/LinkColumns'
-import { PageHero, SectionHead, useTitle } from '../components/ui'
+import { PageHero, SectionHead, canonicalFor, useSeo } from '../components/ui'
 import { NAV } from '../data/nav'
 import { FinalCta, ExamUpdatesSection, PopularExams } from './home/sections'
 
 const SECTION = NAV[5]
 
 export default function ExamUpdates() {
-  useTitle('Latest Government Exam Updates, Results and Notifications')
+  useSeo({
+    title: 'Latest Government Exam Updates, Results and Notifications | Brolly Exam Prep',
+    description:
+      'Official exam notifications, application dates, vacancies, admit cards, answer keys, cut-offs and results for SSC, UPSC, banking, railway and state exams.',
+    canonical: canonicalFor('/exam-updates/'),
+  })
 
   return (
     <>

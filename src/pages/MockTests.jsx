@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
-import { PageHero, SectionHead, useTitle } from '../components/ui'
+import { PageHero, SectionHead, canonicalFor, useSeo } from '../components/ui'
 import { FREE_MOCKS } from '../data/site'
 import { TESTS } from '../data/mock-tests'
 import { Analytics, FaqSection, FinalCta } from './home/sections'
@@ -12,6 +12,25 @@ const BY_FAMILY = TESTS.reduce((groups, test) => {
   else groups.push({ cat: test.cat, tests: [test] })
   return groups
 }, [])
+
+/**
+ * The exam families the "Find by exam" nav links point at, mapped to the `cat`
+ * value the test registry uses. A family may legitimately have no paper yet —
+ * the page then says so rather than pretending the URL is broken.
+ */
+const FAMILIES = {
+  ssc: 'SSC',
+  banking: 'Banking',
+  upsc: 'UPSC',
+  railways: 'Railways',
+  defence: 'Defence',
+  teaching: 'Teaching',
+  'state-psc': 'State Exams',
+  cat: 'CAT',
+  'jee-neet': 'JEE / NEET',
+}
+
+export const isMockFamily = (slug) => Object.hasOwn(FAMILIES, slug)
 
 const MOCK_FAQS = [
   {
@@ -28,25 +47,67 @@ const MOCK_FAQS = [
   },
 ]
 
-export default function MockTests() {
+/**
+ * The mock test listing. `familySlug` is set when the URL names an exam family
+ * — /mock-tests/ssc/ and the rest of the "Find by exam" nav links — in which
+ * case the page narrows to that family instead of showing everything.
+ */
+export default function MockTests({ familySlug = null }) {
   const isFree = useLocation().pathname.startsWith('/mock-tests/free')
-  useTitle(isFree ? 'Free Mock Tests' : 'Mock Tests & Test Series')
+  const family = familySlug ? FAMILIES[familySlug] : null
+  const familyTests = family ? TESTS.filter((test) => test.cat === family) : []
+
+  useSeo(
+    family
+      ? {
+          title: `${family} Mock Tests — Free Online Practice | Brolly Exam Prep`,
+          description: familyTests.length
+            ? `Free ${family} mock tests on the current exam pattern, with instant scoring, detailed solutions and a performance breakdown.`
+            : `${family} mock tests on Brolly Exam Prep. No ${family} paper is live yet — the free full-length tests for other exams are listed here meanwhile.`,
+          canonical: canonicalFor(`/mock-tests/${familySlug}/`),
+        }
+      : isFree
+        ? {
+            title: 'Free Mock Tests for SSC, Banking and Railway Exams | Brolly Exam Prep',
+            description:
+              'Free full-length mock tests for SSC, banking, railway and state exams, with instant scoring, detailed solutions and a performance breakdown.',
+            canonical: canonicalFor('/mock-tests/free/'),
+          }
+        : {
+            title: 'Mock Tests & Test Series | Brolly Exam Prep',
+            description:
+              'Full-length mock tests and test series for SSC, banking, railway, UPSC and state exams, with instant scoring and detailed solutions.',
+            canonical: canonicalFor('/mock-tests/'),
+          },
+  )
+
+  const heroTitle = family ? `${family} Mock Tests` : isFree ? 'Free Mock Tests' : 'Mock Tests'
+  const heroLead = family
+    ? familyTests.length
+      ? `Free full-length ${family} papers built to the current notified pattern. Attempt one, then spend as long on the analysis as you did on the test.`
+      : `No ${family} paper is live yet. Every free full-length test currently available is listed below, and a ${family} paper will appear here when it is published.`
+    : 'Practice with exam-level questions, understand your performance and identify the areas you need to improve. Free mock tests are the fastest way to start your competitive exam preparation.'
 
   return (
     <>
       <PageHero
-        eyebrow={isFree ? 'Free practice' : 'Test series'}
-        title={isFree ? 'Free Mock Tests' : 'Mock Tests'}
-        lead="Practice with exam-level questions, understand your performance and identify the areas you need to improve. Free mock tests are the fastest way to start your competitive exam preparation."
+        eyebrow={family ? 'Free practice' : isFree ? 'Free practice' : 'Test series'}
+        title={heroTitle}
+        lead={heroLead}
         trail={
-          isFree
-            ? [{ label: 'Mock Tests', to: '/mock-tests/' }, { label: 'Free' }]
-            : [{ label: 'Mock Tests' }]
+          family
+            ? [{ label: 'Mock Tests', to: '/mock-tests/' }, { label: family }]
+            : isFree
+              ? [{ label: 'Mock Tests', to: '/mock-tests/' }, { label: 'Free' }]
+              : [{ label: 'Mock Tests' }]
         }
         actions={
           <>
-            <Link className="btn btn--y" to="/mock-tests/ssc-cgl/">
-              Start with SSC CGL
+            <Link
+              className="btn btn--y"
+              to={`/mock-tests/${familyTests[0]?.slug || 'ssc-cgl'}/`}
+            >
+              Start with {familyTests[0]?.exam || 'SSC CGL'}
             </Link>
             <Link className="btn btn--o" to="/practice/test-series/">
               Explore Test Series
@@ -59,11 +120,11 @@ export default function MockTests() {
         <div className="wrap">
           <SectionHead
             eyebrow="Start free"
-            title="Free full-length mock tests"
+            title={family && familyTests.length ? `Free ${family} mock tests` : 'Free full-length mock tests'}
             lead="One test per major exam, on the current pattern, with your score and the answer key at the end."
           />
           <div className="mocks">
-            {FREE_MOCKS.map((mock) => (
+            {(familyTests.length ? FREE_MOCKS.filter((m) => m.cat === family) : FREE_MOCKS).map((mock) => (
               <Link className="mk" key={mock.to} to={mock.to}>
                 <span className="pill pill--free mk__free">Free</span>
                 <span className="mk__cat">{mock.cat}</span>
@@ -82,7 +143,7 @@ export default function MockTests() {
         <div className="wrap">
           <SectionHead
             eyebrow="Find by exam"
-            title="Tests by exam family"
+            title={family ? 'Tests for other exams' : 'Tests by exam family'}
             lead="Every paper below is live and free to attempt right now."
           />
           <div className="pgrid">

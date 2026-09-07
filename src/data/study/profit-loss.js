@@ -15,7 +15,7 @@ export default {
   title: 'Profit & Loss',
   seoTitle: 'Profit and Loss for Competitive Exams | Formulas, Tricks & Practice',
   metaDescription:
-    'Complete Profit and Loss study material for SSC, banking and railway exams — cost price and selling price, profit and loss percentage, marked price and discount, successive discounts, false weights, same-selling-price traps, solved examples and practice questions.',
+    'Complete Profit and Loss study material for SSC, banking and railway exams — cost price and selling price, profit and loss percentage.',
   readMinutes: 20,
   lead: [
     'Profit and Loss is Percentages applied to buying and selling. Every formula on this page is really the percentage-change rule with cost price as the base, which is why the topic rewards understanding over memorising — there are only three quantities in play, and everything else is a relationship between them.',

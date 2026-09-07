@@ -16,7 +16,7 @@ export default {
   title: 'Percentages',
   seoTitle: 'Percentage for Competitive Exams | Formulas, Shortcuts & Practice',
   metaDescription:
-    'Complete Percentage study material for SSC, banking and railway exams — fraction to percentage table, successive change, reversal shortcuts, price and consumption, population growth, marks and election problems, solved examples and practice questions.',
+    'Complete Percentage study material for SSC, banking and railway exams — fraction to percentage table, successive change, reversal shortcuts.',
   readMinutes: 22,
   lead: [
     'Percentages is the most reusable topic in the whole quantitative paper. Profit and loss, discount, simple and compound interest, data interpretation, mixtures and even parts of time-and-work are percentage questions in different clothing — so every hour spent here pays off several times over.',

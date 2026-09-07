@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import { Arrow } from '../components/Icon'
-import { PageHero, SectionHead, Tile, useTitle } from '../components/ui'
+import { PageHero, SectionHead, Tile, canonicalFor, useSeo } from '../components/ui'
 import { LINK_INDEX, NAV } from '../data/nav'
 import { PREP_SUBLINKS, PREP_TABS } from '../data/site'
 import { humanise } from '../lib/labels'
@@ -19,6 +19,19 @@ function prepTabFor(pathname) {
 }
 
 /**
+ * How often each label is used across the nav. A handful of labels appear
+ * twice under different sections - "Defence" is both an exam family and a
+ * current-affairs topic - and those pages would otherwise carry an identical
+ * title and description on two different URLs, which reads as duplicate
+ * content. Only the ambiguous ones are qualified, so the common case stays
+ * short.
+ */
+const LABEL_USES = [...LINK_INDEX.values()].reduce(
+  (counts, meta) => counts.set(meta.label, (counts.get(meta.label) || 0) + 1),
+  new Map(),
+)
+
+/**
  * The generic listing page. Every nav link that does not have a hand-built
  * page of its own lands here, and gets a real page assembled from the nav
  * tree: a heading, its siblings, and the section it belongs to.
@@ -32,7 +45,16 @@ export default function Directory() {
   const segments = path.split('/').filter(Boolean)
   const label = known?.label || humanise(segments[segments.length - 1] || 'Browse')
 
-  useTitle(label)
+  const scope =
+    section && section.title !== label && LABEL_USES.get(label) > 1 ? section.title : null
+
+  useSeo({
+    title: scope ? `${label} ${scope} | Brolly Exam Prep` : `${label} | Brolly Exam Prep`,
+    description: scope
+      ? `${label} ${scope.toLowerCase()} on Brolly Exam Prep - notifications, eligibility, syllabus, previous-year papers, mock tests and free study material.`
+      : `${label} on Brolly Exam Prep - exam notifications, eligibility, syllabus, previous-year papers, mock tests and free study material.`,
+    canonical: canonicalFor(path),
+  })
 
   // Siblings: everything under the same parent path, so the page reads as a
   // real index rather than a dead end.

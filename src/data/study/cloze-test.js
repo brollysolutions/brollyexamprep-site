@@ -13,7 +13,7 @@ export default {
   title: 'Cloze Test',
   seoTitle: 'Cloze Test for SSC & Bank Exams | Connectors, Collocation & Practice',
   metaDescription:
-    'Complete Cloze Test study material for SSC, banking and state exams — how to read the passage, grammar clues, connector logic, collocations, positive and negative word charge, new-pattern double fillers and word-bank formats, with solved examples and practice questions.',
+    'Complete Cloze Test study material for SSC, banking and state exams — how to read the passage, grammar clues, connector logic, collocations.',
   readMinutes: 17,
   lead: [
     'A cloze test is a passage with words removed, and the single most useful thing to understand about it is that the blanks are not independent. The word you put in the third gap is constrained by the connector you chose in the second, and the whole passage has a direction that decides half the answers before you look at any option list.',

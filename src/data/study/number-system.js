@@ -16,7 +16,7 @@ export default {
   title: 'Number System',
   seoTitle: 'Number System for Competitive Exams | Concepts, Formulas & Practice',
   metaDescription:
-    'Complete Number System study material for SSC, banking and railway exams — classification of numbers, divisibility rules, HCF and LCM, factors, cyclicity, remainder theorems, factorials, solved examples and practice questions.',
+    'Complete Number System study material for SSC, banking and railway exams — classification of numbers, divisibility rules, HCF and LCM, factors, cyclicity.',
   readMinutes: 18,
   lead: [
     'Number System is the foundation of the entire quantitative aptitude paper. Divisibility, factors, HCF and LCM, unit digits and remainders turn up directly as questions, and they also sit underneath simplification, algebra, and time-and-work sums you will meet later.',

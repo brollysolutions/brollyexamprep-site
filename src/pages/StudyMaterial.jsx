@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import LinkColumns from '../components/LinkColumns'
-import { PageHero, SectionHead, Tile, useTitle } from '../components/ui'
+import { PageHero, SectionHead, Tile, canonicalFor, useSeo } from '../components/ui'
 import { NAV } from '../data/nav'
 import { STUDY_TILES } from '../data/site'
 import { FinalCta } from './home/sections'
@@ -8,7 +8,12 @@ import { FinalCta } from './home/sections'
 const SECTION = NAV[2]
 
 export default function StudyMaterial() {
-  useTitle('Free Study Material for Competitive Exams')
+  useSeo({
+    title: 'Free Study Material for Competitive Exams | Brolly Exam Prep',
+    description:
+      'Free competitive exam study material - Quantitative Aptitude, Reasoning, English, General Studies, science, VARC, DILR and Legal Reasoning, with solved examples.',
+    canonical: canonicalFor('/study-material/'),
+  })
 
   return (
     <>

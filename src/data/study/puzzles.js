@@ -13,7 +13,7 @@ export default {
   title: 'Puzzles',
   seoTitle: 'Reasoning Puzzles for Bank & SSC Exams | Floor, Box, Scheduling & Practice',
   metaDescription:
-    'Complete Reasoning Puzzles study material for banking, SSC and railway exams — floor and flat puzzles, box and stack puzzles, day and month scheduling, tabular multi-variable puzzles, comparison and ranking puzzles and uncertain-number puzzles, with solved examples and practice questions.',
+    'Complete Reasoning Puzzles study material for banking, SSC and railway exams — floor and flat puzzles, box and stack puzzles, day and month scheduling.',
   readMinutes: 20,
   lead: [
     'Puzzles are the largest single block in a banking reasoning paper and the reason most candidates fail to finish the section. A five-question set is worth five marks — the same as five inequality questions that take forty seconds each — so the topic is really a test of judgement as much as logic.',

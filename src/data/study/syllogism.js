@@ -14,7 +14,7 @@ export default {
   title: 'Syllogism',
   seoTitle: 'Syllogism Reasoning for Competitive Exams | Venn Method, Rules & Practice',
   metaDescription:
-    'Complete Syllogism study material for banking, SSC and insurance exams — the four statement types, the Venn diagram method, combination rules, possibility conclusions, either-or complementary pairs, "only a few" statements and reverse syllogism, with solved examples and practice questions.',
+    'Complete Syllogism study material for banking, SSC and insurance exams — the four statement types, the Venn diagram method, combination rules.',
   readMinutes: 19,
   lead: [
     'Syllogism is the one reasoning topic with a genuinely objective answer key. A conclusion either holds in every diagram the statements allow, or it does not — there is no judgement involved. That is why it is worth learning properly: once the method is right, the marks are not negotiable.',

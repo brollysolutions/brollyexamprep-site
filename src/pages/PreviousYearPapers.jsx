@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { PageHero, SectionHead, Tile, useTitle } from '../components/ui'
+import { PageHero, SectionHead, Tile, canonicalFor, useSeo } from '../components/ui'
 import { PREVIOUS_PAPERS } from '../data/site'
 import { FaqSection, FinalCta } from './home/sections'
 
@@ -38,7 +38,12 @@ const PAPER_FAQS = [
 ]
 
 export default function PreviousYearPapers() {
-  useTitle('Previous Year Question Papers with Solutions')
+  useSeo({
+    title: 'Previous Year Question Papers with Solutions | Brolly Exam Prep',
+    description:
+      'Previous-year question papers with answer keys and solutions for SSC, banking, railway, UPSC and state exams, arranged by exam and by year.',
+    canonical: canonicalFor('/previous-year-papers/'),
+  })
 
   return (
     <>

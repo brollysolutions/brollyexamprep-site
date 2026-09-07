@@ -13,7 +13,7 @@ export default {
   title: 'Vocabulary',
   seoTitle: 'Vocabulary for Competitive Exams | Roots, Idioms, One-Word Substitution',
   metaDescription:
-    'Complete Vocabulary study material for SSC, banking and state exams — word roots, prefixes and suffixes, synonyms and antonyms, one-word substitution, idioms and phrases, commonly confused words and spelling rules, with solved examples and practice questions.',
+    'Complete Vocabulary study material for SSC, banking and state exams — word roots, prefixes and suffixes, synonyms and antonyms, one-word substitution.',
   readMinutes: 19,
   lead: [
     'Vocabulary is the part of the English section candidates most often try to brute-force, and it is the part where brute force works least well. A ten-thousand-word list read once is worth almost nothing in an exam hall; sixty word roots learned properly will let you make a sensible guess at a word you have never seen.',

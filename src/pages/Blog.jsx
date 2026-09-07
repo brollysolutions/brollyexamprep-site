@@ -1,11 +1,16 @@
 import { Link, useParams } from 'react-router-dom'
 import Icon, { Arrow } from '../components/Icon'
-import { Breadcrumbs, PageHero, SectionHead, useTitle } from '../components/ui'
+import { Breadcrumbs, PageHero, SectionHead, canonicalFor, useSeo } from '../components/ui'
 import { ARTICLES } from '../data/site'
 import { FinalCta } from './home/sections'
 
 export function Blog() {
-  useTitle('Preparation Guides & Articles')
+  useSeo({
+    title: 'Preparation Guides & Articles | Brolly Exam Prep',
+    description:
+      'Preparation guides, syllabus breakdowns and study-plan advice for Indian competitive exams, written by the Brolly Exam Prep faculty.',
+    canonical: canonicalFor('/blog/'),
+  })
 
   return (
     <>
@@ -51,7 +56,15 @@ export function BlogPost() {
   const { slug } = useParams()
   const article = ARTICLES.find((a) => a.to === `/blog/${slug}/`)
   const title = article?.title || slug.replace(/-/g, ' ')
-  useTitle(title)
+
+  useSeo({
+    title: `${title} | Brolly Exam Prep`,
+    description:
+      article?.excerpt ||
+      `${title} - a preparation guide from the Brolly Exam Prep faculty.`,
+    canonical: canonicalFor(`/blog/${slug}/`),
+    type: 'article',
+  })
 
   return (
     <article className="s article-page">

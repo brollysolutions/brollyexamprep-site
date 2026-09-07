@@ -14,7 +14,7 @@ export default {
   title: 'Reading Comprehension',
   seoTitle: 'Reading Comprehension for Bank & SSC Exams | Method, Tricks & Practice',
   metaDescription:
-    'Complete Reading Comprehension study material for banking, SSC and state exams — the six question types, how to read the passage, main idea, detail and inference questions, vocabulary in context, tone and purpose, option elimination and passage selection, with solved examples and practice questions.',
+    'Complete Reading Comprehension study material for banking, SSC and state exams — the six question types, how to read the passage, main idea.',
   readMinutes: 20,
   lead: [
     'Reading Comprehension carries more marks than any other English topic in a banking paper, and it is the topic where candidates most often lose marks to something other than English. The passage is usually not hard. What defeats people is reading it three times, answering inference questions from what they already believe, and choosing an option that is true in the world but absent from the text.',

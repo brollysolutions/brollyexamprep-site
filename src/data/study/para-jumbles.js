@@ -13,7 +13,7 @@ export default {
   title: 'Para Jumbles',
   seoTitle: 'Para Jumbles for Bank & SSC Exams | Sentence Rearrangement Tricks',
   metaDescription:
-    'Complete Para Jumbles study material for banking, SSC and state exams — how to find the opening sentence, pronoun and article links, connectors, mandatory pairs, concluding sentences, using the options to eliminate, and every question format, with solved examples and practice questions.',
+    'Complete Para Jumbles study material for banking, SSC and state exams — how to find the opening sentence, pronoun and article links, connectors.',
   readMinutes: 17,
   lead: [
     'Para jumbles look like a comprehension exercise and are really a puzzle. The candidates who do them quickly are not the ones who understand the paragraph best — they are the ones who stopped reading for meaning and started hunting for links: a pronoun with nothing to refer to, an article that has switched from "a" to "the", a connector that cannot begin anything.',

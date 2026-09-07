@@ -15,7 +15,7 @@ export default {
   title: 'Time, Speed & Distance',
   seoTitle: 'Time Speed and Distance for Competitive Exams | Formulas & Practice',
   metaDescription:
-    'Complete Time, Speed and Distance study material for SSC, banking and railway exams — unit conversion, average speed, the inverse-ratio shortcut, relative speed, trains, boats and streams, races, solved examples and practice questions.',
+    'Complete Time, Speed and Distance study material for SSC, banking and railway exams — unit conversion, average speed, the inverse-ratio shortcut.',
   readMinutes: 21,
   lead: [
     'Time, Speed and Distance is one formula wearing a dozen costumes. Trains, boats, races and "he walks slower and arrives late" questions all reduce to distance = speed × time, and none of them is difficult once you can see which of the three quantities the question has held constant.',

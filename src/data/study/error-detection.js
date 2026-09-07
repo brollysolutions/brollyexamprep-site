@@ -14,7 +14,7 @@ export default {
   title: 'Error Detection',
   seoTitle: 'Error Detection & Sentence Correction for SSC and Bank Exams | Practice',
   metaDescription:
-    'Complete Error Detection study material for SSC, banking and state exams — the eight-point scan order, agreement, tense, preposition, pronoun and modifier errors, redundancy, sentence improvement and when the answer is "no error", with solved examples and practice questions.',
+    'Complete Error Detection study material for SSC, banking and state exams — the eight-point scan order, agreement, tense, preposition.',
   readMinutes: 18,
   lead: [
     'Error detection is where the grammar you know gets tested against the English you speak, and those two are not the same thing. "Discuss about the matter", "returned back", "one of my friend", "cope up with" — every one of these is standard in everyday Indian usage and every one is an error in an exam paper. Waiting for a sentence to sound wrong will not work.',

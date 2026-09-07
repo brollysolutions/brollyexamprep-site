@@ -315,15 +315,6 @@ function structuredData(state, faqs) {
     },
     {
       '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Government Exams', item: `${ORIGIN}/government-exams/` },
-        { '@type': 'ListItem', position: 2, name: 'State Government Exams', item: `${ORIGIN}/government-exams/state/` },
-        { '@type': 'ListItem', position: 3, name: state.h1 || state.title, item: url },
-      ],
-    },
-    {
-      '@context': 'https://schema.org',
       '@type': 'FAQPage',
       mainEntity: faqs.map((faq) => ({
         '@type': 'Question',

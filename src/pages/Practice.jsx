@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import LinkColumns from '../components/LinkColumns'
-import { PageHero, SectionHead, useTitle } from '../components/ui'
+import { PageHero, SectionHead, canonicalFor, useSeo } from '../components/ui'
 import { NAV } from '../data/nav'
 import { STEPS } from '../data/site'
 import { Analytics, FinalCta, FreeMockTests } from './home/sections'
@@ -8,7 +8,12 @@ import { Analytics, FinalCta, FreeMockTests } from './home/sections'
 const SECTION = NAV[3]
 
 export default function Practice() {
-  useTitle('Practice — Daily Quiz, Topic Tests and Mock Tests')
+  useSeo({
+    title: 'Practice - Daily Quiz, Topic Tests and Mock Tests | Brolly Exam Prep',
+    description:
+      'Daily quizzes, topic-wise questions, previous-year questions, sectional tests and full-length mock tests for competitive exams, each with worked solutions.',
+    canonical: canonicalFor('/practice/'),
+  })
 
   return (
     <>

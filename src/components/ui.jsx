@@ -1,60 +1,13 @@
-import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Icon, { Arrow } from './Icon'
+import { SITE, useJsonLd } from '../lib/seo'
 
-/**
- * Sets the document title for the page that renders it. Pages carrying a
- * written SEO title pass `exact` — that title is already complete, and the
- * site suffix would push it past what a search result shows.
+/*
+ * The SEO hooks moved to src/lib/seo.js so that one implementation serves both
+ * the browser and the prerender. They are re-exported here because most pages
+ * already import them from this module.
  */
-export function useTitle(title, { exact = false } = {}) {
-  useEffect(() => {
-    const previous = document.title
-    if (title) document.title = exact ? title : `${title} | Brolly Exam Prep`
-    return () => {
-      document.title = previous
-    }
-  }, [title, exact])
-}
-
-/**
- * Points the existing description and canonical tags at the current page, and
- * puts the site-wide values back when the page unmounts.
- */
-export function useMeta({ description, canonical }) {
-  useEffect(() => {
-    const undo = [
-      setHeadAttr('meta[name="description"]', 'content', description),
-      setHeadAttr('link[rel="canonical"]', 'href', canonical),
-    ]
-    return () => undo.forEach((restore) => restore())
-  }, [description, canonical])
-}
-
-function setHeadAttr(selector, attribute, value) {
-  const el = value ? document.head.querySelector(selector) : null
-  if (!el) return () => {}
-
-  const previous = el.getAttribute(attribute)
-  el.setAttribute(attribute, value)
-  return () => el.setAttribute(attribute, previous)
-}
-
-/**
- * Adds this page's structured data to the head. `blocks` is an array of
- * schema.org objects — JSON-LD accepts several in one script tag.
- */
-export function useJsonLd(blocks) {
-  const json = JSON.stringify(blocks)
-
-  useEffect(() => {
-    const script = document.createElement('script')
-    script.type = 'application/ld+json'
-    script.textContent = json
-    document.head.appendChild(script)
-    return () => script.remove()
-  }, [json])
-}
+export { useTitle, useMeta, useSeo, useJsonLd, canonicalFor } from '../lib/seo'
 
 export function SectionHead({ eyebrow, title, lead, children }) {
   return (
@@ -104,6 +57,11 @@ export function Tile({ to, icon = 'book', title, sub }) {
 
 /** Breadcrumb trail built from a path such as /government-exams/ssc/ssc-cgl/ */
 export function Breadcrumbs({ trail }) {
+  // Emitted here rather than by the caller so the markup Google reads is
+  // always generated from the same trail the visitor sees, on every page that
+  // shows breadcrumbs at all.
+  useJsonLd(breadcrumbSchema(trail))
+
   return (
     <nav className="crumbs" aria-label="Breadcrumb">
       <Link to="/">Home</Link>
@@ -123,7 +81,35 @@ export function Breadcrumbs({ trail }) {
   )
 }
 
-/** The banner every inner page opens with. */
+/**
+ * BreadcrumbList for a PageHero trail, matching what Breadcrumbs renders —
+ * a leading Home, then each item. The last crumb is the page itself, so it
+ * carries no `item` URL, which is what schema.org expects.
+ */
+function breadcrumbSchema(trail) {
+  if (!trail || !trail.length) return undefined
+
+  const crumbs = [{ label: 'Home', to: '/' }, ...trail]
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: crumbs.map((crumb, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: crumb.label,
+        ...(crumb.to && i < crumbs.length - 1
+          ? { item: `${SITE.origin}${crumb.to}` }
+          : {}),
+      })),
+    },
+  ]
+}
+
+/**
+ * The banner every inner page opens with. Passing a `trail` also gives the
+ * page its BreadcrumbList markup, which Breadcrumbs emits.
+ */
 export function PageHero({ eyebrow, title, lead, trail, actions }) {
   return (
     <section className="phero">

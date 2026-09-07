@@ -1,12 +1,17 @@
 import { Link, useLocation } from 'react-router-dom'
 import Logo from '../components/Logo'
-import { PageHero, SectionHead, useTitle } from '../components/ui'
+import { PageHero, SectionHead, canonicalFor, useSeo } from '../components/ui'
 import { FACULTY, FEATURES, SUCCESS_STORIES } from '../data/site'
 import Icon from '../components/Icon'
 import { FacultySection, FinalCta, SuccessStoriesSection } from './home/sections'
 
 export function About() {
-  useTitle('About Brolly Exam Prep')
+  useSeo({
+    title: 'About Brolly Exam Prep',
+    description:
+      'Brolly Exam Prep is an online preparation platform for Indian competitive exams, offering free study material, previous-year papers and mock tests.',
+    canonical: canonicalFor('/about/'),
+  })
   return (
     <>
       <PageHero
@@ -67,7 +72,12 @@ export function About() {
 }
 
 export function Contact() {
-  useTitle('Contact Us')
+  useSeo({
+    title: 'Contact Us | Brolly Exam Prep',
+    description:
+      'Contact the Brolly Exam Prep team for help with courses, mock tests, study material or technical support.',
+    canonical: canonicalFor('/contact/'),
+  })
   return (
     <>
       <PageHero
@@ -136,7 +146,12 @@ export function Contact() {
 }
 
 export function SuccessStories() {
-  useTitle('Success Stories')
+  useSeo({
+    title: 'Success Stories | Brolly Exam Prep',
+    description:
+      'Selection stories from Brolly Exam Prep aspirants across SSC, banking, railway and state examinations.',
+    canonical: canonicalFor('/success-stories/'),
+  })
   return (
     <>
       <PageHero
@@ -161,7 +176,12 @@ export function SuccessStories() {
 }
 
 export function Faculty() {
-  useTitle('Our Faculty')
+  useSeo({
+    title: 'Our Faculty | Brolly Exam Prep',
+    description:
+      'The subject teachers behind Brolly Exam Prep, who write the study material, question banks and mock tests.',
+    canonical: canonicalFor('/faculty/'),
+  })
   return (
     <>
       <PageHero
@@ -188,7 +208,12 @@ export function Faculty() {
 }
 
 export function Careers() {
-  useTitle('Careers')
+  useSeo({
+    title: 'Careers | Brolly Exam Prep',
+    description:
+      'Open roles at Brolly Exam Prep for teachers, content writers, question setters and engineers.',
+    canonical: canonicalFor('/careers/'),
+  })
   return (
     <>
       <PageHero
@@ -235,14 +260,18 @@ const LEGAL_COPY = {
   '/disclaimer/': {
     title: 'Disclaimer',
     intro:
-      'Exam dates, vacancies, syllabi and results published here are compiled from official notifications. Always verify against the conducting body before acting on them.',
+      'Exam dates, vacancies, syllabi and results published here are compiled from official notifications. Verify against the conducting body before acting on them.',
   },
 }
 
 export function Legal() {
   const { pathname } = useLocation()
   const copy = LEGAL_COPY[pathname] || { title: 'Legal', intro: '' }
-  useTitle(copy.title)
+  useSeo({
+    title: `${copy.title} | Brolly Exam Prep`,
+    description: copy.intro,
+    canonical: canonicalFor(pathname),
+  })
 
   return (
     <>
@@ -270,7 +299,13 @@ export function Legal() {
 }
 
 export function NotFound() {
-  useTitle('Page not found')
+  // A single-page app answers 200 for unknown URLs, so this is the only way to
+  // stop Google treating a mistyped path as a real page.
+  useSeo({
+    title: 'Page not found | Brolly Exam Prep',
+    description: 'The page you were looking for could not be found on Brolly Exam Prep.',
+    robots: 'noindex, follow',
+  })
   return (
     <>
       <PageHero

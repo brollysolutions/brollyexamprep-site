@@ -1,4 +1,4 @@
-import { useTitle } from '../components/ui'
+import { canonicalFor, useSeo } from '../components/ui'
 import Hero from './home/Hero'
 import {
   Analytics,
@@ -21,7 +21,13 @@ import {
 } from './home/sections'
 
 export default function Home() {
-  useTitle('')
+  useSeo({
+    title: 'Competitive Exam Preparation Online | Brolly Exam Prep',
+    description:
+      'Prepare online for SSC, Banking, Railway, UPSC, Defence, Teaching and State exams with syllabus guides, mock tests, previous papers and study material.',
+    canonical: canonicalFor('/'),
+  })
+
   return (
     <>
       <Hero />

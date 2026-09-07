@@ -368,20 +368,6 @@ function structuredData(topic) {
     },
     {
       '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Study Material', item: `${ORIGIN}/study-material/` },
-        {
-          '@type': 'ListItem',
-          position: 2,
-          name: topic.subjectName,
-          item: `${ORIGIN}/study-material/${topic.subject}/`,
-        },
-        { '@type': 'ListItem', position: 3, name: topic.title, item: canonical },
-      ],
-    },
-    {
-      '@context': 'https://schema.org',
       '@type': 'FAQPage',
       mainEntity: topic.faqs.map((faq) => ({
         '@type': 'Question',

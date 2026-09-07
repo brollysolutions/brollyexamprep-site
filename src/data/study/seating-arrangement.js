@@ -13,7 +13,7 @@ export default {
   title: 'Seating Arrangement',
   seoTitle: 'Seating Arrangement Reasoning for Bank & SSC Exams | Tricks & Practice',
   metaDescription:
-    'Complete Seating Arrangement study material for banking, SSC and railway exams — linear rows, circular tables, square and rectangular tables, dual-row arrangements, the left-right direction rules, possibility cases and position counting, with solved examples and practice questions.',
+    'Complete Seating Arrangement study material for banking, SSC and railway exams — linear rows, circular tables, square and rectangular tables.',
   readMinutes: 21,
   lead: [
     'Seating Arrangement is the highest-scoring block in any banking paper and the one where candidates most often lose fifteen minutes for nothing. The reasoning is never the problem. The problem is that "third to the left of B" points in opposite directions depending on which way B is facing, and a single wrong turn invalidates every deduction after it.',
