@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import Icon, { Arrow } from '../components/Icon'
 import { PageHero, SectionHead, useJsonLd, useMeta, useTitle } from '../components/ui'
 import { FaqSection, FinalCta } from './home/sections'
-import { mockTestUrl } from '../data/site'
+import { MOCKTEST_TESTS_URL } from '../data/site'
 
 /**
  * Telangana Police SI & Constable — /government-exams/state/telangana/telangana-police/
@@ -300,24 +300,16 @@ export default function TelanganaPolice() {
           { label: 'Telangana Police SI & Constable' },
         ]}
         actions={
-          <>
-            <a
-              className="btn btn--y"
-              href={mockTestUrl('telangana-police-si')}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Start Free Mock SI
-            </a>
-            <a
-              className="btn btn--y"
-              href={mockTestUrl('telangana-police-constable')}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Start Free Mock Constable
-            </a>
-          </>
+          // The mock platform has no separate SI and Constable URLs — the post
+          // is chosen inside the app — so this is one link, not two.
+          <a
+            className="btn btn--y"
+            href={MOCKTEST_TESTS_URL}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Start Free Mock Test
+          </a>
         }
       />
 

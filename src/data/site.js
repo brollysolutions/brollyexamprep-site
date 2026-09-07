@@ -38,12 +38,16 @@ export const POPULAR_EXAMS = [
  * src/data/mock-tests/ are attempted there instead of on this site, so a link
  * to one leaves the SPA and must be a plain <a>, not a react-router <Link>.
  *
- * The slug is reused as-is, so /mock-tests/telangana-police-si/ here and
- * mocktest.brollyexamprep.com/telangana-police-si/ there stay in step.
+ * It is a separate Expo Router app with a fixed, small set of routes — '',
+ * '/study', '/tests', '/profile', '/updates', '/eligibility', '/affairs'. It
+ * has no per-exam slug routes, so do NOT build links like `${ORIGIN}/${slug}/`:
+ * anything unmatched just drops the visitor on the app's home screen. Link to
+ * MOCKTEST_TESTS_URL and let them pick the paper (and, for Telangana Police,
+ * the SI or Constable post) inside the app.
  */
 export const MOCKTEST_ORIGIN = 'https://mocktest.brollyexamprep.com'
 
-export const mockTestUrl = (slug) => `${MOCKTEST_ORIGIN}/${slug}/`
+export const MOCKTEST_TESTS_URL = `${MOCKTEST_ORIGIN}/tests`
 
 /**
  * The cards on the home page and the Mock Tests hub. Both the spec line and
