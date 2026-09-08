@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import Icon, { Arrow } from '../components/Icon'
 import { PageHero, SectionHead, useJsonLd, useMeta, useTitle } from '../components/ui'
 import { FaqSection, FinalCta } from './home/sections'
-import { MOCKTEST_TESTS_URL } from '../data/site'
+import { MOCKTEST_TESTS_URL, MOCKTEST_TS_SI_URL } from '../data/site'
 
 /**
  * Telangana Police SI & Constable — /government-exams/state/telangana/telangana-police/
@@ -303,7 +303,7 @@ export default function TelanganaPolice() {
           <>
             <a
               className="btn btn--y"
-              href={MOCKTEST_TESTS_URL}
+              href={MOCKTEST_TS_SI_URL}
               target="_blank"
               rel="noreferrer"
             >

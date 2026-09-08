@@ -49,6 +49,9 @@ export const MOCKTEST_ORIGIN = 'https://mocktest.brollyexamprep.com'
 
 export const MOCKTEST_TESTS_URL = `${MOCKTEST_ORIGIN}/tests`
 
+/** The Telangana Police SI paper, which does have its own route on the app. */
+export const MOCKTEST_TS_SI_URL = `${MOCKTEST_TESTS_URL}/simocktest`
+
 /**
  * The cards on the home page and the Mock Tests hub. Both the spec line and
  * the link come from the question banks, so a card can never advertise a test
