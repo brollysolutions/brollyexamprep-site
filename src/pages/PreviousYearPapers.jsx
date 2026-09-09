@@ -33,29 +33,29 @@ const PAPER_FAQS = [
   },
   {
     q: 'Are solutions included?',
-    a: 'Yes. Every paper carries worked solutions, and each question links back to the concept lesson for the topic it tests.',
+    a: 'Not as a blanket promise. Brolly currently provides exam-specific methods for locating and analysing papers; use conducting-body archives for authoritative paper and answer-key files. A page states explicitly when a worked solution is actually available.',
   },
 ]
 
 export default function PreviousYearPapers() {
   useSeo({
-    title: 'Previous Year Question Papers with Solutions | Brolly Exam Prep',
+    title: 'How to Find and Analyse Previous Exam Papers | Brolly',
     description:
-      'Previous-year question papers with answer keys and solutions for SSC, banking, railway, UPSC and state exams, arranged by exam and by year.',
+      'Find official previous exam papers and learn how to analyse topic frequency, question form, timing and pattern changes without mistaking familiarity for progress.',
     canonical: canonicalFor('/previous-year-papers/'),
   })
 
   return (
     <>
       <PageHero
-        eyebrow="Real exam questions"
-        title="Previous-Year Question Papers"
-        lead="Understand the real exam pattern, frequently asked topics and question trends with previous-year papers and detailed solutions."
+        eyebrow="Past-paper method"
+        title="Find and Analyse Previous-Year Papers"
+        lead="Use conducting-body archives for authoritative files, then analyse the papers to understand question form, topic weighting and pattern changes."
         trail={[{ label: 'Previous Year Papers' }]}
         actions={
           <>
-            <Link className="btn btn--k" to="/previous-year-papers/ssc/">
-              SSC Papers
+            <Link className="btn btn--k" to="/government-exams/ssc/">
+              SSC Exam Guides
             </Link>
             <Link className="btn btn--o" to="/previous-year-questions/">
               Question-wise Practice
@@ -66,7 +66,7 @@ export default function PreviousYearPapers() {
 
       <section className="s">
         <div className="wrap">
-          <SectionHead eyebrow="Browse by exam" title="Papers by exam family" />
+          <SectionHead eyebrow="Browse by exam" title="Find exam-specific paper guidance" />
           <div className="g4">
             {PREVIOUS_PAPERS.map((paper) => (
               <Tile key={paper.to} to={paper.to} icon="doc" title={paper.title} sub={paper.sub} />

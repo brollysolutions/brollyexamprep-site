@@ -11,7 +11,8 @@
     "prerender": "node scripts/prerender.mjs",
     "sitemap": "node scripts/generate-sitemap.mjs",
     "preview": "vite preview",
-    "seo:audit": "node scripts/audit-seo.mjs"
+    "seo:audit": "node scripts/audit-seo.mjs",
+    "seo:audit:full": "npm run seo:audit && node scripts/audit-content.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",

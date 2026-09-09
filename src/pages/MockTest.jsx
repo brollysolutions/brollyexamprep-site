@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { Arrow } from '../components/Icon'
+import { ContentSection } from '../components/Blocks'
 import { PageHero, SectionHead, canonicalFor, useSeo } from '../components/ui'
 import { getTest, orderedQuestions, specOf, TESTS } from '../data/mock-tests'
 import { humanise } from '../lib/labels'
@@ -60,7 +61,7 @@ export default function MockTest() {
     test
       ? {
           title: `${test.title} - Free Online Test | Brolly Exam Prep`,
-          description: `Take the ${test.title} free online mock test - full length, timed, with instant scoring, detailed solutions and a performance breakdown.`,
+          description: `Take the ${test.title} free timed diagnostic with ${questions.length} questions, instant scoring, explanations and a section breakdown.`,
           canonical: canonicalFor(`/mock-tests/${slug}/`),
         }
       : {
@@ -282,6 +283,31 @@ function Intro({ test, questions, onStart }) {
           </div>
         </div>
       </section>
+
+      <ContentSection
+        id="use-this-test"
+        eyebrow="Use the result"
+        heading={`How to learn from this ${test.exam} mock`}
+        intro={`Treat the ${test.title} as a measurement, not as a verdict. The useful output is a short correction plan built from the questions that cost marks or time.`}
+        blocks={[
+          {
+            type: 'steps',
+            items: [
+              { text: 'Reproduce real conditions.', note: `Use one uninterrupted ${test.minutes}-minute sitting, no notes and the same answer discipline you would use in the examination.` },
+              { text: 'Review correct guesses as well as wrong answers.', note: 'A lucky mark is unresolved knowledge and should enter the correction list.' },
+              { text: 'Classify the cause of every loss.', note: 'Mark it as an unknown concept, wrong method, misread question, calculation slip, poor selection or time pressure.' },
+              { text: 'Choose only three immediate corrections.', note: 'Revise or drill the highest-frequency causes before attempting another full paper.' },
+              { text: 'Retest with a fresh paper.', note: 'Allow enough practice time for the correction to work, then check whether the same error class has declined.' },
+            ],
+          },
+          {
+            type: 'note',
+            title: 'How to interpret this score',
+            text: `This is a shortened ${test.exam} practice paper, so compare accuracy, section balance and decision-making rather than treating the raw mark as a predicted official score. Cut-offs depend on the recruitment cycle, category, vacancies, paper difficulty and the authority’s scoring rules.`,
+          },
+        ]}
+        background
+      />
 
       <OtherTests slug={test.slug} />
     </>

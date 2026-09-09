@@ -35,11 +35,11 @@ export const isMockFamily = (slug) => Object.hasOwn(FAMILIES, slug)
 const MOCK_FAQS = [
   {
     q: 'Are the mock tests really free?',
-    a: 'Yes. Every test listed under Free Mock Tests can be attempted without paying, and you get your score and the correct answers at the end. Paid test series add more attempts, detailed solutions and comparative ranking.',
+    a: 'Yes. Every test listed under Free Mock Tests can be attempted without paying, and you get your score, the answer key and explanations at the end. The question count and time shown on each card describe that test, not the full examination.',
   },
   {
     q: 'Do mock tests follow the current exam pattern?',
-    a: 'Each test is built to the pattern in the latest official notification — the same sections, question counts, marking scheme and time limit. When a pattern changes, the tests are rebuilt before the next cycle.',
+    a: 'The diagnostics use the exam’s subject mix and marking logic, but they are deliberately shorter than the full paper. Check the conducting body’s current notification for the binding stage structure, question count, timing and marking scheme.',
   },
   {
     q: 'How often should I attempt a full-length mock?',
@@ -63,20 +63,20 @@ export default function MockTests({ familySlug = null }) {
           title: `${family} Mock Tests — Free Online Practice | Brolly Exam Prep`,
           description: familyTests.length
             ? `Free ${family} mock tests on the current exam pattern, with instant scoring, detailed solutions and a performance breakdown.`
-            : `${family} mock tests on Brolly Exam Prep. No ${family} paper is live yet — the free full-length tests for other exams are listed here meanwhile.`,
+            : `${family} mock-test guidance on Brolly Exam Prep. No ${family} diagnostic is currently available; the live tests for other exams are listed here meanwhile.`,
           canonical: canonicalFor(`/mock-tests/${familySlug}/`),
         }
       : isFree
         ? {
             title: 'Free Mock Tests for SSC, Banking and Railway Exams | Brolly Exam Prep',
             description:
-              'Free full-length mock tests for SSC, banking, railway and state exams, with instant scoring, detailed solutions and a performance breakdown.',
+              'Free timed diagnostic tests for SSC, banking, railway, UPSC, teaching and state exams, with scoring, explanations and a section breakdown.',
             canonical: canonicalFor('/mock-tests/free/'),
           }
         : {
             title: 'Mock Tests & Test Series | Brolly Exam Prep',
             description:
-              'Full-length mock tests and test series for SSC, banking, railway, UPSC and state exams, with instant scoring and detailed solutions.',
+              'Timed diagnostic mock tests for SSC, banking, railway, UPSC, teaching and state exams, with scoring and detailed explanations.',
             canonical: canonicalFor('/mock-tests/'),
           },
   )
@@ -84,8 +84,8 @@ export default function MockTests({ familySlug = null }) {
   const heroTitle = family ? `${family} Mock Tests` : isFree ? 'Free Mock Tests' : 'Mock Tests'
   const heroLead = family
     ? familyTests.length
-      ? `Free full-length ${family} papers built to the current notified pattern. Attempt one, then spend as long on the analysis as you did on the test.`
-      : `No ${family} paper is live yet. Every free full-length test currently available is listed below, and a ${family} paper will appear here when it is published.`
+      ? `Free timed ${family} diagnostics using the exam’s subject mix. Check the displayed length, attempt one, then spend time analysing every error.`
+      : `No ${family} diagnostic is live yet. Every free test currently available is listed below.`
     : 'Practice with exam-level questions, understand your performance and identify the areas you need to improve. Free mock tests are the fastest way to start your competitive exam preparation.'
 
   return (
@@ -109,8 +109,8 @@ export default function MockTests({ familySlug = null }) {
             >
               Start with {familyTests[0]?.exam || 'SSC CGL'}
             </Link>
-            <Link className="btn btn--o" to="/practice/test-series/">
-              Explore Test Series
+            <Link className="btn btn--o" to="/previous-year-papers/">
+              Previous-Paper Method
             </Link>
           </>
         }
@@ -120,8 +120,8 @@ export default function MockTests({ familySlug = null }) {
         <div className="wrap">
           <SectionHead
             eyebrow="Start free"
-            title={family && familyTests.length ? `Free ${family} mock tests` : 'Free full-length mock tests'}
-            lead="One test per major exam, on the current pattern, with your score and the answer key at the end."
+            title={family && familyTests.length ? `Free ${family} diagnostic tests` : 'Free timed diagnostic tests'}
+            lead="Each card gives the real length of the available test. These are shortened diagnostics, not substitutes for a full official-pattern paper."
           />
           <div className="mocks">
             {(familyTests.length ? FREE_MOCKS.filter((m) => m.cat === family) : FREE_MOCKS).map((mock) => (

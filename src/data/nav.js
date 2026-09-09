@@ -169,7 +169,7 @@ export const NAV = [
       {
         heading: 'International Exams',
         links: [
-          { label: 'GMAT', to: '/entrance-exams/international/gmat/' },
+          { label: 'GMAT', to: '/entrance-exams/mba/gmat/' },
           { label: 'GRE', to: '/entrance-exams/international/gre/' },
           { label: 'IELTS', to: '/entrance-exams/international/ielts/' },
           { label: 'TOEFL', to: '/entrance-exams/international/toefl/' },
@@ -277,7 +277,7 @@ export const NAV = [
     allLabel: 'Start Practising →',
     eyebrow: 'From Learning to Selection',
     title: 'Practice',
-    desc: 'Daily questions, topic practice, previous papers, sectional tests and full-length mocks.',
+    desc: 'Topic lessons, previous-paper methods and the timed diagnostic tests currently available.',
     cols: 4,
     groups: [
       {
@@ -310,8 +310,8 @@ export const NAV = [
           { label: 'Banking Tests', to: '/mock-tests/banking/' },
           { label: 'UPSC Tests', to: '/mock-tests/upsc/' },
           { label: 'Railway Tests', to: '/mock-tests/railways/' },
-          { label: 'CAT Tests', to: '/mock-tests/cat/' },
-          { label: 'JEE / NEET Tests', to: '/mock-tests/jee-neet/' },
+          { label: 'Teaching Tests', to: '/mock-tests/teaching/' },
+          { label: 'State Exam Tests', to: '/mock-tests/state-psc/' },
         ],
       },
     ],
@@ -322,7 +322,7 @@ export const NAV = [
     label: 'Current Affairs',
     to: '/current-affairs/',
     allLabel: "Today's Current Affairs →",
-    eyebrow: 'Updated Every Day',
+    eyebrow: 'Current-affairs study',
     title: 'Current Affairs',
     desc: 'Daily, weekly and monthly current affairs organised by subject and exam.',
     cols: 4,
@@ -382,7 +382,7 @@ export const NAV = [
       {
         heading: 'Apply & Track',
         links: [
-          { label: 'Latest Notifications', to: '/exam-updates/latest-notifications/', badge: 'Live' },
+          { label: 'Notification Tracking', to: '/exam-updates/latest-notifications/' },
           { label: 'Government Jobs', to: '/government-jobs/' },
           { label: 'Application Forms', to: '/exam-updates/application-forms/' },
           { label: 'Exam Calendar', to: '/exam-calendar/' },

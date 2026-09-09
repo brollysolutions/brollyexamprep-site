@@ -14,6 +14,134 @@
  */
 
 const ARTICLE_BODIES = {
+  'google-ai-search-optimization-guide': {
+    lead: [
+      'Google’s generative search experiences have changed how results are presented, but they have not replaced the foundations of search optimization. AI Overviews and AI Mode still rely on Google’s search index, ranking systems and quality signals to find sources and support generated answers.',
+      'That makes the practical strategy less exotic than the language around “AEO” and “GEO” suggests: publish something genuinely useful, make it easy to crawl and understand, and give visitors a satisfying experience when they arrive.',
+    ],
+    sections: [
+      {
+        id: 'how-ai-search-finds-content',
+        eyebrow: 'The foundation',
+        heading: 'AI search still begins with the search index',
+        blocks: [
+          { type: 'p', text: 'Google describes two useful concepts. Retrieval-augmented generation grounds an AI response in relevant, current pages retrieved through core Search systems. Query fan-out lets the system explore several related questions at once before composing a response. In both cases, a page first needs to be discoverable, indexable and relevant through ordinary Search.' },
+          { type: 'note', title: 'The practical consequence', text: 'There is no separate shortcut into Google’s generative results. A page must be indexed, eligible to appear with a Search snippet and compliant with Google Search requirements. Eligibility still does not guarantee crawling, indexing or selection.' },
+        ],
+      },
+      {
+        id: 'valuable-content',
+        eyebrow: 'Priority one',
+        heading: 'Create information that is difficult to replace',
+        blocks: [
+          { type: 'p', text: 'A generic summary competes with thousands of similar pages and with the AI answer itself. Stronger content contributes something the broader web does not already say in the same way: first-hand experience, original analysis, a tested method, expert judgment, useful data, or evidence tied to a specific real-world situation.' },
+          {
+            type: 'list',
+            title: 'What useful, non-commodity content looks like',
+            items: [
+              { text: 'A clear first-hand point of view', note: 'explain what you observed, tested or learned instead of merely recombining other pages.' },
+              { text: 'Enough evidence to earn trust', note: 'identify sources, show the reasoning and separate verified facts from opinion or inference.' },
+              { text: 'A structure designed for readers', note: 'use descriptive headings, coherent sections and direct explanations that make the page easy to navigate.' },
+              { text: 'Relevant visual support', note: 'use original or high-quality images and video when they clarify the subject, with descriptive surrounding text and accessible alternatives.' },
+              { text: 'A satisfying answer to a real need', note: 'judge the page by what the visitor can understand or accomplish after reading it.' },
+            ],
+          },
+          { type: 'p', text: 'Generative tools can assist with research and drafting, but the finished work still needs to meet Search Essentials and spam policies. Producing large numbers of near-duplicate pages for every possible query variation is neither a quality strategy nor a durable way to reach AI search features.' },
+        ],
+      },
+      {
+        id: 'technical-foundation',
+        eyebrow: 'Priority two',
+        heading: 'Keep the technical path to your content clear',
+        blocks: [
+          {
+            type: 'steps',
+            title: 'A practical technical checklist',
+            items: [
+              { text: 'Confirm important pages can be crawled and indexed.', note: 'Do not block their content or essential rendering resources, and inspect coverage in Search Console.' },
+              { text: 'Use stable, canonical URLs.', note: 'Reduce accidental duplicates so crawling effort and ranking signals point to the version you intend to maintain.' },
+              { text: 'Make JavaScript content accessible.', note: 'Google can render JavaScript, but server-rendered or prerendered primary content reduces complexity and improves resilience.' },
+              { text: 'Deliver a good page experience.', note: 'Pages should work across devices, respond quickly and keep the main content easy to distinguish from navigation, ads and other interface elements.' },
+              { text: 'Use semantic HTML where practical.', note: 'Clear headings, landmarks, links and accessible controls help people, assistive technology and browser agents navigate the page.' },
+              { text: 'Keep structured data accurate.', note: 'It can support rich-result eligibility, but there is no special schema required for Google’s generative AI features.' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'business-information',
+        eyebrow: 'Products and places',
+        heading: 'Supply accurate business and product details',
+        blocks: [
+          { type: 'p', text: 'For ecommerce and local businesses, AI results may draw on product listings, product details and business information. Maintain complete, current data in Merchant Center and your Google Business Profile where those products apply. The website and feeds should agree on names, prices, availability, location and other material details.' },
+        ],
+      },
+      {
+        id: 'myths',
+        eyebrow: 'What to skip',
+        heading: 'Do not build an AI-search strategy around unsupported hacks',
+        blocks: [
+          {
+            type: 'table',
+            caption: 'Common claims compared with Google’s published guidance.',
+            head: ['Claim', 'What Google says', 'Better use of the effort'],
+            rows: [
+              ['Google requires llms.txt', 'Google Search does not use llms.txt or special AI text files for generative Search visibility.', 'Maintain crawl controls, sitemaps and important HTML pages.'],
+              ['Pages must be split into tiny chunks', 'There is no required chunk size or ideal page length.', 'Organize the subject at the length readers need.'],
+              ['Every query variation needs its own page', 'Search systems understand synonyms and meaning; scaled pages made to manipulate results may violate spam policies.', 'Create one authoritative resource with a coherent purpose.'],
+              ['Special AI schema improves inclusion', 'No special structured-data type is required for generative AI Search.', 'Use supported schema accurately for applicable rich results.'],
+              ['More online mentions always help', 'Inauthentic mentions are not a dependable signal and spam systems may discount them.', 'Earn genuine references by publishing work worth citing.'],
+            ],
+          },
+        ],
+      },
+      {
+        id: 'measure',
+        eyebrow: 'Measurement',
+        heading: 'Measure outcomes instead of promises',
+        blocks: [
+          { type: 'p', text: 'Use Google Search Console to monitor how people discover and engage with your pages, including the available generative AI performance reporting. Treat third-party visibility estimates cautiously: outside tools do not have access to Google’s internal ranking or AI systems, so their labels and scores are models rather than inside information.' },
+          {
+            type: 'list',
+            title: 'Review the signals that connect visibility to value',
+            items: [
+              { text: 'Discovery', note: 'which pages and topics gain qualified impressions and clicks.' },
+              { text: 'Engagement', note: 'whether arriving visitors continue reading, use a tool, explore a related page or complete another meaningful action.' },
+              { text: 'Conversion', note: 'whether the traffic produces registrations, enquiries, purchases or another outcome the site exists to support.' },
+              { text: 'Content maintenance', note: 'which pages need factual updates, stronger evidence or consolidation with overlapping material.' },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'action-plan',
+        eyebrow: 'A durable workflow',
+        heading: 'The short action plan',
+        blocks: [
+          {
+            type: 'steps',
+            items: [
+              { text: 'Choose a real audience problem.', note: 'Define the decision, question or task the page will help with.' },
+              { text: 'Add experience or evidence.', note: 'Bring original observations, expert review, data, examples or a tested process.' },
+              { text: 'Publish a clear, accessible page.', note: 'Use a descriptive title, logical headings, useful media and internal links.' },
+              { text: 'Verify discovery and indexing.', note: 'Check the canonical URL, crawl access, rendered content and Search Console status.' },
+              { text: 'Measure and improve.', note: 'Update the substance when facts or user needs change instead of manufacturing more variations of the same page.' },
+            ],
+          },
+          { type: 'note', title: 'Source and scope', text: 'This article is an original summary and practical interpretation of Google Search Central’s “Optimizing your website for generative AI features on Google Search,” last updated 10 July 2026. Google’s documentation is the authoritative source and may change as Search evolves.' },
+          {
+            type: 'links',
+            title: 'Primary source and useful Brolly resources',
+            items: [
+              { label: 'Read Google’s official AI optimization guide', href: 'https://developers.google.com/search/docs/fundamentals/ai-optimization-guide' },
+              { label: 'Browse Brolly preparation guides', to: '/blog/' },
+              { label: 'Explore structured study material', to: '/study-material/' },
+            ],
+          },
+        ],
+      },
+    ],
+  },
   /* ══════════════════════════════════════════════════════════════ */
   'how-to-start-competitive-exam-preparation': {
     lead: [

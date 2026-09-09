@@ -25,6 +25,8 @@ import {
   About,
   Careers,
   Contact,
+  CorrectionsPolicy,
+  EditorialPolicy,
   Faculty,
   Legal,
   NotFound,
@@ -90,6 +92,8 @@ export default function App() {
         <Route path="/careers/" element={<Careers />} />
         <Route path="/success-stories/" element={<SuccessStories />} />
         <Route path="/faculty/" element={<Faculty />} />
+        <Route path="/editorial-policy/" element={<EditorialPolicy />} />
+        <Route path="/corrections-policy/" element={<CorrectionsPolicy />} />
 
         {/* Legal */}
         <Route path="/privacy-policy/" element={<Legal />} />

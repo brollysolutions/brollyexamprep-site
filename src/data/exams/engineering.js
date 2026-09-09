@@ -176,7 +176,7 @@ const engineering = [
             title: 'Related pages',
             items: [
               { label: 'JEE Advanced guide', to: '/entrance-exams/engineering/jee-advanced/' },
-              { label: 'JEE and NEET mock tests', to: '/mock-tests/jee-neet/' },
+              { label: 'JEE and NEET mock tests', to: '/mock-tests/free/' },
               { label: 'Physics study material', to: '/study-material/physics/' },
             ],
           },
@@ -211,7 +211,7 @@ const engineering = [
             type: 'links',
             title: 'Start practising',
             items: [
-              { label: 'JEE and NEET mock tests', to: '/mock-tests/jee-neet/' },
+              { label: 'JEE and NEET mock tests', to: '/mock-tests/free/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
           },
@@ -482,7 +482,7 @@ const engineering = [
             title: 'Related pages',
             items: [
               { label: 'JEE Main guide', to: '/entrance-exams/engineering/jee-main/' },
-              { label: 'JEE and NEET mock tests', to: '/mock-tests/jee-neet/' },
+              { label: 'JEE and NEET mock tests', to: '/mock-tests/free/' },
               { label: 'Physics study material', to: '/study-material/physics/' },
             ],
           },
@@ -513,7 +513,7 @@ const engineering = [
             type: 'links',
             title: 'Start practising',
             items: [
-              { label: 'JEE and NEET mock tests', to: '/mock-tests/jee-neet/' },
+              { label: 'JEE and NEET mock tests', to: '/mock-tests/free/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
           },
@@ -792,7 +792,7 @@ const engineering = [
             title: 'Related pages',
             items: [
               { label: 'JEE Main guide', to: '/entrance-exams/engineering/jee-main/' },
-              { label: 'JEE and NEET mock tests', to: '/mock-tests/jee-neet/' },
+              { label: 'JEE and NEET mock tests', to: '/mock-tests/free/' },
               { label: 'Reasoning study material', to: '/study-material/reasoning/' },
             ],
           },
@@ -823,7 +823,7 @@ const engineering = [
             type: 'links',
             title: 'Start practising',
             items: [
-              { label: 'JEE and NEET mock tests', to: '/mock-tests/jee-neet/' },
+              { label: 'JEE and NEET mock tests', to: '/mock-tests/free/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
           },
@@ -1099,7 +1099,7 @@ const engineering = [
             title: 'Related pages',
             items: [
               { label: 'JEE Main guide', to: '/entrance-exams/engineering/jee-main/' },
-              { label: 'JEE and NEET mock tests', to: '/mock-tests/jee-neet/' },
+              { label: 'JEE and NEET mock tests', to: '/mock-tests/free/' },
               { label: 'Reasoning study material', to: '/study-material/reasoning/' },
             ],
           },
@@ -1130,7 +1130,7 @@ const engineering = [
             type: 'links',
             title: 'Start practising',
             items: [
-              { label: 'JEE and NEET mock tests', to: '/mock-tests/jee-neet/' },
+              { label: 'JEE and NEET mock tests', to: '/mock-tests/free/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
           },
@@ -1392,7 +1392,7 @@ const engineering = [
             title: 'Related pages',
             items: [
               { label: 'JEE Main guide', to: '/entrance-exams/engineering/jee-main/' },
-              { label: 'JEE and NEET mock tests', to: '/mock-tests/jee-neet/' },
+              { label: 'JEE and NEET mock tests', to: '/mock-tests/free/' },
               { label: 'Mathematics study material', to: '/study-material/mathematics/' },
             ],
           },
@@ -1423,7 +1423,7 @@ const engineering = [
             type: 'links',
             title: 'Start practising',
             items: [
-              { label: 'JEE and NEET mock tests', to: '/mock-tests/jee-neet/' },
+              { label: 'JEE and NEET mock tests', to: '/mock-tests/free/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
           },
@@ -1722,7 +1722,7 @@ const engineering = [
             type: 'links',
             title: 'Start practising',
             items: [
-              { label: 'JEE and NEET mock tests', to: '/mock-tests/jee-neet/' },
+              { label: 'JEE and NEET mock tests', to: '/mock-tests/free/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
           },
@@ -2023,7 +2023,7 @@ const engineering = [
             type: 'links',
             title: 'Start practising',
             items: [
-              { label: 'JEE and NEET mock tests', to: '/mock-tests/jee-neet/' },
+              { label: 'JEE and NEET mock tests', to: '/mock-tests/free/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
           },

@@ -4,11 +4,11 @@ import { specOf, TESTS } from './mock-tests'
 
 export const QUICK_ACCESS = [
   { icon: 'check', title: 'Free Mock Tests', sub: 'Exam-level practice tests', to: '/mock-tests/free/' },
-  { icon: 'doc', title: 'Previous Year Papers', sub: 'Real papers with solutions', to: '/previous-year-papers/' },
+  { icon: 'doc', title: 'Previous Paper Method', sub: 'Find and analyse official papers', to: '/previous-year-papers/' },
   { icon: 'book', title: 'Study Material', sub: 'Subject-wise notes and PDFs', to: '/study-material/' },
-  { icon: 'globe', title: 'Current Affairs', sub: 'Daily, weekly and monthly', to: '/current-affairs/' },
-  { icon: 'bell', title: 'Exam Updates', sub: 'Notifications and results', to: '/exam-updates/' },
-  { icon: 'layers', title: 'Test Series', sub: 'Full-length and sectional', to: '/practice/test-series/' },
+  { icon: 'globe', title: 'Current Affairs', sub: 'Study and revision method', to: '/current-affairs/' },
+  { icon: 'bell', title: 'Exam Updates', sub: 'Official-source tracking guides', to: '/exam-updates/' },
+  { icon: 'layers', title: 'Mock Tests', sub: 'Available timed diagnostic tests', to: '/mock-tests/' },
 ]
 
 export const EXAM_CATEGORIES = [
@@ -23,13 +23,13 @@ export const EXAM_CATEGORIES = [
 ]
 
 export const POPULAR_EXAMS = [
-  { id: 'cgl', category: 'ssc', badge: 'CGL', cat: 'SSC', name: 'SSC CGL', pill: 'Notification out', pillTone: 'r', desc: 'Combined Graduate Level recruitment for Group B and C posts across central ministries.', to: '/government-exams/ssc/ssc-cgl/' },
-  { id: 'sbi', category: 'banking', badge: 'SBI', cat: 'Banking', name: 'SBI PO', pill: 'Prelims Oct 2026', pillTone: 'g', desc: 'Probationary Officer recruitment at State Bank of India.', to: '/government-exams/banking/sbi-po/' },
-  { id: 'ibps', category: 'banking', badge: 'IBPS', cat: 'Banking', name: 'IBPS PO', pill: 'Admit card soon', pillTone: 'g', desc: 'Probationary Officer posts across participating public sector banks.', to: '/government-exams/banking/ibps-po/' },
-  { id: 'rrb', category: 'railways', badge: 'RRB', cat: 'Railways', name: 'RRB NTPC', pill: 'CBT 1 · 04 Nov 2026', pillTone: 'g', desc: 'Non-Technical Popular Categories recruitment across railway zones.', to: '/government-exams/railways/rrb-ntpc/' },
-  { id: 'upsc', category: 'upsc', badge: 'UPSC', cat: 'UPSC', name: 'UPSC CSE', pill: 'Prelims May 2027', pillTone: 'y', desc: 'Civil Services Examination for IAS, IPS, IFS and allied services.', to: '/government-exams/upsc/upsc-civil-services/' },
-  { id: 'nda', category: 'defence', badge: 'NDA', cat: 'Defence', name: 'NDA', pill: 'Applications open', pillTone: 'r', desc: 'National Defence Academy entry for Army, Navy and Air Force wings.', to: '/government-exams/upsc/nda/' },
-  { id: 'ctet', category: 'teaching', badge: 'CTET', cat: 'Teaching', name: 'CTET', pill: 'Dec 2026 cycle', pillTone: 'y', desc: 'Central Teacher Eligibility Test for classes I to VIII.', to: '/government-exams/teaching-net/ctet/' },
+  { id: 'cgl', category: 'ssc', badge: 'CGL', cat: 'SSC', name: 'SSC CGL', pill: 'Exam guide', pillTone: 'r', desc: 'Combined Graduate Level recruitment for Group B and C posts across central ministries.', to: '/government-exams/ssc/ssc-cgl/' },
+  { id: 'sbi', category: 'banking', badge: 'SBI', cat: 'Banking', name: 'SBI PO', pill: 'Exam guide', pillTone: 'g', desc: 'Probationary Officer recruitment at State Bank of India.', to: '/government-exams/banking/sbi-po/' },
+  { id: 'ibps', category: 'banking', badge: 'IBPS', cat: 'Banking', name: 'IBPS PO', pill: 'Exam guide', pillTone: 'g', desc: 'Probationary Officer posts across participating public sector banks.', to: '/government-exams/banking/ibps-po/' },
+  { id: 'rrb', category: 'railways', badge: 'RRB', cat: 'Railways', name: 'RRB NTPC', pill: 'Exam guide', pillTone: 'g', desc: 'Non-Technical Popular Categories recruitment across railway zones.', to: '/government-exams/railways/rrb-ntpc/' },
+  { id: 'upsc', category: 'upsc', badge: 'UPSC', cat: 'UPSC', name: 'UPSC CSE', pill: 'Exam guide', pillTone: 'y', desc: 'Civil Services Examination for IAS, IPS, IFS and allied services.', to: '/government-exams/upsc/upsc-civil-services/' },
+  { id: 'nda', category: 'defence', badge: 'NDA', cat: 'Defence', name: 'NDA', pill: 'Exam guide', pillTone: 'r', desc: 'National Defence Academy entry for Army, Navy and Air Force wings.', to: '/government-exams/upsc/nda/' },
+  { id: 'ctet', category: 'teaching', badge: 'CTET', cat: 'Teaching', name: 'CTET', pill: 'Exam guide', pillTone: 'y', desc: 'Central Teacher Eligibility Test for classes I to VIII.', to: '/government-exams/teaching-net/ctet/' },
   { id: 'psc', category: 'state-exams', badge: 'PSC', cat: 'State Exams', name: 'State PSC', pill: 'Varies by state', pillTone: 'y', desc: 'Group I to IV and combined services examinations conducted by state commissions.', to: '/government-exams/state/' },
 ]
 
@@ -66,17 +66,17 @@ export const FREE_MOCKS = TESTS.map((test) => ({
 
 export const FEATURES = [
   { icon: 'target', title: 'Exam-Focused Preparation', desc: 'Resources structured around specific competitive exams, not generic study packs.' },
-  { icon: 'check', title: 'Quality Mock Tests', desc: 'Realistic practice built to the current exam pattern and difficulty.' },
-  { icon: 'doc', title: 'Previous-Year Questions', desc: 'Understand real exam trends through solved previous papers.' },
-  { icon: 'chart', title: 'Detailed Performance Analysis', desc: 'Track accuracy, speed, scores and weak areas after every attempt.' },
-  { icon: 'refresh', title: 'Updated Study Material', desc: 'Structured, regularly updated preparation resources across subjects.' },
-  { icon: 'user', title: 'Personalized Learning', desc: 'Use performance insights to focus on the areas that need improvement.' },
+  { icon: 'check', title: 'Transparent Diagnostic Tests', desc: 'Every available test states its real question count, timing and marking before you start.' },
+  { icon: 'doc', title: 'Previous-Paper Analysis', desc: 'Use official papers to identify topic weighting, question forms and pattern changes.' },
+  { icon: 'chart', title: 'Attempt Review', desc: 'Review scores, section performance, skipped questions and answer explanations.' },
+  { icon: 'refresh', title: 'Structured Study Material', desc: 'Concept lessons organised across exam-relevant subjects and topics.' },
+  { icon: 'user', title: 'Evidence-Led Planning', desc: 'Use diagnostic and past-paper evidence to choose the next area to study.' },
 ]
 
 export const STEPS = [
   { n: '01', title: 'Choose Your Exam', desc: 'Select the competitive exam you are preparing for.' },
   { n: '02', title: 'Learn', desc: 'Study concepts, syllabus, preparation resources and current affairs.' },
-  { n: '03', title: 'Practice', desc: 'Attempt topic tests, sectional tests, previous-year questions and mock tests.' },
+  { n: '03', title: 'Practice', desc: 'Use official previous papers and the timed diagnostic tests currently available.' },
   { n: '04', title: 'Improve', desc: 'Analyse your performance and focus on weak areas.' },
 ]
 
@@ -140,8 +140,8 @@ export const PREP_TABS = [
     id: 'defence',
     label: 'Defence',
     exams: [
-      { name: 'NDA', base: '/government-exams/defence/nda/' },
-      { name: 'CDS', base: '/government-exams/defence/cds/' },
+      { name: 'NDA', base: '/government-exams/upsc/nda/' },
+      { name: 'CDS', base: '/government-exams/upsc/cds/' },
       { name: 'AFCAT', base: '/government-exams/defence/afcat/' },
       { name: 'Agniveer', base: '/government-exams/defence/agniveer/' },
     ],
@@ -153,84 +153,61 @@ export const PREP_TABS = [
       { name: 'CTET', base: '/government-exams/teaching-net/ctet/' },
       { name: 'State TET', base: '/government-exams/teaching-net/state-tet/' },
       { name: 'UGC NET', base: '/government-exams/teaching-net/ugc-net/' },
-      { name: 'KVS', base: '/government-exams/teaching-net/kvs/' },
-    ],
-  },
-  {
-    id: 'state',
-    label: 'State Exams',
-    exams: [
-      { name: 'State PSC Group I', base: '/government-exams/state/state-psc-group-1/' },
-      { name: 'State PSC Group II', base: '/government-exams/state/state-psc-group-2/' },
-      { name: 'State Police', base: '/government-exams/state/state-police/' },
-      { name: 'State TET', base: '/government-exams/state/state-tet-exams/' },
-    ],
-  },
-  {
-    id: 'police',
-    label: 'Police',
-    exams: [
-      { name: 'SSC GD Constable', base: '/government-exams/police/ssc-gd-constable/' },
-      { name: 'Delhi Police SI', base: '/government-exams/police/delhi-police-si/' },
-      { name: 'State Constable', base: '/government-exams/police/state-constable/' },
-      { name: 'CAPF', base: '/government-exams/police/capf-forces/' },
+      { name: 'CSIR NET', base: '/government-exams/teaching-net/csir-net/' },
     ],
   },
 ]
 
 export const PREVIOUS_PAPERS = [
-  { title: 'SSC Previous Year Papers', sub: 'CGL, CHSL, MTS, GD, CPO, JE', to: '/previous-year-papers/ssc/' },
-  { title: 'Banking Previous Year Papers', sub: 'SBI, IBPS and RBI recruitment papers', to: '/previous-year-papers/banking/' },
-  { title: 'Railway Previous Year Papers', sub: 'NTPC, Group D, ALP, JE and RPF', to: '/previous-year-papers/railways/' },
-  { title: 'UPSC Previous Year Papers', sub: 'Civil Services prelims and mains', to: '/previous-year-papers/upsc/' },
-  { title: 'Defence Previous Year Papers', sub: 'NDA, CDS, AFCAT and Agniveer', to: '/previous-year-papers/defence/' },
-  { title: 'Teaching Previous Year Papers', sub: 'CTET, State TET and UGC NET', to: '/previous-year-papers/teaching/' },
-  { title: 'State PSC Previous Year Papers', sub: 'Group and combined services papers', to: '/previous-year-papers/state-psc/' },
-  { title: 'Police Previous Year Papers', sub: 'Constable and Sub-Inspector papers', to: '/previous-year-papers/police/' },
+  { title: 'SSC Paper Guides', sub: 'CGL, CHSL, MTS, GD, CPO and JE exam guides', to: '/government-exams/ssc/' },
+  { title: 'Banking Paper Guides', sub: 'SBI, IBPS and RBI exam guides', to: '/government-exams/banking/' },
+  { title: 'Railway Paper Guides', sub: 'NTPC, Group D, ALP, JE and RPF exam guides', to: '/government-exams/railways/' },
+  { title: 'UPSC Paper Guides', sub: 'Civil Services, NDA, CDS and CAPF guides', to: '/government-exams/upsc/' },
+  { title: 'Defence Paper Guides', sub: 'NDA, CDS, AFCAT and Agniveer guidance', to: '/government-exams/defence/' },
+  { title: 'Teaching Paper Guides', sub: 'CTET, State TET, UGC NET and CSIR NET', to: '/government-exams/teaching-net/' },
+  { title: 'State Exam Guides', sub: 'State-specific commissions and recruitment', to: '/government-exams/state/' },
+  { title: 'Police Exam Guides', sub: 'Constable and Sub-Inspector preparation', to: '/government-exams/police/' },
 ]
 
 export const STUDY_TILES = [
   { title: 'Quantitative Aptitude', sub: 'Formulas, shortcuts and solved examples', to: '/study-material/quantitative-aptitude/' },
   { title: 'Reasoning', sub: 'Puzzles, seating arrangement and syllogism', to: '/study-material/reasoning/' },
   { title: 'English', sub: 'Grammar rules, vocabulary and comprehension', to: '/study-material/english/' },
-  { title: 'General Awareness', sub: 'Static GK and exam-relevant awareness', to: '/study-material/general-awareness/' },
-  { title: 'General Studies', sub: 'Polity, economy, environment and more', to: '/study-material/general-studies/' },
+  { title: 'History', sub: 'Ancient, medieval and modern India', to: '/study-material/history/' },
+  { title: 'Indian Polity', sub: 'Constitution, institutions and rights', to: '/study-material/polity/' },
   { title: 'Mathematics', sub: 'Advanced maths for tier-two papers', to: '/study-material/mathematics/' },
   { title: 'Science', sub: 'Physics, chemistry and biology basics', to: '/study-material/science/' },
-  { title: 'Current Affairs', sub: 'Daily notes and monthly compilations', to: '/study-material/current-affairs/' },
-  { title: 'Exam-Specific Notes', sub: 'Notes mapped to individual exam syllabi', to: '/study-material/exam-notes/' },
+  { title: 'Current Affairs', sub: 'Study and revision methods', to: '/current-affairs/' },
+  { title: 'Exam-Specific Guides', sub: 'Preparation mapped to individual exams', to: '/government-exams/' },
 ]
 
 export const CURRENT_AFFAIRS_TILES = [
-  { icon: 'globe', title: "Today's Current Affairs", sub: 'Latest important events, written for exam relevance.', to: '/current-affairs/daily/' },
-  { icon: 'check', title: 'Daily Current Affairs Quiz', sub: 'Ten questions every morning to test your recall.', to: '/current-affairs/quiz/' },
+  { icon: 'globe', title: 'Current Affairs Study Method', sub: 'How to turn daily news into exam-ready notes.', to: '/current-affairs/today/' },
+  { icon: 'check', title: 'Current Affairs Quiz Method', sub: 'A practical retrieval routine for better recall.', to: '/current-affairs/daily-quiz/' },
   { icon: 'book', title: 'Monthly Current Affairs', sub: 'Consolidated monthly revision material.', to: '/current-affairs/monthly/' },
   { icon: 'doc', title: 'Current Affairs PDF', sub: 'Downloadable compilations for offline study.', to: '/current-affairs/pdf/' },
 ]
 
 export const UPDATE_TILES = [
-  { icon: 'bell', title: 'Latest Notifications', sub: 'New recruitment notifications as they release', to: '/exam-updates/notifications/' },
+  { icon: 'bell', title: 'Notification Tracking Guide', sub: 'How to verify recruitment notices at the official source', to: '/exam-updates/latest-notifications/' },
   { icon: 'clock', title: 'Exam Dates', sub: 'Confirmed and expected exam schedules', to: '/exam-updates/exam-dates/' },
   { icon: 'layers', title: 'Vacancies', sub: 'Post-wise vacancy counts and revisions', to: '/exam-updates/vacancies/' },
   { icon: 'doc', title: 'Admit Cards', sub: 'Download windows and direct links', to: '/exam-updates/admit-cards/' },
   { icon: 'check', title: 'Answer Keys', sub: 'Provisional keys and objection windows', to: '/exam-updates/answer-keys/' },
-  { icon: 'chart', title: 'Cutoffs', sub: 'Category-wise cutoffs from past cycles', to: '/exam-updates/cutoffs/' },
+  { icon: 'chart', title: 'Cutoffs', sub: 'How to read category-wise cutoffs from past cycles', to: '/exam-updates/cut-offs/' },
   { icon: 'target', title: 'Results', sub: 'Result announcements and merit lists', to: '/exam-updates/results/' },
 ]
 
 export const COURSES = {
   courses: [
-    { label: 'Live Classes', to: '/courses/live-classes/' },
-    { label: 'Recorded Classes', to: '/courses/recorded-classes/' },
-    { label: 'Foundation Courses', to: '/courses/foundation/' },
-    { label: 'Crash Courses', to: '/courses/crash-courses/' },
+    { label: 'Government exam guides', to: '/government-exams/' },
+    { label: 'Entrance exam guides', to: '/entrance-exams/' },
+    { label: 'Subject lessons', to: '/study-material/' },
   ],
   testSeries: [
-    { label: 'Full-Length Tests', to: '/practice/test-series/full-length/' },
-    { label: 'Sectional Tests', to: '/practice/test-series/sectional/' },
-    { label: 'Topic Tests', to: '/practice/test-series/topic/' },
-    { label: 'Previous-Year Tests', to: '/practice/test-series/previous-year/' },
-    { label: 'Current Affairs Tests', to: '/practice/test-series/current-affairs/' },
+    { label: 'Available free diagnostic tests', to: '/mock-tests/free/' },
+    { label: 'All mock tests', to: '/mock-tests/' },
+    { label: 'Previous-year paper method', to: '/previous-year-papers/' },
   ],
 }
 
@@ -238,26 +215,31 @@ export const COURSES = {
  * CMS-ready placeholders. Replace with verified, consented student records
  * before publishing, or drop the section.
  */
-export const SUCCESS_STORIES = [
-  { id: '', quote: 'Brolly helped me identify my weak areas and prepare with a clear strategy.', name: '[Student name]', meta: '[Exam cleared] · [Year]' },
-  { id: '', quote: '[Replace with a verified, consented testimonial from a real student.]', name: '[Student name]', meta: '[Exam cleared] · [Year]' },
-  { id: '', quote: '[Replace with a verified, consented testimonial from a real student.]', name: '[Student name]', meta: '[Exam cleared] · [Year]' },
-]
+export const SUCCESS_STORIES = []
 
 export const FACULTY = [
-  { av: 'QA', subject: 'Quantitative Aptitude', role: 'Experienced faculty', desc: 'Arithmetic, advanced maths and data interpretation for SSC, banking and railway papers.' },
-  { av: 'RE', subject: 'Reasoning', role: 'Experienced faculty', desc: 'Puzzles, seating arrangement, syllogism and analytical reasoning across exam patterns.' },
-  { av: 'EN', subject: 'English', role: 'Experienced faculty', desc: 'Grammar, vocabulary, comprehension and error spotting for competitive exams.' },
-  { av: 'GS', subject: 'General Studies & Current Affairs', role: 'Experienced faculty', desc: 'Polity, history, geography, science and daily current affairs mapped to exam syllabi.' },
+  { av: 'QA', subject: 'Quantitative Aptitude', role: 'Subject coverage', desc: 'Arithmetic, advanced maths and data interpretation for SSC, banking and railway papers.' },
+  { av: 'RE', subject: 'Reasoning', role: 'Subject coverage', desc: 'Puzzles, seating arrangement, syllogism and analytical reasoning across exam patterns.' },
+  { av: 'EN', subject: 'English', role: 'Subject coverage', desc: 'Grammar, vocabulary, comprehension and error spotting for competitive exams.' },
+  { av: 'GS', subject: 'General Studies & Current Affairs', role: 'Subject coverage', desc: 'Polity, history, geography, science and current-affairs study methods mapped to exam syllabi.' },
 ]
 
 export const ARTICLES = [
+  {
+    to: '/blog/google-ai-search-optimization-guide/',
+    cat: 'SEO & AI Search',
+    title: 'Google AI Search Optimization Guide',
+    excerpt: 'Google’s practical guidance for visibility in AI Overviews and AI Mode—without unsupported AEO or GEO hacks.',
+    date: '9 Sep 2026',
+    isoDate: '2026-09-09',
+  },
   {
     to: '/blog/how-to-start-competitive-exam-preparation/',
     cat: 'Preparation',
     title: 'How to start competitive exam preparation from scratch',
     excerpt: 'A step-by-step approach for first-time aspirants — choosing an exam, building a timetable and picking the right resources.',
     date: '22 Aug 2026',
+    isoDate: '2026-08-22',
   },
   {
     to: '/blog/ssc-cgl-syllabus-exam-pattern/',
@@ -265,6 +247,7 @@ export const ARTICLES = [
     title: 'SSC CGL syllabus and exam pattern explained',
     excerpt: 'Tier-wise syllabus, marking scheme, sectional weightage and what changed in the latest notification.',
     date: '19 Aug 2026',
+    isoDate: '2026-08-19',
   },
   {
     to: '/blog/how-to-use-previous-year-papers/',
@@ -272,6 +255,7 @@ export const ARTICLES = [
     title: 'Using previous-year papers the right way',
     excerpt: 'Most aspirants solve previous papers like mock tests. Here is a more useful way to read question trends.',
     date: '14 Aug 2026',
+    isoDate: '2026-08-14',
   },
 ]
 
@@ -286,11 +270,11 @@ export const FAQS = [
   },
   {
     q: 'Does Brolly provide free mock tests?',
-    a: 'Yes. Free full-length mock tests are available for major exams including SSC CGL, SBI PO, IBPS PO, RRB NTPC, UPSC, NDA, CTET and State PSC examinations. Each free test uses the current exam pattern and gives you your score and the correct answers at the end.',
+    a: 'Yes. Brolly currently provides short, timed diagnostic tests for SSC CGL, SBI PO, IBPS PO, RRB NTPC, UPSC CSE, NDA, CTET and general State PSC preparation. Each available test shows its actual question count and time limit before you start, then gives a score, answer key and explanations.',
   },
   {
     q: 'Can I practice previous-year question papers?',
-    a: 'Yes. Previous-year question papers are available exam-wise with solutions, so you can see how questions are actually framed, which topics repeat and how difficulty has shifted between cycles.',
+    a: 'Brolly provides exam-wise guides for finding and analysing previous-year papers. Download the paper from the conducting body where possible, then use the method here to tag questions, identify repeated topics and preserve unseen papers for timed measurement.',
   },
   {
     q: 'Does Brolly provide study materials?',
@@ -298,7 +282,7 @@ export const FAQS = [
   },
   {
     q: 'Can I prepare for government exams online?',
-    a: 'Yes. Everything needed for online government exam preparation is on the platform: syllabus and exam pattern pages, subject-wise study material, previous-year papers, topic and sectional tests, full-length mock tests, daily current affairs and exam notifications.',
+    a: 'You can use Brolly for exam guides, syllabus and pattern explanations, subject lessons, previous-paper analysis methods and the diagnostic tests currently listed. Always use the conducting body’s current notification for dates, vacancies, eligibility and final pattern details.',
   },
   {
     q: 'Which SSC exams are available on Brolly?',
@@ -318,11 +302,11 @@ export const FAQS = [
   },
   {
     q: 'Are current affairs available for competitive exams?',
-    a: 'Yes. Current affairs are published daily and compiled weekly and monthly, with a daily quiz and downloadable PDFs. Items are written for exam relevance rather than general news value.',
+    a: 'Brolly currently provides a current-affairs study and revision framework, not a verified live news feed. Use it alongside primary government releases and a reliable daily news source, and verify dates, names and figures before memorising them.',
   },
   {
     q: 'How can I start my competitive exam preparation?',
-    a: 'Start by attempting a free full-length mock test for your target exam before studying anything. It shows which sections you are already competitive in and which need real work. From there, use the exam page to understand the syllabus and pattern, study the weakest section first, practise with previous-year papers, and re-test every couple of weeks to check the gap is closing.',
+    a: 'Start with an available timed diagnostic test or an untouched official previous paper. Use the result to identify weak sections, confirm the current syllabus and pattern at the official source, study the weakest high-value area first, and re-test periodically to measure whether the gap is closing.',
   },
 ]
 
@@ -406,8 +390,10 @@ export const FOOTER_COLS = [
       { label: 'About Us', to: '/about/' },
       { label: 'Contact Us', to: '/contact/' },
       { label: 'Careers', to: '/careers/' },
-      { label: 'Success Stories', to: '/success-stories/' },
-      { label: 'Faculty', to: '/faculty/' },
+      { label: 'Student Outcomes Policy', to: '/success-stories/' },
+      { label: 'Editorial Process', to: '/faculty/' },
+      { label: 'Editorial Policy', to: '/editorial-policy/' },
+      { label: 'Corrections Policy', to: '/corrections-policy/' },
       { label: 'Brolly Academy', href: 'https://brollyacademy.com/' },
     ],
   },

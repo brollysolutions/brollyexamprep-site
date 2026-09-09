@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import LinkColumns from '../components/LinkColumns'
+import { ContentSection } from '../components/Blocks'
 import { PageHero, SectionHead, Tile, canonicalFor, useSeo } from '../components/ui'
 import { NAV } from '../data/nav'
 import { FinalCta } from './home/sections'
@@ -34,11 +35,11 @@ export default function EntranceExams() {
         trail={[{ label: 'Entrance Exams' }]}
         actions={
           <>
-            <Link className="btn btn--k" to="/mock-tests/jee-neet/">
-              JEE / NEET Mock Tests
+            <Link className="btn btn--k" to="/entrance-exams/engineering/jee-main/">
+              JEE Main Guide
             </Link>
-            <Link className="btn btn--o" to="/mock-tests/cat/">
-              CAT Mock Tests
+            <Link className="btn btn--o" to="/entrance-exams/mba/cat/">
+              CAT Guide
             </Link>
           </>
         }
@@ -69,6 +70,39 @@ export default function EntranceExams() {
           <LinkColumns groups={SECTION.groups} columns={3} />
         </div>
       </section>
+
+      <ContentSection
+        id="choose-and-plan"
+        eyebrow="Choosing well"
+        heading="Start with the programme, then understand its entrance route"
+        intro="Exams with similar subjects can lead to very different courses, institutions and eligibility rules. A sensible shortlist begins with where you want the result to take you."
+        blocks={[
+          {
+            type: 'steps',
+            items: [
+              { text: 'List the courses and institutions you would actually join.', note: 'Do this before building an exam list; an impressive score has little value if none of its programmes fit your goal.' },
+              { text: 'Check eligibility and admission rules.', note: 'Subject combinations, minimum marks, age conditions, domicile rules and counselling processes can differ even when the entrance paper is shared.' },
+              { text: 'Map overlapping examinations.', note: 'JEE Main and state engineering entrances may share a foundation; CAT, XAT and other management tests overlap but differ in sections and decision rules.' },
+              { text: 'Choose one primary exam.', note: 'Use secondary exams to widen opportunity without allowing several different patterns to fragment the core preparation.' },
+              { text: 'Read recent papers before choosing resources.', note: 'The syllabus shows scope; papers show depth, recurring forms and the speed the test demands.' },
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Counselling is part of the examination process',
+            text: 'For many entrance routes, a score is followed by registration, preference filling, document verification and several allocation rounds. Record those steps and deadlines alongside the test date; missing a counselling action can make a valid score unusable.',
+          },
+          {
+            type: 'links',
+            title: 'Build your preparation',
+            items: [
+              { label: 'Study material by subject', to: '/study-material/' },
+              { label: 'Free mock tests', to: '/mock-tests/free/' },
+              { label: 'Previous year papers', to: '/previous-year-papers/' },
+            ],
+          },
+        ]}
+      />
 
       <FinalCta
         title="Start preparing for your entrance exam"

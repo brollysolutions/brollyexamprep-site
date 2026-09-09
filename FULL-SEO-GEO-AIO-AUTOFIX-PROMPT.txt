@@ -1,0 +1,241 @@
+Act as a senior technical SEO strategist, GEO/AEO/AIO specialist, competitive-intelligence researcher, content architect, UX reviewer, and web engineer. Research, audit, automatically fix, implement, test, and verify the complete organic-search strategy for the website and repository in the current workspace.
+
+WEBSITE CONTEXT
+- Live website: discover from the repository, or use the URL supplied with this prompt.
+- Repository: current workspace.
+- Market: India unless repository evidence says otherwise.
+- Languages: English and Hindi, with regional languages evaluated where commercially relevant.
+- Primary outcomes: qualified organic visits, registrations, test attempts, leads, purchases, and returning users.
+
+PRIMARY OBJECTIVE
+Build a defensible path toward top-three and #1 rankings for realistic, valuable queries in Google Search, AI Overviews, AI Mode, answer engines, and citation-driven AI experiences. Never guarantee rankings. Never invent facts, people, qualifications, users, testimonials, selections, ratings, statistics, contact details, prices, awards, or product capabilities.
+
+THIS IS AN AUTOFIX AND IMPLEMENTATION TASK
+Do not stop after researching, auditing, or recommending changes. Inspect the codebase and automatically implement every safe, high-confidence improvement that is possible in the repository. This authorization includes editing content, metadata, routes, templates, internal links, structured data, sitemap generation, robots directives, accessibility markup, performance configuration, and audit scripts when these changes directly support the objective.
+
+For each finding:
+1. Verify the issue with evidence.
+2. Decide the safest appropriate fix.
+3. Implement the fix in the existing architecture.
+4. Build and test the result.
+5. Verify the rendered production output.
+6. Report the files and URLs changed.
+
+Do not automatically perform destructive operations, delete valuable content, change DNS, deploy production, buy services, submit forms, publish external messages, or modify external accounts without explicit authorization. Where an action needs private business facts or external-account access, implement everything possible locally and document the exact remaining dependency.
+
+OFFICIAL RESEARCH
+Study the latest primary guidance from Google Search Central, Search Console, web.dev, Bing Webmaster, IndexNow, and Schema.org as applicable. Include:
+- Search Essentials
+- SEO Starter Guide
+- Helpful, reliable, people-first content guidance
+- Google generative AI Search optimization guidance
+- Spam policies
+- Structured-data documentation
+- JavaScript SEO guidance
+- Image and video SEO guidance
+- Search Console performance and indexing documentation
+- Core Web Vitals documentation
+
+Reject unsupported tactics such as keyword stuffing, fake backlinks or mentions, doorway pages, pages for every keyword variation, arbitrary word-count padding, fake freshness, unsupported AI schema, artificial content chunking, or claims that llms.txt improves Google rankings.
+
+COMPETITOR RESEARCH
+Identify and study:
+- Major category incumbents
+- Direct product competitors
+- Niche and emerging competitors
+- Sites currently ranking for the priority searches
+
+For each meaningful competitor evaluate:
+- Keyword and intent coverage
+- Ranking landing pages
+- Content depth and formats
+- Information architecture and internal linking
+- Titles, snippets, URLs, headings, and schema
+- Authors, reviewers, sourcing, update practices, and trust signals
+- Product features, tools, tests, analytics, downloads, images, and videos
+- Language and regional coverage
+- Conversion paths
+- Verifiable usage, reviews, results, and proof
+- Backlink-worthy assets and differentiation
+- Strengths to learn from
+- Weaknesses and whitespace the target site can exploit
+
+Do not copy competitor wording or structure mechanically. Use the research to create a more useful and differentiated experience.
+
+KEYWORD AND INTENT RESEARCH
+Build clusters for:
+- Brand queries
+- Category and head terms
+- Product/service queries
+- Informational and problem-solving queries
+- Comparisons
+- How, what, which, when, where, and why questions
+- Long-tail and high-conversion searches
+- Local, state, Hindi, and regional-language searches
+- AI query fan-out and related subquestions
+- Linkable original-research opportunities
+- Existing position 4–20 opportunities when Search Console is available
+
+For each cluster specify the primary keyword, related entities, intent, canonical target URL, existing/new status, funnel stage, priority, content format, internal links, and cannibalization risks. One authoritative page should serve synonymous queries when their intent is the same.
+
+FULL TECHNICAL AND SEARCH AUDIT
+Audit every route and rendered canonical page for:
+- robots.txt and meta robots
+- XML sitemap and accurate lastmod values
+- sitemap/indexability agreement
+- status codes and soft 404s
+- redirects and chains
+- HTTP/HTTPS and www/non-www consistency
+- trailing slashes and URL normalization
+- canonical correctness
+- duplicate and parameter URLs
+- search/account/utility pages
+- orphan pages and broken links
+- crawl traps
+- SSR/prerendering and JavaScript-rendered content
+- one clear H1
+- logical heading hierarchy
+- unique titles and descriptions
+- intent alignment
+- answer-first introductions
+- complete, original main content
+- thin, generic, placeholder, misleading, duplicate, or mass-templated content
+- keyword cannibalization
+- internal links and descriptive anchors
+- authoritative source links
+- images, alt text, dimensions, loading, and captions
+- author/reviewer and update signals
+- mobile usability and accessibility
+- LCP, INP, CLS, bundle size, fonts, caching, compression, and layout shifts
+- semantic HTML, keyboard navigation, labels, focus, and contrast
+
+Do not classify a page as thin merely because it is short. Judge whether it completely satisfies its actual intent.
+
+STRUCTURED DATA
+Validate and fix only truthful schema supported by visible content, including Organization, WebSite, WebPage, Article, BreadcrumbList, FAQPage, Course, Product, Event, VideoObject, ImageObject, and Dataset where genuinely applicable. Check syntax, canonical URLs, stable @id relationships, author, publisher, image, headline, dates, mainEntityOfPage, duplication, and conflicts. Do not add schema solely as an AI-ranking tactic.
+
+TRUST AND EDITORIAL AUDIT
+Find and fix:
+- Placeholder phone numbers, addresses, social links, and forms
+- Unsupported #1, best, largest, full-length, latest, daily, expert, user-count, success, or performance claims
+- Claims the live product does not support
+- Missing or misleading author attribution
+- Missing source and correction policies
+- Fake or generic identity signals
+- Undated time-sensitive facts
+- Contradictions between pages
+
+Never invent missing trust evidence. Remove, qualify, or flag unsupported claims. Create editorial, sourcing, review, and correction-policy content where it can be stated truthfully. Add real people only when verified information is supplied.
+
+GEO/AEO/AIO AUDIT
+Improve important pages so humans and retrieval systems can understand and cite them through:
+- A direct answer near the beginning
+- Clear definitions and entity relationships
+- Descriptive headings
+- Self-contained explanations
+- Comparison tables
+- Ordered procedures
+- Criteria lists
+- Explicit dates, units, jurisdictions, and assumptions
+- Primary-source citations
+- Separation of fact, inference, and recommendation
+- Original examples, calculations, tools, data, or first-hand evidence
+- Stable URLs and accessible semantic HTML
+- Relevant, useful images or video
+
+Do not rewrite all content into repetitive FAQ fragments. Human clarity and satisfaction remain primary.
+
+CONTENT INVENTORY AND AUTOMATIC CONTENT FIXING
+Classify every indexable page as keep, improve, consolidate, redirect, noindex, or create. Do not delete without explicit approval.
+
+Automatically improve priority pages by:
+- Rewriting weak titles and descriptions
+- Strengthening introductions
+- Filling genuine information gaps
+- Adding original decision-support content
+- Adding tables, steps, examples, FAQs, or checklists only when useful
+- Removing filler and repetition
+- Adding authoritative citations
+- Correcting outdated or unsupported claims
+- Improving internal links
+- Fixing schema and canonical metadata
+- Adding visible review/source information when truthful
+- Preserving the established voice, components, and design system
+
+Create new pages only for distinct, evidenced user intent or competitive whitespace. Every new page must have an original purpose, stable URL, unique metadata, clear H1, useful introduction, complete content, citations, contextual internal links, appropriate schema, canonical URL, sitemap handling, accessibility, and an appropriate conversion action.
+
+Build differentiated, backlink-worthy assets when feasible, such as calculators, original datasets, official-notification change trackers, topic-frequency studies, diagnostic tools, downloadable checklists, comparison tools, correction histories, or sourced directories. Do not create decorative assets that do not help users.
+
+INTERNAL LINKING
+Create logical topic clusters:
+- Homepage to priority hubs
+- Hubs to exam/service pillars
+- Pillars to specific resources
+- Resources to relevant lessons, tools, and conversion pages
+- Lessons back to their relevant exam pillars
+- Articles to product pages only where contextually useful
+
+Use concise descriptive anchors and avoid excessive repeated exact-match anchor text.
+
+SEARCH CONSOLE AND ANALYTICS
+If access exists, analyze the last 16 months, last 3 months, and comparable previous periods by queries, pages, countries, devices, search appearance, branded/non-branded traffic, CTR, and average position. Find:
+- Queries and pages in positions 4–20
+- High-impression, low-CTR opportunities
+- Declining pages and queries
+- Cannibalization
+- Wrong-intent impressions
+- Indexing exclusions
+- Mobile weaknesses
+- Conversion performance
+
+Create a query-to-page opportunity table and prioritize using demand, current visibility, business value, difficulty, and conversion potential.
+
+If private data is unavailable, do not pretend public SERPs are equivalent. Complete the public and repository audit and provide exact export requirements.
+
+IMPLEMENTATION STANDARDS
+- Inspect repository instructions and architecture first.
+- Preserve unrelated user changes.
+- Reuse existing components, content models, styles, and scripts.
+- Keep URLs stable unless consolidation is justified.
+- Preserve SSR/prerendered primary content.
+- Avoid broad rewrites that add risk without measurable benefit.
+- Use accurate dates only for substantive changes.
+- Cite changing or high-stakes facts to authoritative sources.
+- Do not publish generated filler merely to increase word counts.
+- Share concise progress updates during long-running work.
+
+VERIFICATION
+After implementation:
+- Run the full production build.
+- Run all tests.
+- Prerender all routes.
+- Regenerate the sitemap.
+- Run SEO audit scripts.
+- Check broken internal links.
+- Confirm titles, descriptions, canonicals, H1s, robots, schema, sitemap, and rendered content.
+- Confirm no placeholder or unfinished content remains.
+- Confirm no unsupported claims were introduced.
+- Verify external source links.
+- Verify important pages are reachable through internal links.
+- Check representative desktop and mobile layouts where browser tooling exists.
+- Report warnings separately from failures.
+- Never claim a check passed unless it was actually performed.
+
+DELIVERABLES
+Produce and save reusable repository artifacts containing:
+1. Executive summary
+2. Full technical SEO audit
+3. GEO/AEO/AIO audit
+4. Competitor matrix and differentiation strategy
+5. Keyword and intent map
+6. Complete URL/content inventory
+7. Implemented changes with affected files and URLs
+8. Remaining dependencies and risks
+9. 30-day, 90-day, and six-month roadmap
+10. Measurement dashboard specification
+11. Source list with direct links
+
+FINAL COMPLETION STANDARD
+The task is not complete when recommendations are merely listed. It is complete only when research and audits are evidence-backed, safe high-confidence fixes are implemented, priority content is materially improved, technical signals are consistent, production builds and checks pass, and all work requiring external evidence or permission is explicitly documented.
+
+Begin now by inspecting the current workspace and live site. Research before making claims, implement fixes in logical batches, verify the production result, and finish with a concise summary linking to the created audit and strategy files.

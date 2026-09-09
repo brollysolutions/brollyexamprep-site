@@ -11,6 +11,8 @@
  */
 import { LINK_INDEX } from '../data/nav'
 import { ARTICLES, EXAM_INDEX, PREP_SUBLINKS } from '../data/site'
+import { WRITTEN_EXAM_PATHS } from '../data/exams'
+import { HUB_PATHS } from '../data/hubs'
 import { TESTS } from '../data/mock-tests'
 import { STATE_PAGES } from '../data/states'
 import { SUBJECTS, TOPICS } from '../data/study'
@@ -25,7 +27,7 @@ import { SUBJECTS, TOPICS } from '../data/study'
  * They are still prerendered (see prerenderRoutes), because a visitor asking
  * for /login/ should be served the login page rather than the SPA shell.
  */
-export const EXCLUDED = new Set(['/search/', '/login/', '/register/'])
+export const EXCLUDED = new Set(['/search/', '/login/', '/register/', '/success-stories/', '/careers/'])
 
 /** Pages that exist in the footer or the route table but not in the nav tree. */
 const STANDALONE = [
@@ -35,6 +37,8 @@ const STANDALONE = [
   '/careers/',
   '/success-stories/',
   '/faculty/',
+  '/editorial-policy/',
+  '/corrections-policy/',
   '/blog/',
   '/courses/',
   '/privacy-policy/',
@@ -76,6 +80,7 @@ function normalise(path) {
 /** Every indexable path, deduplicated and sorted. */
 export function allRoutes() {
   const paths = new Set()
+  const lastModified = new Map()
   const add = (p) => {
     const path = normalise(p)
     if (path && !EXCLUDED.has(path)) paths.add(path)
@@ -85,6 +90,7 @@ export function allRoutes() {
 
   // Everything reachable from the mega menu and the directory pages.
   for (const to of LINK_INDEX.keys()) add(to)
+  HUB_PATHS.forEach(add)
 
   // Study material: the library index, each subject, each written topic.
   add('/study-material/')
@@ -96,13 +102,25 @@ export function allRoutes() {
     add(base)
     PREP_SUBLINKS.forEach(([, slug]) => add(`${base}${slug}/`))
   })
+  // The written exam registry is authoritative. Some useful exams are linked
+  // from contextual copy rather than EXAM_INDEX, but their six complete
+  // resource pages still need to be prerendered and discoverable.
+  WRITTEN_EXAM_PATHS.forEach((base) => {
+    add(base)
+    PREP_SUBLINKS.forEach(([, slug]) => add(`${base}${slug}/`))
+  })
 
   // State hubs, mock tests and articles.
   Object.keys(STATE_PAGES).forEach((slug) => add(`/government-exams/state/${slug}/`))
   TESTS.forEach((test) => add(`/mock-tests/${test.slug}/`))
-  ARTICLES.forEach((article) => add(article.to))
+  ARTICLES.forEach((article) => {
+    add(article.to)
+    if (article.isoDate) lastModified.set(normalise(article.to), article.isoDate)
+  })
 
-  return [...paths].sort().map((path) => ({ path, ...classify(path) }))
+  return [...paths]
+    .sort()
+    .map((path) => ({ path, ...classify(path), ...(lastModified.has(path) ? { lastmod: lastModified.get(path) } : {}) }))
 }
 
 /**

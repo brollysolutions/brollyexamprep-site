@@ -881,7 +881,7 @@ const KARNATAKA = {
 
   sources: [
     { label: 'Karnataka Public Service Commission (KPSC)', href: 'https://kpsc.kar.nic.in/' },
-    { label: 'Karnataka Examinations Authority (KEA)', href: 'https://kea.kar.nic.in/' },
+      { label: 'Karnataka Examinations Authority (KEA)', href: 'https://cetonline.karnataka.gov.in/kea/' },
     { label: 'Karnataka State Police', href: 'https://ksp.karnataka.gov.in/' },
   ],
 }
@@ -1196,6 +1196,117 @@ const UTTAR_PRADESH = {
   ],
 }
 
+const BIHAR = {
+  slug: 'bihar',
+  name: 'Bihar',
+  commission: 'BPSC',
+  bodies: 'BPSC, BSSC and CSBC',
+  languages: 'Hindi and English',
+  regionalLanguage: 'Hindi',
+  groups: { entry: 'BSSC Inter Level or Graduate Level', senior: 'BPSC Combined Competitive Examination', junior: 'BSSC combined examinations' },
+  title: 'Bihar Government Exams',
+  h1: 'Bihar Government Exams 2026',
+  seoTitle: 'Bihar Government Exams 2026: BPSC, BSSC & Police Guide',
+  metaDescription: 'Compare Bihar government exams conducted by BPSC, BSSC and CSBC, including selection stages, qualifications, preparation resources and official sources.',
+  lead: 'Bihar recruitment does not run through one examination. BPSC selects officers and conducts specialist recruitment, BSSC handles many non-gazetted posts, and CSBC conducts constable recruitment. Choose the recruiting body and post first; the correct syllabus, pattern and physical requirements follow from that choice.',
+  intro: {
+    eyebrow: 'Answer first',
+    title: 'Which Bihar recruitment body should you follow?',
+    answer: 'Follow BPSC for the Combined Competitive Examination and many officer or specialist posts, BSSC for inter-level and graduate-level non-gazetted recruitment, and CSBC for constable recruitment. A department or another board may conduct some specialist selections, so the advertisement named for the post is always controlling.',
+    lead: 'The overlap is useful—general studies, Bihar-specific knowledge, current affairs and aptitude recur—but eligibility and selection stages are advertisement-specific. Do not transfer an age limit, marking rule or physical standard from one Bihar recruitment to another.',
+  },
+  jobs: {
+    eyebrow: 'Recruitment routes',
+    title: 'Major Bihar Government Exam Categories',
+    lead: 'Start with the post level and recruiting body, then confirm the exact advertisement on its official website.',
+    linkTo: '/government-exams/state/',
+    linkLabel: 'All state exams',
+    items: [
+      { name: 'BPSC Combined Competitive Examination', desc: 'Officer recruitment for Bihar administrative, police, revenue and allied services.', stages: 'Prelims · Descriptive Mains · Interview', to: '/government-exams/state/bihar/bpsc-combined-competitive/' },
+      { name: 'BPSC Specialist Recruitment', desc: 'Post-specific recruitment including teaching, engineering and other professional services.', stages: 'Varies by advertisement', to: '/government-exams/state/bihar/bpsc-specialist/' },
+      { name: 'BSSC Graduate Level', desc: 'Combined recruitment for eligible graduate-level non-gazetted posts.', stages: 'Prelims · Mains · Verification', to: '/government-exams/state/bihar/bssc-graduate-level/' },
+      { name: 'BSSC Inter Level', desc: 'Combined recruitment for posts whose prescribed qualification is intermediate level.', stages: 'Prelims · Mains/skill stage as notified', to: '/government-exams/state/bihar/bssc-inter-level/' },
+      { name: 'Bihar Police Constable', desc: 'Constable recruitment administered by the Central Selection Board of Constable.', stages: 'Written · Physical stages · Verification', to: '/government-exams/state/bihar/police-constable/' },
+      { name: 'Bihar Police Sub-Inspector', desc: 'Sub-Inspector recruitment with written, physical and verification stages under the notified authority.', stages: 'Prelims · Mains · Physical stages', to: '/government-exams/state/bihar/police-si/' },
+      { name: 'Teaching Recruitment', desc: 'Teacher and education-department recruitment under the authority named in each notification.', stages: 'Written and verification as notified', to: '/government-exams/state/bihar/teaching/' },
+      { name: 'Technical and Departmental Posts', desc: 'Engineering, health, agriculture and other post-specific selections.', stages: 'Qualification/subject paper varies', to: '/government-exams/state/bihar/technical-posts/' },
+    ],
+  },
+  compare: {
+    eyebrow: 'Compare routes',
+    title: 'BPSC, BSSC and Bihar Police Compared',
+    lead: 'These are recruitment families, not interchangeable exam names. The current advertisement decides the final rules.',
+    caption: 'Indicative route comparison. Always verify qualification, age, reservation, marks and stages in the advertisement for the post.',
+    columns: ['Route', 'Typical entry qualification', 'Usual selection shape', 'Best fit'],
+    rows: [
+      ['BPSC Combined Competitive', 'Bachelor’s degree, subject to notification', 'Objective prelims, descriptive mains, interview', 'Candidates targeting state administrative and allied officer services'],
+      ['BPSC specialist posts', 'Post-specific degree or professional qualification', 'Written examination and/or interview', 'Candidates with the notified technical or professional qualification'],
+      ['BSSC Graduate Level', 'Bachelor’s degree for notified posts', 'Combined written stages and document verification', 'Graduates targeting non-gazetted state posts'],
+      ['BSSC Inter Level', 'Intermediate for notified posts', 'Combined written stages; skill test where required', 'Class 12-qualified candidates targeting clerical and similar posts'],
+      ['Police Constable', 'As specified by CSBC advertisement', 'Written examination followed by physical stages', 'Candidates prepared for both written and physical selection'],
+      ['Police Sub-Inspector', 'As specified in the recruitment notice', 'Written stages followed by physical tests', 'Graduates targeting supervisory police service'],
+    ],
+  },
+  choose: {
+    title: 'Choose before you collect material',
+    items: [
+      { name: 'Check the qualification date.', desc: ' A degree or certificate generally has to be held by the cut-off stated in the advertisement, not merely by the examination date.' },
+      { name: 'Separate screening from merit.', desc: ' Identify which stages only qualify candidates and which marks contribute to the final selection.' },
+      { name: 'Check Hindi and Bihar-specific demands.', desc: ' Build state history, geography, economy and governance alongside national general studies where the syllabus requires them.' },
+      { name: 'Begin physical preparation early.', desc: ' Police recruitment cannot be prepared for through written practice alone.' },
+    ],
+  },
+  qualifications: {
+    eyebrow: 'By qualification',
+    title: 'Where your qualification usually leads',
+    lead: 'This is an orientation map, not an eligibility declaration; the post advertisement remains final.',
+    items: [
+      { icon: 'book', name: 'Class 10', desc: 'Some constable, support and department-specific recruitments when notified.' },
+      { icon: 'doc', name: 'Intermediate', desc: 'BSSC Inter Level and other posts that expressly prescribe class 12.' },
+      { icon: 'user', name: 'Graduate', desc: 'BPSC combined recruitment, BSSC Graduate Level and other degree-level posts.' },
+      { icon: 'layers', name: 'Technical qualification', desc: 'Engineering, teaching, health and specialist recruitment matching the notified discipline.' },
+    ],
+  },
+  prepare: {
+    eyebrow: 'Preparation sequence',
+    title: 'A sensible Bihar exam preparation order',
+    lead: 'Build the common core once, then add the demands unique to your recruitment.',
+    steps: [
+      { n: '01', title: 'Lock the target', desc: 'Download the current official advertisement and record every stage, paper, cut-off rule and eligibility condition.' },
+      { n: '02', title: 'Measure the baseline', desc: 'Attempt a previous paper or realistic diagnostic test before deciding which subjects deserve the most time.' },
+      { n: '03', title: 'Build the shared core', desc: 'Cover national and Bihar general studies, current affairs, language and aptitude at the depth shown by past papers.' },
+      { n: '04', title: 'Add the differentiator', desc: 'Practise descriptive answers for BPSC mains, skill requirements for relevant BSSC posts, or physical events for police recruitment.' },
+    ],
+    note: 'BPSC publishes an examination calendar, but dates shown there may be tentative. Use it for planning and confirm every change through the notice board for the relevant advertisement.',
+  },
+  mocks: {
+    eyebrow: 'Practice by stage',
+    title: 'Bihar Government Exam Mock Tests',
+    lead: 'Use a test that matches the subjects, timing and marking rules in your advertisement; a generic state exam test is only a diagnostic.',
+    linkTo: '/mock-tests/free/',
+    linkLabel: 'All free tests',
+    items: [
+      { cat: 'BPSC', title: 'BPSC Prelims General Studies Mock', to: '/mock-tests/state-psc/' },
+      { cat: 'BPSC', title: 'Bihar History and Culture Practice', to: '/study-material/history/' },
+      { cat: 'BPSC', title: 'Polity and Governance Practice', to: '/study-material/polity/' },
+      { cat: 'BSSC', title: 'Graduate Level Aptitude Practice', to: '/practice/topic-wise-questions/' },
+      { cat: 'BSSC', title: 'Inter Level General Studies Practice', to: '/mock-tests/state-psc/' },
+      { cat: 'Police', title: 'Constable Written Practice', to: '/mock-tests/state-psc/' },
+    ],
+  },
+  related: { eyebrow: 'Continue', title: 'Bihar Exam Preparation Resources', lead: 'Use official notices for changing rules and Brolly’s subject resources for durable concepts and practice.' },
+  sources: [
+    { label: 'Bihar Public Service Commission (BPSC)', href: 'https://bpsc.bihar.gov.in/' },
+    { label: 'Bihar Staff Selection Commission (BSSC)', href: 'https://bssc.bihar.gov.in/' },
+    { label: 'Central Selection Board of Constable (CSBC)', href: 'https://csbc.bihar.gov.in/' },
+  ],
+  faqs: [
+    { q: 'Which body conducts Bihar government exams?', a: 'There is no single body for every post. BPSC conducts the Combined Competitive Examination and many officer or specialist recruitments; BSSC conducts combined recruitment for many non-gazetted posts; CSBC administers constable recruitment. Other authorities may handle particular teaching, police, technical or departmental posts.' },
+    { q: 'Is one syllabus enough for BPSC and BSSC?', a: 'No. They share parts of general studies, Bihar-specific awareness, current affairs and aptitude, but their level, paper structure and later stages differ. Prepare the overlap once, then follow the syllabus attached to the exact advertisement.' },
+    { q: 'Where should I verify Bihar exam dates and eligibility?', a: 'Use the official website and notice board of the recruiting body named in the advertisement. Calendars and summaries are planning aids; corrections, postponements and eligibility clarifications published against the advertisement control the recruitment.' },
+  ],
+}
+
 export const STATE_PAGES = {
   telangana: TELANGANA,
   'andhra-pradesh': ANDHRA_PRADESH,
@@ -1203,6 +1314,7 @@ export const STATE_PAGES = {
   karnataka: KARNATAKA,
   maharashtra: MAHARASHTRA,
   'uttar-pradesh': UTTAR_PRADESH,
+  bihar: BIHAR,
 }
 
 /**

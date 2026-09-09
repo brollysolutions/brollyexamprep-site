@@ -363,11 +363,11 @@ export function CurrentAffairsSection({ background = false }) {
     <section className={`s${background ? ' s--bg' : ''}`} id="current-affairs">
       <div className="wrap">
         <SectionBar
-          eyebrow="Updated daily"
-          title="Stay Updated with Daily Current Affairs"
-          lead="Written for exam relevance, with each item tagged to the exams that actually ask about it."
-          linkTo="/current-affairs/daily/"
-          linkLabel="Read Today's Current Affairs"
+          eyebrow="Current-affairs method"
+          title="Turn Daily News into Exam-Ready Notes"
+          lead="Use the topic guides and revision method here alongside a verified daily news source."
+          linkTo="/current-affairs/"
+          linkLabel="Study Current Affairs"
         />
         <div className="g4">
           {CURRENT_AFFAIRS_TILES.map((tile) => (
@@ -388,21 +388,20 @@ export function Analytics() {
           <p className="eyebrow">Performance analysis</p>
           <h2 className="h">Know Where You Stand. Know What to Improve.</h2>
           <p className="lead">
-            A total score tells you almost nothing on its own. Every attempt breaks down by section,
-            topic, accuracy and time spent — so you can see which questions cost you marks and which
-            cost you minutes. They are rarely the same questions.
+            A total score tells you little on its own. Each available test shows the score, attempted
+            and skipped questions, section performance, and answer explanations so you can classify
+            what went wrong before the next attempt.
           </p>
           <div className="bxh__cta">
             <Link className="btn btn--k" to="/mock-tests/free/">
               Take Free Mock Test
             </Link>
-            <Link className="btn btn--o" to="/practice/sample-analysis/">
-              See Sample Analysis
+            <Link className="btn btn--o" to="/mock-tests/">
+              See Available Tests
             </Link>
           </div>
           <p className="acct">
-            <Link to="/register/">Create Free Account</Link> to save every attempt and track your
-            progress over time.
+            Current attempts run in your browser. Save or screenshot the result before leaving the page.
           </p>
         </div>
 
@@ -466,8 +465,8 @@ export function Analytics() {
           </div>
           <div className="db__rec">
             <p>Recommended action</p>
-            <Link className="btn btn--y btn--sm" to="/practice/topic-tests/quantitative-aptitude/">
-              Take Quantitative Aptitude Topic Test
+            <Link className="btn btn--y btn--sm" to="/study-material/quantitative-aptitude/">
+              Study Quantitative Aptitude
             </Link>
           </div>
         </div>
@@ -482,16 +481,16 @@ export function CoursesSection() {
     <section className="s" id="courses">
       <div className="wrap">
         <SectionHead
-          eyebrow="Structured programmes"
-          title="Complete Your Preparation with Courses & Test Series"
+          eyebrow="Preparation formats"
+          title="Choose Resources That Match the Actual Gap"
         />
         <div className="two">
           <div className="col">
             <span className="col__i">
               <Icon name="play" size={20} />
             </span>
-            <h3>Courses</h3>
-            <p>Concept-first teaching for aspirants who want structure rather than a pile of PDFs.</p>
+            <h3>Concept and exam guides</h3>
+            <p>Start with the free exam guides and subject lessons that are available on this site.</p>
             <ul>
               {COURSES.courses.map((c) => (
                 <li key={c.to}>
@@ -500,17 +499,17 @@ export function CoursesSection() {
               ))}
             </ul>
             <Link className="btn btn--o" to="/courses/">
-              Explore Courses
+              Compare Preparation Formats
             </Link>
           </div>
           <div className="col">
             <span className="col__i">
               <Icon name="layers" />
             </span>
-            <h3>Test Series</h3>
+            <h3>Timed practice</h3>
             <p>
-              Practice built to the current exam pattern, with performance analysis after every
-              attempt.
+              Use the available diagnostics for measurement, and check the displayed question count
+              and time before starting.
             </p>
             <ul>
               {COURSES.testSeries.map((c) => (
@@ -519,8 +518,8 @@ export function CoursesSection() {
                 </li>
               ))}
             </ul>
-            <Link className="btn btn--o" to="/practice/test-series/">
-              Explore Test Series
+            <Link className="btn btn--o" to="/mock-tests/">
+              Browse Available Tests
             </Link>
           </div>
         </div>
@@ -533,6 +532,8 @@ export function CoursesSection() {
    CMS-ready. Content is template text, NOT a real selection — replace with
    verified, consented student records before publishing, or remove it. */
 export function SuccessStoriesSection({ background = true }) {
+  if (!SUCCESS_STORIES.length) return null
+
   return (
     <section className={`s${background ? ' s--bg' : ''}`} id="success-stories">
       <div className="wrap">
@@ -570,11 +571,11 @@ export function FacultySection({ background = false }) {
     <section className={`s${background ? ' s--bg' : ''}`} id="faculty">
       <div className="wrap">
         <SectionBar
-          eyebrow="Who teaches you"
-          title="Learn from Experienced Educators"
-          lead="Every question and solution on Brolly is written by subject faculty and published under the author's name."
+          eyebrow="Editorial coverage"
+          title="How Subject Content Is Organised"
+          lead="Questions, solutions and study guides are prepared and reviewed by the Brolly Exam Prep editorial team for syllabus fit, accuracy and clear explanations."
           linkTo="/faculty/"
-          linkLabel="Meet Our Faculty"
+          linkLabel="Review Our Editorial Process"
         />
         <div className="g4" data-cms="faculty">
           {FACULTY.map((member) => (

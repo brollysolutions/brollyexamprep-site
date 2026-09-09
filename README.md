@@ -91,12 +91,14 @@ recolouring the brand in `global.css` recolours the logo too.
 
 ## Deploying
 
-It is a client-routed SPA, so the host must serve `index.html` for unknown
-paths. `public/_redirects` covers Netlify. Equivalents:
+The production build prerenders every supported route, so the host should serve
+those files directly and return `404.html` for unknown paths. `public/_redirects`
+covers Netlify and `nginx.conf` covers the container. Do not rewrite unknown
+paths to the homepage: that produces soft 404s.
 
-- **Vercel** — `{ "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }] }`
-- **Apache** — `FallbackResource /index.html`
-- **nginx** — `try_files $uri $uri/ /index.html;`
+- **Vercel** — use the platform's static 404 handling with `dist/404.html`
+- **Apache** — `ErrorDocument 404 /404.html`
+- **nginx** — `try_files $uri $uri/ =404; error_page 404 /404.html;`
 
-Without that rule, deep links such as `/government-exams/ssc/ssc-cgl/` will
-404 on refresh.
+Run the full build before deployment so deep links such as
+`/government-exams/ssc/ssc-cgl/` exist as prerendered files.

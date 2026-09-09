@@ -10,6 +10,7 @@ import {
   useTitle,
 } from '../components/ui'
 import { STATE_PAGES, stateFaqs } from '../data/states'
+import { TESTS } from '../data/mock-tests'
 import { FaqSection, FinalCta } from './home/sections'
 import Directory from './Directory'
 
@@ -33,6 +34,14 @@ function StatePage({ state }) {
   const { jobs, compare, mocks, intro, qualifications, choose, prepare, related } = state
   const faqs = stateFaqs(state)
   const heading = state.h1 || state.title
+  const liveTestSlugs = new Set(TESTS.map((test) => test.slug))
+  const availableMocks = mocks.items.filter((mock) => {
+    const slug = mock.to.match(/^\/mock-tests\/([^/]+)\/$/)?.[1]
+    return slug && liveTestSlugs.has(slug)
+  })
+  const displayedMocks = availableMocks.length
+    ? availableMocks
+    : [{ cat: 'State exams', title: 'State PSC General Studies Diagnostic', to: '/mock-tests/state-psc/' }]
 
   useTitle(state.seoTitle || state.title, { exact: Boolean(state.seoTitle) })
   useMeta({ description: state.metaDescription, canonical: canonicalUrl(state) })
@@ -86,14 +95,12 @@ function StatePage({ state }) {
           />
           <div className="cats">
             {jobs.items.map((job) => (
-              <Link className="cat" key={job.to} to={job.to}>
+              <article className="cat" key={job.to}>
                 <h3>{job.name}</h3>
                 <p>{job.desc}</p>
                 <span className="cat__spec">{job.stages}</span>
-                <span className="cat__go">
-                  View exam <Arrow />
-                </span>
-              </Link>
+                <span className="cat__go">Overview on this page</span>
+              </article>
             ))}
           </div>
         </div>
@@ -209,12 +216,12 @@ function StatePage({ state }) {
             linkLabel={mocks.linkLabel}
           />
           <div className="mocks">
-            {mocks.items.map((mock) => (
+            {displayedMocks.map((mock) => (
               <Link className="mk" key={mock.to} to={mock.to}>
                 <span className="pill pill--free mk__free">Free</span>
                 <span className="mk__cat">{mock.cat}</span>
                 <h3>{mock.title}</h3>
-                <p className="mk__spec">Full length · {state.languages}</p>
+                <p className="mk__spec">Short diagnostic · English</p>
                 <span className="mk__go">
                   Take Free Test <Arrow />
                 </span>
@@ -234,22 +241,22 @@ function StatePage({ state }) {
           />
           <div className="g4">
             <Tile
-              to="/previous-year-papers/"
+              to="/government-exams/state/previous-year-papers/"
               icon="doc"
               title="Previous-year papers"
               sub={`Past ${state.commission} papers with solutions`}
             />
             <Tile
-              to="/study-material/"
+              to="/government-exams/state/study-material/"
               icon="book"
               title="Study material"
               sub="Subject-wise concepts and notes"
             />
             <Tile
-              to="/current-affairs/"
-              icon="globe"
-              title="Current affairs"
-              sub="Daily, weekly and monthly"
+              to="/government-exams/state/mock-tests/"
+              icon="check"
+              title="State mock-test method"
+              sub="How to measure state-specific preparation"
             />
             <Tile
               to="/exam-updates/"

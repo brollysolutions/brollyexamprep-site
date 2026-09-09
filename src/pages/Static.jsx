@@ -2,10 +2,10 @@ import { Link, useLocation } from 'react-router-dom'
 import Logo from '../components/Logo'
 import { ContentSection } from '../components/Blocks'
 import { PageHero, SectionHead, canonicalFor, useSeo } from '../components/ui'
-import { FACULTY, FEATURES, SUCCESS_STORIES } from '../data/site'
+import { FACULTY, FEATURES } from '../data/site'
 import LEGAL from '../data/legal'
 import Icon from '../components/Icon'
-import { FacultySection, FinalCta, SuccessStoriesSection } from './home/sections'
+import { FacultySection, FinalCta } from './home/sections'
 
 export function About() {
   useSeo({
@@ -19,7 +19,7 @@ export function About() {
       <PageHero
         eyebrow="Who we are"
         title="About Brolly Exam Prep"
-        lead="A Pan-India competitive exam preparation platform — mock tests, previous-year papers, study material and exam updates for SSC, Banking, Railways, UPSC, Defence, Teaching, State PSC and Police examinations."
+        lead="A Pan-India competitive exam preparation platform with diagnostic tests, previous-paper methods, study material and official-source guides for SSC, Banking, Railways, UPSC, Defence, Teaching, State PSC and Police examinations."
         trail={[{ label: 'About' }]}
       />
 
@@ -36,9 +36,9 @@ export function About() {
             syllabus, and a specific stage of preparation.
           </p>
           <p>
-            That structure is what makes the analysis useful. When a mock test breaks down by
-            section, topic, accuracy and time, each weak topic already has a lesson and a topic
-            test waiting behind it. The report is not a verdict — it is the next study plan.
+            That structure makes an attempt useful beyond its total score. The available diagnostics
+            show section performance, attempted and skipped questions, and explanations; use those
+            signals to choose the next subject lesson and practice step.
           </p>
           <p>
             Brolly Exam Prep is part of{' '}
@@ -99,54 +99,33 @@ export function Contact() {
               <a href="mailto:support@brollyexamprep.com">support@brollyexamprep.com</a>
             </p>
             <p>
-              <strong>Phone</strong>
-              <br />
-              <a href="tel:+91XXXXXXXXXX">+91 XXXXX XXXXX</a>
-            </p>
-            <p>
               <strong>Address</strong>
               <br />
               Hyderabad, Telangana, India
             </p>
             <p>
-              For content corrections, quote the page URL — it is the fastest way for the subject
-              faculty to find and fix the item.
+              For content corrections, quote the page URL — it is the fastest way for the editorial
+              team to find and verify the item.
             </p>
           </div>
 
           <div className="auth__card">
-            <h2>Send a message</h2>
-            <form
-              onSubmit={(e) => {
-                e.preventDefault()
-              }}
+            <h2>Email the team</h2>
+            <p>
+              Include the page URL, your exam, and a clear description of the question or problem.
+              For technical issues, add your device and browser. Do not send passwords, payment
+              details, government identification numbers, or other sensitive information.
+            </p>
+            <a
+              className="btn btn--y"
+              href="mailto:support@brollyexamprep.com?subject=Brolly%20Exam%20Prep%20support"
+              style={{ width: '100%' }}
             >
-              <label className="field">
-                <span>Your name</span>
-                <input type="text" required />
-              </label>
-              <label className="field">
-                <span>Email</span>
-                <input type="email" required />
-              </label>
-              <label className="field">
-                <span>Message</span>
-                <textarea rows="5" required />
-              </label>
-              <button className="btn btn--y" type="submit" style={{ width: '100%' }}>
-                Send Message
-              </button>
-              {/*
-                This form is not yet connected to a backend. Until it is, the
-                note below tells the visitor how to actually reach us rather
-                than letting them submit into nothing.
-              */}
-              <p className="auth__note">
-                If you do not receive an acknowledgement, email{' '}
-                <a href="mailto:support@brollyexamprep.com">support@brollyexamprep.com</a> directly
-                — it reaches the same inbox.
-              </p>
-            </form>
+              Email support@brollyexamprep.com
+            </a>
+            <p className="auth__note">
+              This opens your email application; the website does not silently store a message.
+            </p>
           </div>
         </div>
       </section>
@@ -162,7 +141,7 @@ export function Contact() {
             items: [
               [
                 'A mistake on a page',
-                'The most useful message you can send us. Quote the page URL and describe what is wrong — a solution you believe is incorrect, a pattern detail that has changed, a broken link. Content corrections go straight to the subject faculty responsible for that material.',
+                'The most useful message you can send us. Quote the page URL and describe what is wrong — a solution you believe is incorrect, a pattern detail that has changed, or a broken link. Content corrections go to the editorial team for verification.',
               ],
               [
                 'Something not working',
@@ -212,28 +191,26 @@ export function Contact() {
 
 export function SuccessStories() {
   useSeo({
-    title: 'Success Stories | Brolly Exam Prep',
+    title: 'Student Outcomes Policy | Brolly Exam Prep',
     description:
-      'Selection stories from Brolly Exam Prep aspirants across SSC, banking, railway and state examinations.',
+      'How Brolly Exam Prep verifies student testimonials and reports exam outcomes without invented or unsupported claims.',
     canonical: canonicalFor('/success-stories/'),
+    robots: 'noindex, follow',
   })
   return (
     <>
       <PageHero
-        eyebrow="From our aspirants"
-        title="Success Stories"
-        lead="Aspirants who prepared with Brolly, in their own words."
+        eyebrow="Evidence policy"
+        title="Student Outcomes and Testimonials"
+        lead="No student selection is published until the candidate, result and permission to publish have been verified."
         trail={[{ label: 'Success Stories' }]}
       />
-      <SuccessStoriesSection background={false} />
-
       <section className="s s--bg">
         <div className="wrap wrap--narrow prose">
           <p>
-            <strong>Editorial note.</strong> The {SUCCESS_STORIES.length} entries above are template
-            records rather than real selections. We publish testimonials only where the candidate
-            has been verified and has consented, and we will not fill the space with invented ones
-            in the meantime. What follows instead is what we can say honestly.
+            <strong>Current status.</strong> There are no verified student testimonials published on
+            this website. This page is excluded from search results until evidence-backed records
+            are available; it remains public so visitors can see the publication standard.
           </p>
         </div>
       </section>
@@ -270,17 +247,17 @@ export function SuccessStories() {
 
 export function Faculty() {
   useSeo({
-    title: 'Our Faculty | Brolly Exam Prep',
+    title: 'Editorial Team and Review Process | Brolly Exam Prep',
     description:
-      'The subject teachers behind Brolly Exam Prep, who write the study material, question banks and mock tests.',
+      'How Brolly Exam Prep organises subject coverage and the verification required before an individual author or reviewer profile is published.',
     canonical: canonicalFor('/faculty/'),
   })
   return (
     <>
       <PageHero
-        eyebrow="Who teaches you"
-        title="Our Faculty"
-        lead="Every question and solution on Brolly is written by subject faculty and published under the author's name."
+        eyebrow="Who and how"
+        title="Editorial Team and Review Process"
+        lead="The site currently identifies its publishing team at organisation level. Named author and reviewer profiles will appear only when identity and qualifications are verified."
         trail={[{ label: 'Faculty' }]}
       />
       <FacultySection />
@@ -305,16 +282,16 @@ export function Faculty() {
       <ContentSection
         id="how-material-is-made"
         eyebrow="Editorial process"
-        heading="How the material on this site is produced"
-        intro="Every study topic, question and solution goes through the same sequence before it is published."
+        heading="The publication standard for material on this site"
+        intro="These are the checks the editorial workflow is required to record; a visible byline or review date is added only when the underlying record exists."
         blocks={[
           {
             type: 'steps',
             items: [
               { text: 'The syllabus is checked against the current notification.', note: 'Not against last year’s guide. Patterns, marks and negative marking change, and material written to an old structure teaches the wrong exam.' },
               { text: 'Past papers are tagged to find the weighting.', note: 'A syllabus lists topics with equal visual weight; past papers show which ones actually carry marks. That distribution decides how much space a topic gets.' },
-              { text: 'Subject faculty write the topic.', note: 'Concepts, worked examples and practice questions with explanations, written to be worked through rather than skimmed.' },
-              { text: 'A second reader checks the solutions.', note: 'Every worked example and every practice explanation, because a wrong solution teaches a wrong method to everyone who reads it.' },
+              { text: 'The subject explanation is drafted.', note: 'Concepts, worked examples and practice questions should be written to be worked through rather than skimmed.' },
+              { text: 'A separate solution check is recorded.', note: 'Do not claim a named reviewer or completed review unless that check and reviewer identity are documented.' },
               { text: 'Claims about examinations are qualified where they are volatile.', note: 'Vacancy counts, cutoffs and dates change. Where a figure would age badly, the material says to check the notification instead of stating one.' },
               { text: 'Corrections are made when reported.', note: 'If you find an error, write to us with the page URL. It is the fastest route to a fix and we would rather know.' },
             ],
@@ -329,17 +306,18 @@ export function Faculty() {
 
 export function Careers() {
   useSeo({
-    title: 'Careers | Brolly Exam Prep',
+    title: 'Careers and Contributor Enquiries | Brolly Exam Prep',
     description:
-      'Open roles at Brolly Exam Prep for teachers, content writers, question setters and engineers.',
+      'How to send a contributor or careers enquiry to Brolly Exam Prep. No specific vacancy is currently advertised on this page.',
     canonical: canonicalFor('/careers/'),
+    robots: 'noindex, follow',
   })
   return (
     <>
       <PageHero
         eyebrow="Work with us"
         title="Careers at Brolly Exam Prep"
-        lead="We hire subject faculty, content editors and engineers who care about getting the details of an exam right."
+        lead="No specific vacancy is currently advertised here. This page explains what to include if you want to send a contributor or careers enquiry."
         trail={[{ label: 'Careers' }]}
       />
       <ContentSection
@@ -389,7 +367,7 @@ export function Careers() {
           },
           {
             type: 'p',
-            text: 'We are based in Hyderabad and work with contributors elsewhere. Roles are a mix of full-time and contributor arrangements depending on the work.',
+            text: 'Brolly Academy is based in Hyderabad. Location, employment type, compensation and working arrangements must be confirmed in a specific written role description; this page does not promise them.',
           },
         ]}
       />
@@ -405,13 +383,13 @@ export function Careers() {
               { text: 'Write to support@brollyexamprep.com.', note: 'With "Careers" and the role in the subject line.' },
               { text: 'Tell us what you do, in a paragraph.', note: 'The subject you teach, the examinations you know, or the engineering work you have done.' },
               { text: 'Attach a sample.', note: 'For faculty and question setters, this is the part that matters most — a topic you have written up, or a set of questions with solutions. For engineers, a repository or a project.' },
-              { text: 'We will reply either way.', note: 'Including when the answer is no, which is more useful to you than silence.' },
+              { text: 'Wait for a written response.', note: 'An enquiry is not an application acceptance, interview invitation or offer.' },
             ],
           },
           {
             type: 'note',
             title: 'Current openings',
-            text: 'Specific vacancies are listed on this page as they open. When none are listed, we still read speculative applications from subject faculty and question setters, because good ones are hard to find on demand.',
+            text: 'No specific vacancy is listed at present. Do not send identity documents, bank details or other sensitive personal information with an initial enquiry.',
           },
         ]}
       />
@@ -471,6 +449,134 @@ export function Legal() {
           </p>
         </div>
       </section>
+    </>
+  )
+}
+
+export function EditorialPolicy() {
+  useSeo({
+    title: 'Editorial and Sourcing Policy | Brolly Exam Prep',
+    description:
+      'How Brolly Exam Prep researches, writes, reviews, sources and updates exam guides, study material and practice questions.',
+    canonical: canonicalFor('/editorial-policy/'),
+  })
+
+  return (
+    <>
+      <PageHero
+        eyebrow="Trust and accuracy"
+        title="Editorial and Sourcing Policy"
+        lead="The conducting body is authoritative for every exam. Brolly explains stable concepts and preparation methods, cites primary sources where facts can change, and corrects errors without disguising them as routine freshness."
+        trail={[{ label: 'Editorial Policy' }]}
+      />
+      <ContentSection
+        id="source-order"
+        eyebrow="Evidence hierarchy"
+        heading="Which sources we prefer"
+        blocks={[
+          {
+            type: 'defs',
+            items: [
+              ['Binding exam facts', 'The current notification, corrigendum, syllabus, calendar, answer key or result published by the conducting body. A third-party summary never overrides it.'],
+              ['Law, policy and public data', 'The responsible ministry, regulator, legislature, court, official report or government dataset.'],
+              ['Stable subject concepts', 'Standard textbooks, official curricula and primary institutional references where one exists.'],
+              ['Preparation recommendations', 'Clearly labelled editorial judgment based on the exam structure and past-paper analysis, not presented as a guarantee.'],
+            ],
+          },
+          {
+            type: 'list',
+            title: 'What the review checks',
+            items: [
+              { text: 'Intent and completeness', note: 'the page should answer the question its title promises without filler.' },
+              { text: 'Fact and source agreement', note: 'dates, units, stages and jurisdiction must match the cited primary source.' },
+              { text: 'Product truth', note: 'test length, access, features and availability must match what a visitor can actually use.' },
+              { text: 'Search integrity', note: 'no keyword stuffing, fabricated proof, copied competitor wording, doorway pages or fake freshness.' },
+            ],
+          },
+        ]}
+        background
+      />
+      <ContentSection
+        id="authorship"
+        eyebrow="Who and how"
+        heading="Authorship, automation and updates"
+        blocks={[
+          {
+            type: 'p',
+            text: 'Content may be drafted or checked with software, including automation. Publication responsibility remains with the Brolly Exam Prep editorial team. Automation is not evidence: factual claims still require an appropriate source, and generated wording is reviewed for accuracy, usefulness and unsupported claims.',
+          },
+          {
+            type: 'p',
+            text: 'A person’s name, qualification or reviewer profile is published only after it is verified and supplied for publication. Until then, pages use the organisational byline rather than inventing an expert identity. A modified date changes only when the main content is substantively reviewed or changed.',
+          },
+          {
+            type: 'links',
+            title: 'Related policies',
+            items: [
+              { label: 'Corrections policy', to: '/corrections-policy/' },
+              { label: 'Student outcomes policy', to: '/success-stories/' },
+              { label: 'Contact the editorial team', to: '/contact/' },
+            ],
+          },
+        ]}
+      />
+    </>
+  )
+}
+
+export function CorrectionsPolicy() {
+  useSeo({
+    title: 'Corrections Policy | Brolly Exam Prep',
+    description:
+      'How to report an error and how Brolly Exam Prep verifies, corrects and records material changes to exam content.',
+    canonical: canonicalFor('/corrections-policy/'),
+  })
+
+  return (
+    <>
+      <PageHero
+        eyebrow="Accuracy"
+        title="Corrections Policy"
+        lead="Anyone can report an error. Include the page URL, the disputed statement, the correction you believe is needed and, where possible, the conducting body’s source."
+        trail={[{ label: 'Corrections Policy' }]}
+        actions={
+          <a className="btn btn--y" href="mailto:support@brollyexamprep.com?subject=Content%20correction">
+            Report a Correction
+          </a>
+        }
+      />
+      <ContentSection
+        id="process"
+        eyebrow="What happens next"
+        heading="Verification and correction process"
+        blocks={[
+          {
+            type: 'steps',
+            items: [
+              { text: 'Locate the exact claim.', note: 'The URL and a short quotation prevent a report from being applied to the wrong exam or cycle.' },
+              { text: 'Check the authoritative source.', note: 'For exam rules this is normally the conducting body’s current notification or corrigendum.' },
+              { text: 'Assess the scope.', note: 'The same error may appear in a hub, exam page, FAQ, schema field and internal link; all affected versions are checked.' },
+              { text: 'Correct the visible content and metadata.', note: 'Material errors are not hidden by changing only structured data or a snippet.' },
+              { text: 'Record material changes.', note: 'When a correction affects a decision a candidate could make, the page should state what changed and when.' },
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Urgent issues',
+            text: 'Report errors involving eligibility, application deadlines, fees, exam dates, marking rules or safety first. Brolly cannot modify an application or a conducting body’s record; contact the official helpdesk for those actions.',
+          },
+          {
+            type: 'links',
+            title: 'More information',
+            items: [
+              { label: 'Editorial and sourcing policy', to: '/editorial-policy/' },
+              { label: 'Contact page', to: '/contact/' },
+              { label: 'Disclaimer', to: '/disclaimer/' },
+            ],
+          },
+        ]}
+        background
+      />
     </>
   )
 }

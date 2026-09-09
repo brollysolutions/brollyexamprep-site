@@ -1205,3 +1205,9 @@ body{
     backdrop-filter:blur(8px) saturate(120%);
   }
 }
+.skip-link{
+  position:fixed;left:16px;top:12px;z-index:10000;
+  transform:translateY(-180%);padding:10px 14px;
+  background:#fff;color:#111;border:2px solid #111;font-weight:700;
+}
+.skip-link:focus{transform:translateY(0)}

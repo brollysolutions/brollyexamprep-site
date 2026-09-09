@@ -45,14 +45,12 @@ async function main() {
   )
   const dropped = all.length - routes.length
 
-  const today = new Date().toISOString().slice(0, 10)
-
   const body = routes
-    .map(({ path, changefreq, priority }) =>
+    .map(({ path, changefreq, priority, lastmod }) =>
       [
         '  <url>',
         `    <loc>${esc(ORIGIN + path)}</loc>`,
-        `    <lastmod>${today}</lastmod>`,
+        ...(lastmod ? [`    <lastmod>${esc(lastmod)}</lastmod>`] : []),
         `    <changefreq>${changefreq}</changefreq>`,
         `    <priority>${priority}</priority>`,
         '  </url>',

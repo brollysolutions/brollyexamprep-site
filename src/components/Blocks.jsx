@@ -160,11 +160,17 @@ export default function Block({ block }) {
       <div className="s__block">
         {block.title && <h3 className="s__sub">{block.title}</h3>}
         <p className="sm-links">
-          {block.items.map((item) => (
-            <Link key={item.to} to={item.to}>
-              {item.label} <Arrow />
-            </Link>
-          ))}
+          {block.items.map((item) =>
+            item.href ? (
+              <a href={item.href} key={item.href} rel="noopener noreferrer" target="_blank">
+                {item.label} <Arrow />
+              </a>
+            ) : (
+              <Link key={item.to} to={item.to}>
+                {item.label} <Arrow />
+              </Link>
+            ),
+          )}
         </p>
       </div>
     )

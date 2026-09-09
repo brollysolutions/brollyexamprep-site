@@ -10,9 +10,9 @@ const SECTION = NAV[4]
 
 export default function CurrentAffairs() {
   useSeo({
-    title: 'Daily Current Affairs for Competitive Exams | Brolly Exam Prep',
+    title: 'Current Affairs Study Guide for Competitive Exams | Brolly',
     description:
-      'Daily, weekly and monthly current affairs for competitive exams, organised by topic and by exam, with quizzes and PDFs for revision.',
+      'Learn how to study current affairs for competitive exams using verified news sources, themed notes, retrieval practice and scheduled revision.',
     canonical: canonicalFor('/current-affairs/'),
   })
 
@@ -38,9 +38,9 @@ export default function CurrentAffairs() {
       <section className="s">
         <div className="wrap">
           <SectionHead
-            eyebrow="Updated daily"
+            eyebrow="Revision method"
             title="Read it, then test whether it stuck"
-            lead="Written for exam relevance, with each item tagged to the exams that actually ask about it."
+            lead="These guides explain how to select, organise and revise current events; verify each event at its primary source."
           />
           <div className="g4">
             {CURRENT_AFFAIRS_TILES.map((tile) => (
@@ -102,8 +102,8 @@ export default function CurrentAffairs() {
       />
 
       <FinalCta
-        title="Ten minutes a day is enough"
-        lead="Read the day's items, attempt the quiz, and let the monthly compilation handle revision."
+        title="Build a routine you can sustain"
+        lead="Read a verified source, record only exam-relevant facts, and revisit them through retrieval practice."
       />
     </>
   )

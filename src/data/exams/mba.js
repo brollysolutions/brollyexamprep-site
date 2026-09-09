@@ -188,7 +188,7 @@ const mba = [
             type: 'links',
             title: 'Related pages',
             items: [
-              { label: 'CAT mock tests', to: '/mock-tests/cat/' },
+              { label: 'CAT mock tests', to: '/mock-tests/free/' },
               { label: 'XAT exam guide', to: '/entrance-exams/mba/xat/' },
               { label: 'Data interpretation study material', to: '/study-material/dilr/' },
               { label: 'Verbal ability study material', to: '/study-material/varc/' },
@@ -226,7 +226,7 @@ const mba = [
             type: 'links',
             title: 'Start practising',
             items: [
-              { label: 'CAT mock tests', to: '/mock-tests/cat/' },
+              { label: 'CAT mock tests', to: '/mock-tests/free/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
               { label: 'Sectional and topic practice', to: '/practice/' },
             ],
@@ -507,7 +507,7 @@ const mba = [
             title: 'Related pages',
             items: [
               { label: 'CAT exam guide', to: '/entrance-exams/mba/cat/' },
-              { label: 'CAT mock tests', to: '/mock-tests/cat/' },
+              { label: 'CAT mock tests', to: '/mock-tests/free/' },
               { label: 'Verbal ability study material', to: '/study-material/varc/' },
             ],
           },
@@ -538,7 +538,7 @@ const mba = [
             type: 'links',
             title: 'Start practising',
             items: [
-              { label: 'CAT mock tests', to: '/mock-tests/cat/' },
+              { label: 'CAT mock tests', to: '/mock-tests/free/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
               { label: 'Current affairs', to: '/current-affairs/' },
             ],
@@ -815,7 +815,7 @@ const mba = [
             items: [
               { label: 'CAT exam guide', to: '/entrance-exams/mba/cat/' },
               { label: 'SNAP exam guide', to: '/entrance-exams/mba/snap/' },
-              { label: 'CAT mock tests', to: '/mock-tests/cat/' },
+              { label: 'CAT mock tests', to: '/mock-tests/free/' },
             ],
           },
         ],
@@ -845,7 +845,7 @@ const mba = [
             type: 'links',
             title: 'Start practising',
             items: [
-              { label: 'CAT mock tests', to: '/mock-tests/cat/' },
+              { label: 'CAT mock tests', to: '/mock-tests/free/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
           },
@@ -1117,7 +1117,7 @@ const mba = [
             items: [
               { label: 'CAT exam guide', to: '/entrance-exams/mba/cat/' },
               { label: 'NMAT exam guide', to: '/entrance-exams/mba/nmat/' },
-              { label: 'CAT mock tests', to: '/mock-tests/cat/' },
+              { label: 'CAT mock tests', to: '/mock-tests/free/' },
             ],
           },
         ],
@@ -1147,7 +1147,7 @@ const mba = [
             type: 'links',
             title: 'Start practising',
             items: [
-              { label: 'CAT mock tests', to: '/mock-tests/cat/' },
+              { label: 'CAT mock tests', to: '/mock-tests/free/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
           },
@@ -1457,7 +1457,7 @@ const mba = [
             type: 'links',
             title: 'Start practising',
             items: [
-              { label: 'CAT mock tests', to: '/mock-tests/cat/' },
+              { label: 'CAT mock tests', to: '/mock-tests/free/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
               { label: 'Current affairs', to: '/current-affairs/' },
             ],
@@ -1772,7 +1772,7 @@ const mba = [
             type: 'links',
             title: 'Start practising',
             items: [
-              { label: 'CAT mock tests', to: '/mock-tests/cat/' },
+              { label: 'CAT mock tests', to: '/mock-tests/free/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
               { label: 'Current affairs', to: '/current-affairs/' },
             ],
@@ -2079,7 +2079,7 @@ const mba = [
             type: 'links',
             title: 'Start practising',
             items: [
-              { label: 'CAT mock tests', to: '/mock-tests/cat/' },
+              { label: 'CAT mock tests', to: '/mock-tests/free/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
           },

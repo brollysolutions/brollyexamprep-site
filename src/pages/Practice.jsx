@@ -11,7 +11,7 @@ export default function Practice() {
   useSeo({
     title: 'Practice - Daily Quiz, Topic Tests and Mock Tests | Brolly Exam Prep',
     description:
-      'Daily quizzes, topic-wise questions, previous-year questions, sectional tests and full-length mock tests for competitive exams, each with worked solutions.',
+      'Exam preparation methods, topic lessons, previous-paper analysis and the timed diagnostic mock tests currently available with worked explanations.',
     canonical: canonicalFor('/practice/'),
   })
 
@@ -24,8 +24,8 @@ export default function Practice() {
         trail={[{ label: 'Practice' }]}
         actions={
           <>
-            <Link className="btn btn--k" to="/practice/daily-quiz/">
-              Start Today's Quiz
+            <Link className="btn btn--k" to="/study-material/">
+              Practise by Topic
             </Link>
             <Link className="btn btn--y" to="/mock-tests/free/">
               Take a Free Mock Test

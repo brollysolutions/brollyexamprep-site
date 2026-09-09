@@ -177,7 +177,7 @@ const medical = [
             type: 'links',
             title: 'Related pages',
             items: [
-              { label: 'JEE and NEET mock tests', to: '/mock-tests/jee-neet/' },
+              { label: 'JEE and NEET mock tests', to: '/mock-tests/free/' },
               { label: 'Biology study material', to: '/study-material/biology/' },
               { label: 'Physics study material', to: '/study-material/physics/' },
             ],
@@ -213,7 +213,7 @@ const medical = [
             type: 'links',
             title: 'Start practising',
             items: [
-              { label: 'JEE and NEET mock tests', to: '/mock-tests/jee-neet/' },
+              { label: 'JEE and NEET mock tests', to: '/mock-tests/free/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
           },

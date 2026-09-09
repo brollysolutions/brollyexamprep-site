@@ -23,8 +23,284 @@
 
 import UPDATE_HUBS from './hubs-updates'
 
+const STATE_RESOURCE_HUBS = {
+  '/government-exams/state/syllabus/': {
+    title: 'State Government Exam Syllabus: Subjects and Study Order',
+    description: 'Understand the common state government exam syllabus, state-specific sections, post-specific differences and how to turn a notification into a study plan.',
+    lead: [
+      'There is no single syllabus for every state government exam. A State PSC civil-services examination, a subordinate-services paper, a police recruitment and a teaching eligibility test may share general studies and aptitude, but they test them at different depths and add different state or professional subjects.',
+      'The syllabus attached to the current notification is the boundary of your examination. Use this page to interpret that document and build a study order—not as a substitute for the notification itself.',
+    ],
+    sections: [
+      { id: 'common-core', eyebrow: 'The overlap', heading: 'Subjects that recur across state examinations', blocks: [
+        { type: 'table', head: ['Area', 'What it usually includes', 'How to adapt it'], rows: [
+          ['General studies', 'History, geography, polity, economy, science and environment', 'Add the state’s history, geography, administration, economy and culture at the depth shown in past papers.'],
+          ['Current affairs', 'National, international and state developments', 'Give extra weight to state schemes, budget, appointments, reports and issues named in the syllabus.'],
+          ['Language', 'English and/or the regional language', 'Check whether the paper is qualifying, scored, descriptive or tied to a skill test.'],
+          ['Aptitude and reasoning', 'Arithmetic, data interpretation, logic and mental ability', 'Match difficulty and timing to the post level rather than using one generic question bank.'],
+          ['Post knowledge', 'Law, engineering, teaching or another discipline', 'Use the qualification-level syllabus and official topic list for technical recruitment.'],
+        ] },
+        { type: 'note', title: 'Scope is not weight', text: 'A syllabus tells you what may be asked but rarely how often. Tag several recent papers by topic to discover the actual weighting, then study recurring areas before the long tail.' },
+      ] },
+      { id: 'build-plan', eyebrow: 'From document to plan', heading: 'Convert the official syllabus into work you can schedule', blocks: [
+        { type: 'steps', items: [
+          { text: 'Copy every syllabus line into a checklist.', note: 'Keep the wording and paper division used in the notification.' },
+          { text: 'Map recent questions to those lines.', note: 'This exposes recurring themes, depth and sections that consume disproportionate time.' },
+          { text: 'Mark state-specific and post-specific material.', note: 'These are often the areas a national exam source will not cover adequately.' },
+          { text: 'Assign one primary source to each cluster.', note: 'Finish and revise it before adding another book or course.' },
+          { text: 'Attach practice and revision dates.', note: 'A topic is not complete when read; it is complete when you can retrieve it and solve its questions under time.' },
+        ] },
+        { type: 'links', title: 'Build the subject foundation', items: [
+          { label: 'Study material by subject', to: '/study-material/' },
+          { label: 'Previous year questions', to: '/previous-year-questions/' },
+          { label: 'State government exam guide', to: '/government-exams/state/' },
+        ] },
+      ] },
+    ],
+    faqs: [
+      { q: 'Is the syllabus the same for all state government exams?', a: 'No. General studies, current affairs, language and aptitude often overlap, but their depth, marks and state-specific coverage differ. Police, teaching, engineering and other specialist recruitments also add physical, skill or professional requirements.' },
+      { q: 'Which syllabus should I trust?', a: 'Use the syllabus published with the current official notification or rules for the exact post. Coaching lists and older notifications can help interpret it, but they do not override the recruiting authority’s document.' },
+    ],
+  },
+  '/government-exams/state/exam-pattern/': {
+    title: 'State Government Exam Pattern: Stages, Marks and Selection',
+    description: 'Learn how prelims, mains, interviews, skill tests and physical stages work across state government recruitment and what to verify in each notice.',
+    lead: [
+      'An exam pattern is the rulebook for a recruitment: the stages, paper types, marks, duration, negative marking and the point at which a score begins to count toward final merit. Those rules differ not only between states but between posts run by the same commission.',
+      'Read the current notification before planning an attempt. A preparation built around the wrong negative-marking rate or merit stage can be well studied and still strategically wrong.',
+    ],
+    sections: [
+      { id: 'stages', eyebrow: 'Selection architecture', heading: 'The stages and what each one usually does', blocks: [
+        { type: 'defs', items: [
+          ['Preliminary examination', 'Usually an objective screening stage. Its marks may only decide who reaches mains, but its negative marking and cut-off still determine survival.'],
+          ['Main examination', 'The deeper scored stage, which may be objective, descriptive or mixed. Civil-services mains commonly tests analysis and written expression, while subordinate recruitment may remain objective.'],
+          ['Interview or personality test', 'Used for some officer and specialist posts. Check its weight in the final total rather than treating it as a ceremonial stage.'],
+          ['Skill or typing test', 'Common in clerical, stenography and computer-linked posts. It may be qualifying but can still eliminate an otherwise high-scoring candidate.'],
+          ['Physical and medical stages', 'Essential in police, forest, fire and uniformed recruitment. Standards and event rules are notification-specific and require early preparation.'],
+          ['Document verification', 'Confirms qualification, category, age and other claims. The required status generally has to exist by the stated cut-off date.'],
+        ] },
+      ] },
+      { id: 'read-pattern', eyebrow: 'Before practising', heading: 'Seven rules to record from the notification', blocks: [
+        { type: 'list', items: [
+          { text: 'Question and mark count for every paper', note: 'marks per question affect both pacing and the cost of an error.' },
+          { text: 'Duration and sectional timing', note: 'separate timing prevents you from moving spare minutes between sections.' },
+          { text: 'Negative marking and unanswered-question rules', note: 'never assume another exam’s guessing strategy applies.' },
+          { text: 'Qualifying versus merit papers', note: 'a qualifying language paper needs safety; a merit paper needs rank-building depth.' },
+          { text: 'Minimum marks and sectional cut-offs', note: 'a strong total may not rescue a failed compulsory section.' },
+          { text: 'Normalization or multi-shift provisions', note: 'understand the published method without trying to predict shift advantage.' },
+          { text: 'Later-stage requirements', note: 'typing, certificates, physical standards and medical rules belong in the plan from day one.' },
+        ] },
+        { type: 'links', title: 'Use the pattern', items: [
+          { label: 'Free mock tests', to: '/mock-tests/free/' },
+          { label: 'State exam preparation guide', to: '/government-exams/state/preparation/' },
+          { label: 'Latest exam updates', to: '/exam-updates/' },
+        ] },
+      ] },
+    ],
+  },
+  '/government-exams/state/previous-year-papers/': {
+    title: 'State Government Previous Papers: Analysis and Practice',
+    description: 'Use state government previous papers to identify topic weight, question depth and timing while avoiding outdated-pattern and answer-key traps.',
+    lead: [
+      'Previous papers do two different jobs. Early in preparation they reveal what the recruiting authority repeatedly asks; later they provide realistic timed practice. Using every paper as a mock from the beginning wastes the stronger first use.',
+      'Choose papers for the exact commission, post and stage. A State PSC prelims paper cannot describe a subordinate-services mains pattern merely because both contain general studies.',
+    ],
+    sections: [
+      { id: 'analysis', eyebrow: 'First use', heading: 'Extract the examiner’s priorities', blocks: [
+        { type: 'steps', items: [
+          { text: 'Confirm the paper belongs to the current or comparable pattern.', note: 'Record any restructuring before combining years.' },
+          { text: 'Solve the first paper untimed.', note: 'Work every question and verify disputed answers against authoritative sources.' },
+          { text: 'Tag each question specifically.', note: 'Use labels such as state economy—budget or arithmetic—percentage, not broad subjects alone.' },
+          { text: 'Count tags across multiple papers.', note: 'Repeated topics form the high-return core; isolated topics form the tail.' },
+          { text: 'Record difficulty and question form.', note: 'A topic may recur as factual recall, calculation or analysis, and the preparation should match.' },
+        ] },
+      ] },
+      { id: 'practice', eyebrow: 'Second use', heading: 'Preserve some papers for honest measurement', blocks: [
+        { type: 'p', text: 'Once you have read a paper, familiarity inflates the next score. Keep at least two suitable papers unseen for the final phase, reproduce the real duration and marking scheme, and analyse errors by cause rather than only by subject.' },
+        { type: 'list', title: 'Quality checks before downloading', items: [
+          { text: 'Prefer the recruiting authority’s paper or answer key', note: 'unofficial keys can contain unresolved errors.' },
+          { text: 'Check stage, year, shift and paper code', note: 'similarly named recruitments may have different versions.' },
+          { text: 'Keep corrigenda with the key', note: 'a provisional answer is not necessarily the final accepted answer.' },
+          { text: 'Do not treat old current affairs as study material', note: 'use those questions to identify recurring categories, then study the current cycle.' },
+        ] },
+        { type: 'links', title: 'Find and use papers', items: [
+          { label: 'Previous year paper library', to: '/previous-year-papers/' },
+          { label: 'Previous year question method', to: '/previous-year-questions/' },
+          { label: 'Study material by subject', to: '/study-material/' },
+        ] },
+      ] },
+    ],
+  },
+  '/government-exams/state/mock-tests/': {
+    title: 'State Government Mock Tests: Choose, Attempt and Analyse',
+    description: 'Choose state exam mock tests that match the notification, reproduce real conditions and turn every attempt into a targeted correction plan.',
+    lead: [
+      'A mock test is useful only when it resembles the examination you intend to write and when its analysis changes what you do next. A large test count without pattern matching or error review produces activity, not improvement.',
+      'Match the recruiting body, post, stage, subjects, duration and negative marking before treating a score as evidence of readiness.',
+    ],
+    sections: [
+      { id: 'choose', eyebrow: 'Before attempting', heading: 'What a credible mock must match', blocks: [
+        { type: 'table', head: ['Feature', 'Why it matters', 'What to verify'], rows: [
+          ['Coverage', 'A generic test may omit state and post-specific areas.', 'Every syllabus section appears at roughly the right depth.'],
+          ['Structure', 'Question count and timing shape selection strategy.', 'Papers, sections, duration and sectional locks match the notice.'],
+          ['Scoring', 'Wrong deductions change whether a narrowed guess is rational.', 'Marks, penalties and qualifying rules are correctly configured.'],
+          ['Difficulty', 'An easy score can create false confidence.', 'Questions resemble recent papers in both concept and wording.'],
+          ['Explanations', 'A score identifies a symptom, not its cause.', 'Solutions explain the method and why alternatives fail.'],
+        ] },
+      ] },
+      { id: 'analyse', eyebrow: 'After submitting', heading: 'Turn the result into the next two weeks', blocks: [
+        { type: 'steps', items: [
+          { text: 'Separate knowledge errors from execution errors.', note: 'Unknown concepts need study; misreads, poor selection and calculation slips need different drills.' },
+          { text: 'Review correct guesses as errors.', note: 'A lucky mark does not represent repeatable knowledge.' },
+          { text: 'Measure time by section and question type.', note: 'Find where time was spent, not simply where the test ended.' },
+          { text: 'Choose three correction targets.', note: 'A short, specific list is more usable than trying to repair the entire score report.' },
+          { text: 'Retest after correction time.', note: 'Use a fresh paper after one or two weeks to see whether the same error class declined.' },
+        ] },
+        { type: 'links', title: 'Start practising', items: [
+          { label: 'Available free mock tests', to: '/mock-tests/free/' },
+          { label: 'Topic-wise questions', to: '/practice/topic-wise-questions/' },
+          { label: 'State exam patterns', to: '/government-exams/state/exam-pattern/' },
+        ] },
+      ] },
+    ],
+  },
+  '/government-exams/state/preparation/': {
+    title: 'State Government Exam Preparation: A Practical Study Plan',
+    description: 'Build a state government exam plan from the official notice, a diagnostic test, topic weighting, state-specific study and repeated revision.',
+    lead: [
+      'State exam preparation becomes manageable when you separate the common core from the state-specific and post-specific layers. Trying to study every possible state recruitment at once creates a large syllabus with no clear finishing point.',
+      'Choose one primary recruitment and at most a small number of overlapping alternatives. Let the official pattern and recent papers decide the order of work.',
+    ],
+    sections: [
+      { id: 'plan', eyebrow: 'The sequence', heading: 'Build the plan from evidence', blocks: [
+        { type: 'steps', items: [
+          { text: 'Select the exact post and stage.', note: 'Save the notification, syllabus, pattern and eligibility clauses together.' },
+          { text: 'Take a diagnostic paper before studying.', note: 'Record accuracy, time and error type by section; the starting score itself is unimportant.' },
+          { text: 'Analyse recent papers for weighting.', note: 'Study recurring, high-value topics before rare edges of the syllabus.' },
+          { text: 'Build state knowledge alongside the common core.', note: 'History, geography, economy, governance, schemes and current issues need their own revision system.' },
+          { text: 'Start slow-building requirements immediately.', note: 'Language, current affairs, descriptive writing, typing and physical fitness cannot be compressed safely at the end.' },
+          { text: 'Schedule retrieval and full tests.', note: 'Every week should contain recall, questions and review—not reading alone.' },
+        ] },
+      ] },
+      { id: 'weekly', eyebrow: 'A repeatable week', heading: 'Balance learning, retrieval and measurement', blocks: [
+        { type: 'list', items: [
+          { text: 'Concept blocks', note: 'learn one defined syllabus cluster and solve questions immediately after it.' },
+          { text: 'State-specific revision', note: 'maintain themed notes rather than a chronological pile of facts.' },
+          { text: 'Current affairs retrieval', note: 'quiz yourself and connect events to static polity, economy, geography and schemes.' },
+          { text: 'Timed sectional work', note: 'build selection and pacing before full mocks become frequent.' },
+          { text: 'One error-review session', note: 're-solve previous mistakes without looking at the explanation.' },
+          { text: 'Physical, typing or writing practice', note: 'include the later-stage skill required by your target post.' },
+        ] },
+        { type: 'note', title: 'Do not wait for a notification to begin', text: 'Durable subjects and skills can be built from the latest reliable syllabus and recent papers. When the new notice arrives, compare it line by line and revise the plan around actual changes.' },
+        { type: 'links', title: 'Plan with the evidence', items: [
+          { label: 'State exam syllabus guide', to: '/government-exams/state/syllabus/' },
+          { label: 'Previous year papers', to: '/previous-year-papers/' },
+          { label: 'Free diagnostic mock tests', to: '/mock-tests/free/' },
+        ] },
+      ] },
+    ],
+  },
+  '/government-exams/state/study-material/': {
+    title: 'State Government Exam Study Material: What to Use',
+    description: 'Choose state exam study material by syllabus, paper depth and revision value while combining common subjects with reliable state-specific sources.',
+    lead: [
+      'Good study material is not the largest collection you can find. It is the smallest set that covers the notified syllabus at the depth shown in recent papers and can be revised several times before the examination.',
+      'Build one common foundation for history, geography, polity, economy, science, environment, aptitude and language. Add a separate state layer and any professional subject required by the post.',
+    ],
+    sections: [
+      { id: 'source-stack', eyebrow: 'A controlled stack', heading: 'Give every source one job', blocks: [
+        { type: 'table', head: ['Source', 'Best use', 'Common mistake'], rows: [
+          ['Official notification and syllabus', 'Defines eligibility, scope and exam rules.', 'Replacing it with a coaching checklist.'],
+          ['Standard concept source', 'Builds durable understanding of a subject.', 'Collecting several books before finishing one.'],
+          ['State publications', 'Supplies authoritative state economy, budget, schemes and administration detail.', 'Memorising figures without checking their reference year.'],
+          ['Previous papers and final keys', 'Reveal weighting, depth and accepted answers.', 'Using every paper as a timed mock before analysing it.'],
+          ['Current affairs source', 'Tracks relevant changes through the preparation cycle.', 'Recording news by date in notes that cannot be revised.'],
+          ['Mock tests and question banks', 'Build retrieval, pacing and error diagnosis.', 'Treating solution reading as equivalent to re-solving.'],
+        ] },
+      ] },
+      { id: 'notes', eyebrow: 'Make it revisable', heading: 'Turn reading into a compact revision system', blocks: [
+        { type: 'steps', items: [
+          { text: 'Organize notes by syllabus heading.', note: 'This exposes gaps and prevents the same fact from being copied into several notebooks.' },
+          { text: 'Keep state facts in themes.', note: 'Use geography, history, economy, governance, culture and schemes rather than month-by-month notes.' },
+          { text: 'Record the source and reference period.', note: 'Budgets, rankings, office-holders and scheme figures can become stale.' },
+          { text: 'Write questions into the notes.', note: 'Prompts force retrieval; highlighted paragraphs mostly encourage recognition.' },
+          { text: 'Compress after each revision.', note: 'The final version should contain what you forget, not everything you once read.' },
+        ] },
+        { type: 'links', title: 'Open the learning library', items: [
+          { label: 'Study material by subject', to: '/study-material/' },
+          { label: 'Daily and monthly current affairs', to: '/current-affairs/' },
+          { label: 'Topic-wise practice', to: '/practice/topic-wise-questions/' },
+          { label: 'State government exams', to: '/government-exams/state/' },
+        ] },
+      ] },
+    ],
+  },
+}
+
+const ADDITIONAL_HUBS = {
+  '/entrance-exams/pg-research/': {
+    title: 'PG and Research Entrance Exams: GATE and IIT JAM Guide',
+    description: 'Compare GATE and IIT JAM by purpose, syllabus depth and preparation method, with direct links to complete exam and paper-analysis guides.',
+    lead: [
+      'Postgraduate and research entrance exams reward depth in a chosen discipline, not broad general aptitude alone. GATE primarily supports postgraduate engineering admissions and is also used by some employers; IIT JAM supports admission to postgraduate science programmes.',
+      'Start with the programme and institutions you would join, confirm the paper code and eligibility at the official source, then study from that paper’s syllabus and recent papers.',
+    ],
+    sections: [
+      {
+        id: 'compare',
+        eyebrow: 'Choose the right route',
+        heading: 'GATE and IIT JAM solve different admission goals',
+        blocks: [
+          { type: 'table', head: ['Question', 'GATE', 'IIT JAM'], rows: [
+            ['Primary use', 'Postgraduate engineering and related opportunities', 'Postgraduate science admissions'],
+            ['Preparation base', 'Undergraduate engineering or science discipline plus aptitude', 'Undergraduate science discipline'],
+            ['First decision', 'Select the correct paper code and target programmes', 'Select the test paper and participating programmes'],
+            ['Best evidence', 'Current official brochure, syllabus and recent papers', 'Current official brochure, syllabus and recent papers'],
+          ] },
+          { type: 'links', title: 'Complete guides', items: [
+            { label: 'GATE exam guide', to: '/entrance-exams/pg-research/gate/' },
+            { label: 'IIT JAM exam guide', to: '/entrance-exams/pg-research/iit-jam/' },
+            { label: 'Previous-paper analysis method', to: '/previous-year-papers/' },
+          ] },
+        ],
+      },
+    ],
+  },
+  '/entrance-exams/international/': {
+    title: 'International Entrance Exams: GRE, GMAT, IELTS, TOEFL and SAT',
+    description: 'Choose between GRE, GMAT, IELTS, TOEFL and SAT by admission purpose, required skill and institution policy before starting preparation.',
+    lead: [
+      'International tests are not interchangeable. GRE and GMAT are commonly used in graduate admissions, SAT in undergraduate admissions, while IELTS and TOEFL demonstrate English-language proficiency. The institution and programme decide which result they accept.',
+      'Check each target institution’s current admissions page before booking a test. A technically valid score is not useful if the programme does not accept that test, delivery mode or score age.',
+    ],
+    sections: [
+      {
+        id: 'choose',
+        eyebrow: 'Decision guide',
+        heading: 'Match the test to the admission requirement',
+        blocks: [
+          { type: 'defs', items: [
+            ['Graduate aptitude', 'Compare GRE and GMAT against the exact programme policy; do not assume every business school or graduate department treats them alike.'],
+            ['English proficiency', 'Compare IELTS and TOEFL only after checking accepted tests, minimum section scores and score-validity rules.'],
+            ['Undergraduate admission', 'Use the SAT guide where a target institution accepts or considers the test; admissions policies can be test-required, test-optional or test-blind.'],
+          ] },
+          { type: 'links', title: 'Exam guides', items: [
+            { label: 'GRE', to: '/entrance-exams/international/gre/' },
+            { label: 'GMAT', to: '/entrance-exams/mba/gmat/' },
+            { label: 'IELTS', to: '/entrance-exams/international/ielts/' },
+            { label: 'TOEFL', to: '/entrance-exams/international/toefl/' },
+            { label: 'SAT', to: '/entrance-exams/international/sat/' },
+          ] },
+        ],
+      },
+    ],
+  },
+}
+
 const HUBS = {
   ...UPDATE_HUBS,
+  ...STATE_RESOURCE_HUBS,
+  ...ADDITIONAL_HUBS,
 
   /* ══════════════════════════════════════════════════════════════
      Government exam categories
@@ -2157,5 +2433,8 @@ const HUBS = {
 export function getHub(path) {
   return HUBS[path]
 }
+
+/** Every hand-written hub, used by the prerender and sitemap. */
+export const HUB_PATHS = Object.keys(HUBS)
 
 export default HUBS
