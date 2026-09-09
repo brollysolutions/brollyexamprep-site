@@ -852,6 +852,73 @@
   color:var(--mu);
 }
 
+/* ── Bulleted and numbered points ─────────────────────────────── */
+.sm-list,.sm-steps{
+  margin:0;
+  padding:0 0 0 4px;
+  max-width:78ch;
+  display:grid;
+  gap:11px;
+  list-style:none;
+  counter-reset:sm-step;
+}
+.sm-list li,.sm-steps li{
+  position:relative;
+  padding-left:30px;
+  font-size:15.5px;
+  line-height:1.72;
+  color:var(--tx);
+}
+.sm-list li::before{
+  content:"";
+  position:absolute;
+  left:8px;
+  top:10px;
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:var(--y);
+}
+.sm-steps li{padding-left:38px}
+.sm-steps li::before{
+  counter-increment:sm-step;
+  content:counter(sm-step);
+  position:absolute;
+  left:0;
+  top:1px;
+  width:24px;
+  height:24px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:var(--y-soft);
+  border:1px solid var(--y-line);
+  font-size:12px;
+  font-weight:800;
+  color:var(--k);
+  font-variant-numeric:tabular-nums;
+}
+.sm-list b,.sm-steps b{color:var(--k);font-weight:750}
+.sm-list span,.sm-steps span{color:var(--mu)}
+
+/* ── Inline link row (descriptive anchor text) ────────────────── */
+.sm-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px 22px;
+  margin:0;
+}
+.sm-links a{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font-size:14.5px;
+  font-weight:750;
+  color:var(--k);
+  text-decoration:none;
+}
+.sm-links a:hover{text-decoration:underline;text-underline-offset:3px}
+
 /* ── Formula cards ────────────────────────────────────────────── */
 .sm-formulas{
   list-style:none;

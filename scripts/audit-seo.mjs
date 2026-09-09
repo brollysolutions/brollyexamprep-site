@@ -24,9 +24,23 @@ async function htmlFiles(dir, out = []) {
   return out
 }
 
+/*
+ * Titles and descriptions are HTML-escaped in the source, so `&` is stored as
+ * `&amp;` and a 58-character title measures 67. Since what matters is the
+ * length Google displays, entities are decoded before anything is measured.
+ */
+const decode = (s) =>
+  s
+    ?.replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&nbsp;/g, ' ')
+
 const pick = (html, re) => {
   const m = html.match(re)
-  return m ? m[1] : null
+  return m ? decode(m[1]) : null
 }
 
 const files = await htmlFiles(DIST)

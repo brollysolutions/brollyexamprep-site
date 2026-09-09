@@ -1,8 +1,10 @@
 import { Link, useParams } from 'react-router-dom'
 import Icon, { Arrow } from '../components/Icon'
+import { ContentSection } from '../components/Blocks'
 import { PageHero, SectionHead, useJsonLd, useMeta, useTitle } from '../components/ui'
 import { NAV } from '../data/nav'
 import { getTopic, SUBJECTS, topicsInSubject } from '../data/study'
+import { getGuidance } from '../data/study-guidance'
 import { humanise } from '../lib/labels'
 import { FinalCta } from './home/sections'
 
@@ -49,6 +51,7 @@ export default function StudySubject() {
 
   const written = topicsInSubject(subject)
   const planned = plannedFor(subject)
+  const guidance = getGuidance(subject)
 
   const canonical = `${ORIGIN}/study-material/${subject}/`
   const description = subjectDescription(name, meta && written)
@@ -160,6 +163,19 @@ export default function StudySubject() {
             </div>
           </div>
         </section>
+      )}
+
+      {/* How this particular subject should be studied — the advice a topic
+          page cannot give and a syllabus never mentions. */}
+      {guidance && (
+        <ContentSection
+          id="how-to-study"
+          eyebrow="Method"
+          heading={guidance.heading}
+          intro={guidance.intro}
+          blocks={guidance.blocks}
+          background={(written.length ? 1 : 0) + (planned.length ? 1 : 0) === 1}
+        />
       )}
 
       <FinalCta

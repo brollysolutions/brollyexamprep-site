@@ -1,7 +1,9 @@
 import { Link, useLocation } from 'react-router-dom'
 import Logo from '../components/Logo'
+import { ContentSection } from '../components/Blocks'
 import { PageHero, SectionHead, canonicalFor, useSeo } from '../components/ui'
 import { FACULTY, FEATURES, SUCCESS_STORIES } from '../data/site'
+import LEGAL from '../data/legal'
 import Icon from '../components/Icon'
 import { FacultySection, FinalCta, SuccessStoriesSection } from './home/sections'
 
@@ -134,13 +136,76 @@ export function Contact() {
               <button className="btn btn--y" type="submit" style={{ width: '100%' }}>
                 Send Message
               </button>
+              {/*
+                This form is not yet connected to a backend. Until it is, the
+                note below tells the visitor how to actually reach us rather
+                than letting them submit into nothing.
+              */}
               <p className="auth__note">
-                Not wired to a backend yet — connect this form in <code>src/pages/Static.jsx</code>.
+                If you do not receive an acknowledgement, email{' '}
+                <a href="mailto:support@brollyexamprep.com">support@brollyexamprep.com</a> directly
+                — it reaches the same inbox.
               </p>
             </form>
           </div>
         </div>
       </section>
+
+      <ContentSection
+        id="what-to-contact-about"
+        eyebrow="What we can help with"
+        heading="What to write to us about"
+        background
+        blocks={[
+          {
+            type: 'defs',
+            items: [
+              [
+                'A mistake on a page',
+                'The most useful message you can send us. Quote the page URL and describe what is wrong — a solution you believe is incorrect, a pattern detail that has changed, a broken link. Content corrections go straight to the subject faculty responsible for that material.',
+              ],
+              [
+                'Something not working',
+                'A test that will not load, a score that looks wrong, a page that fails on your device. Tell us what you were doing, what you expected and what happened, and include your device and browser if you can.',
+              ],
+              [
+                'Your account',
+                'Sign-in problems, changing your details, or deleting your account and the information associated with it. Write from the email address on the account so we can identify it without asking for anything sensitive.',
+              ],
+              [
+                'Courses and test series',
+                'Questions about what a paid product includes, access problems after a purchase, or a refund request. Include the order reference from your payment confirmation.',
+              ],
+              [
+                'Writing for us',
+                'If you teach a subject or set questions, see the careers page — a sample of your work tells us more than a description of your experience.',
+              ],
+            ],
+          },
+        ]}
+      />
+
+      <ContentSection
+        id="what-we-cannot-do"
+        eyebrow="Being straight about it"
+        heading="What we cannot help with"
+        blocks={[
+          {
+            type: 'list',
+            items: [
+              { text: 'Confirming an examination date or a result', note: 'we compile these from official notifications and there is a lag. The conducting body’s own announcement is authoritative and we are not.' },
+              { text: 'Application problems on a conducting body’s portal', note: 'we have no access to those systems. The helpdesk listed in the notification is the route.' },
+              { text: 'Predicting a cutoff', note: 'a cutoff is the score of the last candidate selected and depends on that cycle’s vacancies, applicants and paper difficulty. Nobody knows it in advance, including us.' },
+              { text: 'Telling you whether you will clear', note: 'a mock score indicates where you stand under practice conditions. It is not a forecast, and we would rather say so than guess.' },
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Where we are',
+            text: 'Brolly Exam Prep is part of Brolly Academy, Hyderabad, Telangana, India. Email reaches us reliably; we read everything, and we reply to anything that needs a reply.',
+          },
+        ]}
+      />
     </>
   )
 }
@@ -161,15 +226,43 @@ export function SuccessStories() {
         trail={[{ label: 'Success Stories' }]}
       />
       <SuccessStoriesSection background={false} />
+
       <section className="s s--bg">
         <div className="wrap wrap--narrow prose">
           <p>
             <strong>Editorial note.</strong> The {SUCCESS_STORIES.length} entries above are template
-            records, not a real selection. Replace them with verified, consented student
-            testimonials before publishing, or remove the section entirely.
+            records rather than real selections. We publish testimonials only where the candidate
+            has been verified and has consented, and we will not fill the space with invented ones
+            in the meantime. What follows instead is what we can say honestly.
           </p>
         </div>
       </section>
+
+      <ContentSection
+        id="what-selected-candidates-do"
+        eyebrow="What actually works"
+        heading="What candidates who clear tend to have in common"
+        intro="Drawn from how competitive examinations are structured rather than from anecdote — these are the patterns that hold across exam families."
+        blocks={[
+          {
+            type: 'list',
+            items: [
+              { text: 'They measured before they planned', note: 'a full mock taken before studying anything, so the plan was built on where they actually stood rather than on where they assumed they did.' },
+              { text: 'They started the slow things first', note: 'vocabulary, general awareness, calculation speed and — for uniformed recruitment — physical fitness. All accumulate over months and none can be recovered late.' },
+              { text: 'They prepared for the stage that decides the result', note: 'not the stage that comes first. In banking and UPSC, prelims marks are discarded; in SSC CGL, only Tier 2 builds the merit list.' },
+              { text: 'They studied the weakest section', note: 'rather than the one they enjoyed, which is the natural instinct and close to worthless where sectional cutoffs apply.' },
+              { text: 'They analysed mocks longer than they took them', note: 'and classified errors by cause — did not know, misread, wrong method, calculation slip, ran out of time — because those five have five different fixes.' },
+              { text: 'They read the notification', note: 'end to end, every cycle. Patterns, age bands and negative marking change, and preparing to an old structure is a self-inflicted loss.' },
+            ],
+          },
+          {
+            type: 'note',
+            title: 'And the thing that is not a pattern',
+            text: 'There is no correlation worth reporting between hours logged and outcomes. Candidates who study twelve hours a day badly are outperformed routinely by candidates who study five hours a day with honest measurement and correction. What varies is not effort but whether the effort was pointed at the right thing.',
+          },
+        ]}
+      />
+
       <FinalCta />
     </>
   )
@@ -191,17 +284,44 @@ export function Faculty() {
         trail={[{ label: 'Faculty' }]}
       />
       <FacultySection />
-      <section className="s s--bg">
-        <div className="wrap wrap--narrow prose">
-          <h2 className="h">Why we list subjects rather than names</h2>
-          <p>
-            Faculty here are listed by subject rather than by invented personalities. Individual
-            educator records — name, photograph, qualification and years of experience — are added
-            through the CMS as they are verified, so the {FACULTY.length} subject groups above will
-            expand into named profiles rather than being replaced by them.
-          </p>
-        </div>
-      </section>
+
+      <ContentSection
+        id="why-subjects"
+        eyebrow="How this page works"
+        heading="Why we list subjects rather than names"
+        background
+        blocks={[
+          {
+            type: 'p',
+            text: `Faculty here are listed by subject rather than by invented personalities. Individual educator records — name, photograph, qualification and years of experience — are published as they are verified, so the ${FACULTY.length} subject groups above will expand into named profiles rather than being replaced by them.`,
+          },
+          {
+            type: 'p',
+            text: 'The alternative, which is common enough on preparation sites, is to publish stock photographs beside impressive-sounding credentials that nobody has checked. We would rather show less and have it be true.',
+          },
+        ]}
+      />
+
+      <ContentSection
+        id="how-material-is-made"
+        eyebrow="Editorial process"
+        heading="How the material on this site is produced"
+        intro="Every study topic, question and solution goes through the same sequence before it is published."
+        blocks={[
+          {
+            type: 'steps',
+            items: [
+              { text: 'The syllabus is checked against the current notification.', note: 'Not against last year’s guide. Patterns, marks and negative marking change, and material written to an old structure teaches the wrong exam.' },
+              { text: 'Past papers are tagged to find the weighting.', note: 'A syllabus lists topics with equal visual weight; past papers show which ones actually carry marks. That distribution decides how much space a topic gets.' },
+              { text: 'Subject faculty write the topic.', note: 'Concepts, worked examples and practice questions with explanations, written to be worked through rather than skimmed.' },
+              { text: 'A second reader checks the solutions.', note: 'Every worked example and every practice explanation, because a wrong solution teaches a wrong method to everyone who reads it.' },
+              { text: 'Claims about examinations are qualified where they are volatile.', note: 'Vacancy counts, cutoffs and dates change. Where a figure would age badly, the material says to check the notification instead of stating one.' },
+              { text: 'Corrections are made when reported.', note: 'If you find an error, write to us with the page URL. It is the fastest route to a fix and we would rather know.' },
+            ],
+          },
+        ]}
+      />
+
       <FinalCta />
     </>
   )
@@ -222,14 +342,82 @@ export function Careers() {
         lead="We hire subject faculty, content editors and engineers who care about getting the details of an exam right."
         trail={[{ label: 'Careers' }]}
       />
-      <section className="s">
+      <ContentSection
+        id="what-we-hire-for"
+        eyebrow="The work"
+        heading="What we hire for"
+        intro="Almost everything on this site is written rather than assembled, which shapes who we need."
+        blocks={[
+          {
+            type: 'defs',
+            items: [
+              [
+                'Subject faculty',
+                'Teachers who know an examination well enough to say what it actually asks rather than what its syllabus lists — and who can write that down clearly. Quantitative aptitude, reasoning, English, general studies and the technical subjects. The work is writing study material, setting questions and reviewing solutions.',
+              ],
+              [
+                'Question setters',
+                'People who can write a question with exactly one defensible answer and three distractors that are wrong for interesting reasons. This is a specific craft, and it is rarer than subject knowledge. A sample set tells us more than a résumé does.',
+              ],
+              [
+                'Content editors',
+                'Editors who check that a claim about an examination is accurate against the current notification, that a solution is correct, and that the writing says something. Much of the job is catching detail that has quietly gone out of date.',
+              ],
+              [
+                'Engineers',
+                'Front-end and back-end engineers who care about page speed, accessibility and correctness, on a site whose users are often on modest connections and shared devices.',
+              ],
+            ],
+          },
+        ]}
+      />
+
+      <ContentSection
+        id="what-we-look-for"
+        eyebrow="What matters"
+        heading="What we look for"
+        background
+        blocks={[
+          {
+            type: 'list',
+            items: [
+              { text: 'Accuracy about examinations', note: 'a confident claim about a pattern that changed two cycles ago is worse than no claim. We would rather someone say they need to check.' },
+              { text: 'Writing that respects the reader', note: 'aspirants are preparing under real pressure. Padding wastes their time, and so does hedging that avoids saying anything.' },
+              { text: 'Willingness to be corrected', note: 'everything published here gets reviewed, and material gets sent back. That is the process working, not a judgement.' },
+              { text: 'Something you have made', note: 'a set of notes, a question bank, a solution you wrote, a project you shipped. It is worth more than a description of experience.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'We are based in Hyderabad and work with contributors elsewhere. Roles are a mix of full-time and contributor arrangements depending on the work.',
+          },
+        ]}
+      />
+
+      <ContentSection
+        id="apply"
+        eyebrow="Applying"
+        heading="How to get in touch"
+        blocks={[
+          {
+            type: 'steps',
+            items: [
+              { text: 'Write to support@brollyexamprep.com.', note: 'With "Careers" and the role in the subject line.' },
+              { text: 'Tell us what you do, in a paragraph.', note: 'The subject you teach, the examinations you know, or the engineering work you have done.' },
+              { text: 'Attach a sample.', note: 'For faculty and question setters, this is the part that matters most — a topic you have written up, or a set of questions with solutions. For engineers, a repository or a project.' },
+              { text: 'We will reply either way.', note: 'Including when the answer is no, which is more useful to you than silence.' },
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Current openings',
+            text: 'Specific vacancies are listed on this page as they open. When none are listed, we still read speculative applications from subject faculty and question setters, because good ones are hard to find on demand.',
+          },
+        ]}
+      />
+
+      <section className="s s--bg">
         <div className="wrap wrap--narrow prose">
-          <h2 className="h">Open roles</h2>
-          <p>
-            Current openings are published here as they open. To register interest in the meantime,
-            write to <a href="mailto:support@brollyexamprep.com">support@brollyexamprep.com</a> with
-            the subject you teach or the work you do, and a sample of it.
-          </p>
           <p>
             <Link className="btn btn--k" to="/contact/">
               Contact Us
@@ -241,34 +429,12 @@ export function Careers() {
   )
 }
 
-const LEGAL_COPY = {
-  '/privacy-policy/': {
-    title: 'Privacy Policy',
-    intro:
-      'How Brolly Exam Prep collects, uses and protects the information you give us when you create an account, attempt a test or contact support.',
-  },
-  '/terms-and-conditions/': {
-    title: 'Terms & Conditions',
-    intro:
-      'The terms that govern your use of Brolly Exam Prep, including accounts, purchased test series and acceptable use of the material published here.',
-  },
-  '/refund-policy/': {
-    title: 'Refund Policy',
-    intro:
-      'When a paid course or test series purchase can be refunded, how to request one and how long refunds take to process.',
-  },
-  '/disclaimer/': {
-    title: 'Disclaimer',
-    intro:
-      'Exam dates, vacancies, syllabi and results published here are compiled from official notifications. Verify against the conducting body before acting on them.',
-  },
-}
-
 export function Legal() {
   const { pathname } = useLocation()
-  const copy = LEGAL_COPY[pathname] || { title: 'Legal', intro: '' }
+  const copy = LEGAL[pathname] || { title: 'Legal', intro: '', sections: [] }
+
   useSeo({
-    title: `${copy.title} | Brolly Exam Prep`,
+    title: copy.seoTitle || `${copy.title} | Brolly Exam Prep`,
     description: copy.intro,
     canonical: canonicalFor(pathname),
   })
@@ -281,16 +447,27 @@ export function Legal() {
         lead={copy.intro}
         trail={[{ label: copy.title }]}
       />
-      <section className="s">
+
+      {copy.sections.map((section, i) => (
+        <ContentSection
+          key={section.id}
+          id={section.id}
+          heading={section.heading}
+          blocks={section.blocks}
+          background={i % 2 === 1}
+        />
+      ))}
+
+      <section className={`s${copy.sections.length % 2 === 1 ? ' s--bg' : ''}`}>
         <div className="wrap wrap--narrow prose">
           <p>
-            This page is a placeholder. Replace the body with the reviewed legal text for{' '}
-            <code>{pathname}</code> before the site goes live — the heading, breadcrumbs and layout
-            are already in place.
-          </p>
-          <p>
             Questions about this policy go to{' '}
-            <a href="mailto:support@brollyexamprep.com">support@brollyexamprep.com</a>.
+            <a href="mailto:support@brollyexamprep.com">support@brollyexamprep.com</a>. Brolly Exam
+            Prep is part of{' '}
+            <a href="https://brollyacademy.com/" rel="noopener" target="_blank">
+              Brolly Academy
+            </a>
+            , Hyderabad, Telangana, India.
           </p>
         </div>
       </section>

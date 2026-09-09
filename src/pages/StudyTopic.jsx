@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import Icon, { Arrow } from '../components/Icon'
+import Block, { Example } from '../components/Blocks'
 import { PageHero, SectionHead, useJsonLd, useMeta, useTitle } from '../components/ui'
 import { getTopic } from '../data/study'
 import { humanise } from '../lib/labels'
@@ -174,107 +175,6 @@ export default function StudyTopic() {
         lead="Attempt a timed mock while the formulas are fresh — that is what tells you which of them actually stuck."
       />
     </>
-  )
-}
-
-/* ── Body blocks ──────────────────────────────────────────────── */
-
-function Block({ block }) {
-  if (block.type === 'p') return <p className="sm-p">{block.text}</p>
-
-  if (block.type === 'defs') {
-    return (
-      <dl className="sm-defs s__block">
-        {block.items.map(([term, desc]) => (
-          <div key={term}>
-            <dt>{term}</dt>
-            <dd>{desc}</dd>
-          </div>
-        ))}
-      </dl>
-    )
-  }
-
-  if (block.type === 'table') {
-    return (
-      <div className="ctable-wrap s__block">
-        <table className="ctable">
-          {block.caption && <caption>{block.caption}</caption>}
-          <thead>
-            <tr>
-              {block.head.map((cell) => (
-                <th scope="col" key={cell}>
-                  {cell}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {block.rows.map((row) => (
-              <tr key={row[0]}>
-                <th scope="row">{row[0]}</th>
-                {row.slice(1).map((cell, i) => (
-                  <td data-label={block.head[i + 1]} key={block.head[i + 1]}>
-                    {cell}
-                  </td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    )
-  }
-
-  if (block.type === 'formula') {
-    return (
-      <div className="s__block">
-        {block.title && <h3 className="s__sub">{block.title}</h3>}
-        <ul className="sm-formulas">
-          {block.items.map((item) => (
-            <li key={item.expr}>
-              <b>{item.expr}</b>
-              {item.note && <span>{item.note}</span>}
-            </li>
-          ))}
-        </ul>
-      </div>
-    )
-  }
-
-  if (block.type === 'example') {
-    return (
-      <div className="s__block">
-        <Example example={block} />
-      </div>
-    )
-  }
-
-  if (block.type === 'note') {
-    return (
-      <div className="source-note s__block">
-        <h3>{block.title}</h3>
-        <p>{block.text}</p>
-      </div>
-    )
-  }
-
-  return null
-}
-
-function Example({ example }) {
-  return (
-    <div className="sm-eg">
-      <p className="sm-eg__q">{example.q}</p>
-      <ol className="sm-eg__steps">
-        {example.steps.map((step) => (
-          <li key={step}>{step}</li>
-        ))}
-      </ol>
-      <p className="sm-eg__a">
-        <b>Answer:</b> {example.answer}
-      </p>
-    </div>
   )
 }
 

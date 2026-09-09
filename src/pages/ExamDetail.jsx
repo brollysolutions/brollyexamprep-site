@@ -1,9 +1,12 @@
 import { Link, useLocation } from 'react-router-dom'
 import Icon, { Arrow } from '../components/Icon'
-import { PageHero, SectionHead, Tile, canonicalFor, useSeo } from '../components/ui'
+import Block, { ContentSection } from '../components/Blocks'
+import { PageHero, SectionHead, Tile, canonicalFor, useJsonLd, useSeo } from '../components/ui'
 import { LINK_INDEX } from '../data/nav'
 import { PREP_SUBLINKS } from '../data/site'
+import { getExam } from '../data/exams'
 import { humanise } from '../lib/labels'
+import { SITE } from '../lib/seo'
 import { FaqSection, FinalCta } from './home/sections'
 
 const RESOURCE_BLURBS = {
@@ -24,6 +27,16 @@ const RESOURCE_ICONS = {
   'study-material': 'book',
 }
 
+/** Section headings for each resource page, so no two read identically. */
+const RESOURCE_HEADINGS = {
+  syllabus: ['Syllabus', 'What the syllabus covers'],
+  'exam-pattern': ['Pattern', 'How the paper is structured'],
+  'previous-year-papers': ['Past papers', 'Reading previous papers properly'],
+  'mock-tests': ['Practice', 'Using mock tests as a measurement'],
+  preparation: ['Strategy', 'How to prepare'],
+  'study-material': ['Notes', 'Study material for this exam'],
+}
+
 /**
  * Renders any exam page — /government-exams/:category/:exam/ and the six
  * resource sub-pages beneath it. Titles come from the nav index when the exam
@@ -34,6 +47,11 @@ const RESOURCE_ICONS = {
  * /government-exams/state/telangana/tgpsc-group-1/. The trailing segment is a
  * resource only when it names one of the six resource pages, so whatever is
  * left is the exam and its parent is the category it belongs to.
+ *
+ * The body comes from the written record in src/data/exams when one exists.
+ * Where none does yet, the page still says something true and specific about
+ * what that exam's stage means and links on to material that helps — an
+ * honest thin page rather than a placeholder telling the reader about a CMS.
  */
 export default function ExamDetail() {
   const { pathname } = useLocation()
@@ -48,8 +66,9 @@ export default function ExamDetail() {
   const categoryPath = `/${baseSegments.slice(0, -1).join('/')}/`
   const root = baseSegments[0]
 
+  const exam = getExam(base)
   const known = LINK_INDEX.get(base)
-  const examName = known?.label || humanise(baseSegments[baseSegments.length - 1])
+  const examName = exam?.name || known?.label || humanise(baseSegments[baseSegments.length - 1])
   const categoryName =
     LINK_INDEX.get(categoryPath)?.label || humanise(baseSegments[baseSegments.length - 2])
   const rootName = root === 'entrance-exams' ? 'Entrance Exams' : 'Government Exams'
@@ -57,15 +76,16 @@ export default function ExamDetail() {
     ? PREP_SUBLINKS.find(([, slug]) => slug === resource)?.[0] || humanise(resource)
     : null
 
+  const written = resource ? exam?.resources?.[resource] : null
+
   useSeo({
-    title: resourceLabel
-      ? `${examName} ${resourceLabel} | Brolly Exam Prep`
-      : `${examName} | Brolly Exam Prep`,
-    description: resourceLabel
-      ? `${examName} ${resourceLabel.toLowerCase()} - full details, preparation guidance and free practice material for the ${examName} exam.`
-      : `${examName} exam guide - eligibility, syllabus, exam pattern, application dates, previous-year papers and free mock tests.`,
+    title: pageTitle({ exam, resource, resourceLabel, examName, written }),
+    description: pageDescription({ exam, resource, resourceLabel, examName, written }),
     canonical: canonicalFor(path),
+    type: 'article',
   })
+
+  useJsonLd(structuredData({ exam, resource, resourceLabel, examName, path }))
 
   const trail = [
     { label: rootName, to: `/${root}/` },
@@ -74,32 +94,15 @@ export default function ExamDetail() {
     ...(resource ? [{ label: resourceLabel }] : []),
   ]
 
-  const examFaqs = [
-    {
-      q: `What is the ${examName} exam pattern?`,
-      a: `The ${examName} pattern — sections, question counts, marks and timing — is listed in full on the exam pattern page, and is refreshed whenever the conducting body issues a new notification.`,
-    },
-    {
-      q: `Are free ${examName} mock tests available?`,
-      a: `Yes. At least one free full-length ${examName} mock test is available without payment, on the current pattern, with your score and the answer key at the end.`,
-    },
-    {
-      q: `How should I start preparing for ${examName}?`,
-      a: `Attempt a free mock first, read the syllabus and pattern pages to see what the paper actually asks, then study the weakest section before anything else. Re-test every couple of weeks to check the gap is closing.`,
-    },
-  ]
+  const faqs = resource ? null : exam?.faqs || genericFaqs(examName)
+  const [eyebrow, heading] = RESOURCE_HEADINGS[resource] || []
 
   return (
     <>
       <PageHero
         eyebrow={`${categoryName} · ${rootName}`}
         title={resourceLabel ? `${examName} ${resourceLabel}` : examName}
-        lead={
-          resource
-            ? RESOURCE_BLURBS[resource] ||
-              `${resourceLabel} for ${examName}, kept in step with the latest official notification.`
-            : `Syllabus, exam pattern, previous papers, mock tests, preparation guides and study material for ${examName} — everything the exam actually requires, in one place.`
-        }
+        lead={heroLead({ exam, resource, resourceLabel, examName, written })}
         trail={trail}
         actions={
           <>
@@ -107,13 +110,70 @@ export default function ExamDetail() {
               Take a Free {examName} Mock
             </Link>
             <Link className="btn btn--o" to={`${base}syllabus/`}>
-              View Syllabus
+              {examName} Syllabus
             </Link>
           </>
         }
       />
 
-      <section className="s">
+      {/* ── The base page: what the exam is, quick facts, the stages ── */}
+      {!resource && exam && (
+        <>
+          <ContentSection
+            id="overview"
+            eyebrow="Overview"
+            heading={`What ${exam.name} is, and who it suits`}
+            blocks={exam.overview}
+          />
+
+          <section className="s s--bg">
+            <div className="wrap">
+              <SectionHead
+                eyebrow="At a glance"
+                title={`${exam.name} in brief`}
+                lead="The durable facts. Anything that changes between cycles — dates, vacancies, cutoffs — belongs in the official notification rather than here."
+              />
+              <Block block={{ type: 'defs', items: exam.quickFacts }} />
+            </div>
+          </section>
+
+          <section className="s">
+            <div className="wrap">
+              <SectionHead
+                eyebrow="Selection process"
+                title={`How ${exam.name} selection works`}
+                lead="Each stage in order, and what it actually tests."
+              />
+              <Block
+                block={{
+                  type: 'table',
+                  head: ['Stage', 'Format', 'What it involves'],
+                  rows: exam.stages.map((stage) => [stage.name, stage.mode, stage.detail]),
+                }}
+              />
+            </div>
+          </section>
+        </>
+      )}
+
+      {/* ── A resource sub-page: its written body ── */}
+      {resource && written && (
+        <ContentSection id={resource} eyebrow={eyebrow} heading={`${examName} — ${heading}`} blocks={written.blocks} />
+      )}
+
+      {/* ── Nothing written for this exam yet ── */}
+      {!written && (!exam || resource) && (
+        <UnwrittenBody
+          examName={examName}
+          categoryName={categoryName}
+          categoryPath={categoryPath}
+          resource={resource}
+          resourceLabel={resourceLabel}
+          base={base}
+        />
+      )}
+
+      <section className={`s${resource ? ' s--bg' : ''}`}>
         <div className="wrap">
           <SectionHead
             eyebrow="Exam resources"
@@ -134,33 +194,7 @@ export default function ExamDetail() {
         </div>
       </section>
 
-      <section className="s s--bg">
-        <div className="wrap">
-          <SectionHead
-            eyebrow="Content"
-            title={resourceLabel ? `${resourceLabel} detail` : 'Exam overview'}
-            lead="This block is the CMS slot. Bind it to the exam record and the published copy renders here."
-          />
-          <div className="cms-slot">
-            <p>
-              <strong>CMS binding:</strong> <code>{resource ? `${base}${resource}/` : base}</code>
-            </p>
-            <p>
-              The route, breadcrumbs, heading hierarchy, internal links and FAQ scaffolding are all
-              generated. Fetch the record for this slug and render its body inside this container.
-            </p>
-            <p className="cms-slot__links">
-              {PREP_SUBLINKS.map(([label, slug]) => (
-                <Link key={slug} to={`${base}${slug}/`}>
-                  {label} <Arrow />
-                </Link>
-              ))}
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="s">
+      <section className={`s${resource ? '' : ' s--bg'}`}>
         <div className="wrap">
           <SectionHead eyebrow="Related" title={`More ${categoryName} preparation`} />
           <div className="g4">
@@ -182,13 +216,237 @@ export default function ExamDetail() {
         </div>
       </section>
 
-      <FaqSection items={examFaqs} title={`${examName} — FAQs`} />
+      {faqs && <FaqSection items={faqs} title={`${examName} — FAQs`} />}
+
       <FinalCta
         title={`Start your ${examName} preparation today`}
         lead="Read the syllabus, attempt a free mock, then fix the section that costs you the most marks."
       />
     </>
   )
+}
+
+/* ── Head ─────────────────────────────────────────────────────── */
+
+/**
+ * Titles stay under roughly 60 characters where the exam name allows it, since
+ * that is about where Google truncates a title link. A written record carries
+ * its own hand-set title for the base page; resource pages compose one.
+ */
+function pageTitle({ exam, resource, resourceLabel, examName, written }) {
+  if (!resource) return exam?.seoTitle || `${examName} Exam: Syllabus, Pattern & Free Mock Tests`
+  if (written?.title) return written.title
+  return `${examName} ${resourceLabel} | Brolly Exam Prep`
+}
+
+function pageDescription({ exam, resource, resourceLabel, examName, written }) {
+  if (!resource) {
+    return (
+      exam?.metaDescription ||
+      `${examName} exam guide — eligibility, syllabus, exam pattern, selection stages, previous-year papers and free mock tests.`
+    )
+  }
+  if (written?.description) return written.description
+  return `${examName} ${resourceLabel.toLowerCase()} — what the ${examName} exam asks at this stage, how to prepare for it, and where to practise.`
+}
+
+function heroLead({ exam, resource, resourceLabel, examName, written }) {
+  if (!resource) {
+    return (
+      exam?.lead || [
+        `Syllabus, exam pattern, previous papers, mock tests, preparation guides and study material for ${examName} — everything the exam actually requires, in one place.`,
+      ]
+    )
+  }
+  if (written?.lead) return written.lead
+  return (
+    RESOURCE_BLURBS[resource] ||
+    `${resourceLabel} for ${examName}, kept in step with the latest official notification.`
+  )
+}
+
+/**
+ * An exam guide is an article about a defined thing, so it is marked up as
+ * one. The FAQ block is emitted only on the base page, where the questions
+ * are actually rendered — structured data that describes content a visitor
+ * cannot see is exactly what Google asks you not to publish.
+ */
+function structuredData({ exam, resource, resourceLabel, examName, path }) {
+  const url = `${SITE.origin}${path}`
+  const blocks = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      '@id': `${url}#article`,
+      headline: resource ? `${examName} ${resourceLabel}` : `${examName} exam guide`,
+      url,
+      inLanguage: 'en-IN',
+      about: { '@type': 'Thing', name: examName },
+      isPartOf: { '@id': `${SITE.origin}/#website` },
+      publisher: { '@id': `${SITE.origin}/#organization` },
+    },
+  ]
+
+  if (!resource && exam?.faqs?.length) {
+    blocks.push({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: exam.faqs.map((faq) => ({
+        '@type': 'Question',
+        name: faq.q,
+        acceptedAnswer: { '@type': 'Answer', text: faq.a },
+      })),
+    })
+  }
+
+  return blocks
+}
+
+/* ── Pages with no written record yet ─────────────────────────── */
+
+/**
+ * What each resource page means, written once and generally enough to be true
+ * of any exam. It is a thin page, and it says so — but a reader still learns
+ * what the stage is and leaves with somewhere useful to go, which the previous
+ * "this block is the CMS slot" placeholder did not offer.
+ */
+const RESOURCE_EXPLAINERS = {
+  syllabus: {
+    intro:
+      'A syllabus tells you what can be asked. It does not tell you what is asked often, which is a different and more useful question — and one only previous papers can answer.',
+    points: [
+      'Read the official notification’s syllabus section first; it is the only version that binds the examiner.',
+      'Then tag two or three years of previous papers by topic and count the tags. The weighting that emerges is what should drive your study order.',
+      'Treat any topic that appears in every cycle as compulsory, and anything appearing once in five years as optional until the rest is secure.',
+    ],
+  },
+  'exam-pattern': {
+    intro:
+      'The pattern is the set of rules you are playing under: how many questions, over how long, with what deducted for a wrong answer, and whether sections are timed separately.',
+    points: [
+      'Find the negative marking rate before anything else — it decides whether a narrowed guess is worth taking.',
+      'Check whether sections are separately timed. If they are, you cannot borrow minutes from a section you find easy.',
+      'Confirm the number of stages and which of them count towards the final merit rather than merely screening.',
+    ],
+  },
+  'previous-year-papers': {
+    intro:
+      'Previous papers are the most accurate description available of what an examiner considers important — more accurate than any syllabus, because they show weighting rather than scope.',
+    points: [
+      'Solve the first paper untimed and work every question to a full solution, including ones you would have skipped.',
+      'Tag questions by specific topic rather than by section, then count the tags across several years.',
+      'Keep two papers unread until the final month so at least two of your measurements are honest.',
+    ],
+  },
+  'mock-tests': {
+    intro:
+      'A mock test is a measuring instrument, not a study session. It only measures anything if you take it in one sitting, against a clock, without looking anything up.',
+    points: [
+      'Sort every wrong answer into three piles: did not know, misread, ran out of time. The three have completely different fixes.',
+      'Watch accuracy rather than attempt count wherever negative marking applies.',
+      'Re-test after two weeks, not two days — you need time in between for corrections to have changed something.',
+    ],
+  },
+  preparation: {
+    intro:
+      'Almost every preparation plan fails in the same place: it treats every subject as equally urgent, when the exam does not, and it leaves the slowest-building skills until last.',
+    points: [
+      'Start with the subject that takes longest to build, not the one that feels most urgent.',
+      'Language and general awareness respond to daily contact over months and barely respond to cramming.',
+      'Take a diagnostic mock before studying anything, so your plan is built on measurement rather than assumption.',
+    ],
+  },
+  'study-material': {
+    intro:
+      'Study material is only useful when it matches the depth the paper asks for. Material written for a harder exam wastes time; material written for an easier one leaves gaps.',
+    points: [
+      'Finish one source before adding a second. Three books half-read teach less than one book read twice.',
+      'Read a topic once, then solve twenty questions before re-reading anything.',
+      'Revisit each topic three days later and again after two weeks — two short revisits beat one long session.',
+    ],
+  },
+}
+
+function UnwrittenBody({ examName, categoryName, categoryPath, resource, resourceLabel, base }) {
+  const explainer = RESOURCE_EXPLAINERS[resource]
+
+  if (!explainer) {
+    return (
+      <ContentSection
+        id="about"
+        eyebrow="Overview"
+        heading={`About the ${examName} exam`}
+        blocks={[
+          {
+            type: 'p',
+            text: `${examName} sits within ${categoryName}, and its full written guide — eligibility, stage-by-stage selection process, section weighting and a preparation plan — is still being written. Rather than pad this page out, here is what is genuinely useful in the meantime.`,
+          },
+          {
+            type: 'list',
+            title: 'Where to start',
+            items: [
+              'Read the current official notification end to end. It is the only source that binds the examiner, and it is where eligibility, age relaxations and the exact pattern are defined.',
+              'Work through two or three previous papers before you study anything, to see what the questions actually look like.',
+              'Take a full-length mock under exam timing to find which sections are already competitive and which are not.',
+            ],
+          },
+          {
+            type: 'links',
+            title: 'Useful in the meantime',
+            items: [
+              { label: `All ${categoryName} exams`, to: categoryPath },
+              { label: 'Free mock tests', to: '/mock-tests/free/' },
+              { label: 'Previous year papers', to: '/previous-year-papers/' },
+              { label: 'Subject-wise study material', to: '/study-material/' },
+            ],
+          },
+        ]}
+      />
+    )
+  }
+
+  return (
+    <ContentSection
+      id={resource}
+      eyebrow={RESOURCE_HEADINGS[resource]?.[0]}
+      heading={`${examName} ${resourceLabel.toLowerCase()} — what to do with it`}
+      blocks={[
+        { type: 'p', text: explainer.intro },
+        {
+          type: 'p',
+          text: `The ${examName}-specific detail for this page is still being written. What follows applies to this stage of any competitive exam, and is worth applying to ${examName} today.`,
+        },
+        { type: 'list', title: 'How to approach it', items: explainer.points },
+        {
+          type: 'links',
+          title: 'Related pages',
+          items: [
+            { label: `${examName} exam guide`, to: base },
+            { label: `All ${categoryName} exams`, to: categoryPath },
+            { label: 'Free mock tests', to: '/mock-tests/free/' },
+            { label: 'Study material by subject', to: '/study-material/' },
+          ],
+        },
+      ]}
+    />
+  )
+}
+
+function genericFaqs(examName) {
+  return [
+    {
+      q: `What is the ${examName} exam pattern?`,
+      a: `The ${examName} pattern — the sections, question counts, marks, timing and negative marking — is defined in the official notification for each cycle, and it does change between cycles. Read the pattern section of the current notification before you plan an attempt order, because the negative marking rate in particular decides whether a narrowed guess is worth taking.`,
+    },
+    {
+      q: `How should I start preparing for ${examName}?`,
+      a: `Take a full-length mock before you study anything. It is uncomfortable and it is the most useful hour you will spend, because it tells you which sections are already competitive and which need real work. Then read the syllabus and pattern to see what the paper actually asks, study the weakest section first, and re-test every couple of weeks to check the gap is closing.`,
+    },
+    {
+      q: `Are free mock tests available for ${examName}?`,
+      a: `Free full-length mock tests are available for major exams on the current pattern, with your score and the answer key at the end. Where a paper for this exam is not live yet, practise with the closest available paper at the same level and use sectional tests for the subjects that overlap.`,
+    },
+  ]
 }
 
 /** Small helper reused by the category listing to keep icon choice consistent. */

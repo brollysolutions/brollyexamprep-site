@@ -1,10 +1,13 @@
 import { Link, useLocation } from 'react-router-dom'
 import { Arrow } from '../components/Icon'
-import { PageHero, SectionHead, Tile, canonicalFor, useSeo } from '../components/ui'
+import { ContentSection } from '../components/Blocks'
+import { PageHero, SectionHead, Tile, canonicalFor, useJsonLd, useSeo } from '../components/ui'
 import { LINK_INDEX, NAV } from '../data/nav'
 import { PREP_SUBLINKS, PREP_TABS } from '../data/site'
+import { getHub } from '../data/hubs'
 import { humanise } from '../lib/labels'
-import { FinalCta } from './home/sections'
+import { SITE } from '../lib/seo'
+import { FaqSection, FinalCta } from './home/sections'
 
 /** Which mega section does this path belong to? */
 function sectionFor(pathname) {
@@ -48,13 +51,26 @@ export default function Directory() {
   const scope =
     section && section.title !== label && LABEL_USES.get(label) > 1 ? section.title : null
 
+  /*
+   * A written hub, where one exists, supplies the page's title, description,
+   * hero copy and body. Where none does yet, the page still falls back to a
+   * generic orientation body rather than to a bare list of links.
+   */
+  const hub = getHub(path)
+
   useSeo({
-    title: scope ? `${label} ${scope} | Brolly Exam Prep` : `${label} | Brolly Exam Prep`,
-    description: scope
-      ? `${label} ${scope.toLowerCase()} on Brolly Exam Prep - notifications, eligibility, syllabus, previous-year papers, mock tests and free study material.`
-      : `${label} on Brolly Exam Prep - exam notifications, eligibility, syllabus, previous-year papers, mock tests and free study material.`,
+    title:
+      hub?.title ||
+      (scope ? `${label} ${scope} | Brolly Exam Prep` : `${label} | Brolly Exam Prep`),
+    description:
+      hub?.description ||
+      (scope
+        ? `${label} ${scope.toLowerCase()} on Brolly Exam Prep - notifications, eligibility, syllabus, previous-year papers, mock tests and free study material.`
+        : `${label} on Brolly Exam Prep - exam notifications, eligibility, syllabus, previous-year papers, mock tests and free study material.`),
     canonical: canonicalFor(path),
   })
+
+  useJsonLd(hubStructuredData({ hub, label, path }))
 
   // Siblings: everything under the same parent path, so the page reads as a
   // real index rather than a dead end.
@@ -76,9 +92,10 @@ export default function Directory() {
         eyebrow={section ? section.title : 'Browse'}
         title={label}
         lead={
-          known?.group
+          hub?.lead ||
+          (known?.group
             ? `${label} — part of ${known.group} on Brolly Exam Prep. Syllabus, practice and updates for everything in this group.`
-            : section?.desc
+            : section?.desc)
         }
         trail={trail}
         actions={
@@ -94,6 +111,21 @@ export default function Directory() {
           </>
         }
       />
+
+      {/* ── The written body, or a generic orientation where none exists ── */}
+      {hub
+        ? hub.sections.map((s, i) => (
+            <ContentSection
+              key={s.id}
+              id={s.id}
+              eyebrow={s.eyebrow}
+              heading={s.heading}
+              intro={s.intro}
+              blocks={s.blocks}
+              background={i % 2 === 1}
+            />
+          ))
+        : <UnwrittenHub label={label} section={section} />}
 
       {tab && (
         <section className="s">
@@ -168,7 +200,88 @@ export default function Directory() {
         </section>
       )}
 
+      {hub?.faqs && <FaqSection items={hub.faqs} title={`${label} — FAQs`} />}
+
       <FinalCta />
     </>
+  )
+}
+
+/* ── Head ─────────────────────────────────────────────────────── */
+
+/**
+ * A hub is a collection page about a subject, so it is marked up as one, with
+ * the FAQ block emitted only where the questions are actually rendered.
+ */
+function hubStructuredData({ hub, label, path }) {
+  const url = `${SITE.origin}${path}`
+  const blocks = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      '@id': `${url}#page`,
+      name: label,
+      url,
+      inLanguage: 'en-IN',
+      isPartOf: { '@id': `${SITE.origin}/#website` },
+      publisher: { '@id': `${SITE.origin}/#organization` },
+    },
+  ]
+
+  if (hub?.faqs?.length) {
+    blocks.push({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: hub.faqs.map((faq) => ({
+        '@type': 'Question',
+        name: faq.q,
+        acceptedAnswer: { '@type': 'Answer', text: faq.a },
+      })),
+    })
+  }
+
+  return blocks
+}
+
+/* ── Hubs with nothing written yet ────────────────────────────── */
+
+/**
+ * Rather than a bare list of links, an unwritten hub says what the page is for
+ * and what a visitor should do first. It is still a thin page — but a thin
+ * page that helps, which is the difference the SEO Starter Guide is actually
+ * asking for.
+ */
+function UnwrittenHub({ label, section }) {
+  return (
+    <ContentSection
+      id="about"
+      eyebrow="Overview"
+      heading={`About ${label}`}
+      blocks={[
+        {
+          type: 'p',
+          text: `${label} sits within ${section?.title || 'this section'}, and its full written guide is still being prepared. Rather than pad this page out, here is what is genuinely worth doing while it is written.`,
+        },
+        {
+          type: 'list',
+          title: 'Where to start',
+          items: [
+            'Read the current official notification for any exam you are targeting. It is the only document that binds the examiner, and it is where eligibility, the exact pattern and the negative marking rate are defined.',
+            'Work through two or three previous papers before studying anything, to see what the questions actually look like rather than what a syllabus says they might.',
+            'Take a full-length mock under exam timing, to find which sections are already competitive and which are not.',
+          ],
+        },
+        {
+          type: 'links',
+          title: 'Useful in the meantime',
+          items: [
+            { label: 'Free mock tests', to: '/mock-tests/free/' },
+            { label: 'Previous year papers', to: '/previous-year-papers/' },
+            { label: 'Subject-wise study material', to: '/study-material/' },
+            { label: 'Current affairs', to: '/current-affairs/' },
+          ],
+        },
+      ]}
+    />
   )
 }
