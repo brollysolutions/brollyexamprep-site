@@ -126,6 +126,25 @@ const international = [
             type: 'p',
             text: 'For Indian candidates the quantitative section is usually the easier half, since its mathematics rarely exceeds what an Indian school syllabus covers. The verbal section is the harder one, and specifically its vocabulary component — text completion and sentence equivalence questions require knowing words precisely rather than approximately, and that is genuinely a months-long project.',
           },
+          {
+            type: 'list',
+            title: 'What the verbal question types actually demand',
+            items: [
+              { text: 'Text completion tests logic before vocabulary', note: 'the blanks are determined by the structure of the sentence — a contrast, a consequence, a restatement. Candidates who read for the missing word rather than for the logical relationship guess between plausible synonyms.' },
+              { text: 'Sentence equivalence requires two answers that mean the same thing', note: 'not two answers that both fit. That distinction eliminates most wrong pairs immediately and is the single most useful piece of technique in the section.' },
+              { text: 'Reading comprehension is short and dense', note: 'passages are often a single paragraph with one question, which rewards close reading rather than skimming for a located fact.' },
+              { text: 'Vocabulary is tested in context, not in isolation', note: 'which is why word lists memorised without usage transfer poorly. The test asks how a word functions in a sentence, not what a dictionary says it means.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'For most Indian candidates the quantitative section requires familiarity rather than study — the mathematics rarely exceeds what a class 10 or 11 student has covered, and there is no calculus. What does need practice is the quantitative comparison question type, which appears nowhere in Indian examinations and rewards recognising when a comparison cannot be determined from the information given rather than computing both quantities.',
+          },
+          {
+            type: 'note',
+            title: 'The analytical writing task is scored on argument, not prose',
+            text: 'The issue task rewards a clear position, developed reasoning and relevant examples far more than elegant sentences. Candidates who write beautifully and argue loosely score below candidates who argue tightly in plain prose — which is worth knowing before spending preparation time on style.',
+          },
         ],
       },
       'exam-pattern': {
@@ -165,6 +184,32 @@ const international = [
             title: 'Scores are valid for five years and sent selectively',
             text: 'A GRE score remains usable for five years, retakes are permitted after a specified interval subject to a limit in any twelve-month period, and candidates choose which scores to send to which institutions. That combination makes an early attempt genuinely low-risk and a good score a durable asset.',
           },
+          {
+            type: 'p',
+            text: 'Section-level adaptation has a consequence that candidates often meet too late: the first section of each measure sets your ceiling. Perform moderately in the first verbal section and the second will be drawn from an easier pool, which caps the score achievable however well you then do. That makes a settled, careful start considerably more valuable here than in a linear test, and it argues against the common habit of using the opening questions to warm up.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'The within-section freedom, and how to use it',
+                'Unlike a question-adaptive test, the GRE lets you skip and return inside a section. That permits a genuine two-pass approach — answer everything straightforward on the first pass, then return to the rest — which is the correct way to protect the marks you can definitely get.',
+              ],
+              [
+                'The calculator, and what it changes',
+                'An on-screen calculator is available in the quantitative section, which tells you what the section is testing: setting a problem up, not computing it. Reaching for the calculator on a step you could do mentally costs seconds and signals that you are solving rather than reasoning.',
+              ],
+              [
+                'No penalty, and what follows',
+                'Nothing should ever be left unanswered. Reserve the final seconds of each section for filling anything outstanding, and treat a blank in a practice test as a habit failure rather than a rounding error.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Five years of validity changes the planning',
+            text: 'A GRE score remains usable for five years and can be sent selectively to institutions you nominate. That makes an early attempt genuinely low-risk and a planned retake normal rather than exceptional — a very different risk profile from an annual Indian entrance, and one worth exploiting rather than ignoring.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -198,6 +243,29 @@ const international = [
               { label: 'English study material', to: '/study-material/english/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'Why official material is difficult to substitute',
+            items: [
+              { text: 'The wrong options are constructed to a standard', note: 'GRE distractors are near-synonyms that fail on connotation, register or logical fit. Third-party questions frequently offer wrong answers that are simply wrong, which trains a much cruder discrimination.' },
+              { text: 'Difficulty is calibrated against real performance', note: 'rather than against an author’s estimate, which matters when you are trying to judge whether you are ready.' },
+              { text: 'Passage register is characteristic', note: 'the density and subject range of GRE reading passages are distinctive, and imitations tend to be either easier or artificially obscure.' },
+              { text: 'Quantitative comparison is often reproduced badly', note: 'the question type depends on precise sufficiency logic, and poorly written versions teach the wrong instinct about when something cannot be determined.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'For every vocabulary question you get wrong, write down why the option you chose fails rather than what the correct word means. The failure is usually specific — the word carries the wrong connotation, or it fits the sentence but not the contrast the sentence sets up — and naming it is what builds the discrimination the test rewards. A list of definitions built from your errors teaches much less than a list of distinctions.',
+          },
+          {
+            type: 'p',
+            text: 'Practise quantitative comparison as its own category rather than mixed into general quantitative work. It is the one question type with no Indian equivalent, and its characteristic trap is a comparison that appears determinate until you consider negative values, fractions or zero. Working thirty of them in a block builds that habit far faster than meeting them occasionally.',
+          },
+          {
+            type: 'note',
+            title: 'Build the vocabulary list from your reading, not from a book',
+            text: 'Words met in context and recorded with the sentence they appeared in are retained far better than words memorised from a list, and they come with the connotation the test asks about. Twenty words a week gathered this way over three months outperforms a thousand-word list worked through in a fortnight.',
+          },
         ],
       },
       'mock-tests': {
@@ -229,6 +297,26 @@ const international = [
               { label: 'English study material', to: '/study-material/english/' },
               { label: 'Quantitative aptitude notes', to: '/study-material/quantitative-aptitude/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'Getting value from adaptive practice tests',
+            items: [
+              { title: 'Use official adaptive tests for score prediction', text: 'Only they reproduce section-level adaptation. A fixed-difficulty test tells you about your accuracy and nothing about the score you would receive.' },
+              { title: 'Space them across the preparation', text: 'The supply is limited and each is a scarce measurement. Clustering them in the final fortnight wastes the diagnostic value they were meant to provide.' },
+              { title: 'Review the first section of each measure separately', text: 'It sets the ceiling, so a pattern of slow starts is worth more attention than an equivalent number of errors later.' },
+              { title: 'Separate vocabulary errors from comprehension errors', text: 'They need different remedies — one is a discrimination problem, the other a reading problem — and a combined verbal score hides which you have.' },
+              { title: 'Confirm blanks are zero', text: 'No penalty applies. A single unanswered question means the final-seconds habit is not yet automatic.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Look specifically at quantitative errors caused by misreading rather than by mathematics. For Indian candidates this category usually dominates — the content is familiar, so the errors come from reading the question quickly, missing a condition, or answering a slightly different question from the one asked. That is a behaviour finding with a behavioural fix, and it is often worth several points.',
+          },
+          {
+            type: 'note',
+            title: 'Get the essay read by someone honest',
+            text: 'Analytical writing improves through critique rather than repetition, and the failure modes — a position that drifts, examples that do not support the claim, a conclusion that restates the introduction — are invisible from the inside. Six essays with feedback will do more than twenty written and self-assessed.',
           },
         ],
       },
@@ -267,6 +355,32 @@ const international = [
               { text: 'Essay practice with feedback', note: 'analytical writing improves through critique, not repetition.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'The vocabulary project — the long pole',
+                'Built in context over months rather than memorised in weeks. This is the component that cannot be compressed, which makes it the reason to start early, and the reason a candidate with three months and a reading habit outperforms one with six weeks and a word list.',
+              ],
+              [
+                'The quantitative revision — short and specific',
+                'Familiarity with the framing and with quantitative comparison, rather than new mathematics. For most Indian candidates a few weeks is genuinely sufficient, and extending it is a common misallocation.',
+              ],
+              [
+                'The essay practice — weekly, with feedback',
+                'One timed essay a week from month two, read by someone who will be blunt. Small in time and disproportionate in return, because most candidates do none of it.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'A daily reading habit is the single highest-return activity in a GRE preparation, and it is worth being deliberate about what you read. Dense argumentative non-fiction — long-form journalism, essays, academic writing for a general audience — supplies vocabulary in context, builds comprehension speed on unfamiliar registers, and gives you the examples and framing the analytical writing task rewards. Three components served by one habit.',
+          },
+          {
+            type: 'note',
+            title: 'Plan the retake into the schedule',
+            text: 'Retakes are permitted after a specified interval, scores are valid for five years, and reporting is partly within your control. Treating the first attempt as a real but recoverable measurement removes a great deal of pressure and usually produces a better result — and if it does not, the second attempt is already in the calendar rather than an emergency.',
+          },
         ],
       },
       'study-material': {
@@ -300,6 +414,36 @@ const international = [
               'Twenty quantitative questions, including quantitative comparison.',
               'One timed essay a week from month two, with honest feedback.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Official ETS material — the core',
+                'Guides and question banks from the test maker. The precision of GRE verbal questions is genuinely hard to imitate, and practice on approximate questions builds an approximate discrimination.',
+              ],
+              [
+                'A personal vocabulary document — the second core source',
+                'Words met in reading, recorded with the sentence and with a note on connotation. Built by you, revised weekly, and worth more than any published list because it carries context.',
+              ],
+              [
+                'Dense non-fiction — the daily habit',
+                'Essays, long-form journalism and academic writing for general readers. It is preparation rather than enrichment for a test that examines reading, vocabulary in context and written argument.',
+              ],
+              [
+                'Quantitative revision notes — supporting',
+                'Arithmetic, algebra, geometry and data interpretation at a level below Indian class 12. Useful for refreshing framing and for quantitative comparison, and not a subject to rebuild.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Record words with their usage rather than their definition. A GRE vocabulary question asks which word fits a particular logical and tonal slot, which means knowing that a word means roughly disapproval is not enough — you need to know whether it is mild or severe, formal or colloquial, and what it is usually applied to. A sentence captures all of that; a definition captures none of it.',
+          },
+          {
+            type: 'note',
+            title: 'Practise on screen, with the on-screen calculator',
+            text: 'The test is delivered on a computer with its own calculator and its own navigation. Practising on paper builds a workflow you cannot use, and candidates regularly lose time on test day to the mechanics of an interface they met for the first time that morning.',
           },
         ],
       },
@@ -485,6 +629,32 @@ const international = [
             title: 'Choosing the wrong module cannot be undone',
             text: 'A General Training result does not satisfy a university requirement for Academic IELTS, and the test must be retaken. Since the reading and writing components differ substantially between the modules, this is a mistake that costs both the fee and the preparation time. Confirm which module your destination requires before booking.',
           },
+          {
+            type: 'p',
+            text: 'The per-skill minimum is the detail that most often catches candidates out, and it changes how you should read your own practice scores. A candidate with bands of eight, eight, eight and six has an overall average of seven and a half and may still fail a requirement that specifies six and a half in every skill. Your lowest band, not your average, is the number that determines whether you meet a requirement — and it is the number your final weeks should be aimed at.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Why the module choice cannot be undone',
+                'A General Training result does not satisfy a university requirement for Academic IELTS. The two differ in the reading texts and substantially in Writing Task 1 — a data description in Academic, a letter in General Training — and preparing for one does not prepare you for the other.',
+              ],
+              [
+                'What computer-delivered changes',
+                'The content is the same, but the results timeline is generally shorter and the experience differs: typing rather than handwriting for the writing tasks, and on-screen reading with different navigation. Choose on how you actually work rather than on availability.',
+              ],
+              [
+                'How the bands are awarded in writing and speaking',
+                'Against four published criteria rather than by overall impression. Reading them is genuinely the fastest way to understand why a competent piece of writing scores a six rather than a seven, and most candidates never do.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Plan the date against your deadline, not your readiness',
+            text: 'Scores are generally valid for two years and results take time to issue, so the booking decision has to account for application deadlines and for the possibility of a retake. Candidates who book late because they do not feel ready frequently leave no room for the second attempt that a marginal band would require.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -518,6 +688,29 @@ const international = [
               { label: 'GRE exam guide', to: '/entrance-exams/international/gre/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'The task types that most repay specific practice',
+            items: [
+              { text: 'True, false and not given', note: 'the largest single source of lost reading marks. Not given means the passage does not address the claim; false means it contradicts it. Candidates who reason about what is probably true rather than what the text states lose marks systematically here.' },
+              { text: 'Matching headings and matching information', note: 'both reward locating the main idea of a paragraph quickly rather than reading closely, which is a different skill from the one comprehension usually builds.' },
+              { text: 'Academic Writing Task 1 — describing data', note: 'a formulaic task with a recognisable structure: overview first, then the significant comparisons. Learning the structure is most of the score.' },
+              { text: 'Speaking Part 2 — the long turn', note: 'one minute to prepare and up to two minutes to speak. The preparation minute is what makes the difference, and it has to be practised as part of the task.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Practise listening with the recording played once and no pausing, from the first session. It is tempting to replay a section you missed, and it builds exactly the wrong habit — the test plays each recording once, and the skill being examined is partly the ability to keep going after you have lost a detail rather than stopping to recover it.',
+          },
+          {
+            type: 'p',
+            text: 'For writing, practise against the assessment criteria rather than against a model answer. Task achievement, coherence and cohesion, lexical resource and grammatical range and accuracy are what the examiner scores, and a piece can read well while failing one of them — most commonly coherence, where paragraphs are competent individually and do not build. Checking your own work against four named criteria is more useful than comparing it to a sample.',
+          },
+          {
+            type: 'note',
+            title: 'Speak aloud, from the first week',
+            text: 'The speaking test is an interaction with an examiner, and fluency is built by speaking rather than by planning to speak. Practising with a partner, or recording yourself and listening back, is uncomfortable and effective — and it is the component candidates most consistently prepare for silently, which does not work.',
+          },
         ],
       },
       'mock-tests': {
@@ -548,6 +741,26 @@ const international = [
               { label: 'English study material', to: '/study-material/english/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'A practice routine across four skills',
+            items: [
+              { title: 'Take full tests in one sitting', text: 'Listening, reading and writing run back to back in the real test. Practising them separately never rehearses the concentration that the writing tasks meet at the end.' },
+              { title: 'Score each skill separately and watch the lowest', text: 'Per-skill minimums mean your weakest band determines your outcome. Tracking an average hides exactly the number that matters.' },
+              { title: 'Get writing read by an experienced reader', text: 'Self-assessment against the criteria is unreliable, particularly for lexical resource and coherence. One informed reader is worth many self-marked attempts.' },
+              { title: 'Record speaking and listen back', text: 'For pace, filler words, and whether you developed your point or restated it. Uncomfortable and the fastest route to a better band.' },
+              { title: 'Check word counts every time', text: 'Writing below the minimum carries a mechanical penalty regardless of quality, and it is an entirely avoidable loss.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Give the final fortnight almost entirely to your weakest skill. It is unsatisfying — practising what you are worst at rarely feels productive — and it is where the marginal band is available. A candidate spending the last two weeks polishing an already strong reading band while a weak writing band sits below the requirement is optimising the wrong number.',
+          },
+          {
+            type: 'note',
+            title: 'Practise in the delivery mode you booked',
+            text: 'Computer-delivered and paper-based IELTS differ in how you read, annotate and write. If you have booked the computer-delivered test, type your writing practice and read your practice passages on screen — the habits of underlining and margin notes do not transfer, and discovering that on test day costs time in a paper that gives you none.',
           },
         ],
       },
@@ -586,6 +799,32 @@ const international = [
               { text: 'Ignoring the weakest skill', note: 'per-skill minimums mean it decides the outcome.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Task familiarity — the first three weeks',
+                'Knowing exactly what each task asks and how it is scored. This is where the fastest gains sit, because a competent English speaker who does not know what "not given" means, or what Task 1 wants, loses marks for reasons that have nothing to do with their English.',
+              ],
+              [
+                'Underlying proficiency — the longer project',
+                'Reading, listening and speaking ability built over months. It improves more slowly and it sets the ceiling that task familiarity lets you reach.',
+              ],
+              [
+                'The weakest skill — the final weeks',
+                'Whichever of the four your practice tests keep identifying. Per-skill minimums make it the binding constraint, and it deserves disproportionate attention at the end.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Read the assessment criteria for writing and speaking before you write or speak anything. They are published, they are short, and they specify exactly what an examiner is looking for — task response, coherence and cohesion, lexical resource, and grammatical range and accuracy. Candidates routinely prepare for months without reading them and then wonder why a fluent, well-written response scored a band lower than expected.',
+          },
+          {
+            type: 'note',
+            title: 'Confirm the module and the minimums in week one',
+            text: 'Which module you need and what per-skill minimums your target institution or visa route requires are both administrative facts that take ten minutes to establish and that determine everything else. Preparing for the wrong module, or aiming at an overall band while a per-skill minimum sits above your weakest skill, are failures of planning rather than of English.',
+          },
         ],
       },
       'study-material': {
@@ -619,6 +858,36 @@ const international = [
               'Write one full task a week to the word minimum, timed, with feedback.',
               'Build vocabulary through use rather than lists — the criteria reward range in context.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Official practice tests — for task familiarity',
+                'The only reliable source for what each task actually looks like and how it is worded. This half of the preparation cannot come from general English material at all.',
+              ],
+              [
+                'The published assessment criteria — the most under-read document',
+                'Four criteria for writing and four for speaking, in plain language. Reading them changes how you practise, and they take fifteen minutes.',
+              ],
+              [
+                'General English work — for the proficiency underneath',
+                'Grammar for accuracy, vocabulary for range, and reading and listening for speed. This is the half that sets your ceiling and the half that takes months.',
+              ],
+              [
+                'A speaking partner or a recorder — the missing piece',
+                'Fluency is built aloud. Whether that means a partner, a tutor or your own recordings played back, it is the component most candidates omit and the one with the clearest effect on the speaking band.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Build vocabulary through use rather than through lists, because the criteria reward range demonstrated in context. An examiner is assessing whether you can deploy a varied and appropriate vocabulary in a real response, not whether you can recall definitions — which means words practised in your own writing and speaking count for far more than words recognised on a page.',
+          },
+          {
+            type: 'note',
+            title: 'Summarise what you read, aloud and then in writing',
+            text: 'A single daily habit that feeds three skills: reading for comprehension, speaking for fluency, and writing for structure. Take one article, summarise its argument aloud in a minute, then write the same summary in a paragraph. It costs fifteen minutes and it rehearses exactly the operations the test asks for.',
           },
         ],
       },
@@ -764,6 +1033,25 @@ const international = [
             type: 'p',
             text: 'The integrated tasks are the heart of TOEFL and the reason note-taking is a genuinely examinable skill here. You cannot re-listen to the lecture, and your response must accurately represent what it said. A candidate with excellent English who takes poor notes will score below one with adequate English and a reliable note-taking system.',
           },
+          {
+            type: 'list',
+            title: 'Why the integrated tasks define this test',
+            items: [
+              { text: 'They combine skills the way academic work does', note: 'read a source, hear it challenged or extended, then respond in a way that represents both accurately. No other proficiency test asks for that operation directly.' },
+              { text: 'They depend on notes rather than memory', note: 'the lecture plays once, and your response has to reproduce its points. What you wrote down while listening is what you have to work with.' },
+              { text: 'They reward accuracy over elegance', note: 'a response that represents the lecture correctly in plain prose scores better than a well-written response that misstates it.' },
+              { text: 'They are the tasks candidates practise least', note: 'because they are effortful to simulate. That is precisely why they repay preparation more than any amount of general English study.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The consequence for planning is that TOEFL preparation is not primarily an English project for a candidate who already reads and writes competently. It is a note-taking and task-familiarity project. A strong English user with no note-taking system will underperform a moderate one who has practised capturing a lecture’s structure quickly — which is an unusual thing to be true of a language test.',
+          },
+          {
+            type: 'note',
+            title: 'Reading and listening are academic in register',
+            text: 'Passages are drawn from university textbook material and lectures are genuine academic monologues, often with digressions and student interruptions. Candidates whose English is fluent in conversational registers but untested on dense expository material find this the harder adjustment, and daily academic reading and listening is the remedy.',
+          },
         ],
       },
       'exam-pattern': {
@@ -805,6 +1093,32 @@ const international = [
             title: 'The test has been shortened',
             text: 'ETS revised the TOEFL iBT to a shorter format, changing section lengths and replacing the independent essay with the academic discussion task. Preparation material written for the earlier version therefore includes a task the test no longer sets. Confirm the current structure on the official site before selecting materials.',
           },
+          {
+            type: 'p',
+            text: 'The recorded speaking format is unlike anything in Indian assessment and is worth understanding before you meet it. You hear or read a prompt, you get a short preparation window measured in seconds, and then you speak into a microphone until a hard stop. There is no examiner reacting to you, no opportunity to restart, and no partial credit for a point you were about to make when the timer ended. Candidates who have never rehearsed that sequence lose points to the format rather than to their English.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Why note-taking is not optional',
+                'Material in the listening section and in the integrated tasks plays once. Everything you will need in your response has to be captured while you listen, which makes a compact, consistent note-taking system a scored skill rather than a study aid.',
+              ],
+              [
+                'What per-section minimums imply',
+                'Universities commonly specify both a total and minimums in individual sections. As with IELTS, your weakest section can fail a requirement your total comfortably meets, which makes it the right target for your final weeks.',
+              ],
+              [
+                'Centre or at home',
+                'The same content is delivered both ways. The choice should turn on your own conditions — a reliable quiet space and connection, or a centre — rather than on a belief that one is easier, because the test itself is not.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'The test was shortened — check your material',
+            text: 'ETS revised TOEFL iBT to a shorter format, changing section lengths and replacing one writing task with the academic discussion task. A great deal of widely circulated preparation material still describes the older, longer test, and practising a task type that no longer appears is time taken from one that does.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -838,6 +1152,29 @@ const international = [
               { label: 'English study material', to: '/study-material/english/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'What a usable note-taking system looks like',
+            items: [
+              { text: 'Structure before detail', note: 'capture the shape of the lecture — the claim, the two or three supports, the qualification — rather than trying to transcribe. A response built on structure is accurate; one built on scattered details is not.' },
+              { text: 'Consistent abbreviations', note: 'invented in the moment they slow you down; practised for weeks they become automatic. A small personal set, used every time, is worth more than a comprehensive one you have to think about.' },
+              { text: 'A split page for integrated tasks', note: 'reading points on one side, lecture points opposite. The relationship between the two is what the task asks you to describe, and the layout makes it visible.' },
+              { text: 'Legibility over completeness', note: 'notes you cannot read are worse than fewer notes you can. This is the most common failure and it only shows up when you try to use them.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Practise speaking responses against the clock and recorded, from early in the preparation. The discomfort of listening back is exactly what makes it useful: you hear the filler words, the pace that was too slow to finish, and the point that trailed off unmade. Candidates who prepare speaking silently arrive having never experienced the constraint the section is built around.',
+          },
+          {
+            type: 'p',
+            text: 'For integrated writing, check your response against the source rather than against a model. The task is to represent what the lecture said about the reading, and the characteristic failure is a fluent response that misstates the relationship — saying the lecture supports the passage when it challenged it, or attributing a point to the wrong source. Accuracy is the score; the prose is secondary.',
+          },
+          {
+            type: 'note',
+            title: 'Listen to academic lectures daily, taking notes',
+            text: 'Recorded university lectures, long-form academic talks and serious podcasts all work. The habit builds two things at once — comfort with the register the listening section uses, and the note-taking system that the integrated tasks depend on — and it is the closest daily approximation to what this test actually measures.',
+          },
         ],
       },
       'mock-tests': {
@@ -868,6 +1205,26 @@ const international = [
               { label: 'English study material', to: '/study-material/english/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'A practice routine for a four-section test',
+            items: [
+              { title: 'Take full tests in one sitting', text: 'Reading, listening, speaking and writing back to back. The writing tasks arrive when concentration is lowest, and practising them fresh never rehearses that.' },
+              { title: 'Record every speaking response', text: 'And listen back with a specific question: did I finish my point inside the time, and how much of the response was filler?' },
+              { title: 'Check integrated responses against the source', text: 'Not for style but for accuracy. Did the response represent the lecture correctly and connect it to the reading?' },
+              { title: 'Assess your notes, not just your answers', text: 'If the notes were unusable, that is the finding. More listening practice will not help; a better system will.' },
+              { title: 'Track the weakest section', text: 'Per-section minimums make it the constraint, and it should own your final fortnight.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The speaking section is where under-practice is most common and most costly. It is uncomfortable to record yourself, there is no interlocutor to make it feel like a conversation, and the timing is unforgiving. All of that argues for doing it more rather than less — a candidate who has recorded thirty responses meets the format as routine, and one who has recorded none meets it as an obstacle.',
+          },
+          {
+            type: 'note',
+            title: 'Use material written for the current format',
+            text: 'The shortened test changed section lengths and replaced a writing task. Practice tests built for the older format will misrepresent both the pacing and the tasks, which makes them worse than no practice for judging readiness — they produce a score against a test that no longer exists.',
           },
         ],
       },
@@ -906,6 +1263,36 @@ const international = [
               { text: 'Ignoring the weakest section', note: 'universities frequently set per-section minimums.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'The note-taking system — build it first',
+                'A compact set of abbreviations, a consistent page layout, and the discipline of capturing structure rather than detail. It underpins the listening section and both integrated task types, and it takes a fortnight of daily practice to become automatic.',
+              ],
+              [
+                'Task familiarity — the next three weeks',
+                'Knowing exactly what each task asks, how long you have, and what a good response contains. Fast to acquire and the source of the largest early gains.',
+              ],
+              [
+                'Speaking under the clock — throughout',
+                'Recorded, timed, and reviewed. The most under-practised section of the test and the one where the format itself costs points on first encounter.',
+              ],
+              [
+                'Academic reading and listening — the daily base',
+                'The underlying proficiency in the specific register the test uses. It sets the ceiling and it improves slowly, which is why it should run from day one.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The choice between TOEFL and IELTS deserves a deliberate decision rather than a default. TOEFL is entirely computer-delivered with recorded speaking and integrated tasks; IELTS speaking is a live interaction and its tasks are more separable. Candidates who are comfortable speaking to a person and less comfortable with a microphone and a timer often do better in IELTS; candidates strong in academic reading and note-taking often do better in TOEFL. Check first that your target institutions accept both.',
+          },
+          {
+            type: 'note',
+            title: 'A strong English user can still score moderately',
+            text: 'Because so much of this test depends on note-taking and on task-specific technique, fluency alone does not guarantee a high score. That is worth knowing early, because candidates confident in their English frequently allocate two weeks to a test whose distinctive demands take longer than that to learn.',
+          },
         ],
       },
       'study-material': {
@@ -939,6 +1326,40 @@ const international = [
               'Practise one integrated task a week, checking your response against the source.',
               'Build vocabulary through academic reading rather than isolated word lists.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Official ETS practice — for the tasks',
+                'The only reliable source for the current format, the timings and the exact wording of the task types. This half of the preparation cannot be substituted.',
+              ],
+              [
+                'Academic lectures and textbook prose — for the register',
+                'Recorded lectures, serious podcasts and university-level expository writing. The test draws on this register specifically, and general English material rarely does.',
+              ],
+              [
+                'A recording device — for speaking',
+                'Any phone will do. What matters is that responses are produced under time and listened back to, because that is the only way the format becomes familiar.',
+              ],
+              [
+                'General English notes — for the proficiency underneath',
+                'Grammar for accuracy and vocabulary for range, supporting the writing and speaking sections rather than driving them.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Build vocabulary through academic reading rather than isolated lists. The register the test uses is expository and subject-specific, and words met in that context arrive with the collocations and the level of formality that a written or spoken response needs. A list learned separately supplies the word without the knowledge of where it belongs.',
+          },
+          {
+            type: 'note',
+            title: 'One integrated task a week, checked properly',
+            text: 'Write or record it, then go back to the reading and the lecture and confirm that your response represented both accurately. That checking step is the part that produces improvement, and it is the part candidates skip because the response felt fluent while they were producing it.',
+          },
+          {
+            type: 'p',
+            text: 'A closing word on sequencing the material across a preparation. Spend the first fortnight almost entirely on the note-taking system and on task familiarity, because those produce the largest early gains and because everything else depends on them. Give the middle weeks to the integrated tasks and to recorded speaking, which are the components that need repetition rather than understanding. Keep the daily academic reading and listening running throughout, and reserve the final fortnight for full official practice tests and for whichever section your scores keep identifying as the weakest. That order matters more than the total hours: a candidate who reverses it spends months raising a proficiency ceiling they never learn to reach.',
           },
         ],
       },
@@ -1084,6 +1505,25 @@ const international = [
             type: 'p',
             text: 'For an Indian student the mathematics is generally comfortable — it sits well below class 12 level and includes no calculus. The Reading and Writing section is usually the harder half, and within it the Standard English Conventions domain is the most learnable: grammar and punctuation rules are finite, and mastering them converts directly into marks.',
           },
+          {
+            type: 'list',
+            title: 'Where an Indian student actually needs to work',
+            items: [
+              { text: 'Standard English Conventions — the fastest gain', note: 'grammar, usage, punctuation and sentence structure. A finite, rules-based domain that converts directly into points and that most Indian curricula cover unevenly.' },
+              { text: 'Expression of Ideas — less familiar than it looks', note: 'rhetorical synthesis and transitions ask you to judge what a piece of writing needs, which is an editorial skill rather than a comprehension one.' },
+              { text: 'Craft and Structure — vocabulary in context', note: 'words judged by how they function in a passage rather than by definition. It rewards reading rather than memorising.' },
+              { text: 'Mathematics — familiarity, not study', note: 'the content sits below class 12 and includes no calculus. What needs practice is the framing, particularly student-produced responses and word-problem setups.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The short-passage format deserves specific mention because it differs from what Indian students are used to. Rather than a long passage with several questions, the digital SAT presents brief texts with a single question each — which changes the reading strategy completely. There is no benefit to skimming for structure and returning; each text is read once, closely, for the one thing being asked.',
+          },
+          {
+            type: 'note',
+            title: 'Confirm your targets require the score',
+            text: 'Test-optional policies are widespread among United States universities, and some Indian institutions accept the SAT while not requiring it. Establishing whether your specific targets need the score — and whether they superscore across sittings — is worth ten minutes before committing months, because the answer sometimes makes the preparation unnecessary.',
+          },
         ],
       },
       'exam-pattern': {
@@ -1123,6 +1563,32 @@ const international = [
             title: 'The test moved to a digital adaptive format',
             text: 'The SAT was substantially redesigned — shorter, digital, adaptive, with brief passages replacing long ones and the no-calculator maths section removed. Preparation material written for the paper format tests things the current version does not. Confirm that any material you use is written for the digital SAT.',
           },
+          {
+            type: 'p',
+            text: 'Multistage adaptation means the first module of each section determines which second module you receive, and therefore the score band available to you. That has one clear practical implication: the opening minutes matter more than they would in a linear test. Candidates who habitually use the first few questions to settle in are, in this format, settling into a lower ceiling — and no amount of strong performance in the second module recovers it.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'The calculator, and how to use it',
+                'Available throughout the Math section and built into the application. That makes it a tool rather than an obligation: reaching for it on a step you could do mentally costs seconds, and the section is testing setup and reasoning rather than arithmetic.',
+              ],
+              [
+                'No penalty, so no blanks',
+                'A wrong answer costs nothing beyond the mark not earned. Reserving the final seconds of each module to fill anything unanswered is free score, and it should be automatic rather than remembered.',
+              ],
+              [
+                'Retakes and superscoring',
+                'Retakes are permitted, and many universities consider the best scores across sittings — some combining the best section scores from different dates. Where that applies, a planned second attempt has a clearly positive expected value.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Use material written for the digital format',
+            text: 'The SAT was substantially redesigned — shorter, digital, adaptive, with brief single-question passages replacing the long ones. Preparation material written for the earlier paper test misrepresents the reading format, the pacing and the adaptive structure, and practising against it builds habits the current test does not reward.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -1156,6 +1622,29 @@ const international = [
               { label: 'Mathematics study material', to: '/study-material/mathematics/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'How to use the official question bank',
+            items: [
+              { text: 'Drill Standard English Conventions in blocks', note: 'punctuation, agreement, modifiers, sentence boundaries. Working thirty at a time makes the recurring rules visible in a way that mixed practice does not.' },
+              { text: 'Practise short passages one at a time', note: 'the format rewards reading a brief text closely for a single question. Practising on long passages with question sets trains a different and less useful approach.' },
+              { text: 'Do mathematics without reaching for the calculator', note: 'then check where it would genuinely have helped. Most candidates discover they were using it out of habit on steps that cost more time to enter than to compute.' },
+              { text: 'Work student-produced responses separately', note: 'the free-entry mathematics questions have no options to work backwards from, which changes the approach and is worth rehearsing as its own category.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Use the official application for full-length practice rather than printed material. Because the test is adaptive and delivered through a specific interface, practising in that application reproduces both the scoring behaviour and the mechanics — how questions are flagged, how the on-screen calculator works, how the timer is displayed. All of those cost time on test day if they are unfamiliar.',
+          },
+          {
+            type: 'p',
+            text: 'Never leave a question blank, in practice or in the test. There is no penalty, which makes an unanswered question a discarded mark with no compensating benefit. The reason to enforce it in practice is that behaviour under time pressure defaults to habit, and a candidate who has left blanks in ten practice tests will leave them in the eleventh.',
+          },
+          {
+            type: 'note',
+            title: 'Read demanding non-fiction alongside the practice',
+            text: 'Craft and Structure and Information and Ideas both reward comfort with dense, argued prose, and neither improves much from question drilling alone. A daily habit of reading essays or long-form journalism builds the vocabulary-in-context and the comprehension speed that the question bank can then test.',
+          },
         ],
       },
       'mock-tests': {
@@ -1187,6 +1676,26 @@ const international = [
               { label: 'English study material', to: '/study-material/english/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'What an adaptive practice test should tell you',
+            items: [
+              { title: 'How you performed in the first module of each section', text: 'It sets your ceiling. A pattern of slow starts is more costly here than an equivalent number of errors later, and it is entirely fixable.' },
+              { title: 'Your Standard English Conventions accuracy', text: 'A rules-based domain, tracked separately. Errors here are the cheapest to eliminate in the whole test.' },
+              { title: 'Whether any question was left blank', text: 'The answer should always be none. No penalty applies, so a blank is a pure loss.' },
+              { title: 'How much you leaned on the calculator', text: 'Time spent entering simple arithmetic is time not spent reading the next question. It is a tool for the steps that need it.' },
+              { title: 'Section balance', text: 'Reading and Writing and Math are scored separately and universities often look at both. A large gap is worth closing even if the total is acceptable.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Space your official practice tests through the preparation rather than clustering them at the end. The supply is limited, each one is a scarce and accurate measurement, and their diagnostic value is highest when there is still time to act on what they show. A candidate who takes four practice tests in the final fortnight has converted four diagnostics into four rehearsals.',
+          },
+          {
+            type: 'note',
+            title: 'Start each section deliberately',
+            text: 'Because the first module determines your ceiling, the opening questions deserve a settled, careful approach rather than a quick warm-up. Practising that explicitly — treating the first five questions of each module as the most important ones — is a small behavioural change with a direct effect on the score available to you.',
           },
         ],
       },
@@ -1225,6 +1734,36 @@ const international = [
               { text: 'Use material written for the digital format', note: 'the test was substantially redesigned.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Grammar rules — weeks one to four',
+                'Standard English Conventions is finite, rules-based and the fastest available gain for an Indian candidate. Working through punctuation, agreement, modifiers and sentence boundaries systematically converts directly into points.',
+              ],
+              [
+                'Reading — the continuous habit',
+                'Demanding non-fiction daily, for comprehension speed and vocabulary in context. It improves more slowly than the grammar work and it sets the ceiling that grammar accuracy lets you reach.',
+              ],
+              [
+                'Mathematics — familiarity, briefly',
+                'A few weeks of question-style practice rather than content study. The material is below class 12 level, and what needs rehearsing is the framing and the student-produced response format.',
+              ],
+              [
+                'Practice tests — spaced, in the official application',
+                'The only accurate measurement, and worth more when there is time to act on each one.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'For an Indian student following a mainstream board curriculum, the honest framing is that this is a Reading and Writing project with a short mathematics refresher attached. Time allocated in proportion to how the sections feel — mathematics first, because it is familiar and comfortable — is time allocated backwards, and it is the most common misallocation in SAT preparation among Indian candidates.',
+          },
+          {
+            type: 'note',
+            title: 'Decide about a retake before the first attempt',
+            text: 'Where your target universities superscore or consider the best result across sittings, a planned second attempt has clear value and takes the pressure off the first. Knowing that in advance changes how you approach the first sitting, and it means the second is already in the calendar rather than an emergency response to a disappointing score.',
+          },
         ],
       },
       'study-material': {
@@ -1258,6 +1797,40 @@ const international = [
               'Revise mathematics for framing rather than content, including student-produced responses.',
               'Take official adaptive practice tests spaced through the preparation.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Official College Board practice — the core',
+                'Full-length adaptive tests and the question bank, delivered through the same application as the real test. It is the only material that reproduces the adaptive scoring and the interface together.',
+              ],
+              [
+                'A grammar and punctuation reference — the fastest gain',
+                'Worked through systematically rather than consulted occasionally. Standard English Conventions is a closed set of rules and it can genuinely be finished.',
+              ],
+              [
+                'Demanding non-fiction — the daily reading',
+                'Essays, long-form journalism and argued prose. It serves comprehension, vocabulary in context and the rhetorical judgement that Expression of Ideas asks for.',
+              ],
+              [
+                'Mathematics revision notes — supporting',
+                'Algebra, functions, ratios and proportions, statistics and basic geometry and trigonometry. Below class 12 level, so useful for framing rather than for content.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Practise the short-passage format specifically rather than assuming general reading practice covers it. The digital SAT presents brief texts with one question each, which rewards a different approach from the long-passage comprehension most Indian students have practised — read closely once, answer, move on, with no scanning back and no structural overview to build.',
+          },
+          {
+            type: 'note',
+            title: 'Check the date on anything you buy',
+            text: 'The redesign changed the format substantially, and a great deal of SAT material still describes the paper test with its long passages, its no-calculator section and its non-adaptive structure. Working through it produces practice for a test that no longer exists, at the cost of the practice that would have counted.',
+          },
+          {
+            type: 'p',
+            text: 'On how to sequence the material: begin with the grammar and punctuation reference and finish it, because it is the one component with a definite end and the one that pays fastest. Layer the daily reading underneath from the first week, since it is the slowest to move and sets the ceiling for the two comprehension domains. Fold in the mathematics revision as a short block once the grammar work is complete, treating it as familiarisation with framing rather than as content study. Then give the remaining weeks to official adaptive practice, spaced far enough apart that each one can change what you do next.',
           },
         ],
       },

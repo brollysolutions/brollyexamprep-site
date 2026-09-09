@@ -12,6 +12,11 @@
  *   { type: 'p',       text }                       one paragraph
  *   { type: 'list',    title?, items: [] }          bulleted points
  *   { type: 'steps',   title?, items: [] }          numbered, order matters
+ *
+ * A list or steps item is a plain string, or an object carrying a bold lead-in
+ * and the sentence that follows it. Both `{ text, note }` and `{ title, text }`
+ * spell that pair, because the written records use each in about equal measure;
+ * see itemParts below.
  *   { type: 'defs',    items: [[term, desc], …] }   term/description pairs
  *   { type: 'table',   caption?, head: [], rows }   first cell is the row head
  *   { type: 'formula', title?, items: [{expr,note}] }
@@ -24,6 +29,19 @@
 import { Link } from 'react-router-dom'
 import { Arrow } from './Icon'
 
+/**
+ * Splits a list or steps item into its bold lead-in and the sentence after it.
+ *
+ * The written records spell that pair two ways — `{ text, note }` in the older
+ * families and `{ title, text }` in the newer ones — so both are read here
+ * rather than rewriting several hundred entries. A bare string is all lead-in.
+ */
+function itemParts(item) {
+  if (typeof item === 'string') return { lead: item, rest: null }
+  if (item.title) return { lead: item.title, rest: item.text || null }
+  return { lead: item.text, rest: item.note || null }
+}
+
 export default function Block({ block }) {
   if (!block) return null
 
@@ -34,18 +52,15 @@ export default function Block({ block }) {
       <div className="s__block">
         {block.title && <h3 className="s__sub">{block.title}</h3>}
         <ul className="sm-list">
-          {block.items.map((item) => (
-            <li key={typeof item === 'string' ? item : item.text}>
-              {typeof item === 'string' ? (
-                item
-              ) : (
-                <>
-                  <b>{item.text}</b>
-                  {item.note && <span> — {item.note}</span>}
-                </>
-              )}
-            </li>
-          ))}
+          {block.items.map((item) => {
+            const { lead, rest } = itemParts(item)
+            return (
+              <li key={lead}>
+                <b>{lead}</b>
+                {rest && <span> — {rest}</span>}
+              </li>
+            )
+          })}
         </ul>
       </div>
     )
@@ -56,18 +71,15 @@ export default function Block({ block }) {
       <div className="s__block">
         {block.title && <h3 className="s__sub">{block.title}</h3>}
         <ol className="sm-steps">
-          {block.items.map((item) => (
-            <li key={typeof item === 'string' ? item : item.text}>
-              {typeof item === 'string' ? (
-                item
-              ) : (
-                <>
-                  <b>{item.text}</b>
-                  {item.note && <span> {item.note}</span>}
-                </>
-              )}
-            </li>
-          ))}
+          {block.items.map((item) => {
+            const { lead, rest } = itemParts(item)
+            return (
+              <li key={lead}>
+                <b>{lead}</b>
+                {rest && <span> {rest}</span>}
+              </li>
+            )
+          })}
         </ol>
       </div>
     )

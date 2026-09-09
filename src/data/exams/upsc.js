@@ -180,6 +180,32 @@ const upsc = [
             title: 'Attempts and age are limited',
             text: 'The number of attempts and the upper age limit vary by category, and both are narrower than in most competitive examinations. Because the full cycle takes about a year, the number of realistic attempts available to any candidate is small, which argues for treating each one seriously rather than using the first as a trial.',
           },
+          {
+            type: 'p',
+            text: 'One consequence of the marks table deserves stating on its own, because candidates routinely plan as though it were not true: prelims marks do not enter the final merit at all. The preliminary examination is a gate, not a scorer. A candidate who clears it by a single mark and one who tops it arrive at mains on identical terms. That makes over-investment in prelims — months of objective test practice pursued past the point of comfortable clearance — one of the more expensive mistakes available, because the time comes directly out of the writing practice that does determine the outcome.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'What the qualifying papers do',
+                'Paper A in an Indian language and Paper B in English are marked, but their marks do not count. What they can do is end your candidature: fail either one and the merit papers are not evaluated at all. They need modest, targeted preparation rather than none, and native fluency is not the same thing as familiarity with the format.',
+              ],
+              [
+                'What CSAT does',
+                'It is qualifying at a prescribed percentage, which sounds undemanding and is not. Candidates from humanities backgrounds who assumed comprehension alone would carry them have been eliminated at this paper while scoring well in the general studies paper. Practise it as a real component, not an afterthought.',
+              ],
+              [
+                'What the interview does',
+                'Two hundred and seventy-five marks, added directly to the mains total. The spread between a weak and a strong performance is wide enough to move a candidate across service allocations, and it rewards views formed over months rather than answers rehearsed over a fortnight.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'The pattern is stable, the details are not',
+            text: 'The three-stage structure has held for many years, but the number of papers, the optional subject list, the CSAT threshold, the attempt limits and the age bands have all been revised at various points. Read the pattern section of the current notification each cycle rather than working from a plan built in an earlier year — this is one exam where a two-year-old guide can be quietly wrong in ways that matter.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -213,6 +239,25 @@ const upsc = [
               { label: 'Economy notes', to: '/study-material/economy/' },
               { label: 'All previous year papers', to: '/previous-year-papers/' },
             ],
+          },
+          {
+            type: 'list',
+            title: 'What past papers tell you that no syllabus can',
+            items: [
+              { text: 'The depth expected on any given theme', note: 'the syllabus says environment; the papers show whether that means a paragraph of general awareness or a considered position on a specific policy trade-off. The difference is a year of misdirected reading.' },
+              { text: 'The verbs that recur in mains questions', note: 'examine, critically analyse, comment, discuss, evaluate, substantiate. These are not decoration — they specify the structure of the answer, and candidates who ignore them write essays where an argument was asked for.' },
+              { text: 'The shift in prelims style over the last decade', note: 'from single-fact recall towards multi-statement questions requiring elimination. Working older papers alone trains a skill the current paper rewards less.' },
+              { text: 'Which parts of the syllabus are effectively dormant', note: 'a few listed themes appear rarely enough that they do not justify the reading a thorough candidate would otherwise give them.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'A specific and unusually productive exercise: take a past mains question, write your answer, then find the same theme in a paper from six or seven years earlier and write that answer too. The comparison shows how the commission has moved on the same ground — usually from description towards judgement — and it is a clearer lesson in what is currently wanted than any amount of reading about answer-writing technique.',
+          },
+          {
+            type: 'note',
+            title: 'Prelims papers are a diagnostic, not a scoreboard',
+            text: 'When you get a prelims question wrong, the useful question is rarely which fact you were missing. It is more often why you failed to eliminate an option you had enough information to reject. Recording the reason for each elimination — before checking the key — turns a past paper from a test into a training exercise, and it is the habit that most reliably moves prelims scores.',
           },
         ],
       },
@@ -254,6 +299,26 @@ const upsc = [
               { label: 'UPSC mock tests', to: '/mock-tests/upsc/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
+          },
+          {
+            type: 'p',
+            text: 'There is a specific failure mode in prelims mock practice worth naming: the candidate whose mock scores are excellent and whose actual prelims performance is not. It usually comes from taking mocks from a single source until their house style becomes familiar — the way that publisher frames a multi-statement question, the topics they favour, the length of their options. The exam is written by someone else. Mixing sources, and treating an unfamiliar style as useful discomfort rather than a badly set paper, is the correction.',
+          },
+          {
+            type: 'steps',
+            title: 'Building the mains writing habit',
+            items: [
+              { title: 'Start before you feel ready', text: 'The instinct is to finish reading a subject before writing on it. That instinct costs candidates their first attempt. Write badly on a half-learned topic in month two rather than writing for the first time in month ten.' },
+              { title: 'Write to the real limits', text: 'The word count and the time per answer are the constraints being tested. An excellent answer at twice the length is not a better answer; in this examination it is an unmarked one.' },
+              { title: 'Answer the verb', text: 'Before writing, name what the question asked for — examine, evaluate, comment — and structure to that. Most weak answers are well-informed responses to a question that was not set.' },
+              { title: 'Get it read', text: 'By a peer group, a mentor, anyone honest. You cannot see your own vague sentences or your own unsupported claims; that is precisely what makes them yours.' },
+              { title: 'Rewrite the same answer a month later', text: 'Without looking at the first version. The comparison is the clearest measure of progress available in mains preparation.' },
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Essay practice is not general studies practice',
+            text: 'Two essays in three hours is a distinct skill: sustaining one argument at length, with structure, illustration and a conclusion that does more than summarise. Candidates who write general studies answers all year and their first full essay a fortnight before mains consistently find the paper harder than they expected. One full essay a month from early on, rising in the final months, is enough to prevent that.',
           },
         ],
       },
@@ -332,6 +397,36 @@ const upsc = [
               'Convert every significant topic into at least one written answer while it is fresh.',
               'Follow one newspaper properly rather than three partially.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'The core static subjects',
+                'Polity, modern history, geography, economy and environment. These are the foundation, they change slowly, and they are best built once from a small number of sources and then maintained through revision rather than re-reading. Most of a first-attempt candidate’s first three months belong here.',
+              ],
+              [
+                'Current affairs',
+                'Not a subject but a lens applied to the static ones. A news item about a court judgment is polity; one about a trade dispute is economy; one about a river is geography. Filing what you read under the static theme it belongs to is what turns a year of newspapers into usable material rather than a pile of dated headlines.',
+              ],
+              [
+                'The optional subject',
+                'Five hundred marks in one subject, and the only component where you can build a genuine advantage over other candidates rather than parity. It deserves its own sources, its own notes and a protected block of time that general studies is not allowed to borrow from.',
+              ],
+              [
+                'Ethics, the fourth general studies paper',
+                'Poorly served by conventional notes, because it asks for applied judgement rather than recall. It is built by working case studies, forming positions on real administrative dilemmas, and writing — not by memorising definitions of terms such as integrity and probity.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'A word on note-making, since it consumes so much of a candidate’s first year and produces so little for many of them. Notes that reproduce a source are wasted labour — you already own the source. Notes worth keeping are ones the source could not give you: a theme with arguments on both sides, a link between two subjects, a table of positions on a contested question, a list of examples you could deploy in an answer. If a note could be replaced by a bookmark, it should be.',
+          },
+          {
+            type: 'note',
+            title: 'The final months belong to your own material',
+            text: 'By the last stage of preparation you should be revising almost entirely from documents you wrote — theme notes, answer frameworks, example banks, your optional summaries. Returning to source books at that point feels productive and is usually displacement activity. The test of a year of note-making is whether it produced something you can actually revise from in three days.',
           },
         ],
       },
@@ -468,6 +563,25 @@ const upsc = [
             type: 'p',
             text: 'Note the weighting carefully. General knowledge alone is 400 marks — more than the entire mathematics paper — and it draws on class 11 and 12 physics and chemistry more heavily than most candidates expect. A candidate strong in mathematics but casual about general knowledge is preparing for the smaller half of the written examination.',
           },
+          {
+            type: 'list',
+            title: 'Reading the syllabus against your school course',
+            items: [
+              { text: 'Mathematics maps almost exactly onto class 11 and 12', note: 'which means your school course is your syllabus. The exam-specific work is speed and question variety, not new content.' },
+              { text: 'Physics and chemistry within general knowledge sit slightly below school level', note: 'broad and conceptual rather than numerical. A candidate taking science at school is already most of the way there and should not over-prepare this.' },
+              { text: 'History, geography and polity within general knowledge are genuinely additional', note: 'they go beyond what most school streams cover in depth, and they are where a science student has the most ground to make up.' },
+              { text: 'Current events are examined lightly but consistently', note: 'a daily habit is sufficient; an intensive block is not necessary and rarely pays back the time.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The mathematics syllabus rewards a specific reading. It lists a wide set of chapters, but the questions are overwhelmingly single-concept and solvable in a couple of minutes — this is not an examination that sets multi-step problems requiring insight. What it does demand is that you recognise which of a hundred and twenty chapter-sized ideas is in play, and apply it immediately. Breadth of recognition beats depth of technique here, which is close to the opposite of what an engineering entrance rewards.',
+          },
+          {
+            type: 'note',
+            title: 'A finite syllabus is an opportunity',
+            text: 'Very few competitive examinations have a syllabus a candidate can genuinely finish. This one does. That changes the strategic question from what to leave out to how many times you can go over the whole of it, and a candidate on their second or third complete pass is in a materially stronger position than one still making a first pass through material they chose selectively.',
+          },
         ],
       },
       'exam-pattern': {
@@ -507,6 +621,32 @@ const upsc = [
             title: 'Medical standards vary by wing',
             text: 'Vision requirements in particular differ sharply between the Army, Navy and Air Force wings, and the flying branch applies the strictest standard. Candidates should check the requirement for the wing they intend to join at the outset, because a standard that permits one wing may not permit another.',
           },
+          {
+            type: 'p',
+            text: 'Both papers run for two and a half hours on the same day, which makes stamina a real variable rather than a notional one. The General Ability Test in particular is a hundred and fifty questions of mixed English and general knowledge sat in the second session, when concentration is already spent. Candidates who have only ever practised one paper at a time consistently report that the second paper felt harder than any of their practice sets — not because it was, but because they had never rehearsed arriving at it tired.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'How the marks per question differ',
+                'Mathematics questions and general knowledge questions are not worth the same, and the deduction scales with the mark value. That means a wrong general knowledge answer costs more than a wrong mathematics answer, which should make you slightly more conservative about guessing in the larger paper — a point most candidates never work out.',
+              ],
+              [
+                'Why the SSB is not a formality',
+                'Nine hundred marks, equal to the entire written examination, awarded over five days by assessors looking for a consistent picture across the psychological tests, the group tasks and the interview. It is not an interview with extra steps; it is a longer and more thorough assessment than the written papers are.',
+              ],
+              [
+                'Where the screening stage sits',
+                'A substantial proportion of candidates who reach the SSB are sent home on the first day, after the officer intelligence rating test and the picture perception exercise. Those two are practisable, and practising them is the highest-return SSB preparation available precisely because so much of the field is removed there.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Check the wing standards before you build the plan',
+            text: 'Vision requirements, height standards and other medical criteria differ between the Army, Navy and Air Force entries, and the Air Force is the most demanding on several of them. A candidate whose eyesight rules out one wing may be entirely eligible for another — but that is worth establishing in the first week of preparation rather than at the medical board, when the preference order has already been submitted.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -538,6 +678,29 @@ const upsc = [
               { label: 'Defence exam preparation', to: '/government-exams/defence/' },
               { label: 'All previous year papers', to: '/previous-year-papers/' },
             ],
+          },
+          {
+            type: 'list',
+            title: 'What the tagging exercise usually reveals',
+            items: [
+              { text: 'Mathematics clusters in a predictable set of chapters', note: 'trigonometry, calculus, matrices and determinants, quadratic equations, sequences, probability and coordinate geometry between them account for a large share of the paper cycle after cycle.' },
+              { text: 'Physics and chemistry dominate the general knowledge section', note: 'more than the section name implies. Candidates who prepare general knowledge as history and current affairs alone are preparing the smaller part of a four-hundred-mark section.' },
+              { text: 'English is mechanical and highly repetitive', note: 'the same grammar rules and a recurring vocabulary pool, which makes two hundred marks unusually available to a candidate willing to work past papers systematically.' },
+              { text: 'Static general knowledge outweighs current affairs', note: 'geography, polity basics and Indian history recur far more reliably than the year’s news does.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Once you have the tagging table, use it to decide what to revise rather than what to read. NDA candidates are usually still at school and short of time; the value of the table is that it lets you concentrate a limited number of study hours on the chapters that actually recur, and treat the tail as something to meet in a mock rather than to prepare for in advance.',
+          },
+          {
+            type: 'p',
+            text: 'One practical instruction on method: solve the mathematics sections without a calculator and, as far as possible, without long written working. The paper gives you a little over a minute a question, and a candidate who solves correctly but slowly will finish with a good accuracy figure and twenty unattempted questions. Speed here comes from recognising the chapter fast and from arithmetic fluency, both of which are trained by volume rather than by studying harder material.',
+          },
+          {
+            type: 'note',
+            title: 'Sit both papers in one day, at least monthly',
+            text: 'Working past papers section by section on separate evenings is a reasonable way to learn, but it never rehearses the actual demand. Once a month, sit mathematics and the General Ability Test on the same day with a realistic gap between them. The second paper is where the examination is usually won or lost, and it is the one candidates have practised least in a genuinely tired state.',
           },
         ],
       },
@@ -573,6 +736,26 @@ const upsc = [
               { label: 'Take the free NDA mock test', to: '/mock-tests/nda/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'Reading an NDA mock properly',
+            items: [
+              { title: 'Score the two papers separately', text: 'A combined total hides which of the two is actually holding you back, and with a three-to-six mark split between them the answer is rarely the one candidates assume.' },
+              { title: 'Break general knowledge into its parts', text: 'Physics, chemistry, history, geography, polity, current events. Four hundred marks is far too large a block to analyse as one number, and the weak part is usually specific.' },
+              { title: 'Count unattempted mathematics questions', text: 'If there is a tail of untouched questions, the constraint is pace rather than knowledge, and more practice sets will help where more theory will not.' },
+              { title: 'Check your English separately', text: 'Two hundred marks, mechanical, and highly responsive to practice. Candidates rarely track it and frequently leave marks in it.' },
+              { title: 'Compare first-session and second-session accuracy', text: 'A consistent drop is a stamina signal and calls for more full-day practice rather than more study.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'For the Services Selection Board, the two components that respond most to advance practice are the officer intelligence rating test and the picture perception and description exercise, because they form the screening stage and because both are recognisably test-like. Working through OIR-style questions and writing timed picture stories is genuinely useful preparation. The psychological tests and group tasks reward something different — a settled sense of your own views, some experience of working in groups, and physical confidence — which is built over months of ordinary life rather than through drills.',
+          },
+          {
+            type: 'note',
+            title: 'What SSB preparation is not',
+            text: 'It is not memorising model answers or rehearsing a personality. Assessors see a large number of coached candidates and are practised at spotting the gap between a prepared response and a consistent one — and consistency across five days of different exercises is precisely what the process is designed to measure. Reading widely, staying fit, forming real opinions and being able to explain your own choices is the preparation that survives contact with the board.',
           },
         ],
       },
@@ -612,6 +795,32 @@ const upsc = [
               { text: 'Not checking wing-specific medical standards early', note: 'particularly vision, which differs sharply between the Army, Navy and Air Force wings.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'If you are in class 11',
+                'You have the most comfortable position available and should use it structurally: keep pace with school mathematics, build the general knowledge habit now while there is no time pressure, and start running. Candidates who begin here rarely need to choose between board examinations and NDA preparation later.',
+              ],
+              [
+                'If you are in class 12',
+                'The constraint is the board examinations, and the right response is overlap rather than competition. Your mathematics, physics and chemistry preparation serves both. Add general knowledge, English and fitness as small daily habits, and keep full mocks for the period after your boards.',
+              ],
+              [
+                'If you have finished school',
+                'You have time to prepare properly and should use it on the two things school did not give you — general knowledge breadth and SSB readiness — rather than on re-covering mathematics you have already sat an examination in.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The attribute set the SSB assesses is worth understanding early, because it is built rather than revised: effective intelligence, reasoning, organising ability, initiative, social adaptability, cooperation, sense of responsibility, determination, courage and stamina. None of those is acquired in a fortnight. All of them are developed by the ordinary things a school candidate can start now — taking responsibility in a team, playing a sport seriously, reading beyond the syllabus, and having genuine interests you can talk about.',
+          },
+          {
+            type: 'note',
+            title: 'Physical training is preparation, not recreation',
+            text: 'The SSB includes outdoor group tasks and an obstacle course, and a medical examination follows. Running, basic strength work and general stamina should be part of the schedule from the first week alongside study, not a project deferred until after the written result. The gap between the written result and the SSB call is not long enough to build a base from nothing.',
+          },
         ],
       },
       'study-material': {
@@ -648,6 +857,36 @@ const upsc = [
               'Physical training on most days — running, strength and stamina.',
               'Reading beyond the syllabus, which serves both general knowledge and the SSB interview.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Mathematics — school textbooks first',
+                'Your class 11 and 12 books are better matched to this paper than most competitive-exam compilations, which pitch at engineering-entrance depth the paper does not reach. Supplement with question volume rather than with harder theory.',
+              ],
+              [
+                'Physics and chemistry — conceptual, not numerical',
+                'Within the general knowledge section these are tested for understanding rather than calculation. Reading your school chapters for the ideas, and skipping the heavy numerical work, is the efficient approach for this paper specifically.',
+              ],
+              [
+                'History, geography and polity — the genuine additions',
+                'These need dedicated notes because school coverage is uneven. Keep them as themed lists that can be revised quickly rather than as continuous reading.',
+              ],
+              [
+                'English — rules plus a running list',
+                'A short set of grammar rules covers most of the section, and a vocabulary list built from past papers covers much of the rest. Twenty minutes a day is enough if it is genuinely daily.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Reading beyond the syllabus deserves a specific mention for this examination, because it is the rare case where general reading is directly examinable. A newspaper habit and some non-fiction reading feed the current events questions, the English section, and — most importantly — the interview, where a candidate with genuine interests and formed opinions is immediately distinguishable from one who has prepared answers. For an examination where nine hundred marks are awarded by people talking to you, that is not a marginal benefit.',
+          },
+          {
+            type: 'note',
+            title: 'Do not build a separate study life',
+            text: 'The most sustainable NDA preparation for a school candidate is the one that sits inside their existing schedule: school mathematics and science done properly, thirty minutes of general knowledge, twenty of English, and physical training on most days. Candidates who construct an entirely parallel preparation alongside school usually abandon one of the two, and it is rarely the school one.',
           },
         ],
       },
@@ -781,6 +1020,25 @@ const upsc = [
             type: 'p',
             text: 'The general knowledge paper has a feature worth exploiting: it consistently includes defence-related questions on services, ranks, equipment, exercises and recent operational developments. This is material a general competitive-exam guide will not cover, and it is entirely learnable, which makes it some of the most reliably available marks in the paper.',
           },
+          {
+            type: 'list',
+            title: 'How the three subjects behave in practice',
+            items: [
+              { text: 'English is the most reliable scoring paper', note: 'a hundred marks in every entry, drawn from a mechanical and repetitive set of question types. It responds to practice more predictably than either of the others.' },
+              { text: 'General Knowledge is broad but not deep', note: 'history, polity, geography, economy, science and current events at general level, with a distinctive defence and security seam running through it that general guides do not cover.' },
+              { text: 'Elementary Mathematics is class 10 in content and a speed test in practice', note: 'nothing conceptually difficult, and two hours in which to work through a substantial number of arithmetic, algebra, geometry and trigonometry questions.' },
+              { text: 'The three do not need equal time', note: 'a graduate candidate usually needs least work on mathematics, most on the defence and current affairs strand of general knowledge, and steady daily maintenance on English.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'For OTA candidates the syllabus reading changes completely. With mathematics absent, English and General Knowledge carry a hundred marks each and there is nowhere to hide a weak subject — a candidate who is strong in mathematics and weak in general knowledge, which is a common profile among engineering graduates, has lost the paper that would have carried them. Confirm which entry you are applying for before you allocate a single study hour.',
+          },
+          {
+            type: 'note',
+            title: 'The defence awareness strand is learnable and rarely prepared',
+            text: 'Questions on service structures, ranks and insignia, major exercises, indigenous equipment programmes, defence organisations and recent acquisitions appear consistently in the General Knowledge paper. Almost no general competitive-exam guide covers this ground, which means the candidates who follow defence news specifically are competing for marks most of the field has conceded without noticing.',
+          },
         ],
       },
       'exam-pattern': {
@@ -819,6 +1077,24 @@ const upsc = [
             title: 'Eligibility varies sharply by academy',
             text: 'Age bands, marital status conditions and qualification requirements differ between the four entries — the Naval Academy generally expects an engineering degree, the Air Force Academy expects physics and mathematics at class 12 or an engineering degree, and the age bands are not identical. Read the eligibility table for the specific entries you intend to apply for.',
           },
+          {
+            type: 'p',
+            text: 'The two-hour-per-paper format hides a real difference in pressure between the subjects. English and General Knowledge are recall and recognition papers where two hours is comfortable for most candidates; Elementary Mathematics is where the clock genuinely binds, because the questions are individually easy and numerous. A candidate reporting that CDS was straightforward and a candidate reporting that it was a scramble have usually both described the same paper — they simply differ on whether they sat the mathematics one.',
+          },
+          {
+            type: 'steps',
+            title: 'How to use the two hours in each paper',
+            items: [
+              { title: 'English', text: 'Comprehension passages last, not first. They take a fixed and substantial block of reading time, and doing them early leaves the mechanical grammar and vocabulary questions — which are faster marks — competing for the remainder.' },
+              { title: 'General Knowledge', text: 'One pass, answering what you know and marking what you can narrow. Recall questions do not improve with deliberation, and the second pass is for the ones where elimination is genuinely available.' },
+              { title: 'Elementary Mathematics', text: 'Two passes, deliberately. First the questions you can do immediately; then the ones needing real working. Working in question order is what leaves candidates with unattempted easy questions at the end.' },
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Eligibility differs more between the academies than the exam does',
+            text: 'The written papers vary only between the three-paper and two-paper sets, but age bands, marital status conditions and qualification requirements differ meaningfully across the IMA, INA, AFA and OTA entries — and the OTA age band is wider than the others. Candidates have prepared for an entry they were not eligible for. Read the eligibility table for each entry you intend to apply to before the application window, not after.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -850,6 +1126,29 @@ const upsc = [
               { label: 'NDA mock test', to: '/mock-tests/nda/' },
               { label: 'All previous year papers', to: '/previous-year-papers/' },
             ],
+          },
+          {
+            type: 'list',
+            title: 'The defence cluster that past papers reveal',
+            items: [
+              { text: 'Service structure and ranks', note: 'the organisation of the Army, Navy and Air Force, rank insignia, commands and their headquarters. Stable material that repeats across cycles with very little variation.' },
+              { text: 'Equipment and indigenous programmes', note: 'aircraft, ships, submarines, missiles and armoured vehicles, with a consistent emphasis on domestically developed systems and the organisations behind them.' },
+              { text: 'Exercises and operations', note: 'joint and bilateral exercises and their participating countries, and the named operations that have entered general awareness.' },
+              { text: 'Defence institutions and awards', note: 'training academies, research organisations, gallantry awards and their order of precedence.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'That cluster is the single best return available in CDS preparation, and the reason is structural rather than clever: it is examined consistently, it is finite, and almost nobody prepares it deliberately. Building one list from past papers and adding to it from a defence news source for twenty minutes a week will put you ahead of most of the field on a predictable slice of the General Knowledge paper.',
+          },
+          {
+            type: 'p',
+            text: 'Treat the mathematics papers differently from the other two. Their content will hold no surprises for a graduate, so solving them for correctness teaches little; solving them against a strict clock teaches a great deal. Record the time as well as the score, and keep working papers until the time comes down. When a paper takes you comfortably inside two hours at good accuracy, the mathematics preparation is finished and further work there is displacement.',
+          },
+          {
+            type: 'note',
+            title: 'Build the vocabulary list from the English papers',
+            text: 'CDS English draws on a recognisable pool of synonyms, antonyms and idioms that recurs across cycles, and it overlaps heavily with the pool other UPSC and SSC papers use. A list built from four or five years of CDS English sections is short, specific and considerably more useful than a general word list of ten times the length.',
           },
         ],
       },
@@ -885,6 +1184,25 @@ const upsc = [
               { label: 'NDA mock test', to: '/mock-tests/nda/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'Making a CDS mock useful',
+            items: [
+              { title: 'Sit the correct paper set', text: 'Three papers if you are applying to the IMA, INA or AFA; two if you are an OTA candidate. Practising the wrong set trains a distribution of effort you will not be able to use.' },
+              { title: 'Track General Knowledge by theme', text: 'History, polity, geography, economy, science, current events and defence. One aggregate score across seven very different areas tells you nothing you can act on.' },
+              { title: 'Record mathematics time as well as score', text: 'For the three-paper entries this is the number that predicts your performance, because the content itself is not the constraint.' },
+              { title: 'Count losses to guessing', text: 'A third of a mark each. Candidates are consistently surprised by how much of the gap between their mock scores and their target is simply undisciplined guessing.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Because CDS is held more than once a year, candidates often sit it repeatedly, and there is a specific trap in that: treating the next attempt as another go at the same paper rather than as a chance to fix what the last one exposed. If your General Knowledge was the weak paper, the interval between attempts is a general knowledge project. Sitting the examination again without having changed anything simply re-measures a candidate who has not moved.',
+          },
+          {
+            type: 'note',
+            title: 'Air Force candidates — the pilot aptitude test',
+            text: 'Candidates applying for the flying branch take a computerised pilot selection system test at the SSB. It is normally a one-time opportunity in a candidate’s career — a failure is not repeatable at a later attempt — which makes understanding what it involves before you sit it materially more important than for any other component of the process.',
           },
         ],
       },
@@ -922,6 +1240,32 @@ const upsc = [
               { text: 'Overlooking the Air Force pilot aptitude test', note: 'a one-time opportunity for flying branch entry, worth understanding before you meet it.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'If you are applying to the IMA, INA or AFA',
+                'Three papers, three hundred marks, with mathematics adding a speed component. For most graduates the mathematics needs maintenance rather than construction, which frees the bulk of your time for the general knowledge breadth that actually separates candidates.',
+              ],
+              [
+                'If you are applying to the OTA only',
+                'Two papers and no mathematics, which concentrates everything on English and General Knowledge. This is the entry where the defence awareness strand matters most, because with only two hundred written marks in play a predictable seam of questions is a larger share of your total.',
+              ],
+              [
+                'If you are applying to several entries',
+                'Prepare the full three-paper set and treat the OTA as covered by it. The reverse does not hold, and candidates who prepared for OTA and later added an IMA application have found the mathematics paper harder than its class 10 level suggests, purely on pace.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The SSB is the same five-day assessment used for NDA, but the candidates are different — graduates rather than school-leavers — and the board reasonably expects more: clearer views, some account of what you have done since school, and a better-formed sense of why you want a commission. That is not something to assemble in the fortnight after the written result. Reading widely, staying fit and being able to explain your own decisions is preparation that has to run alongside the written work.',
+          },
+          {
+            type: 'note',
+            title: 'A repeatable examination rewards a maintained base',
+            text: 'Because CDS is conducted more than once a year, the most efficient long-run approach is a maintained base rather than a preparation cycle: English and general knowledge as permanent daily habits, mathematics kept warm with weekly timed practice, and fitness continuous. Candidates who build up and wind down around each notification spend most of their effort rebuilding ground they had already covered.',
+          },
         ],
       },
       'study-material': {
@@ -958,6 +1302,36 @@ const upsc = [
               'Mathematics practice timed, if you are sitting the three-paper set.',
               'Physical training on most days.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'English — the common paper',
+                'Grammar rules as a short, stable set, plus a running vocabulary list built from past papers. Comprehension speed built by reading a passage a day. A hundred marks in every entry and the most predictable return in the examination.',
+              ],
+              [
+                'General Knowledge — the wide paper',
+                'Polity, modern history, geography, economy and general science at general level, kept as themed lists for quick revision rather than as continuous reading. Add a defence awareness list, which nothing else on your shelf will cover.',
+              ],
+              [
+                'Elementary Mathematics — for three of the four entries',
+                'Arithmetic, elementary algebra, geometry, mensuration and basic trigonometry at class 10 level. Practise for speed rather than for difficulty; the material itself will not stretch a graduate.',
+              ],
+              [
+                'Current affairs — with a defence emphasis',
+                'A general news habit covers the standard current events questions. Following defence and security news specifically covers the seam that most candidates leave entirely unprepared.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The overlap with other examinations is worth exploiting deliberately. CDS English and general knowledge sit close enough to SSC and other UPSC papers that material prepared for one serves the others with little modification, and candidates sitting several examinations in a year should maintain a single set of notes rather than parallel ones. The only genuinely CDS-specific document you need is the defence awareness list.',
+          },
+          {
+            type: 'note',
+            title: 'One defence news source, followed regularly',
+            text: 'Twenty minutes a week with a reliable defence news source, with anything new added to your list, is enough to keep the awareness strand current. The aim is not comprehensive coverage of every development but familiarity with the systems, organisations, exercises and programmes that recur — which is exactly what the paper asks about.',
           },
         ],
       },
@@ -1108,6 +1482,15 @@ const upsc = [
             type: 'p',
             text: 'The security and human rights strand running through both papers is worth noting. CAPF asks about internal security, border management, insurgency, policing and rights questions more directly than most general competitive examinations, and a candidate who follows those debates specifically will find both the essay paper and the interview considerably easier.',
           },
+          {
+            type: 'p',
+            text: 'Read the Paper 2 syllabus as a description of a skill rather than a body of content. Essay, precis, comprehension, counter-argument, grammar and usage — none of those is something you can study in the way you can study polity. They are practised. That distinction explains why candidates who prepare CAPF entirely from general studies material arrive with a well-stocked Paper 1 and no Paper 2 preparation at all, having read a syllabus that did not look like it was asking for anything.',
+          },
+          {
+            type: 'note',
+            title: 'The counter-argument requirement is unusual and revealing',
+            text: 'Few competitive examinations explicitly ask candidates to develop a counter-argument to a given position. Its presence here tells you what the commission wants from an Assistant Commandant: someone who can see the other side of a contested question, which in a force context usually means the tension between security imperatives and civil liberties. Practise writing against your own position, not just for it.',
+          },
         ],
       },
       'exam-pattern': {
@@ -1146,6 +1529,36 @@ const upsc = [
             title: 'Confirm the physical and medical standards early',
             text: 'Running distances and timings, jump and shot put standards, and the height, chest and vision requirements are all set out in the notification and vary by gender and category. Because the medical stage comes after the written examination, it is worth confirming at the outset that you meet the standards you will eventually be assessed against.',
           },
+          {
+            type: 'p',
+            text: 'The evaluation rule for Paper 2 is the single most consequential detail in this pattern, and it changes how you should think about Paper 1. Because Paper 2 is assessed only for candidates who clear a threshold in Paper 1, the objective paper is a gate as well as a scorer — but once you are comfortably past that gate, further Paper 1 improvement is worth much less than the equivalent effort spent on the descriptive paper that carries close to half the written marks and is where the field thins out.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Paper 1 — two hours, a hundred and twenty-five questions',
+                'A little under a minute a question across general mental ability, science, current events, polity, economy, history and geography. Broad rather than deep, with a third of a mark deducted for errors, which makes elimination discipline worth more than extra recall at the margin.',
+              ],
+              [
+                'Paper 2 — three hours, written by hand',
+                'An essay component and a comprehension and communication component. Three hours of sustained writing is a physical as well as an intellectual demand, and candidates who have never written for that long consistently run out of time in the second half.',
+              ],
+              [
+                'The physical stage — qualifying but eliminating',
+                'It adds nothing to your merit position and can remove you entirely. Standards for running, long jump and shot put differ by gender and category, and they are published in advance, which makes failure there unusually avoidable.',
+              ],
+              [
+                'The interview — a hundred and fifty marks',
+                'Added to the written total, and drawing on the same ground the essay paper does: security, governance, rights and your own reasons for wanting a commission in a central armed police force.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'The forces differ, and the interview knows it',
+            text: 'The BSF, CRPF, CISF, ITBP and SSB have distinct mandates, terrains and operational cultures, and a candidate who cannot say why they have ordered their preferences the way they have is answering the most predictable interview question badly. An evening spent reading about what each force actually does is worth more at that stage than a week of general preparation.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -1178,6 +1591,30 @@ const upsc = [
               { label: 'All previous year papers', to: '/previous-year-papers/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'The themes past essay topics keep returning to',
+            items: [
+              { text: 'Internal security and its civil costs', note: 'insurgency, radicalisation, policing in disturbed areas, and the standing tension between security measures and constitutional rights.' },
+              { text: 'Federalism and centre-state friction', note: 'the deployment of central forces, law and order as a state subject, and the coordination problems that follow from that division.' },
+              { text: 'Development as a security question', note: 'the argument that under-development sustains insurgency, and the counter-argument that security is a precondition for development rather than a consequence of it.' },
+              { text: 'Border management and migration', note: 'the practical and human dimensions of securing long and populated borders.' },
+              { text: 'Society under stress', note: 'communalism, gender, social media and misinformation, and the role of a uniformed force within a plural society.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The productive way to work with that list is not to write an essay on each topic but to build a position on each theme — a page containing the strongest case on both sides, three or four concrete illustrations, and your own considered view. Essay topics are phrased differently every year; themes are not. A candidate carrying five well-formed positions into the hall can construct an argued essay on almost any framing, while one carrying five memorised essays is hoping for a match.',
+          },
+          {
+            type: 'p',
+            text: 'Precis writing deserves separate and explicit practice, because it is the component where improvement is fastest and preparation is rarest. It is a mechanical skill: identify the argument, discard illustration, preserve proportion, hold to the length. Ten precis written and checked against their sources will take you most of the way, and almost no candidate does ten.',
+          },
+          {
+            type: 'note',
+            title: 'Read the passages as a writer, not a candidate',
+            text: 'The comprehension passages in past Paper 2 sets are worth studying for their construction as much as for their content. Noticing how a well-built argument moves — claim, evidence, qualification, conclusion — is directly transferable to the essay you have to write in the same three hours, and it is a more efficient way to improve your own structure than reading advice about essay structure.',
+          },
         ],
       },
       'mock-tests': {
@@ -1208,6 +1645,26 @@ const upsc = [
               { label: 'UPSC mock tests', to: '/mock-tests/upsc/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'A practice week that matches the paper',
+            items: [
+              { title: 'One timed Paper 1 mock', text: 'A hundred and twenty-five questions in two hours with the one-third deduction applied, analysed by subject rather than by total.' },
+              { title: 'One full essay by hand', text: 'Under time, on a past topic or a current security question, written on paper rather than typed — the exam is handwritten and stamina is part of what is being tested.' },
+              { title: 'One precis, checked properly', text: 'Against the source, for faithfulness, proportion and length discipline. This is the component that improves fastest with feedback.' },
+              { title: 'One counter-argument exercise', text: 'Take a position you hold and write the strongest case against it in three hundred words. It is the specific skill the syllabus names and the one least practised.' },
+              { title: 'Physical training throughout', text: 'Running at the prescribed distance, plus long jump and shot put practice. The efficiency test follows the written stage and does not wait for you to get fit.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Get your written work read by someone willing to be blunt. The failure modes in a descriptive paper — assertions without support, paragraphs that repeat rather than advance, a conclusion that summarises instead of concluding — are close to invisible from the inside. A single honest reader over several months will do more for your Paper 2 score than any quantity of unreviewed writing, and writing that is never read tends to entrench habits rather than correct them.',
+          },
+          {
+            type: 'note',
+            title: 'Handwriting and time are part of the test',
+            text: 'Three hours of continuous handwriting is unfamiliar to most candidates who have spent their preparation typing or reading. Practise on paper, at speed, and find out early whether your writing stays legible in the third hour. A well-argued answer that the examiner cannot read is marked as what it appears to be.',
           },
         ],
       },
@@ -1245,6 +1702,36 @@ const upsc = [
               { text: 'Precis practice', note: 'a mechanical skill that improves quickly and is almost universally under-practised.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'The writing track',
+                'The differentiator, and the one that has to run for the whole preparation rather than a phase of it. One written piece a week from the first week, rising to two or three, always under time and always read by someone. Nothing else in a CAPF plan produces as much marginal return.',
+              ],
+              [
+                'The reading track',
+                'A newspaper daily, read specifically for the security, governance and rights strand rather than for general awareness. This single habit feeds Paper 1 current events, the Paper 2 essay, and the interview simultaneously.',
+              ],
+              [
+                'The physical track',
+                'Started in week one and maintained continuously. Running to the prescribed distance and timing, plus long jump and shot put, which are technique events where a few sessions of actual practice matter more than general fitness.',
+              ],
+              [
+                'The general studies track',
+                'Polity, economy, history, geography and science at standard graduate level. Necessary, finite, and the part of the preparation most likely to expand to fill the space that writing practice should have occupied.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'A candidate arriving from Civil Services preparation has a real head start in Paper 1 and in the reading habit, and should be careful about one thing only: the CAPF essay is not a mains general studies answer. It is longer, it sustains a single argument rather than covering dimensions, and it rewards a clear position more than balanced coverage. Candidates trained to write two-hundred-word structured answers often produce an essay that reads as several answers placed end to end.',
+          },
+          {
+            type: 'note',
+            title: 'Check the standards before committing the year',
+            text: 'Height, chest and vision requirements, and the running, jump and throw standards, are published in the notification and differ by gender and category. Reading them in your first week costs an hour. Discovering at the physical stage that you do not meet a fixed standard costs a year of preparation and a full application cycle.',
+          },
         ],
       },
       'study-material': {
@@ -1280,6 +1767,36 @@ const upsc = [
               'General studies revision from your own notes rather than from source books.',
               'Physical training on most days, to the standards in the notification.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'For Paper 1 — conventional general studies',
+                'Polity, economy, modern history, geography and general science at graduate level, kept as revisable notes rather than as books to re-read. This material is widely available and interchangeable with what you would use for any other general studies paper.',
+              ],
+              [
+                'For the essay — positions, not notes',
+                'One page per recurring theme: the strongest case each way, three or four concrete illustrations, and your own view. Five or six of these pages are worth more than a shelf of general studies material, because they are what you actually draw on under time.',
+              ],
+              [
+                'For comprehension and precis — practice, not reading',
+                'Passages worked and checked. There is no body of knowledge to acquire here; there is only a technique that improves with repetition and feedback.',
+              ],
+              [
+                'For current affairs — a security lens',
+                'The same newspaper other candidates read, filtered differently. Internal security developments, policing and rights questions, border and force-related news, and major governance debates.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Beyond the standard general studies shelf, this is an examination where a small amount of serious reading on internal security and civil liberties pays disproportionately. You are not being asked for expertise; you are being asked to write as someone who has thought about the trade-offs a central armed police force actually lives with. A handful of good long-form articles on policing, insurgency and rights, read properly and argued with, will show up in the essay, the counter-argument and the interview alike.',
+          },
+          {
+            type: 'note',
+            title: 'Keep the writing file, not the reading file',
+            text: 'The most valuable document at the end of a CAPF preparation is the folder of your own written pieces with corrections on them. Re-reading your third essay beside your fifteenth is the clearest evidence of progress you will get, and the corrections themselves become the checklist you run through before submitting a paper.',
           },
         ],
       },
@@ -1420,6 +1937,15 @@ const upsc = [
             type: 'p',
             text: 'The general studies and engineering aptitude paper deserves more attention than candidates give it. It is two hundred marks of the five hundred available in prelims, and much of it — project management, standards and safety, ethics, environment, materials — is not covered by an engineering degree at all. It is a distinct subject requiring its own preparation.',
           },
+          {
+            type: 'p',
+            text: 'The branch syllabi are written at degree level and span most of a four-year programme, which means reading them cover to cover produces despair rather than a plan. The usable approach is to convert the list into three groups against your own transcript: subjects you can still work problems in, subjects you understood once and would need to rebuild, and subjects you never really had. Almost all of your first three months belongs to the second group, because that is where the return per hour is highest — rebuilding is faster than learning, and those subjects are usually the high-weight ones.',
+          },
+          {
+            type: 'note',
+            title: 'The common paper is not a general knowledge paper',
+            text: 'The general studies and engineering aptitude syllabus lists things engineering study genuinely does not cover — project management, engineering ethics, standards and quality practices, materials, energy and environment, and information technology basics — alongside conventional current affairs. Candidates who read the paper title and assume it is ordinary general studies prepare the wrong half of two hundred prelims marks that count towards the final total.',
+          },
         ],
       },
       'exam-pattern': {
@@ -1461,6 +1987,32 @@ const upsc = [
             title: 'Practise writing, not just solving',
             text: 'The most common gap in ESE preparation is between being able to solve a problem and being able to present the solution fully, legibly and within time. Those are different skills, and only the second is what the mains papers measure. Written practice against a clock should begin months before the examination.',
           },
+          {
+            type: 'p',
+            text: 'Because prelims marks carry into the final total, ESE behaves differently from every other UPSC examination a candidate may have prepared for. There is no point at which the objective stage becomes irrelevant, and a comfortable prelims performance is not merely a ticket to the next round — it is banked. That single difference should change how you treat the objective stage: not as a hurdle to clear and forget, but as five hundred of thirteen hundred marks to be maximised.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'What conventional actually demands',
+                'Full worked solutions in your own handwriting: stated assumptions, the governing equation, the substitution, carried units, a labelled diagram where one helps, and an explicit conclusion. Marks are awarded along that path, which means a partially completed answer scores and a correct final number with no working may not.',
+              ],
+              [
+                'Why three hours is short',
+                'A conventional paper asks for a small number of long answers rather than a large number of short ones, and the binding constraint is writing speed rather than solving speed. Candidates who can solve every question on a paper routinely find they can only write up two thirds of it.',
+              ],
+              [
+                'Choice within the paper',
+                'Where a conventional paper offers a choice of questions, the decision of what to attempt is worth real minutes at the start. Choosing a question because the topic is familiar, and discovering in the third part that it is not, is the most expensive error available in a three-hour paper.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Presentation is marked, whether or not it is listed',
+            text: 'A legible answer with a clear structure, an underlined final result and a properly labelled diagram is easier to award marks to than an equally correct answer that is not. Over four papers this is not a marginal effect. Build the habits — a ruled diagram, units carried through, assumptions stated at the top — during practice, because they are too deliberate to adopt for the first time under exam pressure.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -1494,6 +2046,29 @@ const upsc = [
               { label: 'All previous year papers', to: '/previous-year-papers/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'What the frequency table changes about your plan',
+            items: [
+              { text: 'It identifies the four or five subjects that carry the paper', note: 'every branch has them, and they are not always the ones a candidate remembers as important from their degree.' },
+              { text: 'It separates objective-only topics from conventional topics', note: 'some material appears in prelims and essentially never in the written papers. Knowing which is which stops you preparing derivations you will never be asked to write.' },
+              { text: 'It shows the standard configurations', note: 'the recurring beam arrangements, circuits, cycles and mechanisms around which numerical questions are built. Recognising the configuration quickly is most of the battle in a timed conventional paper.' },
+              { text: 'It reveals what is asked as theory', note: 'a meaningful share of conventional marks comes from explanation and derivation rather than numbers, and those questions need a different kind of preparation from problem-solving.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Attempting a full conventional paper by hand under three hours is uncomfortable the first several times and is not optional. It is the only way to discover the things that matter — how long your handwriting takes, how many questions you can genuinely complete, whether your diagrams are costing you minutes, whether you can hold concentration through the third hour. None of that is knowable from solving problems in a notebook at your own pace, and all of it is decisive on the day.',
+          },
+          {
+            type: 'p',
+            text: 'Review your own scripts as an examiner would, a day after writing them rather than immediately. Read for the things marks are actually awarded for: is the assumption stated, is the governing equation identified, does the working follow, are the units consistent, is the answer clearly presented and concluded. Candidates who mark their own papers for correctness alone routinely miss that they are losing marks on presentation in every single answer.',
+          },
+          {
+            type: 'note',
+            title: 'Do the counting yourself',
+            text: 'Published weightage charts for ESE circulate widely and are frequently undated, built from a different branch, or drawn from before a syllabus revision. Two afternoons spent tagging four or five years of papers in your own branch gives you a table you can trust — and the tagging is itself effective revision, because categorising a question requires recalling how it is solved.',
+          },
         ],
       },
       'mock-tests': {
@@ -1524,6 +2099,26 @@ const upsc = [
               { label: 'UPSC mock tests', to: '/mock-tests/upsc/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'A written practice routine for the conventional papers',
+            items: [
+              { title: 'Start with single questions under time', text: 'Before attempting a full paper, write individual answers to a strict per-question budget. This is where handwriting speed and structure are built, and it costs half an hour rather than three.' },
+              { title: 'Move to half papers', text: 'Ninety minutes, half a paper, complete answers. Long enough to expose pacing problems, short enough to repeat weekly without dominating your schedule.' },
+              { title: 'Then full papers, weekly', text: 'Three hours, by hand, no interruptions, with the question-selection decision made in the first five minutes as it would be in the hall.' },
+              { title: 'Review a day later', text: 'For structure and presentation as well as correctness. Same-day review reads your own intentions into the script; a day’s gap lets you see what is actually on the page.' },
+              { title: 'Rewrite one answer from each paper', text: 'The weakest one, properly. Rewriting is where the correction actually lands — reading a model solution rarely changes what you produce next time.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Keep the prelims paper on general studies and engineering aptitude in your practice rotation throughout rather than treating it as a late add-on. It carries two hundred marks that count towards the final total, it covers material your degree did not teach, and it is the component ESE candidates most reliably underestimate — partly because it is the only part of the examination that does not feel like engineering.',
+          },
+          {
+            type: 'note',
+            title: 'The personality test draws on your branch',
+            text: 'Two hundred marks before a board that will ask about your own discipline as well as your general awareness and your reasons for wanting the service. A candidate who has spent a year rebuilding degree-level technical knowledge is well placed for that conversation, provided they can also explain what the department they are applying to actually does.',
           },
         ],
       },
@@ -1562,6 +2157,32 @@ const upsc = [
               { text: 'Remembering that prelims marks count', note: 'unlike the Civil Services Examination, they form part of the final total.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'If you are preparing alongside GATE',
+                'The overlap in the branch syllabus is substantial and worth exploiting, but the two examinations diverge at the format. GATE preparation builds objective speed; ESE mains needs written solutions. Treat conventional answer writing as the ESE-specific track that GATE study does not cover, and protect it.',
+              ],
+              [
+                'If you are a working engineer',
+                'Give the technical rebuilding your best hours rather than your leftover ones, and accept a longer timeline — twelve to eighteen months is realistic. The general studies paper and objective practice tolerate tired evenings; writing a three-hour conventional paper does not.',
+              ],
+              [
+                'If you are a recent graduate',
+                'Your advantage is that the material is still accessible; your risk is assuming that recency substitutes for the writing skill. Start conventional answer practice in month two, not month eight.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'One point that changes how the year is planned: because prelims marks count, the period before prelims is not a detour from mains preparation. Time spent getting the objective branch paper and the general studies paper solid is time spent on the final total. That resolves a tension candidates often feel between prelims-focused and mains-focused study — in this examination the two are not competing for the same marks.',
+          },
+          {
+            type: 'note',
+            title: 'The formula and derivation sheet, written by hand',
+            text: 'One per subject, built from your own repeated errors rather than copied from a chapter, and containing derivations as well as results — because the conventional papers ask you to produce derivations, not merely to use their outcomes. Revised weekly, it becomes the only document you need in the final fortnight, and it is the single most useful artefact of an ESE preparation.',
+          },
         ],
       },
       'study-material': {
@@ -1596,6 +2217,36 @@ const upsc = [
               'Time your written practice from the beginning — three hours is less than it sounds.',
               'Revisit each major topic twice more before the examination; conventional recall decays quickly.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Branch textbooks — the primary source',
+                'The standard degree texts for your discipline, the ones your course was actually taught from. They carry the derivations, the assumptions and the physical reasoning that conventional answers are marked on, and which digests compress out precisely because objective papers do not need them.',
+              ],
+              [
+                'Your own solved problems — the second source',
+                'A worked notebook, written in full solution form rather than as scratch working. It doubles as writing practice and as the material you revise from, and it is the only record of how you personally solve a problem type.',
+              ],
+              [
+                'The general studies and aptitude material',
+                'Project management, ethics, standards and quality, materials, energy and environment, information technology basics, and current affairs. Genuinely additional content that no engineering textbook covers, for two hundred marks that count.',
+              ],
+              [
+                'Objective question banks — supporting only',
+                'Useful for prelims coverage and speed, and actively misleading if they become the primary source. A candidate who has only ever selected between four options has not practised the skill six hundred marks of this examination measures.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Diagrams deserve a specific mention. In conventional papers a clear, labelled diagram often carries marks in its own right and almost always makes the accompanying explanation shorter and clearer. Practise drawing the standard ones for your branch by hand until they are quick and consistent — free-body diagrams, circuit schematics, cycle diagrams, section drawings — because a diagram you have to invent under time pressure will cost you minutes and come out badly.',
+          },
+          {
+            type: 'note',
+            title: 'Read for why, not just what',
+            text: 'The distinguishing feature of ESE technical questions is that they often ask for reasoning rather than recall — why an assumption holds, what happens when a condition changes, how a design choice trades against another. Material that gives you results without reasons prepares you for the objective half of the examination and leaves you exposed in the half that carries more marks.',
           },
         ],
       },
@@ -1733,6 +2384,15 @@ const upsc = [
             type: 'p',
             text: 'Because eight hundred of the fourteen hundred mains marks come from the optional subjects, the choice of optionals is the most consequential decision in IFoS preparation. The sensible basis is your degree background — a candidate who studied botany and zoology is starting a long way ahead of one choosing them from scratch — tempered by the availability of material and the disallowed-combination rules.',
           },
+          {
+            type: 'p',
+            text: 'The syllabus has an unusual shape that should be read carefully before any planning: the preliminary stage is borrowed wholesale from the Civil Services Examination, and everything after it is a different examination built around two science subjects. That means the first three months of an IFoS preparation look exactly like a Civil Services preparation and the remaining nine do not, and a candidate who does not notice the join will spend the second half of the year reading general studies material for papers that will never ask about it.',
+          },
+          {
+            type: 'note',
+            title: 'Check which optional pairings are permitted',
+            text: 'The notification lists combinations of optional subjects that may not be taken together — typically those with substantial overlap, such as certain pairings among the agricultural, forestry and biological sciences. Choosing two subjects you are strong in, and then discovering the pairing is disallowed, forces a late substitution into a subject you have not prepared. Confirm the combination before you begin, not at the application stage.',
+          },
         ],
       },
       'exam-pattern': {
@@ -1775,6 +2435,32 @@ const upsc = [
             title: 'The IFoS prelims cutoff is separate',
             text: 'Although the preliminary paper is shared with the Civil Services Examination, the cutoff for IFoS is set separately, and candidates must have applied for IFoS at the application stage to be considered. A candidate who applied only for the Civil Services Examination cannot be brought into the IFoS process afterwards.',
           },
+          {
+            type: 'p',
+            text: 'The ratio in the marks table is the whole strategy of this examination stated numerically: eight hundred of fourteen hundred mains marks come from two subjects you choose. No other component comes close, and no amount of excellence in General English or General Knowledge compensates for a weak optional. A study plan that gives the optionals less than half its hours is not matched to the paper it is preparing for.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Why the shared prelims is not a shared preparation',
+                'The paper is the same and the cutoff is not. A candidate may clear the Civil Services cutoff and miss the IFoS one, or the reverse, and the two lists are drawn separately. More importantly, clearing prelims for IFoS requires having applied for IFoS in the first place — it is a choice made at the application stage that cannot be added afterwards.',
+              ],
+              [
+                'What the descriptive format means here',
+                'All six mains papers are written by hand, including both optional papers. For science subjects that means diagrams, labelled figures and structured explanation, and it means writing practice matters as much as it does in any other descriptive examination.',
+              ],
+              [
+                'Where the physical requirements sit',
+                'After the written stages, as qualifying tests. Height and chest standards and a timed walking test over a prescribed distance, differing by gender, along with medical standards reflecting field service. They do not add marks and they can end a candidature.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'The interview carries three hundred marks',
+            text: 'A larger share than candidates expect, and drawn from a board interested in why you want field service in forestry and wildlife specifically. Familiarity with conservation policy, protected area management and current environmental debates is preparation for that conversation, and it overlaps usefully with the General Knowledge paper’s conservation emphasis.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -1808,6 +2494,29 @@ const upsc = [
               { label: 'All previous year papers', to: '/previous-year-papers/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'How to read past optional papers before choosing',
+            items: [
+              { text: 'Check the depth against your own degree', note: 'if the questions read like your final-year papers you have chosen well; if they read like a subject you touched in one semester, the year of catching up is the cost you are accepting.' },
+              { text: 'Look at how much is descriptive explanation', note: 'these are written papers, and subjects that felt comfortable in a multiple-choice setting can be considerably harder when the answer has to be constructed and justified.' },
+              { text: 'Note the diagram load', note: 'botany, zoology, forestry and agriculture papers often reward labelled figures heavily, which is a skill to practise rather than assume.' },
+              { text: 'Compare the two subjects for overlap', note: 'some permitted pairings share substantial ground, which reduces total preparation without reducing marks — a legitimate and underused advantage.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The General Knowledge paper repays past-paper reading for one specific reason: its emphasis is not the same as the Civil Services general studies emphasis. Environment, ecology, forestry, wildlife and conservation policy carry more weight here than a candidate coming from Civil Services preparation would expect, and the past papers make that shift visible in a way the syllabus wording does not.',
+          },
+          {
+            type: 'p',
+            text: 'For General English, work a full three-hour paper rather than practising the components separately. Essay, precis and comprehension in one sitting is a different demand from any of them alone, and it is the paper candidates most often assume will take care of itself. Three hundred marks is too large a component to leave to assumption, particularly for candidates from science backgrounds who have written little extended prose since school.',
+          },
+          {
+            type: 'note',
+            title: 'Frequency tables work for optionals too',
+            text: 'Tag four or five years of questions in each of your optionals by topic and study in that order. Science syllabi are long and evenly written, giving no indication of weighting, and the papers show a distribution that is anything but even. Two afternoons of tagging can save you two months of reading in the wrong places.',
+          },
         ],
       },
       'mock-tests': {
@@ -1838,6 +2547,26 @@ const upsc = [
               { label: 'UPSC mock tests', to: '/mock-tests/upsc/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'A practice routine weighted to the marks',
+            items: [
+              { title: 'Prelims — shared objective practice', text: 'Civil Services prelims mocks with the deduction applied, plus CSAT. Keep this running through the first phase; it is the same paper and there is no IFoS-specific version to seek out.' },
+              { title: 'Optionals — written answers from month two', text: 'Eight hundred of fourteen hundred marks. One full answer a day in one of the two subjects, alternating, from past papers wherever possible.' },
+              { title: 'General English — a full paper monthly', text: 'Three hours, by hand, essay and precis and comprehension together. Rising to fortnightly in the final months.' },
+              { title: 'General Knowledge — written practice with a conservation lens', text: 'Answering in writing rather than reviewing objectively, because the paper is descriptive and the skills are not interchangeable.' },
+              { title: 'Physical — the walking test', text: 'Train to the prescribed distance and time from early on. It is qualifying, it is published, and it is entirely avoidable as a failure.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Diagrams are worth building into optional practice explicitly rather than sketching loosely and intending to do better on the day. In the biological and agricultural sciences a well-labelled figure often answers a substantial part of a question more efficiently than prose can, and examiners award for it. Practise drawing the standard figures of your subjects by hand until they are quick, accurate and consistently labelled.',
+          },
+          {
+            type: 'note',
+            title: 'Get the optional answers read by a subject person',
+            text: 'General answer-writing feedback helps with structure but cannot tell you whether your treatment of a technical question is complete or current. A teacher, a senior or anyone with genuine command of the subject reading a handful of your answers is worth more than a large volume of unreviewed writing, particularly for the paper that carries the most marks.',
           },
         ],
       },
@@ -1877,6 +2606,32 @@ const upsc = [
               { text: 'Overlooking the physical standards', note: 'height, chest and a walking test that the Civil Services Examination does not have.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'If your degree maps onto both optionals',
+                'The strongest position available. Your work is depth and writing practice rather than acquisition, and a year is a realistic and comfortable timeline. Use the surplus on General English, which science graduates most often under-prepare.',
+              ],
+              [
+                'If your degree maps onto one optional',
+                'Choose the second subject for overlap with the first rather than for reputation, and start it first — the unfamiliar subject needs the long runway, and the familiar one can be brought up later with less risk.',
+              ],
+              [
+                'If you are preparing for the Civil Services Examination too',
+                'The prelims is genuinely shared and the mains genuinely is not. Decide honestly which examination is primary, because the mains preparations do not overlap and a year split evenly between them tends to produce two incomplete preparations rather than one strong one.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The physical dimension of this service is not a formality attached to the end of the process — it reflects what the work is. Forest officers walk difficult terrain, and the standards exist for that reason. Reading the height, chest, walking test and medical requirements in your first week is a practical filter that lets you commit a year with confidence, or redirect it, rather than discovering the answer after the written examination is behind you.',
+          },
+          {
+            type: 'note',
+            title: 'Apply for IFoS at the application stage',
+            text: 'It is a choice made when you fill the form, and it cannot be added later on the strength of a good prelims performance. Candidates who intended to keep the option open and did not tick it have found themselves ineligible for a mains they were well prepared for. If IFoS is a genuine possibility, apply for it.',
+          },
         ],
       },
       'study-material': {
@@ -1913,6 +2668,36 @@ const upsc = [
               'Draw diagrams by hand — in botany, zoology and forestry especially, they earn marks.',
               'Revise each optional twice more before the examination.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Optional subjects — degree textbooks',
+                'The standard texts for the subjects you have chosen, not competitive-exam summaries. The depth expected is closer to a good degree examination than to a general studies paper, and summaries are written for a different level entirely.',
+              ],
+              [
+                'General Knowledge — with a conservation weighting',
+                'Standard polity, history, geography and current affairs material, supplemented deliberately with environment, ecology, forestry and wildlife policy. The last of these is where the IFoS paper diverges from its Civil Services counterpart.',
+              ],
+              [
+                'General English — practice material rather than a book',
+                'Past papers, passages to precis, and essay topics. This paper is built by writing, and three hundred marks is enough to justify a weekly slot from the start.',
+              ],
+              [
+                'Prelims — the Civil Services shelf',
+                'Identical requirements, including CSAT. Nothing IFoS-specific is needed at this stage, which is worth knowing because it prevents candidates from duplicating material they already have.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Keeping current with conservation policy is unusually well rewarded across this examination. Protected area management, wildlife legislation, forest rights, human-wildlife conflict, climate commitments and afforestation programmes feed the General Knowledge paper, several optional subjects at their applied edges, and the interview. One good source followed regularly does more for an IFoS candidate than the same time spent on general current affairs breadth.',
+          },
+          {
+            type: 'note',
+            title: 'Write from the first month in both optionals',
+            text: 'The most common regret among IFoS candidates is having read two science subjects thoroughly and written in neither until late. These are descriptive papers: the ability to construct a complete, well-organised, properly illustrated answer under time is a separate skill from knowing the subject, and it takes months rather than weeks to build.',
           },
         ],
       },

@@ -180,6 +180,32 @@ const banking = [
             title: 'Confirm the current structure',
             text: 'IBPS has adjusted section marks, question counts and timings between cycles, and the weighting between mains and interview has also changed. Read the pattern section of the current notification rather than preparing to a structure from an older guide.',
           },
+          {
+            type: 'p',
+            text: 'Sectional timing changes what a good attempt looks like, and it does so in a way candidates trained on open-timed papers find counter-intuitive. In an open paper, a hard question costs you the time it takes; in a sectionally timed paper it costs you the questions you never reached in that section, and those questions do not come back. The skill being tested in prelims is therefore triage — deciding in a few seconds whether a question is yours — rather than problem-solving. Candidates who solve well and select badly clear prelims far less often than the reverse.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Why prelims marks being discarded matters',
+                'Once you are safely past the cutoff, additional prelims performance buys nothing. That is an argument for building a comfortable margin and then redirecting effort to mains, not for treating prelims casually — the cutoff is unforgiving and the margin is worth having, but there is no prize above it.',
+              ],
+              [
+                'Why unequal marks per question matter',
+                'In mains, reasoning and data interpretation questions carry more than a mark each while awareness questions carry one. A minute spent on a data interpretation set is therefore worth more than a minute spent elsewhere — provided you solve it. The same minute spent and abandoned is worth considerably less than a minute spent on awareness.',
+              ],
+              [
+                'Why the awareness section is timed the way it is',
+                'Forty questions in thirty-five minutes sounds tight and is not, because every question is recall. It should take you well under the allotted time, and the discipline is to finish early rather than to fill the window — the surplus is not transferable, but the mental freshness is.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'The interview weighting is worth confirming',
+            text: 'The final merit combines the main examination and the interview in a published ratio, and that ratio has been adjusted between cycles. Knowing it changes how much preparation the interview deserves — and for candidates who reach that stage, it is usually more than they had assumed from the fact that the written paper carries the larger share.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -215,6 +241,26 @@ const banking = [
               { label: 'All previous year papers', to: '/previous-year-papers/' },
               { label: 'Data interpretation notes', to: '/study-material/quantitative-aptitude/' },
             ],
+          },
+          {
+            type: 'list',
+            title: 'The puzzle families worth cataloguing',
+            items: [
+              { text: 'Linear arrangements', note: 'single row or two rows, facing the same direction or opposite. The constraint language is standardised and worth learning as language rather than decoding afresh each time.' },
+              { text: 'Circular and rectangular arrangements', note: 'facing inward, outward or mixed. Mixed-facing puzzles are where most candidates lose time, and they are entirely learnable.' },
+              { text: 'Floor and flat puzzles', note: 'people, floors and often a second attribute such as a colour or a subject. Two-variable versions are the common escalation.' },
+              { text: 'Box, month and day scheduling puzzles', note: 'ordering along a fixed sequence, usually with gaps specified rather than positions.' },
+              { text: 'Comparison and ranking puzzles', note: 'often solvable faster with an inequality chain than with a grid, which is the kind of choice practice teaches.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The data interpretation sets repay the same treatment. Tabular, bar, line, pie, caselet, missing-data and mixed sets each have a characteristic first move — read the total, find the base year, identify what is missing — and knowing that first move is most of the speed advantage. Catalogue the sets you meet by type and write the first move beside each, then review that list rather than re-solving the sets.',
+          },
+          {
+            type: 'note',
+            title: 'Time each set, not each paper',
+            text: 'A paper-level time gives you an average and hides everything useful. What you need is the per-set figure: this puzzle took eleven minutes, that data interpretation set took six. Under sectional timing, a single eleven-minute puzzle is the whole story of a failed section, and only set-level timing makes that visible.',
           },
         ],
       },
@@ -252,6 +298,32 @@ const banking = [
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
           },
+          {
+            type: 'p',
+            text: 'There is a specific number worth tracking across your prelims mocks that most candidates never record: how many minutes you spent on questions you ultimately did not answer. That is pure loss, and it is usually larger than people expect — five or six minutes in a twenty-minute section is not unusual for candidates who have not trained abandonment. Bringing that number towards zero improves the score without requiring you to learn anything new.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'What a good prelims section looks like',
+                'A quick scan, a decision about which questions are yours, high accuracy on those, and a clean exit from everything else. Attempting fewer questions with near-perfect accuracy beats attempting more with a scatter of errors, because the deduction compounds against you.',
+              ],
+              [
+                'What a good mains section looks like',
+                'Different, because the marks per question are unequal and the sections are longer. Here it is worth investing real minutes in a data interpretation set that is going well, and worth banking the awareness section quickly to fund that investment.',
+              ],
+              [
+                'What a bad mock looks like from the inside',
+                'A section where you felt busy throughout and answered little. That feeling is the reliable signal of a selection failure rather than a knowledge failure, and it is fixed by scanning discipline rather than by more study.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Practise the descriptive paper in its real position',
+            text: 'The thirty-minute descriptive paper follows three hours of objective testing, and writing a coherent letter and essay while mentally spent is a genuinely different task from writing them fresh. Attach the descriptive practice to the end of a full mains mock at least a few times before the exam rather than always practising it in isolation.',
+          },
         ],
       },
       preparation: {
@@ -288,6 +360,32 @@ const banking = [
               { text: 'Treating banking awareness as revision', note: 'it is a subject that needs months of daily contact, not a week of notes.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Why banking awareness has to start on day one',
+                'It is the only section that cannot be compressed. Aptitude improves with intensity — a candidate can transform their data interpretation in eight focused weeks. Awareness accumulates: it needs contact with banking and economic news across months, because a large share of the questions concern the period leading up to the exam and cannot be studied in advance from a book.',
+              ],
+              [
+                'Why data interpretation deserves subject status',
+                'It carries the heaviest marks in mains and appears only lightly in prelims, which means the candidate who prepares by taking prelims mocks will systematically under-prepare it. Treat it as its own subject with its own daily slot rather than as a part of quantitative aptitude.',
+              ],
+              [
+                'Why the descriptive paper needs a schedule',
+                'Thirty minutes for a letter and an essay is tight even for confident writers, and the formats are conventional enough that practice produces rapid improvement. One piece a week from month three costs almost nothing and removes an avoidable loss.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'On preparing for several banking examinations in one cycle, which most candidates do: the core aptitude work is genuinely shared, so a single preparation covering arithmetic, data interpretation, puzzles and English serves IBPS PO, SBI PO and the clerical papers alike. What is not shared is the final-stage work — the descriptive paper, the interview, and SBI’s group exercise — and that is where candidates who run one undifferentiated preparation come unstuck.',
+          },
+          {
+            type: 'note',
+            title: 'Use one running source for awareness',
+            text: 'A single business newspaper or one well-maintained monthly compilation, followed consistently, beats sampling several. Awareness questions reward recognition built by repeated exposure to the same items over months, and switching sources resets that exposure without adding coverage.',
+          },
         ],
       },
       'study-material': {
@@ -322,6 +420,36 @@ const banking = [
               'Twenty minutes of banking and economic awareness from a single running source.',
               'One descriptive letter or essay a week from month three.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Percentage and ratio — the real foundation',
+                'Almost every data interpretation question reduces to a percentage or a ratio, and speed there is what makes a set fast rather than any technique specific to graphs. Candidates who find data interpretation slow are usually finding percentages slow and have not noticed.',
+              ],
+              [
+                'Approximation as a deliberate skill',
+                'Banking papers frequently have options spread widely enough that an approximate calculation identifies the answer. Knowing when the options permit that, and when they do not, is worth more than raw calculation speed.',
+              ],
+              [
+                'Reasoning through representation',
+                'The difference between a solved puzzle and an abandoned one is usually the diagram. Practise drawing the arrangement before reasoning about it, and keep the notation consistent so that it becomes automatic under time pressure.',
+              ],
+              [
+                'English through reading',
+                'Comprehension in banking papers increasingly asks about inference and tone rather than located facts, and that responds to reading habit rather than to grammar rules. Rules still matter for the error-spotting questions, but they are a smaller and more finite part of the section.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'A note on what to memorise, since candidates often ask. Tables to twenty, squares to thirty, cubes to fifteen, and the common fraction-to-percentage equivalents are worth knowing cold — they are used constantly and each lookup costs seconds you are paying for elsewhere. Beyond that, memorisation has poor returns in this examination; the marks come from recognition and speed, not from stored facts.',
+          },
+          {
+            type: 'note',
+            title: 'Keep a puzzle log, not a puzzle collection',
+            text: 'Solving a hundred puzzles teaches less than logging thirty. For each one, note the family, the representation you used, and the constraint that unlocked it. Reviewing that log before a mock does more for your reasoning score than solving three more puzzles would, because the skill being built is recognition rather than volume.',
           },
         ],
       },
@@ -457,6 +585,25 @@ const banking = [
             type: 'p',
             text: 'Given that financial awareness is the single largest mains section and is entirely learnable in advance, it is the most efficient place to invest daily time. Unlike quantitative aptitude, where improvement is gradual and effortful, awareness converts study into marks almost directly.',
           },
+          {
+            type: 'p',
+            text: 'The clerical syllabus differs from the officer syllabus less in what it lists than in how deeply each item is examined. Data interpretation appears, but as straightforward tables and bar charts rather than the layered caselets an officer paper sets. Puzzles appear, but with fewer variables. That difference is genuine and should shape your material choice — but do not mistake it for an easier examination, because the cutoffs reflect the same competition and the paper compensates for its lower difficulty with a higher demand for speed.',
+          },
+          {
+            type: 'list',
+            title: 'What the mains syllabus adds',
+            items: [
+              { text: 'General and financial awareness', note: 'fifty marks, the largest section in the paper, and absent from prelims entirely. A candidate who prepared only for prelims has prepared for none of it.' },
+              { text: 'Computer aptitude', note: 'bundled with reasoning in the mains. Finite, mechanical and quick to learn — one of the best returns per hour available in the whole preparation.' },
+              { text: 'A wider English section', note: 'forty questions rather than thirty, with more comprehension and less pure grammar than the preliminary paper.' },
+              { text: 'Longer sections generally', note: 'the mains runs to nearly three hours against the preliminary hour, which makes stamina a real factor for the first time.' },
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Financial awareness is the section to start first',
+            text: 'It is the largest, it is entirely learnable in advance, and it is the one part of the paper where months of light daily contact produce a decisive advantage over candidates who begin it after the prelims result. Nothing else in this syllabus rewards an early start as directly.',
+          },
         ],
       },
       'exam-pattern': {
@@ -506,6 +653,25 @@ const banking = [
             title: 'Cutoffs are state-wise',
             text: 'Because merit is prepared state by state, the score required varies with where you applied and in which category. A candidate comparing their score against a figure quoted for another state is comparing against the wrong number.',
           },
+          {
+            type: 'p',
+            text: 'The absence of an interview changes the character of this examination in a way worth internalising early. There is no stage at which a strong personal impression can recover a mediocre paper, and no component that rewards anything other than marks on a screen. That makes consistency the whole strategy: the number that matters is what you score on an ordinary day, not what you scored on your best mock, because there is nothing downstream to compensate for a bad one.',
+          },
+          {
+            type: 'steps',
+            title: 'A section order for the mains',
+            items: [
+              { title: 'General and financial awareness first', text: 'Fifty marks of recall in thirty-five minutes. It is the best rate in the paper and it costs no mental energy you will need later.' },
+              { title: 'Reasoning and computer aptitude next', text: 'Sixty marks, the heaviest section, taken while you are still fresh. Bank the computer questions quickly and give the surplus to the puzzles.' },
+              { title: 'Quantitative aptitude third', text: 'Fifty marks in forty-five minutes, where calculation speed decides how many of the fifty you actually reach.' },
+              { title: 'English last', text: 'Forty marks, and the section least damaged by tiredness because it draws on habit rather than on computation.' },
+            ],
+          },
+          {
+            type: 'note',
+            title: 'State choice is a strategic decision, not an administrative one',
+            text: 'Merit is prepared state by state, which means the score you need depends on where you applied. It also carries a language expectation, since a clerical role involves serving customers in the local language. Both consequences follow from a single field on the application form, and both are worth thinking about for longer than most candidates do.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -538,6 +704,30 @@ const banking = [
               { label: 'Quantitative aptitude notes', to: '/study-material/quantitative-aptitude/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'What the numerical section is actually made of',
+            items: [
+              { text: 'Simplification and approximation', note: 'a substantial block of pure mechanical calculation. Nothing to understand, everything to speed up, and the single most improvable component in the paper.' },
+              { text: 'Number series', note: 'missing or wrong term. A small number of underlying patterns — differences, ratios, alternating operations, squares and cubes with an offset — cover almost all of them.' },
+              { text: 'Quadratic comparison', note: 'two equations, compare the roots. Entirely mechanical once the factorisation is fluent, and frequently mishandled through carelessness with signs rather than through difficulty.' },
+              { text: 'Straightforward data interpretation', note: 'tables and bar charts with direct questions, rather than the layered caselets an officer paper sets.' },
+              { text: 'Arithmetic word problems', note: 'percentage, profit and loss, averages, time and work, and interest, mostly single-step.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The reason to catalogue the section this way is that it identifies where the time actually goes. For most clerical candidates, the arithmetic word problems are comfortable and the simplification block is where minutes disappear — which is the opposite of where they instinctively direct their practice. Timing the blocks separately across a few past papers settles the question for your own case rather than in general.',
+          },
+          {
+            type: 'p',
+            text: 'The financial awareness questions in past mains papers divide into two kinds, and only one of them is worth mining. Static items — banking terms, regulatory structure, the functions of the Reserve Bank, types of accounts and instruments — recur and are worth extracting into a themed list. Current items are tied to the months before that particular exam and will not repeat; note the themes they came from, but do not memorise the specifics.',
+          },
+          {
+            type: 'note',
+            title: 'Learn the arithmetic furniture cold',
+            text: 'Tables to twenty, squares to thirty, cubes to fifteen, and the standard fraction-to-percentage equivalents. In a paper where the numerical section is largely mechanical, every lookup you avoid is time returned. This is one of the few places in competitive preparation where straightforward memorisation is clearly worth the hours.',
+          },
         ],
       },
       'mock-tests': {
@@ -569,6 +759,26 @@ const banking = [
               { label: 'Sectional and topic practice', to: '/practice/' },
             ],
           },
+          {
+            type: 'steps',
+            title: 'A mock routine for an exam with no interview',
+            items: [
+              { title: 'Enforce the sectional limits exactly', text: 'Twenty minutes per prelims section, and the published mains timings. A mock that lets you borrow minutes is measuring a paper you will not sit.' },
+              { title: 'Record your floor, not your average', text: 'Keep a rolling note of your lowest score in the last five mocks. That is the realistic estimate of a bad day, and a bad day is what the cutoff will meet.' },
+              { title: 'Time the simplification block separately', text: 'Seconds per question, tracked over weeks. It should fall steadily; if it has plateaued, drill rather than take another mock.' },
+              { title: 'Check attempts against accuracy', text: 'Under a quarter-mark deduction, a rising attempt count with falling accuracy is a net loss dressed up as effort.' },
+              { title: 'Take one mock a week in poor conditions', text: 'Tired, late in the day, slightly rushed. The exam will not always find you at your best, and a preparation that only ever measures your best is measuring the wrong candidate.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Because there is no interview, the relationship between your mock scores and your result is more direct here than in any officer examination — which cuts both ways. It means honest mock conditions give you an unusually reliable forecast, and it means self-deception in practice has nowhere to hide. Mocks taken with pauses, retries or a glance at a solution are not a gentler version of the exam; they simply produce a number that means nothing.',
+          },
+          {
+            type: 'note',
+            title: 'Practise in the format you will sit',
+            text: 'The examination is taken on a computer, with an on-screen calculator available only where the pattern provides one and rough sheets for everything else. Practising on paper builds a workflow you cannot use. Take mocks on a screen, with a rough sheet beside you, in the same physical arrangement the centre will give you.',
+          },
         ],
       },
       preparation: {
@@ -599,6 +809,36 @@ const banking = [
               { text: 'Chasing a high score in one mock', note: 'the cutoff rewards a consistent floor, not an occasional peak.' },
               { text: 'Choosing the state carelessly', note: 'it fixes your cutoff and carries a language expectation.' },
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'The calculation habit',
+                'Fifteen minutes of pure drilling every day — simplification, approximation, tables, percentages — separate from any topic study. It is the most boring part of this preparation and the one most directly connected to the score.',
+              ],
+              [
+                'The awareness habit',
+                'Twenty minutes daily from one running source, from the first week. Fifty mains marks accumulated slowly, which is the only way they can be accumulated.',
+              ],
+              [
+                'The puzzle habit',
+                'Two or three a day, timed, throughout. Reasoning with computer aptitude is the heaviest mains section, and puzzles are where its marks concentrate.',
+              ],
+              [
+                'The computer aptitude project',
+                'A short, finite block of a few weeks. Fundamentals, hardware and software, operating systems, office applications, internet and networking basics, and security. Easy marks that candidates leave because the section sounds technical.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'On preparing for IBPS Clerk and SBI Clerk together, which is the sensible default: the syllabi overlap almost completely and the calendars rarely collide, so one preparation genuinely covers both. Keep the differences in view rather than in a separate plan — SBI frames questions less predictably and has its own language requirement, IBPS runs a state-wise merit — but do not build two study schedules for what is substantially one body of material.',
+          },
+          {
+            type: 'note',
+            title: 'Consistency is the strategy',
+            text: 'In an examination decided by a single objective paper against a state cutoff, the candidate who scores steadily rather than spectacularly is in the stronger position. Aim your practice at raising your worst day rather than your best one — it is a less satisfying target and a considerably more useful one.',
           },
         ],
       },
@@ -633,6 +873,36 @@ const banking = [
               'Twenty minutes of financial and general awareness from one running source.',
               'One grammar rule reviewed with practice sentences.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Quantitative — drill material rather than theory',
+                'What a clerical candidate needs from quantitative notes is not new methods but volume: pages of simplification, series and straightforward data interpretation to work through against a clock. Theory here is thin and quickly exhausted; practice is not.',
+              ],
+              [
+                'Reasoning — the learnable puzzle families',
+                'Linear and circular arrangements, floor puzzles, scheduling, and the standard syllogism and inequality question types. Clerical puzzles use fewer variables than officer puzzles, which makes the families easier to recognise and the practice faster to accumulate.',
+              ],
+              [
+                'Financial awareness — organised for revision',
+                'Themed lists rather than continuous reading: banking terminology, the regulatory structure, Reserve Bank functions, account and instrument types, government financial schemes, and the abbreviations that recur endlessly.',
+              ],
+              [
+                'English — rules plus reading',
+                'A short grammar set covers error spotting and sentence improvement. A daily reading habit covers comprehension and vocabulary, which is the larger half of the mains section.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'One thing worth building yourself rather than downloading: an abbreviations and terminology sheet. Banking awareness is unusually dense in acronyms and defined terms, they recur across every banking examination, and a single sheet you have written and revised is more useful than a chapter you have read. It also converts dead time — a commute, a queue — into revision, which is exactly what this section needs.',
+          },
+          {
+            type: 'note',
+            title: 'Do not practise with a calculator',
+            text: 'The clerical numerical section is substantially a mental arithmetic test, and a calculator used during practice quietly removes the precise skill being examined. Work on paper, in your head where you can, and accept that the first few weeks will feel slower than they need to.',
           },
         ],
       },
@@ -778,6 +1048,15 @@ const banking = [
             type: 'p',
             text: 'The practical implication is that SBI PO rewards understanding over pattern recognition. A candidate who has learned twenty puzzle templates will struggle when the twenty-first has a constraint none of them had; a candidate who has learned how to represent constraints on paper will not. The same is true of data interpretation, where reading an unfamiliar structure calmly is the actual skill being tested.',
           },
+          {
+            type: 'p',
+            text: 'The syllabus lists topics; SBI examines dispositions. Two candidates can have covered the same list and meet the paper very differently — one looking for the question type they practised, the other reading the set on its own terms and working out what it wants. The second candidate is what this syllabus is written for, and it is why a topic-by-topic checklist, completed diligently, is a weaker preparation for SBI PO than for any other banking examination.',
+          },
+          {
+            type: 'note',
+            title: 'Read the descriptive paper into your syllabus, not alongside it',
+            text: 'A letter and an essay on banking, economic or technological themes is not a separate subject to be picked up later — it draws on exactly the awareness reading the objective paper requires. Candidates who follow banking and economic news properly find the essay largely prepared; candidates who revise awareness from bullet lists find they have facts and no argument.',
+          },
         ],
       },
       'exam-pattern': {
@@ -831,6 +1110,32 @@ const banking = [
             title: 'SBI revises its pattern more often than IBPS',
             text: 'Section marks, question counts, timings and the composition of the final stage have all been adjusted between cycles. The official advertisement for the current recruitment is the only reliable source for these numbers.',
           },
+          {
+            type: 'p',
+            text: 'Sixty marks from thirty data analysis questions is the most consequential ratio in the mains table, and it points in an uncomfortable direction: this is a section where each question is worth twice an awareness question, and where the sets are deliberately harder than their IBPS equivalents. It rewards depth rather than coverage. Solving three sets thoroughly will usually beat opening six and finishing four, which is the reverse of the instinct most banking preparation builds.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'The descriptive paper’s real difficulty',
+                'Not the writing but the position it occupies. Thirty minutes for a letter and an essay, immediately after three hours of objective testing, with no break in which to recover. Candidates who have only practised writing when fresh consistently underestimate this.',
+              ],
+              [
+                'What the group exercise assesses',
+                'Contribution quality rather than airtime — whether you advance the discussion, whether you listen, whether you can disagree without dominating. Candidates who prepare by resolving to speak often usually score worse than those who prepare by having something to say.',
+              ],
+              [
+                'What the psychometric test is for',
+                'Its output informs the interview panel rather than producing a score of its own, which means its function is to give the panel questions. Answering it inconsistently, in the hope of presenting a preferred profile, tends to produce exactly the line of questioning a candidate would rather avoid.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Assume the pattern will have moved',
+            text: 'SBI revises section marks, question counts, timings and the composition of the final stage more often than IBPS does, and it has occasionally introduced components with little notice. Read the current advertisement in full rather than relying on a plan built from last year, and treat any structural detail you learned from a guide as provisional until you have checked it.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -866,6 +1171,29 @@ const banking = [
               { label: 'IBPS PO mock test', to: '/mock-tests/ibps-po/' },
               { label: 'All previous year papers', to: '/previous-year-papers/' },
             ],
+          },
+          {
+            type: 'list',
+            title: 'Signals that a set should be abandoned',
+            items: [
+              { text: 'You have read the set twice and still cannot state what it is asking', note: 'the structure has not landed, and it usually will not land on the third reading either. Leave it and return only if minutes remain.' },
+              { text: 'The first calculation produces an ugly number', note: 'in a well-constructed set the early values are usually manageable. An unpleasant intermediate result often means you have misread the base or the units.' },
+              { text: 'You are two minutes in with no answered question', note: 'a hard per-set ceiling is what converts good judgement into marks. Without one, the decision to leave keeps being deferred.' },
+              { text: 'The puzzle has an extra variable you did not anticipate', note: 'three-variable puzzles are legitimate and slow. If the section has faster marks elsewhere, they should be taken first.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The exercise of writing down why you abandoned a set is more valuable than it sounds. Over a few weeks the reasons cluster, and the cluster is diagnostic: consistently abandoning mixed-graph sets is a knowledge gap that can be closed, while abandoning sets because you started calculating before reading is a habit that can be changed. Without the log, both feel like the same experience of things going badly.',
+          },
+          {
+            type: 'p',
+            text: 'For the English sections, work backwards from the answers on inference questions in past papers. Read the correct option, then find what in the passage supports it and what makes each other option almost right. SBI comprehension is built around options that are plausible but unsupported, and training your eye for that specific gap is more productive than reading more passages at ordinary attention.',
+          },
+          {
+            type: 'note',
+            title: 'Use IBPS papers to build, SBI papers to test',
+            text: 'IBPS sets are more standardised, which makes them better material for building fluency in a technique. SBI sets are less predictable, which makes them better material for finding out whether the fluency survives an unfamiliar framing. Using them the other way round — building on SBI papers and testing on IBPS ones — produces a preparation that feels harder and prepares you less.',
           },
         ],
       },
@@ -903,6 +1231,32 @@ const banking = [
               { label: 'Sectional practice', to: '/practice/' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'The number to watch: minutes spent on unanswered questions',
+                'Pure loss, and in an SBI paper it is usually the largest single leak. Track it per section across several mocks. A candidate who reduces it from six minutes to two has gained four minutes of solving time without learning anything new.',
+              ],
+              [
+                'The second number: sets opened versus sets completed',
+                'Opening five and completing two is a selection failure. Opening three and completing three is a better paper even though it looks less industrious, and in a section where questions carry two marks it is usually a higher score.',
+              ],
+              [
+                'The third number: accuracy on attempted sets',
+                'Kept separate from coverage. High accuracy with modest coverage is a stable platform to build from; low accuracy with wide coverage is the profile that fails unpredictably.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Review the sets you skipped after every mock, without a clock. This is the step candidates skip because it feels like studying material they have already decided to avoid, and it is precisely the step that improves selection judgement. Some of the sets you abandoned will turn out to have been straightforward once read properly — those are selection errors. Others will turn out to have been genuinely long — those confirm you judged well. Only the review distinguishes the two.',
+          },
+          {
+            type: 'note',
+            title: 'Prepare the group exercise by having views',
+            text: 'The most effective preparation for the group stage is not practising discussions but reading enough that you have something considered to contribute on banking, economic and technology questions. A candidate with a genuine position speaks at the right moments and can build on someone else’s point; a candidate without one is reduced to competing for airtime, which is exactly what assessors are trained to discount.',
+          },
         ],
       },
       preparation: {
@@ -939,6 +1293,32 @@ const banking = [
               { text: 'Preparation for the interview stage', note: 'started months earlier, not in the fortnight after the mains result.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Deliberately unfamiliar practice',
+                'From month two, make a point of working question types you have not seen — from other examinations, from older papers, from any source that frames things differently. The skill being built is not coverage but composure when the framing is new, and it cannot be built on material you have already patterned.',
+              ],
+              [
+                'Reading as core preparation, not enrichment',
+                'A properly read business newspaper feeds the awareness section, the comprehension section, the essay and the interview. For SBI PO more than any other banking examination, the reading habit is the highest-leverage single activity available.',
+              ],
+              [
+                'Triage as a trained skill',
+                'Set selection is not a personality trait. It is trained by scanning drills, hard per-set ceilings and post-mock review, and candidates who treat it as something they will do properly on the day arrive without it.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The characteristic SBI PO failure is worth describing precisely because it is so avoidable. A candidate prepares thoroughly on IBPS-style material, scores well in IBPS-style mocks, meets an SBI paper with unfamiliar sets, spends the first ten minutes trying to force familiar methods onto them, and loses the section to time rather than to difficulty. Nothing in that sequence is a knowledge problem. All of it is addressed by practising unfamiliarity on purpose, months in advance.',
+          },
+          {
+            type: 'note',
+            title: 'Start the final stage early',
+            text: 'The interview and group exercise reward months of reading and of forming opinions, and the gap between the mains result and the interview is short. Candidates who begin that preparation only after clearing mains are compressing into a fortnight something that was meant to accumulate — and it shows, because rehearsed views sound different from held ones.',
+          },
         ],
       },
       'study-material': {
@@ -972,6 +1352,36 @@ const banking = [
               'Two data interpretation sets, timed, with the structure read before any calculation.',
               'One editorial analysed for argument and tone, which serves both the English section and the essay.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Reasoning — representation before deduction',
+                'The layered puzzles SBI sets are solved by drawing the arrangement well. Keep one consistent notation for positions, directions and unknowns so that the representation becomes automatic, and practise writing it down before reasoning about it.',
+              ],
+              [
+                'Data analysis — read the structure first',
+                'Thirty seconds understanding what a set contains before any calculation is the highest-return habit in this section. It identifies the fast questions, exposes the trap in missing-data sets, and prevents the most common loss, which is calculating against the wrong base.',
+              ],
+              [
+                'English — inference and tone',
+                'Grammar rules cover a shrinking share of the section. The larger part rewards reading well-argued prose regularly enough that recognising an author’s position becomes ordinary rather than effortful.',
+              ],
+              [
+                'Awareness — banking with an economic frame',
+                'Not a list of facts but an understanding of how the system fits together: what the regulator does, how policy transmits, what the instruments are for. That framing is what the essay and the interview ask for, and it makes the objective questions easier as a by-product.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The editorial-a-day habit deserves singling out for this examination specifically, because it pays into four components at once. Read one properly — not skimmed — and note the argument, the evidence offered, and what a reasonable person might say against it. That is comprehension practice, vocabulary in context, essay material and interview preparation from a single fifteen-minute activity, which is a better rate of return than any subject-specific study on your shelf.',
+          },
+          {
+            type: 'note',
+            title: 'Avoid template collections',
+            text: 'Material that promises a fixed method for every question type is well suited to IBPS papers and poorly suited to this one. SBI sets are designed to sit slightly outside the templates, and a candidate whose preparation is entirely template-based has no fallback when the template does not fit. Prefer material that explains why a method works.',
           },
         ],
       },
@@ -1106,6 +1516,15 @@ const banking = [
             type: 'p',
             text: 'Because the overlap with IBPS Clerk is so nearly complete, the sensible approach is one preparation covering both, with SBI-specific practice added in the final stretch to acclimatise to the framing rather than to the content.',
           },
+          {
+            type: 'p',
+            text: 'Because the scope is so nearly identical to IBPS Clerk, the useful question is not what to study but where the two papers differ in practice. SBI tends to frame questions a little less predictably, sets slightly more varied data interpretation, and asks comprehension questions that lean marginally more on inference. None of that changes the syllabus; all of it changes how much of your practice should come from unfamiliar material rather than from a single publisher’s pattern.',
+          },
+          {
+            type: 'note',
+            title: 'The language requirement is part of the selection',
+            text: 'Proficiency in the local language of the circle you applied to is a genuine condition, verified by documentary proof or by a test depending on the cycle. It reflects the job — a Junior Associate serves customers in the language they bank in. Establish early which form of proof applies to you, because it is a condition that has ended otherwise successful candidacies at the last stage.',
+          },
         ],
       },
       'exam-pattern': {
@@ -1155,6 +1574,25 @@ const banking = [
             title: 'Confirm the current structure and the language requirement',
             text: 'SBI adjusts section marks and timings between cycles, and the form of the local language requirement is set out in each advertisement. Both are worth reading in the current document rather than assuming continuity from a previous year.',
           },
+          {
+            type: 'p',
+            text: 'With no interview and prelims marks discarded, the entire selection rests on a single two-and-a-half-hour paper. That concentration has a practical consequence for how you practise: there is no averaging across stages, no second chance to make an impression, and no component in which a strength can offset a weakness. The mains score on one particular morning is the whole of it, which is an argument for building a reliable floor rather than an occasional peak.',
+          },
+          {
+            type: 'steps',
+            title: 'Working the mains section order',
+            items: [
+              { title: 'Financial awareness first, and fast', text: 'Fifty marks of recall in thirty-five minutes. Finish inside the window rather than filling it — the surplus minutes are not transferable but the freshness is.' },
+              { title: 'Reasoning with computer aptitude second', text: 'Sixty marks, the heaviest section. Clear the computer questions in the first few minutes, then give everything remaining to the puzzles.' },
+              { title: 'Quantitative aptitude third', text: 'Fifty marks in forty-five minutes, where your calculation speed determines how many questions you actually reach.' },
+              { title: 'English last', text: 'Forty marks drawing on habit rather than computation, which makes it the section least degraded by three hours of prior work.' },
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Confirm the structure each cycle',
+            text: 'SBI adjusts section marks, question counts and timings between recruitment cycles more readily than IBPS does, and the form of the language requirement has also varied. Read the current advertisement rather than working from a plan built in an earlier year — the strategy above depends on the marks-per-minute ratios, and those are exactly what a revision changes.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -1187,6 +1625,29 @@ const banking = [
               { label: 'Quantitative aptitude notes', to: '/study-material/quantitative-aptitude/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'How to use two sources of past papers',
+            items: [
+              { text: 'IBPS Clerk papers for volume', note: 'more standardised, more plentiful, and better suited to building raw fluency in simplification, series and the common puzzle families.' },
+              { text: 'SBI Clerk papers for framing', note: 'fewer of them, and more useful for acclimatising to how SBI dresses a question. Save some for late practice rather than working through them all early.' },
+              { text: 'SBI PO prelims papers as a stretch', note: 'harder than you need, which makes them useful for a fortnight of deliberate overload before returning to clerical-level material.' },
+              { text: 'Any source at all for simplification drilling', note: 'this block is mechanical and source-agnostic. What matters is the stopwatch, not the provenance.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'A specific measurement worth taking early: time yourself on twenty simplification questions and record the seconds per question. Repeat it monthly with a fresh set. For a clerical candidate this single number tracks the most improvable component of the paper, it moves visibly with practice, and it correlates with the mains quantitative score more closely than any topic-level assessment you could run.',
+          },
+          {
+            type: 'p',
+            text: 'For financial awareness, build the theme list from past mains papers rather than reading a compilation front to back. The static items — terminology, regulatory structure, instrument types, the abbreviations that appear endlessly — recur reliably enough that a list drawn from the papers themselves is both shorter and better targeted than a general banking digest, and it is a document you can actually revise in the final week.',
+          },
+          {
+            type: 'note',
+            title: 'Practise in your chosen language where the option exists',
+            text: 'Where the paper is offered in more than one language, take your past-paper practice in the one you will sit in. Reading speed is a real component of a timed clerical paper, and meeting unfamiliar renderings of banking terminology for the first time in the examination hall costs both minutes and confidence.',
+          },
         ],
       },
       'mock-tests': {
@@ -1217,6 +1678,25 @@ const banking = [
               { label: 'All free mock tests', to: '/mock-tests/free/' },
               { label: 'Topic and sectional practice', to: '/practice/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'A weekly mock routine',
+            items: [
+              { title: 'Two sectionally timed prelims mocks', text: 'Twenty minutes per section, strictly. The whole difficulty of the stage is the inability to borrow time, and a mock that permits it teaches the wrong habit.' },
+              { title: 'One full mains mock', text: 'In the published section order and timings, on a screen, with a rough sheet. Two and a half hours in one sitting, because that is what stamina practice requires.' },
+              { title: 'Daily calculation drilling regardless', text: 'Fifteen minutes, every day, independent of whether a mock is scheduled. This is the component that improves fastest and decays fastest.' },
+              { title: 'A weekly review of your floor', text: 'The lowest of your last five scores. Working to raise that number is less satisfying than chasing a personal best and considerably more predictive of your result.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Track your financial awareness score as a separate trend line rather than folding it into the total. It should climb steadily from week to week, because the section is cumulative and responds directly to daily contact with a source. If that line is flat over a month, the problem is diagnosable and specific: either your source is not being read consistently, or you are reading without revising, and the fix differs in each case.',
+          },
+          {
+            type: 'note',
+            title: 'Two clerical exams, one mock schedule',
+            text: 'If you are sitting both SBI Clerk and IBPS Clerk, alternate the mock formats within a single schedule rather than running two. The underlying skills are the same and the section timings differ only slightly; what alternating adds is exposure to two framings, which is useful for the SBI paper specifically.',
           },
         ],
       },
@@ -1254,6 +1734,32 @@ const banking = [
               { text: 'Overlooking the language requirement', note: 'a qualifying condition that has ended otherwise successful candidacies.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'What the combined plan actually shares',
+                'Arithmetic and calculation speed, data interpretation at clerical level, the puzzle families, English grammar and reading, financial awareness, and computer aptitude. That is essentially the whole syllabus of both examinations, which is why a second parallel plan adds effort without adding coverage.',
+              ],
+              [
+                'What it does not share',
+                'The language requirement and its form of proof, the state or circle you applied to, and the slightly different framing SBI favours. These are administrative and stylistic differences to keep in view rather than separate bodies of study.',
+              ],
+              [
+                'How to sequence the shared work',
+                'Calculation and awareness as permanent daily habits from week one; arithmetic then data interpretation across the first three months; puzzles daily throughout; English as grammar plus reading; computer aptitude as a short project in month three; mocks from month four.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'For candidates without a commerce background, financial awareness can feel like an unfamiliar subject rather than a section to revise, and the temptation is to defer it until the aptitude work feels solid. That order is the wrong way round. Aptitude responds to intensity and can be improved sharply in a focused block; awareness only accumulates, and the months you spend deferring it are months that cannot be recovered later at any intensity.',
+          },
+          {
+            type: 'note',
+            title: 'Address the language condition in the first month',
+            text: 'Find out which form of proof applies in your circle and whether you already hold it. If a test is required, or if the documentary evidence has to be obtained, that is a task with an administrative timeline of its own and no relationship to how well your preparation is going. It is the kind of thing that is trivial in month one and impossible in the final week.',
+          },
         ],
       },
       'study-material': {
@@ -1287,6 +1793,40 @@ const banking = [
               'Twenty minutes of financial awareness from one running source.',
               'Ten new vocabulary items, revisited after three days and again after two weeks.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Calculation drill material',
+                'Pages of simplification, approximation and series to work against a stopwatch. Not a subject to be understood but a skill to be automated, and the single component most directly tied to a clerical score.',
+              ],
+              [
+                'The puzzle families',
+                'Linear and circular arrangements, floor and box puzzles, scheduling, syllogism and inequality. Clerical versions use fewer variables than officer versions, which makes them faster to pattern and worth practising to genuine fluency.',
+              ],
+              [
+                'Financial awareness, kept as lists',
+                'Banking terminology, regulatory structure, Reserve Bank functions, account and instrument types, government schemes, and the recurring abbreviations. Lists are revisable in minutes; chapters are not, and this section is revised many times.',
+              ],
+              [
+                'English — a short rule set and a long reading habit',
+                'The grammar that error-spotting and sentence-improvement questions test is finite and quickly learned. Comprehension and vocabulary are not, and they improve only with regular exposure.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Because the material overlaps so completely with IBPS Clerk, the practical advice is to own one set of notes and resist duplicating them. Candidates preparing for both examinations often end up with parallel folders that diverge slightly, which doubles the revision burden for no gain in coverage. One arithmetic source worked twice, one awareness list maintained continuously, one grammar sheet — used for whichever paper comes first and then for the next.',
+          },
+          {
+            type: 'note',
+            title: 'The abbreviations sheet earns its keep',
+            text: 'Banking awareness is unusually dense in acronyms, they recur across every banking examination, and a sheet you have written yourself converts commutes and queues into revision. It is a small artefact that produces a disproportionate share of an awareness score, and almost nobody builds one until late.',
+          },
+          {
+            type: 'p',
+            text: 'A last word on sequencing the material. Work the calculation drills and the awareness list from the first week and keep them running to the end, because both decay if left alone and neither can be rebuilt quickly. Treat the puzzle families, the grammar set and computer aptitude as finite projects with a beginning and an end — study them properly once, then maintain them with weekly practice. That division between habits and projects is the most useful way to organise a clerical preparation, and it is what keeps the final month free for mocks rather than for material you should have finished in month two.',
           },
         ],
       },
@@ -1428,6 +1968,25 @@ const banking = [
             type: 'p',
             text: 'The absence of English from the preliminary stage has a strategic consequence worth naming. Candidates whose English is weak but whose quantitative and reasoning ability is strong are far better placed in IBPS RRB than in IBPS PO or Clerk, because the qualifying stage tests only their strengths. It is a genuinely different competitive landscape.',
           },
+          {
+            type: 'list',
+            title: 'Reading the syllabus for the format it belongs to',
+            items: [
+              { text: 'Prelims is two subjects and nothing else', note: 'reasoning and numerical ability, forty questions each, forty-five minutes. There is no third section in which a weak area can be offset, which makes balance between the two a structural requirement rather than a preference.' },
+              { text: 'The mains general awareness is not standard banking awareness', note: 'priority sector lending, agricultural credit, cooperative and regional rural banking structures, financial inclusion schemes and rural development programmes carry real weight here and are thinly covered in mainstream material.' },
+              { text: 'Computer knowledge is forty questions for twenty marks', note: 'the lowest value per question in the paper and among the quickest to answer, which makes it a section to clear briskly rather than to invest in.' },
+              { text: 'The language paper is a genuine choice', note: 'English or Hindi, and it should be decided on reading speed rather than on which you feel you ought to choose.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The rural and agricultural emphasis is the part of this syllabus most worth taking seriously, precisely because it is the part most candidates prepare from the wrong material. Regional Rural Banks exist to serve a rural and semi-urban mandate, and the paper reflects that: questions about crop loans, cooperative structures, priority sector norms and rural credit schemes appear with a consistency that a general banking compilation will not prepare you for.',
+          },
+          {
+            type: 'note',
+            title: 'The higher officer scales are a different examination',
+            text: 'Officer Scale II and III are recruited through a single examination rather than a preliminary and main sequence, and Scale II includes specialist streams with their own professional knowledge papers. If you are applying for those, read the notification’s structure section specifically — almost everything written about IBPS RRB describes the Office Assistant and Scale I process.',
+          },
         ],
       },
       'exam-pattern': {
@@ -1481,6 +2040,32 @@ const banking = [
             title: 'Officer Scale II and III are structured differently',
             text: 'The higher officer scales use a single examination rather than a preliminary and main sequence, and carry experience and specialisation requirements at the application stage. The notification sets out a separate pattern for each — read the section that applies to the post you are actually applying for.',
           },
+          {
+            type: 'p',
+            text: 'Compare the rates and the RRB prelims stops looking like a gentler paper. Eighty questions in forty-five minutes is under thirty-four seconds each; IBPS PO prelims allows a hundred questions in sixty minutes, which is thirty-six. The RRB paper is faster, and it removes the English section that in other banking papers lets a candidate bank quick marks and settle. What remains is two sections that both require working, at a tempo that leaves no room to think about whether to attempt something.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Why balance matters more here',
+                'In a three-section prelims, a candidate weak in reasoning can clear on English and numerical ability. In a two-section prelims, half the paper is reasoning and there is nowhere for the weakness to hide. A twenty-mark gap between your two sections is a structural problem in this format even if your total looks adequate.',
+              ],
+              [
+                'Why computer knowledge should be taken first in mains',
+                'Forty questions for twenty marks is poor value per question and excellent value per minute, because the questions are recall and answerable in seconds. Clearing it quickly funds the reasoning and quantitative sections, which carry fifty marks each from the same forty questions.',
+              ],
+              [
+                'What the interview changes',
+                'Office Assistant selection ends at the main examination; Officer Scale I and above proceed to an interview weighted against the mains score. Candidates applying for both should be aware that they are effectively preparing for two selections with a common written stage.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'The local language condition is real',
+            text: 'Regional Rural Banks serve customers who transact in the regional language, and proficiency in the language of the state you applied to is a genuine requirement rather than a formality. Confirm what form the verification takes in the current cycle, and confirm it early — it is not something that can be arranged after a result.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -1513,6 +2098,29 @@ const banking = [
               { label: 'Economy and banking notes', to: '/study-material/economy/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'The rural banking themes to extract',
+            items: [
+              { text: 'Priority sector lending', note: 'the categories, the broad targets, and why the framework exists. It recurs across cycles and is poorly covered by general banking material.' },
+              { text: 'Agricultural credit instruments', note: 'crop loans, the Kisan Credit Card, interest subvention arrangements, and the institutions that deliver them.' },
+              { text: 'The rural institutional structure', note: 'Regional Rural Banks and their sponsorship, cooperative banks at their several tiers, NABARD’s role, and how these fit together.' },
+              { text: 'Financial inclusion and rural development schemes', note: 'the major government programmes, their targets and their delivery mechanisms — an area that changes and therefore needs a current source as well as a past-paper list.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'For the preliminary stage, the point of past papers is tempo rather than content. Solve them at the real rate — eighty questions, forty-five minutes, no pauses — and record how far you got rather than only what you scored. A candidate who answers sixty questions accurately and never reaches the last twenty has a pacing problem that a percentage score will conceal, and it is the most common finding in RRB prelims practice.',
+          },
+          {
+            type: 'p',
+            text: 'Work the computer knowledge sections of past mains papers against a clock as well, which sounds excessive for a twenty-mark section and is not. The whole value of that section is the minutes it frees for the two fifty-mark sections, and it only frees them if you can move through it quickly. A candidate taking fifteen minutes over computer knowledge has converted the paper’s easiest section into its most expensive one.',
+          },
+          {
+            type: 'note',
+            title: 'Practise in the language you will sit in',
+            text: 'The mains language paper is a choice between English and Hindi, and the rest of the paper is available in more than one language too. Whichever you choose, make every past paper and every mock use it. Reading speed under time pressure is not transferable between languages, and banking terminology in translation is not always what you would predict.',
+          },
         ],
       },
       'mock-tests': {
@@ -1543,6 +2151,26 @@ const banking = [
               { label: 'All free mock tests', to: '/mock-tests/free/' },
               { label: 'Sectional and topic practice', to: '/practice/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'A mock routine built for the RRB format',
+            items: [
+              { title: 'Take prelims mocks in the RRB format only', text: 'Eighty questions, forty-five minutes, two sections. A PO-format mock trains a different rhythm and gives you a score that does not transfer.' },
+              { title: 'Record each section separately, every time', text: 'The gap between your reasoning and numerical scores is the number that predicts failure in this format, and a combined total hides it completely.' },
+              { title: 'Count questions reached, not just questions right', text: 'A large tail of unreached questions is a pacing finding. It calls for drilling speed rather than for studying more topics.' },
+              { title: 'Time the mains computer section', text: 'It should take a few minutes. Anything longer is over-thinking a recall section at the expense of the sections that carry the marks.' },
+              { title: 'Track rural awareness separately', text: 'Distinct from mainstream banking awareness, and usually the weaker of the two. Folding them into one score hides exactly the gap that this paper exposes.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'A useful diagnostic for the two-section prelims: take a mock and calculate what your score would have been if your weaker section had matched your stronger one. In a three-section paper that gap is often absorbed; here it is usually the entire distance to the cutoff. Candidates who run that calculation once generally stop treating their weak section as something to work on eventually.',
+          },
+          {
+            type: 'note',
+            title: 'Officer Scale I candidates — the interview is downstream',
+            text: 'If you are applying for Scale I rather than Office Assistant, an interview follows the mains and is weighted into the final merit. Preparation for it — an understanding of rural banking, of what a Regional Rural Bank is for, and of why you want to work in one — draws on the same reading the general awareness section requires, so it costs little to begin early.',
           },
         ],
       },
@@ -1580,6 +2208,36 @@ const banking = [
               { text: 'Neglecting the local language requirement', note: 'a genuine condition in banks whose customers transact in the regional language.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Balance before improvement',
+                'In a two-section prelims, raising your weaker section by ten marks is worth more than raising your stronger one by ten, because the weaker section is where the paper runs out of time first. Diagnose the gap in week one and give the weaker subject the larger share of your daily practice until it closes.',
+              ],
+              [
+                'Puzzles as a daily non-negotiable',
+                'Reasoning is half the preliminary paper and the highest-weighted mains section. Three timed puzzles a day, every day, is the single habit that most reliably moves an RRB score.',
+              ],
+              [
+                'Rural awareness as a separate track',
+                'Kept distinct from general banking awareness in your notes, because it is distinct in the paper. Priority sector, agricultural credit, cooperative structures, NABARD, financial inclusion — a list you build and maintain yourself.',
+              ],
+              [
+                'Computer knowledge as a two-week project',
+                'Finite, mechanical, and worth clearing early so that it needs only maintenance later. Twenty marks that cost very little to secure.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Candidates arriving from IBPS PO preparation should be careful about one assumption in particular: that RRB is the same examination at a lower difficulty. The content is indeed gentler, but the preliminary format is faster and less forgiving, and the mains awareness section asks about a body of material PO preparation does not cover. A PO-prepared candidate who sits RRB without adjusting for either of those differences typically finds prelims tighter than expected and mains awareness harder.',
+          },
+          {
+            type: 'note',
+            title: 'Decide the language early and stop revisiting it',
+            text: 'The mains offers English or Hindi, and the choice should be made on which you read faster under pressure, not on which seems more appropriate. Having decided, practise exclusively in it. Candidates who keep the option open and practise in both arrive with divided fluency and no advantage in either.',
+          },
         ],
       },
       'study-material': {
@@ -1613,6 +2271,36 @@ const banking = [
               'Twenty minutes of banking awareness, with rural and agricultural banking given deliberate weight.',
               'One data interpretation set, timed, in the format the RRB mains uses.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Reasoning — half the prelims, the heaviest mains section',
+                'The puzzle families, syllogism, inequality, blood relations, direction sense, order and ranking, and the input-output type. Practised to fluency rather than to familiarity, because the prelims tempo does not allow for working things out slowly.',
+              ],
+              [
+                'Numerical ability — speed above technique',
+                'Simplification, approximation, series, quadratic comparison and straightforward data interpretation. The RRB paper rewards mechanical throughput more than the officer papers do, which makes calculation drilling the priority.',
+              ],
+              [
+                'Rural and agricultural banking awareness',
+                'The material mainstream banking notes omit. Build it as your own list from past papers and a current source, organised by theme so that it can be revised quickly and often.',
+              ],
+              [
+                'Computer knowledge — a short finite block',
+                'Fundamentals, hardware and software, operating systems, office applications, internet and networking, and basic security. Twenty marks that are fully learnable in a fortnight.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'For the rural awareness track specifically, one good current source followed regularly matters more than the volume of material you accumulate. Schemes change, targets are revised and new programmes are announced, so a list built entirely from past papers will be accurate about the structure and dated about the specifics. Pair the structural list with a habit of noting rural credit and financial inclusion developments as they appear.',
+          },
+          {
+            type: 'note',
+            title: 'Practise data interpretation in the RRB shape',
+            text: 'The mains data interpretation sets are closer to the clerical style than to the officer style — tables and bar charts with direct questions rather than layered caselets. Practising on officer-level sets builds capability you will not need while leaving you under-drilled on the speed the actual sets reward.',
           },
         ],
       },
@@ -1760,6 +2448,15 @@ const banking = [
             type: 'p',
             text: 'The distinguishing feature of this syllabus is that it expects opinions to be supported. A descriptive answer on inflation targeting or on financial inclusion is assessed on whether you understand the mechanism and can argue about it, not on whether you can recall a definition. That is a reading and thinking task carried out over months, and it does not compress.',
           },
+          {
+            type: 'p',
+            text: 'The clearest way to read this syllabus is to notice what it does not say. It does not list facts to be recalled; it lists areas to have a view about. Growth and development, poverty alleviation, social justice, the financial system, corporate governance, ethics in organisations — these are framed as fields of debate rather than bodies of information, and the descriptive components ask you to take a position within them and support it. That is a different activity from revision, and it needs a different kind of preparation.',
+          },
+          {
+            type: 'note',
+            title: 'The specialist streams have their own papers',
+            text: 'Recruitment to the Department of Economic and Policy Research and the Department of Statistics and Information Management uses different subject papers, pitched at postgraduate level in economics and statistics respectively. Candidates applying to those streams should read the relevant syllabus in the notification rather than the general one, because almost everything written about RBI Grade B describes the general stream.',
+          },
         ],
       },
       'exam-pattern': {
@@ -1812,6 +2509,32 @@ const banking = [
             title: 'The pattern has been revised',
             text: 'The Reserve Bank has changed the balance between objective and descriptive components, the composition of Phase 2, and the mode of answering between cycles. The current advertisement is the only reliable source, and this is one exam where preparing to an outdated structure has real consequences.',
           },
+          {
+            type: 'p',
+            text: 'The consequence of Phase 1 marks being discarded is sharper here than in the other banking examinations, because Phase 2 is so much more demanding. Every hour spent pushing a comfortable Phase 1 score higher is an hour not spent on the papers that constitute the entire merit list — and unlike aptitude practice, the Phase 2 subjects cannot be improved quickly at the end. Clear the screen with a sensible margin and move on.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'What a mixed objective and descriptive paper demands',
+                'Two different modes within ninety minutes, with the objective component rewarding recognition speed and the descriptive component rewarding structured argument. Candidates who have practised only one of the two find the transition costly, and the paper does not allow much time to settle into it.',
+              ],
+              [
+                'Why the writing medium matters',
+                'Descriptive components may be typed or handwritten depending on the cycle, and the two produce very different speeds. Practise in whichever mode the current notification specifies — a candidate who has drafted everything by hand and then types the paper, or the reverse, loses time to the medium rather than to the content.',
+              ],
+              [
+                'Where the interview sits',
+                'Combined with Phase 2 in the final merit and carrying enough weight to move outcomes. It draws on the same reading and the same formed views the descriptive papers reward, which means preparation for it is largely a by-product of preparing properly for them.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Phase 1 section weighting is unusual — practise it',
+            text: 'General awareness and reasoning together carry a hundred and forty of two hundred marks, with quantitative aptitude a minor section at thirty. A generic banking mock, weighted the way IBPS weights its sections, misrepresents this paper substantially. Practise at the RBI weighting or you will optimise the wrong sections.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -1847,6 +2570,29 @@ const banking = [
               { label: 'Current affairs', to: '/current-affairs/' },
               { label: 'All previous year papers', to: '/previous-year-papers/' },
             ],
+          },
+          {
+            type: 'list',
+            title: 'What the register of past questions tells you',
+            items: [
+              { text: 'Questions ask you to evaluate, not to define', note: 'the difference between explaining what an instrument is and assessing whether it worked is the whole difference between a passing answer and a good one.' },
+              { text: 'Answers are expected to be structured', note: 'a position, the reasoning behind it, the qualifications that honesty requires, and a conclusion. Under ninety minutes, having a reusable structure is worth more than having more to say.' },
+              { text: 'Evidence is expected to be specific', note: 'a named programme, a published figure, an actual policy episode. Generalities read as unsupported however sound the underlying view is.' },
+              { text: 'The two subjects meet at the edges', note: 'financial inclusion sits in both Economic and Social Issues and Finance and Management, and answers that draw on both read considerably better than answers confined to one.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The most efficient exercise with a past paper is to write the answer first and read the source afterwards, rather than the other way round. Writing first exposes what you actually have available under time pressure — which is usually much less than what you know — and reading afterwards is then targeted at the specific gaps your own answer revealed. Reading first and writing after tends to produce an answer that reproduces the source and teaches you little about your own recall.',
+          },
+          {
+            type: 'p',
+            text: 'For Phase 1, past general awareness sections are worth reading for their emphasis rather than solving for their answers. The economic and banking tilt is heavier than a general competitive paper, and specifics from an earlier cycle are dated. What transfers is the sense of which themes the Reserve Bank considers general awareness — and that sense is what tells you how to read the news for the next several months.',
+          },
+          {
+            type: 'note',
+            title: 'Precis practice, weekly and checked',
+            text: 'Faithful compression is a distinct skill from writing an argued answer, it is examined directly, and it improves measurably within a few weeks of practice. It is also the component candidates most often omit entirely, on the assumption that anyone who can write an essay can write a precis — which is not the case, since the two reward opposite instincts.',
           },
         ],
       },
@@ -1887,6 +2633,32 @@ const banking = [
               { label: 'All free mock tests', to: '/mock-tests/free/' },
               { label: 'Economy notes', to: '/study-material/economy/' },
             ],
+          },
+          {
+            type: 'p',
+            text: 'The most useful single addition to an RBI Grade B preparation is a reader — a peer, a mentor, anyone with judgement who will tell you when a paragraph does not follow. Descriptive answers have failure modes that are invisible from the inside: a claim that felt supported because you knew the evidence without writing it down, a paragraph that restates the previous one, a conclusion that summarises rather than concludes. No amount of unreviewed writing corrects those, because the writer is the one person who cannot see them.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'What to time',
+                'Everything. Ninety minutes for a mixed paper is tight, and the binding constraint is usually the descriptive component rather than the objective one. Practising answers without a clock builds a standard you cannot reproduce on the day.',
+              ],
+              [
+                'What to reuse',
+                'A structure. Most descriptive questions in these papers can be answered within a small number of shapes — assess a policy, compare two approaches, explain a mechanism and its limits. Having those shapes ready removes the most expensive part of writing under time, which is deciding how to begin.',
+              ],
+              [
+                'What not to over-practise',
+                'Phase 1 quantitative aptitude. Thirty marks in a screening stage whose marks are discarded, and no appearance thereafter. It needs to be adequate, not strong.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Rehearse the transition within a paper',
+            text: 'Paper I and Paper III mix objective and descriptive components in the same ninety minutes. Practise them together rather than separately at least some of the time — switching from rapid recognition to sustained argument is a real cost, and candidates who have only ever practised the two modes in isolation are surprised by how long the switch takes.',
           },
         ],
       },
@@ -1963,6 +2735,36 @@ const banking = [
               'One Finance and Management topic studied properly each week, with notes you make yourself.',
               'Monetary policy statements and major RBI publications read as they are released.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Primary sources — the distinguishing material',
+                'The Economic Survey, the Reserve Bank’s annual report and its monetary policy statements, and the Financial Stability Report. These are what the papers are actually written against, and reading them directly gives you the specific evidence that summaries strip out.',
+              ],
+              [
+                'A standard economics text — for the framework',
+                'Growth, development, inflation, money and banking, public finance and trade need a structural understanding that current-affairs reading cannot supply. One good textbook, worked through properly, underpins everything else.',
+              ],
+              [
+                'Finance and Management — as a taught subject',
+                'The financial system and its regulators, markets and instruments, risk, corporate governance, and the management and ethics components. It is closer to a postgraduate course module than to a competitive-exam topic list, and it should be studied that way.',
+              ],
+              [
+                'Your own written answers — the material you revise from',
+                'By the final stage, the documents worth re-reading are the answers you have written and had corrected, not the sources they came from. They are the only record of what you can actually produce under time.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'A caution about compilations. Monthly current-affairs digests are efficient for Phase 1 and actively unhelpful as the main diet for Phase 2, because they deliver conclusions without the reasoning that produced them — and the reasoning is what the descriptive papers ask you to reproduce. Use them to make sure you have not missed anything; do not use them as a substitute for reading the underlying material.',
+          },
+          {
+            type: 'note',
+            title: 'Read the monetary policy statement each time it is published',
+            text: 'It is short, it is authoritative, and it models exactly the register the papers expect: a position, the data behind it, the risks acknowledged, and a decision. Reading each one as it appears builds both the awareness the objective sections test and the argumentative style the descriptive sections reward, which is an unusually efficient use of half an hour.',
           },
         ],
       },

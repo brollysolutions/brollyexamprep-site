@@ -117,6 +117,25 @@ const railways = [
             type: 'p',
             text: 'Two features of this syllabus reward specific preparation. The general awareness list includes several railway-adjacent themes — transport systems, public sector organisations, government programmes — which appear more often than a general competitive-exam guide would suggest. And the science content sits at class 10 level across physics, chemistry and biology, which is narrow enough to cover completely rather than sample.',
           },
+          {
+            type: 'list',
+            title: 'The railway seam inside general awareness',
+            items: [
+              { text: 'The history and structure of Indian Railways', note: 'when it began, how the zones and divisions are organised, where the headquarters sit, and the major production units.' },
+              { text: 'Railway organisations and institutions', note: 'the Railway Board, research and training bodies, and the public sector undertakings attached to the network.' },
+              { text: 'Notable trains, routes and infrastructure', note: 'the longest and fastest services, major junctions, notable bridges and tunnels, and recent network projects.' },
+              { text: 'Terminology and everyday operations', note: 'gauge types, signalling basics, ticketing categories and the terms that appear in railway administration.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'That cluster is worth building as a separate one-page document, for the same reason the defence seam matters in CDS: it is examined consistently, it is finite, and almost no general competitive-exam guide covers it. A candidate who spends two evenings assembling a railway awareness sheet from past papers is competing for a predictable slice of the largest section against a field that has mostly ignored it.',
+          },
+          {
+            type: 'note',
+            title: 'CBT 2 is the same subjects, deeper',
+            text: 'It introduces no new subject, which is unusual and useful — it means preparation for CBT 1 is not thrown away, and that the transition between stages is about depth rather than about new material. Prepare to CBT 2 depth from the start and CBT 1 takes care of itself, which is the reverse of how most candidates sequence it.',
+          },
         ],
       },
       'exam-pattern': {
@@ -167,6 +186,24 @@ const railways = [
             title: 'Skill tests are qualifying but not optional',
             text: 'Typing skill tests for clerk cum typist posts and computer-based aptitude tests for Station Master and Traffic Assistant carry their own minimum standards. They add nothing to your merit score, but failing them removes you from consideration for those posts. Typing in particular improves gradually and should be practised from the beginning.',
           },
+          {
+            type: 'p',
+            text: 'The one-third deduction is worth converting into a working rule rather than treating as background information. Three wrong answers cancel one right one, which means a candidate who attempts twelve questions on a coin-flip basis has, on average, gained nothing and lost time. The defensible threshold is to answer anything you can narrow to two plausible options and to leave anything where all four remain live — and to hold that line even in the last five minutes, when the temptation to fill the paper is strongest.',
+          },
+          {
+            type: 'steps',
+            title: 'A section order for both stages',
+            items: [
+              { title: 'General awareness first', text: 'The largest section in both papers and pure recall. Answer or move on within a few seconds each; deliberating here converts time into nothing.' },
+              { title: 'Reasoning second', text: 'Mechanical once practised, and the section that compresses most reliably with preparation. Bank it while you are still fresh.' },
+              { title: 'Mathematics last', text: 'The only section where extra minutes genuinely produce extra marks, so it should receive whatever the first two have saved.' },
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Do not calculate your own result after the exam',
+            text: 'Because scores are normalised across shifts and days, the raw mark you tally from a memory-based key is not the number compared against the cutoff, and it is not comparable with a friend’s. The post-examination ritual of computing and comparing raw scores produces a great deal of avoidable anxiety about a figure that has already been adjusted for the difficulty of your particular shift.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -203,6 +240,31 @@ const railways = [
               { label: 'General knowledge notes', to: '/study-material/general-knowledge/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'The general awareness themes that repeat',
+            items: [
+              { text: 'Indian polity and the Constitution', note: 'articles, schedules, constitutional bodies and the basics of parliamentary structure. Static, finite and heavily recycled.' },
+              { text: 'The freedom movement and modern Indian history', note: 'movements, sessions, key figures and dates, asked in recognisable patterns across cycles.' },
+              { text: 'Geography of India', note: 'rivers, mountain ranges, national parks, states and their features, and physical geography basics.' },
+              { text: 'Class 10 science', note: 'physics, chemistry and life sciences at school level — a bounded body of material that reliably supplies questions.' },
+              { text: 'Static general knowledge', note: 'awards, books and authors, dances and festivals, important days, first-in-India facts, sports.' },
+              { text: 'Railway-specific awareness', note: 'the seam described on the syllabus page, and the one no general guide will prepare you for.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Build a one-page revision sheet for each of those themes rather than reading a general knowledge book from cover to cover. The distinction matters: a book is read once and then re-read slowly, whereas six one-page sheets can be revised in half an hour and therefore actually will be, several times. For a recall-based section of this size, the number of revision passes is what determines the score.',
+          },
+          {
+            type: 'p',
+            text: 'For mathematics and reasoning, past papers serve the ordinary purpose of calibrating the level and building speed. The useful discovery for most candidates is how modest the difficulty is — this is school arithmetic and standard reasoning, not a quantitative aptitude paper — and that the marks are lost to careless errors and to the deduction rather than to genuinely hard questions.',
+          },
+          {
+            type: 'note',
+            title: 'Note which facts repeat verbatim',
+            text: 'Some static items appear across cycles in almost identical form. Flagging those as you build your theme sheets gives you a short priority list within an otherwise large section — the facts that have been asked repeatedly are the ones most likely to be asked again, and they take minutes rather than hours to secure.',
+          },
         ],
       },
       'mock-tests': {
@@ -238,6 +300,25 @@ const railways = [
               { label: 'All free mock tests', to: '/mock-tests/free/' },
               { label: 'Railway exam mock tests', to: '/mock-tests/railways/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'What to record after every mock',
+            items: [
+              { title: 'Your error count, explicitly', text: 'Not just the score. At a third of a mark each, fifteen errors cost five marks on top of the fifteen not earned — a ten-mark swing that a score alone conceals.' },
+              { title: 'Errors split by cause', text: 'Did not know, versus guessed and lost. The first calls for study; the second calls for discipline, and confusing them wastes months.' },
+              { title: 'General awareness accuracy by theme', text: 'Polity, history, geography, science, static and railway. One aggregate figure across six very different areas is not actionable.' },
+              { title: 'Time left at the end', text: 'Ninety minutes for a hundred questions is not tight. Finishing early with avoidable errors means you rushed a paper that did not require it.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The guessed-and-lost figure is the one candidates most often refuse to look at, and it is usually the largest single correctable leak in an NTPC paper. It costs nothing to fix — no additional study, no new material — and it typically returns more marks than a month of revision would. Recording it honestly for three mocks is generally enough to change the behaviour.',
+          },
+          {
+            type: 'note',
+            title: 'Build skill-test practice into the same routine',
+            text: 'If your target post carries a typing skill test or a computer-based aptitude test, ten minutes on the days you take a mock is enough to keep it from becoming a separate project later. Both are qualifying: they add nothing to your merit position and can end an otherwise successful attempt, which is exactly the asymmetry that justifies small regular practice.',
           },
         ],
       },
@@ -276,6 +357,32 @@ const railways = [
               { text: 'Ignoring the medical classification', note: 'safety posts carry stricter vision standards, and the medical comes last.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Why the weighting is unusual, and what follows',
+                'In most competitive examinations general awareness is a supporting section. Here it is the largest section in both stages, which means the subject that most candidates treat as revision is the one that most determines the outcome. Forty minutes a day from week one, as a subject rather than as a top-up.',
+              ],
+              [
+                'Why the long process is itself a risk',
+                'The gap between CBT 1 and CBT 2, and between CBT 2 and the later stages, can run to months. Candidates who stop preparing during those gaps arrive at the next stage having lost ground — particularly in general awareness, where current affairs continue to accumulate whether or not you are reading them.',
+              ],
+              [
+                'Why the medical classification matters early',
+                'Safety-related posts carry stricter vision standards, and the medical examination comes at the end of a process that may have taken a year. Reading the classification for the posts you are applying to in week one is a cheap check against a very expensive discovery.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Class 10 science deserves a specific slot in the plan because it sits inside general awareness and is finite. Unlike current affairs, which never ends, school physics, chemistry and life sciences can genuinely be covered completely in a couple of months — and once covered, it supplies questions in every cycle without further accumulation. It is the most closeable gap in the largest section.',
+          },
+          {
+            type: 'note',
+            title: 'Preference order deserves an evening of thought',
+            text: 'NTPC covers a wide range of posts with different work, different skill-test requirements and different medical classifications. Candidates routinely submit a preference order without reading what each post actually involves, and the order is difficult to revisit later. An evening spent on it before the application closes is time well spent.',
+          },
         ],
       },
       'study-material': {
@@ -311,6 +418,36 @@ const railways = [
               'Cover class-10 science completely; it is finite and reliably examined.',
               'Keep current affairs to one source, revisited, rather than several skimmed.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'General awareness — the priority, kept as sheets',
+                'Polity, modern history, geography, class 10 science, static general knowledge and the railway seam. One page per theme, revised weekly. Sheets get revised; chapters get intended.',
+              ],
+              [
+                'Mathematics — a fluency project',
+                'Arithmetic, with school-level algebra, geometry and mensuration behind it. The aim is not to learn methods you have not seen but to make familiar ones automatic and error-free.',
+              ],
+              [
+                'Reasoning — a volume project',
+                'Series, analogies, coding and decoding, syllogism, Venn diagrams, puzzles and the non-verbal set. Almost all of it improves through repetition rather than through theory.',
+              ],
+              [
+                'Current affairs — one running source',
+                'Twenty minutes daily from a single source, maintained across the whole process including the gaps between stages. Switching sources resets your exposure without adding coverage.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The unusual instruction for this examination is to spend more of your reading time on general knowledge and science than on mathematics, which runs against the instinct of anyone who has prepared for banking or SSC papers. It follows directly from the mark distribution: general awareness is forty of a hundred in CBT 1 and fifty of a hundred and twenty in CBT 2, while mathematics is thirty and thirty-five.',
+          },
+          {
+            type: 'note',
+            title: 'Cover class 10 science completely',
+            text: 'It is one of the few genuinely finishable components in this preparation, it is reliably examined, and it sits inside the largest section. Working through school physics, chemistry and biology chapter by chapter — with a checklist marking what is finished rather than what is started — is a more productive use of two months than any amount of additional current affairs reading.',
           },
         ],
       },
@@ -447,6 +584,25 @@ const railways = [
             type: 'p',
             text: 'The general science section deserves particular attention because it is finite. Class 10 physics, chemistry and biology is a bounded body of content — a few textbooks’ worth — which can be covered completely rather than sampled. That makes it the most predictable quarter of the paper, and the place where systematic preparation converts most reliably into marks.',
           },
+          {
+            type: 'list',
+            title: 'Why a finite syllabus changes the strategy',
+            items: [
+              { text: 'General science can be finished', note: 'class 10 physics, chemistry and life sciences is a bounded body of material. Unlike current affairs, it has an end, and reaching that end is a realistic target rather than an aspiration.' },
+              { text: 'Mathematics can be finished', note: 'school arithmetic with basic algebra, geometry and mensuration. Nothing here requires learning a new technique — only making familiar ones automatic.' },
+              { text: 'Reasoning can be finished', note: 'a standard set of question families, each with a method. The volume of practice matters, but the list of things to know does not grow.' },
+              { text: 'Only current affairs is open-ended', note: 'and it is the smallest section. That is an unusually favourable distribution for a candidate willing to be systematic.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The strategic consequence is worth stating plainly, because it differs from almost every other examination on this site: the right question here is not what to leave out but how completely you can cover a small syllabus. A candidate on their second full pass through class 10 science, with a chapter checklist marked off, is in a materially stronger position than one who has sampled the same material more broadly.',
+          },
+          {
+            type: 'note',
+            title: 'General science is a quarter of the paper',
+            text: 'Candidates coming from other recruitment examinations consistently under-weight it, because in most papers science is a few questions inside general awareness rather than a section of its own. Here it stands alone at twenty-five marks, drawn from a syllabus you can genuinely complete — which makes it the single best return in the preparation.',
+          },
         ],
       },
       'exam-pattern': {
@@ -488,6 +644,32 @@ const railways = [
             title: 'Confirm the standards and the medical classification',
             text: 'The exact weights, distances and timings for the physical test, and the medical classification prescribed for each post, are set out in the notification and have been revised between cycles. Both are worth reading before you begin training, so that you train to the right numbers.',
           },
+          {
+            type: 'p',
+            text: 'Ninety minutes for a hundred questions is nearly a minute each, which by the standards of this kind of recruitment is generous. That changes the failure mode: candidates rarely run out of time in Group D, and they routinely lose marks to haste they had no reason to be in. The productive habit is to use the available time to verify — re-read what was asked, check the arithmetic — rather than to finish early and hand back minutes you were given.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'What the one-third deduction is worth in practice',
+                'Three errors cancel a correct answer. In a paper where you have time to think, that arithmetic argues strongly for care rather than coverage — a candidate answering eighty-five questions accurately will usually finish ahead of one answering all hundred with a scatter of guesses.',
+              ],
+              [
+                'Why reasoning is the largest section',
+                'At thirty questions it carries more than any other, and it is the one that responds most directly to practice volume. For a candidate deciding where an extra hour a week should go, that combination makes it the obvious answer.',
+              ],
+              [
+                'What the physical test actually asks',
+                'A carrying task with a prescribed weight over a prescribed distance within a time limit and without setting the weight down, and a timed run. Both are specific, both are published, and neither can be improvised on the day.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'The carrying task needs its own practice',
+            text: 'General fitness does not prepare you for lifting and carrying a specific weight over a specific distance without putting it down. It is a technique and a grip-strength task as much as a strength task, and candidates who have trained only by running are frequently surprised by it. Practise the actual event, against the actual standard for your gender.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -519,6 +701,29 @@ const railways = [
               { label: 'All previous year papers', to: '/previous-year-papers/' },
               { label: 'Science study material', to: '/study-material/science/' },
             ],
+          },
+          {
+            type: 'list',
+            title: 'What the science tagging exercise reveals',
+            items: [
+              { text: 'A short list of chapters carries most of the section', note: 'motion and force, work and energy, light, electricity and magnetism in physics; acids bases and salts, metals and non-metals, and carbon compounds in chemistry; life processes and control in biology.' },
+              { text: 'Questions are direct rather than applied', note: 'definitions, standard relationships, units and simple recall dominate. Multi-step numerical reasoning is rare, which suits a candidate revising from school notes.' },
+              { text: 'The same facts recur across cycles', note: 'not identical questions, but the same units, the same standard values and the same relationships, asked in slightly different words.' },
+              { text: 'Life sciences are asked more than candidates expect', note: 'and are often the weakest area for candidates who studied science streams weighted towards physics and chemistry.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Sorting past science questions by chapter takes an afternoon and converts a school syllabus into a prioritised revision order. Because the section is finite, the goal is complete coverage — but complete coverage in the right order means that if you run short of time, what remains uncovered is the material least likely to be asked rather than whatever happened to come last in the textbook.',
+          },
+          {
+            type: 'p',
+            text: 'Solve the mathematics sections untimed at first, on paper and without a calculator. The level is not the constraint here; accuracy is. Working untimed initially lets you see whether your errors come from method or from carelessness, and that distinction is much harder to read once you have added time pressure to a paper that does not, in fact, apply much of it.',
+          },
+          {
+            type: 'note',
+            title: 'Annotate reasoning figures rather than solving them mentally',
+            text: 'Much of the reasoning section is visual — mirror and water images, embedded figures, paper folding, completion of figures — and these are substantially easier when you can draw a fold line or mark a corner. Build the habit on paper first, then move to screen practice so the interface is familiar without losing the annotation instinct.',
           },
         ],
       },
@@ -554,6 +759,26 @@ const railways = [
               { label: 'Railway mock tests', to: '/mock-tests/railways/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'A mock routine for a forgiving clock and a harsh deduction',
+            items: [
+              { title: 'Sit the full ninety minutes', text: 'Do not finish early to prove you can. The time is there to be used, and using it for verification is the whole technique for this paper.' },
+              { title: 'Count errors before reading the score', text: 'At a third of a mark each they are the expensive item, and the score presents them combined with everything else.' },
+              { title: 'Split errors into knowledge and haste', text: 'A question you did not know is a study finding. A question you knew and misread is a behaviour finding, and it is the cheaper one to fix.' },
+              { title: 'Track science accuracy by chapter', text: 'A finite syllabus means every recurring weakness is closeable, and chapter-level tracking is what makes them visible.' },
+              { title: 'Note reasoning speed separately', text: 'The largest section, and the one where practice volume converts most directly into marks.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The characteristic Group D leak is answering questions you were not sure about, in a paper that gave you enough time to work out that you were not sure. It is a habit imported from tighter examinations, where filling the paper is often correct. Here, with nearly a minute a question and three errors cancelling a right answer, the same instinct quietly removes marks a more patient candidate keeps.',
+          },
+          {
+            type: 'note',
+            title: 'Keep the physical training on the same calendar',
+            text: 'The physical efficiency test follows the written result, and the interval is not long enough to build fitness or grip strength from a standing start. Three sessions a week — running plus the carrying task — alongside mock practice costs little study time and protects the stage where written preparation counts for nothing.',
           },
         ],
       },
@@ -591,6 +816,32 @@ const railways = [
               { text: 'Rushing a paper that does not require rushing', note: 'ninety minutes for a hundred questions allows verification; use it.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'The completion mindset',
+                'Rare in competitive preparation and appropriate here. Keep a chapter checklist for science and mathematics, mark off only what is genuinely finished, and aim for a second full pass rather than for broader sampling. A small syllabus rewards depth of coverage in a way a large one cannot.',
+              ],
+              [
+                'The parallel physical track',
+                'Started in week one, maintained without interruption. Running builds over months; grip strength and carrying technique build with specific practice. Neither responds to a compressed effort after the written result.',
+              ],
+              [
+                'The patience discipline',
+                'Ninety minutes for a hundred questions, with a third of a mark deducted per error. The correct behaviour is slower and more careful than most candidates’ instincts, and it has to be rehearsed in practice to survive the examination.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'A realistic timeline is three to four months for the written paper if your school arithmetic and science are intact, and longer if the physical side has to be built from nothing. The physical track, not the academic one, usually sets the true schedule — which is a useful thing to know at the start, because it is the component candidates plan around last and the one that eliminates them most often.',
+          },
+          {
+            type: 'note',
+            title: 'Check the medical classification for your posts',
+            text: 'Level 1 posts span a range of medical classifications, and some carry stricter vision and fitness requirements than others. Reading the classification in the notification during your first week costs an hour and prevents the discovery, at the end of a long process, that a post you ranked highly was never available to you.',
+          },
         ],
       },
       'study-material': {
@@ -624,6 +875,36 @@ const railways = [
               'Return to each science chapter twice more before the exam — recall decays faster than understanding.',
               'Practise mathematics on paper without a calculator, but without rushing.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Science — worked as a course, not revised as a topic',
+                'Class 10 physics, chemistry and life sciences, chapter by chapter, with questions solved immediately after each chapter rather than saved for the end. A quarter of the paper from a syllabus you can complete.',
+              ],
+              [
+                'Reasoning — the largest section, built by volume',
+                'Series, analogies, coding and decoding, mathematical operations, and the visual families. Practise on paper while learning the methods, then on screen for the interface.',
+              ],
+              [
+                'Mathematics — accuracy before speed',
+                'Arithmetic with school algebra, geometry and mensuration. Without a calculator, on paper, and deliberately unhurried given the time the paper allows.',
+              ],
+              [
+                'General awareness — the smallest section',
+                'Current affairs in science and technology, sports, culture, economics and politics, kept to one running source and twenty minutes a day. Proportionate to its twenty marks.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Keep a chapter checklist for science and mark off only what is genuinely finished — read, understood, and tested with questions. The distinction between started and finished is where most self-assessment goes wrong in a subject that feels familiar, and in a section drawn from a syllabus this small, the difference between eighty per cent covered and fully covered is several marks.',
+          },
+          {
+            type: 'note',
+            title: 'Return to each science chapter twice more',
+            text: 'Technical and factual recall decays considerably faster than reasoning skill. A chapter finished in month one and never revisited is largely gone by the examination, whereas two short revisits — one at three days, one at three weeks — hold it at very little cost. Build the revisits into the plan rather than relying on a final revision that will not have room for everything.',
           },
         ],
       },
@@ -775,6 +1056,15 @@ const railways = [
             type: 'p',
             text: 'The section most candidates handle badly is Basic Science and Engineering in CBT 2 Part A. It is not the same as the general science of CBT 1 — it is applied and includes engineering drawing, units and measurement, and simple machines. Candidates who prepare it as "more class 10 science" find it does not match, and it carries merit-counting marks.',
           },
+          {
+            type: 'p',
+            text: 'Basic Science and Engineering is the section of this syllabus most often misread, and the misreading is specific: candidates see the word science and prepare class 10 physics. It is an applied subject in its own right — engineering drawing and projections, units and measurements, mass weight and density, work power and energy, speed and velocity, heat and temperature, basic electricity, levers and simple machines, environment and occupational safety. Several of those are closer to an ITI first-year syllabus than to school science, and none of them is covered by a general science guide.',
+          },
+          {
+            type: 'note',
+            title: 'Read the Part B syllabus for your own trade only',
+            text: 'The trade paper is drawn from the syllabus prescribed for the trade in which you hold your ITI certificate or the discipline of your diploma. There is no general version of it and no shortcut around it — which is precisely why past trade papers and your own course material are the right sources rather than any competitive-exam compilation.',
+          },
         ],
       },
       'exam-pattern': {
@@ -825,6 +1115,32 @@ const railways = [
             title: 'Verify the medical standard before you invest months',
             text: 'Assistant Loco Pilot carries the strictest railway medical classification, with demanding distant and near vision, colour perception and binocular vision requirements, and spectacles are not permitted under it. Since the medical comes last, a candidate can clear every stage and be found ineligible at the end. Check the standard at the beginning.',
           },
+          {
+            type: 'p',
+            text: 'The structure of this examination punishes a very natural instinct. Two of the four stages are qualifying, which invites candidates to concentrate on the merit paper — and yet the qualifying stages are where most eliminations actually happen. A candidate can score well in CBT 2 Part A, fail Part B or the aptitude test, and be out of the process with nothing to show for the merit performance. Qualifying does not mean easy; it means there is no partial credit.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Why the aptitude test is the sharpest filter',
+                'A minimum must be reached in every individual battery rather than on aggregate, and no relaxation is available to any category. That combination means a candidate can perform well overall and still fail on one battery — and it is the only stage in the process where being strong elsewhere offers no protection at all.',
+              ],
+              [
+                'Why Part B catches prepared candidates',
+                'It is qualifying, it is trade-specific, and it is covered by no general railway examination material. Candidates who have prepared thoroughly for the general papers frequently arrive at it having done nothing, on the reasoning that a qualifying paper cannot be the difficult one.',
+              ],
+              [
+                'Why the medical standard belongs in week one',
+                'Assistant Loco Pilot carries the strictest medical classification in railway recruitment, with demanding vision requirements including colour perception. It is applied at the end of a process that may take a year, and it is the one requirement that no amount of preparation can influence.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'CBT 1 marks do not build your rank',
+            text: 'It is a screening stage: clear it with a comfortable margin and stop optimising it. The merit comes from CBT 2 Part A, which means that once CBT 1 is safely within reach, further effort there is better spent on the trade paper and on Basic Science and Engineering.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -857,6 +1173,29 @@ const railways = [
               { label: 'Science study material', to: '/study-material/science/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'Why past Part B papers are the most valuable and least used',
+            items: [
+              { text: 'They define what a qualifying paper actually asks', note: 'the trade syllabus is broad; the papers show which parts of it recur. Without them, preparation for Part B is guesswork over a large body of material.' },
+              { text: 'They are trade-specific and therefore uncrowded', note: 'general railway examination material does not cover them, so the candidates who work them are competing against a field that largely has not.' },
+              { text: 'They connect directly to material you already own', note: 'your ITI or diploma notes were written for the same syllabus, at the same level, in the same framing.' },
+              { text: 'They reveal the practical bias', note: 'trade papers tend to ask about tools, procedures, standards and safety as much as theory, which is a different emphasis from an academic examination on the same subject.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'For Basic Science and Engineering, tag past Part A questions by topic in the same way. The section is small enough that a weighting table takes an evening to build and specific enough that the table genuinely directs your study — engineering drawing and units and measurement, in particular, tend to be represented more heavily than candidates expect from reading the syllabus list.',
+          },
+          {
+            type: 'p',
+            text: 'Keep your ITI or diploma notes rather than replacing them with a competitive-exam digest. They are matched to the trade syllabus in level and vocabulary, they contain the diagrams and procedures the papers ask about, and they were written for the same purpose the examination serves. A digest compresses exactly the practical detail that a trade paper tests.',
+          },
+          {
+            type: 'note',
+            title: 'Use CBT 1 papers for pacing, not for content',
+            text: 'Seventy-five questions in sixty minutes is a brisker rate than the other railway papers, and mental ability is the largest section. Work past CBT 1 papers to establish that rhythm, then stop — the marks do not count towards your rank, and additional effort there is effort not spent on the two qualifying stages that eliminate most candidates.',
+          },
         ],
       },
       'mock-tests': {
@@ -887,6 +1226,25 @@ const railways = [
               { label: 'Railway mock tests', to: '/mock-tests/railways/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'Practice weighted to where candidates are eliminated',
+            items: [
+              { title: 'CBT 1 — a handful of timed papers', text: 'Enough to establish pacing at seventy-five questions in sixty minutes. It screens rather than ranks, so the practice requirement is modest.' },
+              { title: 'CBT 2 Part A — the merit paper, practised properly', text: 'Full timed papers with all four components, and Basic Science and Engineering treated as its own subject rather than as general science.' },
+              { title: 'CBT 2 Part B — past trade papers, repeatedly', text: 'The most under-practised paper in this examination. Work them from your own trade and check against your course material.' },
+              { title: 'Aptitude test — familiarity rather than scores', text: 'Understand what each battery asks and how it is administered. The batteries reward calm and consistency rather than preparation, but unfamiliarity costs.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The aptitude test is worth approaching differently from everything else in this process. It measures reaction time, sustained attention, concentration and judgement under repetition — attributes that respond to rest and composure far more than to study. Knowing the format so that nothing is a surprise, sleeping properly beforehand, and approaching it steadily is close to the whole of what a candidate can usefully do.',
+          },
+          {
+            type: 'note',
+            title: 'Do not practise Part B only after clearing Part A',
+            text: 'The interval between stages is short, and the trade paper draws on material some candidates last used years earlier. Beginning trade revision only after a Part A result compresses a rebuilding job into a few weeks — and the paper is qualifying, so an incomplete job ends the attempt regardless of how well Part A went.',
           },
         ],
       },
@@ -924,6 +1282,32 @@ const railways = [
               { text: 'Basic science and engineering', note: 'prepared as class 10 science when it is an applied subject in its own right.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'The qualifying stages, prepared first',
+                'The trade paper and the aptitude test between them account for most eliminations. Preparing the merit paper thoroughly while leaving these to the gaps between stages is the standard ALP mistake, and it is made by well-prepared candidates.',
+              ],
+              [
+                'Basic Science and Engineering, as its own subject',
+                'Not class 10 science. Engineering drawing, units and measurement, mass and density, work power and energy, heat, basic electricity, levers and simple machines, and occupational safety. Give it a dedicated block rather than folding it into general science revision.',
+              ],
+              [
+                'The medical check, in week one',
+                'The strictest vision and colour perception standards in railway recruitment, applied last. A candidate who verifies eligibility at the start either proceeds with confidence or redirects a year of effort while there is still time to redirect it.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'A useful way to structure the year is to treat CBT 1 as a short project, CBT 2 Part A as the main academic work, and Part B plus the aptitude test as two separate tracks that run continuously alongside. That framing prevents the common sequence — general preparation, then panic about the trade paper, then discovery of the aptitude test — which compresses two qualifying requirements into the weeks when there is least time available.',
+          },
+          {
+            type: 'note',
+            title: 'Familiarise yourself with the aptitude batteries early',
+            text: 'They are unlike anything else in Indian recruitment, and meeting them for the first time on the day is a needless disadvantage. Understanding what each battery measures and how responses are recorded takes an evening, and it converts an unfamiliar test into a familiar one — which is most of what can be done for a test that measures aptitude rather than knowledge.',
+          },
         ],
       },
       'study-material': {
@@ -957,6 +1341,36 @@ const railways = [
               'Your own trade material, plus past trade papers, for Part B.',
               'Format familiarisation, not study material, for the aptitude test.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Your ITI or diploma material — for Part B',
+                'The correct primary source, matched in level, framing and vocabulary to the trade syllabus the paper is drawn from. Supplement it with past trade papers and nothing else.',
+              ],
+              [
+                'Physics and applied science notes — for Basic Science and Engineering',
+                'Units and measurement, work power and energy, speed and velocity, heat and temperature, basic electricity, and levers and simple machines. Engineering drawing needs separate practice, since it is a drawing skill rather than a reading one.',
+              ],
+              [
+                'General aptitude notes — for the shared sections',
+                'Mathematics, mental ability and current affairs across both CBT stages. Standard material, no ALP-specific version required.',
+              ],
+              [
+                'Format familiarisation — for the aptitude test',
+                'Not study material. An understanding of what the batteries ask, how long each takes and how answers are recorded, so that the test itself contains no surprises.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Engineering drawing deserves a specific mention because it is the component of Basic Science and Engineering that candidates most often skip. Projections, views, drawing conventions, lines and geometric figures are examined, and they are visual material that cannot be absorbed by reading about them. Half an hour with a pencil, working through standard projections, does more than an hour of reading a chapter on the subject.',
+          },
+          {
+            type: 'note',
+            title: 'Maintain a formula and procedure sheet',
+            text: 'One page for Basic Science and Engineering and one for your trade, handwritten, containing only the relationships and procedures you personally keep forgetting. Built from your own errors and revised weekly, it becomes the only document you need in the final fortnight — and it works for both a merit paper and a qualifying one.',
           },
         ],
       },
@@ -1096,6 +1510,15 @@ const railways = [
             type: 'p',
             text: 'Read only the Technical Abilities syllabus for your own discipline group. It is a substantial body of material — comparable to a diploma revision — and the hundred marks it carries in CBT 2 are more than the rest of that paper and the whole of CBT 1 combined in importance to your final position.',
           },
+          {
+            type: 'p',
+            text: 'The two syllabi in this examination are almost entirely disjoint, and reading them together is what produces confused preparation. CBT 1 is school mathematics, school science, reasoning and general awareness — material any graduate or diploma holder can revise in weeks. CBT 2 is two thirds a diploma-scale technical syllabus in your own discipline. They share a candidate and very little else, and the sensible response is to plan them as two separate projects with two separate timelines.',
+          },
+          {
+            type: 'note',
+            title: 'Read only your own discipline group',
+            text: 'The Technical Abilities syllabus is published by discipline group, and it is long. Reading beyond your own group produces nothing but discouragement — and, occasionally, a candidate who has spent weeks on material belonging to a discipline they did not apply in. Identify your group first, then read only that section.',
+          },
         ],
       },
       'exam-pattern': {
@@ -1151,6 +1574,32 @@ const railways = [
             title: 'Normalisation applies here too',
             text: 'As with all railway recruitment run across multiple shifts, scores are normalised to account for differences in shift difficulty. The raw mark you calculate afterwards is not the figure compared against the cutoff.',
           },
+          {
+            type: 'p',
+            text: 'A hundred marks of a hundred and fifty, in one subject, in the paper that builds your rank — that ratio should settle every question about how to allocate a preparation. It means the technical work is not a component of the plan but the plan itself, and that CBT 1, the general awareness section and the small supporting sections together warrant considerably less time than a candidate’s instincts usually give them.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Why the two small sections are worth their fortnight',
+                'Computers and applications, and environment and pollution control, carry ten marks each. Both are shallow, both are learnable in a couple of weeks, and both are routinely skipped because they look peripheral. Twenty marks in a hundred-and-fifty-mark paper is not peripheral.',
+              ],
+              [
+                'Why the deduction bites harder on technical questions',
+                'A half-remembered formula produces a confident wrong answer in a way that a half-remembered general knowledge fact does not. With a third of a mark deducted, the technical section rewards knowing you do not know — and that discipline is harder in a subject you once studied properly.',
+              ],
+              [
+                'Why CBT 1 should be capped',
+                'Its marks do not enter the merit. Once you are comfortably clearing it in practice, additional work there is time taken from a technical syllabus that will absorb everything you give it.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Normalisation applies across shifts',
+            text: 'As with all railway recruitment conducted over many shifts and days, raw scores are normalised so that candidates who sat a harder shift are not disadvantaged. The practical consequence is the same as in NTPC: the mark you tally afterwards is not the mark compared against the cutoff, and comparing raw totals with other candidates tells you nothing.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -1188,6 +1637,29 @@ const railways = [
               { label: 'Engineering and PSU exams', to: '/government-exams/engineering-psu/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'What the weighting table typically shows',
+            items: [
+              { text: 'A short head carrying most of the marks', note: 'four or five subjects within any discipline account for a large share of the technical questions, while many syllabus items appear rarely or not at all.' },
+              { text: 'Recall outnumbering derivation', note: 'the paper asks for formulas, standard values, definitions and properties more often than for extended working — which changes what revision should look like.' },
+              { text: 'Standard configurations repeating', note: 'the same beam arrangements, circuit topologies, cycles and mechanisms with the numbers changed. Recognising the configuration is most of the solution.' },
+              { text: 'A practical and standards-oriented bias', note: 'materials, specifications, testing and site or workshop practice appear more than they would in an academic paper on the same subjects.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Build the table yourself rather than trusting a published weightage chart. Charts circulate widely, are frequently undated, and are often compiled from a different discipline or from before a syllabus revision. Two afternoons spent tagging four or five years of papers in your own discipline gives you a table you can rely on — and the tagging is itself revision, since categorising a question requires recalling how it is solved.',
+          },
+          {
+            type: 'p',
+            text: 'Keep your diploma or degree textbooks as the working source. Railway technical questions sit closer to a diploma examination than to a competitive-exam digest, and the digests compress out precisely the explanation that makes a formula stick. The textbook is also where the diagrams and standard values live, and those are what the paper asks about.',
+          },
+          {
+            type: 'note',
+            title: 'Do not neglect the small sections in past papers',
+            text: 'Computers and applications, and environment and pollution control, appear in every CBT 2 paper and are trivially easy to extract and study. Working through their past questions takes an evening each and reliably secures twenty marks that a large part of the field leaves on the table.',
+          },
         ],
       },
       'mock-tests': {
@@ -1218,6 +1690,26 @@ const railways = [
               { label: 'Railway mock tests', to: '/mock-tests/railways/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'Getting a real signal from a CBT 2 mock',
+            items: [
+              { title: 'Insist on the right composition', text: 'A hundred technical questions in your own discipline and fifty across the four supporting sections. A general railway mock is a well-made test of the wrong thing.' },
+              { title: 'Plan the two hours before you start', text: 'Technical questions take longer per question and carry two thirds of the marks. Write down your intended split and compare it with what happened.' },
+              { title: 'Clear the small sections in minutes', text: 'Computers and environment should take very little time. If they are absorbing ten minutes each, you are over-thinking twenty marks of shallow content.' },
+              { title: 'Classify technical errors by cause', text: 'Wrong formula, right formula misapplied, arithmetic slip, or topic never rebuilt. Four different failures with four different remedies.' },
+              { title: 'Re-test the repaired topic', text: 'A short topic set before the next full mock. Confirming a repair is faster and more informative than waiting for it to surface in a total.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The pacing trap in CBT 2 is that technical and general questions carry the same single mark while taking very different amounts of time. A candidate working straight through in question order will find the technical section consuming an unplanned share of the two hours — or, worse, will hurry the technical questions in order to reach general awareness questions worth exactly the same and requiring a fraction of the effort.',
+          },
+          {
+            type: 'note',
+            title: 'Use CBT 1 mocks sparingly',
+            text: 'A few timed papers to confirm your pacing at a hundred questions in ninety minutes is sufficient. CBT 1 screens rather than ranks, and every additional mock there is an hour not spent on the technical syllabus that determines your position.',
           },
         ],
       },
@@ -1255,6 +1747,32 @@ const railways = [
               { text: 'Keeping a personal formula sheet', note: 'written by you, revised weekly, containing only what you keep forgetting.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'If your diploma is recent',
+                'The technical material is still accessible and the work is consolidation rather than reconstruction. Five to six months is realistic, with the bulk of it spent solving problems in the high-weight subjects.',
+              ],
+              [
+                'If your diploma is several years behind you',
+                'Plan for eight months or more and expect the first month to feel slow. Start with the three or four highest-weight subjects from your table rather than working the syllabus in order, and accept that rebuilding is a different activity from revising.',
+              ],
+              [
+                'If you are working full time',
+                'Give the technical work your best hours rather than your leftover ones. Current affairs and reasoning tolerate tired evenings; rebuilding a technical subject does not, and a tired hour there produces very little.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The sequencing point that matters most is to start technical revision before CBT 1 rather than after it. Candidates commonly plan to clear the screening stage first and then turn to the technical syllabus — but the gap between stages is short and the syllabus is diploma-scale, which makes that plan arithmetically impossible for anyone whose technical knowledge needs rebuilding rather than refreshing.',
+          },
+          {
+            type: 'note',
+            title: 'Solve rather than read',
+            text: 'Technical marks come from worked problems, and reading a chapter produces a sense of familiarity that survives right up until a question is asked slightly differently. Close the book at the end of each topic and work ten past questions on it the same day; what you can still do a week later is what you actually know.',
+          },
         ],
       },
       'study-material': {
@@ -1289,6 +1807,36 @@ const railways = [
               'Maintain one handwritten formula sheet per technical subject.',
               'Revisit each major technical topic twice more before the exam — technical recall decays quickly.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Discipline textbooks — the primary source',
+                'Your own diploma or degree books, for the hundred technical marks that decide your rank. They carry the derivations, standard values and diagrams that a competitive-exam digest compresses out.',
+              ],
+              [
+                'A handwritten formula sheet — the revision artefact',
+                'One per technical subject, containing only what you personally keep forgetting, built from your errors and revised weekly. In the final fortnight it should be the only technical document you need.',
+              ],
+              [
+                'General notes — for CBT 1 and the supporting sections',
+                'Mathematics, reasoning, science and general awareness at school level, worked to clearing depth and then maintained rather than deepened.',
+              ],
+              [
+                'The two small-section sources',
+                'Basic computers and applications, and environment and pollution control. Shallow, finite, and worth an evening each for twenty marks in the merit paper.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'One organising suggestion for the technical work: study in the order your weighting table gives rather than the order the syllabus prints. Syllabi are written to be comprehensive, not prioritised, and a candidate working through one in printed order will spend their freshest months on whatever happens to appear first — which is frequently not what the papers ask about most.',
+          },
+          {
+            type: 'note',
+            title: 'Revisit each technical topic twice more',
+            text: 'Technical recall decays faster than aptitude skill, and a subject rebuilt in month two is meaningfully degraded by month six if it is never revisited. Two short returns per major topic — one soon after, one much later — hold considerably more than a single thorough pass, and they cost far less time than rebuilding the topic again.',
           },
         ],
       },
@@ -1421,6 +1969,25 @@ const railways = [
             type: 'p',
             text: 'The general awareness section is where an RPF candidate’s marks are most efficiently earned. It is recall-based, its themes repeat across cycles, and unlike arithmetic it does not depend on a skill that takes months to build. A daily habit of static revision plus current affairs will move this score further than an equivalent investment anywhere else in the paper.',
           },
+          {
+            type: 'list',
+            title: 'How to read a syllabus weighted this way',
+            items: [
+              { text: 'General awareness is fifty of a hundred and twenty marks', note: 'more than arithmetic and reasoning combined. Any study plan that gives it a third of the time is mis-weighted before it starts.' },
+              { text: 'Arithmetic is school-level and finite', note: 'number systems, fractions and decimals, percentage, ratio, average, profit and loss, interest, time and work, time and distance, and basic mensuration. Nothing conceptually demanding.' },
+              { text: 'Reasoning is largely mechanical', note: 'analogies, series, coding and decoding, spatial visualisation, visual memory and the figure-based families. Improves with volume rather than with study.' },
+              { text: 'The general awareness list is broad but shallow', note: 'history with the freedom movement emphasised, polity, geography, economics, general science and current events. Recall rather than analysis throughout.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The efficiency argument for general awareness is unusually clean here. It is the largest section, it is recall-based, its content is finite for the static portions, and it is the section where a candidate starting from a low base can improve most. Forty minutes a day for four months will move a general awareness score considerably further than the same time spent making already-adequate arithmetic slightly faster.',
+          },
+          {
+            type: 'note',
+            title: 'General science sits inside general awareness',
+            text: 'Class 10 physics, chemistry and life sciences supplies a reliable share of the largest section, and it is finishable in a way current affairs is not. Covering it systematically is one of the few places in this preparation where you can mark a body of material as genuinely complete.',
+          },
         ],
       },
       'exam-pattern': {
@@ -1461,6 +2028,25 @@ const railways = [
             title: 'Confirm the standards for your post and category',
             text: 'Running distances and timings, jump standards, and height and chest requirements all differ between Constable and Sub-Inspector, between male and female candidates, and by category and region. Train to the figures in the current notification for the post you are applying to rather than to a general summary.',
           },
+          {
+            type: 'p',
+            text: 'Forty-five seconds a question with a third of a mark deducted per error is a combination that rewards patience over coverage. There is enough time to read the question properly and to check an arithmetic step, and there is a real cost to answering on a hunch. The candidate who attempts a hundred questions carefully will usually finish ahead of the one who attempts all hundred and twenty with a scatter of guesses in the last ten minutes.',
+          },
+          {
+            type: 'steps',
+            title: 'Working the ninety minutes',
+            items: [
+              { title: 'General awareness first', text: 'Fifty marks of recall, answered or skipped within seconds each. Deliberating over a fact you do not have converts time into nothing.' },
+              { title: 'Reasoning second', text: 'Mechanical, and the section that most rewards the practice you will have done. Bank it while concentration is high.' },
+              { title: 'Arithmetic last', text: 'The section where extra minutes genuinely produce extra marks, and where the accumulated time from the first two is best spent.' },
+              { title: 'Final sweep — narrowed guesses only', text: 'Fill anything where you have eliminated two options. Leave anything where all four remain live; three such guesses cancel a mark you earned.' },
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Constable and Sub-Inspector differ in eligibility, not in paper',
+            text: 'The written examination follows the same structure for both, while the qualification requirement and the physical standards differ. Read the notification for the specific post you are applying to rather than assuming the figures you have seen quoted apply — the running distances, timings and measurement standards vary by post as well as by gender and category.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -1492,6 +2078,30 @@ const railways = [
               { label: 'All previous year papers', to: '/previous-year-papers/' },
               { label: 'General knowledge notes', to: '/study-material/general-knowledge/' },
             ],
+          },
+          {
+            type: 'list',
+            title: 'The themes past general awareness sections keep returning to',
+            items: [
+              { text: 'Indian polity and the Constitution', note: 'articles, fundamental rights and duties, constitutional bodies and the basics of parliamentary structure.' },
+              { text: 'The freedom movement', note: 'movements, sessions, leaders and dates — static, finite and among the most heavily recycled material in the section.' },
+              { text: 'Geography of India', note: 'rivers, ranges, states, national parks and physical features, asked directly rather than analytically.' },
+              { text: 'Class 10 general science', note: 'a reliable and finishable supply of questions across physics, chemistry and life sciences.' },
+              { text: 'Static general knowledge and current events', note: 'awards, sports, books, important days and first-in-India facts, alongside the year’s major developments.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Sorting several years of general awareness questions into those themes and building a one-page revision sheet for each is the highest-value exercise available in an RPF preparation. It converts the largest section of the paper from something you read about into something you revise — and for recall-based content, the number of revision passes you can fit in is what determines the score.',
+          },
+          {
+            type: 'p',
+            text: 'Solve the arithmetic sections on paper and without a calculator, but without hurrying. The level will not stretch anyone who finished school, which means past papers are diagnosing your carelessness rather than your capability. Note specifically how many of your errors were method failures and how many were slips — for most candidates the second category dominates, and it is fixed by slowing down rather than by studying.',
+          },
+          {
+            type: 'note',
+            title: 'Annotate the reasoning figures',
+            text: 'Spatial visualisation, visual memory, mirror and water images and figure completion all become substantially easier when you can mark the paper. Build the habit while learning the methods, then move to screen practice so the interface is familiar — the annotation instinct transfers even when the pencil does not.',
           },
         ],
       },
@@ -1527,6 +2137,25 @@ const railways = [
               { label: 'Railway mock tests', to: '/mock-tests/railways/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'What to record after each mock',
+            items: [
+              { title: 'General awareness accuracy by theme', text: 'Polity, history, geography, science, static and current. One aggregate number across six unrelated areas cannot direct your revision.' },
+              { title: 'Error count, and its cost', text: 'At a third of a mark each, fifteen errors is a five-mark penalty on top of the fifteen marks not earned. The score presents that as one number and hides the arithmetic.' },
+              { title: 'Errors split by cause', text: 'Did not know, versus guessed and lost, versus knew and misread. Only the first calls for more study.' },
+              { title: 'Time remaining', text: 'Ninety minutes for a hundred and twenty questions leaves room. Finishing early with avoidable errors means you rushed a paper that did not require it.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'A generic competitive-exam mock will give roughly a quarter of its questions to general awareness. This paper gives it more than forty per cent, which means practising on generic material systematically under-trains the section that decides the outcome and over-trains the ones that do not. Insist on the real weighting even if it means using fewer, better-matched mocks.',
+          },
+          {
+            type: 'note',
+            title: 'Physical training on a fixed weekly schedule',
+            text: 'Running, long jump and high jump all improve with regular practice and all decay when it stops. Three sessions a week alongside mock practice is enough to hold the ground you have built, and the physical stages follow the written result closely enough that there is no later window in which to rebuild it.',
           },
         ],
       },
@@ -1564,6 +2193,32 @@ const railways = [
               { text: 'Training to the wrong standards', note: 'they differ by post, gender, category and region — read the notification.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'General awareness — the largest section, treated as a subject',
+                'Forty minutes daily from week one, organised as themed sheets and revised weekly. It carries more marks than arithmetic and reasoning combined, and it is the section where a candidate starting from nothing gains the most.',
+              ],
+              [
+                'Physical training — the parallel track',
+                'Started in week one and never paused. Running to the prescribed distance and timing, plus long jump and high jump, which are technique events where a few sessions of actual event practice matter more than general fitness.',
+              ],
+              [
+                'Arithmetic and reasoning — fluency projects',
+                'Both are school-level and finite. Build them to reliable accuracy over two or three months, then maintain with weekly practice rather than continuing to add depth the paper will not ask for.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Because the physical stages are qualifying, they contribute nothing to your position and can end the attempt outright — the same asymmetry that makes typing tests dangerous in clerical recruitment. There is no upside to exceeding the standard and complete downside to missing it, which is precisely the argument for training steadily from the beginning rather than intensively at the end.',
+          },
+          {
+            type: 'note',
+            title: 'Train against your own standards',
+            text: 'Running distances and timings, jump standards, and height and chest requirements differ by post, by gender, by category and in some cases by region. Generic figures circulated online are a poor substitute for the table in the current notification. Find the row that applies to you, write it down, and train against that number.',
+          },
         ],
       },
       'study-material': {
@@ -1599,6 +2254,36 @@ const railways = [
               'Annotate reasoning figures rather than solving them mentally.',
               'Keep the physical training on the calendar alongside the study, every week.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'General awareness — the priority, kept as sheets',
+                'Polity, the freedom movement, geography, class 10 science, static general knowledge and current affairs. One page per theme, revised weekly. Sheets get revised repeatedly; textbooks get read once.',
+              ],
+              [
+                'Arithmetic — accuracy work',
+                'Percentage, ratio, average, profit and loss, interest, time and work, time and distance, and basic mensuration. On paper, without a calculator, and deliberately unhurried given the time the paper allows.',
+              ],
+              [
+                'Reasoning — volume and annotation',
+                'The verbal families practised for speed and the visual families practised on paper where you can mark the figures. Standard methods, learned once and then repeated.',
+              ],
+              [
+                'Current affairs — one running source',
+                'Twenty minutes a day, maintained rather than sampled. Recognition builds through repeated exposure to the same items, which is why switching sources sets you back.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The material for RPF overlaps almost entirely with what serves SSC GD, the other railway papers and most state police recruitment, which is worth knowing if you are sitting more than one. Maintaining a single set of themed general awareness sheets and one arithmetic source, rather than parallel material per examination, halves the revision burden without reducing coverage at all.',
+          },
+          {
+            type: 'note',
+            title: 'Keep the physical schedule in the same place as the study schedule',
+            text: 'Candidates who track their study and treat training as something that happens when there is time reliably let the training slip first. Writing the running and jump sessions into the same weekly plan as the mocks and the revision is a small administrative habit that protects the stage where written preparation counts for nothing.',
           },
         ],
       },

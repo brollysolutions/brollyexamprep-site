@@ -108,6 +108,25 @@ const medical = [
             type: 'p',
             text: 'The relationship between the syllabus and NCERT is not the same across the three subjects, and understanding that difference saves months. Biology questions frequently derive directly from NCERT lines, including from diagrams, tables and summary sections. Inorganic chemistry is similarly close. Physics and physical chemistry require problem-solving beyond what NCERT exercises provide, though the concepts remain confined to it.',
           },
+          {
+            type: 'list',
+            title: 'How closely each subject tracks NCERT',
+            items: [
+              { text: 'Biology — very closely indeed', note: 'a large share of questions can be traced to specific lines, diagrams, tables and even chapter summaries. Reading it once for understanding is not enough; the level of recall the paper expects is close to the level of the text itself.' },
+              { text: 'Inorganic chemistry — almost as closely', note: 'trends, exceptions and specific facts are drawn from NCERT with little embellishment, which makes it among the most reliably scoreable material in the paper.' },
+              { text: 'Organic and physical chemistry — NCERT as the base', note: 'the concepts and mechanisms come from NCERT, but the questions require applying them to unfamiliar cases, so problem practice is needed on top of the reading.' },
+              { text: 'Physics — NCERT for scope, not for practice', note: 'the syllabus is NCERT’s, and the questions demand problem-solving the textbook does not train. This is the subject where additional problem sources are genuinely necessary.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'That asymmetry explains a common and expensive confusion. A candidate told that NCERT is everything applies the advice uniformly, reads physics from NCERT alone, and arrives able to state every principle and unable to solve a problem under time. The advice is close to literally true in biology and inorganic chemistry, roughly true in the rest of chemistry, and substantially false in physics.',
+          },
+          {
+            type: 'note',
+            title: 'Read the diagrams and captions, not just the prose',
+            text: 'In biology particularly, questions are drawn from labelled diagrams, tables, boxed asides and chapter summaries as readily as from the running text. Candidates who read NCERT as continuous prose and skim the visual material leave a meaningful part of the most heavily weighted subject unread.',
+          },
         ],
       },
       'exam-pattern': {
@@ -149,6 +168,32 @@ const medical = [
             title: 'Confirm the current section rules',
             text: 'NEET has at times used a structure with optional questions within each subject, and has at other times returned to a straightforward format. Because the rules affect how you allocate time in the hall, read the section structure in the current information bulletin rather than assuming continuity.',
           },
+          {
+            type: 'p',
+            text: 'Rank compression is the fact that gives the marking scheme its bite. Because an enormous number of candidates sit this paper and the syllabus is well defined, scores cluster tightly at the top — a handful of marks can separate rank bands that lead to very different colleges. That changes what an error costs: not simply four marks plus one, but a movement in rank that a comparably hard question left unattempted would not have caused.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Where the four-to-one ratio pays',
+                'A guess narrowed to two options has clearly positive expected value and should be taken. A guess narrowed to three is marginally positive. A blind guess across four breaks even in the abstract and loses in practice, because the distractors are designed to attract the half-informed.',
+              ],
+              [
+                'Why biology deserves its share of the time',
+                'Half the paper and the most reliably scoreable half, because it rewards thorough reading rather than problem-solving ability. A candidate who secures biology has secured the largest and steadiest block of marks available.',
+              ],
+              [
+                'Why physics is the differentiator',
+                'It is where scores vary most between candidates and where a marginal hour of practice moves a rank furthest. Precisely because it is nobody’s comfortable subject, it is where the field separates.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Confirm the section rules for your cycle',
+            text: 'NEET has at times offered optional questions within each subject and has at times used a different duration. Those rules affect how you plan the paper — whether there is any choice to exercise, and how many minutes each subject actually gets — so read the current information bulletin rather than a description written for an earlier year.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -181,6 +226,29 @@ const medical = [
               { label: 'Biology study material', to: '/study-material/biology/' },
               { label: 'Physics study material', to: '/study-material/physics/' },
             ],
+          },
+          {
+            type: 'list',
+            title: 'What tracing questions back to NCERT teaches',
+            items: [
+              { text: 'How literally the text is examined', note: 'once you have traced fifty biology questions to their source lines, the instruction to read NCERT properly stops being advice and becomes obvious.' },
+              { text: 'Which parts of the text carry weight', note: 'certain chapters and certain kinds of content — classifications, exceptions, named examples, labelled structures — supply questions far out of proportion to their length.' },
+              { text: 'What level of detail is expected', note: 'the difference between knowing a process and knowing the specific enzyme, the specific stage, the specific figure. Past papers set that calibration precisely.' },
+              { text: 'Where NCERT is not enough', note: 'the physics questions will not trace back, which is itself the finding — it tells you where additional problem sources are required.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'For physics, build a chapter frequency table instead and let it order your problem practice. The syllabus gives no weighting, and past papers show a clear concentration — mechanics, electrodynamics and modern physics between them supplying a large share. A candidate short of time should be practising in that order rather than working through the syllabus as printed.',
+          },
+          {
+            type: 'p',
+            text: 'Organic chemistry repays a different treatment again: collect the reaction and mechanism patterns rather than the questions. Across several years the same conversions, the same named reactions and the same reasoning about stability and selectivity recur in different clothing. A pattern sheet built from past papers is more useful than any number of solved questions, because what transfers is the recognition rather than the instance.',
+          },
+          {
+            type: 'note',
+            title: 'Log careless errors as their own category',
+            text: 'In a rank-compressed examination, the marks lost to misreading a question, misbubbling an answer or dropping a sign are worth more attention than the marks lost to genuinely hard questions. Keep them in a separate list from knowledge gaps, because they have a different and much cheaper remedy.',
           },
         ],
       },
@@ -216,6 +284,26 @@ const medical = [
               { label: 'JEE and NEET mock tests', to: '/mock-tests/free/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'A mock routine built around accuracy',
+            items: [
+              { title: 'Full length, on paper, with an answer sheet', text: 'Two hundred minutes in one sitting. NEET is a pen-and-paper examination and bubbling is part of the task, including the time it takes and the errors it invites.' },
+              { title: 'Count careless errors before anything else', text: 'Questions you knew and got wrong. This number, not the score, is the one that predicts how much rank you are leaving on the table.' },
+              { title: 'Check time per subject', text: 'Biology should be fastest and physics slowest. If biology is consuming a disproportionate share, the reading has not gone deep enough to make recall quick.' },
+              { title: 'Review unattempted questions', text: 'Were they genuinely beyond you, or did you run out of time? The two findings point in opposite directions.' },
+              { title: 'Fix one thing before the next mock', text: 'A chapter, or a habit. A mock taken without an intervening change re-measures the same candidate a week later.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The bubbling mechanics deserve genuine rehearsal rather than a mention. Candidates lose marks every year to answers filled in the wrong row after skipping a question, to incomplete shading, and to the time cost of transferring answers in a rush at the end. Deciding in advance whether you bubble as you go or in blocks, and practising that decision, removes an entire category of avoidable loss.',
+          },
+          {
+            type: 'note',
+            title: 'Biology accuracy is the steadiest predictor',
+            text: 'Because it is half the paper and rewards thorough reading rather than problem-solving under pressure, biology accuracy tends to be the most stable number across a candidate’s mocks. A biology score that fluctuates is usually a sign that the NCERT reading is not yet deep enough to be reliable under examination conditions.',
           },
         ],
       },
@@ -254,6 +342,36 @@ const medical = [
               { text: 'Practising only on screen', note: 'NEET is a pen-and-paper examination, and the answer sheet is part of the task.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Biology — a revision cycle, not a reading',
+                'Half the paper, largely factual, and impossible to hold from a single pass. Build a cycle that returns to each chapter several times across the preparation rather than reading the book thoroughly once and hoping it stays.',
+              ],
+              [
+                'Physics — problems, daily, from the start',
+                'The subject that separates candidates and the one that cannot be read into competence. Reading solved physics builds recognition; solving builds the ability to set up an unfamiliar problem under time.',
+              ],
+              [
+                'Chemistry — split by branch',
+                'Inorganic from NCERT as near-literal reading, organic through pattern practice, physical through problems. Treating chemistry as one subject with one method under-serves at least two of its three parts.',
+              ],
+              [
+                'Accuracy — a discipline in its own right',
+                'In the final months, reducing careless errors is worth more rank than covering additional material. It deserves explicit attention rather than being left to improve on its own.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Class 11 retention is the quiet failure in two-year preparations. Roughly half the paper comes from the first year of the curriculum, and it decays steadily while class 12 material is being covered — most visibly in biology, where the volume of factual detail is largest. A weekly slot for class 11 revision throughout class 12 costs a few hours a month and protects a very large share of the paper.',
+          },
+          {
+            type: 'note',
+            title: 'The final two months belong to revision and accuracy',
+            text: 'New material started in the last eight weeks rarely reaches the reliability at which it produces marks under pressure, and the time it consumes comes out of the revision cycle and the mock analysis that reliably would. By that stage the productive work is repeated biology revision, physics problem practice, mocks and error correction.',
+          },
         ],
       },
       'study-material': {
@@ -287,6 +405,36 @@ const medical = [
               'Keep an error log that separates careless mistakes from knowledge gaps.',
               'Practise on paper with an answer sheet, at the real 200-minute length.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'NCERT biology — the primary text, read repeatedly',
+                'Not a starting book but very nearly the examination itself. Diagrams, tables, captions, boxed asides and chapter summaries all included, and revisited on a cycle rather than read once.',
+              ],
+              [
+                'NCERT chemistry — with problem practice attached',
+                'Inorganic close to literal, organic and physical as the conceptual base for problems worked elsewhere. The reading is necessary and, for two of the three branches, not sufficient.',
+              ],
+              [
+                'A physics problem source — genuinely necessary',
+                'The one place where NCERT alone will not carry a candidate. Choose one demanding problem book and finish it rather than sampling several.',
+              ],
+              [
+                'An error log — the document you revise from at the end',
+                'Split by cause: careless, half-known, unknown. It is short, specific to you, and by the final month it is more useful than any textbook.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'A word on how much material to own. NEET candidates accumulate books readily, and the accumulation itself becomes a problem — three partially worked physics sources leave three incomplete libraries of problem types where one finished source worked twice would have left a complete one. Choose one supplementary book per subject, finish it, and only then consider whether another is needed.',
+          },
+          {
+            type: 'note',
+            title: 'Revise biology on a fixed schedule',
+            text: 'A cycle that returns to each chapter at planned intervals — a few days after first study, then a few weeks, then again in the final months — holds factual material far better than any amount of thorough single reading. For half a paper drawn from a largely factual subject, the schedule matters as much as the source.',
           },
         ],
       },
@@ -422,6 +570,25 @@ const medical = [
             type: 'p',
             text: 'The subjects most often under-prepared are the short clinical ones — ophthalmology, ENT, dermatology, psychiatry, forensic medicine. Each is small enough to be covered properly in a couple of weeks, and collectively they account for a meaningful block of the paper. Candidates who concentrate exclusively on medicine and surgery leave those marks available to others.',
           },
+          {
+            type: 'list',
+            title: 'Reading the syllabus as a weighting problem',
+            items: [
+              { text: 'The major clinical subjects carry the paper', note: 'medicine, surgery, obstetrics and gynaecology, and paediatrics between them supply the largest share of questions, and they are also the subjects most candidates are still using clinically.' },
+              { text: 'The para-clinical subjects are the most question-dense per hour', note: 'pathology, pharmacology and microbiology reward systematic revision more directly than the clinical subjects do, and they are where a candidate short of time often gains most.' },
+              { text: 'The short clinical subjects are collectively significant', note: 'ophthalmology, ENT, dermatology, psychiatry, orthopaedics, anaesthesia and radiology are individually small and quick to cover, and together they represent a meaningful block that is routinely left to last and then left undone.' },
+              { text: 'The pre-clinical subjects are foundational rather than heavy', note: 'anatomy, physiology and biochemistry supply fewer questions directly but underpin the clinical reasoning the paper rewards.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The practical planning consequence is to start where the return per hour is highest rather than where the marks are heaviest. The para-clinical subjects and the short clinical ones are finite, systematically revisable and frequently under-prepared, which makes them a better place to begin than medicine — a subject you will be revising continuously anyway and that will absorb any amount of time you give it.',
+          },
+          {
+            type: 'note',
+            title: 'Community medicine and current guidelines earn their place',
+            text: 'National health programmes, biostatistics and epidemiology supply a reliable set of questions, and awareness of updated clinical guidance appears regularly. Both are learnable from defined sources, and both are commonly skipped by candidates concentrating on the major clinical subjects.',
+          },
         ],
       },
       'exam-pattern': {
@@ -463,6 +630,32 @@ const medical = [
             title: 'Counselling is a separate process worth understanding early',
             text: 'Seat allotment runs through multiple rounds of all-India and state counselling with their own registration windows, choice-filling rules and forfeiture conditions. Candidates lose seats every cycle to procedural errors rather than to marks, and the rules are worth learning before the result rather than after it.',
           },
+          {
+            type: 'p',
+            text: 'The five-mark swing is the number to internalise. A correct answer earns four and a wrong one costs one, so the difference between answering correctly and answering wrongly is five marks — while the difference between answering wrongly and leaving it blank is only one. That asymmetry means the question is rarely whether to guess but whether you have narrowed enough for the guess to be better than even, and in a paper of two hundred questions those decisions compound quickly.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'What time-bound sections change',
+                'Where they are used, a section closes and cannot be revisited. That removes the second pass entirely, which means every question must be settled when you meet it. A candidate who habitually flags and returns has to unlearn that habit before the examination rather than discover it during one.',
+              ],
+              [
+                'Why the vignette rewards full reading',
+                'Clinical questions are built around one distinguishing detail, and it is frequently in the final line — the age, the duration, a single laboratory value. Skimming to the question and back is the characteristic way of getting a question wrong that you knew the answer to.',
+              ],
+              [
+                'What just over a minute per question means',
+                'Little time for a case-based question, which makes recognition speed rather than reasoning speed the binding constraint. Question practice builds that; reading does not.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Understand counselling before the result',
+            text: 'Seat allotment runs through multiple rounds of all-India and state counselling, each with its own registration windows, choice-filling rules, and consequences for resigning or holding a seat. Candidates lose seats to procedural errors every cycle, and the rules are considerably easier to learn in the months before the examination than in the days after a result.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -496,6 +689,29 @@ const medical = [
               { label: 'All previous year papers', to: '/previous-year-papers/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'A method for reading a clinical vignette',
+            items: [
+              { text: 'Find the distinguishing detail before you look at the options', note: 'the age, the duration, the one abnormal value, the exposure history. Deciding what the question hinges on before seeing the choices prevents the options from steering your reasoning.' },
+              { text: 'Name the diagnosis or the principle', note: 'then check which option matches. Reading the options first invites you to reason backwards from a plausible-sounding answer.' },
+              { text: 'Notice what the question actually asks', note: 'the most likely diagnosis, the next investigation, the definitive management and the most appropriate initial step are four different questions about the same vignette.' },
+              { text: 'Read the last line twice', note: 'it frequently carries the detail that separates two otherwise identical presentations.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Building a high-yield topic list across several years of papers is worth the afternoon it takes. The same conditions, the same investigations and the same management decisions recur, and a list drawn from the papers themselves is both shorter and better targeted than any published compilation — it reflects what this examination has actually asked rather than what a subject is generally considered to contain.',
+          },
+          {
+            type: 'p',
+            text: 'Note the questions where the accepted answer has changed. Clinical guidance is revised, and a question answered one way five years ago may be answered differently now — which makes an old paper a source of both practice and potential error. Where a past answer conflicts with current guidance, the current guidance is what the examination will follow, and noticing those points is itself useful revision.',
+          },
+          {
+            type: 'note',
+            title: 'Practise in the current delivery format',
+            text: 'Whether sections are time-bound, and whether you can revisit answers, changes how a paper must be attempted. Practising with free navigation and then sitting a time-bound paper is a genuine disadvantage, because the habit of deferring difficult questions has nowhere to go.',
+          },
         ],
       },
       'mock-tests': {
@@ -526,6 +742,26 @@ const medical = [
               { label: 'All free mock tests', to: '/mock-tests/free/' },
               { label: 'Topic and sectional practice', to: '/practice/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'Making mocks work around clinical duties',
+            items: [
+              { title: 'Schedule them deliberately, in advance', text: 'A three-and-a-half-hour block will not appear spontaneously in a working week. Put full-length mocks in the calendar or they will not happen.' },
+              { title: 'Analyse by subject, not in aggregate', text: 'Across the full MBBS curriculum, a single accuracy figure tells you almost nothing about where to direct revision.' },
+              { title: 'Separate misreading from not knowing', text: 'Vignette misreads are a reading-discipline problem with a cheap fix. Treating them as knowledge gaps sends you back to textbooks unnecessarily.' },
+              { title: 'Watch the final hour', text: 'Accuracy declining late is a stamina finding, and one that only full-length practice addresses.' },
+              { title: 'Count the net effect of your guesses', text: 'With a five-mark swing per question, loose guessing is expensive and disciplined guessing is not. Your own mocks are the only way to see which you are doing.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Question practice is the primary study method for this examination rather than a way of testing what you have studied, and mocks are the extension of that. An applied clinical paper rewards applied preparation: a candidate who has worked several thousand questions with their explanations read carefully will usually outperform one who has read more and answered less, even where the second candidate knows more in the abstract.',
+          },
+          {
+            type: 'note',
+            title: 'Fragmented study needs a sustainable revision cycle',
+            text: 'Most candidates prepare during internship or clinical work, in short and irregular blocks. That makes a revision cycle you can actually keep — short, frequent, spaced — far more valuable than an ambitious schedule that collapses in the first busy fortnight. Design for the weeks you will actually have.',
           },
         ],
       },
@@ -564,6 +800,36 @@ const medical = [
               { text: 'Understanding counselling before the result', note: 'seats are lost to procedural errors every cycle.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Start with the para-clinical subjects',
+                'Pathology, pharmacology and microbiology are question-dense, systematically revisable and finite. They give a working candidate visible progress in the early months, which matters both for the marks and for sustaining the preparation.',
+              ],
+              [
+                'Cover the short clinical subjects deliberately',
+                'Ophthalmology, ENT, dermatology, psychiatry, orthopaedics, anaesthesia and radiology. Each is quick; collectively they are significant; and they are the subjects most reliably left undone by candidates who intend to get to them later.',
+              ],
+              [
+                'Keep the major clinical subjects running continuously',
+                'Medicine, surgery, obstetrics and gynaecology, and paediatrics will absorb any time you give them. They belong in the schedule throughout rather than in a block, and clinical work itself contributes to them.',
+              ],
+              [
+                'Build a revision cycle you can sustain',
+                'The curriculum is far too large to hold from one pass. What matters is not the ambition of the schedule but whether it survives a busy month.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The genuine difficulty of this examination is logistical rather than intellectual. Candidates preparing during internship or residency have irregular hours, fatigue and no long uninterrupted blocks — which means the preparation that works is the one designed for fifteen-minute fragments and occasional longer sessions, built on question practice that can be picked up and put down, rather than on reading that requires continuity.',
+          },
+          {
+            type: 'note',
+            title: 'Keep current with guideline changes',
+            text: 'Management questions follow current clinical guidance, and guidance is revised. A candidate revising from a source several years old will answer some questions the way they were answered then rather than the way they are answered now — a small category, entirely avoidable, and disproportionately annoying to lose marks to.',
+          },
         ],
       },
       'study-material': {
@@ -597,6 +863,36 @@ const medical = [
               'A source for updated clinical guidelines, checked periodically.',
               'Full-length mocks scheduled deliberately, since they will not happen otherwise.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'One standard text per subject — chosen and kept',
+                'The accumulation problem is acute at this level, because there are many good resources and no natural stopping point. One source per subject, worked through and revised, beats several sampled — and switching sources mid-preparation loses the annotations and familiarity that make revision fast.',
+              ],
+              [
+                'A question bank as the primary study method',
+                'Worked systematically rather than as testing. The explanations are the teaching material, and reading them carefully is where most of the learning in this preparation actually happens.',
+              ],
+              [
+                'An error log by subject and cause',
+                'Across nineteen subjects, an unstructured list of wrong answers is unusable. Organised by subject and by cause — not known, half known, misread — it becomes the document your revision cycle is built from.',
+              ],
+              [
+                'A current guidelines source, checked periodically',
+                'Small in volume, regularly examined, and the one component that goes out of date while you are preparing.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Design the revision schedule for fragmented time rather than for ideal conditions. Short, frequent, spaced returns to a subject hold clinical detail considerably better than occasional long sessions, and they fit the reality of preparing alongside clinical duties. A schedule that assumes three-hour evenings will fail in the first busy week and take the preparation’s momentum with it.',
+          },
+          {
+            type: 'note',
+            title: 'Full-length mocks will not happen by themselves',
+            text: 'Everything else in this preparation can be done in fragments, which is precisely why the one component that cannot — a three-and-a-half-hour paper in one sitting — needs to be scheduled explicitly. Candidates who intend to fit mocks in where they can generally arrive having sat very few.',
           },
         ],
       },
@@ -732,6 +1028,25 @@ const medical = [
             type: 'p',
             text: 'The practical difference from NEET PG preparation is not additional subjects but additional depth in the same ones. A candidate whose preparation consists of high-yield summaries will find NEET PG questions largely answerable and INI-CET questions frequently just beyond reach, because the distinguishing detail is precisely what a summary omits.',
           },
+          {
+            type: 'list',
+            title: 'Where the additional depth actually shows',
+            items: [
+              { text: 'Pre-clinical subjects probed further', note: 'anatomy, physiology and biochemistry are examined beyond the level a NEET PG summary covers, and questions frequently turn on mechanism rather than on association.' },
+              { text: 'Para-clinical detail', note: 'pathology, pharmacology and microbiology reward textbook-level knowledge — specific values, specific mechanisms, specific exceptions — rather than the high-yield version of the same topic.' },
+              { text: 'Community medicine and biostatistics', note: 'more prominent than in NEET PG, and drawn from defined material that most candidates have not revisited since their undergraduate course.' },
+              { text: 'Recent advances and guidelines', note: 'consistently represented, which makes currency a preparation requirement rather than a bonus.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The useful way to describe the difference is that NEET PG rewards knowing the topic and INI-CET rewards knowing the topic one layer further in. The subjects are identical and the syllabus is the same MBBS curriculum — which means the adjustment is a change of source rather than an addition of scope. Upgrading from summaries to standard texts in the subjects where you are already competitive does more than adding new subjects ever will.',
+          },
+          {
+            type: 'note',
+            title: 'Twice a year, for the January and July sessions',
+            text: 'The two annual cycles change how the examination should be approached. An early attempt is genuine calibration rather than a decisive event, and the interval between cycles is long enough to act on what the first one exposed — an advantage that an annual examination cannot offer and that candidates routinely leave unused.',
+          },
         ],
       },
       'exam-pattern': {
@@ -773,6 +1088,32 @@ const medical = [
             title: 'Counselling is separate from NEET PG',
             text: 'INI-CET has its own counselling process for the participating institutes, with its own rounds, choice-filling and seat-acceptance conditions, running independently of the NEET PG counselling. Candidates pursuing both need to track two sets of dates and rules, and accepting a seat in one process can carry consequences in the other.',
           },
+          {
+            type: 'p',
+            text: 'The two marking schemes reward genuinely opposite behaviour, which is why a candidate moving between the examinations must consciously recalibrate. In NEET PG a wrong answer costs five marks relative to a correct one, so the threshold for attempting is high. In INI-CET a wrong answer costs a third of a mark against a full mark for a correct one, so the threshold is low — and a candidate who carries NEET PG caution into an INI-CET hall is systematically leaving positive-value questions unanswered.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'The arithmetic, made explicit',
+                'With one mark for a correct answer and a third deducted for a wrong one, a guess narrowed to three options is clearly positive, a guess between two is strongly positive, and even a blind guess across four is close to neutral. Under that scheme, widespread attempting is not recklessness but arithmetic.',
+              ],
+              [
+                'Why uncertainty is more common here',
+                'Because the questions probe deeper, more of them sit at the edge of what you know. That is a feature of the examination rather than a sign of under-preparation, and the correct response is to answer them rather than to treat uncertainty as a reason to skip.',
+              ],
+              [
+                'What just under a minute per question means',
+                'Tight for questions asked at this depth. Recognition speed matters, and it comes from having met the detail before rather than from reasoning quickly at the time.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Separate counselling, separate decisions',
+            text: 'INI-CET runs its own counselling for the participating institutes, with its own rounds and its own rules about accepting, holding and resigning seats — and decisions taken there can affect your position in the NEET PG process. Candidates sitting both should understand how the two interact before either result arrives.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -805,6 +1146,29 @@ const medical = [
               { label: 'All previous year papers', to: '/previous-year-papers/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'A diagnostic to run on your own past-paper attempt',
+            items: [
+              { text: 'For each question you missed, ask what would have answered it', note: 'if a high-yield summary would have covered it, the gap is coverage. If only a textbook would have, the gap is depth — and that distinction determines what you change.' },
+              { text: 'Count how many were recent-advance questions', note: 'they recur reliably, and they are the category no amount of textbook depth addresses. They need a current source instead.' },
+              { text: 'Note which subjects the depth gap concentrates in', note: 'usually the ones you prepared from summaries because they were not your strong areas — which is precisely where the upgrade is worth making.' },
+              { text: 'Track how many you left blank', note: 'and calculate what attempting them would have been worth under the one-third deduction. The answer is usually uncomfortable.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Sitting one past paper of each examination early in your preparation is the fastest way to understand the difference between them, and it is more informative than any description. The topics will be familiar from your NEET PG work and the questions will not be, which locates the gap precisely — and locating it early is what allows a preparation to be adjusted rather than repeated.',
+          },
+          {
+            type: 'p',
+            text: 'Practise with the correct deduction applied from the first paper. Working INI-CET questions under NEET PG marking trains the wrong attempt threshold, and the threshold is a habit rather than a calculation you will perform in the hall. A candidate who has practised a hundred questions under a one-third deduction attempts appropriately by instinct; one who has not will hesitate.',
+          },
+          {
+            type: 'note',
+            title: 'Use INI-CET papers specifically, not only NEET PG ones',
+            text: 'They are fewer and they are the only source that demonstrates this examination’s characteristic depth and phrasing. Candidates preparing for both often work NEET PG papers exclusively on the reasonable assumption that the syllabus is shared — and arrive having never practised the paper they find harder.',
+          },
         ],
       },
       'mock-tests': {
@@ -835,6 +1199,26 @@ const medical = [
               { label: 'All free mock tests', to: '/mock-tests/free/' },
               { label: 'Topic and sectional practice', to: '/practice/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'What an INI-CET mock should tell you',
+            items: [
+              { title: 'Your attempt rate, first', text: 'Under this marking scheme it should be high. A large number of blanks is the characteristic error of a NEET PG-trained candidate and the cheapest thing to fix.' },
+              { title: 'The net value of your guesses', text: 'Calculate what the questions you guessed actually earned or cost. Under a one-third deduction, disciplined guessing should be gaining you marks.' },
+              { title: 'What the blanks were worth', text: 'Estimate the expected value of the questions you left. Seeing that number once generally changes the behaviour permanently.' },
+              { title: 'Accuracy by subject', text: 'To find where your preparation depth stops reaching. Those subjects are where the source upgrade should happen.' },
+              { title: 'Whether errors reflect depth or carelessness', text: 'Depth errors need better material; careless ones need reading discipline. The remedies do not overlap.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The attempt rate is the headline metric for this examination in a way it is not for any other on this site. Candidates arriving from NEET PG preparation routinely leave twenty or thirty questions unanswered out of habit — and under a one-third deduction those blanks represent a straightforward loss, since even weakly informed answers carry positive expected value. Tracking the number explicitly, mock after mock, is what changes it.',
+          },
+          {
+            type: 'note',
+            title: 'Practise the full three hours',
+            text: 'Two hundred questions at this depth in three hours is a genuine stamina demand, and accuracy in the final hour is where it shows. Candidates preparing in fragments around clinical duties need to schedule full-length practice deliberately, because it is the one component that fragmented study cannot approximate.',
           },
         ],
       },
@@ -873,6 +1257,36 @@ const medical = [
               { text: 'Understanding the counselling rules', note: 'two separate processes, and decisions in one affect the other.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Upgrade sources rather than add subjects',
+                'The syllabus is the same MBBS curriculum. What INI-CET asks for is depth within it, which means moving from high-yield summaries to standard texts — starting with the subjects where you are already competitive, since that is where the extra layer converts into marks fastest.',
+              ],
+              [
+                'Recalibrate the guessing threshold deliberately',
+                'The marking scheme is materially gentler than NEET PG’s. That is a change in behaviour rather than in knowledge, and it has to be practised rather than merely understood.',
+              ],
+              [
+                'Keep current',
+                'Recent advances and updated guidance appear consistently, and no textbook is current enough on its own. A regularly checked source for guideline changes is a small, specific addition with a reliable return.',
+              ],
+              [
+                'Use both cycles',
+                'Two sessions a year means an early attempt costs a fee and a day and returns an accurate diagnosis. The interval afterwards is where the improvement happens.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The efficient plan for a candidate sitting both examinations is one preparation with an INI-CET layer, not two preparations. NEET PG work builds the coverage; the additional layer is depth in selected subjects, currency on guidelines, INI-CET-specific past papers, and the recalibrated attempt threshold. Building two parallel preparations for the same curriculum duplicates months of effort for no additional coverage.',
+          },
+          {
+            type: 'note',
+            title: 'Track the two counselling processes separately',
+            text: 'INI-CET and NEET PG run distinct counselling with distinct rounds, timelines and rules — and a decision in one can constrain your options in the other. Understanding both before either result arrives is worth an evening, and it prevents choices made in a hurry that are difficult to unwind.',
+          },
         ],
       },
       'study-material': {
@@ -906,6 +1320,36 @@ const medical = [
               'Past INI-CET papers specifically, not only NEET PG ones.',
               'Full-length mocks with attempt rate tracked as a headline number.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Standard textbooks — the depth source',
+                'At least in the subjects where you are already competitive, since that is where an additional layer converts into marks most reliably. Summaries cover the topics INI-CET asks about; textbooks cover the level at which it asks about them.',
+              ],
+              [
+                'A question bank worked under the correct deduction',
+                'Practising with the one-third deduction applied from the beginning, so that the attempt threshold becomes instinct rather than arithmetic performed under pressure.',
+              ],
+              [
+                'A current-advances source, checked regularly',
+                'Small, specific and consistently examined. It is the one component that no textbook supplies and that no amount of depth compensates for.',
+              ],
+              [
+                'INI-CET past papers, kept separate',
+                'Fewer than the NEET PG archive and the only material that demonstrates this examination’s characteristic phrasing and depth. Worth reserving some for late practice rather than working through them all early.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Choosing where to upgrade is a real decision rather than an instruction to read everything at textbook depth, which is not achievable alongside clinical work. The productive rule is to deepen the subjects you are already strong in — where you are competing near the top of the field and where the extra layer separates you — and to keep summary-level coverage in the subjects where you are still building basic competence.',
+          },
+          {
+            type: 'note',
+            title: 'Track attempt rate as a headline number in every mock',
+            text: 'Not as one metric among several. For this examination specifically, the gap between a candidate’s knowledge and their score is most often an attempt-rate gap rather than a knowledge gap, and putting the number at the top of your mock log is what keeps it visible enough to correct.',
           },
         ],
       },

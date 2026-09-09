@@ -129,6 +129,15 @@ const police = [
             type: 'p',
             text: 'The consistent pattern across police papers is that general knowledge carries the largest share and arithmetic the smallest. Candidates arriving from SSC or banking preparation, where quantitative aptitude dominates, routinely mis-weight their study — and general knowledge is precisely the section that most rewards steady daily effort.',
           },
+          {
+            type: 'p',
+            text: 'The consistent weighting across police papers is worth stating as a planning rule rather than an observation: general knowledge carries the most marks, reasoning and arithmetic are speed sections at school level, and the language paper is the one most candidates concede without trying. A study plan that mirrors those proportions — general knowledge as the largest daily block, the others as fluency projects — is better matched to almost every police recruitment than an evenly divided one.',
+          },
+          {
+            type: 'note',
+            title: 'The state layer is the part national material cannot supply',
+            text: 'A general knowledge book will cover Indian history, geography and polity thoroughly and your state’s districts, rivers, festivals and administrative structure not at all. For a state recruitment that content is a real block of marks, and it has to be built from your state board’s textbooks and from past papers of your own recruitment.',
+          },
         ],
       },
       'exam-pattern': {
@@ -180,6 +189,25 @@ const police = [
             title: 'Standards are specific — read the ones that apply to you',
             text: 'Every figure above varies by force, post, gender, category and region. A candidate training to a distance or a height standard read in a general guide may be training to the wrong number. The notification for your specific recruitment is the only reliable source.',
           },
+          {
+            type: 'p',
+            text: 'The proportions across the four stages explain why so many well-prepared candidates do not reach appointment. The written paper is designed to be clearable, because these recruitments fill large numbers of posts from very large applicant pools. The physical efficiency test removes candidates whose training started too late. The medical removes candidates for conditions that were identifiable at the outset. Effort allocated as though the written paper were the examination is allocated backwards.',
+          },
+          {
+            type: 'steps',
+            title: 'The order in which to settle each stage',
+            items: [
+              { title: 'Medical standards, in week one', text: 'Vision and colour perception, orthopaedic conditions, body marks and tattoos. Several are checkable by a candidate willing to look, and none of them responds to preparation later.' },
+              { title: 'Physical standards, in week one', text: 'Height and chest against the figures for your category and region. Fixed, published, and worth knowing before you commit months.' },
+              { title: 'Physical training, from week one', text: 'Running first, then the events your recruitment requires. It builds over months and cannot be compressed after a written result.' },
+              { title: 'The written paper, over three months', text: 'General knowledge as the main project, arithmetic and reasoning as fluency work, the language section as a modest daily habit.' },
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Every figure varies — find yours',
+            text: 'Running distances and timings, jump and throw standards, height and chest measurements and the relaxations available all differ by force, post, gender, category and region. Figures circulated online are a poor substitute for the table in your own recruitment’s notification. Write down the row that applies to you and train against those numbers.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -214,6 +242,30 @@ const police = [
               { label: 'UPSC CAPF guide', to: '/government-exams/upsc/capf/' },
               { label: 'State government exams', to: '/government-exams/state/' },
             ],
+          },
+          {
+            type: 'list',
+            title: 'The state-specific content that recurs',
+            items: [
+              { text: 'Districts, divisions and administrative structure', note: 'the geography of the state as an administrative entity, which is asked directly and is entirely learnable from a single sheet.' },
+              { text: 'Rivers, physical features and major towns', note: 'stable material that repeats across cycles with very little variation.' },
+              { text: 'State history and prominent figures', note: 'the state’s own historical episodes, dynasties and freedom movement contributors, which national material treats only in passing if at all.' },
+              { text: 'Festivals, dances, crafts and cultural markers', note: 'a small, finite pool that recurs and that most candidates never prepare deliberately.' },
+              { text: 'State schemes and current developments', note: 'requiring a state news source alongside national current affairs.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Extracting those questions from past papers of your own recruitment into one sheet is the single most efficient exercise available in a state police preparation. It takes an afternoon, it produces a document short enough to revise weekly, and it covers a block of marks that the field largely concedes because no widely available book addresses it.',
+          },
+          {
+            type: 'p',
+            text: 'Solve the arithmetic sections on paper without a calculator, and note whether your errors are method failures or slips. Police arithmetic sits at school level, which means the marks are usually lost to carelessness rather than to difficulty — a finding that points at reading discipline and mental arithmetic practice rather than at more study.',
+          },
+          {
+            type: 'note',
+            title: 'Use papers from your own recruitment first',
+            text: 'Police papers differ meaningfully between forces and states in weighting, in language options and in whether legal awareness is included. Working papers from a neighbouring state or a different force builds general familiarity and can misrepresent both the level and the content mix of the paper you will actually sit.',
           },
         ],
       },
@@ -256,6 +308,25 @@ const police = [
               { label: 'Topic and sectional practice', to: '/practice/' },
             ],
           },
+          {
+            type: 'steps',
+            title: 'A weekly routine across both tracks',
+            items: [
+              { title: 'Two timed written sessions', text: 'In the proportions your paper uses, with the correct deduction applied. Enough to keep the material sharp without letting written practice crowd out the training.' },
+              { title: 'Running on most days', text: 'Progressing towards the prescribed distance and time with margin rather than exactly meeting it. A candidate who can just meet the standard in training frequently misses it at the rally.' },
+              { title: 'Event practice where required', text: 'Long jump, high jump, shot put or strength events. These are technique as well as fitness, and a few sessions of actual event practice are worth more than general conditioning.' },
+              { title: 'Daily general knowledge and state content', text: 'Short frequent passes over themed sheets, since both are recall-based and respond to frequency rather than duration.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Build the training gradually, because injury is a real and common way to lose a recruitment cycle. Candidates who start late and then add distance quickly are the ones who develop the shin and knee problems that cost them the training months they were trying to make up. Starting in week one at a modest distance is both safer and faster than starting in month three at an ambitious one.',
+          },
+          {
+            type: 'note',
+            title: 'Keep the training log beside the mock scores',
+            text: 'Candidates who track their study and treat training as something that happens when there is time reliably let the training slip first. Recording running distances and times week by week, in the same place as your written practice, is a small administrative habit that protects the stage where written preparation counts for nothing.',
+          },
         ],
       },
       preparation: {
@@ -294,6 +365,36 @@ const police = [
               { text: 'To training injuries', note: 'caused by building distance too quickly after starting late.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'The medical check — an hour, in week one',
+                'Vision and colour perception, orthopaedic conditions such as flat feet and knock knees, and the rules on body marks and tattoos. Several are identifiable in advance, and identifying one at the start is entirely different from meeting it at a medical board after a year.',
+              ],
+              [
+                'The physical track — months, without interruption',
+                'Running from week one, events layered on later, and never paused during written preparation. Fitness lost over a two-month study block is not recovered in the weeks between the written result and the physical test.',
+              ],
+              [
+                'General knowledge — the largest written block',
+                'Forty minutes daily, organised as themed sheets and revised weekly. It carries more marks than any other section and it is where a candidate starting from nothing gains most.',
+              ],
+              [
+                'The state layer — from week two',
+                'Built from your own recruitment’s past papers and your state board’s textbooks, revised as a single sheet. Small, finite and largely uncontested.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Because police recruitment covers many different forces and posts, the candidate who reads their own notification carefully has a real advantage over one working from general advice. Which subjects appear, whether legal awareness is included, which languages are offered, what the physical events are and what the medical standards require all vary — and every one of those is settled by a document that takes an evening to read properly.',
+          },
+          {
+            type: 'note',
+            title: 'Weight general knowledge above quantitative aptitude',
+            text: 'It runs against the instinct of anyone who has prepared for banking or graduate-level examinations, and it follows directly from the mark distribution. In most police papers general knowledge is the largest section and arithmetic is a moderate one at school level — which means the marginal hour is worth considerably more in the first than in the second.',
+          },
         ],
       },
       'study-material': {
@@ -330,6 +431,40 @@ const police = [
               'Learn the state’s districts, rivers, major festivals and administrative structure — these recur.',
               'Follow state-level news alongside national current affairs.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'General knowledge — the priority, kept as sheets',
+                'History with the freedom movement emphasised, polity, geography, general science, static knowledge and current affairs. One page per theme, revised weekly, because sheets get revised and books get intended.',
+              ],
+              [
+                'The state layer — built from local sources',
+                'Your state board’s textbooks for history, geography and culture, plus a sheet of districts, rivers, festivals and administrative structure drawn from past papers.',
+              ],
+              [
+                'Arithmetic and reasoning — fluency projects',
+                'School-level content practised for speed and accuracy rather than studied for depth. On paper, without a calculator, against a clock.',
+              ],
+              [
+                'Language — a modest daily habit',
+                'Comprehension, grammar and vocabulary in whichever language your recruitment offers. A section commonly conceded and readily improved.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The material for police recruitment overlaps almost completely with what serves SSC GD, RPF and other constable-level examinations, which is worth knowing if you are sitting more than one. Maintaining a single set of themed general knowledge sheets and one arithmetic source, rather than parallel material per recruitment, halves the revision burden without reducing coverage — and the only recruitment-specific document you genuinely need is the state sheet.',
+          },
+          {
+            type: 'note',
+            title: 'Follow state news alongside national current affairs',
+            text: 'State schemes, appointments and developments appear in state recruitment papers and in no national compilation. Ten minutes a day with a state news source, with anything notable added to your state sheet, covers a category of questions that most candidates meet unprepared.',
+          },
+          {
+            type: 'p',
+            text: 'On sequencing the material across a preparation: begin the general knowledge sheets and the physical training in the same week, because both are cumulative and neither can be compressed later. Add the state layer in the second week, once you have read your recruitment’s notification and know how much of it applies. Treat arithmetic and reasoning as finite projects with a beginning and an end — built to reliable accuracy over two or three months, then maintained with weekly practice. Keep the language section as a short daily habit throughout rather than a phase. That division between the habits and the projects is what leaves the final month free for timed mocks and revision rather than for material that should have been finished earlier.',
           },
         ],
       },

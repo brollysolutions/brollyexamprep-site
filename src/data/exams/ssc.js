@@ -219,6 +219,27 @@ const ssc = [
               { label: 'Quantitative aptitude study material', to: '/study-material/quantitative-aptitude/' },
             ],
           },
+          {
+            type: 'p',
+            text: 'Treat Tier 1 and Tier 2 papers as two different archives. Tier 1 papers age well: the section structure has been stable for years, so a paper from several cycles back still describes the exam you will sit. Tier 2 papers do not age as gracefully, because the commission has merged papers, added a computer module and changed how sessions are timed. Older Tier 2 sets remain excellent for the mathematics and English content itself, but do not use them to rehearse the format.',
+          },
+          {
+            type: 'list',
+            title: 'Two kinds of paper, and the difference matters',
+            items: [
+              { text: 'Official papers released by the commission', note: 'accurate question text, accurate options, and a tentative answer key published alongside. These are what your topic counts should be built from.' },
+              { text: 'Memory-based papers reconstructed after the exam', note: 'useful for a rough sense of difficulty, but the wording drifts and the options are often wrong. Never let a memory-based key convince you that a method you trust is mistaken.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The tentative answer key is worth using deliberately rather than glancing at. When your answer differs from the key, work out which of three things happened: you made an arithmetic slip, you used a method that does not generalise, or you were right and the key is wrong — which does occur, and is the reason the commission runs a challenge window at all. Sorting your disagreements into those three piles teaches more than re-solving the paper does.',
+          },
+          {
+            type: 'note',
+            title: 'How many years is enough',
+            text: 'Four or five recent cycles is the point of diminishing returns for topic counting — enough for a pattern to be visible, recent enough that the pattern still holds. Going back a decade adds volume without adding information, and it pulls in questions written against a syllabus and a difficulty level the commission has since moved away from.',
+          },
         ],
       },
       'mock-tests': {
@@ -264,6 +285,32 @@ const ssc = [
               { label: 'All free mock tests', to: '/mock-tests/free/' },
               { label: 'Sectional and topic tests', to: '/practice/' },
             ],
+          },
+          {
+            type: 'p',
+            text: 'Tier 2 needs its own mock practice, and starting it only after the Tier 1 result is the most common scheduling mistake in this exam. The gap between the two stages is short, the mathematics is deeper, and the modules are separately timed — so a candidate who has only ever practised the open sixty-minute Tier 1 format arrives at Tier 2 having never rehearsed the constraint that actually binds there. Sit at least a few Tier 2 papers while you are still preparing for Tier 1.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Full-length mocks',
+                'Measure pacing, stamina and decision-making under a clock. These are the only tests that tell you what your score would be tomorrow. Because each one costs a full sitting plus an hour of analysis, one or two a week is usually the right rate — more than that and the analysis quietly stops happening.',
+              ],
+              [
+                'Sectional tests',
+                'Measure one subject at a time, which is what you want while you are still building. A twenty-minute reasoning set gives cleaner feedback about reasoning than a full mock does, because nothing else is competing for your attention.',
+              ],
+              [
+                'Topic tests',
+                'Measure whether a specific topic has actually landed. Use one immediately after finishing a topic, then again three weeks later. The second attempt is the informative one.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'When your mock score stops moving',
+            text: 'A plateau after several mocks almost never means you have reached your ceiling. It usually means your analysis has become a scoring ritual rather than a diagnosis. If three consecutive mocks produce the same score, stop taking them for two weeks, work only on the topics your error log names most often, and then re-test.',
           },
         ],
       },
@@ -343,6 +390,40 @@ const ssc = [
           {
             type: 'p',
             text: 'General awareness deserves a different handling from the rest. It does not reward deep study; it rewards repeated light contact with the same material. One static source revised five times will beat five sources read once, and the same is true of current affairs digests.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Quantitative aptitude',
+                'The largest and most durable investment. Arithmetic first, to fluency, because Tier 1 leans on it and Tier 2 assumes it. Then algebra, geometry, trigonometry and mensuration, which is where Tier 2 separates candidates. Work problems rather than reading worked examples — the two feel similar and are not.',
+              ],
+              [
+                'English',
+                'A daily habit rather than a subject to be finished. Grammar rules are a closed set and can be learned in weeks; vocabulary and reading speed only respond to repeated exposure over months, which is why starting English late is so hard to recover from.',
+              ],
+              [
+                'General awareness',
+                'Breadth over depth, revision over study. Static knowledge — polity, history, geography, general science — repeats far more reliably across cycles than current affairs does, so weight your time accordingly.',
+              ],
+              [
+                'Reasoning',
+                'The fastest section to convert into marks. Most of what Tier 1 asks is pattern recognition that improves quickly with volume, and non-verbal reasoning in particular rewards practice on paper rather than theory.',
+              ],
+              [
+                'Computer knowledge (Tier 2)',
+                'A small, finite module with no conceptual difficulty. It is fully learnable in a few weeks and is among the highest returns per hour available anywhere in this exam.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The two specialist Tier 2 papers need a separate decision, and it should be made early rather than at the application stage. Paper 2 in statistics and Paper 3 in finance and economics are taken only by candidates applying for Junior Statistical Officer and for Assistant Audit Officer or Assistant Accounts Officer respectively. Each is a genuine additional subject with its own reading, so opting for those posts means adding months of preparation — worth it if the post is what you want, wasteful if you added the preference casually.',
+          },
+          {
+            type: 'note',
+            title: 'On making your own notes',
+            text: 'The most useful set of notes in this preparation is the shortest one: a personal sheet of the formulas, rules and facts that you specifically keep forgetting. It grows from your error log rather than from a syllabus, which means it is different from anybody else’s and is the only document worth re-reading in the final week.',
           },
         ],
       },
@@ -480,6 +561,25 @@ const ssc = [
             type: 'p',
             text: 'One practical note on scope. CHSL quantitative aptitude stays close to arithmetic and school-level algebra and geometry; the advanced mensuration and trigonometry that dominate CGL Tier 2 do not carry the same weight here. If your time is limited, arithmetic fluency and error-free English will move your score further than advanced mathematics will.',
           },
+          {
+            type: 'list',
+            title: 'Where CHSL and CGL genuinely diverge',
+            items: [
+              { text: 'Mathematics depth', note: 'CHSL stays close to arithmetic and school algebra. The advanced trigonometry and coordinate geometry that decide CGL Tier 2 are not where CHSL marks live.' },
+              { text: 'English weighting', note: 'proportionally larger in CHSL, because the sections are equal in size and the mathematics is shallower. English is the most reliable place to build a lead.' },
+              { text: 'The skill test', note: 'CHSL has a typing or data entry requirement with no CGL equivalent, and it is part of the syllabus in every practical sense even though it carries no marks.' },
+              { text: 'Question framing', note: 'CHSL questions are more often single-step. A CGL-trained candidate will find them easy and should convert that into speed rather than into complacency.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Within general awareness, the CHSL syllabus wording — history, culture, geography, economic scene, general polity and scientific research — is broad enough to be unhelpful as a study plan. Past papers narrow it considerably: Indian polity and the freedom movement recur, general science stays at school level, and static items such as important days, national parks, classical dances and major awards appear far more often than the phrase about current events would suggest.',
+          },
+          {
+            type: 'note',
+            title: 'Read the syllabus once, then stop',
+            text: 'The CHSL syllabus is short, and re-reading it does not produce insight. After one careful pass, switch to past papers for guidance on weighting — they answer the question the syllabus cannot, which is not what may be asked but what usually is.',
+          },
         ],
       },
       'exam-pattern': {
@@ -524,6 +624,24 @@ const ssc = [
             title: 'Confirm the speed thresholds',
             text: 'The exact words-per-minute and key-depressions-per-hour thresholds, and the relaxations available to candidates with disabilities, are set out in the notification and have been revised between cycles. Do not train to a number you read in an old guide.',
           },
+          {
+            type: 'p',
+            text: 'Because Tier 1 has no sectional timing, the order in which you attempt the four sections is a decision to make before the exam rather than during it. One ordering that works is general awareness first, because it is pure recall and costs almost nothing in time; then English, which is quick if your grammar is solid; then reasoning; and quantitative aptitude last, where whatever minutes remain are most usefully spent. The point is not this particular order but having one at all — candidates who improvise the sequence lose several minutes simply deciding.',
+          },
+          {
+            type: 'steps',
+            title: 'How the sixty minutes usually break down',
+            items: [
+              { title: 'First pass, roughly forty minutes', text: 'Answer everything you can do confidently, in your chosen section order, marking anything that needs a second look rather than fighting it.' },
+              { title: 'Second pass, roughly fifteen minutes', text: 'Return to the marked questions, working the ones where you have narrowed the options rather than the ones that are simply hard.' },
+              { title: 'Final minutes', text: 'Decide the remaining guesses deliberately. With half a mark deducted for an error, a two-option guess is worth taking and a four-option guess is not.' },
+            ],
+          },
+          {
+            type: 'note',
+            title: 'The skill test is pass or fail, not a score',
+            text: 'It is easy to misread a qualifying requirement as a soft one. The typing and data entry tests add nothing to your merit position, but failing one removes you from the process entirely, no matter how well the written tiers went. That asymmetry — no upside, complete downside — is exactly why it deserves regular practice from the start rather than a fortnight of panic at the end.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -555,6 +673,29 @@ const ssc = [
               { label: 'English study material', to: '/study-material/english/' },
               { label: 'Free mock tests', to: '/mock-tests/free/' },
             ],
+          },
+          {
+            type: 'list',
+            title: 'What repeats most reliably in CHSL papers',
+            items: [
+              { text: 'One-word substitutions and idioms', note: 'a finite, heavily recycled pool. Extracting them across four years produces a list short enough to actually memorise, and it pays every cycle.' },
+              { text: 'Spelling and error-spotting patterns', note: 'the same grammar rules tested through different sentences — subject-verb agreement, prepositions, articles and tense consistency account for most of it.' },
+              { text: 'Arithmetic shapes', note: 'percentage change, profit and loss with successive discounts, simple two-worker time and work, ratio splits, averages with a replaced element. Five or six shapes cover a large share of the section.' },
+              { text: 'Static general awareness', note: 'first-in-India facts, constitutional articles, national symbols, important days, dance forms and classical instruments, major awards. These recur across CHSL, MTS and GD papers alike.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'A practical way to run this is to keep three files rather than one. The first is a vocabulary list, added to from every paper and revised weekly. The second is an arithmetic shapes file, where you write the shape rather than the question — successive discount, find the single equivalent — with one worked instance beneath it. The third is a general awareness list grouped by theme. None of the three is a paper you re-solve; all three are documents you re-read.',
+          },
+          {
+            type: 'p',
+            text: 'Sequencing matters as much as method. Untimed solving comes first, while you are still using papers to learn what is asked; timed solving comes last, in the final six weeks, when the papers stop being a syllabus and become a rehearsal. Reversing that order is the usual mistake — it produces early scores that feel discouraging and teach very little, because you cannot pace a paper whose contents you have not yet mapped.',
+          },
+          {
+            type: 'note',
+            title: 'Keep two papers unopened',
+            text: 'Set aside the two most recent papers and do not look at them until the last fortnight. Everything else you work through will be partly memorised by then; those two are the only honest measurement you will have left of where you actually stand.',
           },
         ],
       },
@@ -592,6 +733,26 @@ const ssc = [
               { label: 'SSC CGL mock test', to: '/mock-tests/ssc-cgl/' },
             ],
           },
+          {
+            type: 'steps',
+            title: 'A mock cycle that produces improvement',
+            items: [
+              { title: 'Sit the paper properly', text: 'Sixty minutes, one sitting, no pauses and nothing looked up. A mock taken in fragments measures nothing you can use.' },
+              { title: 'Score it before you read any solution', text: 'Write down the raw score and, separately, your attempt count and your accuracy. Those two numbers explain the score better than the score explains itself.' },
+              { title: 'Sort every error into one of three piles', text: 'A concept you do not know, a concept you know but applied carelessly, or a question you should have skipped. The three call for completely different responses.' },
+              { title: 'Act on the largest pile only', text: 'Fixing the biggest category is what moves the next score. Spreading effort evenly across all three is why analysis so often produces no visible gain.' },
+              { title: 'Log it and move on', text: 'One line per mock: date, score, attempts, accuracy, biggest error category. After six mocks that log tells you more than any individual paper did.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Sectional practice deserves more of your week than full mocks do, at least until the final month. A full mock costs ninety minutes with analysis and tells you about four subjects at once, which is exactly the wrong resolution while you are still building any one of them. Twenty-minute sectional sets give sharper feedback, fit into an ordinary evening, and can be repeated on the same topic until the accuracy actually shifts.',
+          },
+          {
+            type: 'note',
+            title: 'Practise typing on the same schedule',
+            text: 'Ten minutes of typing practice on the days you take a mock costs almost nothing and keeps the skill test from becoming a separate project later. Speed built in small daily increments holds up under exam nerves in a way that speed built in a final fortnight does not.',
+          },
         ],
       },
       preparation: {
@@ -628,6 +789,32 @@ const ssc = [
             type: 'p',
             text: 'A realistic timeline for a first-time candidate studying consistently is four to six months, assuming school mathematics is intact. If it is not, add a month at the start for arithmetic fundamentals rather than trying to repair them while also practising for speed.',
           },
+          {
+            type: 'p',
+            text: 'The competition arithmetic for CHSL is worth stating plainly, because it explains why the advice above is narrower than most study plans. A very large number of applicants sit this exam, the syllabus is shallow enough that many of them know most of the material, and the paper is short. Scores therefore bunch tightly and the merit position turns on a handful of marks. That is why speed, a disciplined skip and one section you are genuinely strong in matter more here than raw coverage does — coverage is table stakes.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'If you have six months or more',
+                'Build properly. English and arithmetic from the first week, general awareness as a daily habit from the second month, reasoning as a short intensive project, and full mocks only in the last two months. Typing practice ten minutes a day throughout.',
+              ],
+              [
+                'If you have three months',
+                'Drop the ambition to cover everything. Fix English grammar, drill the arithmetic shapes that past papers show recurring, revise static general awareness in short daily passes, and practise reasoning for speed. Two mocks a week from week four.',
+              ],
+              [
+                'If you have one month',
+                'Stop studying new material. Work past papers, your own error log and static general awareness, and take mocks under real timing. Typing practice becomes daily and non-negotiable, because it is the one requirement that cannot be improvised.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Applying for CGL as well',
+            text: 'Many candidates sit CHSL and CGL in the same year, and the overlap makes that sensible. Prepare at CGL depth for the shared subjects if you are serious about both, but keep the CHSL-specific work — typing speed and single-step arithmetic speed — running separately. The two exams reward different final months, and treating CHSL as a by-product of CGL preparation is how candidates end up under-prepared for the paper they were most likely to clear.',
+          },
         ],
       },
       'study-material': {
@@ -660,6 +847,36 @@ const ssc = [
               'Revise general awareness in short passes rather than long sittings; recall improves with frequency, not duration.',
               'Return to a finished topic after three days and again after two weeks.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'English — the highest-return subject here',
+                'Grammar rules first, because they are finite and transfer to every question type. Then a running vocabulary list built from past papers rather than from a dictionary, revised weekly. Then one short comprehension passage a day for reading speed, which is the part that cannot be crammed.',
+              ],
+              [
+                'Quantitative aptitude — arithmetic to fluency',
+                'Percentage, ratio, average, profit and loss, simple and compound interest, time and work, time and distance, and basic mensuration. Fluency here means solving without writing intermediate steps, which is a different achievement from knowing the method.',
+              ],
+              [
+                'General awareness — revision, not study',
+                'Polity, the freedom movement, geography, school-level general science and static items. Read in short passes, frequently, and accept that the goal is recognition rather than understanding.',
+              ],
+              [
+                'Reasoning — volume over theory',
+                'Series, coding-decoding, analogy, classification, blood relations, direction sense and the non-verbal set. Almost all of it improves through repetition, and non-verbal questions in particular should be practised on paper where you can annotate the figures.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'One decision worth making early is which single source you will finish for each subject. CHSL candidates accumulate material easily — the syllabus is common enough that free notes are everywhere — and the accumulation itself becomes the problem. Three half-read books on quantitative aptitude leave you with three partial mental models of the same topic. One finished source, worked twice, leaves you with one reliable one.',
+          },
+          {
+            type: 'note',
+            title: 'What to carry into the final fortnight',
+            text: 'By the last two weeks your reading list should be down to three documents: your own error log, your vocabulary list and your static general awareness sheet. Anything longer than that will not be read carefully, and re-reading a full textbook at that stage displaces the revision that actually moves marks.',
           },
         ],
       },
@@ -794,6 +1011,25 @@ const ssc = [
             type: 'p',
             text: 'A note on scope creep. Material marketed for SSC CGL will take you far past what MTS asks, particularly in algebra, trigonometry and advanced mensuration. Time spent there is time not spent on the arithmetic accuracy and general awareness breadth that actually determine an MTS result.',
           },
+          {
+            type: 'list',
+            title: 'What the syllabus wording hides',
+            items: [
+              { text: 'Fundamental arithmetical operations', note: 'means speed, not scope. The operations are the ones you learned at school; what is being examined is whether you can perform them accurately under a clock without a calculator.' },
+              { text: 'Everyday knowledge of the environment and its application to society', note: 'is the general awareness section, and in practice it means school-level science, Indian polity basics, geography, the freedom movement and static items such as important days and national symbols.' },
+              { text: 'Basic English comprehension', note: 'is genuinely basic — articles, prepositions, tenses, common vocabulary and a short passage. It is the section most candidates concede without trying, which is precisely why it is worth attempting.' },
+              { text: 'Problem solving and analysis', note: 'in the reasoning section is mostly pattern work: series, analogy, classification, coding and simple figure-based questions rather than anything abstract.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Session I and Session II are not merely different subjects; they reward different preparation. Session I is a speed test on material you already broadly know, so preparation there means drilling until the arithmetic is automatic. Session II is a knowledge test on material you may not know at all, so preparation there means accumulation — a little every day, revised often. Studying both the same way is the most common reason MTS scores stall.',
+          },
+          {
+            type: 'note',
+            title: 'Choosing your language section',
+            text: 'Where the paper offers a language choice, pick the one you read fastest, not the one you believe looks better. Comprehension under time pressure is a reading-speed problem before it is a grammar problem, and a candidate reading comfortably in their stronger language will finish the section with minutes to spare that can go to arithmetic.',
+          },
         ],
       },
       'exam-pattern': {
@@ -835,6 +1071,26 @@ const ssc = [
             title: 'Pattern revisions',
             text: 'SSC has changed the MTS structure more than once in recent years, including how the sessions are split and what each contains. Read the pattern section of the current notification rather than relying on a guide written for an earlier cycle.',
           },
+          {
+            type: 'steps',
+            title: 'How to sit the two sessions',
+            items: [
+              { title: 'Session I — first pass', text: 'Move through the arithmetic and reasoning answering only what you can do quickly, marking anything that will take real work.' },
+              { title: 'Session I — second pass', text: 'Return to the marked questions with whatever time is left, working the reasoning ones first since they usually resolve faster than a long calculation.' },
+              { title: 'Session I — last sixty seconds', text: 'Fill every remaining blank. With no deduction applied, an unanswered question is strictly worse than a random one, and this single habit is worth several marks.' },
+              { title: 'Session II — answer what you know', text: 'General awareness is recall: you either have the fact or you do not, and staring at a question you do not know costs time without changing the outcome.' },
+              { title: 'Session II — guess only after narrowing', text: 'Once a deduction applies, a guess between two plausible options is reasonable and a guess across all four is not.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Forty-five minutes per session sounds generous until you sit one. The sessions are short enough that a single stubborn question can distort the whole result, and long enough that concentration genuinely lapses in the middle. Practising in forty-five minute blocks, rather than in whatever time you happen to have free, is the closest thing to a free mark available in this preparation.',
+          },
+          {
+            type: 'note',
+            title: 'For Havaldar applicants',
+            text: 'The physical efficiency and standard tests apply only to Havaldar posts in the CBIC and the Narcotics Control Bureau, and they follow the written result closely. If you have applied for those posts, physical preparation is not a later phase — it runs in parallel from the day you start, because the interval between the written result and the test is not long enough to build fitness from a standing start.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -867,6 +1123,31 @@ const ssc = [
               { label: 'Quantitative aptitude notes', to: '/study-material/quantitative-aptitude/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'The arithmetic shapes that recur most',
+            items: [
+              { text: 'Percentage increase and decrease', note: 'including successive changes, and the reverse question that gives you the final value and asks for the original.' },
+              { text: 'Profit, loss and discount', note: 'usually single-step, occasionally with a discount applied on a marked price.' },
+              { text: 'Simple averages with one value replaced', note: 'a shape that appears in some form in nearly every cycle.' },
+              { text: 'Ratio and proportion splits', note: 'dividing an amount among two or three people in a given ratio.' },
+              { text: 'Time and work, and time and distance', note: 'two workers or two vehicles, rarely more, and almost never with a twist.' },
+              { text: 'LCM and HCF applications', note: 'bells ringing together, tiles fitting a floor, and the standard remainder questions.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'That list is short on purpose, and it is the most useful thing past MTS papers give you. The syllabus implies a wide arithmetic landscape; the papers show a narrow one, visited repeatedly. A candidate who can do those six shapes quickly and accurately, without a calculator and without writing much down, has covered most of what Session I will ask.',
+          },
+          {
+            type: 'p',
+            text: 'The general awareness questions repeat differently — not the same questions, but the same themes, and the pool is small enough that building your list from the papers themselves is more efficient than reading a general knowledge book cover to cover. Constitutional basics, national symbols, first-in-India facts, major festivals and dance forms, important days and school-level science appear again and again across MTS, GD and CHSL papers alike, which means work you do here transfers if you sit more than one of them.',
+          },
+          {
+            type: 'note',
+            title: 'Papers written for an older structure',
+            text: 'SSC has revised the MTS pattern more than once, including how the two sessions are organised and where negative marking applies. Older papers remain perfectly good for content and for arithmetic practice, but check which structure a paper was written for before using it to rehearse timing — practising the wrong session length trains a pace you will not be able to use.',
+          },
         ],
       },
       'mock-tests': {
@@ -897,6 +1178,26 @@ const ssc = [
               { label: 'All free mock tests', to: '/mock-tests/free/' },
               { label: 'Topic and sectional practice', to: '/practice/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'Running an MTS mock properly',
+            items: [
+              { title: 'Time the sessions separately', text: 'Forty-five minutes, stop, short break, forty-five minutes. Merging them rehearses a freedom the real exam does not give you.' },
+              { title: 'Count your Session I blanks first', text: 'Before looking at the score, count unanswered questions in Session I. The target is zero, every time, and this is the fastest score improvement available to most candidates.' },
+              { title: 'Separate accuracy from attempts in Session II', text: 'A high attempt count with mediocre accuracy is a losing pattern once a deduction applies, and the raw score alone will not show you that.' },
+              { title: 'Time the arithmetic on its own', text: 'Note how many minutes the arithmetic took. If it ate most of Session I, the fix is fluency drilling rather than more mocks.' },
+              { title: 'Keep a one-line log', text: 'Date, both session scores, Session I blanks, Session II accuracy. Six lines of that log will show you a trend that six individual mocks will not.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Two mocks a week is a sensible ceiling, and one a week with careful analysis beats three taken and skimmed. The value of a mock lies almost entirely in what you do in the hour after it, and candidates who take mocks daily are usually substituting the comfortable feeling of activity for the uncomfortable work of correction.',
+          },
+          {
+            type: 'note',
+            title: 'Practise in your exam language',
+            text: 'If you intend to sit the paper in a regional language, take every mock in that language too. Switching languages between practice and the real paper costs reading speed at exactly the moment you cannot afford it, and the vocabulary used in general awareness questions is not always intuitive in translation.',
           },
         ],
       },
@@ -933,6 +1234,36 @@ const ssc = [
             type: 'p',
             text: 'Three to four consistent months is a realistic preparation window for a candidate whose school arithmetic is intact. Consistency matters far more than intensity here — the sections that decide MTS results all respond to daily contact rather than to long weekend sessions.',
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'The no-deduction habit',
+                'In Session I every blank is a mark discarded. Build the habit now: in practice, never leave a Session I question unanswered, even in an untimed set. Habits formed in practice are what survive exam nerves.',
+              ],
+              [
+                'Arithmetic without a calculator',
+                'Every practice session, on paper, from the first day. MTS partly measures mental speed, and a calculator quietly removes the exact skill the paper is testing.',
+              ],
+              [
+                'General awareness as a daily drip',
+                'Fifteen to twenty minutes daily, revised in short passes. This is the section with the most headroom for a candidate starting from nothing, and the one most often abandoned.',
+              ],
+              [
+                'The language section',
+                'A short passage a day. Twenty questions is a fifth of the paper, and conceding a fifth of the paper is a much larger decision than it feels like at the time you make it.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'On what consistency means in practice: two focused hours a day for three months will do more for an MTS candidate than six-hour days taken in bursts and abandoned. The material is not deep enough to reward marathon sessions, and the skills that matter — arithmetic fluency, general awareness recall, reading speed — all improve with frequency rather than duration. Daily and modest beats intense and intermittent for every one of them.',
+          },
+          {
+            type: 'note',
+            title: 'Havaldar applicants — check the standards early',
+            text: 'If Havaldar posts are among your preferences, read the physical and medical standards in the notification during your first week of preparation rather than after the written result. Candidates occasionally discover a disqualifying condition at the medical stage that a routine check months earlier would have identified, when there was still time to decide whether to apply for the non-physical posts instead.',
+          },
         ],
       },
       'study-material': {
@@ -965,6 +1296,36 @@ const ssc = [
               'Practise reasoning against a clock from the beginning — it is a speed section, not a knowledge section.',
               'Read one short English passage a day; comprehension improves with exposure more than with rules.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Arithmetic — the core',
+                'Work the topics in order rather than jumping to whichever looks hardest. Number systems, LCM and HCF, fractions and decimals, percentage, ratio, average, profit and loss, interest, time and work, and time and distance. Each one to the point where you solve without writing intermediate steps.',
+              ],
+              [
+                'Reasoning — practise, do not read',
+                'Series, analogy, classification, coding-decoding and the figure-based questions. Reasoning theory is thin and the returns come almost entirely from volume, so a page of questions is worth more than a chapter of explanation.',
+              ],
+              [
+                'General awareness — organise for revision',
+                'Keep it in themed lists rather than in continuous prose: constitutional basics, national symbols, first-in-India facts, dances and festivals, important days, school-level science. Lists can be revised in five minutes; chapters cannot.',
+              ],
+              [
+                'Language — little and often',
+                'One passage and one grammar point a day. Comprehension improves through exposure rather than through rules, and the rules that do matter here are a short list: articles, prepositions, tense agreement and common vocabulary.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'A caution about sources: material written for SSC CGL will take an MTS candidate a long way past what the paper asks, particularly in algebra and advanced mathematics, and the time it consumes comes directly out of general awareness and language — the two sections where an MTS candidate has the most to gain. If a chapter opens with quadratic identities or trigonometric ratios, it is not written for this exam.',
+          },
+          {
+            type: 'note',
+            title: 'One source per subject, finished',
+            text: 'Four subjects, four sources, each one completed and then revisited. That is the whole reading list. The temptation with a short syllabus is to collect more material than the exam needs, and the collecting reliably feels like progress while producing none.',
           },
         ],
       },
@@ -1101,6 +1462,25 @@ const ssc = [
             type: 'p',
             text: 'The mathematics section is worth a specific comment. It is elementary in scope but not in speed — twenty arithmetic questions in a shared hour means you cannot afford to derive anything from first principles. Fluency with percentage, ratio and average conversions is what makes this section quick, and it is the highest-return preparation in the whole paper.',
           },
+          {
+            type: 'list',
+            title: 'How the four sections actually behave',
+            items: [
+              { text: 'Reasoning is largely visual', note: 'series, analogy, classification, mirror and water images, embedded figures, paper folding. Much of it can be solved by annotating the figure rather than by reasoning it out abstractly, which is faster and more reliable under time pressure.' },
+              { text: 'General awareness is broad and shallow', note: 'nothing specialist is asked, but almost anything general can be. The pool is close to what MTS and CHSL draw on, so material prepared for one serves the others.' },
+              { text: 'Mathematics is arithmetic only', note: 'no algebra beyond the elementary, no trigonometry, no coordinate geometry. The difficulty is the clock, not the content.' },
+              { text: 'The language section is comprehension-led', note: 'a short passage plus grammar and vocabulary at matriculation level, in whichever of the offered languages you choose.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Because the paper is offered in several regional languages, the syllabus should be read alongside a decision you make once and then stop revisiting: which language you will sit in. That choice affects reading speed in the comprehension section and, less obviously, in the general awareness section too, where a question phrased in an unfamiliar register costs seconds you do not have. Make the decision early and practise in that language exclusively.',
+          },
+          {
+            type: 'note',
+            title: 'The syllabus is not the hard part',
+            text: 'Very little in the GD syllabus will be new to a candidate who finished school. What separates candidates is not knowledge of the topics but the ability to retrieve it in roughly forty-five seconds a question, and to keep doing so for a full hour. Read the syllabus once to confirm scope, then spend your time on speed and on general awareness accumulation.',
+          },
         ],
       },
       'exam-pattern': {
@@ -1141,6 +1521,25 @@ const ssc = [
             title: 'Confirm the standards that apply to you',
             text: 'PET distances and timings, and PST height and chest standards, vary by gender, by category and by whether the candidate comes from a region with relaxed standards. Because they differ between groups and have been revised between cycles, read the standards table in the current notification rather than training to a figure from a general guide.',
           },
+          {
+            type: 'p',
+            text: 'A useful way to think about the three stages is that each one removes a different kind of candidate. The CBT removes those who did not prepare academically. The PET and PST remove those who did not prepare physically, and they do so on standards published in advance, which makes those failures unusually avoidable. The medical removes those with conditions they often did not know they had — which is why reading the medical standards early is a practical step and not a formality.',
+          },
+          {
+            type: 'steps',
+            title: 'Sitting the sixty-minute CBT',
+            items: [
+              { title: 'Reasoning first', text: 'It is the fastest section for most candidates and banking it early builds the time cushion the mathematics section will need.' },
+              { title: 'General awareness second', text: 'Pure recall. Answer, skip or move on within a few seconds each; deliberating here never converts into a mark.' },
+              { title: 'Language third', text: 'The passage takes a fixed amount of reading time whatever you do, so give it a clean uninterrupted block rather than fragments.' },
+              { title: 'Mathematics last', text: 'This is where remaining minutes are most productively spent, because arithmetic questions genuinely reward the extra thirty seconds in a way recall questions do not.' },
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Standards differ, and yours are the only ones that matter',
+            text: 'PET distances and timings and PST measurements vary by gender, by category and in some cases by region, and relaxations apply to particular groups. Generic figures circulated online are a poor substitute for the table in the current notification. Find the row that applies to you, write it down, and train against that number rather than against a remembered one.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -1172,6 +1571,29 @@ const ssc = [
               { label: 'Free mock tests', to: '/mock-tests/free/' },
               { label: 'Police exam preparation', to: '/government-exams/police/' },
             ],
+          },
+          {
+            type: 'list',
+            title: 'What past GD papers reliably show',
+            items: [
+              { text: 'A fixed difficulty ceiling', note: 'the mathematics does not get harder from cycle to cycle. Once you can comfortably clear a paper from three years ago, the constraint that remains is speed rather than difficulty.' },
+              { text: 'A small set of reasoning figures', note: 'mirror images, water images, embedded figures, paper folding and completion of figures recur constantly, and each has a reliable method that takes an afternoon to learn.' },
+              { text: 'Recurring general awareness themes', note: 'the Constitution and its basics, the freedom movement, national symbols, sports and awards, school science, and Indian geography. Build your list from the papers rather than from a textbook.' },
+              { text: 'Predictable arithmetic', note: 'percentage, average, ratio, profit and loss, time and work, simple interest. The same handful of shapes as the other matriculation-level SSC papers.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The most valuable use of a GD paper is as a stopwatch exercise rather than a knowledge check. Solve the mathematics section alone against a clock and record the time; repeat weekly with a different paper. Watching that number fall from twenty-five minutes to fifteen is a more meaningful signal of readiness than a rising total score, because the total score will rise on its own once the time comes down.',
+          },
+          {
+            type: 'p',
+            text: 'Do the reasoning sections on paper rather than on a screen while you are still learning the figure types. Mirror-image and paper-folding questions become substantially easier when you can draw a fold line or mark a corner, and the habit of annotating carries over even when you later practise on a computer. Once the methods are solid, move to screen practice so that the CBT interface itself is familiar.',
+          },
+          {
+            type: 'note',
+            title: 'Papers in your chosen language',
+            text: 'Wherever past papers are available in the language you intend to sit in, use those rather than the English versions. The translation of technical and general awareness terms is not always the one you would guess, and meeting an unfamiliar rendering for the first time in the exam hall costs both time and confidence.',
           },
         ],
       },
@@ -1207,6 +1629,25 @@ const ssc = [
               { label: 'All free mock tests', to: '/mock-tests/free/' },
               { label: 'Topic and sectional practice', to: '/practice/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'What to do with each mock',
+            items: [
+              { title: 'Sit it in one uninterrupted hour', text: 'Eighty questions, sixty minutes, on a screen if possible, at roughly the time of day your slot falls.' },
+              { title: 'Record four numbers, not one', text: 'Score, attempts, accuracy and minutes spent on mathematics. The score alone conceals almost everything useful.' },
+              { title: 'Classify every error', text: 'Not known, known but rushed, or misread. Rushing and misreading are pacing problems and are fixed differently from gaps in knowledge.' },
+              { title: 'Fix one thing before the next mock', text: 'One topic, one habit. Taking the next mock without changing anything in between simply re-measures the same candidate.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Because a deduction applies for wrong answers, attempt count is a strategic decision rather than a measure of effort. A candidate attempting sixty-five questions at high accuracy will usually finish ahead of one attempting all eighty with a scatter of guesses. Use your mocks to find the attempt count at which your accuracy starts to fall, and then treat that as your working ceiling in the real paper.',
+          },
+          {
+            type: 'note',
+            title: 'Do not pause physical training for mock season',
+            text: 'The written result and the PET are not far apart, and fitness lost over a two-month study block is not recovered in the weeks between them. Three running sessions a week alongside mock practice is enough to hold the ground you have gained, and it costs less study time than most candidates assume.',
           },
         ],
       },
@@ -1244,6 +1685,32 @@ const ssc = [
               { text: 'Neglecting general awareness', note: 'the section where a modest daily habit produces the largest score improvement.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Running, from week one',
+                'The PET is a timed run and endurance builds on a scale of months, not weeks. Start at whatever distance you can currently manage and add gradually. A candidate who runs three times a week throughout their study period arrives at the PET prepared without ever having made it a separate project.',
+              ],
+              [
+                'General awareness, every day',
+                'The section with the widest gap between the prepared and the unprepared, and the one that responds fastest to a modest daily habit. Twenty minutes, themed lists, revised in short passes.',
+              ],
+              [
+                'Arithmetic against a clock, always',
+                'Never practise untimed after the first fortnight. The paper measures retrieval speed, and untimed practice trains a skill the exam does not test.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'One planning point specific to this recruitment: because SSC GD feeds several different forces, candidates often submit a preference order without reading what each force actually does or where it posts. That is worth an evening of research before you apply rather than after you are allotted. The written paper is common, but the working life at the end of it is not, and preferences submitted casually are difficult to revisit later.',
+          },
+          {
+            type: 'note',
+            title: 'A realistic timeline',
+            text: 'Three to four months of consistent daily study covers the written paper for a candidate whose school arithmetic is intact. The physical side is what sets the true timeline: if you are not currently running, give yourself six months so that endurance is built gradually rather than crammed, which is both safer and more reliable.',
+          },
         ],
       },
       'study-material': {
@@ -1276,6 +1743,36 @@ const ssc = [
               'Revise general knowledge in short daily passes rather than long weekly sessions.',
               'Practise reasoning figures on paper — visual reasoning is faster when you can annotate.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'General knowledge — the priority',
+                'Organised as themed lists rather than continuous reading: the Constitution and national symbols, the freedom movement, geography and rivers, sports and awards, important days, and school-level physics, chemistry and biology. Short, frequent revision passes beat long sittings for all of it.',
+              ],
+              [
+                'Elementary mathematics — fluency work',
+                'Percentage, average, ratio and proportion, profit and loss, simple interest, time and work, time and distance, and basic mensuration. The aim is not to learn methods you already know but to make them automatic.',
+              ],
+              [
+                'Reasoning — mostly figures',
+                'Learn the standard methods for mirror images, water images, embedded figures and paper folding, then practise volume. These question types are unusually mechanical once the method is known.',
+              ],
+              [
+                'Language — one passage a day',
+                'Comprehension, common grammar and vocabulary in your chosen language. Twenty questions is a full quarter of the paper and is well within reach of steady, modest practice.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Avoid material written for graduate-level SSC examinations. It is easy to find and it will hand you algebra, trigonometry and advanced reasoning that this paper does not ask for, at the cost of the breadth it does ask for. If a mathematics chapter opens with quadratic equations, it belongs to a different exam.',
+          },
+          {
+            type: 'note',
+            title: 'Keep one sheet for the final week',
+            text: 'By the last week you want a single sheet: the general knowledge facts you keep forgetting, the two or three arithmetic shapes that still slow you down, and the reasoning figure types you find least natural. Everything else has either landed or will not land in seven days, and a short sheet actually gets read.',
           },
         ],
       },
@@ -1417,6 +1914,15 @@ const ssc = [
             type: 'p',
             text: 'The practical implication of this syllabus is a study split most candidates get wrong. Paper 2 is worth as much as all four Paper 1 sections combined, and English is a subject that improves slowly through daily exposure rather than quickly through intensive revision. It should be the first thing you start and the last thing you stop.',
           },
+          {
+            type: 'p',
+            text: 'The two English syllabi are worth comparing side by side rather than reading in sequence. The Paper 1 English section is a compact test of the same ground Paper 2 covers at length, which means every hour spent on Paper 2 preparation is also Paper 1 preparation. No other pairing in this exam has that property — quantitative aptitude, reasoning and general awareness appear in Paper 1 only, so work done on them stops paying the moment Paper 1 ends.',
+          },
+          {
+            type: 'note',
+            title: 'Read the Paper 2 syllabus as a specification, not a summary',
+            text: 'Phrases such as error recognition, fill in the blanks and comprehension look generic, but at two hundred questions the paper has room to test each of them systematically rather than by sampling. Every listed item will appear, and several will appear many times. Treat the list as an exhaustive specification of what to prepare, because in this paper it very nearly is.',
+          },
         ],
       },
       'exam-pattern': {
@@ -1457,6 +1963,25 @@ const ssc = [
             title: 'Confirm standards, timings and the licence condition',
             text: 'Event standards differ by gender and by category, the negative marking rate has varied, and the driving licence condition applies to particular posts and groups at a particular stage. All three are set out in the notification and all three have changed between cycles.',
           },
+          {
+            type: 'p',
+            text: 'Two hours for two hundred Paper 1 questions gives you about thirty-six seconds each, and the four sections are equal in size, which makes the pacing arithmetic unusually clean: roughly thirty minutes a section, and any section that runs long is borrowing from another. Because there is no sectional timing, that budget is yours to enforce. Candidates who do not set it in advance almost always overspend on quantitative aptitude and arrive at the English section with too little time to collect the marks they had already earned through preparation.',
+          },
+          {
+            type: 'steps',
+            title: 'A workable Paper 1 order',
+            items: [
+              { title: 'General awareness, briskly', text: 'Fifty recall questions that should take well under the thirty-minute share. Whatever you save here funds the mathematics later.' },
+              { title: 'English next', text: 'Fast if your Paper 2 preparation is on track, and a useful confidence check on that preparation.' },
+              { title: 'Reasoning third', text: 'Steady, mechanical, and the section where practice most reliably converts into speed.' },
+              { title: 'Quantitative aptitude last', text: 'Give it the accumulated surplus. It is the only section where extra minutes genuinely produce extra marks.' },
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Plan around the gap between the stages',
+            text: 'Paper 1, then the physical tests, then Paper 2 — with real intervals between them. Those intervals are the most misused weeks in this preparation. The window after Paper 1 belongs to physical readiness, and the window after the physical tests belongs almost entirely to English. Candidates who treat both gaps as rest arrive at the paper carrying half the marks under-rehearsed.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -1489,6 +2014,25 @@ const ssc = [
               { label: 'Police exam preparation', to: '/government-exams/police/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'What to extract from past Paper 2 sets',
+            items: [
+              { text: 'A consolidated vocabulary list', note: 'synonyms, antonyms, one-word substitutions and idioms, merged across every year into one document. At two hundred questions a cycle, four years of papers yield a list large enough to be genuinely representative of the commission’s taste.' },
+              { text: 'A grammar rule frequency count', note: 'tag each error-spotting and sentence-improvement question with the rule it tests — subject-verb agreement, preposition use, article use, tense sequence, parallelism, modifier placement. A short list of rules will account for most of the section.' },
+              { text: 'Comprehension passage types', note: 'note the subject matter and length of the passages. They are more predictable than candidates expect, and knowing the register in advance meaningfully improves reading speed.' },
+              { text: 'Cloze and para-jumble patterns', note: 'these reward a specific technique rather than general English ability, and the technique is best learned from the papers themselves.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Paper 1 past papers serve a different purpose and should be used differently. Their value is pacing rehearsal — two hours, two hundred questions, four sections — rather than content discovery, because the Paper 1 content is broadly the standard SSC graduate-level ground covered better by CGL material. Use CPO Paper 1 papers late, under full timing, to confirm that your section budget survives contact with a real paper.',
+          },
+          {
+            type: 'note',
+            title: 'Vocabulary lists are built, not bought',
+            text: 'A list you assembled yourself from past papers outperforms a published word list of ten times the length, for two reasons: it reflects what this commission actually asks, and you remember words you had to look up more reliably than words handed to you already defined. Add to it daily, revise it weekly, and never restart it.',
+          },
         ],
       },
       'mock-tests': {
@@ -1520,6 +2064,25 @@ const ssc = [
               { label: 'English notes and practice', to: '/study-material/english/' },
               { label: 'Sectional practice', to: '/practice/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'A two-paper mock schedule',
+            items: [
+              { title: 'Until three months out', text: 'Sectional practice only — English daily, and the other three sections in rotation. Full mocks this early measure a candidate who does not exist yet.' },
+              { title: 'Three months out', text: 'One full Paper 1 mock a week under real timing, with the section budget written down before you start and checked afterwards.' },
+              { title: 'Two months out', text: 'Add a full Paper 2 mock every fortnight. Two hundred English questions in two hours is a stamina exercise and the only way to prepare for it is to do it.' },
+              { title: 'After Paper 1 is sat', text: 'Paper 2 mocks weekly, with physical training maintained. This window is short and it decides half of your written total.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The most informative number in a Paper 2 mock is not the score but the accuracy split between the first hundred questions and the second. A clear drop in the second half is a concentration and stamina finding rather than a knowledge one, and the remedy is more full-length practice rather than more grammar revision. A flat profile with mediocre accuracy throughout is the opposite diagnosis and calls for the opposite response.',
+          },
+          {
+            type: 'note',
+            title: 'Rehearse the physical tests too',
+            text: 'Time yourself over the actual PET distances rather than training generally, and measure your jumps and throws against the published standards. A candidate who has never run the exact distance against the exact clock is guessing about the one stage that admits no partial credit.',
           },
         ],
       },
@@ -1556,6 +2119,32 @@ const ssc = [
             type: 'p',
             text: 'Because the age band for CPO is narrower than for other SSC examinations, most candidates have a limited number of attempts. That argues for a serious, well-sequenced first attempt rather than a casual one used as practice.',
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'The mark arithmetic that should drive your timetable',
+                'Paper 1 carries two hundred marks, of which fifty are English. Paper 2 carries two hundred marks, all of them English. That is a substantial majority of the written total resting on one subject, and a timetable that gives English a quarter of your hours is not matched to the exam you are sitting.',
+              ],
+              [
+                'Fitness as a parallel track, not a phase',
+                'The physical tests sit between the two papers, which means there is no point in the calendar at which you can safely stop training. Three or four sessions a week from the beginning, including running at the PET distance and practice at the jumps and the throw.',
+              ],
+              [
+                'Quantitative aptitude and reasoning as finite projects',
+                'Both appear in Paper 1 only. Build them to a solid level over a few months, then maintain with weekly practice rather than continuing to add depth that the exam will never ask for.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'A candidate coming to CPO from SSC CGL preparation starts with a real advantage in Paper 1 and almost none in Paper 2, and the temptation is to lean on the strength rather than repair the gap. Resist it. The CGL-trained candidate who spends the extra months on quantitative aptitude they already handle well, rather than on the two hundred English questions they have never rehearsed, is optimising the smaller half of the paper.',
+          },
+          {
+            type: 'note',
+            title: 'Confirm the conditions attached to the post',
+            text: 'Some Sub-Inspector posts carry additional requirements beyond the written and physical stages — a driving licence among them, where it applies. These take real time to arrange and cannot be produced at short notice. Read the eligibility section of the notification in full during your first week, not at the document verification stage.',
+          },
         ],
       },
       'study-material': {
@@ -1589,6 +2178,36 @@ const ssc = [
               'One grammar rule reviewed with five practice sentences.',
               'One set of error-spotting questions, with every error classified by rule.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Grammar — the finite part',
+                'Subject-verb agreement, tense sequence, articles, prepositions, parallelism, modifier placement, voice and narration. A closed set of rules that can be genuinely mastered in a couple of months and that will keep paying across four hundred marks of English.',
+              ],
+              [
+                'Vocabulary — the cumulative part',
+                'Synonyms, antonyms, one-word substitutions, idioms and phrasal verbs. Built from past papers into a single running list, revised weekly. This is the component that cannot be compressed, which is why it has to start on day one.',
+              ],
+              [
+                'Reading — the part everyone neglects',
+                'Comprehension speed is what lets you finish two hundred questions in two hours. A daily passage read against a clock does more for it than any amount of grammar study.',
+              ],
+              [
+                'The Paper 1 supporting subjects',
+                'Quantitative aptitude, reasoning and general awareness at standard SSC graduate level. Solid, maintained, and firmly capped — they are a quarter of your written marks and should not consume half your hours.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'One structural suggestion for the English work: keep two separate documents rather than one. A rules document, which is short, stable and re-read weekly, and a vocabulary document, which grows continuously and is revised in passes. Mixing the two produces a file that is too long to revise and too disorganised to search, and it is the reason many candidates stop opening their own notes by the third month.',
+          },
+          {
+            type: 'note',
+            title: 'Reading beyond the syllabus is not a distraction here',
+            text: 'For an exam with four hundred marks of English, a habit of reading well-edited prose for twenty minutes a day is preparation rather than leisure. It builds reading speed, exposes you to vocabulary in context — which is how vocabulary actually sticks — and makes the comprehension passages feel ordinary rather than difficult.',
           },
         ],
       },
@@ -1728,6 +2347,15 @@ const ssc = [
             type: 'p',
             text: 'A word on where to spend time within the technical syllabus. Every discipline has a small number of topics that appear in almost every cycle — structural analysis and RCC in civil, thermodynamics and strength of materials in mechanical, machines and circuit theory in electrical. Previous papers identify these far more reliably than a syllabus list, which gives every topic equal visual weight regardless of how often it is examined.',
           },
+          {
+            type: 'p',
+            text: 'Read the syllabus with your diploma transcript beside you. Almost every listed technical topic corresponds to a subject you have already sat an examination in, and the useful exercise is not learning the list but marking each item as solid, rusty or never properly understood. That three-way split, done honestly in an afternoon, is a better study plan than any generic schedule, because it is the only one calibrated to what you personally have to rebuild.',
+          },
+          {
+            type: 'note',
+            title: 'The non-technical syllabus is deliberately vague',
+            text: 'General awareness for SSC JE is described in the same broad terms the commission uses for its other examinations, and the level is comparable. That means material prepared for any graduate-level SSC paper serves here without modification — which is convenient, because it is the one part of your preparation that does not need to be discipline-specific.',
+          },
         ],
       },
       'exam-pattern': {
@@ -1772,6 +2400,24 @@ const ssc = [
             title: 'Negative marking applies',
             text: 'A deduction is applied for wrong answers, and the rate has differed between the papers and between cycles. Since the technical sections are the ones where a half-remembered formula tempts a guess, knowing the exact rate before the exam is worth the two minutes it takes to check the notification.',
           },
+          {
+            type: 'p',
+            text: 'The pacing problem in Paper 1 is created by the mixture. A reasoning question and a technical question both count for one mark, but the technical question may take three times as long, and the candidate who works straight through in question order will spend a disproportionate share of the two hours on the hardest half of the paper without ever having decided to. The fix is a deliberate order: clear reasoning and general awareness first, then give the remaining time — which should be the majority of it — to the hundred technical questions.',
+          },
+          {
+            type: 'steps',
+            title: 'A two-hour plan for Paper 1',
+            items: [
+              { title: 'General awareness, ten to fifteen minutes', text: 'Recall questions, answered or skipped quickly. Nothing here rewards deliberation.' },
+              { title: 'Reasoning, twenty to twenty-five minutes', text: 'Mechanical once practised, and the section that compresses most with preparation.' },
+              { title: 'Technical, the remaining eighty minutes or so', text: 'Half the paper, and the half where your diploma actually pays. Work it in two passes — the questions you can answer from memory, then the ones that need working out.' },
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Confirm the current Paper 2 format before you prepare for it',
+            text: 'The format of Paper 2 has been revised between cycles, and descriptive and objective papers reward genuinely different preparation — one rewards structured written answers and derivations, the other rewards recognition speed and formula recall. Read the current notification before you build a Paper 2 routine, because preparing for the wrong format wastes months rather than weeks.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -1809,6 +2455,25 @@ const ssc = [
               { label: 'Free mock tests', to: '/mock-tests/free/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'What the weighting table typically reveals',
+            items: [
+              { text: 'A short head and a very long tail', note: 'a modest number of topics account for a large share of the technical questions, and dozens of syllabus items appear once every few years or not at all. Without a count, candidates distribute effort evenly across a list where the returns are anything but even.' },
+              { text: 'Formula-recall questions outnumber derivation questions', note: 'which changes how you revise. A formula sheet you wrote yourself, revised weekly, is worth more than a re-reading of the chapter it came from.' },
+              { text: 'Numerical questions cluster around standard configurations', note: 'the same beam arrangements, the same circuit topologies, the same thermodynamic cycles, with the numbers changed. Recognising the configuration is most of the work.' },
+              { text: 'Cross-year repetition', note: 'not identical questions, but close variants, often enough that a candidate who has worked five years of papers will recognise the shape of a meaningful fraction of a new one.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Do the counting yourself rather than trusting a published weightage chart. Charts circulate widely, they are rarely dated, and they are often built from a different discipline or an older syllabus. An afternoon spent tagging four years of papers in your own discipline produces a table you trust, and the act of tagging is itself revision — you cannot categorise a question without recalling how it is solved.',
+          },
+          {
+            type: 'note',
+            title: 'Work the paper, then work the topic',
+            text: 'The temptation after a past paper is to read the solutions and move on. The more productive sequence is to note which topics produced your errors, close the paper, rebuild those topics from your diploma textbook, and only then return to re-solve the questions. Reading a solution creates recognition; rebuilding the topic creates the ability to solve the next variant.',
+          },
         ],
       },
       'mock-tests': {
@@ -1839,6 +2504,25 @@ const ssc = [
               { label: 'All free mock tests', to: '/mock-tests/free/' },
               { label: 'Sectional and topic practice', to: '/practice/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'Getting a useful signal from a JE mock',
+            items: [
+              { title: 'Insist on the right composition', text: 'A hundred technical questions in your own discipline, fifty reasoning, fifty general awareness. A general SSC mock is a well-made test of the wrong thing.' },
+              { title: 'Split the clock deliberately before you start', text: 'Write down your intended section times. Compare them with the actual times afterwards — the gap between the two is usually the most actionable finding in the whole paper.' },
+              { title: 'Separate technical errors by cause', text: 'A wrong formula, a right formula misapplied, an arithmetic slip, or a topic never learned. These four call for four different responses and the score conceals all of them.' },
+              { title: 'Rebuild, then re-test', text: 'Take the two or three topics your errors cluster in, rebuild them properly, and re-test on a topic set before your next full mock.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Reasoning is where a JE candidate should expect the clearest improvement from practice, and it is worth tracking separately for exactly that reason. Twenty-five minutes at the start of your preparation should become fifteen by the end, and those ten minutes go straight into the technical section where they are worth considerably more. It is one of the few places in this exam where practice buys time rather than knowledge.',
+          },
+          {
+            type: 'note',
+            title: 'Mock practice for Paper 2 depends on its format',
+            text: 'If the current cycle runs Paper 2 as an objective paper, practise it the way you practise Paper 1 — timed, full length, analysed. If it runs as a descriptive paper, mock practice means writing full answers by hand against a clock, including the diagrams and the derivation steps, because presentation and completeness are marked there in a way an objective paper never assesses.',
           },
         ],
       },
@@ -1875,6 +2559,32 @@ const ssc = [
               { text: 'Not over-investing in general awareness', note: 'it is fifty marks of two hundred in Paper 1 and none of Paper 2.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'If you finished your diploma recently',
+                'Most of the technical material is still accessible and the work is consolidation rather than reconstruction. Four to five months is realistic, with the bulk of it on solving problems in the high-weight topics and a short project each on reasoning and general awareness.',
+              ],
+              [
+                'If your diploma is several years behind you',
+                'Assume you are rebuilding rather than revising, and plan for eight months or more. Start with the three or four highest-weight subjects rather than attempting the syllabus in order, and accept that the first month will feel slower than you expect.',
+              ],
+              [
+                'If you are working full time',
+                'Protect the technical work by giving it your best hours rather than your leftover ones. Reasoning and general awareness tolerate tired evenings; rebuilding strength of materials does not.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'A note on discipline choice, since it is asked often: you apply in the discipline your diploma or degree is in, and it is not a strategic decision. What is strategic is recognising that your discipline determines roughly three quarters of your written marks across the two papers, which is the whole argument for weighting your preparation the way this page recommends.',
+          },
+          {
+            type: 'note',
+            title: 'The formula sheet is the single best artefact of this preparation',
+            text: 'One sheet per subject, handwritten, containing only the formulas you personally keep forgetting — not every formula in the chapter. It is built from your own errors, it takes minutes to revise, and in the final fortnight it will be the only document you need. Candidates who maintain one from month one consistently report that it replaced everything else they had planned to re-read.',
+          },
         ],
       },
       'study-material': {
@@ -1907,6 +2617,36 @@ const ssc = [
               'Solve past technical questions immediately after revising a topic, while the derivation is still fresh.',
               'Return to each major topic twice more before the exam — technical recall decays faster than aptitude skill.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Reasoning — a short, high-return project',
+                'Series, analogy, classification, coding-decoding, spatial visualisation and the non-verbal set. A few weeks of focused practice covers most of what Paper 1 asks, and the time it saves in the exam transfers directly to the technical section.',
+              ],
+              [
+                'General awareness — a daily background habit',
+                'Polity, history, geography, general science and static items at the standard SSC level. Fifty marks of four hundred across both papers, which is exactly the weight it should carry in your timetable: present every day, never dominant.',
+              ],
+              [
+                'Science notes — useful, with a caveat',
+                'General science overlaps with engineering fundamentals at the edges, and revising it can feel productive. Keep it in the general awareness budget rather than letting it expand into the technical block it superficially resembles.',
+              ],
+              [
+                'Quantitative aptitude — supporting only',
+                'Arithmetic fluency helps with the numerical technical questions, where a calculation slip costs the same mark as a conceptual error. Worth maintaining, not worth a dedicated study block.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'For the technical half, the honest recommendation is the unglamorous one: use the standard textbook for your discipline, the one your diploma course was taught from, rather than a competitive-exam digest. Digests compress derivations into results, which is efficient right up to the moment a question is framed slightly differently from the one the digest anticipated. The textbook explains why the formula has the shape it does, and that understanding is what lets you handle the variant.',
+          },
+          {
+            type: 'note',
+            title: 'Solve immediately after revising',
+            text: 'Technical recall decays faster than aptitude skill, and the gap between reading a topic and solving from it is where most of the decay happens. Close the book at the end of a topic and work ten past questions on it the same day. What you can still do a week later is what you actually know.',
           },
         ],
       },

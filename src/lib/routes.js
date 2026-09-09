@@ -14,7 +14,7 @@ import { ARTICLES, EXAM_INDEX, PREP_SUBLINKS } from '../data/site'
 import { WRITTEN_EXAM_PATHS } from '../data/exams'
 import { HUB_PATHS } from '../data/hubs'
 import { TESTS } from '../data/mock-tests'
-import { STATE_PAGES } from '../data/states'
+import { DEDICATED_STATE_EXAM_PAGES, STATE_PAGES } from '../data/states'
 import { SUBJECTS, TOPICS } from '../data/study'
 
 /**
@@ -110,8 +110,13 @@ export function allRoutes() {
     PREP_SUBLINKS.forEach(([, slug]) => add(`${base}${slug}/`))
   })
 
-  // State hubs, mock tests and articles.
+  // State hubs, plus the job pages a state links out to. A job page that has a
+  // written record is already covered by WRITTEN_EXAM_PATHS above; the ones
+  // with a hand-built page of their own are added here. Job cards with neither
+  // are not linked at all, so no URL is promised that has nothing on it.
   Object.keys(STATE_PAGES).forEach((slug) => add(`/government-exams/state/${slug}/`))
+  DEDICATED_STATE_EXAM_PAGES.forEach(add)
+  // Mock tests and articles.
   TESTS.forEach((test) => add(`/mock-tests/${test.slug}/`))
   ARTICLES.forEach((article) => {
     add(article.to)

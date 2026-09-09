@@ -16,6 +16,16 @@
  * every page carries the official-source note at the bottom.
  */
 
+/**
+ * State job pages that have a hand-written page of their own rather than the
+ * generic exam layout. Everything else in a state's `jobs` list gets a page
+ * when a written record for it exists in src/data/exams, and stays an
+ * unlinked card until then — see StateExams.
+ */
+export const DEDICATED_STATE_EXAM_PAGES = new Set([
+  '/government-exams/state/telangana/telangana-police/',
+])
+
 const TELANGANA = {
   slug: 'telangana',
   name: 'Telangana',

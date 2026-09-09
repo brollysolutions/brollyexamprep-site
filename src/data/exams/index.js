@@ -57,6 +57,7 @@ import law from './law'
 import university from './university'
 import pgResearch from './pg-research'
 import international from './international'
+import telangana from './telangana'
 
 /** The six sub-pages every exam gets, in the order they are shown. */
 export const RESOURCE_SLUGS = [
@@ -83,6 +84,7 @@ const FAMILIES = [
   university,
   pgResearch,
   international,
+  telangana,
 ]
 
 /** Every written exam, keyed by its base path. */

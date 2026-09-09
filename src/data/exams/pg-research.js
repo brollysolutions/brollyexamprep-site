@@ -118,6 +118,25 @@ const pgResearch = [
             type: 'p',
             text: 'The general aptitude section deserves more attention than it usually gets. Fifteen marks — the same as several substantial subject topics — for content that requires no engineering knowledge and can be secured in a few weeks. For a candidate targeting a high rank, leaving even a few of those marks on the table is an expensive habit.',
           },
+          {
+            type: 'list',
+            title: 'Where the three components sit in a preparation',
+            items: [
+              { text: 'Core subject — the long project', note: 'the undergraduate curriculum of your discipline, rebuilt to working depth in the order a past-paper weighting table gives you. It absorbs most of the year and it is where a rank is actually made.' },
+              { text: 'Engineering mathematics — a substantial, learnable block', note: 'linear algebra, calculus, differential equations, complex variables, probability and statistics and numerical methods. Common across most engineering papers, heavily represented, and routinely treated as an afterthought.' },
+              { text: 'General aptitude — a short, finite project', note: 'fifteen marks requiring no subject knowledge at all. A few weeks of work should secure almost all of them, which makes it among the highest returns per hour available anywhere in this examination.' },
+              { text: 'The science and humanities papers', note: 'GATE also runs papers outside engineering — physics, chemistry, mathematics, life sciences, statistics and others — with their own structures. Read the syllabus for the paper you are actually sitting.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The under-preparation of engineering mathematics is worth naming because it is so consistent. It is a defined body of material, it recurs in every cycle, it does not change, and it is examined at a level any engineering graduate has already covered — and candidates nonetheless leave it until late on the reasoning that the core subject matters more. The core subject does matter more in total; engineering mathematics matters more per hour spent.',
+          },
+          {
+            type: 'note',
+            title: 'Decide what you are using the score for',
+            text: 'GATE serves two quite different purposes — postgraduate admission and public sector recruitment — and the organisations recruiting on GATE scores set their own cutoffs and their own weightings. Knowing which you are targeting shapes how high you need to score and, in some cases, which paper is the better choice.',
+          },
         ],
       },
       'exam-pattern': {
@@ -157,6 +176,32 @@ const pgResearch = [
             title: 'The score is valid for three years',
             text: 'That validity gives GATE an unusual property: a strong score can be used across multiple admission cycles and multiple PSU recruitment advertisements. It also means a candidate who does well early has a genuine asset, and one who does poorly has time to improve without losing the option entirely.',
           },
+          {
+            type: 'p',
+            text: 'The single most valuable habit in a GATE paper is to know, at a glance, which marking rule applies to the question in front of you. Multiple choice questions carry a penalty; numerical answer type questions do not; multiple select questions do not, but they are all-or-nothing. Those three rules imply three different behaviours, and a candidate applying one uniform attitude across the paper is either guessing where it costs them or leaving free attempts on the table.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Numerical answer type — always attempt',
+                'No penalty and no options to be misled by. Even a reasoned estimate has a genuine chance of falling inside the accepted range, and an unanswered one has none. Leaving these blank is the clearest unforced error available in this paper.',
+              ],
+              [
+                'Multiple select — attempt, but precisely',
+                'No penalty, so there is no reason to skip. But the marks require exactly the right set, which means partial confidence produces nothing. Work them fully or accept that a partly-right selection scores the same as a blank.',
+              ],
+              [
+                'Multiple choice — the only place for guessing discipline',
+                'These are the questions where a wrong answer costs you, so the threshold that applies here should not be carried across to the other two types.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Three years of validity changes the calculus',
+            text: 'A GATE score remains usable for three years, which means a strong result can serve several admission cycles and several recruitment rounds. That makes a serious attempt worth more than it first appears, and it makes an early attempt in the final year of a degree a reasonable investment even if the immediate plan is uncertain.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -191,6 +236,29 @@ const pgResearch = [
               { label: 'All previous year papers', to: '/previous-year-papers/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'What a decade of papers reveals',
+            items: [
+              { text: 'A stable concentration of topics', note: 'a handful of areas supply a large share of the marks in every cycle, and the pattern holds across years. That stability is what makes a weighting table worth building once and trusting.' },
+              { text: 'Which topics appear only as multiple choice', note: 'some material is consistently tested through recognition rather than through calculation, which tells you how deep to go on it.' },
+              { text: 'Where numerical answer questions cluster', note: 'these demand full working and precision, so knowing which topics generate them tells you where problem practice matters most.' },
+              { text: 'How engineering mathematics is distributed', note: 'usually spread across the paper rather than concentrated, which is part of why it is easy to underestimate.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Build the table yourself from a decade of papers in your own discipline rather than relying on a published weightage chart. Charts circulate widely, are frequently undated and are sometimes compiled from a different paper or from before a syllabus revision. The two afternoons it takes are also revision, since tagging a question requires recalling how it is solved.',
+          },
+          {
+            type: 'p',
+            text: 'Practise numerical answer type questions as their own category for a few sessions. They have no options to work backwards from, they require an answer entered to a particular precision, and they punish unit errors in a way multiple choice questions often do not. A candidate who has only ever met them mixed into full papers has never practised the specific discipline they demand.',
+          },
+          {
+            type: 'note',
+            title: 'Do not skip general aptitude in past papers',
+            text: 'It is the section candidates cheerfully omit when working past papers, on the grounds that it is easy — and then score imperfectly on in the examination. Fifteen marks is the same as several substantial subject topics, and securing them completely is a few weeks of work against months for the equivalent gain in the core subject.',
+          },
         ],
       },
       'mock-tests': {
@@ -223,6 +291,26 @@ const pgResearch = [
               { label: 'Mathematics study material', to: '/study-material/mathematics/' },
               { label: 'Reasoning study material', to: '/study-material/reasoning/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'A mock routine matched to the marking rules',
+            items: [
+              { title: 'Apply the correct penalty per question type', text: 'Uniform marking across a mock teaches attempt habits that will cost you in two of the three sections.' },
+              { title: 'Check blanks on non-MCQ questions first', text: 'They should be zero. No penalty applies, so any unanswered numerical or multiple select question is a discarded chance.' },
+              { title: 'Separate numerical errors by cause', text: 'Units, rounding, arithmetic or concept. The first three are discipline problems with quick fixes; only the last calls for revision.' },
+              { title: 'Score general aptitude and engineering mathematics separately', text: 'Together they are a substantial block, and folding them into a subject total hides two of the most improvable components.' },
+              { title: 'Map subject errors onto your weighting table', text: 'An error in a heavy topic is worth fixing immediately; one in a rare topic may not be worth the revision time at all.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Three hours on a computer with an on-screen calculator is its own skill. Entering numerical answers, navigating between questions, and using the calculator efficiently all cost time when unfamiliar, and the losses are invisible in a paper-based practice session. Take a meaningful share of your mocks in the actual format rather than discovering the interface on the day.',
+          },
+          {
+            type: 'note',
+            title: 'Engineering mathematics deserves its own line in the log',
+            text: 'It is spread across the paper rather than concentrated, which makes it easy to under-notice in a subject-wise breakdown. Tracking it as a separate figure across several mocks usually reveals it as a larger and more improvable weakness than candidates expect.',
           },
         ],
       },
@@ -261,6 +349,32 @@ const pgResearch = [
               { text: 'Never leaving a non-MCQ question blank', note: 'no penalty applies to two of the three question types.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'If you are in the final year of your degree',
+                'The strongest position: the material is current and your coursework overlaps with the syllabus. The work is depth and problem practice rather than rebuilding, and roughly a year alongside your course is realistic.',
+              ],
+              [
+                'If you graduated some years ago',
+                'Assume rebuilding rather than revising. Start with the three or four heaviest topics from your weighting table rather than working the syllabus in order, and plan for a longer runway — the first month will feel slower than expected.',
+              ],
+              [
+                'If you are working full time',
+                'Give the core subject and engineering mathematics your best hours. General aptitude tolerates tired evenings; reconstructing a technical subject does not, and a tired hour there produces very little.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'GATE preparation is a rebuilding project rather than a learning one, and that distinction matters for how the year is planned. You are not meeting the material for the first time — you are restoring it to working depth, which is faster than learning but decays faster too. That argues for a plan with built-in revisits rather than a single thorough pass through a long syllabus.',
+          },
+          {
+            type: 'note',
+            title: 'The formula and derivation sheet is the artefact that survives',
+            text: 'One per subject area, handwritten, containing only what you personally keep forgetting — and derivations as well as results, since numerical questions frequently require reconstructing something you have not memorised. Revised weekly, it becomes the only document you need in the final fortnight.',
+          },
         ],
       },
       'study-material': {
@@ -296,6 +410,36 @@ const pgResearch = [
               'Practise numerical answer type questions with attention to units and precision.',
               'Revisit each heavy topic twice more before the examination.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Degree textbooks — the primary source for eighty-five marks',
+                'Standard works in your discipline, the ones your course was taught from. They carry the derivations and the physical reasoning that condensed guides compress out, and GATE questions frequently require exactly that reasoning.',
+              ],
+              [
+                'A worked problem notebook — the second source',
+                'Problems solved in full rather than checked against answers. It doubles as the record of how you personally approach each problem type, and it is what you revise from later.',
+              ],
+              [
+                'Engineering mathematics material — treated as a subject',
+                'Its own block of study time rather than incidental coverage. Large, learnable, examined every cycle, and consistently under-prepared.',
+              ],
+              [
+                'General aptitude notes — a short finite project',
+                'Verbal ability, quantitative aptitude and analytical reasoning at a modest level. Fifteen marks that should be nearly complete after a few weeks.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Study in the order your weighting table gives rather than the order the syllabus prints. Syllabi are written to be comprehensive rather than prioritised, and a candidate working through one in printed sequence spends their freshest months on whatever happens to appear first — which is frequently not what the papers concentrate on. For anyone whose schedule may slip, that ordering determines what is left uncovered.',
+          },
+          {
+            type: 'note',
+            title: 'Solve before reading, always',
+            text: 'A solution you have read produces recognition, which feels like capability and disappears under examination conditions. Attempting a problem for a genuine stretch before consulting anything is slower for the first weeks and is the only reliable way to build the ability the numerical questions actually test.',
           },
         ],
       },
@@ -439,6 +583,15 @@ const pgResearch = [
             type: 'p',
             text: 'The biotechnology paper deserves a specific note because its structure differs from the others: it draws on four subjects rather than one, which means a candidate with a narrow specialisation may be examined well outside it. Reading the weighting between the four before committing to that paper is worthwhile.',
           },
+          {
+            type: 'p',
+            text: 'The published syllabus for your paper and the syllabus of your own degree course will not be identical, and the difference is where preparation gaps hide. Some topics your course covered in depth may barely appear; some the paper expects may have been optional or taught lightly at your institution. Mapping one against the other in the first week — marking each published topic as solid, rusty or never properly covered — produces a study plan calibrated to you rather than to a generic candidate.',
+          },
+          {
+            type: 'note',
+            title: 'Biotechnology is structured differently from the other papers',
+            text: 'It draws on biology, chemistry, mathematics and physics at approximately first-year undergraduate level rather than examining a single discipline in depth. Candidates from a specialised biology background sometimes prepare only the biology component and meet three other subjects in the paper — read the published structure carefully rather than assuming it follows the pattern of the other six.',
+          },
         ],
       },
       'exam-pattern': {
@@ -479,6 +632,25 @@ const pgResearch = [
             title: 'Confirm the current marks distribution',
             text: 'The number of questions in each section and the marks per question have been adjusted between cycles. Because they determine how much time each section deserves, read the current information brochure for your paper rather than assuming continuity.',
           },
+          {
+            type: 'p',
+            text: 'Section B is where the marks quietly disappear. Multiple select questions require exactly the correct set of options, which means the natural behaviour of selecting the two you are sure about and leaving the third you suspect produces nothing at all. There is no penalty for being wrong, so the correct approach is to work each one fully and commit to a complete selection — partial confidence expressed as a partial answer is scored identically to a blank.',
+          },
+          {
+            type: 'steps',
+            title: 'How to work the three hours',
+            items: [
+              { title: 'Section A with guessing discipline', text: 'The only section where a wrong answer costs you. Narrow before answering, and leave anything where all options remain live.' },
+              { title: 'Section B worked fully, not partially', text: 'All-or-nothing marking means a question half-worked is a question not attempted. Give each one the time to reach a complete selection.' },
+              { title: 'Section C with attention to precision', text: 'Units, rounding and decimal places. An answer correct in substance and wrong in form scores nothing, and this is where careful candidates lose marks they had earned.' },
+              { title: 'A final sweep of Sections B and C', text: 'No penalty applies to either, so every remaining blank should be filled. It costs nothing and can only add.' },
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Confirm the current marks distribution',
+            text: 'The number of questions in each section and the marks per question have been adjusted between cycles. Since the time allocation across three sections with three different risk profiles depends on those numbers, read the current information brochure rather than planning from a description of an earlier year.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -512,6 +684,29 @@ const pgResearch = [
               { label: 'All previous year papers', to: '/previous-year-papers/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'What past papers settle that a syllabus cannot',
+            items: [
+              { text: 'The depth expected', note: 'closer to a good degree examination than to a competitive-exam summary. This is the calibration that most changes how a candidate studies, and no syllabus conveys it.' },
+              { text: 'Which topics carry the paper', note: 'a long science syllabus gives no weighting; the papers show a clear concentration that should determine your study order.' },
+              { text: 'How Section B is constructed', note: 'multiple select questions have a characteristic shape, often testing whether you can rule options in and out with equal confidence. Practising them specifically is the only way to get comfortable with that.' },
+              { text: 'What precision Section C expects', note: 'the conventions around units and decimal places become obvious from the papers and are easy to get wrong without having seen them.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Work past papers in your own subject only. The seven papers are genuinely different examinations sharing a name and a format, and practice in another discipline builds nothing transferable beyond a general familiarity with the question types — which a handful of papers in your own subject supplies anyway.',
+          },
+          {
+            type: 'p',
+            text: 'Keep your degree textbooks rather than substituting an exam-oriented digest. JAM questions are pitched at degree level and frequently require the reasoning behind a result rather than the result itself, which is precisely the material that condensed guides remove. The textbook you were taught from also carries the notation and framing you already recognise, which is worth real time under a three-hour clock.',
+          },
+          {
+            type: 'note',
+            title: 'Practise Section C for precision, not just for correctness',
+            text: 'A numerical answer entered in the wrong units, or rounded differently from the convention the paper expects, scores nothing despite being substantively right. Working past Section C questions with deliberate attention to the form of the answer is a small discipline that prevents an entirely avoidable category of loss.',
+          },
         ],
       },
       'mock-tests': {
@@ -542,6 +737,26 @@ const pgResearch = [
               { label: 'All free mock tests', to: '/mock-tests/free/' },
               { label: 'Study material by subject', to: '/study-material/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'Analysing a JAM mock by section',
+            items: [
+              { title: 'Blanks in Sections B and C', text: 'Always zero. No penalty applies to either, so an unanswered question there is a discarded chance rather than a cautious decision.' },
+              { title: 'Section B completeness', text: 'Count how often you selected some but not all of the correct options. It is a distinctive error, it is common, and it is fixed by working each question fully rather than by studying more.' },
+              { title: 'Section C precision errors', text: 'Units, rounding, decimal places — kept separate from conceptual errors, because they need a checking habit rather than revision.' },
+              { title: 'Section A guessing outcomes', text: 'The only section where wrong answers cost you, so the only one where an attempt threshold matters.' },
+              { title: 'Topic accuracy against your weighting table', text: 'To decide whether an error is worth the revision time it would take to fix.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'A single overall accuracy figure hides almost everything useful about a JAM attempt, because the three sections fail in three different ways. Section A errors are usually knowledge; Section B errors are usually incompleteness; Section C errors are frequently precision. Treating them as one number sends a candidate back to the textbook when two of the three problems would have been solved by a checking habit.',
+          },
+          {
+            type: 'note',
+            title: 'Practise on a computer, with the answer-entry mechanics',
+            text: 'JAM is computer-based, and entering numerical answers, selecting multiple options and navigating between sections all cost time when unfamiliar. Those losses do not appear in paper-based practice, which makes a meaningful share of screen-based mocks worth scheduling regardless of how comfortable the material feels.',
           },
         ],
       },
@@ -580,6 +795,36 @@ const pgResearch = [
               { text: 'Registering without checking programme eligibility', note: 'a strong rank in the wrong paper does not open the programme you want.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'The mapping exercise — week one',
+                'The published syllabus for your paper against your own degree course, marking each topic solid, rusty or never covered. It takes an afternoon and it produces a plan calibrated to what you personally need to rebuild.',
+              ],
+              [
+                'Degree-depth revision — months one to five',
+                'Working from your own textbooks, in the order a past-paper weighting table gives you rather than in syllabus sequence. This is the bulk of the preparation.',
+              ],
+              [
+                'Question-type practice — from month two',
+                'All three formats, deliberately and separately. Section B and Section C both demand behaviours that ordinary problem-solving does not build.',
+              ],
+              [
+                'Eligibility verification — before you register',
+                'Which programmes at which institutions your chosen paper opens, and what additional requirements they carry. A strong rank in the wrong paper does not open the programme you wanted.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The eligibility check deserves to come first rather than last. JAM feeds a wide range of master’s and integrated programmes across many institutions, and each has its own requirements about the qualifying degree, the subjects studied within it and sometimes minimum marks. Candidates occasionally prepare a paper thoroughly and then discover that the programme they wanted required a different one, or a background they do not have.',
+          },
+          {
+            type: 'note',
+            title: 'Rank does not guarantee a programme',
+            text: 'Admission runs through a centralised process in which a rank interacts with your paper, your preferences, the seats available and the eligibility rules of each programme. Understanding how that allocation works before the result — rather than during a compressed choice-filling window — is worth an evening.',
+          },
         ],
       },
       'study-material': {
@@ -615,6 +860,36 @@ const pgResearch = [
               'Practise multiple select and numerical answer formats deliberately.',
               'Keep a hand-written derivation and formula sheet, revised weekly.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Undergraduate textbooks — the primary source',
+                'Standard works in your subject at degree level. They match the depth the paper asks for and carry the derivations and reasoning that JAM questions frequently require rather than merely the results.',
+              ],
+              [
+                'Past papers in your own subject — the calibration',
+                'The only reliable guide to how deep the paper goes and which topics it concentrates on. Worth reserving a couple for late practice rather than working through the whole archive early.',
+              ],
+              [
+                'A worked problem record',
+                'Problems solved in full, in your own hand. It builds the ability the paper tests and doubles as the material you revise from in the final months.',
+              ],
+              [
+                'A derivation and formula sheet',
+                'Handwritten, per topic area, built from the results you keep forgetting. Revised weekly and short enough to be genuinely useful in the last fortnight.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Work from the published syllabus for your paper rather than from your own course syllabus, and treat the difference between them as the map of what needs attention. Your course determined what you were taught; the published syllabus determines what will be asked, and the topics that appear in the second and not the first are precisely the ones a candidate is most likely to discover too late.',
+          },
+          {
+            type: 'note',
+            title: 'Practise the two unusual formats deliberately',
+            text: 'Multiple select and numerical answer questions both demand behaviours ordinary problem practice does not build — completeness in one case, precision of form in the other. A few dedicated sessions on each is enough to establish the habits, and without them a well-prepared candidate loses marks in ways that have nothing to do with their science.',
           },
         ],
       },

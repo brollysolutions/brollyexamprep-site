@@ -116,6 +116,25 @@ const law = [
             type: 'p',
             text: 'Read across those five descriptions and the common thread is unmistakable: every section is a reading task with a different flavour of question attached. That means the highest-return preparation for CLAT is not subject study at all — it is reading, daily, widely, and at increasing speed.',
           },
+          {
+            type: 'p',
+            text: 'The single most useful consequence of a skills-based description rather than a topic list is that it tells you what cannot be crammed. A syllabus of topics can be finished in the final months; a description of reading and reasoning ability cannot be acquired that way at all. It has to be built over a long period, which is why a candidate who began reading seriously a year out is in a fundamentally different position from one who begins three months out, however hard the second works.',
+          },
+          {
+            type: 'list',
+            title: 'What the five sections have in common',
+            items: [
+              { text: 'Every section begins with a passage', note: 'even quantitative techniques, where the numbers arrive inside a set of facts or a short piece of prose rather than as a bare problem.' },
+              { text: 'The answer is meant to be derivable from what is given', note: 'most obviously in legal reasoning, where the principle is supplied, but the same discipline applies across the paper.' },
+              { text: 'Speed comes from reading, not from technique', note: 'there is no shortcut that substitutes for being able to take in a dense paragraph accurately at pace.' },
+              { text: 'Outside knowledge helps least where candidates expect it to help most', note: 'legal knowledge in legal reasoning and general knowledge in the current affairs section are both less useful than reading the passage carefully.' },
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Current affairs questions reach beyond the passage',
+            text: 'The section is passage-based, but the questions sometimes require knowledge the passage assumes rather than states — the background to a development, the institution involved, the term of art being used. That is the one place where a daily reading habit does more than reading skill alone, and it is why current affairs cannot be treated as a final-month subject.',
+          },
         ],
       },
       'exam-pattern': {
@@ -157,6 +176,25 @@ const law = [
             title: 'The postgraduate paper is different',
             text: 'CLAT PG, for LLM admission, uses passages drawn from legal material and does assume knowledge of the core law curriculum — constitutional law, jurisprudence, contract, torts, criminal law and international law. Unlike the undergraduate paper, prior legal knowledge is genuinely required.',
           },
+          {
+            type: 'p',
+            text: 'The binding constraint in this paper is not difficulty but volume of reading. A long paper of dense passages in two hours means that most candidates do not reach the end, and the ones who do are not necessarily the ones who understood the passages best — they are the ones who read them once, accurately, at pace. That is why analysing a mock by accuracy alone systematically misdiagnoses the problem.',
+          },
+          {
+            type: 'steps',
+            title: 'A workable approach to a passage-heavy paper',
+            items: [
+              { title: 'Read once, carefully, and commit', text: 'A single accurate read is faster than two hurried ones, and the paper does not give you time for both. The temptation to skim and return is what costs candidates the end of the paper.' },
+              { title: 'Scan the questions first for data and legal sets', text: 'Knowing what is asked can direct your reading of a legal principle or a data set, which saves real time. For English and logical reasoning it usually does not.' },
+              { title: 'Answer legal reasoning from the passage only', text: 'Even where you believe the actual law differs. The section tests application of a supplied principle, and importing outside knowledge is the most common source of confident wrong answers.' },
+              { title: 'Keep quantitative in proportion', text: 'The smallest section, at class 10 level. It should not consume time the larger sections need.' },
+            ],
+          },
+          {
+            type: 'note',
+            title: 'The postgraduate paper is a different examination',
+            text: 'CLAT PG, for LLM admission, draws its passages from legal material and does assume substantive knowledge of law — which makes almost everything written about the undergraduate paper inapplicable to it. Candidates preparing for PG admission should work from the postgraduate syllabus and past papers specifically.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -190,6 +228,29 @@ const law = [
               { label: 'Current affairs', to: '/current-affairs/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'What to track across timed past papers',
+            items: [
+              { text: 'How far you got', note: 'the primary measurement. A score calculated over the questions you reached is not comparable with one calculated over the whole paper, and only the second number reflects your position.' },
+              { text: 'Minutes per passage', note: 'tracked across papers, it should fall. If it does not, the reading habit is not yet producing the speed the paper needs.' },
+              { text: 'Legal reasoning errors caused by outside knowledge', note: 'a distinctive category worth counting separately. Candidates who read about law recreationally are the most prone to it, which makes it a discipline problem rather than a knowledge one.' },
+              { text: 'Current affairs questions the passage did not answer', note: 'these map directly onto gaps in your daily reading, and listing them tells you what to watch for over the following months.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'A candidate working a CLAT paper without a clock will usually find it manageable, conclude that their preparation is on track, and be surprised on the day. The passages are readable, the reasoning is fair, and none of the questions is individually hard. Everything about the difficulty of this paper lives in the two-hour limit, which means untimed practice does not merely under-measure your readiness — it measures something else entirely.',
+          },
+          {
+            type: 'p',
+            text: 'Practise the single careful read deliberately, because it is a habit rather than an insight. Most candidates default to skimming a passage, attempting the questions, and returning to hunt for details — a strategy that works comfortably in an untimed setting and fails in this paper. Reading once at a pace you can sustain, with enough attention that you do not need to go back, is trainable and it is the core skill this examination rewards.',
+          },
+          {
+            type: 'note',
+            title: 'Note where the paper assumes background',
+            text: 'In the current affairs section particularly, a question may require knowing what an institution does or what a term means, without the passage explaining it. Keeping a list of those assumed items across several papers builds a targeted picture of the background knowledge this examination expects — far more efficiently than reading a general knowledge compendium.',
+          },
         ],
       },
       'mock-tests': {
@@ -221,6 +282,26 @@ const law = [
               { label: 'Legal reasoning study material', to: '/study-material/legal-reasoning/' },
               { label: 'Current affairs', to: '/current-affairs/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'Analysing a CLAT mock in the right order',
+            items: [
+              { title: 'Coverage first', text: 'How many questions did you reach? Until that number is close to the whole paper, every other diagnostic is being computed on a partial sample.' },
+              { title: 'Then reading pace', text: 'Minutes per passage by section. It reveals which kind of passage is slowing you — usually one specific register rather than reading in general.' },
+              { title: 'Then accuracy, by section', text: 'And within legal reasoning, split errors into misapplication of the principle and importation of outside knowledge.' },
+              { title: 'Then the current affairs gaps', text: 'Which questions needed background you did not have, and what that tells you to read.' },
+              { title: 'Fix one thing before the next mock', text: 'Coverage if it is short; otherwise the largest error category. A mock taken without an intervening change measures the same candidate again.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The common misdiagnosis is worth spelling out. A candidate finishes a mock, sees weak legal reasoning accuracy, and resolves to study more legal reasoning — when the actual cause was reaching that section with fifteen minutes left and rushing it. Accuracy computed on rushed questions describes your pacing rather than your understanding, and the remedy for a pacing problem is reading practice rather than subject study.',
+          },
+          {
+            type: 'note',
+            title: 'Track coverage as a trend, not a single figure',
+            text: 'Reading speed improves gradually and unevenly, so a single mock tells you little. Plotting how much of the paper you reached across eight or ten mocks shows whether the reading habit is working — and if the line is flat after two months of daily reading, the reading is probably too comfortable rather than insufficient.',
           },
         ],
       },
@@ -259,6 +340,36 @@ const law = [
               { text: 'Treating current affairs as a final-month subject', note: 'it is cumulative and passage questions reach beyond the passage.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Reading — the whole foundation',
+                'A newspaper properly read, plus long-form writing from outside your comfort zone. It builds comprehension speed, vocabulary in context, current affairs background and tolerance for unfamiliar registers — which between them account for most of what the paper measures.',
+              ],
+              [
+                'Legal reasoning — a technique, not a subject',
+                'The discipline of applying a supplied principle exactly as given, including when it conflicts with what you believe the law to be. Built over a few months of daily passages, and unrelated to legal knowledge.',
+              ],
+              [
+                'Logical reasoning — argument analysis',
+                'Identifying premises, conclusions, assumptions and flaws in short passages, rather than the puzzles and arrangements that other entrance examinations set. Closer to the verbal reasoning in a management entrance than to conventional reasoning practice.',
+              ],
+              [
+                'Quantitative techniques — proportionate effort',
+                'Class 10 mathematics presented through passages and data. The smallest section, and the one where over-investment is most common among candidates with a science background.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The instruction to read every day sounds too simple to be a plan, and candidates consistently look past it for something more structured. But the paper is a comprehension test in five costumes, and the only thing that reliably improves comprehension speed across unfamiliar registers is sustained exposure to unfamiliar registers. A year of daily reading is worth more here than any quantity of question practice bolted on at the end.',
+          },
+          {
+            type: 'note',
+            title: 'Read outside your comfort zone deliberately',
+            text: 'CLAT passages are drawn from writing on law, policy, philosophy, economics, history and culture. A candidate who reads only what they enjoy builds speed in one or two registers and meets the others cold. Choosing, each week, something you would not naturally pick up is a small discipline with a direct effect on the paper.',
+          },
         ],
       },
       'study-material': {
@@ -295,6 +406,36 @@ const law = [
               'One logical reasoning passage analysed for premises and conclusion.',
               'A weekly full-length timed paper, with coverage tracked.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'A newspaper — the primary text',
+                'Read for editorials and analysis rather than for headlines. It supplies current affairs background, comprehension practice and argument analysis simultaneously, which no dedicated study material does.',
+              ],
+              [
+                'Long-form writing — the range builder',
+                'Essays, serious journalism and non-fiction across law, policy, philosophy and history. The point is breadth of register rather than coverage of topics, since the passages will come from somewhere you did not anticipate.',
+              ],
+              [
+                'Legal reasoning passages — the technique drill',
+                'One a day, answered strictly from the principle supplied. What is being built is a habit of disciplined application, which needs repetition rather than instruction.',
+              ],
+              [
+                'Timed full papers — the measurement',
+                'Weekly from the mid-point of your preparation, with coverage tracked as the headline number.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Legal knowledge is worth almost nothing for the undergraduate paper and can actively cost you marks. The section supplies whatever principle it needs and asks you to apply it — sometimes a principle that differs from the actual law, deliberately. A candidate who has read about law and answers from what they believe to be correct will get those questions wrong with complete confidence, which is why the discipline matters more than the knowledge.',
+          },
+          {
+            type: 'note',
+            title: 'Keep a vocabulary and background list from your reading',
+            text: 'Words met in context, and institutions, terms and events the passages assumed you knew. Both come from the same daily reading and both feed the paper directly — the first into the English section, the second into current affairs. A running list revised weekly is the only study document this examination really needs beyond the reading itself.',
           },
         ],
       },
@@ -422,6 +563,25 @@ const law = [
             type: 'p',
             text: 'The general knowledge section is where AILET most rewards preparation beyond a CLAT plan. Because it questions more directly and includes static knowledge, a candidate relying solely on reading passages carefully will find questions that simply require knowing something — and knowing it cannot be deduced from the paper.',
           },
+          {
+            type: 'list',
+            title: 'How AILET differs from CLAT in what it asks',
+            items: [
+              { text: 'General knowledge is asked directly', note: 'not only through a passage. That means static knowledge — history, polity, institutions, awards, geography — carries weight in a way it does not in a purely passage-based section.' },
+              { text: 'The English passages tend to be denser', note: 'drawn from demanding writing and asking about tone, inference and the author’s method rather than located facts.' },
+              { text: 'Logical reasoning spans two styles', note: 'critical reasoning about arguments and analytical reasoning through arrangements and puzzles. A CLAT preparation covers the first thoroughly and the second lightly.' },
+              { text: 'Fewer sections, so each carries more', note: 'a three-section paper concentrates the weight, which means a weak section has less to hide behind than in a five-section one.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The practical planning point is that a CLAT preparation is the right base and is not sufficient on its own. The reading habit, the comprehension work and the critical reasoning transfer directly; what has to be added is a systematic static general knowledge effort and some analytical reasoning practice. Both are finite and both are commonly skipped by candidates who assume one preparation covers both examinations completely.',
+          },
+          {
+            type: 'note',
+            title: 'The structure has been revised more than once',
+            text: 'AILET has changed its section composition between cycles, including the treatment of legal reasoning and mathematics. Preparing to a format described in an older guide is a real risk here, so read the current prospectus and build the plan from that rather than from a general account of the examination.',
+          },
         ],
       },
       'exam-pattern': {
@@ -461,6 +621,32 @@ const law = [
             title: 'Read the current prospectus',
             text: 'Section composition, question counts, duration and the marking scheme have all been revised across cycles. Because AILET is conducted by a single university rather than a consortium, changes are announced in its own prospectus rather than through a common notification.',
           },
+          {
+            type: 'p',
+            text: 'A single university with a small intake produces a particular kind of competition. The cutoff is sharp because the seats are few, and the candidate pool is largely the same one sitting CLAT — which means the marginal advantage comes from whatever AILET asks that CLAT does not. For most candidates that is the general knowledge section, and it is the most under-prepared component of the paper for exactly that reason.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Why the pace pressure is different',
+                'A shorter paper with fewer sections generally allows more time per passage than CLAT does. That shifts the binding constraint from reading speed towards accuracy and knowledge, which changes what your practice should be aimed at.',
+              ],
+              [
+                'Why sitting both is standard',
+                'The dates differ, the applications are separate, and the preparation overlaps heavily. There is very little reason not to sit both, and a candidate who prepares for one has already done most of the work for the other.',
+              ],
+              [
+                'Why the application is separate',
+                'NLU Delhi is outside the CLAT consortium entirely, which means a separate form, a separate fee and a separate deadline. Candidates occasionally prepare for AILET and miss the application window because they were tracking the consortium calendar.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Confirm the marking scheme and section counts',
+            text: 'Question counts, duration, section composition and the deduction rate have all been revised across cycles. Since the attempt strategy depends on the deduction and the time allocation depends on the section counts, these are strategic facts rather than administrative detail — read the current prospectus before your final mocks.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -493,6 +679,29 @@ const law = [
               { label: 'Current affairs', to: '/current-affairs/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'The static general knowledge themes worth extracting',
+            items: [
+              { text: 'Indian polity and constitutional basics', note: 'institutions, offices, articles and the structure of government — asked directly rather than through a passage.' },
+              { text: 'Modern Indian history and the freedom movement', note: 'a stable, finite and heavily recycled body of material across law and civil services entrances alike.' },
+              { text: 'International organisations and agreements', note: 'their functions, memberships and headquarters, which recur and are covered by almost no reading habit alone.' },
+              { text: 'Awards, appointments, sports and culture', note: 'the conventional static general knowledge pool, small enough to build as a revision sheet.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Building that list from past papers rather than from a general knowledge book is what makes it manageable. A general compendium is far broader than this section requires and cannot be revised often; a list drawn from three or four years of AILET papers is short, targeted and can be re-read weekly — which is what a recall-based section actually needs.',
+          },
+          {
+            type: 'p',
+            text: 'Work an AILET paper early rather than at the end of your preparation. A candidate who has prepared for CLAT and then sits one usually discovers the same two gaps in the same order — direct general knowledge questions they cannot answer, and English passages denser than the ones they have practised on. Finding that in month two allows the preparation to be adjusted; finding it in the final fortnight does not.',
+          },
+          {
+            type: 'note',
+            title: 'Practise with the deduction applied',
+            text: 'Negative marking applies, and the guessing threshold it implies should be a habit rather than a calculation made in the hall. Working past papers under the correct marking from the beginning is what makes the discipline automatic — particularly in the general knowledge section, where the temptation to guess on half-remembered facts is strongest.',
+          },
         ],
       },
       'mock-tests': {
@@ -524,6 +733,30 @@ const law = [
               { label: 'Current affairs', to: '/current-affairs/' },
               { label: 'Legal reasoning study material', to: '/study-material/legal-reasoning/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'What to check in an AILET mock specifically',
+            items: [
+              { title: 'General knowledge accuracy, first', text: 'The section that most differentiates AILET from CLAT performance, and the one a CLAT-format mock does not test in the same way.' },
+              { title: 'Reading pace on the denser passages', text: 'AILET English tends to be demanding. Time per passage is worth tracking even though the overall pace pressure is lower than CLAT’s.' },
+              { title: 'Logical reasoning across both styles', text: 'Score critical reasoning and analytical reasoning separately. Candidates trained on CLAT are usually strong in the first and untested in the second.' },
+              { title: 'Guessing outcomes under the deduction', text: 'Especially in general knowledge, where uncertain answers cluster.' },
+              { title: 'Whether errors are knowledge or reading', text: 'In a paper with less time pressure than CLAT, a reading error is harder to excuse and easier to fix.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Taking only CLAT-format mocks is the standard error among candidates preparing for both, and it is comfortable precisely because CLAT mocks cushion the gaps AILET exposes. A five-section passage-based paper never tests direct recall, so a candidate can practise for months without discovering that their static general knowledge is thin. Alternating formats in the final two months prevents that.',
+          },
+          {
+            type: 'note',
+            title: 'Alternate the two formats rather than running two schedules',
+            text: 'One mock schedule with alternating formats gives you exposure to both papers without doubling the time commitment. The underlying skills are shared, and what alternating adds is familiarity with two sets of section conventions — which is exactly the marginal thing that separates candidates sitting both.',
+          },
+          {
+            type: 'p',
+            text: 'Because AILET allows more time per passage than CLAT does, an error in this paper is harder to attribute to pacing and easier to attribute to reading or to knowledge — which makes the analysis cleaner. If you misread a passage here, you misread it with time available, and the fix is attention rather than speed. That is a more uncomfortable finding than running out of time, and a more actionable one.',
           },
         ],
       },
@@ -561,6 +794,36 @@ const law = [
               { text: 'Missing the separate application', note: 'NLU Delhi is outside the CLAT consortium entirely.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'The shared base — most of the work',
+                'Daily reading, comprehension practice, critical reasoning and the current affairs habit. Prepared once, it serves both examinations and accounts for the large majority of each.',
+              ],
+              [
+                'Static general knowledge — the AILET addition',
+                'Polity, modern history, international organisations, awards and culture, built as a revision sheet from past papers and revised weekly. Twenty minutes a day, cumulative, and the clearest differentiator.',
+              ],
+              [
+                'Analytical reasoning — the second addition',
+                'Arrangements and puzzles alongside the argument analysis a CLAT preparation builds. Finite, mechanical and quick to acquire with regular practice.',
+              ],
+              [
+                'Two applications, two calendars',
+                'Separate forms, fees and deadlines. An administrative matter that has cost prepared candidates an attempt.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Because NLU Delhi sits outside the consortium, a candidate has to track two admission processes rather than one — two application windows, two examination dates and two counselling procedures. None of that is difficult, and all of it is easy to overlook when the preparation itself is shared. Putting both calendars in one place at the start of the year is a small step that removes an entirely avoidable failure.',
+          },
+          {
+            type: 'note',
+            title: 'Start static general knowledge in month two, not month six',
+            text: 'It is cumulative, it responds to short daily revision rather than to intensive study, and it is the component most likely to be deferred because the reading habit feels like it should cover it. It does not — a newspaper builds current affairs, not the static pool AILET draws on, and those are different bodies of material.',
+          },
         ],
       },
       'study-material': {
@@ -597,6 +860,40 @@ const law = [
               'One legal reasoning and one logical reasoning passage practised.',
               'Weekly full-length mocks, alternating between the two formats.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'General knowledge and polity notes — weighted up',
+                'The clearest difference from a CLAT reading list. Kept as themed sheets rather than as continuous reading, so that they can be revised in minutes and therefore actually will be.',
+              ],
+              [
+                'A newspaper and long-form reading — the shared base',
+                'Serving comprehension, current affairs and argument analysis across both examinations. The same habit, unchanged.',
+              ],
+              [
+                'Reasoning practice across both styles',
+                'Critical reasoning for arguments and analytical reasoning for arrangements. The second is the one a CLAT-oriented preparation under-supplies.',
+              ],
+              [
+                'Legal reasoning material — for CLAT, and useful here',
+                'Where AILET includes legal aptitude in a given cycle it follows a similar logic, and the discipline of applying a supplied principle transfers regardless.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The static general knowledge sheet is the one document worth building specifically for this examination. Drawn from past papers, organised by theme, and revised weekly, it covers a section that direct questioning makes decisive and that no amount of reading for comprehension will supply. Twenty minutes a day against a short, targeted list beats hours spent with a general knowledge compendium.',
+          },
+          {
+            type: 'note',
+            title: 'One reading list, two revision sheets',
+            text: 'The efficient shape of a combined law entrance preparation is a single reading habit serving both papers, with two short revision documents on top — a vocabulary and background list from your reading, and a static general knowledge sheet for AILET. Everything else in this preparation is practice rather than material.',
+          },
+          {
+            type: 'p',
+            text: 'On sequencing across a year: keep the reading habit running from the first week, since it is the slowest component to build and it serves both examinations. Add the static general knowledge sheet in the second month, because it is cumulative and needs months of short daily passes rather than a concentrated block. Bring in analytical reasoning practice around the same point, as a short finite project. Then give the final two months to alternating full-length mocks in both formats, with the general knowledge sheet revised weekly throughout. That order puts the slowest-building components first and leaves the finishable ones for when time is short.',
           },
         ],
       },

@@ -121,6 +121,25 @@ const university = [
             type: 'p',
             text: 'The close alignment between the domain papers and the class 12 NCERT syllabus is the most useful fact about CUET preparation. A candidate studying properly for their board examinations is covering most of what the domain papers ask — what they need to add is objective-question practice, since boards test descriptively and CUET does not.',
           },
+          {
+            type: 'list',
+            title: 'What the NCERT alignment does and does not give you',
+            items: [
+              { text: 'It gives you the content', note: 'domain papers are drawn from the class 12 NCERT syllabus, which means the material you are studying for your boards is the material CUET examines. There is no second syllabus to cover.' },
+              { text: 'It does not give you the format', note: 'boards ask you to explain, derive and describe; CUET asks you to select between four close options under time. Knowing a chapter well and answering objective questions on it quickly are different achievements.' },
+              { text: 'It does not cover the General Test', note: 'general knowledge, current affairs, mental ability and numerical ability appear in no class 12 syllabus, and for programmes that require the paper it has to be prepared separately.' },
+              { text: 'It does not settle which papers you need', note: 'the syllabus tells you what each paper contains; only the universities tell you which papers your target programmes require.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The language papers are worth a short deliberate effort rather than being assumed. Reading comprehension, verbal ability, vocabulary and rearranging jumbled sentences are all straightforward for a competent reader and none of them is automatic under a clock. A few weeks of practice usually takes a candidate from adequate to comfortable, and the paper is required by most programmes.',
+          },
+          {
+            type: 'note',
+            title: 'Read the syllabus for the subjects you have actually selected',
+            text: 'CUET offers domain papers across the sciences, commerce and humanities, and the list has changed between cycles. Reading the full offering is a poor use of time; reading the syllabus for each paper in your own combination, and checking it against what your school has covered, is the useful version of the exercise.',
+          },
         ],
       },
       'exam-pattern': {
@@ -160,6 +179,32 @@ const university = [
             title: 'CUET has changed substantially between cycles',
             text: 'The maximum number of papers, the list of subjects offered, question counts, durations and the delivery mode have all been revised since the examination was introduced. This is not a case where last year’s guide is close enough — read the current information bulletin before selecting papers.',
           },
+          {
+            type: 'p',
+            text: 'Paper selection is the one decision in this examination that cannot be corrected afterwards, and it is made at registration before any preparation is complete. A programme that required a domain paper you did not sit is closed to you regardless of how well you scored on the others. That makes compiling the requirements of every programme you might realistically apply to — not just your first choice — the genuine first task of a CUET preparation.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Why the five-to-one ratio should change your instincts',
+                'Five marks gained against one lost is among the more forgiving schemes in Indian entrance testing. A guess narrowed to three options is clearly positive, and even a blind guess breaks even on expectation. Candidates who skip conservatively are leaving marks on the table.',
+              ],
+              [
+                'Why normalisation makes comparison pointless',
+                'Papers run across multiple days and shifts, and scores are normalised so that a candidate in a harder shift is not disadvantaged. The raw mark you calculate afterwards is not what universities see, and comparing it with a friend in another shift tells you nothing.',
+              ],
+              [
+                'Why universities differ in how they use the scores',
+                'One programme may count your best three papers, another may specify exactly which three, and weightings vary. Two candidates with identical scores can therefore have different prospects at different institutions, which is why the requirements have to be checked programme by programme.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Confirm the maximum number of papers for your cycle',
+            text: 'The cap on how many papers a candidate may take has been revised, as have the subjects offered, question counts and durations. Since your whole combination strategy depends on that cap, read the current information bulletin before finalising your registration rather than planning from an earlier year’s arrangement.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -193,6 +238,29 @@ const university = [
               { label: 'Study material by subject', to: '/study-material/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'What board preparation does not prepare you for',
+            items: [
+              { text: 'Close distractors', note: 'objective options are constructed to be plausible, often differing from the correct answer in one detail. A board answer that would have earned full marks for its explanation is no help in choosing between them.' },
+              { text: 'Recognition speed', note: 'boards give you time to think and to write. CUET gives you a fixed short window per question, which rewards recognising what is being asked rather than reasoning it out.' },
+              { text: 'Precision of recall', note: 'a specific value, a specific definition, a specific exception. Descriptive answers tolerate approximation; objective questions do not.' },
+              { text: 'Breadth over depth', note: 'objective papers sample the whole syllabus rather than examining a few chapters in depth, which punishes the selective preparation many board candidates rely on.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The productive habit that follows is to work objective questions on each chapter as you finish it for your boards, rather than saving CUET practice for a separate phase. It costs very little extra time, it converts board study into CUET preparation at the same moment, and it exposes the precision gaps while the chapter is still fresh — which is when they are cheapest to close.',
+          },
+          {
+            type: 'p',
+            text: 'Practise with the five-to-one marking applied from the beginning. Attempt thresholds are habits rather than calculations performed in the hall, and a candidate who has practised under a harsher scheme will skip questions that this paper rewards attempting. Working past papers with the correct marking is what makes the appropriate boldness automatic.',
+          },
+          {
+            type: 'note',
+            title: 'Practise the General Test if any target programme requires it',
+            text: 'It is the paper with no class 12 equivalent — general knowledge, current affairs, mental ability, numerical ability and logical reasoning. Nothing in school prepares a candidate for it, which means it needs its own parallel track from early on rather than a fortnight at the end.',
+          },
         ],
       },
       'mock-tests': {
@@ -224,6 +292,30 @@ const university = [
               { label: 'Study material by subject', to: '/study-material/' },
               { label: 'Current affairs', to: '/current-affairs/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'Assembling practice for your own combination',
+            items: [
+              { title: 'Practise the papers you actually selected', text: 'Every candidate sits a different set, so there is no standard CUET mock. Your practice has to be assembled from papers in your own combination.' },
+              { title: 'Time each paper to its real duration', text: 'The durations are tight relative to the question counts, and pace is a real constraint even where the content is familiar.' },
+              { title: 'Score each domain paper separately', text: 'They are reported separately and weighted differently by different universities, so a combined figure is not a number anyone will use.' },
+              { title: 'Watch the attempt rate', text: 'Under five-to-one marking it should be high. A large number of skipped questions is the characteristic conservative error.' },
+              { title: 'Track the General Test as its own project', text: 'If it is required, it improves on a different timescale from the domain papers and needs its own log.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Because CUET falls close to the board examinations for most candidates, the practical constraint is scheduling rather than material. Full timed papers in your combination need to be placed deliberately in the final two months, around board preparation, or they will not happen — and the objective format is exactly the thing board study does not rehearse.',
+          },
+          {
+            type: 'note',
+            title: 'Practise on a computer',
+            text: 'CUET is computer-based, and navigating between questions, marking for review and working from a rough sheet rather than an annotated question paper all cost time when unfamiliar. A meaningful share of screen-based practice removes an avoidable loss on the day.',
+          },
+          {
+            type: 'p',
+            text: 'One further check worth running after each set of practice papers: compare your accuracy on questions drawn from chapters you studied early in class 12 with those from chapters you studied recently. A pronounced gap is a retention finding rather than a knowledge one, and it tells you that the revision cycle needs building into your board preparation rather than that the earlier chapters need re-learning. For an examination sat at the end of a two-year syllabus, that distinction determines whether the final months are spent revising efficiently or re-covering ground you had already earned.',
           },
         ],
       },
@@ -261,6 +353,36 @@ const university = [
               { text: 'Skipping conservatively', note: 'the five-to-one marking rewards attempting widely.' },
               { text: 'Preparing to a previous year’s structure', note: 'CUET has been revised substantially between cycles.' },
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'The research task — before registration',
+                'Compiling the paper requirements of every programme you might apply to, across every university you might apply to, and choosing a combination that satisfies all of them. It is the only decision in this examination that cannot be revisited.',
+              ],
+              [
+                'The shared study — through class 12',
+                'Class 12 NCERT worked properly. It serves your boards and your domain papers simultaneously, which is why CUET rarely justifies a separate content preparation.',
+              ],
+              [
+                'The format layer — objective practice',
+                'Questions on each chapter as you finish it, under time, with close distractors. Small, continuous and the thing that converts board knowledge into CUET marks.',
+              ],
+              [
+                'The General Test — a parallel track',
+                'Required by some programmes, especially interdisciplinary ones, and prepared by nothing in school. It needs its own slot from month two if you need it at all.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The tension candidates feel between board preparation and CUET preparation is largely illusory for the domain papers, since they draw on the same syllabus. What is genuinely additional is the format practice, the General Test if required, and the language paper — none of which is large. Treating CUET as a second full preparation alongside the boards creates a scheduling problem that does not need to exist.',
+          },
+          {
+            type: 'note',
+            title: 'Check requirements for programmes you might apply to, not only your first choice',
+            text: 'Preferences shift between registration and admission, and a combination chosen for a single target can close off perfectly reasonable alternatives. Building the combination to cover a realistic range of programmes costs nothing extra at registration and preserves options you may want later.',
           },
         ],
       },
@@ -302,6 +424,36 @@ const university = [
               'Practise your language paper for a few weeks; it is straightforward but not automatic.',
               'Work timed papers in your actual selected combination in the final months.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Class 12 NCERT — the primary source for domain papers',
+                'The papers are drawn from it directly, which makes it the right book rather than a starting point. Read it with the precision an objective paper requires — definitions, values, exceptions and the details a descriptive answer would gloss.',
+              ],
+              [
+                'Objective question banks per subject',
+                'Worked chapter by chapter alongside your board study. This is the layer that converts content knowledge into the recognition speed the paper tests.',
+              ],
+              [
+                'General Test material — where required',
+                'General knowledge, current affairs, mental ability and numerical ability. A separate body of material with no school equivalent, best built as themed sheets plus a daily current affairs habit.',
+              ],
+              [
+                'Language practice — a few weeks',
+                'Comprehension, verbal ability, vocabulary and sentence rearrangement. Straightforward, finite and worth a short deliberate effort rather than an assumption.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Read NCERT for detail rather than for narrative when preparing the domain papers. The difference matters: a candidate reading for understanding will follow the argument of a chapter and skim the specific values, definitions and exceptions, which is exactly where objective distractors are built. Reading with a question paper in mind changes what you notice on the page.',
+          },
+          {
+            type: 'note',
+            title: 'Keep the General Test running in parallel',
+            text: 'Its current affairs component is cumulative and cannot be assembled late, and its reasoning and numerical components improve with regular short practice rather than with concentrated study. Twenty minutes a day from month two covers a paper that some interdisciplinary programmes treat as decisive.',
           },
         ],
       },
@@ -441,6 +593,26 @@ const university = [
             type: 'p',
             text: 'Some codes are narrow and some are broad, covering a family of related subjects in one paper. Where a broad code applies, a candidate may face questions outside their specialisation within the discipline — which is worth knowing before the examination, since it changes how widely you need to revise.',
           },
+          {
+            type: 'list',
+            title: 'Why the code determines everything',
+            items: [
+              { text: 'It fixes the syllabus', note: 'each code has its own published syllabus, and they differ in scope as well as content. Preparing from a general account of CUET PG prepares you for no code in particular.' },
+              { text: 'It fixes which programmes you can apply to', note: 'universities specify which code each programme accepts. A strong score in the wrong code does not open the programme you wanted.' },
+              { text: 'It fixes the breadth expected', note: 'some codes are narrow and some cover a family of related subjects, which means a specialist may need to revise material well outside their own concentration.' },
+              { text: 'It is chosen at registration', note: 'before your preparation is complete and before you may have finalised your programme preferences — which is why the verification has to come first.',
+              },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The broad codes are where candidates are most often caught out. A candidate who specialised in one area of a discipline may find the code covering the whole family of related subjects, several of which they last studied in their second year. Reading the published syllabus for the code — rather than assuming it matches their own degree concentration — is what surfaces that, and it is worth doing before rather than after registration.',
+          },
+          {
+            type: 'note',
+            title: 'The syllabus is graduate-level, not postgraduate',
+            text: 'The papers examine the content of a bachelor’s degree in the discipline rather than research-level material. That calibration matters: a candidate preparing from postgraduate texts is working above the level the paper asks for, while one revising only their final-year modules is working below its breadth.',
+          },
         ],
       },
       'exam-pattern': {
@@ -481,6 +653,32 @@ const university = [
             title: 'CUET PG has changed between cycles',
             text: 'The code list, question counts, durations, delivery arrangements and the set of participating universities have all been revised since the examination began. Read the current information bulletin, and the current admission information of each university, rather than relying on a previous year’s arrangement.',
           },
+          {
+            type: 'p',
+            text: 'The four-to-one marking ratio should change how a graduate candidate approaches the paper, because it is more forgiving than most postgraduate entrances. A blind guess among four options breaks even in expectation, and any narrowing at all makes an attempt clearly worthwhile. Candidates arriving from harsher examinations — or simply from an academic disposition that dislikes answering without certainty — routinely leave marks unclaimed.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Registering for more than one code',
+                'Possible within the scheduling constraints, and worth considering where your target programmes are spread across disciplines or where a related code opens additional options. It multiplies the preparation, so it is a decision to make deliberately rather than defensively.',
+              ],
+              [
+                'How universities use the score',
+                'Cutoffs, weightings and additional criteria are set by each institution rather than centrally. Two programmes accepting the same code can treat the same score quite differently, which is why the checking has to be programme by programme.',
+              ],
+              [
+                'Interviews at research-oriented programmes',
+                'Frequently added, particularly for research degrees and for programmes with small intakes. Knowing in advance which of your targets require one changes what you prepare in the weeks after the result.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Confirm the current arrangements before registering',
+            text: 'The code list, question counts, durations, delivery arrangements and the set of participating universities have all been revised between cycles. Since your code choice depends on which programmes accept what, and since that list changes, the current information bulletin is the only reliable source at the moment you register.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -513,6 +711,29 @@ const university = [
               { label: 'All previous year papers', to: '/previous-year-papers/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'What past papers in your code establish',
+            items: [
+              { text: 'The depth of questioning', note: 'how far into each topic the paper reaches, which a topic list cannot convey and which determines whether you revise for recall or for application.' },
+              { text: 'The distribution across the code', note: 'where a code covers several related subjects, the papers show how the questions are spread — often less evenly than the syllabus implies.' },
+              { text: 'The distractor style', note: 'close options built around a specific distinction, which is the feature graduate coursework least prepares you for.' },
+              { text: 'The gaps against your own degree', note: 'topics on the code syllabus your course covered lightly or not at all, visible in the papers before they become visible in a result.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Compare your topic frequency table against your own degree syllabus explicitly rather than impressionistically. The overlap is usually substantial and the gaps are usually specific — two or three areas the paper emphasises and your course did not. Those areas are where a preparation is won or lost, and they are invisible unless the comparison is made deliberately.',
+          },
+          {
+            type: 'p',
+            text: 'Practise with the four-to-one marking applied from the first paper. The appropriate attempt threshold is a habit rather than a calculation, and a candidate who has practised under stricter rules — or under none — will not have built the boldness this scheme rewards. It is a small adjustment that reliably returns marks.',
+          },
+          {
+            type: 'note',
+            title: 'Work papers in your own code only',
+            text: 'The codes are effectively separate examinations sharing a name and a format. Practice in a neighbouring discipline builds nothing transferable beyond familiarity with the question style, which a few papers in your own code supply anyway — and it consumes time that the code syllabus will absorb entirely.',
+          },
         ],
       },
       'mock-tests': {
@@ -543,6 +764,30 @@ const university = [
               { label: 'All free mock tests', to: '/mock-tests/free/' },
               { label: 'Study material by subject', to: '/study-material/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'Building practice for a subject-specific paper',
+            items: [
+              { title: 'Use past papers in your code as the core', text: 'There is no generic CUET PG mock worth taking. Your own code’s papers are both the practice and the calibration.' },
+              { title: 'Supplement with objective questions on your syllabus', text: 'Graduate courses examine descriptively, so most candidates have very little experience answering multiple-choice questions in their own discipline.' },
+              { title: 'Check coverage across the whole code', text: 'Especially where the code is broader than your specialisation. Accuracy concentrated in your strong areas conceals a coverage problem.' },
+              { title: 'Track attempt rate', text: 'Under four-to-one marking it should be high. Academic caution is the characteristic source of unclaimed marks here.' },
+              { title: 'Time the full paper', text: 'The duration is set relative to the question count and leaves limited room, which is easy to underestimate when the content is familiar.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The objective format is the genuinely unfamiliar element for most candidates, and it is worth naming as a skill rather than a detail. A graduate who can write a strong essay on a topic may still hesitate between two close options on it, because selecting under time draws on precision of recall rather than on the ability to construct an argument. Practice on that specific operation is what converts subject knowledge into a score.',
+          },
+          {
+            type: 'note',
+            title: 'Practise on a computer',
+            text: 'The paper is computer-based, and navigation, review flags and working from a rough sheet all cost time when unfamiliar. For a candidate whose recent examinations have been written by hand, screen-based practice removes an avoidable loss that has nothing to do with the subject.',
+          },
+          {
+            type: 'p',
+            text: 'Because the code may cover a family of subjects rather than your own concentration, it is worth scoring your practice papers by sub-area as well as in total. A respectable overall figure built on strong performance in your specialisation and weak performance across the neighbouring subjects is a coverage problem wearing the appearance of a good result — and it will not survive a paper that distributes its questions across the whole code. Sub-area scoring is what makes that visible while there is still time to rebuild the areas your degree treated lightly.',
           },
         ],
       },
@@ -580,6 +825,36 @@ const university = [
               { text: 'Skipping conservatively', note: 'the four-to-one marking rewards attempting on partial knowledge.' },
               { text: 'Ignoring university-specific requirements', note: 'cutoffs, weightings and interviews vary.' },
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Verification — the first task',
+                'Which code each target programme accepts, checked in each university’s own admission information. It is an afternoon of research, it precedes all study, and getting it wrong is the one error this examination does not let you correct.',
+              ],
+              [
+                'Revision — the bulk of the work',
+                'The published code syllabus at graduate level, using your own degree textbooks, prioritised by a past-paper frequency table rather than by syllabus order.',
+              ],
+              [
+                'Format practice — the conversion layer',
+                'Objective questions in your own subject, which graduate coursework does not supply. It is what turns knowing the material into scoring on it.',
+              ],
+              [
+                'Programme-specific requirements — checked early',
+                'Cutoffs, weightings and whether an interview is added. These vary by institution and they shape what you do after the examination as much as before it.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Where a code is broader than your degree specialisation, plan the revision around that gap from the beginning rather than discovering it in a mock. A candidate who concentrated in one area of a discipline may need to rebuild two or three neighbouring subjects to graduate level — which is entirely achievable over a few months and impossible in a final fortnight.',
+          },
+          {
+            type: 'note',
+            title: 'Consider a second code deliberately',
+            text: 'Registering for more than one code is possible within scheduling constraints and can widen the programmes available to you. It also multiplies the syllabus you are responsible for, so it is worth doing where your targets genuinely span disciplines and worth avoiding where it merely feels like insurance.',
           },
         ],
       },
@@ -619,6 +894,36 @@ const university = [
               'Practise objective questions on each topic as you finish it.',
               'Work past papers in your code throughout, not only at the end.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'The published code syllabus — the starting document',
+                'Not your degree syllabus. The two overlap substantially and differ specifically, and the differences are what your preparation is actually for.',
+              ],
+              [
+                'Your own degree textbooks — the depth source',
+                'Matched to graduate level, carrying the notation and framing you already recognise, and containing the reasoning that condensed guides remove.',
+              ],
+              [
+                'Past papers in your code — the calibration and the practice',
+                'The only material that shows how deep the questions reach and how the distractors are built. Worth reserving a couple for late practice rather than working through them all early.',
+              ],
+              [
+                'Objective question practice — the format layer',
+                'Chapter by chapter as you revise, rather than as a final phase. It exposes precision gaps while the material is still fresh.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Map the published syllabus against your degree syllabus in the first week and prioritise the gaps. That single exercise replaces a great deal of general advice about what to study: it identifies the topics you have covered and need only to refresh, the topics you covered lightly and need to rebuild, and the topics you never met at all — three categories requiring three quite different amounts of time.',
+          },
+          {
+            type: 'note',
+            title: 'Work past papers throughout, not only at the end',
+            text: 'They serve as calibration early and as rehearsal late, and using them only in the final month wastes the more valuable of the two functions. Sitting one at the start of your preparation tells you how deep to revise; sitting the last one at the end tells you whether you did.',
           },
         ],
       },

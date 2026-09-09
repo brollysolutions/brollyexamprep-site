@@ -121,6 +121,25 @@ const mba = [
             type: 'p',
             text: 'The most useful thing to know about the CAT syllabus is how little of it is exotic. Almost everything is school mathematics and ordinary English comprehension. The difficulty comes from the application — unusual framings, multi-step reasoning and severe time pressure — which means the productive preparation is practice rather than the acquisition of new content.',
           },
+          {
+            type: 'list',
+            title: 'What "no official syllabus" actually means for planning',
+            items: [
+              { text: 'You cannot finish it, and you are not meant to', note: 'the absence of a published list is deliberate. The test measures how you handle unfamiliar material, so a completeness mindset imported from a board examination misdirects the whole preparation.' },
+              { text: 'Past papers define the boundary', note: 'what the paper has asked over the last decade is the only authoritative statement of scope, and it is narrower than the folklore suggests.' },
+              { text: 'Arithmetic carries more than its share', note: 'percentage, ratio, averages, mixtures, time and work and time and distance recur constantly and also underpin the data interpretation section. It is the highest-leverage block in the syllabus.' },
+              { text: 'Reading comprehension is the largest single component', note: 'and it is not a syllabus item at all. No amount of topic study substitutes for months of reading difficult prose.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The reasoning section deserves a note of its own, because it is the one where the word syllabus is most misleading. Sets are built to be unfamiliar — a scheduling puzzle wrapped in an unusual context, a data set with a rule you have to infer. There is no list of set types to learn. What transfers between sets is the process: read the whole set before calculating, represent the constraints, identify what is actually being asked, and decide within two minutes whether it is worth your forty.',
+          },
+          {
+            type: 'note',
+            title: 'Difficulty is not the same as advanced content',
+            text: 'Almost nothing in CAT sits above the school curriculum. What makes the paper hard is that ordinary material is asked in unfamiliar ways, under sectional time pressure, with more questions than anyone can attempt. Candidates who respond by seeking harder content are treating the wrong variable — the fix is fluency and judgement, not a more advanced textbook.',
+          },
         ],
       },
       'exam-pattern': {
@@ -160,6 +179,32 @@ const mba = [
             title: 'Percentiles are normalised across slots',
             text: 'CAT runs across multiple slots on one day, and scores are normalised so that no candidate is disadvantaged by drawing a harder slot. Your percentile, not your raw score, is what institutes use — and comparing raw scores with candidates from other slots tells you very little.',
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Why sectional percentiles change your priorities',
+                'Institutions apply sectional cutoffs as well as overall ones, which means a candidate with a very strong quantitative percentile and a weak verbal one can miss calls that a more balanced candidate with the same overall percentile receives. The practical consequence is that your weakest section usually deserves more of your remaining time than your strongest, regardless of which feels more productive.',
+              ],
+              [
+                'Why type-in-the-answer questions should never be blank',
+                'They carry no deduction. Even a guess with no working behind it has non-zero expected value and costs nothing, which makes an unanswered TITA question a strictly dominated choice. Candidates lose marks to this every year purely through habit carried over from the multiple-choice questions around it.',
+              ],
+              [
+                'Why normalisation makes cross-slot comparison meaningless',
+                'Scores are adjusted so that candidates in a harder slot are not disadvantaged. Comparing your raw score with a friend in a different slot tells you nothing, and the widespread post-exam practice of doing so causes a great deal of unnecessary anxiety about an outcome that has already been accounted for.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Sectional timing has one underrated consolation worth internalising before the day: a bad section is contained. In an open-timed paper, a disastrous first hour bleeds into everything after it, both in time and in composure. Here the clock closes and a new forty minutes begins with a clean slate. Candidates who understand that recover from a poor first section far more often than those who spend the second one thinking about the first.',
+          },
+          {
+            type: 'note',
+            title: 'Question counts have changed; the structure has not',
+            text: 'The number of questions per section and the split between multiple-choice and type-in-the-answer questions have both been adjusted across recent cycles, while the three-section, forty-minutes-each architecture has held. Confirm the current counts before your final mocks, but do not rebuild your strategy around them — the strategic facts are the sectional timing and the marking rules, and those have been stable.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -193,6 +238,29 @@ const mba = [
               { label: 'Data interpretation study material', to: '/study-material/dilr/' },
               { label: 'Verbal ability study material', to: '/study-material/varc/' },
             ],
+          },
+          {
+            type: 'list',
+            title: 'What to log when you work a past reasoning section',
+            items: [
+              { text: 'Which sets you chose, and in what order', note: 'the choice is the skill. Recording it makes the decision visible and therefore reviewable, which it never is if you only record the score.' },
+              { text: 'How long you took to decide', note: 'good candidates spend the first minute or two scanning all the sets before touching any of them. Candidates who start on set one have made no decision at all.' },
+              { text: 'Whether the sets you skipped were actually harder', note: 'reviewing them afterwards without a clock is how selection judgement is calibrated. Sometimes you left the easiest set on the table.' },
+              { text: 'Where the section went wrong, if it did', note: 'almost always one of two things: a set that consumed fifteen minutes without resolving, or a slow start that left too little time for the sets you could have done.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'For reading comprehension, track accuracy by passage type rather than in aggregate. Most candidates find a consistent pattern — comfortable with science and business passages, weaker on philosophy or literary criticism, or the reverse — and that pattern is directly actionable in two ways. It tells you what to read more of in preparation, and it tells you which passage to leave last on the day when you cannot attempt all of them.',
+          },
+          {
+            type: 'p',
+            text: 'The quantitative frequency table is worth building once and then trusting. Across a decade of papers, arithmetic, algebra and number systems account for a substantially larger share than geometry and modern mathematics, and within arithmetic a handful of themes dominate. That distribution is stable enough that it should determine the order in which you build the section, particularly for a candidate starting late.',
+          },
+          {
+            type: 'note',
+            title: 'Solve past papers under sectional timing, always',
+            text: 'An untimed past paper measures your mathematics; a sectionally timed one measures your CAT. Since the examination is fundamentally a test of decisions made under a closing clock, practice that removes the clock removes the thing being tested — and it tends to produce a comfortable score that misleads you about your readiness.',
           },
         ],
       },
@@ -231,6 +299,32 @@ const mba = [
               { label: 'Sectional and topic practice', to: '/practice/' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'The three-way classification, and what each pile means',
+                'After every mock, sort each question into solved, could have solved, and could not have solved. The first pile is your current level. The second is your immediate opportunity and is almost always the largest — these are marks lost to selection, pacing or carelessness rather than to knowledge. The third is the only pile that calls for more study.',
+              ],
+              [
+                'Why the second pile matters most',
+                'For most candidates, the gap between their score and their potential score is mostly in questions they could have done and did not reach, misread, or abandoned wrongly. That gap closes through better decisions rather than through more content, which is why a candidate who only studies after a mock rarely improves.',
+              ],
+              [
+                'Why section-wise percentiles beat the overall figure',
+                'Calls depend on sectional performance as well as the aggregate. An overall percentile that has risen while one section has stagnated is a worse position than the number suggests, and only section-wise tracking makes that visible.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Look specifically at the last ten minutes of each section in your analysis. A section that ends in a scramble — several questions attempted in the final minutes, accuracy collapsing — is almost never a knowledge problem. It usually means the first ten minutes were spent on a set or a passage that should have been abandoned, and the whole section was played from behind as a result. That diagnosis is invisible in a score and obvious in a timestamped review.',
+          },
+          {
+            type: 'note',
+            title: 'Fewer mocks, properly analysed',
+            text: 'Fifteen mocks each followed by two hours of analysis will produce a better candidate than forty taken and scored. The mock is raw material; the analysis is the preparation. Candidates who take mocks daily are usually substituting the measurable comfort of activity for the harder work of confronting what the last one showed.',
+          },
         ],
       },
       preparation: {
@@ -268,6 +362,32 @@ const mba = [
               { text: 'Leaving type-in-the-answer questions blank', note: 'they carry no penalty and should always be attempted.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Reading — the longest lead time in the preparation',
+                'Comprehension speed and comfort with unfamiliar argument cannot be built in a final month. A candidate who reads difficult, unfamiliar prose daily for six months arrives with an advantage that no amount of late verbal practice replicates, and one who does not cannot manufacture it.',
+              ],
+              [
+                'Arithmetic fluency — the highest-leverage content work',
+                'Percentages, ratios, fractions and their equivalents, done fast and without writing much down. It underpins the quantitative section and most of data interpretation, and it is the one genuinely content-shaped investment that pays across two of the three sections.',
+              ],
+              [
+                'Selection judgement — the skill the test is built around',
+                'Trained only by sectionally timed practice followed by honest review of what you chose. It is the difference between candidates with similar knowledge and very different percentiles, and it is almost entirely absent from untimed preparation.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Give the weakest section more time than feels natural, for a structural reason rather than a motivational one. Percentile is a rank, and ranks move fastest where you are furthest from the crowd — improving a poor section from the fortieth percentile to the seventieth moves your overall position considerably more than improving a strong section from the ninetieth to the ninety-fifth. Sectional cutoffs then compound the effect, because a weak section can cost calls outright.',
+          },
+          {
+            type: 'note',
+            title: 'The final two months are for practice, not content',
+            text: 'New topics started in the last eight weeks rarely reach the fluency at which they produce marks, and the time they consume comes out of mock analysis, which reliably would have. By that stage the productive activities are mocks, their analysis, revision of your own error log, and maintaining the reading habit — and nothing else.',
+          },
         ],
       },
       'study-material': {
@@ -302,6 +422,36 @@ const mba = [
               'Fifteen minutes of pure calculation drilling — fractions, percentages, squares.',
               'One weekly mock, analysed for longer than it took to attempt.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Arithmetic — first, and worked to automaticity',
+                'Not because it is the largest topic on paper but because it underpins both the quantitative section and data interpretation. Fluency here means computing a percentage change or a ratio split without writing intermediate steps, which is a different achievement from knowing how.',
+              ],
+              [
+                'Reading material — chosen for discomfort',
+                'The passages CAT sets are drawn from registers most candidates do not read voluntarily: philosophy, literary criticism, economic history, cultural theory. Reading only what you enjoy builds speed in a register the paper may not test. Deliberately read what you would not choose.',
+              ],
+              [
+                'Reasoning sets — variety over volume',
+                'Twenty sets from twenty different sources teaches more than a hundred from one, because what transfers is the process for handling unfamiliarity rather than familiarity with any particular set type.',
+              ],
+              [
+                'Your own mock analysis — the material that matters most',
+                'By the final months, the document you should be revising is the log of what you got wrong and why. It is specific to you and it names the decisions that are actually costing you percentile points.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'A caution about accumulating material, which afflicts CAT preparation more than most. Because there is no official syllabus, there is no natural stopping point, and the market supplies an endless quantity of books, question banks and courses. The candidate who works through one good quantitative source twice and reads daily for six months will beat the candidate who owns five sources and has finished none of them — and the second candidate will have worked considerably harder.',
+          },
+          {
+            type: 'note',
+            title: 'Mixed practice, not topic-wise practice',
+            text: 'Once you have built a topic, practise it mixed in with everything else rather than in dedicated blocks. Topic-wise practice tells you the method before you start, which removes the recognition step — and recognition under time pressure is precisely what the quantitative section tests. Mixed sets of twenty questions are the closest daily approximation to the real thing.',
           },
         ],
       },
@@ -437,6 +587,25 @@ const mba = [
             type: 'p',
             text: 'On Decision Making, the most useful preparation insight is that the questions are not tests of business knowledge. They reward a consistent approach: identify who is affected, identify what the actual problem is as distinct from its symptoms, and prefer options that address the problem without creating a larger one. Candidates who reason that way improve markedly; candidates who look for a formula do not.',
           },
+          {
+            type: 'list',
+            title: 'What Decision Making questions actually test',
+            items: [
+              { text: 'Whose interests you notice', note: 'most situations involve several parties, and the better options are usually the ones that account for a stakeholder the obvious answer overlooks.' },
+              { text: 'Whether you act within your authority', note: 'options that require the protagonist to exceed their role, or to act unilaterally where consultation is available, are frequently the attractive wrong answer.' },
+              { text: 'Whether you gather information before acting', note: 'a large share of correct answers involve finding out more rather than deciding immediately, which candidates trained on decisive-sounding management language reliably under-select.' },
+              { text: 'Whether the option is proportionate', note: 'escalating a minor issue, or treating a serious one lightly, are both penalised. The register of the response has to match the register of the problem.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'None of that is business knowledge, which is the point candidates most often miss. A working professional has no systematic advantage in this section over a final-year student, and reading management textbooks does very little for it. What helps is working sets with explanations until you can predict the reasoning the examiner will endorse — which is a learnable pattern, and one that takes weeks rather than days to internalise.',
+          },
+          {
+            type: 'note',
+            title: 'The essay and general knowledge sit outside the percentile',
+            text: 'They are generally not counted in the percentile that determines shortlisting, and they are considered at later selection stages — which makes them easy to dismiss and unwise to ignore. A candidate who reaches an interview having written a poor essay and knowing nothing of the year’s events has weakened exactly the stage where the essay and general knowledge are looked at.',
+          },
         ],
       },
       'exam-pattern': {
@@ -478,6 +647,32 @@ const mba = [
             title: 'Confirm the current marking rules',
             text: 'The permitted number of unattempted questions, the deduction rates and the treatment of general knowledge in shortlisting have all been stated differently across cycles. Because they affect attempt strategy directly, read them in the current bulletin rather than relying on a summary.',
           },
+          {
+            type: 'p',
+            text: 'The unattempted-question penalty is the rule that most often catches candidates out, because it is the opposite of the instinct every other management entrance builds. In CAT the correct response to a section you cannot finish is to leave the remainder cleanly; here, leaving more than the permitted number of questions blank costs you directly. The practical effect is that you must attempt more than feels comfortable, which changes how you allocate time across a section you are not going to complete.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Two penalties, applied differently',
+                'A deduction for wrong answers, in the ordinary way, and a separate deduction once your unattempted questions exceed the permitted allowance. Managing both simultaneously means keeping a rough count of your blanks as you go rather than discovering the total at the end.',
+              ],
+              [
+                'Why Decision Making changes the section mix',
+                'It is a substantial share of the scored paper and it has no counterpart in any other examination, which means a CAT-prepared candidate is fully prepared for roughly three quarters of what counts and entirely unprepared for the rest.',
+              ],
+              [
+                'Why the quantitative section feels harder',
+                'It is generally regarded as more demanding than CAT’s, with geometry in particular going further. A candidate calibrated on CAT difficulty should expect to abandon more questions here, which interacts awkwardly with the blank-count rule and needs rehearsing.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Confirm the marking rules for your cycle',
+            text: 'The permitted number of unattempted questions, the deduction rates, the section timings and whether general knowledge and the essay carry any weight in the percentile have all varied between cycles. These are strategic facts rather than administrative details — the blank-count rule in particular changes how you play a section — so read the current bulletin rather than a guide written for an earlier year.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -511,6 +706,29 @@ const mba = [
               { label: 'Verbal ability study material', to: '/study-material/varc/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'How to read a Decision Making explanation properly',
+            items: [
+              { text: 'Start with the option you chose', note: 'and find the specific reason the examiner rejected it. That reason, not the correct answer, is the thing being taught.' },
+              { text: 'Then read why each other wrong option is wrong', note: 'the distractors are constructed deliberately — one is usually too aggressive, one too passive, one plausible but outside the protagonist’s authority. Recognising those shapes is what transfers.' },
+              { text: 'Note the register of the correct answer', note: 'XAT tends to endorse measured, consultative, information-gathering responses. Candidates who consistently pick decisive-sounding options are making a systematic rather than a random error.' },
+              { text: 'Keep a running tally of your error type', note: 'too aggressive, too cautious, or missing a stakeholder. Over thirty questions a clear pattern emerges, and correcting one systematic bias is worth more than any amount of additional practice.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'That tally is the single most useful artefact of XAT preparation. Decision Making errors are rarely random — most candidates lean consistently in one direction — and a candidate who discovers that they systematically choose the more forceful option can correct for it deliberately in the examination. Without the tally, the same errors simply recur set after set and feel like bad luck.',
+          },
+          {
+            type: 'p',
+            text: 'For the quantitative section, work past XAT papers rather than relying on CAT material for calibration. The difficulty runs higher, geometry in particular is treated more thoroughly, and the questions are often longer to read. A candidate who has only practised on CAT quantitative sets will find the section slower than expected, which matters more here than elsewhere because of the blank-count rule waiting at the end of it.',
+          },
+          {
+            type: 'note',
+            title: 'Track blanks in every practice paper',
+            text: 'Not as an afterthought but as a live number. The habit to build is periodically noting roughly how many questions you have left unanswered, so that in the final minutes you can bring the count down deliberately. Candidates who discover their blank count only when scoring the paper have never practised the decision the rule actually demands.',
+          },
         ],
       },
       'mock-tests': {
@@ -542,6 +760,26 @@ const mba = [
               { label: 'All free mock tests', to: '/mock-tests/free/' },
               { label: 'Current affairs', to: '/current-affairs/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'A full XAT mock, done properly',
+            items: [
+              { title: 'Take both parts in one sitting', text: 'Including general knowledge and the essay. Practising only the scored sections rehearses a shorter examination than the one you will sit, and stamina is a real factor by the essay.' },
+              { title: 'Write the essay by hand or on screen, as the format requires', text: 'Under the real time limit, on an abstract topic. Writing a coherent short essay in a compressed window after two hours of testing is a specific skill.' },
+              { title: 'Classify your Decision Making errors', text: 'Too aggressive, too cautious, or a stakeholder missed. This is the analysis that actually moves the section.' },
+              { title: 'Check the blank count against the allowance', text: 'A metric unique to this examination and one that a CAT-trained candidate will forget to look at.' },
+              { title: 'Look at geometry separately in quantitative', text: 'The area where XAT most reliably exceeds CAT difficulty, and therefore the most likely source of an unpleasant surprise.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'General knowledge is worth including in your mocks even though it generally does not count towards the percentile, for a simple reason: it is the section candidates skip in practice and then face cold, and its content overlaps almost entirely with what interviewers ask a few months later. Twenty minutes of daily reading covers it, and folding the section into your mocks keeps the habit honest.',
+          },
+          {
+            type: 'note',
+            title: 'Do not treat XAT as CAT with extra sections',
+            text: 'The common approach — prepare for CAT, then address the XAT-specific parts in the final fortnight — under-serves a quarter of the scored paper. Decision Making needs weeks of sets and explanations to build the pattern recognition it rewards, and general knowledge is cumulative by nature. Both need to start months out, alongside the shared preparation rather than after it.',
           },
         ],
       },
@@ -579,6 +817,32 @@ const mba = [
               { text: 'Assuming CAT geometry preparation suffices', note: 'XAT tends to go further here.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'What one shared preparation covers',
+                'Reading comprehension, verbal reasoning, arithmetic, algebra, data interpretation and logical reasoning — the great majority of both examinations. There is no case for building two separate preparations for the shared material, and doing so wastes months.',
+              ],
+              [
+                'What XAT adds, and how long each takes',
+                'Decision Making needs eight to twelve weeks of regular sets to build the pattern recognition. General knowledge needs a daily habit across months. The essay needs perhaps six timed attempts. Harder geometry needs a few weeks of targeted practice.',
+              ],
+              [
+                'What the blank-count rule adds',
+                'Not study but rehearsal. Practising with the rule applied so that keeping a rough live count of unanswered questions becomes automatic rather than something you remember to do in the last two minutes.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The calendar helps here more than candidates expect. XAT falls after CAT, which means the weeks between them are available for exactly the XAT-specific work — but only if the foundations were laid earlier. Decision Making started in that window is compressed into a fortnight; Decision Making started three months out and merely intensified in that window is properly built. The gap is a finishing period, not a preparation period.',
+          },
+          {
+            type: 'note',
+            title: 'The essay rewards a position, not coverage',
+            text: 'XAT essay topics are typically abstract or philosophical, and the short time limit makes comprehensive treatment impossible. What reads well is a clear position, two or three developed reasons, an acknowledgement of the strongest objection, and a conclusion that follows. Rehearsing that shape a handful of times removes most of the difficulty of writing quickly on an unfamiliar prompt.',
+          },
         ],
       },
       'study-material': {
@@ -613,6 +877,36 @@ const mba = [
               'One timed essay a week from two months out.',
               'One abstract reading passage a day, harder than typical CAT material.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Decision Making — sets with explanations, nothing else',
+                'There is no textbook for this section and no body of knowledge to acquire. The material is practice sets accompanied by reasoning you can argue with, worked steadily over weeks. Quality of explanation matters far more than quantity of questions.',
+              ],
+              [
+                'General knowledge — one running source',
+                'Current affairs across national and international events, business and the economy, awards and appointments. A single source followed daily beats several sampled, because recognition builds through repeated exposure to the same items.',
+              ],
+              [
+                'Verbal — abstract prose specifically',
+                'XAT passages lean more philosophical and literary than CAT’s, and the questions ask more about inference and tone than about located facts. Reading in that register regularly is the preparation; question practice alone is not.',
+              ],
+              [
+                'Quantitative — with geometry given extra room',
+                'Your CAT material covers most of it. The adjustment is a few weeks of harder geometry and mensuration, which is where XAT most consistently goes beyond what CAT preparation supplies.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'One document worth maintaining specifically for this examination: a page of your Decision Making tendencies, updated as you work sets. It might read as simply as a note that you over-select forceful options and under-select the ones that gather more information first. That page, re-read the morning of the examination, corrects a systematic bias in a section where systematic biases are exactly what costs marks.',
+          },
+          {
+            type: 'note',
+            title: 'The reading habit serves four things at once',
+            text: 'A daily newspaper read properly feeds the general knowledge section, the essay, the verbal section and the interviews that follow. For an examination with this many components drawing on general awareness and argument, it is the highest-return single habit available, and it costs twenty minutes.',
           },
         ],
       },
@@ -745,6 +1039,25 @@ const mba = [
             type: 'p',
             text: 'Compared with CAT, NMAT is gentler in difficulty and stricter in pace. Questions are individually more approachable, but there are more of them per minute, and the sections are separately timed. That makes it a test of consistent speed rather than of peak problem-solving, which suits some candidates considerably better than CAT does.',
           },
+          {
+            type: 'list',
+            title: 'Where NMAT diverges from a CAT syllabus',
+            items: [
+              { text: 'Grammar and vocabulary are tested directly', note: 'error identification, sentence completion, synonyms and antonyms. CAT verbal has moved almost entirely to comprehension, so a CAT-prepared candidate has often not touched rules or word lists in months.' },
+              { text: 'Data sufficiency appears', note: 'a question type CAT does not use. The skill is judging whether the statements suffice rather than computing the answer, and it needs its own short block of practice.' },
+              { text: 'Reasoning is broader and more mechanical', note: 'critical reasoning alongside conventional arrangements and puzzles, at a level closer to a standard aptitude test than to CAT’s deliberately unfamiliar sets.' },
+              { text: 'Nothing is deliberately obscure', note: 'the questions are meant to be answerable. What is scarce is time, not tractability.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The consequence for planning is straightforward and worth stating plainly: a candidate preparing for CAT is over-prepared for NMAT content and may still be under-prepared for the paper. The binding constraint here is throughput — how many answerable questions you actually get to — and throughput is trained by timed practice at the real pace rather than by working harder problems.',
+          },
+          {
+            type: 'note',
+            title: 'Individually timed sections, in your chosen order',
+            text: 'Each section carries its own clock, and you choose the order in which you take them. That is a genuine piece of control and it should be exercised deliberately: decide the order in advance, rehearse it in mocks, and keep the one that consistently produces a better total rather than the one that feels more comfortable at the start.',
+          },
         ],
       },
       'exam-pattern': {
@@ -785,6 +1098,32 @@ const mba = [
             title: 'Attempts require a gap and a fee',
             text: 'Repeat attempts must be separated by a required interval and each carries a fee, so three attempts need both budget and calendar planning within the window. Confirm the current gap requirement and scheduling rules in the candidate handbook.',
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'No penalty, and what follows from it',
+                'Every question should be answered. Not most, not the ones you can narrow — every one. Reserve the final thirty seconds of each section to fill anything outstanding, and treat a single blank in a practice paper as a habit failure rather than a rounding error.',
+              ],
+              [
+                'Section order as a strategic choice',
+                'Opening with your strongest section builds a cushion and settles nerves; opening with your weakest gets it done while you are freshest. Both arguments are reasonable, which is exactly why you should test them in mocks rather than reason about them.',
+              ],
+              [
+                'Three attempts, with the best counted',
+                'This converts the first attempt from a decisive event into a diagnostic. The cost of a poor first attempt is the fee and the interval, not your candidature — which is a materially different risk profile from almost every other management entrance.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Booking early in the testing window is the most consequential administrative decision in an NMAT preparation, and it is made months before any question is answered. A candidate who books a late slot has, in practice, converted a three-attempt examination into a one-attempt examination, because the required interval between attempts and the closing of the window leave no room. Book early even if you feel under-prepared — the first attempt is meant to be the calibration.',
+          },
+          {
+            type: 'note',
+            title: 'Confirm the current structure and attempt rules',
+            text: 'Question counts, section timings, the required interval between attempts and the number of permitted attempts have all been adjusted between cycles, and each attempt carries a fee. Check the current test information before planning your slots, because the whole three-attempt strategy depends on details that the organisers do occasionally change.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -818,6 +1157,29 @@ const mba = [
               { label: 'CAT mock tests', to: '/mock-tests/free/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'What to drill, in order of return',
+            items: [
+              { text: 'Calculation speed', note: 'fractions, percentages, ratios, squares and tables, done without writing intermediate steps. The quantitative section is largest and its questions are routine, so throughput there moves the score most.' },
+              { text: 'Vocabulary', note: 'synonyms, antonyms and usage, tested directly here in a way CAT no longer tests them. A running list of ten items a day compounds well over three months.' },
+              { text: 'Grammar rules', note: 'error identification and sentence completion rest on a finite rule set — agreement, tense, prepositions, modifiers, parallelism — that can genuinely be finished.' },
+              { text: 'Data sufficiency', note: 'a distinct technique: evaluate each statement alone, then together, and stop as soon as sufficiency is established. Candidates who solve the question fully are doing unnecessary work under a tight clock.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Practise every section at its real time limit from the beginning rather than working untimed and adding the clock later. Because the questions are individually approachable, untimed practice produces high accuracy and a misleading sense of readiness — the score looks excellent and tells you nothing about whether you would have reached those questions in the time allowed. The clock is the examination.',
+          },
+          {
+            type: 'p',
+            text: 'Rehearse your chosen section order in practice papers, not just in your head. Order effects are real: candidates frequently find that taking the quantitative section first leaves them rushed in language, or that opening with reasoning costs them the freshness the quantitative section needed. Two or three papers in each candidate order will settle the question with evidence rather than intuition.',
+          },
+          {
+            type: 'note',
+            title: 'Never leave a blank, even in practice',
+            text: 'With no penalty, an unanswered question is a discarded mark and there is no argument for it. The reason to enforce this in practice as well as in the examination is that behaviour under time pressure defaults to habit — and a candidate who has left blanks in twenty practice papers will leave them in the twenty-first, whatever they intended.',
+          },
         ],
       },
       'mock-tests': {
@@ -848,6 +1210,26 @@ const mba = [
               { label: 'CAT mock tests', to: '/mock-tests/free/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'A mock routine for a pace-limited test',
+            items: [
+              { title: 'Use the real section timings, every time', text: 'Individually timed sections are the structure of this examination, and a mock without them measures something else entirely.' },
+              { title: 'Take it in your intended section order', text: 'The order is your choice on the day, so it should be a rehearsed decision rather than an improvised one.' },
+              { title: 'Record questions reached per section', text: 'The primary constraint. Accuracy on questions you did not get to is not a meaningful number.' },
+              { title: 'Check blanks — zero, always', text: 'One blank means the final-thirty-seconds habit has not been built. It is the cheapest fix available in this preparation.' },
+              { title: 'Watch accuracy as pace rises', text: 'Speed only helps while accuracy holds. The useful pace is the fastest one at which your accuracy is stable, and mocks are how you find it.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Between attempts, resist the temptation to prepare broadly again. The gap between NMAT attempts is short and its entire value lies in targeting whatever the last attempt exposed — usually one section, often one specific weakness within it. A candidate who spends the interval doing general practice arrives at the second attempt as the same candidate, which makes the second attempt a repeat measurement rather than an improvement.',
+          },
+          {
+            type: 'note',
+            title: 'Mocks here train pace, not selection',
+            text: 'Unlike CAT, there is no meaningful decision about what to attempt, because you should be attempting everything. That removes selection judgement from the analysis and leaves two things to work on: how quickly you move, and how accurate you stay while moving. Analyse for those and ignore the frameworks imported from CAT preparation.',
           },
         ],
       },
@@ -886,6 +1268,32 @@ const mba = [
               { text: 'Deciding section order in the moment', note: 'a decision worth rehearsing rather than improvising.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Attempt one — calibration',
+                'Booked early, taken seriously, and treated as a diagnostic rather than a verdict. It tells you your real pace under examination conditions, which no mock quite does, and it identifies the section that is actually limiting you.',
+              ],
+              [
+                'Attempt two — the targeted improvement',
+                'The interval belongs entirely to whatever attempt one exposed. One section, worked hard, with everything else on maintenance. This is where the three-attempt structure earns its value.',
+              ],
+              [
+                'Attempt three — the insurance',
+                'Available if the second attempt did not land, and useful mainly as a reason not to panic during the first two. Candidates who know a third attempt exists take the first one more freely, which usually helps.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The most common failure in NMAT planning is not academic at all. It is booking a slot late in the window, taking one attempt, and discovering that the required interval leaves no room for another — which quietly converts the most forgiving management entrance in the country into the least forgiving. The whole three-attempt advantage rests on a scheduling decision made before any preparation is complete.',
+          },
+          {
+            type: 'note',
+            title: 'Prepare for pace, not difficulty',
+            text: 'A CAT preparation supplies more than enough difficulty for this examination. Adding harder material is not the adjustment; working the material you already have at a faster tempo is. Timed sets of twenty questions, repeated until the pace stops feeling rushed, do more for an NMAT score than any additional content.',
+          },
         ],
       },
       'study-material': {
@@ -920,6 +1328,36 @@ const mba = [
               'Data sufficiency sets, since the question type is not used in CAT.',
               'Every practice set completed with zero blanks.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'A CAT-oriented base — sufficient for content',
+                'Arithmetic, algebra, reading comprehension and reasoning at CAT level comfortably exceeds what NMAT asks. No additional difficulty is required and seeking it is a misallocation.',
+              ],
+              [
+                'A vocabulary list — the first genuine addition',
+                'Ten items a day, revisited after three days and again after two weeks. The language section tests words directly, and this is the component that compounds most reliably over a three-month preparation.',
+              ],
+              [
+                'A grammar rule sheet — the second addition',
+                'Agreement, tense sequence, prepositions, articles, modifiers and parallelism. Finite, quickly learned, and directly examined here in a way it is not in CAT.',
+              ],
+              [
+                'Data sufficiency practice — the third',
+                'Not a topic but a technique, and one CAT does not require. A few dedicated sessions establish the method; after that it needs only occasional maintenance.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Structure your daily practice as timed sets rather than as untimed study, from the first week. Twenty questions against a clock, scored, with the pace noted — repeated across the three sections in rotation. That single change in how you use the same material is most of what separates an NMAT preparation from a CAT preparation, and it is the change candidates make last if they make it at all.',
+          },
+          {
+            type: 'note',
+            title: 'Keep the material light and the practice heavy',
+            text: 'This is not an examination that rewards owning more books. The content is conventional and the constraint is pace, which means additional sources add coverage you do not need at the cost of practice hours you do. One quantitative source, one verbal source, a vocabulary list and a grammar sheet is a complete NMAT shelf.',
           },
         ],
       },
@@ -1047,6 +1485,25 @@ const mba = [
             type: 'p',
             text: 'Nothing in this syllabus is unusual for a management entrance. The preparation difference lies entirely in the pace: material that would be comfortable in a two-hour paper becomes demanding in sixty minutes, which means the productive practice is timed drilling on routine questions rather than extended work on hard ones.',
           },
+          {
+            type: 'list',
+            title: 'What a one-minute-per-question paper rewards',
+            items: [
+              { text: 'Recognition over derivation', note: 'you need to see what a question is within a few seconds. Techniques you can execute but not immediately identify are worth very little here.' },
+              { text: 'Vocabulary held in memory', note: 'the English section tests words directly — synonyms, antonyms, analogies — and there is no time to reason your way to a meaning you half know.' },
+              { text: 'Calculation without paper', note: 'routine arithmetic done mentally, because writing out a percentage change costs a meaningful fraction of your minute.' },
+              { text: 'Fast abandonment', note: 'the willingness to leave a question after forty seconds. In a sixty-question paper, three minutes on one question is two other questions surrendered.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Because nothing on this syllabus is difficult by management-entrance standards, the preparation question is not what to study but how to hold it. A candidate who has covered every topic and can execute each method in ninety seconds will underperform one who has covered slightly less and executes in forty. That is an unusual optimisation and it is the whole of a SNAP preparation.',
+          },
+          {
+            type: 'note',
+            title: 'Data sufficiency is worth isolating',
+            text: 'It appears here and not in CAT, and it rewards a specific discipline: establish whether the statements suffice and stop, rather than computing the answer. Under a one-minute budget the difference between judging sufficiency and solving the problem is the difference between finishing the section and not.',
+          },
         ],
       },
       'exam-pattern': {
@@ -1087,6 +1544,24 @@ const mba = [
             title: 'Confirm marking and attempt rules',
             text: 'The deduction rate, the section-wise question distribution and the number of permitted attempts have all varied between cycles. All three affect strategy directly, so read them in the current bulletin.',
           },
+          {
+            type: 'p',
+            text: 'The absence of sectional timing is the one structural advantage this paper offers, and most candidates waste it by not deciding anything in advance. Sixty minutes across three sections gives you the freedom to spend twenty-five on the section where your marks are cheapest and fifteen on the one where they are not — but only if that allocation is decided beforehand. Improvised in the hall, the freedom simply becomes another decision competing for a clock you cannot spare.',
+          },
+          {
+            type: 'steps',
+            title: 'A two-pass structure for sixty minutes',
+            items: [
+              { title: 'First pass, about forty minutes', text: 'Move through the whole paper answering anything you can do inside a minute. Mark the rest and keep going — the discipline is to never stop moving on the first pass.' },
+              { title: 'Second pass, about fifteen minutes', text: 'Return to the marked questions, taking the ones where you have narrowed the options rather than the ones that are simply interesting.' },
+              { title: 'Final few minutes', text: 'Decide the remaining guesses deliberately, remembering that a deduction applies and a two-option guess is worth taking where a four-option guess is not.' },
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Confirm the marking and attempt rules',
+            text: 'The deduction rate, the section-wise question distribution and whether repeat attempts are permitted within the window have all varied between cycles. Where multiple attempts are offered and the best score counts, an early attempt is genuinely free calibration — but that is a rule to verify in the current bulletin rather than to assume.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -1120,6 +1595,29 @@ const mba = [
               { label: 'CAT mock tests', to: '/mock-tests/free/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'What to measure when you work a past paper',
+            items: [
+              { text: 'Questions reached', note: 'the primary number. Accuracy on a paper you did not finish describes a candidate who had more time than you will have.' },
+              { text: 'Average seconds per answered question', note: 'the figure that has to come down. Track it across papers; it is the clearest evidence of whether your practice is working.' },
+              { text: 'Questions where you spent over ninety seconds', note: 'each one cost you another question. Listing them shows whether the over-spend is concentrated in a particular topic or is a general habit.' },
+              { text: 'Section-wise time actually used', note: 'compared with the allocation you planned. The gap is usually larger than candidates expect and is entirely correctable.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Practise the two-pass structure explicitly rather than assuming it will emerge. The instinct under pressure is to resolve each question before moving on, and that instinct guarantees an unfinished paper. Rehearsing the first pass — answer or mark and move, with no exceptions — until it feels natural is the single behavioural change that most improves a SNAP score.',
+          },
+          {
+            type: 'p',
+            text: 'Drill routine calculation and vocabulary as separate daily activities, not as part of question practice. Fifteen minutes of fractions, percentages, squares and tables, and ten vocabulary items with spaced revisits, cost very little and directly attack the two places where a minute per question is most often lost. Neither is intellectually interesting and both are among the highest-return habits available for this paper.',
+          },
+          {
+            type: 'note',
+            title: 'Untimed practice teaches nothing here',
+            text: 'Almost every SNAP candidate could answer almost every SNAP question given three minutes each. Since the examination gives one, practice without a clock measures an ability the paper does not test and produces a score that will not be repeated. Every practice session should be timed, from the first one.',
+          },
         ],
       },
       'mock-tests': {
@@ -1150,6 +1648,26 @@ const mba = [
               { label: 'CAT mock tests', to: '/mock-tests/free/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'Using a short mock frequently',
+            items: [
+              { title: 'Take them often — the cost is an hour', text: 'Unlike a CAT mock, a SNAP mock does not consume a morning. Two or three a week in the final month is sustainable and appropriate.' },
+              { title: 'Analyse for pace before accuracy', text: 'Questions reached first, then seconds per question, then accuracy. In a speed test the order of those diagnostics matters.' },
+              { title: 'Check your allocation held', text: 'Compare the time you planned per section with the time you actually spent. Persistent drift means the plan is wrong or the abandonment discipline is.' },
+              { title: 'List the over-spends', text: 'Every question that took more than ninety seconds. Over several mocks the pattern shows whether the leak is a topic or a temperament.' },
+              { title: 'Repeat until the pace feels unhurried', text: 'That sensation, rather than any particular score, is the signal that the preparation has done its work.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Over-persistence is the characteristic SNAP leak and it is worth naming precisely because it feels like diligence. A candidate who refuses to abandon a solvable question is behaving well by the standards of every examination they have previously sat, and badly by the standards of this one. The mock analysis that surfaces it — a list of questions that took over ninety seconds, and a count of questions never reached — makes the trade-off concrete in a way that general advice does not.',
+          },
+          {
+            type: 'note',
+            title: 'Practise on a computer, at your slot time',
+            text: 'The test is computer-based and sixty minutes leaves no margin for unfamiliarity with the interface. Navigating, marking for review and returning to marked questions should all be automatic before the day, because the two-pass structure depends entirely on being able to move around the paper quickly.',
           },
         ],
       },
@@ -1187,6 +1705,32 @@ const mba = [
               { text: 'Not using permitted repeat attempts', note: 'where the best score counts, an early attempt is free calibration.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'What a CAT preparation already provides',
+                'Every topic on the syllabus, at a level well beyond what SNAP asks. There is no content gap to close, which is why a SNAP preparation is measured in weeks and consists almost entirely of practice.',
+              ],
+              [
+                'What the six weeks should contain',
+                'Timed drilling on routine questions, daily vocabulary and grammar work, a short block on data sufficiency, and sixty-minute mocks twice a week. Content study during this period is displacement activity.',
+              ],
+              [
+                'What to decide before the day',
+                'Your time allocation across the three sections, and your abandonment threshold. Both are simple decisions that become impossible to make well once the clock is running.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The mismatch worth guarding against is a candidate who is comfortably strong enough for this paper and scores poorly on it. It happens routinely, and the cause is always the same: a year of CAT preparation trains careful, thorough engagement with difficult questions, and this paper punishes exactly that. Recognising that the adjustment is behavioural rather than academic is most of the battle, and the remaining part is six weeks of timed practice.',
+          },
+          {
+            type: 'note',
+            title: 'Use repeat attempts where they are offered',
+            text: 'Where the cycle permits more than one attempt and counts the best score, an early attempt is calibration at the cost of a fee. As with any multi-attempt examination, the value is in what you do between attempts — a second attempt taken without changing your pacing habits will produce very much the same result as the first.',
+          },
         ],
       },
       'study-material': {
@@ -1220,6 +1764,36 @@ const mba = [
               'Timed sets of twenty questions rather than long untimed sessions.',
               'Two sixty-minute mocks a week in the final month.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Calculation drills — the daily non-negotiable',
+                'Fifteen minutes of fractions, percentages, ratios, squares, cubes and tables. Not a topic and not interesting, and the most directly connected activity to a score in a paper measured in seconds per question.',
+              ],
+              [
+                'A vocabulary list — built and revisited',
+                'Ten items a day with spaced revisits. The English section asks about words directly, and under a one-minute budget a word you half know is a word you do not know.',
+              ],
+              [
+                'Reasoning practice — for recognition speed',
+                'Arrangements, blood relations, direction sense, coding and decoding, series. The families are standard and the goal is to identify them instantly rather than to handle harder variants.',
+              ],
+              [
+                'Timed question sets — instead of study sessions',
+                'Twenty questions against a clock, repeatedly, replacing the long untimed sessions that a CAT preparation habituates you to. This is the structural change that a SNAP preparation requires.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'A word on why vocabulary is worth the effort here when it is not in CAT. CAT verbal has moved almost entirely to comprehension, so a candidate can score well with a modest active vocabulary and good reading. SNAP asks about words as words, which means the same candidate faces a section where their preparation offers no protection. Ten items a day for two months closes that gap almost entirely, and few candidates do it.',
+          },
+          {
+            type: 'note',
+            title: 'Own less, practise more',
+            text: 'Everything on this syllabus is standard, which means additional books add nothing but coverage you already have. The scarce resource in a SNAP preparation is timed practice hours, and every hour spent acquiring or reading new material is an hour not spent building the pace the paper actually measures.',
           },
         ],
       },
@@ -1356,6 +1930,25 @@ const mba = [
             type: 'p',
             text: 'The innovation and entrepreneurship section deserves specific attention because it is bounded. Unlike general awareness, which is open-ended, this section draws on a defined set of concepts, schemes and examples that can be covered thoroughly in a few weeks. That combination — a full section, learnable in weeks, routinely skipped — makes it the best return available in CMAT preparation.',
           },
+          {
+            type: 'list',
+            title: 'Why the innovation and entrepreneurship section is the opportunity',
+            items: [
+              { text: 'It is bounded', note: 'unlike general awareness, which is open-ended and cumulative, this section draws on a defined body of concepts. A candidate can genuinely finish it, which is rare in a management entrance.' },
+              { text: 'It is ignored', note: 'most candidates prepare with CAT-oriented material that does not cover it at all, which means the marks are contested by a much smaller field than the aptitude sections.' },
+              { text: 'It is learnable in weeks', note: 'the entrepreneurial process, types of entrepreneurs, funding and support structures, business models and the standard theoretical frames. A few weeks of systematic reading covers most of what has been asked.' },
+              { text: 'It carries a full section’s weight', note: 'which makes the return per hour better than anything available in quantitative or reasoning, where you are competing against candidates who have prepared for a year.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'General awareness sits at the other end of that spectrum: equally under-prepared by CAT-focused candidates, but cumulative rather than bounded. It cannot be assembled in a fortnight and it responds well to a daily reading habit maintained over months. The practical implication is that these two sections need opposite treatment — one is a short project, the other is a long habit — and candidates who treat them the same way tend to leave the habit too late.',
+          },
+          {
+            type: 'note',
+            title: 'The aptitude sections need no CMAT-specific work',
+            text: 'Quantitative techniques, logical reasoning and language comprehension are conventional and are covered by any management-entrance preparation. The language section leans a little more on grammar and vocabulary than CAT does, which is worth a few weeks, but nothing here requires a separate study plan.',
+          },
         ],
       },
       'exam-pattern': {
@@ -1398,6 +1991,32 @@ const mba = [
             title: 'Confirm the current section composition',
             text: 'Section-wise question counts have been adjusted between cycles, including the weighting given to the innovation and entrepreneurship section. Read the current information bulletin for the composition that applies to your attempt.',
           },
+          {
+            type: 'p',
+            text: 'Nearly two minutes a question is the most generous allowance among the major management entrances, and it changes what good technique looks like. In CAT or SNAP the skill is deciding what to leave; here there is time to attempt almost everything, which means the marginal gain comes from verification rather than from selection. Candidates who import a triage mindset from a tighter paper leave time unused and questions unattempted for no reason.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Why the four-to-one ratio justifies wider attempts',
+                'Four marks gained against one lost makes a guess narrowed to two options clearly positive, and even a blind guess is not obviously negative. Combined with a generous clock, this is a paper where an aggressive attempt policy is usually correct — the opposite of the discipline a CAT preparation instils.',
+              ],
+              [
+                'Why the two knowledge sections change the arithmetic',
+                'They are scored like any other section, and they are the ones your competition has not prepared. A candidate who is average on aptitude and strong on general awareness and entrepreneurship can outscore one who is strong on aptitude and has ignored both.',
+              ],
+              [
+                'What to do with leftover time',
+                'Verify rather than finish early. In a paper with a deduction and a generous clock, re-checking the setup on numerical questions is a better use of the last fifteen minutes than anything else available.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Confirm the current section composition',
+            text: 'Section-wise question counts have been adjusted between cycles, including the weighting given to the two knowledge sections. Since the whole strategic argument here rests on how much those sections are worth, it is worth reading the current information bulletin rather than planning from a description written for an earlier year.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -1430,6 +2049,30 @@ const mba = [
               { label: 'Current affairs', to: '/current-affairs/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'Building the entrepreneurship syllabus from the papers',
+            items: [
+              { text: 'The entrepreneurial process and its stages', note: 'idea generation, opportunity evaluation, resource assembly and launch, asked in various framings across cycles.' },
+              { text: 'Types and characteristics of entrepreneurs', note: 'the standard classifications and the attributes associated with each, which recur reliably.' },
+              { text: 'Funding and support structures', note: 'sources of finance at each stage, incubators and accelerators, and the government schemes and institutions that support new enterprises.' },
+              { text: 'Business models and organisational forms', note: 'the common models, the legal forms a venture can take, and the trade-offs between them.' },
+              { text: 'Named theories and frameworks', note: 'a small number recur, and knowing them by name is worth more than a general understanding of the ideas.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Extracting those questions across several cycles converts an open-sounding syllabus into a reading list of perhaps a dozen topics. That conversion is the whole point of using past papers for this section, and it takes an afternoon. Without it, candidates either skip the section entirely or read entrepreneurship material far more broadly than the examination requires.',
+          },
+          {
+            type: 'p',
+            text: 'For general awareness, group past questions by theme rather than trying to learn their specifics. Business and corporate news, economic policy, appointments and awards, national and international events — the themes are stable even though the individual facts are dated. That grouping tells you what to watch for in your daily reading over the following months, which is the only way general awareness marks are ever actually accumulated.',
+          },
+          {
+            type: 'note',
+            title: 'Use the aptitude sections for pacing only',
+            text: 'The quantitative, reasoning and language sections in past CMAT papers hold no surprises for a candidate with a conventional management-entrance preparation. Work them to confirm your pacing under the generous time allowance and to check that your attempt policy is appropriately aggressive — not to discover content you have not met.',
+          },
         ],
       },
       'mock-tests': {
@@ -1461,6 +2104,26 @@ const mba = [
               { label: 'All free mock tests', to: '/mock-tests/free/' },
               { label: 'Current affairs', to: '/current-affairs/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'A mock routine for a five-section paper',
+            items: [
+              { title: 'Include all five sections, always', text: 'A mock that omits general awareness and entrepreneurship is a CAT mock wearing a CMAT label, and it will tell you nothing about the sections that most differentiate scores here.' },
+              { title: 'Score the two knowledge sections separately', text: 'They improve on different timescales — one is a short project, the other a long habit — and folding them into a single total hides which is progressing.' },
+              { title: 'Check time remaining', text: 'With nearly two minutes a question you should finish with time in hand. If you do not, pacing needs attention before anything else does.' },
+              { title: 'Review your attempt count', text: 'The forgiving marking scheme justifies attempting more than in a harsher paper. Candidates carrying CAT discipline typically under-attempt by a noticeable margin.' },
+              { title: 'Spend the leftover time verifying', text: 'Rehearse it in mocks so it becomes the default on the day rather than an idea you had beforehand.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Track the entrepreneurship score as a project with an end point. Unlike general awareness, which climbs slowly and indefinitely, this section should rise sharply over a few weeks of systematic study and then plateau near the top — and when it does, the project is finished and the time should go elsewhere. Recognising completion is unusual in competitive preparation and this is one of the few places it applies.',
+          },
+          {
+            type: 'note',
+            title: 'The knowledge sections are where the marginal mark is cheapest',
+            text: 'Raising your quantitative percentile requires months of practice against candidates who have been preparing for a year. Raising your entrepreneurship score requires a few weeks against candidates who have prepared for none. When deciding where the next ten hours go, that comparison should usually settle it.',
           },
         ],
       },
@@ -1497,6 +2160,36 @@ const mba = [
               { text: 'Practising only CAT-style mocks', note: 'which omit the two sections that most differentiate CMAT scores.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'The long habit — general awareness',
+                'A daily business newspaper from three months out, with a running note of business and corporate news, economic developments, appointments and awards. Cumulative, uncompressible, and the reason to start early.',
+              ],
+              [
+                'The short project — innovation and entrepreneurship',
+                'Two to three weeks of systematic reading against a topic list built from past papers, placed about two months out so that it is complete before mock season and needs only light revision thereafter.',
+              ],
+              [
+                'The shared base — aptitude',
+                'Whatever you are doing for CAT or any other management entrance. No CMAT-specific adjustment is needed beyond a few weeks of grammar and vocabulary work for the language section.',
+              ],
+              [
+                'The attempt policy — decided in advance',
+                'Wider than a CAT candidate’s instincts allow. Four-to-one marking with a generous clock rewards attempting anything you can narrow at all.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The framing worth carrying through a CMAT preparation is that this is a paper where the competition has systematically neglected two of the five sections. Almost every candidate sitting it has prepared the aptitude sections seriously, because that preparation was already underway for other examinations. Very few have prepared the knowledge sections at all. That asymmetry, rather than any advantage in aptitude, is where a strong CMAT percentile actually comes from.',
+          },
+          {
+            type: 'note',
+            title: 'One reading habit serves several examinations',
+            text: 'The daily business newspaper that covers CMAT general awareness also covers XAT general knowledge, MAT’s business environment section, and the interviews that follow all of them. For a candidate sitting multiple management entrances, it is a single habit paying into four places, which makes it easily the best-value twenty minutes in the whole preparation.',
+          },
         ],
       },
       'study-material': {
@@ -1531,6 +2224,36 @@ const mba = [
               'A defined entrepreneurship reading list worked through over a few weeks.',
               'Conventional aptitude practice, timed but unhurried given the generous allowance.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'A business newspaper — the core knowledge source',
+                'Read daily for corporate news, economic policy, appointments and the entrepreneurial ecosystem. It serves general awareness and the entrepreneurship section simultaneously, which is why it is the first item rather than a supplement.',
+              ],
+              [
+                'A defined entrepreneurship reading list',
+                'Built from past papers into a dozen or so topics, then worked through systematically. Any standard introductory material on entrepreneurship covers the concepts; what matters is that the list is bounded and finished.',
+              ],
+              [
+                'Conventional aptitude notes',
+                'Quantitative, reasoning and language at standard management-entrance level, shared with whatever else you are preparing for. Nothing here needs to be CMAT-specific.',
+              ],
+              [
+                'Grammar and vocabulary — a modest addition',
+                'The language section leans more on rules and words than CAT does. A short grammar sheet and a running vocabulary list, worked for a few weeks, covers the difference.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Keep the entrepreneurship material as a single document you build yourself rather than a book you read. A page per topic, written from your reading and organised by the categories the past papers use, is revisable in an hour in the final week — which is exactly what a bounded knowledge section needs and exactly what a textbook cannot provide.',
+          },
+          {
+            type: 'note',
+            title: 'Revise general awareness in short frequent passes',
+            text: 'Like every cumulative knowledge section, it responds to frequency rather than duration. Twenty minutes daily across three months produces far better recall than the same total hours spent in long sessions near the examination, because recognition is built by repeated exposure rather than by concentrated attention.',
           },
         ],
       },
@@ -1672,6 +2395,26 @@ const mba = [
             type: 'p',
             text: 'The business environment section rewards the same daily reading habit that serves CMAT’s general awareness and XAT’s general knowledge sections. A candidate preparing for several management entrances gets this section largely for free by reading a business newspaper daily, which is a good argument for starting that habit early regardless of which test is the primary target.',
           },
+          {
+            type: 'list',
+            title: 'How the five sections divide by preparation type',
+            items: [
+              { text: 'Language comprehension — practice plus rules', note: 'more grammar- and vocabulary-based than CAT verbal, which makes it more directly preparable and rewards a short rule sheet and a word list.' },
+              { text: 'Intelligence and critical reasoning — conventional practice', note: 'arrangements, puzzles and critical reasoning at standard aptitude-test level, covered comfortably by any management-entrance preparation.' },
+              { text: 'Mathematical skills — arithmetic-led', note: 'the familiar arithmetic, algebra and geometry ground, asked more directly than CAT asks it.' },
+              { text: 'Data analysis and sufficiency — a technique to learn', note: 'data sufficiency is a full component here and is not used in CAT at all. It rewards a specific method rather than additional mathematics.' },
+              { text: 'Economic and business environment — a reading habit', note: 'the Indian economy, policy and reforms, banking and finance, international institutions and corporate developments. Cumulative and best served daily.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The business environment section is the one that distinguishes a MAT preparation, and the useful observation is that it does not need its own study time at all if you are already reading a business newspaper for CMAT, XAT general knowledge or interview preparation. The same twenty minutes covers all of them. What it does need is that the habit exists — and for candidates preparing only for CAT, it usually does not.',
+          },
+          {
+            type: 'note',
+            title: 'Nothing here is unusually difficult',
+            text: 'MAT sits below CAT in difficulty across all four aptitude sections and gives more time per question. The consequence is that a CAT-prepared candidate needs no additional content work, and the entire adjustment consists of data sufficiency practice, a reading habit, and resisting the urge to rush a paper that does not require it.',
+          },
         ],
       },
       'exam-pattern': {
@@ -1713,6 +2456,32 @@ const mba = [
             title: 'Confirm the composite score treatment',
             text: 'Whether the economic and business environment section counts towards the composite score, and how institutions use it separately, has been stated differently across cycles and institutions. It affects how much preparation time that section deserves, so confirm it for your cycle.',
           },
+          {
+            type: 'p',
+            text: 'The composite score treatment is the detail worth getting right, because it determines where your effort should go. Where the business environment section is excluded from the composite, the four aptitude sections carry your shortlisting — but the excluded section is still administered, still reported, and still available to institutions considering you later. Treating it as optional because it does not score is a reasonable-sounding inference that costs candidates at the interview stage.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Multiple cycles as a planning asset',
+                'With several administrations a year, an early attempt is genuinely low-stakes. The value lies in the interval afterwards: a long enough gap to work seriously on whichever section the attempt exposed, which is a luxury single-cycle examinations do not offer.',
+              ],
+              [
+                'Delivery mode as a real choice',
+                'Computer-based, internet-based and paper-based modes have been offered in different cycles, and they are not interchangeable in practice. Reading speed, rough work and navigation all differ, so choose the mode you have practised in rather than the one that is most convenient to book.',
+              ],
+              [
+                'A deduction that permits reasonable attempts',
+                'Wrong answers cost something, so blind guessing is not free — but the timing is generous enough that most questions can be genuinely attempted rather than guessed. This is a paper where narrowing before answering is almost always possible.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Check how institutions treat multiple attempts',
+            text: 'Where a candidate sits more than one cycle, institutions may consider the best score, the most recent, or all of them. That varies by institution rather than being set centrally, and it is worth confirming for the schools you actually intend to apply to before deciding how many cycles to sit.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -1745,6 +2514,29 @@ const mba = [
               { label: 'Economy study material', to: '/study-material/economy/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'The business environment themes that recur',
+            items: [
+              { text: 'The structure of the Indian economy', note: 'sectors, contribution to output and employment, and the broad direction of reform. Stable material that repeats across cycles.' },
+              { text: 'Banking, finance and regulation', note: 'the institutional architecture, the regulators and their functions, and the major instruments and markets.' },
+              { text: 'International institutions and agreements', note: 'the bodies that govern trade and finance, their roles, and India’s position within them.' },
+              { text: 'Corporate and business developments', note: 'major companies, sectors under change, notable transactions and the people leading them — the part that requires current reading rather than static study.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Extracting those questions across several cycles produces a list that is both shorter and more specific than any general economy textbook would suggest. The static half of it can be studied once and revised; the current half needs the daily habit. Separating the two is the most useful thing past papers do for this section, because it tells you which parts can be finished and which cannot.',
+          },
+          {
+            type: 'p',
+            text: 'Practise data sufficiency separately from the rest of the quantitative work. It is a full component here, it does not appear in CAT, and it rewards a discipline rather than a topic: assess each statement alone, then together, and stop the moment sufficiency is settled. Candidates who solve the underlying problem get the right answer and spend twice the time, which in a generously timed paper is survivable and still wasteful.',
+          },
+          {
+            type: 'note',
+            title: 'Use the aptitude papers for pacing, not difficulty',
+            text: 'A CAT-prepared candidate will find MAT aptitude sections comfortable, and working them for challenge is a poor use of time. Work them instead to establish a rhythm suited to a generous clock — one where you verify rather than rush — because the failure mode here is not difficulty but carelessness under time you did not need to save.',
+          },
         ],
       },
       'mock-tests': {
@@ -1776,6 +2568,26 @@ const mba = [
               { label: 'All free mock tests', to: '/mock-tests/free/' },
               { label: 'Current affairs', to: '/current-affairs/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'What to do with a MAT mock',
+            items: [
+              { title: 'Take all five sections', text: 'Including the business environment section, whether or not it counts towards the composite in your cycle. Skipping it in practice guarantees meeting it cold.' },
+              { title: 'Score the four composite sections separately', text: 'Shortlisting rests on the composite, and a weak section drags it in a way an aggregate figure obscures.' },
+              { title: 'Isolate data sufficiency accuracy', text: 'A technique-dependent component where errors cluster for a specific reason — usually solving rather than judging — and are quickly corrected once identified.' },
+              { title: 'Note the time you did not use', text: 'Generous timing means you should finish with a margin. That margin belongs to verification, and rehearsing its use is worth doing.' },
+              { title: 'Compare across cycles if you sit more than one', text: 'The section that limited you last time is the section the interval should have addressed.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Because MAT runs several times a year, the mock schedule can be lighter than for a single-cycle examination and still be sufficient. A handful of full papers before your first attempt establishes pacing and exposes the weak section; the real diagnostic is then the attempt itself, and the real preparation is what you do in the weeks before the next cycle. That is a materially different rhythm from CAT and it is worth planning deliberately rather than importing a CAT mock calendar.',
+          },
+          {
+            type: 'note',
+            title: 'Practise in the delivery mode you will sit',
+            text: 'Where computer-based, internet-based and paper-based modes are offered, they differ in how you navigate, how you do rough work and how quickly you can return to a marked question. Choose your mode early and practise in it, rather than discovering the differences in the examination.',
           },
         ],
       },
@@ -1812,6 +2624,36 @@ const mba = [
               { text: 'Neglecting data sufficiency', note: 'a full section with a learnable technique.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'The first cycle — calibration',
+                'Taken early, seriously, and treated as a diagnostic. It identifies the section actually limiting your composite, which mocks approximate and an attempt establishes.',
+              ],
+              [
+                'The interval — targeted work',
+                'The gap between cycles is long enough for genuine improvement in one area, which is what makes the frequency valuable. A second cycle attempted without changing anything is simply a repeat measurement.',
+              ],
+              [
+                'The habit — a business newspaper',
+                'Daily, from the beginning, covering the environment section here and paying into every other management entrance and interview you will face.',
+              ],
+              [
+                'The technique — data sufficiency',
+                'A short block of dedicated practice, since it is a full component here and absent from CAT preparation entirely.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The most under-used feature of this examination is simply that it happens more than once. Candidates habitually treat each cycle as a standalone event, prepare uniformly, and sit whichever administration falls closest to their application deadlines. Treating the cycles as a sequence — attempt, diagnose, target, re-attempt — converts a conventional aptitude test into something much closer to a coached improvement process, at the cost of an additional fee.',
+          },
+          {
+            type: 'note',
+            title: 'Do not rush a paper that gives you time',
+            text: 'The characteristic MAT error is carelessness rather than difficulty: a candidate trained on tighter papers works at a pace the clock does not require and loses marks to avoidable slips. The correct adjustment is deliberate — decide in advance that you will use the available time to verify numerical setups, and rehearse that in your mocks.',
+          },
         ],
       },
       'study-material': {
@@ -1846,6 +2688,36 @@ const mba = [
               'Conventional aptitude practice, timed but unhurried.',
               'Vocabulary and grammar work, since MAT verbal is more rule-based than CAT.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'A business newspaper — the one genuine addition',
+                'Read daily for the economic and business environment section. It also covers CMAT general awareness, XAT general knowledge and every interview you will sit, which makes it a single habit paying into four places.',
+              ],
+              [
+                'Economy notes — for the static half',
+                'The structure of the Indian economy, policy and reform, banking and finance, and the international institutions. This part can be studied once and revised, unlike the current half.',
+              ],
+              [
+                'Data sufficiency practice — the technique block',
+                'A full component here and absent from CAT. A few dedicated sessions to establish the method, then occasional maintenance.',
+              ],
+              [
+                'Conventional aptitude material — shared',
+                'Whatever you are already using. MAT sits below CAT in difficulty across all four aptitude sections, so no additional or harder material is warranted.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The vocabulary and grammar point is worth repeating because it applies to several examinations at once. MAT, NMAT, SNAP and CMAT all test language more directly than CAT does — rules and words rather than inference from passages — which means a candidate preparing across this set should maintain a grammar sheet and a running word list even though their primary target does not reward them. It is a small habit that quietly serves four papers.',
+          },
+          {
+            type: 'note',
+            title: 'Keep one shared set of notes',
+            text: 'A candidate sitting MAT, CMAT and XAT in the same season is preparing largely the same material with different emphases. Maintaining one set of aptitude notes, one economy and business file and one vocabulary list — rather than parallel folders per examination — halves the revision burden without reducing coverage at all.',
           },
         ],
       },
@@ -1979,6 +2851,25 @@ const mba = [
             type: 'p',
             text: 'Critical reasoning deserves particular emphasis for Indian candidates, because it is tested more rigorously here than in most domestic entrances. GMAT critical reasoning questions turn on the precise logical structure of an argument — what exactly is assumed, what would weaken it, what does not follow — and the discipline of reading for structure rather than for content is the skill that most improves a verbal score.',
           },
+          {
+            type: 'list',
+            title: 'What the Focus Edition removed, and why it matters',
+            items: [
+              { text: 'Geometry is gone from Quantitative Reasoning', note: 'which means older preparation material devotes weeks to content the current test does not ask. Check the publication date of anything you buy.' },
+              { text: 'Sentence correction is gone from Verbal Reasoning', note: 'leaving reading comprehension and critical reasoning. For many Indian candidates this removes the section they found most tractable and increases the weight of the one they find hardest.' },
+              { text: 'Data Insights is now a scored section in its own right', note: 'rather than a supplementary component. Data sufficiency lives here, alongside the integrated reasoning question types.' },
+              { text: 'The essay component is gone', note: 'which shortens the test and removes a component candidates used to prepare separately.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Critical reasoning deserves the emphasis it gets, because it is where the GMAT is least like anything in the Indian entrance ecosystem. The questions turn on the precise logical relationship between a premise and a conclusion — what would weaken it, what it assumes, what would have to be true — and the wrong options are constructed to be attractive to approximate reasoning. Candidates who arrive from CAT preparation typically find the mathematics easy and this section genuinely difficult.',
+          },
+          {
+            type: 'note',
+            title: 'Match your material to the current edition',
+            text: 'A large quantity of GMAT preparation material predates the Focus Edition, and it is not obviously labelled. Working through geometry chapters and sentence correction drills for the current test is not merely inefficient; it displaces the Data Insights preparation that the current format actually rewards.',
+          },
         ],
       },
       'exam-pattern': {
@@ -2019,6 +2910,32 @@ const mba = [
             title: 'Scores are valid for years and may be sent selectively',
             text: 'GMAT scores remain valid for several years and candidates may choose which scores to report to schools. Combined with the ability to retake the test after a short interval, this gives candidates considerably more control over their record than a once-a-year Indian entrance allows.',
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'What adaptive difficulty means for pacing',
+                'As you answer correctly the questions get harder, which means your time per question naturally rises through a section. A pacing plan built on a constant seconds-per-question figure will leave you behind late in a section you are doing well in — which is a strange and specific way to lose marks.',
+              ],
+              [
+                'Why you cannot skip and return freely',
+                'The adaptive algorithm requires an answer before it selects the next question, so the familiar strategy of scanning a section and choosing the easy questions first does not exist here. Every question must be answered as it comes, which makes the decision to move on a decision to guess.',
+              ],
+              [
+                'What the review-and-edit facility actually offers',
+                'A limited number of changes per section, available at the end, provided you have left time. It is not a second pass at the section and it will not rescue a badly paced one — it is a chance to revisit a small number of questions you deliberately flagged.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The section order choice is worth treating as a real decision rather than a formality. Because the test is adaptive and each section is separately scored, the order affects how fresh you are for the section that matters most to your target schools and to your own weakest area. Most candidates find one order consistently better across practice tests, and the only way to find yours is to try both.',
+          },
+          {
+            type: 'note',
+            title: 'Scores are valid for years and may be sent selectively',
+            text: 'GMAT scores remain valid for several years, and candidates have a degree of control over which scores are reported to schools. That changes the risk profile of an early attempt considerably compared with an annual Indian entrance, and it is one of the reasons a planned retake is a normal part of GMAT preparation rather than a contingency.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -2052,6 +2969,29 @@ const mba = [
               { label: 'Verbal ability study material', to: '/study-material/varc/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'Why official questions are worth more than third-party ones',
+            items: [
+              { text: 'The distractors are constructed to a standard', note: 'GMAT wrong answers are designed to be attractive for specific reasons — a scope shift, a reversed causal claim, an unstated assumption. Third-party questions frequently miss that construction, which means practising on them teaches you to spot the wrong things.' },
+              { text: 'The logical precision is consistent', note: 'official critical reasoning questions have exactly one defensible answer. Questions that do not meet that standard train tolerance for ambiguity, which is the opposite of what the test rewards.' },
+              { text: 'The difficulty calibration is real', note: 'official material is labelled by difficulty against actual candidate performance rather than by an author’s judgement.' },
+              { text: 'The register of the passages is right', note: 'reading comprehension passages have a characteristic density and subject range that third-party material approximates unevenly.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'For every critical reasoning question, articulate the argument’s structure before looking at the options: what is the conclusion, what supports it, and what gap sits between the two. Candidates who go straight to the options are choosing between five plausible sentences; candidates who have named the gap are checking which option addresses it. The second process is slower for the first few weeks and considerably faster and more accurate thereafter.',
+          },
+          {
+            type: 'p',
+            text: 'For data sufficiency, the discipline is to resist solving. The question asks whether the statements would suffice, not what the answer is — and computing the answer is both unnecessary and a reliable way to run out of time. Practise stopping at the point where sufficiency is established, which feels wrong at first and is the entire technique.',
+          },
+          {
+            type: 'note',
+            title: 'An error log by type and cause, not by topic',
+            text: 'At this level, the useful classification is what went wrong rather than what the question was about: misread the scope, accepted an unstated assumption, computed unnecessarily, or lost the thread of a long passage. Those are the failures the GMAT is built to expose, and naming them is how they get corrected.',
+          },
         ],
       },
       'mock-tests': {
@@ -2082,6 +3022,26 @@ const mba = [
               { label: 'CAT mock tests', to: '/mock-tests/free/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'Getting value from adaptive practice tests',
+            items: [
+              { title: 'Use official adaptive tests for score prediction', text: 'Only an adaptive test replicates the algorithm that produces your score. A linear practice test, however good its questions, cannot predict a GMAT result.' },
+              { title: 'Space them three or four weeks apart', text: 'The supply of official adaptive tests is limited and each one is a scarce measurement. Clustering them at the end wastes the diagnostic value they were meant to provide.' },
+              { title: 'Rehearse your section order every time', text: 'The order is your choice on the day, and consistency across practice tests is what makes the choice informed.' },
+              { title: 'Practise bookmarking discipline', text: 'Flag uncertain questions as you go so that review time is spent on the ones you meant to revisit rather than on rediscovering them.' },
+              { title: 'Reserve time for review deliberately', text: 'The edit facility is worthless if the section clock has run out, so build the reserve into your pacing plan rather than hoping for it.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Change an answer during review only when you have a reason — a misread you have now noticed, a constraint you overlooked. Second-guessing without new information is, on the whole, a way of converting correct answers into incorrect ones, and the limited number of permitted edits means each change should be able to justify itself. Bookmark liberally and plan to change few.',
+          },
+          {
+            type: 'note',
+            title: 'Expect your time per question to rise within a section',
+            text: 'If you are performing well, the adaptive algorithm is feeding you harder questions, and harder questions take longer. A pacing plan that assumes a flat rate will leave you rushed at the end of your best sections. Build the expectation of a rising per-question time into how you monitor the clock.',
           },
         ],
       },
@@ -2120,6 +3080,36 @@ const mba = [
               { text: 'Using Focus Edition material', note: 'older material tests geometry and sentence correction, which the current format does not.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Precision over volume',
+                'The organising principle of a GMAT preparation. The content is narrow — arithmetic and algebra, comprehension and argument — and it is tested to an unusual depth of exactness. Doing a thousand approximate questions builds the wrong habit; doing three hundred with rigorous attention to why each wrong option is wrong builds the right one.',
+              ],
+              [
+                'Data Insights as its own project',
+                'A scored section in the current format, combining data sufficiency with integrated reasoning question types that appear nowhere in Indian entrances. It needs dedicated weeks rather than incidental practice.',
+              ],
+              [
+                'Reading as continuous background work',
+                'Demanding non-fiction daily, for comprehension speed and for comfort with dense argument. It is the slowest-building component and therefore the one to start first.',
+              ],
+              [
+                'A planned retake',
+                'Normal rather than exceptional. Scores are valid for years, reporting is partly within your control, and most candidates improve on a second attempt because the first one teaches them how the test actually feels.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'For a candidate arriving from CAT preparation, the balance of difficulty is inverted in a way that surprises people. The quantitative section will feel straightforward — no geometry, no deliberately unfamiliar framing, and content well below CAT’s ceiling. The verbal section will feel harder, because critical reasoning demands a precision that CAT verbal does not, and because the removal of sentence correction has concentrated the section on exactly that. Plan the time allocation accordingly rather than by instinct.',
+          },
+          {
+            type: 'note',
+            title: 'Start with a diagnostic, not with a syllabus',
+            text: 'An official adaptive practice test taken before any preparation tells you where you actually stand across three sections that differ considerably in how much work they will need. Beginning with a study plan built on assumptions about your own strengths tends to over-invest in quantitative reasoning, which for most Indian candidates is already the least of the problem.',
+          },
         ],
       },
       'study-material': {
@@ -2154,6 +3144,36 @@ const mba = [
               'An error log by question type and cause, reviewed weekly.',
               'Adaptive practice tests every three or four weeks, not clustered at the end.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Official GMAC guides and question banks — the core',
+                'Not a preference but a requirement, because the value of a GMAT question lies in how its distractors are built and only official material meets that standard consistently. Third-party questions are supplementary at best.',
+              ],
+              [
+                'Adaptive practice tests — the measurement',
+                'Limited in supply, so spaced deliberately across the preparation rather than clustered before the attempt. They are the only realistic score predictor available.',
+              ],
+              [
+                'Fundamentals material — the assumed base',
+                'Arithmetic and algebra worked to fluency. The official material assumes this base rather than teaching it, which is where general quantitative notes are genuinely useful.',
+              ],
+              [
+                'Demanding non-fiction — the daily habit',
+                'Long-form journalism, science writing, economic and historical argument. Comprehension speed on dense unfamiliar prose is built over months and cannot be assembled late.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Check the publication date of everything you use. The Focus Edition changed the sections meaningfully — geometry and sentence correction out, Data Insights elevated to a scored section — and a great deal of widely recommended material still describes the older test. Time spent on removed content is not merely wasted; it comes directly out of the Data Insights preparation that the current format most rewards and that fewest candidates have done.',
+          },
+          {
+            type: 'note',
+            title: 'Review the error log weekly, by cause',
+            text: 'Because the GMAT tests a narrow set of abilities precisely, the same failure modes recur — scope shifts accepted, assumptions unnoticed, data sufficiency questions over-solved. A log organised by cause and reviewed weekly turns those recurrences into corrections, where a log organised by topic simply records that verbal is difficult.',
           },
         ],
       },

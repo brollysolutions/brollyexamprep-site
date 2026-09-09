@@ -9,7 +9,8 @@ import {
   useMeta,
   useTitle,
 } from '../components/ui'
-import { STATE_PAGES, stateFaqs } from '../data/states'
+import { DEDICATED_STATE_EXAM_PAGES, STATE_PAGES, stateFaqs } from '../data/states'
+import { getExam } from '../data/exams'
 import { TESTS } from '../data/mock-tests'
 import { FaqSection, FinalCta } from './home/sections'
 import Directory from './Directory'
@@ -94,14 +95,25 @@ function StatePage({ state }) {
             linkLabel={jobs.linkLabel}
           />
           <div className="cats">
-            {jobs.items.map((job) => (
-              <article className="cat" key={job.to}>
-                <h3>{job.name}</h3>
-                <p>{job.desc}</p>
-                <span className="cat__spec">{job.stages}</span>
-                <span className="cat__go">Overview on this page</span>
-              </article>
-            ))}
+            {jobs.items.map((job) =>
+              hasPage(job.to) ? (
+                <Link className="cat" key={job.to} to={job.to}>
+                  <h3>{job.name}</h3>
+                  <p>{job.desc}</p>
+                  <span className="cat__spec">{job.stages}</span>
+                  <span className="cat__go">
+                    View exam guide <Arrow />
+                  </span>
+                </Link>
+              ) : (
+                <article className="cat" key={job.to}>
+                  <h3>{job.name}</h3>
+                  <p>{job.desc}</p>
+                  <span className="cat__spec">{job.stages}</span>
+                  <span className="cat__go">Guide in preparation</span>
+                </article>
+              ),
+            )}
           </div>
         </div>
       </section>
@@ -294,6 +306,16 @@ function StatePage({ state }) {
       />
     </>
   )
+}
+
+/**
+ * Whether a job category has a page behind it — a written exam record, or one
+ * of the hand-built state pages. Cards without one stay cards: linking to a
+ * URL the build does not write would promise the reader a page that is not
+ * there, and would put it in the sitemap besides.
+ */
+function hasPage(to) {
+  return Boolean(getExam(to)) || DEDICATED_STATE_EXAM_PAGES.has(to)
 }
 
 const ORIGIN = 'https://brollyexamprep.com'

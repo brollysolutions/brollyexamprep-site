@@ -176,6 +176,24 @@ const teaching = [
             title: 'Clearing CTET is not an appointment',
             text: 'The certificate establishes eligibility. Actual appointment requires applying to recruiting bodies — central schools such as Kendriya Vidyalayas and Navodaya Vidyalayas, state education departments, and private schools that recognise the certificate — each of which runs its own selection process, often with its own examination and interview.',
           },
+          {
+            type: 'steps',
+            title: 'How to work a paper with no deduction',
+            items: [
+              { title: 'First pass — answer what you know', text: 'Move through all hundred and fifty questions, answering confidently where you can and marking anything that needs thought. Two and a half hours is generous, so this pass should not feel rushed.' },
+              { title: 'Second pass — the marked questions', text: 'Return to them with real time available. Pedagogy questions in particular often resolve on a second reading, once the classroom situation has settled.' },
+              { title: 'Final pass — fill every blank', text: 'Non-negotiable. With no penalty, an unanswered question is a guaranteed zero where a guess is a free chance, and this sweep should be automatic rather than remembered.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The two-language requirement is a structural constraint worth thinking about before the application rather than after. Language I is meant to be the medium of instruction and Language II must differ from it, which means sixty of the hundred and fifty marks depend on genuine proficiency in two languages. Candidates sometimes choose a second language on the assumption that basic familiarity will carry them and find that comprehension plus language pedagogy at thirty marks is not a section that can be improvised.',
+          },
+          {
+            type: 'note',
+            title: 'Taking both papers is a real option',
+            text: 'A candidate who wants eligibility for both the primary and the upper primary stages sits Paper 1 and Paper 2 in separate sessions on the same day. The child development and pedagogy and language sections overlap substantially between them, which makes the marginal preparation for the second paper considerably smaller than the first — worth knowing when deciding whether to apply for one or both.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -207,6 +225,29 @@ const teaching = [
               { label: 'All previous year papers', to: '/previous-year-papers/' },
               { label: 'Teaching and NET exams', to: '/government-exams/teaching-net/' },
             ],
+          },
+          {
+            type: 'list',
+            title: 'The reasoning that pedagogy questions consistently reward',
+            items: [
+              { text: 'Errors are diagnostic, not failures', note: 'when a question describes a child making a particular mistake, the answer that treats the mistake as information about their thinking almost always beats the one that treats it as something to correct.' },
+              { text: 'The learner constructs understanding', note: 'options that have the teacher explain, tell or demonstrate tend to lose to options that have the child explore, discuss or discover — the framework the syllabus is built on is constructivist throughout.' },
+              { text: 'Assessment supports learning', note: 'continuous, informal and formative approaches are favoured over testing and grading, and options framed around ranking or comparing children are usually the distractors.' },
+              { text: 'Difference is accommodated, not removed', note: 'inclusive responses that adapt to a learner beat responses that try to bring the learner into line with the group.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Those four principles account for a large share of the pedagogy answers across both the child development section and the subject pedagogy embedded in every content area. Working past papers with them in mind converts pedagogy from something that feels like guessing into something closer to a rule set — and the candidates who find the section unpredictable are usually the ones answering from their own experience of being taught rather than from the framework the syllabus specifies.',
+          },
+          {
+            type: 'p',
+            text: 'Pay particular attention to the wrong options. In a well-set pedagogy question the distractors are things a reasonable teacher might genuinely do, which is what makes the questions difficult — the choice is rarely between a good answer and a foolish one. Reading why a plausible option was rejected teaches the framework far more efficiently than reading why the correct one was accepted.',
+          },
+          {
+            type: 'note',
+            title: 'Practise subject pedagogy separately',
+            text: 'Every content section carries its own pedagogy component — how mathematics is learned and where children go wrong in it, how language is acquired, how environmental studies is approached at the primary stage. These are examined as distinctly as child development is, and candidates who prepare general pedagogy alone find them unfamiliar.',
           },
         ],
       },
@@ -242,6 +283,25 @@ const teaching = [
               { label: 'Take the free CTET mock test', to: '/mock-tests/ctet/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'What to check after each mock',
+            items: [
+              { title: 'Blanks — the answer is always zero', text: 'No negative marking applies. A single unanswered question means the final sweep has not become automatic.' },
+              { title: 'Pedagogy accuracy against content accuracy', text: 'Track them separately. Strong content with weak pedagogy is the classic CTET profile, and more subject revision will not fix it.' },
+              { title: 'Both language sections', text: 'Sixty marks between them, and frequently the least prepared part of the paper. Check them independently rather than as one score.' },
+              { title: 'Time used', text: 'Two and a half hours for a hundred and fifty questions is comfortable. If you were rushed, you were deliberating over pedagogy questions rather than reading them.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'A useful habit when reviewing pedagogy errors is to write down which principle the correct answer reflected. Over a few mocks the same handful of principles will keep appearing, and the list you build becomes a short checklist you can apply to unfamiliar questions — which is exactly what the section rewards, since no amount of memorising will cover every classroom situation the examiners can invent.',
+          },
+          {
+            type: 'note',
+            title: 'Sit both papers on one day if you are taking both',
+            text: 'Paper 1 and Paper 2 run in separate sessions on the same day, and five hours of testing is a real demand. Practising them together at least a few times before the examination rehearses the concentration the second session will need, which practising them on separate days never does.',
           },
         ],
       },
@@ -279,6 +339,32 @@ const teaching = [
               { text: 'Assuming the certificate is a job', note: 'it establishes eligibility; appointment requires separate recruitment.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Pedagogy as the primary subject',
+                'Thirty compulsory questions in child development and pedagogy, plus a substantial pedagogical component inside every content section. Taken together it is the largest single body of material in the paper, and it is the part that subject knowledge does not supply.',
+              ],
+              [
+                'Content at the right level, not above it',
+                'Paper 1 asks at the level of classes one to five; Paper 2 at classes six to eight. A graduate revising their own subject at degree level is preparing material the paper will not ask for, while missing how that material is taught to children.',
+              ],
+              [
+                'The two languages, prepared properly',
+                'Sixty marks, half of it language pedagogy — acquisition and learning, the principles of language teaching, the role of listening and speaking, challenges of teaching in a diverse classroom. That half is learnable regardless of your fluency.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The most common CTET failure is a well-qualified subject graduate who prepares content thoroughly and pedagogy casually. It happens because content preparation feels concrete and measurable while pedagogy feels like common sense — and pedagogy questions are specifically constructed so that common sense produces the plausible wrong answer. Treating it as a subject with its own framework, studied first rather than skimmed last, is the single most useful adjustment available.',
+          },
+          {
+            type: 'note',
+            title: 'Confirm your eligibility to sit before you prepare',
+            text: 'Eligibility depends on holding or pursuing a recognised teacher education qualification in specified combinations with your academic qualifications, and the accepted combinations are set out in the official notification. It takes twenty minutes to check and it prevents a preparation aimed at a paper you cannot yet appear for.',
+          },
         ],
       },
       'study-material': {
@@ -314,6 +400,36 @@ const teaching = [
               'Practise pedagogy questions continuously rather than in a final block; the reasoning takes time to internalise.',
               'Keep content revision at the class level of the paper you are sitting.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Child development and pedagogy — read for application',
+                'The theorists matter less than what their ideas imply for a classroom. Read for how a principle would change a teacher’s response to a situation, because that is the form every question takes.',
+              ],
+              [
+                'NCERT textbooks — the content source',
+                'Up to class five for Paper 1 and up to class eight for Paper 2. They are the right level, and reading them as a teacher rather than as a student is the productive approach — noticing how a concept is introduced and where a child would struggle.',
+              ],
+              [
+                'Subject pedagogy — one pass per content area',
+                'How mathematics is learned, how language is acquired, how environmental studies and science are approached at these stages. Distinctly examined and rarely covered by general pedagogy material.',
+              ],
+              [
+                'Both language sections — comprehension plus pedagogy',
+                'The comprehension half depends on proficiency; the pedagogy half is learnable material about language acquisition and teaching. Prepare the second even if the first is comfortable.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'A productive habit when working through the content: after each topic, ask two questions. How would this be introduced to a child at this stage, and what is the mistake a child is most likely to make here? Those two questions convert content revision into pedagogy preparation at no extra cost, and they rehearse exactly the reasoning the paper asks for.',
+          },
+          {
+            type: 'note',
+            title: 'Practise pedagogy continuously, not in a block',
+            text: 'The reasoning takes time to internalise, and a fortnight of concentrated study produces recognition without producing instinct. Ten pedagogy questions a day across two months, each one reviewed for the principle behind the answer, builds the framework far more reliably than the same total time spent in a single intensive phase.',
           },
         ],
       },
@@ -503,6 +619,32 @@ const teaching = [
             title: 'The JRF carries an age limit',
             text: 'Junior Research Fellowship eligibility is subject to an upper age limit, with relaxations for reserved categories and for certain other groups. Assistant Professor eligibility carries no such limit. A candidate above the JRF age band can still qualify for Assistant Professor eligibility, and should confirm the current bands in the notification.',
           },
+          {
+            type: 'p',
+            text: 'One combined three-hour session for both papers is a detail with real consequences. There is no break in which to reset between the aptitude paper and your subject paper, and no separate clock protecting either — you allocate the three hours yourself across a hundred and fifty questions. Candidates who have only ever practised the two papers separately arrive without having made that allocation decision, and typically overspend on Paper 1, which carries a third of the marks.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Why no negative marking changes everything',
+                'An unanswered question is a guaranteed zero and a guessed one is a free chance. There is no scenario in which leaving a blank is correct, which means the final minutes of the session should be a mechanical sweep for anything unanswered rather than a judgement about risk.',
+              ],
+              [
+                'What the three categories mean in practice',
+                'The same paper produces three outcomes at three cutoffs — JRF with Assistant Professor eligibility at the top, Assistant Professor eligibility below it, and PhD admission eligibility below that. A candidate aiming only at lectureship is working to a materially lower threshold than one targeting the fellowship.',
+              ],
+              [
+                'Why cutoffs are not comparable across subjects',
+                'They are determined subject-wise and category-wise, which means a score that qualified in one discipline says nothing about another. Comparing your expected score with a friend in a different subject is not informative.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'The JRF age limit is a planning constraint',
+            text: 'Junior Research Fellowship eligibility carries an upper age limit with relaxations for specified categories, while Assistant Professor eligibility does not. For a candidate whose research plans depend on the fellowship, that limit determines how many attempts are actually available — and it is worth establishing at the start rather than after a near miss.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -535,6 +677,29 @@ const teaching = [
               { label: 'Teaching and NET exams', to: '/government-exams/teaching-net/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'The Paper 1 units that reward past-paper work most',
+            items: [
+              { text: 'Higher Education System', note: 'institutions, policy, governance and the history of Indian higher education. Almost purely factual, covered by no general knowledge source, and entirely learnable from past questions and a one-page sheet.' },
+              { text: 'Information and Communication Technology', note: 'abbreviations, terminology, internet and digital initiatives. Shallow, factual and quick to secure once you know from the papers what level of detail is asked.' },
+              { text: 'People, Development and Environment', note: 'specific goals, agreements, pollutants and disaster management content rather than general awareness. Past papers show exactly how specific.' },
+              { text: 'Logical Reasoning including Indian logic', note: 'the Indian logic component — the structure of anumana, the parts of an argument, vyapti and hetvabhasa — appears reliably and is covered almost nowhere outside NET material.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Tagging past Paper 1 questions by unit and counting them takes an afternoon and converts a fixed ten-unit syllabus into a prioritised checklist. Because the syllabus does not change, that count is unusually reliable — this is one of the few examinations where a candidate can reasonably aim to have covered essentially everything Paper 1 can ask, and the tagging exercise is what makes that ambition concrete.',
+          },
+          {
+            type: 'p',
+            text: 'For Paper 2, past papers serve a different purpose: calibrating depth rather than mapping scope. Your subject syllabus is long and gives no indication of weighting, while the papers show which areas recur and at what level they are examined — typically postgraduate coursework depth rather than research depth. Reading three or four past subject papers before you begin revising is the cheapest way to avoid preparing at the wrong altitude.',
+          },
+          {
+            type: 'note',
+            title: 'Practise Indian logic terminology deliberately',
+            text: 'The vocabulary is specific and unfamiliar to most candidates, and questions frequently turn on knowing precisely what a term denotes rather than on reasoning ability. A single sheet of the terms with their definitions, revised a few times, converts a reliably examined topic from a source of lost marks into secured ones.',
+          },
         ],
       },
       'mock-tests': {
@@ -565,6 +730,26 @@ const teaching = [
               { label: 'All free mock tests', to: '/mock-tests/free/' },
               { label: 'Topic and sectional practice', to: '/practice/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'Practising a single-session examination',
+            items: [
+              { title: 'Take both papers together, three hours, no break', text: 'That is how the session runs. Practising them separately never rehearses either the stamina or the time allocation the real session demands.' },
+              { title: 'Decide the time split in advance', text: 'Paper 2 has twice the questions and twice the marks. Write down your intended allocation and check afterwards whether it held.' },
+              { title: 'Confirm zero blanks', text: 'No negative marking applies, so any unanswered question is a discarded mark and a failure of habit rather than of knowledge.' },
+              { title: 'Track Paper 1 accuracy by unit', text: 'A fixed syllabus means every weak unit is completely closeable, and unit-level tracking is what makes them visible.' },
+              { title: 'Watch the second half of Paper 2', text: 'A decline there is a stamina signal, and the remedy is more full-length sessions rather than more subject revision.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Paper 1 deserves a specific target rather than a general intention to do well. Because the syllabus is fixed and finite, a well-prepared candidate can realistically aim to lose only a handful of marks there — and in a three-hundred-mark examination with subject-wise cutoffs, a near-complete hundred is frequently the difference between Assistant Professor eligibility and the JRF. Very few components in Indian competitive examinations are that tractable.',
+          },
+          {
+            type: 'note',
+            title: 'Do not over-allocate time to Paper 1',
+            text: 'It is finite and it is worth securing, but it carries a third of the marks. Once your unit checklist is complete and your practice accuracy is high, further time belongs to the subject paper — where two hundred marks sit and where the depth of your preparation actually shows.',
           },
         ],
       },
@@ -602,6 +787,32 @@ const teaching = [
               { text: 'Relying on general awareness for the environment unit', note: 'it asks specific policy, agreement and goal content.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Paper 1 — a finite project with an end point',
+                'Ten defined units, a fixed syllabus, no negative marking and heavy repetition across cycles. It is among the most completable hundred marks in Indian competitive examinations, and a candidate who treats it as a checklist to finish rather than a subject to revise will lose very few marks there.',
+              ],
+              [
+                'Paper 2 — where two thirds of the marks sit',
+                'Your own discipline at postgraduate coursework depth, with the study order set by past papers rather than by the syllabus as printed. Everything left after Paper 1 is secure belongs here.',
+              ],
+              [
+                'The single session — a stamina requirement',
+                'Three hours, a hundred and fifty questions, no break and no sectional clock. The time allocation across the two papers is yours to make, which means it should be decided in advance and rehearsed.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The strategic shape of this preparation is unusual and worth stating plainly. In most examinations you cannot finish the syllabus, so the question is what to prioritise. Here, one third of the paper genuinely can be finished — and doing so early converts the remaining months into undivided subject preparation, which is where the fellowship cutoff is actually met. Candidates who leave Paper 1 to run alongside their subject work all year tend to arrive with neither component secure.',
+          },
+          {
+            type: 'note',
+            title: 'Check the JRF age limit before you plan the attempts',
+            text: 'Junior Research Fellowship eligibility carries an upper age limit with category relaxations, while Assistant Professor eligibility does not. For a candidate whose plans depend on the fellowship, that limit determines how many cycles are realistically available — and knowing it at the start changes how aggressively the first attempt should be prepared for.',
+          },
         ],
       },
       'study-material': {
@@ -635,6 +846,36 @@ const teaching = [
               'Practise past questions for each unit as soon as you finish it, not at the end.',
               'For Paper 2, let past papers set your study order within your own syllabus.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Paper 2 — your own postgraduate texts',
+                'The standard works of your discipline, read at coursework depth and guided by a topic frequency table built from past papers. There is no competitive-exam substitute for a subject examined at this level.',
+              ],
+              [
+                'Paper 1 — a unit checklist and factual sheets',
+                'Ten defined units, each finishable. The factual ones — higher education, ICT, environment agreements — belong on one-page sheets that can be revised in minutes and therefore actually will be.',
+              ],
+              [
+                'Reasoning and data interpretation notes',
+                'For units five to seven, which are aptitude rather than knowledge and improve with practice. Indian logic needs its own terminology sheet.',
+              ],
+              [
+                'Comprehension practice',
+                'Unit three is a passage with questions, at the level expected of a postgraduate. It needs almost no study and benefits from the same reading habit that serves everything else.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Let past papers set your study order within your own subject syllabus rather than working through it as printed. Postgraduate syllabi are written to be comprehensive and give no indication of what is examined most, while three or four past papers reveal a clear concentration. That ordering matters most for candidates with limited time, because it determines what remains uncovered if the schedule slips.',
+          },
+          {
+            type: 'note',
+            title: 'Keep a unit checklist for Paper 1 and finish it',
+            text: 'Mark off only what is genuinely complete — read, practised with past questions, and revised once. The distinction between started and finished is where self-assessment usually goes wrong, and in a paper this tractable the difference between eighty per cent covered and fully covered is several marks that were entirely available.',
           },
         ],
       },
@@ -779,6 +1020,15 @@ const teaching = [
             type: 'p',
             text: 'What the syllabus does not convey is the difference between Part B and Part C depth. Part B asks whether you know the subject; Part C asks whether you can use it — deriving, applying and reasoning through problems that do not have a recalled answer. Two candidates with identical factual knowledge can score very differently on Part C, and it is the part that carries the most marks.',
           },
+          {
+            type: 'p',
+            text: 'Read your subject syllabus alongside three or four past papers rather than on its own. The syllabus describes a postgraduate discipline in outline and gives no sense of the two very different demands the paper makes of it — Part B asking whether you know the material, Part C asking whether you can use it on a problem you have not seen. A topic can be comfortable at Part B depth and genuinely difficult at Part C depth, and only the papers reveal which of your topics are which.',
+          },
+          {
+            type: 'note',
+            title: 'Part A is common to every subject',
+            text: 'Logical reasoning, graphical analysis, analytical and numerical ability, quantitative comparisons and series formation are the same for a life sciences candidate and a mathematical sciences one. It is a small, learnable section that responds to twice-weekly practice, and it is the one part of this examination where material written for other competitive tests transfers directly.',
+          },
         ],
       },
       'exam-pattern': {
@@ -818,6 +1068,32 @@ const teaching = [
             title: 'Confirm the marking scheme for your subject',
             text: 'Because the number of questions to be attempted, the marks per question and the negative marking rate vary by part and by subject, and have been revised between cycles, the marking scheme in the current notification for your specific subject is the only reliable source. Preparing an attempt strategy from a general summary is a real risk here.',
           },
+          {
+            type: 'p',
+            text: 'The question-selection rule is the feature that most distinguishes this examination and the one candidates most often fail to rehearse. Each part evaluates only a specified number of questions from those available, which means you are not merely answering the paper — you are choosing which of your answers count. That converts triage from a time-management technique into an explicit scored decision, and it is a skill that has to be practised under the real rules rather than reasoned about beforehand.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Why Part C carries the examination',
+                'It attracts the largest share of the marks and asks the hardest questions — application, analysis and scientific reasoning on problems built from the syllabus rather than drawn from it. A candidate strong in Parts A and B and weak in Part C will typically fall short of the fellowship cutoff.',
+              ],
+              [
+                'Why the marking scheme must be checked per subject',
+                'The number of questions to be attempted, the marks per question and the deduction rate all vary by part and by subject. Every attempt decision you make depends on those numbers, so working from another subject’s scheme is a way of optimising against the wrong arithmetic.',
+              ],
+              [
+                'Why Part A should be banked early',
+                'It is the fastest section for a prepared candidate and the least dependent on subject depth. Clearing it briskly funds the time that Part C will absorb, and it costs almost nothing to prepare relative to what it returns.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'One three-hour paper, three parts, one clock',
+            text: 'There is no sectional timing, which makes the allocation across the three parts entirely your decision — and one worth making before the day. Part C deserves the majority of the time because it carries the majority of the marks, and candidates who work straight through in order routinely reach it with too little time left to do it justice.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -850,6 +1126,29 @@ const teaching = [
               { label: 'All previous year papers', to: '/previous-year-papers/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'What Part C questions typically ask you to do',
+            items: [
+              { text: 'Apply a principle to an unfamiliar system', note: 'the principle is on your syllabus; the system is not. The work is recognising which principle governs a situation you have not met.' },
+              { text: 'Interpret data or a result', note: 'given an experimental outcome, a graph or a set of values, determine what it implies. Recall alone does not produce the answer.' },
+              { text: 'Combine two areas of the syllabus', note: 'questions frequently sit at the join between topics that are taught separately, which is why topic-by-topic revision leaves candidates unprepared for them.' },
+              { text: 'Work through a derivation or calculation', note: 'often one you have not memorised, requiring you to reconstruct it rather than retrieve it.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'That list explains why revision alone does not prepare a candidate for this examination. Every item on it is a doing task rather than a knowing task, and the only way to build them is to solve — problems from past papers, problems from your postgraduate coursework, problems from any source demanding enough to require construction rather than recall. Candidates who revise thoroughly and solve occasionally score well in Part B and lose the examination in Part C.',
+          },
+          {
+            type: 'p',
+            text: 'Attempt past papers under the real selection rules, not simply as question sets. Because only a specified number of questions in each part are evaluated, the paper is partly a test of choosing — and practising without that constraint removes the decision entirely. Track separately whether the questions you selected were the right ones, by reviewing afterwards whether the ones you skipped were genuinely harder or merely less familiar.',
+          },
+          {
+            type: 'note',
+            title: 'Build the topic frequency table for Parts B and C separately',
+            text: 'A topic can be heavily represented in Part B and rarely in Part C, or the reverse. Counting them together produces an average that misdirects your preparation, because the two parts reward completely different work on the same material — coverage for one, problem-solving depth for the other.',
+          },
         ],
       },
       'mock-tests': {
@@ -880,6 +1179,26 @@ const teaching = [
               { label: 'All free mock tests', to: '/mock-tests/free/' },
               { label: 'Topic and sectional practice', to: '/practice/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'A mock that actually resembles the examination',
+            items: [
+              { title: 'Enforce the selection rules', text: 'Only the specified number of questions per part counts. A mock that scores everything you answered is measuring a different examination.' },
+              { title: 'Apply the correct part-wise deduction', text: 'The rate differs between parts and between subjects. Practising under the wrong rate trains the wrong guessing threshold.' },
+              { title: 'Plan the three hours before you start', text: 'Part C deserves the majority of the time. Write the allocation down and compare it with what actually happened.' },
+              { title: 'Score Part B and Part C separately', text: 'They measure different things. A combined subject score hides whether your problem is coverage or depth.' },
+              { title: 'Review the questions you skipped', text: 'Some will turn out to have been tractable — that is a selection error, and the most expensive kind in a paper where you choose what counts.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Track the net outcome of your guessed questions under the real deduction rather than assuming guessing is broadly worthwhile. Because the rates differ by part, the arithmetic differs too — a guess that is clearly positive in one part may be marginal in another. A candidate who has actually counted their gains and losses across several mocks makes that decision from evidence rather than from a general disposition to attempt things.',
+          },
+          {
+            type: 'note',
+            title: 'Watch for decline across the three hours',
+            text: 'This is a long paper of consistently demanding questions, and accuracy in the final hour is where stamina shows. If your Part C performance degrades late, the remedy is more full-length three-hour practice rather than more subject revision — the knowledge was there and the concentration was not.',
           },
         ],
       },
@@ -918,6 +1237,36 @@ const teaching = [
               { text: 'Understanding derivations', note: 'Part C questions frequently require working through something you have not memorised.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Solving as the core activity',
+                'Part C carries the largest share of the marks and cannot be recalled into. From the first month, problems worked daily — from past papers, from coursework, from any demanding source — should occupy more of your schedule than reading does.',
+              ],
+              [
+                'Derivations understood rather than memorised',
+                'Part C frequently requires reconstructing something you have not stored. A candidate who has worked derivations by hand can rebuild them under pressure; one who has accepted results cannot.',
+              ],
+              [
+                'Selection practised, not assumed',
+                'The question-choice rule is an explicit feature of the examination. It should be rehearsed in every full-length practice paper rather than treated as something you will handle sensibly on the day.',
+              ],
+              [
+                'Part A maintained, briefly',
+                'Twice-weekly practice is sufficient. It is fast, learnable and common to all subjects, and it deserves consistency rather than depth.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The trajectory to guard against is the well-prepared candidate who revises their postgraduate syllabus thoroughly across four months, performs comfortably in Part B, and finds Part C unfamiliar. Nothing in that sequence involves insufficient effort — it involves the wrong kind. Reading builds the knowledge Part B tests; only solving builds the capability Part C tests, and the two feel similar right up until the examination.',
+          },
+          {
+            type: 'note',
+            title: 'Confirm the marking scheme for your subject in week one',
+            text: 'The number of questions to attempt in each part, the marks per question and the deduction rate all vary by subject and have been revised between cycles. Every strategic decision in this preparation depends on those numbers, which makes checking them the first task rather than a detail to settle later.',
+          },
         ],
       },
       'study-material': {
@@ -953,6 +1302,36 @@ const teaching = [
               'Do past Part C questions continuously rather than as a final block.',
               'Practise Part A twice a week; it needs repetition rather than depth.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Postgraduate texts in your discipline — the primary source',
+                'Standard works matched in level and framing to what the paper examines. Competitive-exam digests compress out the derivations and the reasoning that Part C is built on, which makes them actively unsuitable here.',
+              ],
+              [
+                'Problem sets — the second primary source',
+                'Past papers first, then coursework problems, then any source demanding enough to require constructing an approach. This is the material that builds Part C capability, and it should occupy as much of your time as reading does.',
+              ],
+              [
+                'A personal derivation and formula sheet',
+                'Handwritten, per subject area, containing the results you keep forgetting and the derivations you find hardest to reconstruct. Revised weekly and the only document you need in the final fortnight.',
+              ],
+              [
+                'General aptitude material — for Part A',
+                'Reasoning, numerical ability, graphical analysis and data interpretation at standard competitive-exam level. Common to all subjects and the one place where general material serves.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Adopt a firm discipline about solutions: attempt every problem for a genuine stretch before consulting one, and when you do consult it, close it and reproduce the argument from memory before moving on. Reading a solution produces the sensation of understanding without the ability to generate it, and in an examination where the largest section asks you to construct approaches to unfamiliar problems, that gap is exactly what decides the outcome.',
+          },
+          {
+            type: 'note',
+            title: 'Work past Part C questions continuously',
+            text: 'Not as a final block. The ability they test is built slowly, through repeated encounters with problems that do not announce their method — and a candidate meeting Part C for the first time in month four has spent three months building the wrong thing well.',
           },
         ],
       },
@@ -1092,6 +1471,25 @@ const teaching = [
             type: 'p',
             text: 'A candidate preparing for both CTET and a state TET gets most of the way with one preparation, since child development and pedagogy, subject pedagogy and the content levels are shared. The additions required are the state language paper and the state-specific content — both worth identifying early rather than discovering in the examination hall.',
           },
+          {
+            type: 'list',
+            title: 'What is shared and what is not',
+            items: [
+              { text: 'Shared — child development and pedagogy', note: 'the same framework, the same theorists, the same applied question style. Prepared once, it serves CTET and every state TET alike.' },
+              { text: 'Shared — content at class level', note: 'mathematics, environmental studies, science and social studies at the level of the classes you will teach, with their subject pedagogy.' },
+              { text: 'Not shared — the state language paper', note: 'usually the state language as Language I, tested for comprehension and for language pedagogy. Thirty marks requiring genuine proficiency.' },
+              { text: 'Not shared — state-specific general knowledge', note: 'the state’s history, geography, culture, prominent figures and administrative structure. Absent from every CTET-oriented source.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'That division is the whole of a sensible state TET plan: prepare the shared framework once, at CTET depth, and add a state-specific layer on top. Candidates who treat their state TET as an entirely separate preparation duplicate three quarters of the work, and candidates who prepare only from CTET material arrive missing the two components their own state actually distinguishes on.',
+          },
+          {
+            type: 'note',
+            title: 'Read your own state’s notification, not a general description',
+            text: 'The syllabus framework is national; the specifics are not. Which subjects appear in which paper, which languages are permitted, how much state-specific content is included and at what weight — all of these are set by the conducting board, and a general account of state TETs cannot substitute for the document your state has published.',
+          },
         ],
       },
       'exam-pattern': {
@@ -1134,6 +1532,32 @@ const teaching = [
             title: 'Recognition is generally state-bound',
             text: 'A state TET certificate is normally recognised for teaching appointments within that state. CTET has wider recognition, particularly for central government schools. Candidates who may move between states, or who are interested in central schools, often sit both.',
           },
+          {
+            type: 'p',
+            text: 'The value of knowing that the framework is shared is that it tells you what you can safely prepare from national material and what you cannot. A hundred and twenty of the hundred and fifty marks — pedagogy, content and the second language — are close enough across TETs that CTET-oriented preparation transfers almost completely. The remaining thirty, and any state general knowledge component layered into them, is where the local notification becomes the only reliable source.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Qualifying marks and relaxations',
+                'The threshold and the relaxations available to reserved categories differ between states, and a percentage that qualifies in one may not in another. It is a single number and worth confirming rather than assuming.',
+              ],
+              [
+                'Certificate validity',
+                'Has been revised in several states and is not uniform. Since the certificate establishes eligibility for a period rather than permanently in every case, the validity affects when it is worth sitting relative to expected recruitment.',
+              ],
+              [
+                'Negative marking',
+                'Usually absent, following the CTET model, but not guaranteed. This is the one variation that changes how you attempt the paper, which makes it the most important of the four to check.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Recognition is generally state-bound',
+            text: 'A state TET certificate is normally recognised for appointments within that state, while CTET is recognised for central government schools and by schools that choose to accept it. Candidates open to teaching in more than one state should think about that scope before deciding which tests to sit, since the preparation overlaps but the recognition does not.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -1167,6 +1591,29 @@ const teaching = [
               { label: 'State government exams', to: '/government-exams/state/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'What your own state’s papers tell you that nothing else can',
+            items: [
+              { text: 'How much state-specific content actually appears', note: 'the answer varies widely — some states weave several questions into general knowledge, others barely any. Counting across three years settles it for your state rather than in general.' },
+              { text: 'The real difficulty of the state language paper', note: 'comprehension in a language you speak fluently is not the same as comprehension of formal written prose in it, and the papers are the honest test of that.' },
+              { text: 'Whether pedagogy is framed as in CTET', note: 'most states follow the same applied, situation-based style, but the phrasing and the level of abstraction do vary, and familiarity is worth having.' },
+              { text: 'What the content level actually is', note: 'nominally the classes you will teach, but the depth at which those classes are examined differs between boards.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Work at least three years of your own state’s papers before touching national material, then use CTET papers for additional pedagogy practice. That order matters: the state papers tell you what you are actually preparing for, and CTET papers then supply volume on the components the two share. Reversing it produces a candidate well drilled on the shared framework who has never seen the paper they will sit.',
+          },
+          {
+            type: 'p',
+            text: 'Assess the language paper honestly and early. Candidates who have spoken the state language all their lives sometimes assume the section needs no preparation, and then meet formal written comprehension plus thirty marks of language pedagogy — acquisition, teaching principles, the role of listening and speaking, handling a multilingual classroom. The pedagogy half is learnable regardless of fluency, and it is where the section is usually won.',
+          },
+          {
+            type: 'note',
+            title: 'Build the state general knowledge sheet from the papers',
+            text: 'Rather than from a state general knowledge book, which will be far broader than the paper requires. Extracting the state questions across three years produces a short, targeted list — districts, rivers, historical figures, festivals, administrative structure — that can be revised weekly and that reflects what your board actually asks.',
+          },
         ],
       },
       'mock-tests': {
@@ -1197,6 +1644,26 @@ const teaching = [
               { label: 'CTET free mock test', to: '/mock-tests/ctet/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'A practice routine built on shared and specific parts',
+            items: [
+              { title: 'Use CTET mocks for pedagogy and content', text: 'The framework is shared and the practice transfers directly. This covers the large majority of the paper at no additional cost.' },
+              { title: 'Practise the state language paper separately', text: 'Comprehension and language pedagogy in that language, from your own state’s past papers. No national material substitutes for it.' },
+              { title: 'Revise the state general knowledge sheet weekly', text: 'Short, targeted and cumulative. It takes minutes and it covers questions nothing else in your preparation touches.' },
+              { title: 'Confirm the attempt rule for your state', text: 'Assuming no negative marking, answer everything. But confirm that assumption first, because it is the one variation that changes how you play the paper.' },
+              { title: 'Sit at least three full timed papers', text: 'A hundred and fifty questions in about two and a half hours, in one block, including the language section you find hardest.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Track pedagogy and content accuracy separately, exactly as a CTET candidate should. The characteristic failure is identical across all these examinations — strong subject knowledge, weak pedagogical reasoning — and it is invisible in a combined score. If your content is solid and your pedagogy is not, more subject revision will not move the result.',
+          },
+          {
+            type: 'note',
+            title: 'Practise in the medium you will sit',
+            text: 'Where the paper is offered in more than one medium, take your mocks in the one you have chosen. Reading speed under time pressure does not transfer between languages, and pedagogical terminology in translation is not always what you would predict from the English.',
           },
         ],
       },
@@ -1235,6 +1702,32 @@ const teaching = [
               { text: 'Assuming the certificate is an appointment', note: 'it establishes eligibility; recruitment is separate.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'The shared preparation — most of the work',
+                'Child development and pedagogy, content at the relevant class level with subject pedagogy, and the second language. Prepared once at CTET depth, it serves both examinations and leaves only the state layer to add.',
+              ],
+              [
+                'The state language layer',
+                'Comprehension plus language pedagogy in the state language. The pedagogy half is learnable material about acquisition and teaching; the comprehension half depends on reading formal prose in that language regularly.',
+              ],
+              [
+                'The state knowledge layer',
+                'History, geography, culture, prominent figures and administrative structure, built as one revision sheet from your state’s past papers and your state board’s textbooks.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Sitting CTET and your state TET on a single preparation is not merely possible but usually the sensible plan, since the shared framework accounts for the bulk of both papers and the marginal cost of the second examination is the state layer alone. What defeats candidates is treating the two as either identical — which leaves the state layer unprepared — or as entirely separate, which duplicates months of work for no additional coverage.',
+          },
+          {
+            type: 'note',
+            title: 'The certificate establishes eligibility, not appointment',
+            text: 'Clearing a state TET makes you eligible to be considered for teaching posts in that state; actual appointment comes through separate recruitment conducted by the state or by individual managements. Planning the next step — which recruitment, on what timeline, with what additional requirements — is worth doing before the result rather than after it.',
+          },
         ],
       },
       'study-material': {
@@ -1270,6 +1763,36 @@ const teaching = [
               'Read in the state language daily if it is not your strongest, for the comprehension section.',
               'Work your own state’s past papers before any national material.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Pedagogy — the shared core',
+                'Child development, learning, inclusive education and assessment, read for application rather than for names. The same material serves CTET and every state TET, and it is the largest single component of all of them.',
+              ],
+              [
+                'Content — your state board’s textbooks',
+                'At the class level of the paper you are sitting. State board books are the better choice here than national ones, because the content framing follows the state curriculum and the state-specific material lives in them.',
+              ],
+              [
+                'The state language — read it daily',
+                'Formal written prose in the state language, if it is not the language you read most. Comprehension speed on written registers is a different skill from conversational fluency, and it improves only with regular reading.',
+              ],
+              [
+                'A state facts sheet — built by you',
+                'Districts, rivers, historical figures, festivals, monuments and administrative structure, drawn from past papers and revised weekly. Short enough to actually revise, targeted enough to be worth it.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The state board textbooks are worth singling out as the primary content source rather than the national ones. They match the level, they use the framing your paper follows, and they carry the state history, geography and culture that a national textbook has no reason to include — which means one source serves both the content sections and much of the state-specific layer at the same time.',
+          },
+          {
+            type: 'note',
+            title: 'Work your own state’s past papers before anything else',
+            text: 'They are the only document that tells you what your particular examination looks like — how much state content appears, how the language paper is framed, and at what depth the content is asked. Everything else in this preparation is general, and general material cannot answer a question that varies by state.',
           },
         ],
       },

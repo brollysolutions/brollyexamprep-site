@@ -70,13 +70,13 @@ const MOCKS = [
     cat: 'SI',
     title: 'Telangana SI Mock Test',
     desc: 'Practise SI-focused questions under timed conditions.',
-    to: '/mock-tests/telangana-police-si/',
+    to: '/mock-tests/free/',
   },
   {
     cat: 'Constable',
     title: 'Telangana Constable Mock Test',
     desc: 'Attempt Constable-focused practice and identify weak areas.',
-    to: '/mock-tests/telangana-police-constable/',
+    to: '/mock-tests/free/',
   },
   {
     cat: 'Telangana GK',
@@ -391,7 +391,7 @@ export default function TelanganaPolice() {
                 <li>Previous question papers</li>
                 <li>Free SI mock tests</li>
               </ul>
-              <Link className="btn btn--y" to="/mock-tests/telangana-police-si/">
+              <Link className="btn btn--y" to="/mock-tests/free/">
                 Practise SI Mock Tests <Arrow />
               </Link>
             </article>
@@ -410,7 +410,7 @@ export default function TelanganaPolice() {
                 <li>Previous question papers</li>
                 <li>Free Constable mock tests</li>
               </ul>
-              <Link className="btn btn--y" to="/mock-tests/telangana-police-constable/">
+              <Link className="btn btn--y" to="/mock-tests/free/">
                 Practise Constable Mock Tests <Arrow />
               </Link>
             </article>
@@ -627,7 +627,7 @@ export default function TelanganaPolice() {
                   Practise Constable-level previous questions and use mistakes to identify topics
                   requiring revision.
                 </p>
-                <Link className="btn btn--y" to="/previous-year-papers/police/">
+                <Link className="btn btn--y" to="/government-exams/police/previous-year-papers/">
                   View Constable Papers <Arrow />
                 </Link>
               </article>
@@ -637,7 +637,7 @@ export default function TelanganaPolice() {
                   Attempt a timed mock test after practising previous-year questions, then use the
                   result to decide which topics need another revision pass.
                 </p>
-                <Link className="btn btn--y" to="/mock-tests/telangana-police-si/">
+                <Link className="btn btn--y" to="/mock-tests/free/">
                   Start Free SI Mock Test <Arrow />
                 </Link>
               </article>

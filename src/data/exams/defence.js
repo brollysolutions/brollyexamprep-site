@@ -124,6 +124,25 @@ const defence = [
             type: 'p',
             text: 'The spatial reasoning within the military aptitude section is worth singling out. Rotated blocks, embedded figures and pattern completion appear far more heavily here than in SSC or banking papers, and candidates who have prepared only through verbal reasoning practice find this section slower than expected. It responds very well to targeted repetition.',
           },
+          {
+            type: 'list',
+            title: 'How the four sections behave in practice',
+            items: [
+              { text: 'General awareness carries a defence seam', note: 'aircraft, service structure, ranks, exercises and defence organisations appear consistently alongside conventional general knowledge, and no general competitive-exam guide covers them.' },
+              { text: 'English is straightforward and highly learnable', note: 'comprehension, error detection, sentence completion and vocabulary at a level any graduate can reach with modest daily practice.' },
+              { text: 'Numerical ability stays at matriculation level', note: 'arithmetic only — decimals, averages, percentage, ratio, profit and loss, time and work, simple interest. The difficulty is pace rather than content.' },
+              { text: 'Military aptitude leans heavily on spatial reasoning', note: 'rotated blocks, embedded figures, pattern completion and figure classification, weighted far more than in a general aptitude paper.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The spatial component is the part of this syllabus that most rewards preparation, precisely because it is the part most competitive preparation does not build. A candidate who has practised banking or SSC reasoning has met analogies and series thoroughly and rotated three-dimensional figures barely at all — and that is a skill that improves quickly with volume and slowly with theory.',
+          },
+          {
+            type: 'note',
+            title: 'The Engineering Knowledge Test applies to one branch only',
+            text: 'Ground Duty (Technical) candidates sit an additional paper drawn from their engineering discipline. Candidates applying for the flying branch or for non-technical ground duty do not, which means much of what is written about AFCAT technical preparation is irrelevant to them — check which paper set applies to your branch before planning.',
+          },
         ],
       },
       'exam-pattern': {
@@ -165,6 +184,32 @@ const defence = [
             title: 'Held twice a year',
             text: 'AFCAT runs in two cycles annually, which gives candidates more opportunities within an age window than the annual defence examinations do. That makes a first attempt genuinely useful as calibration, provided the age band still leaves room for another.',
           },
+          {
+            type: 'p',
+            text: 'Work the arithmetic of the deduction properly, because it is harsher than most candidates assume. Three marks for a correct answer and one deducted for a wrong one means a guess breaks even only at a one-in-four success rate — which is exactly what a blind guess across four options gives you. A blind guess is therefore pure variance with no expected gain, while a guess narrowed to two options is clearly worth taking. That threshold is higher than the one a fractional-penalty paper trains, and it has to be adopted deliberately.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'What the selection board actually does',
+                'A multi-day assessment with a screening stage, psychological testing, group tasks and an interview — structurally similar to the Services Selection Board used for NDA and CDS. It is the stage that selects, and the written paper is the ticket to it rather than the substance of it.',
+              ],
+              [
+                'Why the pilot aptitude battery matters so much',
+                'For flying branch candidates it is normally a one-time opportunity in a career: a failure cannot be reattempted at a later cycle. That makes understanding what it involves before sitting it materially more important than for any other component.',
+              ],
+              [
+                'What two cycles a year gives you',
+                'More opportunities within an age band than an annual examination allows, and the chance to treat an early attempt as calibration. The interval between cycles is long enough to act on what the first one exposed.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Medical standards are strictest for the flying branch',
+            text: 'Vision requirements in particular differ between the flying branch and ground duty entries, and they are applied at the end of the process. A candidate whose eyesight rules out one branch may be entirely eligible for another — but establishing that in the first week is considerably better than discovering it at the medical board.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -196,6 +241,29 @@ const defence = [
               { label: 'CDS exam guide', to: '/government-exams/upsc/cds/' },
               { label: 'All previous year papers', to: '/previous-year-papers/' },
             ],
+          },
+          {
+            type: 'list',
+            title: 'The defence awareness cluster worth extracting',
+            items: [
+              { text: 'Aircraft and equipment', note: 'the types in service, indigenous programmes and the organisations behind them. Stable material that recurs with little variation.' },
+              { text: 'Service structure and ranks', note: 'commands and their headquarters, rank insignia, and the organisation of the Air Force specifically.' },
+              { text: 'Exercises and operations', note: 'joint and bilateral exercises with their participating countries, and named operations that have entered general awareness.' },
+              { text: 'Institutions, awards and history', note: 'training establishments, gallantry awards and their precedence, and the notable episodes of Air Force history.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'That cluster is the best return available in an AFCAT preparation for the same structural reason it is in CDS: it is examined consistently, it is finite, and almost no general competitive-exam material covers it. A list built from past papers and topped up from a defence news source for twenty minutes a week puts you ahead of most of the field on a predictable slice of the largest section.',
+          },
+          {
+            type: 'p',
+            text: 'Work the spatial reasoning sections repeatedly rather than once. Unlike general knowledge, where a second pass over the same questions teaches little, spatial reasoning improves through sheer exposure to rotated and embedded figures — the recognition becomes faster with repetition even on problems you have seen. Redoing past aptitude sections is therefore genuinely productive practice rather than a memory test.',
+          },
+          {
+            type: 'note',
+            title: 'Track your guessing outcomes explicitly',
+            text: 'Count the questions you guessed and calculate what they earned or cost under the one-mark deduction. Candidates carrying habits from fractionally penalised papers usually find their guesses net out negative, and seeing that number once is generally enough to raise the threshold permanently.',
           },
         ],
       },
@@ -231,6 +299,26 @@ const defence = [
               { label: 'All free mock tests', to: '/mock-tests/free/' },
               { label: 'NDA mock test', to: '/mock-tests/nda/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'A mock routine for a harshly penalised paper',
+            items: [
+              { title: 'Apply the real deduction, every time', text: 'Three for a correct answer, one off for a wrong one. A mock using a quarter or a third teaches a guessing threshold this paper punishes.' },
+              { title: 'Count guessed questions separately', text: 'Mark them as you go, then calculate their net contribution afterwards. It should be positive; if it is not, your threshold is too low.' },
+              { title: 'Time the military aptitude section', text: 'Spatial reasoning is where an unpractised candidate loses minutes, and where practice most visibly buys them back.' },
+              { title: 'Score defence awareness within general awareness', text: 'It is the most improvable component and the least covered by general material, so it deserves its own line in the log.' },
+              { title: 'Compare attempt count with accuracy', text: 'Under this deduction, a smaller number of confident attempts frequently outscores a larger number with a scatter of guesses.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'For technical branch candidates, the Engineering Knowledge Test needs its own practice rather than being folded into general preparation. Fifty questions for a hundred and fifty marks in forty-five minutes is a brisk rate on discipline-specific material, and it is drawn from your engineering syllabus rather than from anything a competitive-exam guide covers. Past technical papers in your own discipline are the right source.',
+          },
+          {
+            type: 'note',
+            title: 'Start selection board preparation alongside, not after',
+            text: 'The Air Force Selection Board assesses qualities formed over years — the ability to work in a group, physical confidence, having views you can explain. Those cannot be assembled in the weeks between the written result and the board call, which is why fitness, group activity and wide reading belong in the schedule from the first month.',
           },
         ],
       },
@@ -270,6 +358,36 @@ const defence = [
               { text: 'For flying branch candidates, meeting the pilot aptitude test cold', note: 'a one-time opportunity that cannot be reattempted.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Spatial reasoning — the daily drill',
+                'Twenty minutes a day from the first month. It is heavily weighted, it is the section most competitive preparation neglects, and it improves through volume rather than through instruction — which makes it the highest-return habit in this preparation.',
+              ],
+              [
+                'Guessing discipline — a trained behaviour',
+                'The one-mark deduction makes blind guessing worthless in expectation. Adopting the higher threshold deliberately, and practising with the correct marking so it becomes instinct, is worth several marks and costs no study time.',
+              ],
+              [
+                'Defence awareness — twenty minutes a week',
+                'A list built from past papers, topped up from a defence news source. Small, finite and consistently examined, and it is the part of general awareness the field has largely conceded.',
+              ],
+              [
+                'Physical fitness and formation — from day one',
+                'For the selection board, the medical, and the officer-like qualities the board is assessing. This track runs continuously rather than starting after a written result.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The written paper is genuinely approachable — matriculation arithmetic, straightforward English, general awareness at a general level. That accessibility is the trap: it invites candidates to treat AFCAT as a written examination with a board attached, when the board is what actually selects. A candidate who clears the paper comfortably and arrives at the selection board unprepared has done the easier half of the work well.',
+          },
+          {
+            type: 'note',
+            title: 'Two cycles a year changes how the first attempt should feel',
+            text: 'With an examination held twice annually within a defined age band, an early attempt is calibration rather than a decisive event — and the interval afterwards is long enough to fix whatever it exposed. Candidates who wait until they feel fully ready generally get fewer attempts than the age band actually allows.',
+          },
         ],
       },
       'study-material': {
@@ -305,6 +423,36 @@ const defence = [
               'Arithmetic practice timed, on paper, without a calculator.',
               'Physical training on most days, for the selection board and the medical.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Reasoning material — worked for its spatial content',
+                'Rotated blocks, embedded figures, pattern completion, figure classification and mirror images. General reasoning books cover the verbal families well and the spatial ones lightly, so seek out the spatial sets specifically.',
+              ],
+              [
+                'General awareness — with a defence list attached',
+                'Conventional history, geography, polity, science and current affairs, plus a separate defence awareness sheet built from past papers. The second is the part nothing on a general shelf supplies.',
+              ],
+              [
+                'English — a short rule set and a word list',
+                'Error detection, sentence completion, synonyms and antonyms. Finite, learnable and among the most reliable marks in the paper for a candidate willing to spend twenty minutes a day.',
+              ],
+              [
+                'Numerical ability — fluency drilling',
+                'Matriculation arithmetic done on paper without a calculator, against a clock. The content will not stretch a graduate; the pace will.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'For Ground Duty (Technical) candidates the Engineering Knowledge Test is best prepared from your own degree or diploma material rather than from any competitive-exam source. It is drawn from your engineering discipline at the level you studied it, and the standard textbooks carry the derivations and standard values that condensed guides compress out — the same argument that applies to every technical recruitment paper.',
+          },
+          {
+            type: 'note',
+            title: 'Reading widely serves the board as well as the paper',
+            text: 'For an entry where a multi-day assessment carries the selection, a habit of reading beyond the syllabus is preparation rather than enrichment. It feeds current affairs, it supplies the informed views the interview probes, and it is one of the few things a candidate can do months in advance that visibly changes how they present at a selection board.',
           },
         ],
       },
@@ -452,6 +600,25 @@ const defence = [
             type: 'p',
             text: 'Across all categories, class 10 general science and school mathematics form a large common core. A candidate uncertain which category to target can begin with those safely, then specialise once the choice is settled.',
           },
+          {
+            type: 'list',
+            title: 'What the common core across categories looks like',
+            items: [
+              { text: 'Class 10 general science', note: 'physics, chemistry and life sciences at school level, appearing in almost every category in some form. Finite, finishable and the most efficient place to start.' },
+              { text: 'School mathematics', note: 'arithmetic and elementary algebra and geometry for the general categories, rising to class 12 mathematics for the technical and science-stream entries.' },
+              { text: 'General knowledge', note: 'current affairs, history, geography, polity, sports and awards — the conventional pool, shared with most other recruitment at this level.' },
+              { text: 'English or the language component', note: 'basic comprehension, grammar and vocabulary, weighted differently across categories but present in most.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'That common core is worth identifying early because it lets a candidate begin productively before finalising every detail of their category. Class 10 science and school mathematics will be needed whichever entry you pursue, and starting them in week one costs nothing even if the category choice shifts. The specialisation — class 12 physics and mathematics for technical and science-stream entries, computer science for clerical ones — can be layered on once the notification is settled.',
+          },
+          {
+            type: 'note',
+            title: 'Read your own category’s notification, not a general summary',
+            text: 'The Army, Navy and Air Force each run their own recruitment with their own categories, syllabi, marking and standards, and the differences between General Duty, Technical, Clerk, SSR, MR and Agniveer Vayu are substantial. Preparing from a general account of Agniveer is a real way to prepare for the wrong paper.',
+          },
         ],
       },
       'exam-pattern': {
@@ -493,6 +660,32 @@ const defence = [
             title: 'Check the medical standards before you begin',
             text: 'Several of the conditions that end candidacies at the medical stage are identifiable in advance, and some are correctable given time. Because the medical comes last, a candidate can spend a year preparing and be eliminated for something they could have checked at the outset. Read the medical standards for your service and category first.',
           },
+          {
+            type: 'p',
+            text: 'The proportions across the four stages are the important thing to understand, and they are the reverse of what most candidates assume. The written test is pitched to be clearable by a well-prepared candidate and eliminates a moderate share of applicants. The physical fitness test eliminates a larger share, mostly among candidates who trained for weeks rather than months. The medical eliminates the largest share of all, frequently for conditions that were identifiable in advance. Effort allocated in proportion to the written test alone is allocated backwards.',
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'Why the physical test is a months-long project',
+                'Running endurance and event strength build gradually and cannot be compressed. A candidate who starts running in week one arrives at the physical test having trained for months; one who starts after the written result has weeks, which is not enough to build a base safely.',
+              ],
+              [
+                'Why the measurement test is worth checking early',
+                'Height, chest and weight standards vary by category and in some cases by region. They are published, they are fixed, and a candidate can establish in an afternoon whether they meet them — which is considerably better than establishing it at the recruitment rally.',
+              ],
+              [
+                'Why the medical is the largest filter',
+                'It assesses vision including colour perception, hearing, dental condition, body marks and tattoos, orthopaedic conditions such as flat feet and knock knees, and general physical condition. Several of these are identifiable in advance by anyone willing to check.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Standards differ by service, category and region',
+            text: 'The written format, the physical events, the measurement thresholds and the medical criteria all vary between the Army, Navy and Air Force and between categories within each. Generic figures circulated online are a poor substitute for the notification that applies to you — find the standards for your own category and train against those numbers.',
+          },
         ],
       },
       'previous-year-papers': {
@@ -525,6 +718,29 @@ const defence = [
               { label: 'Science study material', to: '/study-material/science/' },
             ],
           },
+          {
+            type: 'list',
+            title: 'What tagging past papers by chapter reveals',
+            items: [
+              { text: 'Science clusters in a predictable set of chapters', note: 'motion and force, work and energy, light, electricity, acids and bases, metals and non-metals, and life processes supply a large share of the questions across categories.' },
+              { text: 'Mathematics stays within a narrow range of shapes', note: 'percentage, average, ratio, profit and loss, time and work, time and distance, and basic mensuration, asked directly and repeatedly.' },
+              { text: 'General knowledge repeats by theme rather than by question', note: 'polity basics, national symbols, geography, sports and awards, and current affairs from the preceding months.' },
+              { text: 'Technical categories go substantially deeper', note: 'class 12 physics, chemistry and mathematics for Army Technical, Navy SSR and the Agniveer Vayu science stream — a different level entirely from the general categories.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Work only with papers for your own category, and check the category before you start rather than after. Because the papers differ substantially between General Duty, Technical, Clerk and the various Navy and Air Force entries, a candidate practising on the wrong set is building the wrong level — usually discovering it late, when the time to correct is short.',
+          },
+          {
+            type: 'p',
+            text: 'The finiteness of these syllabi is the thing to exploit. Class 10 science can genuinely be finished, and so can school mathematics at this level — which changes the question from what to prioritise to how many complete passes you can make. A candidate on a second full pass with a chapter checklist marked off is in a materially stronger position than one who has sampled more material broadly.',
+          },
+          {
+            type: 'note',
+            title: 'Time your practice from early on',
+            text: 'The online tests are short and the questions are individually straightforward, which makes pace rather than difficulty the constraint for most candidates. Practising untimed produces a comfortable score that misrepresents readiness, and the habit of working against a clock is easier to build early than to retrofit.',
+          },
         ],
       },
       'mock-tests': {
@@ -555,6 +771,26 @@ const defence = [
               { label: 'All free mock tests', to: '/mock-tests/free/' },
               { label: 'Topic and sectional practice', to: '/practice/' },
             ],
+          },
+          {
+            type: 'steps',
+            title: 'A weekly routine across both tracks',
+            items: [
+              { title: 'Two timed written sessions', text: 'In your own category’s format, with negative marking applied where it applies. Enough to keep the material sharp without letting written practice crowd out the training.' },
+              { title: 'Running on most days', text: 'Building distance and pace gradually towards the prescribed standard, with margin to spare rather than exactly meeting it.' },
+              { title: 'Progressive strength work', text: 'Pull-ups and the other required events, built up over months rather than attempted at maximum effort each session. Progressive loading is what produces a reliable result on the day.' },
+              { title: 'Daily general knowledge and science revision', text: 'Short sessions, since both are recall-heavy and respond to frequency rather than duration.' },
+              { title: 'A training log kept alongside the study plan', text: 'Written down, week by week. It is the record that shows whether the physical track is actually progressing.' },
+            ],
+          },
+          {
+            type: 'p',
+            text: 'The unusual advice for this recruitment is to treat your training log as at least as important as your mock scores. For most candidates the written test is the least uncertain part of the process — practise it until it is comfortable and then maintain it — while the physical stage is where preparation genuinely determines the outcome and where progress is only visible if it is recorded.',
+          },
+          {
+            type: 'note',
+            title: 'Train with margin, not to the standard',
+            text: 'A candidate who can just meet the running time in training will frequently miss it at the rally, where nerves, terrain and fatigue all work against them. Building to comfortably inside the standard is the difference between a result that depends on the day and one that does not.',
           },
         ],
       },
@@ -593,6 +829,36 @@ const defence = [
               { text: 'Reading scheme terms from unofficial sources', note: 'the terms have been revised; read the official notification.' },
             ],
           },
+          {
+            type: 'defs',
+            items: [
+              [
+                'The medical check — week one, honestly',
+                'Vision and colour perception, hearing, dental condition, body marks and tattoos, and orthopaedic conditions such as flat feet and knock knees. Several are identifiable by a candidate willing to look, and identifying one in week one is entirely different from meeting it at the medical board.',
+              ],
+              [
+                'The physical track — months, not weeks',
+                'Running from the first week, strength work layered on from the second month, both progressing gradually and both maintained without interruption through the written preparation.',
+              ],
+              [
+                'The written track — a finite syllabus',
+                'School science and mathematics for your category, general knowledge as a daily habit, and timed practice from the third month. Small enough to complete, which makes completion the right target.',
+              ],
+              [
+                'The category decision — settled first',
+                'Everything above depends on it, because the syllabus, the standards and the medical criteria all vary by service and category.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'A realistic timeline is three to four months for the written test if your school science and mathematics are intact, and six months or more if the physical side has to be built from a standing start. The physical track sets the true schedule, which is worth knowing at the beginning — it is the component candidates plan around last and the one that removes them most often.',
+          },
+          {
+            type: 'note',
+            title: 'Read the scheme terms from the official notification',
+            text: 'The terms of service under the Agnipath scheme — the period of engagement, the retention provisions and the associated entitlements — have been the subject of a great deal of unofficial commentary and have been revised. Read them in the official notification rather than from secondary sources, since this is a decision about several years of your life.',
+          },
         ],
       },
       'study-material': {
@@ -628,6 +894,36 @@ const defence = [
               'Do mathematics on paper without a calculator, timed.',
               'Keep the physical training log alongside the study plan, and treat both as compulsory.',
             ],
+          },
+          {
+            type: 'defs',
+            items: [
+              [
+                'School science — the common core, finished',
+                'Class 10 physics, chemistry and life sciences for the general categories; class 11 and 12 for technical and science-stream entries. Small enough to complete, and completion is the right target rather than coverage.',
+              ],
+              [
+                'School mathematics — accuracy and pace',
+                'Arithmetic and elementary algebra and geometry, worked on paper without a calculator and against a clock. The level will not stretch a school leaver; the timing will.',
+              ],
+              [
+                'General knowledge — themed lists, revised daily',
+                'Polity basics, national symbols, geography, sports and awards, plus current affairs from a single running source. Short frequent passes rather than long sessions.',
+              ],
+              [
+                'Your own class textbooks — for technical categories',
+                'Class 11 and 12 physics, chemistry and mathematics for the technical and science-stream entries, which are the right level and framing for those papers.',
+              ],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Keep a chapter checklist for science and mathematics and mark off only what is genuinely finished — read, understood and tested with questions. In a syllabus this small the distinction between started and finished is where self-assessment usually goes wrong, and the difference between eighty per cent covered and fully covered is several marks that were entirely available.',
+          },
+          {
+            type: 'note',
+            title: 'Keep the training log in the same place as the study plan',
+            text: 'Candidates who track their study and treat physical training as something that happens when there is time reliably let the training slip first. Writing the running and strength sessions into the same weekly plan as the revision is a small administrative habit, and in a recruitment where the physical and medical stages eliminate the most candidates it protects the part that matters most.',
           },
         ],
       },
