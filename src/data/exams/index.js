@@ -58,6 +58,7 @@ import university from './university'
 import pgResearch from './pg-research'
 import international from './international'
 import telangana from './telangana'
+import andhraPradesh from './andhra-pradesh'
 
 import sscDepth from './ssc-depth'
 import bankingDepth from './banking-depth'
@@ -92,6 +93,7 @@ const FAMILIES = [
   pgResearch,
   international,
   telangana,
+  andhraPradesh,
 ]
 
 /** Every written exam, keyed by its base path. */
