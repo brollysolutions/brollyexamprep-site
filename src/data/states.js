@@ -386,7 +386,7 @@ const TAMIL_NADU = {
       {
         name: 'TNPSC Group 2',
         desc: 'Degree-level interview posts across state departments.',
-        stages: 'Prelims · Mains · Oral test',
+        stages: 'Prelims · Descriptive Mains',
         to: '/government-exams/state/tamil-nadu/tnpsc-group-2/',
       },
       {
@@ -671,7 +671,7 @@ const KARNATAKA = {
       {
         name: 'KPSC KAS',
         desc: 'Gazetted Probationer posts including Assistant Commissioner and DySP.',
-        stages: 'Prelims · Mains · Interview',
+        stages: 'Prelims · Mains · Personality test',
         to: '/government-exams/state/karnataka/kpsc-kas/',
       },
       {
@@ -736,7 +736,7 @@ const KARNATAKA = {
       [
         'KAS (Group A and B)',
         'Bachelor’s degree',
-        'Prelims, descriptive Mains, interview',
+        'Prelims, descriptive Mains, 25-mark personality test',
         'Assistant Commissioner, DySP, Commercial Tax Officer and other senior state-cadre posts',
       ],
       [
@@ -747,7 +747,7 @@ const KARNATAKA = {
       ],
       [
         'Group C',
-        'Bachelor’s degree',
+        'PUC, diploma or degree, by post',
         'Written examination, certificate verification',
         'Degree-level posts in state departments and corporations',
       ],
@@ -934,25 +934,25 @@ const MAHARASHTRA = {
       {
         name: 'MPSC Group B',
         desc: 'Sub-Inspector, Sales Tax Inspector and Assistant Section Officer posts.',
-        stages: 'Prelims · Mains · Interview',
+        stages: 'Prelims · Mains · PSI physical test',
         to: '/government-exams/state/maharashtra/mpsc-group-b/',
       },
       {
         name: 'MPSC Group C',
         desc: 'Tax Assistant, Clerk-Typist and Technical Assistant posts.',
-        stages: 'Prelims · Mains · Skill test',
+        stages: 'Prelims · Mains',
         to: '/government-exams/state/maharashtra/mpsc-group-c/',
       },
       {
         name: 'Talathi',
         desc: 'Village revenue and land record posts in the districts.',
-        stages: 'Written',
+        stages: 'MPSC Group C · Prelims · Mains',
         to: '/government-exams/state/maharashtra/talathi/',
       },
       {
         name: 'Maharashtra Police',
         desc: 'Police Constable and Driver recruitment across the state.',
-        stages: 'Written · Physical',
+        stages: 'Physical · Written',
         to: '/government-exams/state/maharashtra/maharashtra-police/',
       },
       {
@@ -1004,13 +1004,13 @@ const MAHARASHTRA = {
       ],
       [
         'Group C',
-        'Degree or HSC per post',
-        'Prelims, Mains, skill test',
+        'Degree; diploma for AMVI',
+        'Prelims, Mains; typing certificate, no skill test',
         'Tax Assistant, Clerk-Typist and Technical Assistant',
       ],
       [
         'Talathi and Zilla Parishad',
-        'HSC or degree per post',
+        'Degree for Talathi; SSC to degree for ZP posts',
         'Written examination, document verification',
         'Talathi, Gram Sevak, Junior Assistant and other district-level posts',
       ],
@@ -1089,13 +1089,13 @@ const UTTAR_PRADESH = {
       {
         name: 'UPPSC RO and ARO',
         desc: 'Review Officer and Assistant Review Officer posts in state offices.',
-        stages: 'Prelims · Mains · Typing test',
+        stages: 'Prelims · Mains',
         to: '/government-exams/state/uttar-pradesh/uppsc-ro-and-aro/',
       },
       {
         name: 'UPSSSC PET',
         desc: 'The Preliminary Eligibility Test that gates most Group C recruitment.',
-        stages: 'PET · Mains',
+        stages: 'Written · Score for Group C mains',
         to: '/government-exams/state/uttar-pradesh/upsssc-pet/',
       },
       {
@@ -1154,7 +1154,7 @@ const UTTAR_PRADESH = {
       [
         'UPPSC RO and ARO',
         'Bachelor’s degree',
-        'Prelims, Mains, typing test',
+        'Prelims, Mains; Hindi typing as an ARO qualification',
         'Review Officer and Assistant Review Officer in state offices',
       ],
       [

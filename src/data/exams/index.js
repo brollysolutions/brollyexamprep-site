@@ -59,6 +59,11 @@ import pgResearch from './pg-research'
 import international from './international'
 import telangana from './telangana'
 import andhraPradesh from './andhra-pradesh'
+import tamilNadu from './tamil-nadu'
+import karnataka from './karnataka'
+import maharashtra from './maharashtra'
+import uttarPradesh from './uttar-pradesh'
+import bihar from './bihar'
 
 import sscDepth from './ssc-depth'
 import bankingDepth from './banking-depth'
@@ -94,6 +99,11 @@ const FAMILIES = [
   international,
   telangana,
   andhraPradesh,
+  tamilNadu,
+  karnataka,
+  maharashtra,
+  uttarPradesh,
+  bihar,
 ]
 
 /** Every written exam, keyed by its base path. */
