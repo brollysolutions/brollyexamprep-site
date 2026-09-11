@@ -53,6 +53,14 @@ export const MOCKTEST_TESTS_URL = `${MOCKTEST_ORIGIN}/tests`
 export const MOCKTEST_TS_SI_URL = `${MOCKTEST_TESTS_URL}/simocktest`
 
 /**
+ * The Telangana Police Constable paper. Note the singular `/test/` segment —
+ * it is a different route shape from the SI paper above, not a typo. Both are
+ * exceptions to the "no per-exam slug routes" rule; anything else still has to
+ * go to MOCKTEST_TESTS_URL.
+ */
+export const MOCKTEST_TS_CONSTABLE_URL = `${MOCKTEST_ORIGIN}/test/constablemocktest01`
+
+/**
  * The cards on the home page and the Mock Tests hub. Both the spec line and
  * the link come from the question banks, so a card can never advertise a test
  * that is not actually there.

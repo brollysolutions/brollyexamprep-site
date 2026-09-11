@@ -21,7 +21,20 @@
  * notification, which is the only document that binds the commission.
  */
 
+import DEPTH from './telangana-depth'
+
 const OFFICIAL = 'websitenew.tgpsc.gov.in'
+
+/**
+ * The day the dated facts on these pages were last read off an official notice.
+ *
+ * Only the `updates`, `eligibility`, `pattern` and `sources` sections state
+ * anything cycle-specific; everything else in this file is deliberately
+ * evergreen. When you refresh a notification status, move this date with it —
+ * a "checked on" line that is older than the fact beside it is worse than no
+ * date at all, because it invites the reader to trust a stale figure.
+ */
+const CHECKED = '11 September 2026'
 
 /** Recurs at the foot of every pattern page in this file. */
 const CONFIRM_NOTE = {
@@ -43,13 +56,13 @@ const telangana = [
     metaDescription:
       'TGPSC Group 1 guide — prelims and descriptive mains structure, the Telangana Movement paper, posts on offer, answer writing and a preparation plan.',
     lead: [
-      'TGPSC Group 1 is the senior recruitment in Telangana: Deputy Collector, Deputy Superintendent of Police, Commercial Tax Officer, Regional Transport Officer, District Panchayat Officer and the other state-cadre posts that run a district between them. It is the state equivalent of the civil services examination, and it is built the same way — a screening paper, a long descriptive mains, and an interview.',
+      'TGPSC Group 1 is the senior recruitment in Telangana: Deputy Collector, Deputy Superintendent of Police, Commercial Tax Officer, Regional Transport Officer, District Panchayat Officer and the other state-cadre posts that run a district between them. It is the state equivalent of the civil services examination in everything but its final stage: a screening paper, then a long descriptive mains that decides the result outright.',
       'The part that surprises candidates arriving from national preparation is the writing. Group 1 is decided in the mains, the mains is written by hand under time pressure across several papers, and one of those papers is about the Telangana movement and the formation of the state — a subject no national book covers at the depth the paper asks for.',
     ],
     quickFacts: [
       ['Conducted by', 'Telangana Government Public Service Commission, formerly TSPSC'],
       ['Qualification', 'A bachelor’s degree from a recognised university'],
-      ['Stages', 'Prelims (screening) → descriptive Mains → interview'],
+      ['Stages', 'Prelims (screening) → descriptive Mains. No interview under the current scheme'],
       ['Prelims role', 'Screening only — the marks do not carry into the merit list'],
       ['Distinctive paper', 'Telangana Movement and State Formation, examined as a subject of its own'],
       ['Medium', 'English or Telugu, chosen at application'],
@@ -58,7 +71,7 @@ const telangana = [
     overview: [
       {
         type: 'p',
-        text: 'Group 1 fills the posts a state government recruits directly into its senior executive cadre. A successful candidate is likely to spend early service as a Deputy Collector or a Deputy Superintendent of Police, and the recruitment is designed around that: a wide screening test to reduce a very large field, a descriptive mains that tests whether a candidate can construct an argument in writing, and an interview that assesses judgement.',
+        text: 'Group 1 fills the posts a state government recruits directly into its senior executive cadre. A successful candidate is likely to spend early service as a Deputy Collector or a Deputy Superintendent of Police, and the recruitment is designed around that: a wide screening test to reduce a very large field, then a descriptive mains that tests whether a candidate can construct an argument in writing. Under the scheme notified for the current cycle there is no interview, so those written papers are the entire basis of the merit list.',
       },
       {
         type: 'p',
@@ -69,7 +82,7 @@ const telangana = [
         title: 'What separates Group 1 from Group 2',
         items: [
           { text: 'The mains is descriptive', note: 'answers are written in prose, by hand, against the clock. Group 2 is objective throughout, and the two demand different preparation even where the syllabus overlaps.' },
-          { text: 'There is an interview', note: 'a personality test carrying marks that count. Group 2 has none, so its result rests entirely on the written papers.' },
+          { text: 'The screening stage is separate', note: 'Group 1 has a prelims whose marks are discarded once it has done its job, so the paper that admits you to the examination is not the paper that ranks you. Group 2 has no screening stage at all — every candidate sits the papers that count.' },
           { text: 'The posts carry executive authority', note: 'district administration and policing, rather than the supervisory and ministerial posts most Group 2 appointments lead to.' },
           { text: 'The field is smaller but stronger', note: 'Group 1 attracts candidates also preparing for the civil services, which raises the standard of the written answers you are ranked against.' },
         ],
@@ -94,16 +107,145 @@ const telangana = [
           'A qualifying language paper alongside marked papers covering general essay, history and culture, society and governance, economy and development, science and technology with data interpretation, and the Telangana movement and state formation. These marks build the merit list.',
       },
       {
-        name: 'Interview',
-        mode: 'Personality test',
-        detail:
-          'A board interview carrying marks that are added to the mains total. It examines awareness, reasoning and temperament rather than recall, and draws heavily on the candidate’s own background, district and graduation subject.',
-      },
-      {
         name: 'Verification and appointment',
         mode: 'Documents and medical',
         detail:
-          'Certificate verification against the eligibility claimed at application, medical fitness where the post requires it, and allotment of service by merit and preference.',
+          'Certificate verification with web options for post and multi-zone preference, medical fitness and physical requirements where the post requires them, and allotment of service by merit, preference, reservation and local status.',
+      },
+    ],
+    updates: [
+      {
+        type: 'p',
+        text: `Checked ${CHECKED}. The current Group 1 cycle is Notification No. 02/2024 of 19 February 2024. It replaced Notification No. 04/2022, which the commission cancelled — candidates who had applied to the cancelled cycle had to apply again, though not to pay again. Selection under 02/2024 is published but remains provisional.`,
+      },
+      {
+        type: 'table',
+        caption: 'The 02/2024 cycle, end to end.',
+        head: ['Stage', 'When'],
+        rows: [
+          ['Notification issued', '19 February 2024'],
+          ['Applications', '23 February to 14 March 2024, with an edit window to 27 March'],
+          ['Preliminary test', 'Notified for May or June 2024. The notification names no exact date, and the commission published none that survives on its site.'],
+          ['Main examination', '21 to 27 October 2024'],
+          ['General ranking list', '30 March 2025'],
+          ['Provisional selection', '24 September 2025 — 562 candidates against 563 vacancies'],
+        ],
+      },
+      {
+        type: 'note',
+        title: 'The selection is provisional and litigation is pending',
+        text: 'The commission’s own selection notification states that the final list is subject to the outcome of Writ Appeal No. 1066 of 2025 and connected cases, and that changes will be carried out if court orders require them. One vacancy was left unfilled under a High Court order in a separate writ petition, which is why 562 candidates were selected against 563 posts. A place on a provisional list is not an appointment.',
+      },
+      {
+        type: 'list',
+        title: 'Where the 563 vacancies sat',
+        items: [
+          { text: 'Mandal Parishad Development Officer — 140', note: 'the largest single post code in the recruitment, about a quarter of it.' },
+          { text: 'Deputy Superintendent of Police — 115', note: 'the largest uniformed block, and one of the post codes carrying a lower age ceiling and a physical requirement.' },
+          { text: 'Commercial Tax Officer 48, Deputy Collector 45, Municipal Commissioner Grade-II 41, Assistant Audit Officer 41', note: 'the next tier of post codes by size.' },
+          { text: 'Eighteen post codes in all', note: 'down to two vacancies for District Tribal Welfare Officer. Vacancy numbers are expressly subject to variation on intimation from the department concerned.' },
+        ],
+      },
+      {
+        type: 'note',
+        title: 'No fresh Group 1 notification has been issued',
+        text: 'As at the date checked above, 02/2024 remains the most recent Group 1 notification. Any vacancy count or application date circulating for a new cycle is not from a commission document.',
+      },
+      {
+        type: 'links',
+        title: 'Check the cycle status at source',
+        items: [
+          { label: 'TGPSC notifications', href: 'https://websitenew.tgpsc.gov.in/notifications' },
+          { label: 'TGPSC selection lists', href: 'https://websitenew.tgpsc.gov.in/selectionlist' },
+        ],
+      },
+    ],
+    eligibility: [
+      {
+        type: 'p',
+        text: 'Group 1 does not have one eligibility rule — it has eighteen, one per post code, and the differences are the kind that end an application. Both the minimum and the maximum age vary by post, and three post codes want a specific degree rather than any degree. The figures below are those set by Notification No. 02/2024, with age reckoned as on 1 July 2024.',
+      },
+      {
+        type: 'table',
+        caption:
+          'Eligibility under Notification No. 02/2024. A future notification will set its own reckoning date and may set different ceilings, so read the structure rather than reusing the dates.',
+        head: ['Requirement', 'What the notification set'],
+        rows: [
+          ['Qualification', 'A bachelor’s degree of a recognised university for most posts, held as on the notification date of 19 February 2024 with the result already declared by then. A degree awaited or declared later did not qualify.'],
+          ['Degree-specific posts', 'Regional Transport Officer required a degree in mechanical or automobile engineering. Assistant Commissioner of Labour required arts, commerce, science or engineering. The Assistant Treasury Officer group required commerce, economics or mathematics with at least a second class in the subject.'],
+          ['Minimum age', '18 years for most posts; 21 years for Deputy Superintendent of Police, Regional Transport Officer and Assistant Excise Superintendent.'],
+          ['Maximum age', '46 years for most posts; 35 years for Deputy Superintendent of Police, Deputy Superintendent of Jails and Assistant Excise Superintendent. The 46-year ceiling came from a government order of February 2024 raising it from 44.'],
+          ['Age relaxation', 'Telangana government employees up to 5 years by length of regular service; ex-servicemen 3 years plus service rendered; NCC instructors 3 years plus service; SC, ST, BC and EWS candidates 5 years; persons with disability 10 years. Relaxation cannot take a candidate past the post’s own ceiling.'],
+          ['Physical requirements', 'Deputy Superintendent of Police and Assistant Excise Superintendent required at least 165 cm height and 86.3 cm chest on full inspiration; Deputy Superintendent of Jails at least 167.6 cm with a minimum 5 cm expansion. Relaxed standards applied where enough candidates at the higher standard were unavailable, and a request for re-medical examination is not entertained.'],
+          ['Application processing fee', '₹200, payable by every applicant with no exemption.'],
+          ['Examination fee', '₹120, from which unemployed candidates were exempt on filing a declaration. Government employees at any level paid it.'],
+        ],
+      },
+    ],
+    pattern: [
+      {
+        type: 'table',
+        caption:
+          'The Group 1 scheme of examination. The preliminary test screens and is then discarded; the six marked mains papers are the entire merit list.',
+        head: ['Stage or paper', 'Subject', 'Type', 'Duration', 'Marks'],
+        rows: [
+          ['Preliminary test', 'General Studies and Mental Ability, 150 questions', 'Objective — screening only', '2½ hours', '150, not counted'],
+          ['Mains — General English', 'Qualifying paper at secondary school standard', 'Descriptive — qualifying only', '3 hours', '150, not counted'],
+          ['Mains — Paper I', 'General Essay', 'Descriptive', '3 hours', '150'],
+          ['Mains — Paper II', 'History, Culture and Geography', 'Descriptive', '3 hours', '150'],
+          ['Mains — Paper III', 'Indian Society, Constitution and Governance', 'Descriptive', '3 hours', '150'],
+          ['Mains — Paper IV', 'Economy and Development', 'Descriptive', '3 hours', '150'],
+          ['Mains — Paper V', 'Science and Technology, and Data Interpretation', 'Descriptive', '3 hours', '150'],
+          ['Mains — Paper VI', 'Telangana Movement and State Formation', 'Descriptive', '3 hours', '150'],
+        ],
+      },
+      {
+        type: 'note',
+        title: 'The current scheme has no interview',
+        text: 'The commission’s scheme of examination totals 900 marks across the six marked mains papers, and contains no interview, oral test or personality test. Older Group 1 cycles did carry one, and a good deal of preparation advice still assumes it, but under the scheme notified for the current cycle nothing outside the written papers can move your rank. Confirm it in your own notification before planning around either answer.',
+      },
+      {
+        type: 'list',
+        title: 'The rules that decide who progresses',
+        items: [
+          { text: 'The prelims admits fifty candidates per vacancy', note: 'the ratio is 1:50 in each multi-zone, relaxed where reserved-category numbers require it. The paper is a filter with a wide mouth, not a competition to be topped.' },
+          { text: 'General English can end a candidacy on its own', note: 'it is qualifying at secondary school standard — 40% for OC, EWS and sportspersons, 35% for BC, 30% for SC, ST and PH candidates — and it is the paper candidates prepare for last.' },
+          { text: 'The mains carries an aggregate minimum too', note: 'the same 40, 35 and 30 per cent thresholds apply to the aggregate across all mains papers. If SC and ST candidates do not come up to them, selection is considered on rank irrespective of marks.' },
+          { text: 'Every mains paper is compulsory', note: 'absence from any one of them disqualifies the candidature entirely.' },
+          { text: 'Answer in one language throughout', note: 'the examination is set in English, Telugu and Urdu, and every paper except General English must be answered wholly in the language you chose. Mixing is not permitted.' },
+          { text: 'The official documents prescribe no negative marking', note: 'the notification contains no deduction clause for a wrong answer. That is the absence of a provision rather than a promise, so check your own notification.' },
+        ],
+      },
+    ],
+    studyPlan: [
+      {
+        type: 'steps',
+        title: 'A plan for an examination decided entirely in writing',
+        items: [
+          { text: 'Write from month one, not after the prelims result', note: 'the prelims is worth nothing and the mains is worth everything. Candidates who postpone writing practice until they have cleared the screening paper spend the decisive interval learning a skill instead of sharpening it.' },
+          { text: 'Treat the Telangana movement as a full paper', note: 'because it is one — 150 marks of narrative history with its own periodisation, agreements, actors and disputes, which no national general-studies book covers at the depth Paper VI asks.' },
+          { text: 'Build one set of notes that serves several papers', note: 'Telangana’s history feeds Paper II, its society Paper III, its economy Paper IV and its statehood movement Paper VI. Four papers, one state, one body of reading.' },
+          { text: 'Practise the data interpretation block as arithmetic', note: 'it sits inside the science and technology paper and is closer to timed arithmetic than to science, which is where science graduates lose marks they assumed were safe.' },
+          { text: 'Do not neglect General English', note: 'it carries no merit marks and it removes candidates every cycle. A few hours a week is enough; nothing is not.' },
+          { text: 'Rehearse the handwriting load', note: 'six three-hour descriptive papers inside a week is a physical task as much as an intellectual one. Legibility and speed at the end of hour three are trainable, and only by training them.' },
+        ],
+      },
+    ],
+    sources: [
+      {
+        type: 'p',
+        text: `Checked ${CHECKED}. Vacancies, eligibility, fees, qualifying marks and the scheme of examination are taken from Notification No. 02/2024 and the commission’s Group-I scheme and syllabus; the chronology and the litigation caveat are from the commission’s own selection notification. The commission publishes no Group 1 previous-year question papers — its old question papers archive holds none for this examination in any year.`,
+      },
+      {
+        type: 'links',
+        title: 'Official sources for this page',
+        items: [
+          { label: 'TGPSC notifications', href: 'https://websitenew.tgpsc.gov.in/notifications' },
+          { label: 'TGPSC scheme and syllabus documents', href: 'https://websitenew.tgpsc.gov.in/SyllabusCMS' },
+          { label: 'TGPSC selection lists', href: 'https://websitenew.tgpsc.gov.in/selectionlist' },
+          { label: 'TGPSC results, keys and OMR sheets', href: 'https://websitenew.tgpsc.gov.in/resukeyomr.jsp' },
+          { label: 'TGPSC old question papers archive', href: 'https://websitenew.tgpsc.gov.in/oldquestionp.jsp' },
+        ],
       },
     ],
     resources: {
@@ -168,7 +310,7 @@ const telangana = [
       },
       'exam-pattern': {
         description:
-          'TGPSC Group 1 exam pattern — how the prelims screens, how the descriptive mains papers are marked, and where the interview fits.',
+          'TGPSC Group 1 exam pattern — how the prelims screens, how the six descriptive mains papers are marked, and why the mains decides the result.',
         lead: [
           'Three stages, and only two of them count. Knowing which is which changes how a year of preparation is spent.',
         ],
@@ -182,12 +324,11 @@ const telangana = [
               ['Prelims', 'Objective general studies and mental ability', 'No', 'Who is called to the mains, in a ratio the commission fixes'],
               ['Mains — language paper', 'Descriptive, qualifying', 'No', 'Whether the rest of your mains is evaluated at all'],
               ['Mains — marked papers', 'Descriptive, written by hand', 'Yes', 'Almost the whole of your rank'],
-              ['Interview', 'Board personality test', 'Yes', 'Movement within a band, and service allotment at the margin'],
             ],
           },
           {
             type: 'p',
-            text: 'The consequence of that table is a planning rule. The mains is worth several times the interview and the prelims is worth nothing at all, so preparation time should go to writing practice long before the prelims result arrives. Candidates who begin mains preparation after clearing the prelims are preparing for a descriptive examination in the weeks when they should be revising for it.',
+            text: 'The consequence of that table is a planning rule. The mains is worth everything and the prelims is worth nothing at all, so preparation time should go to writing practice long before the prelims result arrives. Candidates who begin mains preparation after clearing the prelims are preparing for a descriptive examination in the weeks when they should be revising for it.',
           },
           {
             type: 'steps',
@@ -278,7 +419,7 @@ const telangana = [
       },
       preparation: {
         description:
-          'TGPSC Group 1 preparation — a realistic plan across prelims, mains and interview, with the Telangana layer built in from the start.',
+          'TGPSC Group 1 preparation — a realistic plan across the prelims and the six mains papers, with the Telangana layer built in from the start.',
         lead: [
           'A Group 1 attempt is a year-long project with a descriptive examination at the end of it. The plan below is built backwards from that paper rather than forwards from the prelims.',
         ],
@@ -292,7 +433,7 @@ const telangana = [
               { title: 'Months three to six — the general studies spine', text: 'Polity, modern history, economy, geography and science, at the depth the mains asks rather than the depth the prelims asks.' },
               { title: 'Months six to eight — prelims sharpening', text: 'Objective practice, current-affairs consolidation and full-length mocks, on top of a base that is already at mains depth.' },
               { title: 'After the prelims — full mains papers', text: 'Complete papers to time, fortnightly, with the movement paper and the essay given slots of their own.' },
-              { title: 'After the mains — the interview', text: 'Your own district, your graduation subject, your work history and the state’s current administrative debates. The board reads your form; you should be able to defend every line of it.' },
+              { title: 'After the mains — verification, not an interview', text: 'The current scheme ends at the written papers. What follows is certificate verification, web options for post and zone preference, and the medical check the uniformed posts require. Get the documents in order rather than preparing answers for a board that will not sit.' },
             ],
           },
           {
@@ -354,7 +495,7 @@ const telangana = [
     faqs: [
       {
         q: 'What is the TGPSC Group 1 exam pattern?',
-        a: 'TGPSC Group 1 runs in three stages. The preliminary examination is an objective general studies and mental ability paper used only to screen candidates for the mains — its marks do not count towards the final merit. The main examination is descriptive and written by hand, with a qualifying language paper alongside marked papers covering general essay, history and culture, society and governance, economy and development, science and technology with data interpretation, and the Telangana movement and state formation. An interview follows, and the mains and interview marks together decide the merit list. Confirm the paper count, marks and duration in the notification for your cycle.',
+        a: 'TGPSC Group 1 runs in two examined stages. The preliminary examination is an objective general studies and mental ability paper of 150 questions and 150 marks, used only to screen candidates for the mains — its marks do not count towards the final merit. The main examination is descriptive and written by hand, with a qualifying language paper alongside marked papers covering general essay, history and culture, society and governance, economy and development, science and technology with data interpretation, and the Telangana movement and state formation. The scheme notified for the current cycle carries no interview: the six marked mains papers total 900 marks and decide the merit list on their own. Confirm the paper count, marks and duration in the notification for your cycle.',
       },
       {
         q: 'Is TSPSC Group 1 the same as TGPSC Group 1?',
@@ -374,7 +515,7 @@ const telangana = [
       },
       {
         q: 'How long does the whole TGPSC Group 1 process take?',
-        a: 'Historically the gap between notification and final result has run well over a year, with substantial intervals between the prelims, the mains and the interview. Plan preparation as a long project and use those gaps deliberately — the interval after the prelims is when mains writing practice pays, and the interval after the mains is when interview preparation belongs.',
+        a: 'A long time. In the 2024 cycle the notification issued in February 2024, the mains was written in October 2024, the ranking list appeared in March 2025 and provisional selection followed in September 2025 — and that list is still subject to pending litigation. Plan preparation as a long project, and use the interval after the prelims for mains writing practice, because that is the gap in which the result is actually decided.',
       },
     ],
   },
@@ -424,7 +565,7 @@ const telangana = [
       {
         type: 'note',
         title: 'There is no second chance inside the process',
-        text: 'Group 1 candidates who write a poor prelims can recover in the mains, and a weak mains can be partly offset at interview. Group 2 has no such stage. Every mark is earned on one day across a set of objective papers, which makes full-length timed practice under exact conditions more valuable here than in any other TGPSC recruitment.',
+        text: 'Group 1 candidates who write a poor prelims can still recover, because the prelims is discarded and the mains decides everything afterwards. Group 2 has no such reset. Every mark is earned across four objective papers in a single sitting of the examination, which makes full-length timed practice under exact conditions more valuable here than in any other TGPSC recruitment.',
       },
     ],
     stages: [
@@ -444,7 +585,137 @@ const telangana = [
         name: 'Post allotment',
         mode: 'Merit and preference',
         detail:
-          'Posts are allotted by merit against the preferences submitted, within the reservation and zonal rules that apply to the recruitment.',
+          'Posts are allotted by merit against the web options submitted at verification, within the reservation, zonal and local-status rules that apply to the recruitment. Physical fitness for the post is checked at the appropriate stage.',
+      },
+    ],
+    updates: [
+      {
+        type: 'p',
+        text: `Checked ${CHECKED}. The most recent Group 2 cycle is Notification No. 28/2022 of 29 December 2022. The written examination was held two years after the notification, and selection is published but remains provisional against a list of pending court cases.`,
+      },
+      {
+        type: 'table',
+        caption: 'The 28/2022 cycle, end to end.',
+        head: ['Stage', 'When'],
+        rows: [
+          ['Notification issued', '29 December 2022'],
+          ['Applications', '18 January to 16 February 2023'],
+          ['Written examination held', '15 and 16 December 2024, after repeated rescheduling'],
+          ['General ranking list', '11 March 2025'],
+          ['Provisional selection', '28 September 2025 — 782 vacancies filled, one withheld'],
+          ['Withheld vacancy released', '9 October 2025'],
+        ],
+      },
+      {
+        type: 'note',
+        title: 'The selection is provisional and litigation is pending',
+        text: 'The commission’s selection notifications state that the list is subject to the outcome of six writ petitions and a writ appeal, and that changes will be carried out if court orders require them. No disposal of those cases appears in any commission document, so as things stand the Group 2 selections remain provisional.',
+      },
+      {
+        type: 'list',
+        title: 'Where the 783 vacancies sat',
+        items: [
+          { text: 'Assistant Section Officer in the Secretariat — 214 across five departments', note: 'general administration alone took 165, with finance, legislature, law and the election commission making up the rest. These are the state-cadre posts in the recruitment.' },
+          { text: 'Mandal Panchayat Officer — 126, Naib Tahsildar — 98, Prohibition and Excise Sub-Inspector — 97', note: 'the largest field posts, and the excise post is the one carrying a lower age ceiling and a physical requirement.' },
+          { text: 'Assistant Registrar 63, Assistant Commercial Tax Officer 59, Assistant Development Officer 38', note: 'the middle tier, down to two vacancies in the election commission.' },
+          { text: 'Eighteen post codes across state, zonal and multi-zonal cadres', note: 'which cadre a post belongs to decides the pool you compete in, and it is set per post code rather than for the recruitment as a whole.' },
+        ],
+      },
+      {
+        type: 'note',
+        title: 'No fresh Group 2 notification has been issued',
+        text: 'As at the date checked above, 28/2022 remains the most recent Group 2 notification — the only earlier one in the commission’s archive is from 2015. Vacancy counts and dates circulating for a new cycle are not from a commission document.',
+      },
+      {
+        type: 'links',
+        title: 'Check the cycle status at source',
+        items: [
+          { label: 'TGPSC notifications', href: 'https://websitenew.tgpsc.gov.in/notifications' },
+          { label: 'TGPSC selection lists', href: 'https://websitenew.tgpsc.gov.in/selectionlist' },
+        ],
+      },
+    ],
+    eligibility: [
+      {
+        type: 'table',
+        caption:
+          'Eligibility under Notification No. 28/2022, with age reckoned as on 1 July 2022. A future notification will set its own reckoning date.',
+        head: ['Requirement', 'What the notification set'],
+        rows: [
+          ['Qualification', 'A bachelor’s degree of a recognised university for most posts, held as on the notification date.'],
+          ['Degree-specific posts', 'Assistant Section Officer in Finance required mathematics, economics or commerce; in Law, a degree in law. District Probation Officer required social work or psychology, or a master’s in one of them or in criminology or correctional administration. Assistant Development Officer accepted a degree or a technical board diploma in textile or handloom technology.'],
+          ['Age', '18 to 44 years for most posts. Prohibition and Excise Sub-Inspector was 21 to 30 — a materially narrower window than the rest of the recruitment.'],
+          ['Age relaxation', 'Telangana government employees up to 5 years by length of regular service; ex-servicemen 3 years plus service rendered; NCC instructors 3 years plus service; SC, ST, BC and EWS candidates 5 years; persons with disability 10 years. Eligibility ends at 61 years after relaxation.'],
+          ['Physical requirements', 'Prohibition and Excise Sub-Inspector only: men at least 167.6 cm and 86.3 cm chest on full inspiration, women at least 152.5 cm, with relaxed standards specified. No other Group 2 post carries a physical standard.'],
+          ['Application processing fee', '₹200, payable by every applicant with no exemption.'],
+          ['Examination fee', '₹120, from which unemployed candidates were exempt on filing a declaration.'],
+        ],
+      },
+    ],
+    pattern: [
+      {
+        type: 'table',
+        caption:
+          'The Group 2 scheme of examination: four objective papers of equal weight, 600 marks in total, decided in a single sitting of the examination with no screening stage.',
+        head: ['Paper', 'Subject', 'Questions', 'Marks', 'Duration'],
+        rows: [
+          ['Paper I', 'General Studies and General Abilities', '150', '150', '2½ hours'],
+          ['Paper II', 'History, Polity and Society — socio-cultural history of India and Telangana, the Constitution and politics, social structure and public policy', '150', '150', '2½ hours'],
+          ['Paper III', 'Economy and Development — the Indian economy, the economy and development of Telangana, issues of development and change', '150', '150', '2½ hours'],
+          ['Paper IV', 'Telangana Movement and State Formation — the idea of Telangana 1948-1970, the mobilisation phase 1971-1990, and the road to statehood 1991-2014', '150', '150', '2½ hours'],
+        ],
+      },
+      {
+        type: 'note',
+        title: 'A quarter of the marks is one subject',
+        text: 'Paper IV is the Telangana movement and nothing else — 150 of the 600 marks, examined in three defined periods with their own agreements, organisations and figures. Add the Telangana content inside Papers II and III and the state’s own history, society and economy account for well over a third of the examination. This is the single largest reason a candidate who prepared from national state-PSC material does badly here.',
+      },
+      {
+        type: 'list',
+        title: 'The rules that decide the paper',
+        items: [
+          { text: 'There is no prelims and no interview', note: 'selection is on the marks secured in the written examination alone. Every candidate sits the papers that count, and nothing after them moves a rank.' },
+          { text: 'Minimum qualifying marks by category', note: '40% for OC, EWS and sportspersons; 35% for BC candidates; 30% for SC, ST and PH candidates. Reaching the minimum vests no right to selection — the notification says so in terms.' },
+          { text: 'All four papers are compulsory', note: 'absence from any one disqualifies the candidature.' },
+          { text: 'The official documents prescribe no negative marking', note: 'the notification contains no deduction clause. Deleted questions are compensated instead, proportionately on your performance across the remaining questions, to three decimal places.' },
+          { text: 'Objections to the answer key cost ₹500 each', note: 'paid online, per objection.' },
+          { text: 'The paper is set in English, Telugu and Urdu', note: 'and may be conducted as a computer-based test or on OMR sheets, at the commission’s discretion.' },
+        ],
+      },
+    ],
+    studyPlan: [
+      {
+        type: 'steps',
+        title: 'A plan for four equal papers',
+        items: [
+          { text: 'Weight your time to the state, not to the nation', note: 'Paper IV is wholly Telangana and Papers II and III are substantially so. National general studies is one paper out of four.' },
+          { text: 'Build the movement as three dated blocks', note: 'the syllabus itself splits it into 1948-1970, 1971-1990 and 1991-2014. Prepare it in those blocks and the paper’s structure works for you rather than against you.' },
+          { text: 'Use one Telangana economy note for two papers', note: 'the state’s resources, irrigation, power and industrial policy are examined in Paper III and reappear as context in Paper IV.' },
+          { text: 'Drill general abilities separately', note: 'reasoning and data interpretation inside Paper I improve faster than any amount of additional reading, and they are the most reliably winnable marks in the examination.' },
+          { text: 'Rehearse two papers a day', note: 'the examination ran across two days with two 2½-hour papers each. Sustained accuracy in an afternoon paper is a separate skill from accuracy in a morning one.' },
+        ],
+      },
+      {
+        type: 'note',
+        title: 'Prepare for a long wait',
+        text: 'Two years passed between the 28/2022 notification and the examination, and selections a year after that are still provisional. Build a routine that survives repeated postponement — the candidates who did well in this cycle were the ones still preparing when the date finally held.',
+      },
+    ],
+    sources: [
+      {
+        type: 'p',
+        text: `Checked ${CHECKED}. Vacancies, eligibility, fees, qualifying marks and the scheme of examination are taken from Notification No. 28/2022 and the commission’s Group-II scheme and syllabus, with the chronology and the litigation caveat from the commission’s own selection notifications. The commission publishes no Group 2 previous-year question papers — its old question papers archive holds none for this examination in any year.`,
+      },
+      {
+        type: 'links',
+        title: 'Official sources for this page',
+        items: [
+          { label: 'TGPSC notifications', href: 'https://websitenew.tgpsc.gov.in/notifications' },
+          { label: 'TGPSC scheme and syllabus documents', href: 'https://websitenew.tgpsc.gov.in/SyllabusCMS' },
+          { label: 'TGPSC selection lists', href: 'https://websitenew.tgpsc.gov.in/selectionlist' },
+          { label: 'TGPSC results, keys and OMR sheets', href: 'https://websitenew.tgpsc.gov.in/resukeyomr.jsp' },
+          { label: 'TGPSC old question papers archive', href: 'https://websitenew.tgpsc.gov.in/oldquestionp.jsp' },
+        ],
       },
     ],
     resources: {
@@ -767,6 +1038,131 @@ const telangana = [
           'Allotment by merit against submitted preferences, within the reservation and zonal rules applying to the recruitment.',
       },
     ],
+    updates: [
+      {
+        type: 'p',
+        text: `Checked ${CHECKED}. The most recent Group 3 cycle is Notification No. 29/2022 of 30 December 2022, and it is still being closed out — the written examination was held almost two years after the notification, and selections were still being released in mid-2026. No newer Group 3 notification has been issued.`,
+      },
+      {
+        type: 'table',
+        caption:
+          'The 29/2022 cycle, end to end. The gap between the notified exam window and the exam actually held is the single most useful thing to know about this recruitment.',
+        head: ['Stage', 'When'],
+        rows: [
+          ['Notification issued', '30 December 2022'],
+          ['Applications', '24 January to 23 February 2023'],
+          ['Written examination held', '17 and 18 November 2024'],
+          ['General ranking list', '14 March 2025'],
+          ['Provisional selection', '18 December 2025'],
+          ['Further selections released', 'Sports quota on 1 June 2026; Post Code 105 and the MH category on 24 June 2026'],
+        ],
+      },
+      {
+        type: 'list',
+        title: 'Vacancies in the 29/2022 cycle',
+        items: [
+          { text: '1,363 posts notified across 105 post codes', note: 'the bulk of them Junior Assistant, alongside Senior Accountant, Junior Accountant, Auditor, Senior Auditor, Assistant Auditor and Accountant lines.' },
+          { text: 'Revised to 1,375 by an addendum of 16 February 2023', note: 'which added 12 vacancies to Post Code 15, Junior Assistant in the BC Welfare Residential Educational Institutions Society.' },
+          { text: 'At selection: 1,370 filled', note: 'with 17 vacancies across Post Codes 60, 105 and the MH category held back for later declaration and one withheld pending verification. The 2026 notifications released most of those.' },
+        ],
+      },
+      {
+        type: 'note',
+        title: 'No Group 3 notification has been issued for 2024, 2025 or 2026',
+        text: 'The commission’s 2026 recruitment list carries specialised posts — Town Planning, Seed Certification Officer, Assistant Executive Engineer, DIET Lecturer and similar — and no Group 3 cycle. Vacancy counts and application dates being published elsewhere for a "Group 3 2026 notification" do not appear in any commission document. Check the direct recruitment list yourself before acting on one.',
+      },
+      {
+        type: 'links',
+        title: 'Check the cycle status at source',
+        items: [
+          { label: 'TGPSC direct recruitment notifications', href: 'https://websitenew.tgpsc.gov.in/directRecruitment' },
+          { label: 'TGPSC selection lists', href: 'https://websitenew.tgpsc.gov.in/selectionlist' },
+        ],
+      },
+    ],
+    eligibility: [
+      {
+        type: 'table',
+        caption:
+          'Eligibility as fixed by Notification No. 29/2022. Age was reckoned as on 1 July 2022 for that cycle; a future notification will set its own reckoning date, so read the age rule as a structure rather than as a date you can reuse.',
+        head: ['Requirement', 'What the notification set'],
+        rows: [
+          ['Qualification', 'A degree from a university in India established by a Central, Provincial or State Act, or an equivalent qualification. A few post codes ask for more: Post Code 31 for a degree including computer science, Post Code 42 for computers as an optional subject or a technical board certificate, and Post Codes 60 and 105 for a post-graduate diploma in computers.'],
+          ['Typewriting', 'Post Code 105, Junior Assistant cum Typist, additionally required a pass in the Government Technical Examination in Typewriting, Higher Grade in Telugu. This is an educational qualification to be held at application, not a skill test in the selection.'],
+          ['Age', '18 to 44 years as on 1 July 2022 — the upper limit having been raised from 34 to 44 by government order in March 2022.'],
+          ['Age relaxation', 'Telangana government employees up to 5 years by length of regular service; ex-servicemen 3 years plus service rendered; NCC instructors 3 years plus service; SC, ST, BC and EWS candidates 5 years; persons with disability 10 years. No candidate remains eligible past 61 years after relaxation.'],
+          ['Application processing fee', '₹200, payable by every applicant with no exemption.'],
+          ['Examination fee', '₹80, from which unemployed candidates were exempt on filing a declaration. Government employees at any level paid it. There was no fee concession by community or gender.'],
+        ],
+      },
+      {
+        type: 'note',
+        title: 'One post code carries a religion requirement',
+        text: 'Post Code 78, in the Endowments Department, is reserved under Rule 3 of the Telangana Ministerial Service Rules 1988 to candidates professing the Hindu religion. It is the kind of clause that only appears in the post-code table, which is why the table is worth reading in full rather than skimming the general eligibility paragraph.',
+      },
+    ],
+    pattern: [
+      {
+        type: 'table',
+        caption:
+          'The Group 3 scheme of examination: three objective papers, equal in length and weight, 450 marks in total. There is no interview and no skill test.',
+        head: ['Paper', 'Subject', 'Questions', 'Marks', 'Duration'],
+        rows: [
+          ['Paper I', 'General Studies and General Abilities', '150', '150', '2½ hours'],
+          ['Paper II', 'History, Polity and Society — three sections of 50 questions each', '150', '150', '2½ hours'],
+          ['Paper III', 'Economy and Development — three sections of 50 questions each', '150', '150', '2½ hours'],
+        ],
+      },
+      {
+        type: 'list',
+        title: 'The marking rules that decide the paper',
+        items: [
+          { text: 'Minimum qualifying marks by category', note: '40% for OC, EWS, sportspersons and ex-servicemen; 35% for BC candidates; 30% for SC, ST and PH candidates. Qualifying is not selection — the merit list runs well above these figures.' },
+          { text: 'The official documents prescribe no negative marking', note: 'neither the notification nor the commission’s scheme and syllabus contains a deduction clause for a wrong answer. That is what the documents say rather than a guarantee for a future cycle, and it is worth re-checking in your own notification, because it changes whether guessing is rational.' },
+          { text: 'Every paper is compulsory', note: 'absence from any one paper disqualifies the candidature entirely, however well the other two went.' },
+          { text: 'Deleted questions are compensated, not ignored', note: 'marks for a question withdrawn after objections are awarded proportionately on your performance across the remaining questions, computed to three decimal places.' },
+          { text: 'Objections to the answer key are charged', note: '₹500 per objection in the 29/2022 cycle, which makes the preliminary key worth reading carefully rather than contesting speculatively.' },
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Three papers of the same size means the syllabus is not weighted the way a prelims-and-mains exam is. Paper II and Paper III each carry as many marks as the whole general studies paper, so Telangana history, polity, society, the Indian economy and the state’s own development record are two-thirds of the examination. A candidate who treats them as supporting material for a general studies core has the weighting exactly backwards.',
+      },
+    ],
+    studyPlan: [
+      {
+        type: 'steps',
+        title: 'A four-phase plan built around the three papers',
+        items: [
+          { text: 'Fix the weighting first', note: 'work out that Papers II and III are 300 of the 450 marks, and allocate study time in that proportion from week one rather than after a first mock says so.' },
+          { text: 'Build Telangana as a spine, not a topic', note: 'the socio-cultural history, the statehood movement and the state’s economy run across both of the heavy papers. One timeline and one set of state-economy notes serve Paper II and Paper III together.' },
+          { text: 'Take the general abilities section seriously', note: 'reasoning and data interpretation in Paper I are the most improvable marks on the whole paper, because they reward drilled method rather than accumulated reading.' },
+          { text: 'Practise all three papers in one sitting', note: 'the examination ran across two days with two papers on the first. Stamina across consecutive 2½-hour objective papers is a real variable and is only trainable by rehearsing it.' },
+        ],
+      },
+      {
+        type: 'note',
+        title: 'Prepare on the assumption of a long gap',
+        text: 'In the last cycle almost two years passed between the notification and the written examination. That is long enough for current affairs to turn over completely and long enough for motivation to lapse. Plan a maintenance routine you can hold for a year, rather than a sprint timed to the date printed in the notification.',
+      },
+    ],
+    sources: [
+      {
+        type: 'p',
+        text: `Checked ${CHECKED}. Vacancies, eligibility, fees, qualifying marks and the scheme of examination are taken from Notification No. 29/2022 and the commission’s Group-III scheme and syllabus. The commission publishes no Group 3 previous-year question papers: its old question papers page carries none for this examination in any year, so material offered elsewhere as an official Group 3 paper did not come from the commission's archive.`,
+      },
+      {
+        type: 'links',
+        title: 'Official sources for this page',
+        items: [
+          { label: 'TGPSC direct recruitment notifications', href: 'https://websitenew.tgpsc.gov.in/directRecruitment' },
+          { label: 'TGPSC scheme and syllabus documents', href: 'https://websitenew.tgpsc.gov.in/SyllabusCMS' },
+          { label: 'TGPSC selection lists', href: 'https://websitenew.tgpsc.gov.in/selectionlist' },
+          { label: 'Group-III provisional selection preamble', href: 'https://www.tgpsc.gov.in/uploadPDF/GROUP_3/Group-III%20selection%20Preamble.pdf' },
+          { label: 'TGPSC old question papers archive', href: 'https://websitenew.tgpsc.gov.in/oldquestionp.jsp' },
+        ],
+      },
+    ],
     resources: {
       syllabus: {
         description:
@@ -1030,16 +1426,16 @@ const telangana = [
     metaDescription:
       'TGPSC Group 4 guide — the general studies and secretarial abilities papers, posts filled, eligibility, previous papers and a preparation plan.',
     lead: [
-      'TGPSC Group 4 fills the junior assistant and ministerial posts that keep state offices running — Junior Assistant, Junior Accountant, Bill Collector, Ward Officer, Record Assistant and typist posts among them. It is the largest recruitment the commission runs by number of applicants.',
+      'TGPSC Group 4 fills the junior assistant and ministerial posts that keep state offices running — Junior Assistant, Junior Accountant, Junior Auditor, Ward Officer, Matron and Supervisor among them. It is the largest recruitment the commission runs by number of applicants, and the last cycle notified more than eight thousand posts.',
       'Its structure is the simplest of the four groups: two objective papers, one on general studies and one on secretarial abilities. That second paper is what makes Group 4 different from everything else TGPSC sets, and it is the one most candidates underestimate.',
     ],
     quickFacts: [
       ['Conducted by', 'Telangana Government Public Service Commission, formerly TSPSC'],
-      ['Qualification', 'A bachelor’s degree; typist and steno posts carry an additional skill requirement'],
+      ['Qualification', 'A bachelor’s degree — Group 4 is graduate-level despite the junior posts'],
       ['Papers', 'Two — General Studies, and Secretarial Abilities'],
       ['Format', 'Objective; no interview'],
-      ['Selection', 'Written marks, then certificate verification and any skill test the post requires'],
-      ['Typical posts', 'Junior Assistant, Junior Accountant, Bill Collector, Ward Officer, Record Assistant, Typist'],
+      ['Selection', 'Written marks alone, then certificate verification. No interview and no typing test'],
+      ['Typical posts', 'Junior Assistant, Junior Accountant, Junior Auditor, Ward Officer, Matron, Supervisor'],
     ],
     overview: [
       {
@@ -1062,8 +1458,8 @@ const telangana = [
       },
       {
         type: 'note',
-        title: 'A degree is required, including for typist posts',
-        text: 'Group 4 is a graduate-level recruitment despite the junior nature of the posts. Typist and stenographer posts additionally require the prescribed typewriting or shorthand qualification, and those are tested separately. Check the qualification clause for the specific post you are applying to rather than for the group as a whole.',
+        title: 'A degree is required for every post',
+        text: 'Group 4 is a graduate-level recruitment despite the junior nature of the posts. Individual post codes vary — some ask for a commerce degree, one for B.Com (Computers), and Ward Officer required a graduate with 50% aggregate, 40% for SC and ST candidates. Check the qualification clause for the specific post code you are applying to rather than for the group as a whole.',
       },
     ],
     stages: [
@@ -1074,22 +1470,151 @@ const telangana = [
           'Paper I on general studies and general abilities, and Paper II on secretarial abilities. Both are objective, both count, and the total across them builds the merit list.',
       },
       {
-        name: 'Skill test, where the post requires it',
-        mode: 'Typewriting or shorthand',
-        detail:
-          'Typist, junior stenographer and similar posts require the prescribed skill qualification, tested or verified as the notification prescribes. It does not add to the merit marks; failing it removes the candidacy for that post.',
-      },
-      {
         name: 'Certificate verification',
         mode: 'Documents',
         detail:
-          'Age, qualification, category, local status and claimed relaxations verified against originals for candidates called in order of merit.',
+          'Age, qualification, category, local status and claimed relaxations verified against originals for candidates called in order of merit — at three times the number of vacancies, and five times for candidates with disabilities.',
+      },
+      {
+        name: 'Medical certificate, for two post codes only',
+        mode: 'Physical requirements',
+        detail:
+          'Matron Grade-II and Supervisor posts carry notified height, weight and chest requirements, certified by a government Civil Assistant Surgeon. Re-examination of the physical measurement is not entertained. No other Group 4 post has a physical standard.',
       },
       {
         name: 'Post allotment',
         mode: 'Merit and preference',
         detail:
           'Allotment by merit against submitted preferences, within the reservation and local-cadre rules applying to the recruitment.',
+      },
+    ],
+    updates: [
+      {
+        type: 'p',
+        text: `Checked ${CHECKED}. The most recent Group 4 cycle is Notification No. 19/2022 of 1 December 2022 — the largest recruitment the commission has run. The written examination was held in July 2023 and selections were still being released in July 2026, because a run of court cases about degree validity held part of the list back.`,
+      },
+      {
+        type: 'table',
+        caption: 'The 19/2022 cycle, end to end.',
+        head: ['Stage', 'When'],
+        rows: [
+          ['Notification issued', '1 December 2022'],
+          ['Applications', '30 December 2022 to 3 February 2023, the closing date having been extended from 30 January'],
+          ['Written examination held', '1 July 2023'],
+          ['Certificate verification', 'June to November 2024'],
+          ['First provisional selection', '14 November 2024 — 8,084 candidates selected, 59 withheld'],
+          ['Further selections released', 'Seven further tranches, the latest on 23 July 2026'],
+        ],
+      },
+      {
+        type: 'list',
+        title: 'Vacancies in the 19/2022 cycle',
+        items: [
+          { text: '8,039 posts notified across 99 post codes', note: 'overwhelmingly Junior Assistant, alongside Junior Accountant, Junior Auditor, Ward Officer, Matron and Supervisor lines.' },
+          { text: 'Revised to 8,180 by a second addendum', note: 'which added 141 vacancies to Post Code 11, Junior Assistant in the BC Welfare Residential Educational Institutions Society, taking that post code alone from 289 to 430.' },
+          { text: 'Post Code 99 was the single largest item', note: '1,862 Ward Officer vacancies under the Commissioner and Director of Municipal Administration — roughly a quarter of the whole recruitment in one post code.' },
+        ],
+      },
+      {
+        type: 'note',
+        title: 'Why part of the list took until 2026',
+        text: 'Selections were withheld from candidates whose degrees were obtained outside the awarding university’s territorial jurisdiction, on the view that such a degree was not a valid qualification. The commission’s July 2026 notification records that this was resolved under court orders in a batch of writ petitions decided in April 2026, and released the next candidates in merit order. Provisional selections in this recruitment have throughout been published subject to the outcome of pending litigation, which is why a place on a provisional list is not the same as an appointment.',
+      },
+      {
+        type: 'note',
+        title: 'No Group 4 notification has been issued since 2022',
+        text: 'As at the date checked above, the commission’s recruitment list carries no new Group 4 cycle. Vacancy counts circulating for a "Group 4 2026 notification" are not from any commission document.',
+      },
+      {
+        type: 'links',
+        title: 'Check the cycle status at source',
+        items: [
+          { label: 'TGPSC direct recruitment notifications', href: 'https://websitenew.tgpsc.gov.in/directRecruitment' },
+          { label: 'TGPSC selection lists', href: 'https://websitenew.tgpsc.gov.in/selectionlist' },
+        ],
+      },
+    ],
+    eligibility: [
+      {
+        type: 'table',
+        caption:
+          'Eligibility as fixed by Notification No. 19/2022. Age was reckoned as on 1 July 2022 for that cycle — the structure carries forward, the date does not.',
+        head: ['Requirement', 'What the notification set'],
+        rows: [
+          ['Qualification', 'A bachelor’s degree from a university in India established by a Central, State or Provincial Act, or an institution recognised by the UGC. Group 4 is a graduate-level recruitment despite the junior nature of the posts.'],
+          ['Post-specific variations', 'Some post codes ask for a commerce degree, one asks for B.Com (Computers), and Ward Officer required a graduate in any discipline with 50% aggregate — 40% for SC and ST candidates. The requirement is set per post code, so read the notification’s own table rather than the general clause.'],
+          ['Women-only post codes', 'Post Codes 11(B), 55(B), 75(B) and 88(B), together with the Matron posts, are reserved for women under standing government orders.'],
+          ['Age', '18 to 44 years as on 1 July 2022, the upper limit having been raised from 34 to 44 by government order in March 2022.'],
+          ['Age relaxation', 'Telangana government employees up to 5 years by length of regular service; ex-servicemen 3 years plus service rendered; NCC instructors 3 years plus service; SC, ST, BC and EWS candidates 5 years; persons with disability 10 years. Eligibility ends at 61 years after relaxation.'],
+          ['Application processing fee', '₹200, payable by every applicant with no exemption.'],
+          ['Examination fee', '₹80, from which unemployed candidates were exempt on filing a declaration. There was no concession by community or gender.'],
+        ],
+      },
+    ],
+    pattern: [
+      {
+        type: 'table',
+        caption:
+          'The Group 4 scheme of examination: two objective papers, 300 marks in total, both counting towards the merit list.',
+        head: ['Paper', 'Subject', 'Questions', 'Marks', 'Duration'],
+        rows: [
+          ['Paper I', 'General Studies', '150', '150', '150 minutes'],
+          [
+            'Paper II',
+            'Secretarial Abilities — mental ability verbal and non-verbal, logical reasoning, comprehension, re-arrangement of sentences to improve analysis of a passage, and numerical and arithmetical abilities',
+            '150',
+            '150',
+            '150 minutes',
+          ],
+        ],
+      },
+      {
+        type: 'note',
+        title: 'There is no typing test in Group 4',
+        text: 'The Group 4 scheme of examination is the two papers above and nothing else — no interview, no skill test and no typewriting requirement in the educational qualification for any post code. Typewriting does appear in Telangana ministerial recruitment, but in Group 3, for Post Code 105 Junior Assistant cum Typist, and there it is a qualification to be held at the time of applying rather than a test conducted during selection. If you are budgeting months for typing practice on the strength of a Group 4 page saying you will be tested on it, check the notification first.',
+      },
+      {
+        type: 'list',
+        title: 'The marking rules that decide the paper',
+        items: [
+          { text: 'Minimum qualifying marks by category', note: '40% for OC, EWS, sportspersons and ex-servicemen; 35% for BC candidates; 30% for SC, ST and PH candidates. With a field measured in lakhs against these posts, the selection mark sits far above the qualifying mark.' },
+          { text: 'The official documents prescribe no negative marking', note: 'neither the notification nor the commission’s scheme and syllabus contains a deduction clause. Confirm it in your own notification before deciding how freely to guess.' },
+          { text: 'Both papers are compulsory', note: 'absence from either disqualifies the candidature.' },
+          { text: 'Objections to the answer key cost ₹500 each', note: 'charged per objection, so the preliminary key rewards careful reading rather than volume filing.' },
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Half the examination is Secretarial Abilities, and it is the half that is trainable. General studies rewards a year of accumulated reading; sentence rearrangement, comprehension, reasoning and arithmetic reward drilled method and reward it quickly. In a recruitment where the mark that separates candidates is accuracy under time rather than breadth of knowledge, that is where the marks are actually won.',
+      },
+    ],
+    studyPlan: [
+      {
+        type: 'steps',
+        title: 'A plan that respects the 50/50 split',
+        items: [
+          { text: 'Give Paper II half your time from the start', note: 'it carries half the marks and improves faster than general studies does. Candidates routinely spend eighty per cent of their preparation on the paper that moves least.' },
+          { text: 'Drill the five Secretarial Abilities topics separately', note: 'mental ability, logical reasoning, comprehension, sentence rearrangement and arithmetic each have their own method. Mixing them in one practice session hides which of them is actually costing you marks.' },
+          { text: 'Build general studies around Telangana', note: 'the state’s history, geography, economy and the statehood movement recur across the paper, and they are the part no national general-studies book prepares you for.' },
+          { text: 'Time every practice paper at 150 minutes for 150 questions', note: 'a minute a question including reading. Accuracy at that pace is the skill being examined, and it is separate from knowing the answers.' },
+          { text: 'Rehearse both papers back to back', note: 'five hours of objective examination in a day is a stamina problem as much as a knowledge one.' },
+        ],
+      },
+    ],
+    sources: [
+      {
+        type: 'p',
+        text: `Checked ${CHECKED}. Vacancies, eligibility, fees, qualifying marks and the scheme of examination are taken from Notification No. 19/2022, its addendum and the commission’s Group-IV scheme and syllabus, with the selection chronology from the commission’s own selection notifications. The commission publishes no Group 4 previous-year question papers — its old question papers archive holds none for this examination in any year.`,
+      },
+      {
+        type: 'links',
+        title: 'Official sources for this page',
+        items: [
+          { label: 'TGPSC direct recruitment notifications', href: 'https://websitenew.tgpsc.gov.in/directRecruitment' },
+          { label: 'TGPSC scheme and syllabus documents', href: 'https://websitenew.tgpsc.gov.in/SyllabusCMS' },
+          { label: 'TGPSC selection lists', href: 'https://websitenew.tgpsc.gov.in/selectionlist' },
+          { label: 'TGPSC old question papers archive', href: 'https://websitenew.tgpsc.gov.in/oldquestionp.jsp' },
+        ],
       },
     ],
     resources: {
@@ -1138,7 +1663,7 @@ const telangana = [
       },
       'exam-pattern': {
         description:
-          'TGPSC Group 4 exam pattern — the two-paper structure, timing, and how the skill test fits for typist posts.',
+          'TGPSC Group 4 exam pattern — the two-paper structure, the marks each carries, and why there is no skill test.',
         lead: [
           'Two papers, both objective, both counting. The examination is short, the field is enormous, and the margin at the cutoff is thin.',
         ],
@@ -1151,7 +1676,6 @@ const telangana = [
             rows: [
               ['Paper I', 'General Studies and General Abilities', 'Objective', 'Breadth of recall, and the Telangana-specific block'],
               ['Paper II', 'Secretarial Abilities', 'Objective', 'Speed and accuracy on reasoning, arithmetic, comprehension and computers'],
-              ['Skill test', 'Typewriting or shorthand, for the posts that require it', 'Qualifying', 'Eligibility for that post, not merit position'],
             ],
           },
           {
@@ -1266,7 +1790,7 @@ const telangana = [
           },
           {
             type: 'p',
-            text: 'The typing requirement deserves its own line in the plan for anyone applying to a typist or stenographer post. It is a separate qualification with its own preparation, it cannot be acquired in the weeks after a written result, and candidates discover the gap at exactly the point where nothing can be done about it.',
+            text: 'One thing not to spend time on is typing practice. The Group 4 scheme has no skill test and no post code in the last cycle required a typewriting qualification — that requirement belongs to Group 3, for the Junior Assistant cum Typist post code, and there it is a certificate to hold before applying rather than a test to prepare for.',
           },
           {
             type: 'note',
@@ -1322,11 +1846,11 @@ const telangana = [
     faqs: [
       {
         q: 'What is the TGPSC Group 4 exam pattern?',
-        a: 'Group 4 is two objective papers — Paper I on general studies and general abilities, and Paper II on secretarial abilities, which covers mental ability, arithmetic, comprehension and sentence rearrangement, and basic computer knowledge. Both papers count towards the merit list, and there is no interview. Typist and stenographer posts additionally require the prescribed skill qualification. Confirm question counts, marks, duration and negative marking in your notification.',
+        a: 'Group 4 is two objective papers — Paper I on general studies and general abilities, and Paper II on secretarial abilities, which covers mental ability, arithmetic, comprehension and sentence rearrangement, and basic computer knowledge. Each paper carries 150 questions and 150 marks, for a total of 300. Both count towards the merit list, and the scheme has no interview and no skill test. Confirm question counts, marks, duration and the marking rules in your notification.',
       },
       {
         q: 'Is a degree required for TGPSC Group 4?',
-        a: 'Yes. Group 4 is a graduate-level recruitment despite the junior nature of the posts, and a bachelor’s degree from a recognised university is the general requirement. Typist, junior stenographer and similar posts carry an additional typewriting or shorthand qualification. Check the qualification clause for the specific post rather than for the group.',
+        a: 'Yes. Group 4 is a graduate-level recruitment despite the junior nature of the posts, and a bachelor’s degree from a recognised university is the general requirement. Some post codes ask for more — a commerce degree, B.Com (Computers), or a minimum aggregate — so check the qualification clause for the specific post code rather than for the group.',
       },
       {
         q: 'What is the Secretarial Abilities paper?',
@@ -1334,7 +1858,7 @@ const telangana = [
       },
       {
         q: 'Which posts does TGPSC Group 4 fill?',
-        a: 'Junior Assistant, Junior Accountant, Bill Collector, Ward Officer, Record Assistant and typist posts are among those filled through Group 4, across state departments and municipal bodies. The exact post list and vacancy numbers are set by each notification.',
+        a: 'Junior Assistant, Junior Accountant, Junior Auditor, Ward Officer, Matron and Supervisor are among the posts filled through Group 4, across state departments and municipal bodies. In the last cycle the single largest item was 1,862 Ward Officer vacancies under municipal administration. The exact post list and vacancy numbers are set by each notification.',
       },
       {
         q: 'How long does it take to prepare for TGPSC Group 4?',
@@ -1415,7 +1939,166 @@ const telangana = [
         name: 'Verification and appointment',
         mode: 'Documents',
         detail:
-          'Qualification, training certificate, eligibility test result, category, local status and any relaxation verified against originals before appointment.',
+          'Certificate verification at three candidates per vacancy, then selection on roster-cum-merit and allotment by the District Educational Officer. There is no waiting list — unfilled posts are carried forward to the next recruitment.',
+      },
+    ],
+    /*
+     * The distinction that leads this section is not a detail. Telangana ran a
+     * special in-service TET in September 2026 alongside its regular cycles,
+     * and a pass in the in-service test is expressly barred from use in direct
+     * recruitment. A DSC aspirant who sits the wrong one loses a year.
+     */
+    updates: [
+      {
+        type: 'note',
+        title: 'Two different TETs run in Telangana — only one counts for DSC',
+        text: `Checked ${CHECKED}. The regular Telangana TET is the one a DSC aspirant needs, and it now runs twice a year. A separate in-service TET was conducted on 8 and 9 September 2026 for teachers already in service, and a pass in it may be used only to continue in the present post or to be promoted — it cannot be used for direct recruitment. Check which test a notification is for before you apply to it.`,
+      },
+      {
+        type: 'p',
+        text: 'Telangana now holds TET twice a year because the Supreme Court told every state to. In September 2025 the court held that in-service teachers with more than five years to superannuation must qualify TET to remain in service, and that promotion also requires it; on review in May 2026 it extended the deadline to 31 August 2028, directed states to conduct the test periodically and preferably twice a year, and said no further extension would be entertained. The special in-service cycles are Telangana’s response to that direction.',
+      },
+      {
+        type: 'table',
+        caption: 'Where each recruitment track stands. Checked on the date above.',
+        head: ['Track', 'Status'],
+        rows: [
+          [
+            'Telangana TET (regular)',
+            'Running. Two cycles a year — the June 2026 cycle was notified in April, examined across five days in June, and its marks memos are published. Cycles exist continuously back to 2011.',
+          ],
+          [
+            'DSC / Teacher Recruitment Test',
+            'No open notification. The last was 24/RC-1/TRT/DSC/2024 of 29 February 2024 for 11,062 posts; results were released on 30 September 2024 and appointment letters issued in October 2024.',
+          ],
+          [
+            'Gurukul posts (TREIRB)',
+            'No open notification, and nothing issued in 2025 or 2026. The last full cycle was nine notifications dated 5 April 2023 covering about 9,210 posts.',
+          ],
+          [
+            'DIET Lecturers (TGPSC)',
+            'Notification No. 04/G/SE/2026 of 18 June 2026 for 86 posts. Applications closed on 29 July 2026 and the examination is indicated for November 2026, with no date yet notified.',
+          ],
+        ],
+      },
+      {
+        type: 'note',
+        title: 'A “DSC 2026 notification for 11,062 posts” is not real',
+        text: 'That figure and post break-up are the 2024 recruitment’s, recycled. No DSC notification has issued since February 2024. The shortage is real — around 19,017 teacher posts were reported vacant in October 2025 — but a vacancy is not a notification, and only the official portals below can tell you when one exists.',
+      },
+      {
+        type: 'links',
+        title: 'The four official portals, one per track',
+        items: [
+          { label: 'Telangana TET portal', href: 'https://tgtet.aptonline.in/UI/HomePage/HomePage.aspx' },
+          { label: 'TG DSC portal', href: 'https://tgdsc.aptonline.in/tgdsc/' },
+          { label: 'TREIRB — residential institutions recruitment board', href: 'https://treirb.cgg.gov.in/getMenuContent/75' },
+          { label: 'TGPSC notifications, for DIET and DEO posts', href: 'https://websitenew.tgpsc.gov.in/notifications' },
+        ],
+      },
+    ],
+    eligibility: [
+      {
+        type: 'table',
+        caption:
+          'Qualification by post, as set by the 2024 DSC under the Teacher Recruitment Rules of September 2023. The relaxed percentage in brackets applies to SC, ST, BC and differently-abled candidates.',
+        head: ['Post', 'Qualification', 'TET paper required'],
+        rows: [
+          ['Secondary Grade Teacher', 'Intermediate with at least 45% (40%), plus a two-year D.El.Ed or D.Ed, or a four-year B.El.Ed.', 'Paper I'],
+          ['School Assistant', 'Graduation or post-graduation in the subject, plus B.Ed with that subject as a methodology.', 'Paper II, in the matching subject'],
+          ['Language Pandit', 'A degree in the language, or a literature degree with BOL, at 45% (40%), plus B.Ed with that language as methodology or a Language Pandit training qualification.', 'Paper II'],
+          ['School Assistant (Physical Education)', 'A bachelor’s degree with physical education, at 45% (40%) with national, state or inter-university sports participation, or at 50% (45%) without.', 'None'],
+          ['Physical Education Teacher', 'As prescribed by the recruitment rules.', 'None'],
+        ],
+      },
+      {
+        type: 'list',
+        title: 'The conditions candidates most often get wrong',
+        items: [
+          { text: 'Age was 18 to 46, reckoned as on 1 July 2023', note: 'in the 2024 recruitment, the upper limit having been raised to 46 by a government order of February 2024. Relaxations were 5 years for SC, ST, BC and EWS candidates and 10 years for persons with disability.' },
+          { text: 'The fee was ₹1,000 for each post applied for', note: 'not ₹1,000 for the recruitment. Applying to three post categories cost three times.' },
+          { text: 'A TET pass only counts at or above the pass mark', note: 'out of 150, that is 90 for OC candidates, 75 for BC candidates and 60 for SC, ST and differently-abled candidates. Below it there is no score to carry into the weightage.' },
+          { text: 'An APTET score counts only if obtained before 2 June 2014', note: 'the appointed day of the state’s formation. A later Andhra Pradesh TET does not qualify you here.' },
+          { text: 'The graduation percentage minimum does not apply to everyone', note: 'candidates admitted to B.Ed, B.El.Ed or an equivalent course before 29 July 2011 are outside it.' },
+          { text: 'A TET certificate is now valid for life', note: 'the national regulator replaced the seven-year validity in June 2021, with retrospective effect to February 2011. An old certificate that lapsed under the previous rule can be revalidated rather than re-earned.' },
+        ],
+      },
+    ],
+    pattern: [
+      {
+        type: 'table',
+        caption:
+          'The recruitment test as set in the 2024 DSC. A computer-based test, bilingual in the medium concerned and English. Note that the marks are not proportional to the question count.',
+        head: ['Post', 'Questions', 'Marks', 'Duration'],
+        rows: [
+          ['School Assistant (other than PE), Language Pandit', '160', '80', '2 hours 30 minutes'],
+          ['Secondary Grade Teacher', '160', '80', '2 hours 30 minutes'],
+          ['School Assistant (Physical Education)', '100', '200', '3 hours'],
+          ['Physical Education Teacher', '200', '100', '3 hours'],
+        ],
+      },
+      {
+        type: 'note',
+        title: 'Selection is 80 per cent recruitment test and 20 per cent TET',
+        text: 'The total is 100 marks: 80 from the written recruitment test and 20 as weightage on the TET score. That is fixed by the Teacher Recruitment Rules of September 2023 and restated in the TET notification itself. There are two exceptions — School Assistant (Physical Education) and Physical Education Teacher carry no TET weightage, and their selection rests entirely on the written test. This is why treating the eligibility test as a hurdle to scrape over costs marks that cannot be recovered later.',
+      },
+      {
+        type: 'list',
+        title: 'How the marks divide inside each paper',
+        items: [
+          { text: 'School Assistant and Language Pandit', note: 'general knowledge and current affairs 20 questions for 10 marks, perspectives in education 20 for 10, subject content 88 for 44, and teaching methodology 32 for 16.' },
+          { text: 'Secondary Grade Teacher', note: 'general knowledge and current affairs 20 for 10, perspectives in education 20 for 10, then 18 questions for 9 marks in each of Language I, English, mathematics, science and social studies, and teaching methodology 30 for 15.' },
+          { text: 'The DSC bulletin does not mention negative marking', note: 'the word does not appear in it. That is silence rather than an assurance — check your own notification. TET, by contrast, states plainly that there is none, and the gurukul recruitment states plainly that a quarter mark is deducted.' },
+          { text: 'Minimum qualifying marks for the recruitment test are not published', note: 'the bulletin prescribes qualifying marks only for the TET component. Do not plan around a figure quoted elsewhere.' },
+        ],
+      },
+      {
+        type: 'table',
+        caption:
+          'The eligibility test itself: two papers, never three, each 150 questions and 150 marks over two and a half hours.',
+        head: ['Paper', 'Who sits it', 'Ceiling of difficulty'],
+        rows: [
+          ['Paper I', 'Candidates for classes I to V — the SGT route', 'Set on the classes I to V syllabus, with linkages up to class X.'],
+          ['Paper II', 'Candidates for classes VI to VIII — the School Assistant and Language Pandit route', 'Set on the classes VI to VIII syllabus, with linkages up to senior secondary.'],
+        ],
+      },
+      {
+        type: 'p',
+        text: 'TET pass marks are 60 per cent for general candidates, 50 per cent for BC candidates and 40 per cent for SC, ST and differently-abled candidates. The relaxed tiers are Telangana’s own — the national guidelines set 60 per cent and leave relaxation to the state. Telangana also runs both papers for two and a half hours where the national guideline gives Paper II an hour and a half, so a candidate rehearsing to a national mock is rehearsing the wrong clock.',
+      },
+    ],
+    studyPlan: [
+      {
+        type: 'steps',
+        title: 'A sequence that respects how the two tests interact',
+        items: [
+          { text: 'Sit the regular TET first, and sit it to score', note: 'not to pass. Twenty marks of the final hundred come from it, and the difference between a bare pass and a strong score is worth more than most candidates gain from a month of extra recruitment-test revision.' },
+          { text: 'Pick your paper before you start', note: 'Paper I if you are heading for Secondary Grade Teacher, Paper II if you are heading for School Assistant or Language Pandit. They are different syllabuses at different class levels, and preparing both properly costs twice.' },
+          { text: 'Build subject content as the largest block', note: 'in the School Assistant paper, content is 88 of the 160 questions. Methodology and perspectives in education matter, but they are not where the paper is decided.' },
+          { text: 'Prepare methodology from the state’s own material', note: 'perspectives in education and teaching methodology are examined against the syllabus published for this recruitment, not against a general education textbook.' },
+          { text: 'Keep a current affairs file running the whole time', note: 'general knowledge and current affairs is 20 questions in every version of the recruitment paper, and it is the section that rewards a habit rather than a burst.' },
+          { text: 'Watch the gurukul board separately', note: 'its recruitment is a different notification, a different pattern and — unlike DSC and TET — it deducts a quarter mark for a wrong answer.' },
+        ],
+      },
+    ],
+    sources: [
+      {
+        type: 'p',
+        text: `Checked ${CHECKED}. Post qualifications, age, fee, the recruitment-test pattern and the 80:20 weightage are from the 2024 DSC information bulletin and the Teacher Recruitment Rules it is issued under. TET structure, pass marks and validity are from the current TET notifications and the national regulator’s 2021 order on certificate validity. No official archive of previous-year question papers exists for TET, DSC or the gurukul recruitment: the TET portal publishes answer keys, response sheets and marks memos only, and computer-based test data is disposed of a year after results, so year-wise papers offered elsewhere are reconstructions rather than official documents.`,
+      },
+      {
+        type: 'links',
+        title: 'Official sources for this page',
+        items: [
+          { label: 'Telangana TET portal', href: 'https://tgtet.aptonline.in/UI/HomePage/HomePage.aspx' },
+          { label: 'TET syllabus', href: 'https://tgtet.aptonline.in/UI/HomePage/Syllabus.aspx' },
+          { label: 'TET answer keys', href: 'https://tgtet.aptonline.in/UI/HomePage/Keys.aspx' },
+          { label: 'TG DSC portal and information bulletin', href: 'https://tgdsc.aptonline.in/tgdsc/' },
+          { label: 'TG DSC syllabus, post by post', href: 'https://tgdsc.aptonline.in/tgdsc/Syllabus' },
+          { label: 'Teacher recruitment government orders', href: 'https://tgdsc.aptonline.in/tgdsc/Gos' },
+          { label: 'TREIRB — gurukul recruitment notifications', href: 'https://treirb.cgg.gov.in/getMenuContent/75' },
+          { label: 'TGPSC notifications, for DIET and DEO posts', href: 'https://websitenew.tgpsc.gov.in/notifications' },
+        ],
       },
     ],
     resources: {
@@ -1739,7 +2422,145 @@ const telangana = [
         name: 'Post allotment',
         mode: 'Merit and preference',
         detail:
-          'Allotment by merit within the department and discipline applied for, under the reservation and zonal rules of the recruitment.',
+          'Allotment by merit within the department and discipline applied for — within the multi-zone for multi-zonal posts — under the reservation and local-status rules of the recruitment, followed by a medical fitness check.',
+      },
+    ],
+    /*
+     * Unlike the Group services, technical recruitment is continuous: TGPSC
+     * issued nine separate technical notifications in 2026 alone, each with its
+     * own window. The table is therefore a snapshot and dates from it, so a
+     * reader can see at a glance both what ran and how quickly the windows
+     * close — typically five to six weeks from notification.
+     */
+    updates: [
+      {
+        type: 'p',
+        text: `Checked ${CHECKED}. Technical posts are where Telangana has actually been recruiting. The commission issued nine technical and specialist notifications during 2026 while no Group services cycle was notified at all — and every one of those windows has now closed, the last on 22 August 2026.`,
+      },
+      {
+        type: 'table',
+        caption:
+          'TGPSC technical and specialist notifications issued in 2026, newest first. All application windows were closed at the date checked above.',
+        head: ['Notification', 'Post', 'Vacancies', 'Applications closed'],
+        rows: [
+          ['06/G/TP/2026, 10 July', 'Town Planning Assistant', '7', '22 August 2026'],
+          ['05/G/TP/2026, 6 July', 'Assistant Director of Town Planning', '10', '17 August 2026'],
+          ['03/OG/SD/2026, 2 July', 'Seed Certification Officer', '19', '12 August 2026'],
+          ['04/G/SE/2026, 18 June', 'Senior Lecturers and Lecturers in DIET', '86', '29 July 2026'],
+          ['03/G/SE/2026, 5 June', 'Deputy Educational Officer and Gazetted Headmaster Grade-I', '24', '19 July 2026'],
+          ['02/OG/PC/2026, 2 June', 'Assistant Environmental Engineer, Pollution Control Board', '19', '17 July 2026'],
+          ['02/G/RB/2026, 2 June', 'Assistant Executive Engineer (Electrical), Roads and Buildings', '49', '15 July 2026'],
+          ['01/G/RB/2026, 2 June', 'Assistant Executive Engineer (Civil), Roads and Buildings', '222', '13 July 2026'],
+          ['01/OG/PC/2026, 20 April', 'Assistant Scientist, Analyst Grade-II, Pollution Control Board', '20', '25 May 2026'],
+        ],
+      },
+      {
+        type: 'note',
+        title: 'Windows are short — five to six weeks, and not extended',
+        text: 'Every 2026 technical notification gave between five and six weeks from notification to closing date, and none of them was extended. Because these posts are notified individually rather than on an annual cycle, the practical consequence is that the qualifying degree, the certificates and the fee have to be ready before the notification appears rather than assembled after it. Watching the notifications page is part of the preparation.',
+      },
+      {
+        type: 'note',
+        title: 'Assistant Engineer has not been notified since 2022',
+        text: 'The Assistant Engineer, Municipal Assistant Engineer, Technical Officer and Junior Technical Officer recruitment is a separate notification from Assistant Executive Engineer, and its most recent cycle is Notification No. 16/2022 of September 2022, for 833 posts across nineteen post codes. That paper was set at diploma level rather than degree level. Do not prepare for an AE recruitment from an AEE notification, or the other way round — the subject paper is pitched differently.',
+      },
+      {
+        type: 'links',
+        title: 'Where the next notification will appear',
+        items: [
+          { label: 'TGPSC notifications', href: 'https://websitenew.tgpsc.gov.in/notifications' },
+          { label: 'TGPSC direct recruitment list', href: 'https://websitenew.tgpsc.gov.in/directRecruitment' },
+        ],
+      },
+    ],
+    eligibility: [
+      {
+        type: 'table',
+        caption:
+          'The qualifying degree, post by post, as set by the 2026 notifications. The degree must be held on the notification date, with the result already declared by then.',
+        head: ['Post', 'Qualification required'],
+        rows: [
+          ['Assistant Executive Engineer (Civil)', 'A bachelor’s degree in civil engineering, or A.M.I.E.'],
+          ['Assistant Executive Engineer (Electrical)', 'A bachelor’s degree in electrical engineering, or in electrical and electronics engineering, or A.M.I.E.'],
+          ['Assistant Environmental Engineer', 'A bachelor’s degree in civil, mechanical, chemical, biotechnology, mining or environmental engineering, or Sections A and B of A.M.I.E. (Civil), or any engineering degree together with a postgraduate degree in environmental engineering.'],
+          ['Assistant Scientist, Analyst Grade-II', 'A bachelor’s degree with chemistry as one of the subjects.'],
+          ['Town Planning Assistant', 'B.Planning or B.Tech (Planning).'],
+          ['Assistant Director of Town Planning', 'B.Arch, B.E./B.Tech (Civil), B.Planning, or a master’s in geography or geoinformatics — and, in addition, a postgraduate degree or diploma in town and country planning, or fellowship or associateship of the Institute of Town Planners of India.'],
+          ['Seed Certification Officer', 'A basic degree in agriculture together with an M.Sc. (Ag.) in seed technology, plant breeding, agronomy or plant physiology from an ICAR-recognised university.'],
+        ],
+      },
+      {
+        type: 'list',
+        title: 'The conditions common to all of them',
+        items: [
+          { text: 'Age 18 to 44, reckoned as on 1 July 2026', note: 'the upper limit having been raised from 34 to 44 by a government order of May 2026. The one exception is Assistant Scientist, notified in April before that order, which ran 18 to 34 — the likeliest single point of candidate error in the whole 2026 set.' },
+          { text: 'Relaxations are identical across the notifications', note: '5 years for SC, ST, BC and EWS candidates; 10 years for persons with disability; up to 5 years for state government employees by length of regular service, though corporation and municipality employees do not qualify; 3 years plus service rendered for ex-servicemen and NCC instructors. Nobody remains eligible past 61.' },
+          { text: 'Two fees, charged separately', note: 'an application processing fee of ₹1,000 for OC and BC candidates and ₹500 for SC, ST and PwD candidates, plus an examination fee — ₹120 for most posts, ₹80 for Seed Certification Officer and Assistant Scientist. Unemployed applicants are exempt from the examination fee only; the processing fee has no exemption.' },
+          { text: 'Seed Certification Officer ignores local reservation', note: 'selection is on state-wide merit, which changes the calculation for candidates from districts where a local quota would normally help them.' },
+        ],
+      },
+    ],
+    pattern: [
+      {
+        type: 'table',
+        caption:
+          'Every 2026 technical notification uses the same two-paper shape. What changes is the weight of the subject paper — and in the 450-mark schemes each subject question carries two marks rather than one.',
+        head: ['Post', 'Paper II subject and level', 'Paper II marks', 'Total'],
+        rows: [
+          ['Assistant Executive Engineer (Civil)', 'Civil engineering, degree level', '300', '450'],
+          ['Assistant Executive Engineer (Electrical)', 'Electrical and electronics engineering, degree level', '300', '450'],
+          ['Assistant Environmental Engineer', 'Concerned subject', '300', '450'],
+          ['Town Planning Assistant', 'Planning, degree level', '300', '450'],
+          ['Assistant Director of Town Planning', 'Concerned subject, postgraduate level', '300', '450'],
+          ['Seed Certification Officer', 'Concerned subject, postgraduate level', '150', '300'],
+          ['Assistant Scientist, Analyst Grade-II', 'Chemistry', '150', '300'],
+        ],
+      },
+      {
+        type: 'list',
+        title: 'The rules that apply across the technical recruitments',
+        items: [
+          { text: 'Paper I is the same paper everywhere', note: 'General Studies and General Abilities, 150 questions for 150 marks in 150 minutes, bilingual in English and Telugu. Paper II is 150 questions in 150 minutes and is set in English only.' },
+          { text: 'The subject paper is two-thirds of the 450-mark schemes', note: 'a candidate who arrives strong on general studies and average on their own discipline has the ratio backwards.' },
+          { text: 'Qualifying marks are 40, 35 and 30 per cent', note: '40% for OC, EWS and sportspersons, 35% for BC candidates, 30% for SC, ST and PH candidates. The notifications say in terms that reaching the minimum vests no right to selection.' },
+          { text: 'There is no interview in any 2026 technical notification', note: 'the words interview, oral test and viva do not appear as a selection stage in any of them. At least one well-known coaching site says the AEE process includes an interview; it does not.' },
+          { text: 'The notifications are silent on negative marking', note: 'none of the nine mentions it. That is an absence of a provision rather than a stated guarantee — read your own notification before deciding how freely to guess.' },
+          { text: 'Ties are broken by local status first', note: 'then date of birth with the elder ranked higher, then marks in the subject paper, then the date and percentage of the qualifying examination. Candidates must be willing to serve anywhere in Telangana.' },
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Where the examination runs in multiple computer-based sessions, scores are normalised and results are declared on a percentile basis. Appearance in both papers is compulsory — absence from either disqualifies the candidature outright, whatever the other paper scored.',
+      },
+    ],
+    studyPlan: [
+      {
+        type: 'steps',
+        title: 'Preparing for a recruitment that has not been notified yet',
+        items: [
+          { text: 'Treat your own discipline as the main subject', note: 'it is 300 of the 450 marks in the engineering and planning schemes. General studies is preparation you share with every other TGPSC candidate; the subject paper is the one you are actually competing on.' },
+          { text: 'Work from the notification’s own annexure', note: 'there is no separate syllabus file for any of the 2026 technical posts — the scheme and full syllabus are Annexure-II inside each notification PDF. The commission’s syllabus page covers only the Group services and lecturer posts.' },
+          { text: 'Use the old AE and AEE papers, which do exist', note: 'unlike the Group services, the commission’s archive holds real question papers for Assistant Engineer in civil, mechanical and general studies, and for Assistant Executive Engineer in civil, mechanical and general studies. There is no electrical paper, so electrical candidates work from the civil and mechanical papers for the general studies half and from the syllabus for their own.' },
+          { text: 'Keep documents notification-ready', note: 'the degree must be held and the result declared as at the notification date, and the window is five to six weeks. Certificates assembled after a notification appears are frequently assembled too late.' },
+          { text: 'Practise Paper I to the same clock as everyone else', note: '150 questions in 150 minutes, and it is the half of the examination where drilled method beats accumulated reading.' },
+        ],
+      },
+    ],
+    sources: [
+      {
+        type: 'p',
+        text: `Checked ${CHECKED}. Vacancies, closing dates, qualifications, age, fees, the scheme of examination and the qualifying marks are taken from the nine TGPSC technical notifications issued during 2026 and from Notification No. 16/2022 for the Assistant Engineer posts. Where a figure is not stated in those documents — negative marking, and the current status of the 2022 Assistant Engineer recruitment — this page says so rather than supplying one.`,
+      },
+      {
+        type: 'links',
+        title: 'Official sources for this page',
+        items: [
+          { label: 'TGPSC notifications', href: 'https://websitenew.tgpsc.gov.in/notifications' },
+          { label: 'TGPSC direct recruitment list', href: 'https://websitenew.tgpsc.gov.in/directRecruitment' },
+          { label: 'TGPSC old question papers, including AE and AEE', href: 'https://websitenew.tgpsc.gov.in/oldquestionp.jsp' },
+          { label: 'TGPSC results, keys and OMR sheets', href: 'https://websitenew.tgpsc.gov.in/resukeyomr.jsp' },
+          { label: 'TGPSC selection lists', href: 'https://websitenew.tgpsc.gov.in/selectionlist' },
+        ],
       },
     ],
     resources: {
@@ -1998,22 +2819,23 @@ const telangana = [
     path: '/government-exams/state/telangana/panchayat-secretary/',
     name: 'Telangana Panchayat Secretary',
     fullName: 'Telangana Panchayat Secretary recruitment — rural development and panchayat administration',
-    authority: 'Telangana Government Public Service Commission, for the Panchayat Raj and Rural Development Department',
+    authority:
+      'Panchayat Raj and Rural Development Department, Government of Telangana, through the Commissioner PR&RD and the district collectorates',
     official: OFFICIAL,
-    seoTitle: 'Telangana Panchayat Secretary: Syllabus & Exam Pattern',
+    seoTitle: 'Telangana Panchayat Secretary: Status, Pattern & Syllabus',
     metaDescription:
-      'Telangana Panchayat Secretary recruitment guide — eligibility, the objective written pattern, panchayat raj and rural development syllabus, and preparation.',
+      'Telangana Panchayat Secretary — whether any recruitment is open, what the 2018 exam actually asked, the panchayat raj syllabus, and how the cadre stands now.',
     lead: [
-      'The Panchayat Secretary is the administrative officer of a gram panchayat — the person who keeps its records, runs its meetings, implements its schemes and connects the village to the district administration. Telangana recruits to the post for its Panchayat Raj and Rural Development Department, and the recruitment is a degree-level objective written examination.',
-      'It is notified irregularly rather than annually, and both the post designation and the conducting arrangement have varied between cycles. That makes the notification unusually important to read: the eligibility, the grade and the syllabus have all differed across the recruitments Telangana has run.',
+      'The Panchayat Secretary is the administrative officer of a gram panchayat — the person who keeps its records, runs its meetings, implements its schemes and connects the village to the district administration. It is a district cadre post in the Panchayat Raj Subordinate Service, and it has been recruited by the Panchayat Raj department itself rather than by the public service commission.',
+      'Read the notification status below before anything else on this page. There is no open recruitment to this post, the last one was notified in 2018, and a vacancy count released in 2026 is being circulated elsewhere as though it were a notification. The rest of the page describes the job and the one examination Telangana has actually set for it.',
     ],
     quickFacts: [
+      ['Current status', 'No open recruitment as at 11 September 2026 — see the notification section'],
       ['Department', 'Panchayat Raj and Rural Development, Government of Telangana'],
-      ['Qualification', 'A bachelor’s degree from a recognised university'],
-      ['Format', 'Objective written examination'],
-      ['Content', 'General studies with a panchayat raj and rural development component'],
-      ['Frequency', 'Irregular — notified when vacancies are sanctioned rather than annually'],
-      ['Selection', 'Written marks, then certificate verification'],
+      ['Last recruitment', '2018, for 9,355 Junior Panchayat Secretary posts'],
+      ['Qualification then', 'A bachelor’s degree, plus working knowledge of computers'],
+      ['Format then', 'Two objective papers of 100 marks each, degree standard, no interview'],
+      ['Cadre', 'District cadre post; regularised as Panchayat Secretary Grade-IV'],
     ],
     overview: [
       {
@@ -2058,6 +2880,124 @@ const telangana = [
         mode: 'Merit and preference',
         detail:
           'Allotment to a panchayat or cluster by merit and preference within the district and reservation rules applying to the recruitment.',
+      },
+    ],
+    /*
+     * This page carries a correction rather than a countdown.
+     *
+     * As at the CHECKED date there is no open Panchayat Secretary recruitment
+     * and no announced route to one. A vacancy count released by the Panchayat
+     * Raj department in May 2026 has been recycled across aggregator sites as
+     * "notification out for 1,213 posts", which the primary source does not
+     * support. Saying so plainly is the most useful thing this page can do, so
+     * it goes first — above the evergreen description of the job.
+     *
+     * If a real notification issues, replace this section; do not leave the
+     * "no live recruitment" wording standing next to a live application link.
+     */
+    updates: [
+      {
+        type: 'note',
+        title: 'There is no open Panchayat Secretary recruitment',
+        text: `Checked ${CHECKED}. No Panchayat Secretary or Junior Panchayat Secretary notification appears in the TGPSC notification list, and the Panchayat Raj department's own portal carries no recruitment notice. The last actual recruitment to this post was notified in 2018. If you have been told an application is open, check the two official sources linked below before paying any fee.`,
+      },
+      {
+        type: 'p',
+        text: 'In May 2026 the Panchayat Raj department stated how many Panchayat Secretary posts were vacant: 1,213, across the state’s 12,760 gram panchayats, with Nalgonda (85), Kumram Bheem Asifabad (78), Kamareddy (68) and Jangaon (64) carrying the largest shortfalls and Sangareddy (12), Hanumakonda (14), Warangal (14) and Mancherial (14) the smallest. That statement is a count of empty chairs. It names no recruiting agency, no eligibility, no exam pattern and no timetable, because none had been decided.',
+      },
+      {
+        type: 'note',
+        title: 'Treat “1,213 posts notification out” as unverified',
+        text: 'Several coaching and job-alert sites have republished the May 2026 vacancy count as though a recruitment notification had been issued for those posts. No official source says that. Until a notification appears on an official portal with a notification number, a closing date and a fee, there is nothing to apply for — and a page telling you otherwise is guessing.',
+      },
+      {
+        type: 'table',
+        caption:
+          'What is actually documented about this post, most recent first. The 2026 row is a vacancy statement, not a recruitment.',
+        head: ['When', 'What happened'],
+        rows: [
+          ['May 2026', '1,213 Panchayat Secretary posts reported vacant by the Panchayat Raj department. No recruitment method announced.'],
+          ['August 2023', 'The state directed District Collectors to issue appointment orders as Panchayat Secretary Grade-IV to Junior Panchayat Secretaries scoring 70% or above in a District Level Performance Evaluation Committee assessment, with those below 70% re-observed for six months.'],
+          ['20 December 2018', 'The High Court stayed the 2018 recruitment and barred the issue of appointment letters, on petitions about the answer key, key objections and the category-wise split of posts.'],
+          ['10 October 2018', 'The written examination for the 2018 recruitment was held. District collectorates ran certificate verification and published selection lists from December 2018.'],
+          ['31 August 2018', 'Notification No. 2560/CPR&RE/B2/2017 issued by the Panchayat Raj department for 9,355 Junior Panchayat Secretary posts — the last actual recruitment to this cadre.'],
+        ],
+      },
+      {
+        type: 'links',
+        title: 'Check these two before believing any Panchayat Secretary notification',
+        items: [
+          { label: 'TGPSC notifications list', href: 'https://websitenew.tgpsc.gov.in/notifications' },
+          { label: 'Telangana Panchayat Raj department portal', href: 'https://epanchayat.telangana.gov.in/' },
+        ],
+      },
+    ],
+    /*
+     * Eligibility and pattern below describe the 2018 recruitment, and are
+     * labelled as such in every caption. They are here because they are the
+     * only concrete specification this cadre has ever had, and a reader
+     * preparing speculatively is better served by the real 2018 paper than by
+     * a generic "objective, degree standard" sentence. They are not a forecast.
+     */
+    eligibility: [
+      {
+        type: 'p',
+        text: 'There is no current eligibility rule to quote, because there is no current notification. What follows is what the 2018 recruitment required. A future recruitment may reuse it, adjust it, or be run on an entirely different basis — the post has been recruited under more than one designation and conducting arrangement.',
+      },
+      {
+        type: 'table',
+        caption:
+          'Eligibility as notified for the 2018 Junior Panchayat Secretary recruitment. Historical reference only — do not apply these dates or figures to any future cycle.',
+        head: ['Requirement', 'As notified in 2018'],
+        rows: [
+          ['Qualification', 'A degree from a recognised university, held as on 31 August 2018, together with working knowledge of computers.'],
+          ['Age', '18 to 39 years as on 31 August 2018.'],
+          ['Age relaxation', 'SC, ST and BC candidates 5 years; persons with disability 10 years; ex-servicemen 3 years plus length of service; state government employees 5 years.'],
+          ['Fee', '₹800 for general candidates and BC creamy layer; ₹400 for SC, ST, BC non-creamy-layer, PH and ex-servicemen candidates.'],
+          ['Nature of the post', 'District cadre post in the Panchayat Raj Subordinate Service, on a consolidated ₹15,000 a month for three years, with regularisation as Panchayat Secretary Grade-IV after that period.'],
+        ],
+      },
+    ],
+    pattern: [
+      {
+        type: 'table',
+        caption:
+          'The 2018 written examination. Two objective OMR papers at degree standard, both taken on the same day, with the total of the two deciding selection.',
+        head: ['Paper', 'Content', 'Questions', 'Marks', 'Duration'],
+        rows: [
+          ['Paper I', 'General studies and mental ability, and the culture and history of Telangana', '100', '100', '120 minutes'],
+          ['Paper II', 'The Telangana Panchayat Raj Act 2018, rural development programmes, and other central and state schemes', '100', '100', '120 minutes'],
+        ],
+      },
+      {
+        type: 'list',
+        title: 'Three details that shaped how the 2018 paper had to be answered',
+        items: [
+          { text: 'Negative marking of one-quarter mark', note: 'a wrong answer cost 0.25, so blind guessing across a 200-question total was expensive rather than free.' },
+          { text: 'Papers set in Telugu, English and Urdu', note: 'the medium was the candidate’s to choose, which mattered most for the Act and scheme terminology in Paper II.' },
+          { text: 'Selection on written marks alone', note: 'no interview and no weightage from anywhere else. The vacancies were district-specific, so a candidate competed within a district rather than statewide.' },
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Paper II is the one worth studying even now, because it is the only place any Telangana recruitment has examined panchayat administration as a subject in itself: the Panchayat Raj Act, the evolution of panchayat raj including the constitutional amendments and the committee reports behind them, the duties of a Panchayat Secretary, rural sociology, the flagship rural development schemes, the rural economy of Telangana, community-based organisations and self-help groups, and the revenue, expenditure and scheme-fund accounting a panchayat runs on.',
+      },
+    ],
+    sources: [
+      {
+        type: 'p',
+        text: `Checked ${CHECKED}. The 2018 notification number and date, the examination date and the district selection lists are confirmed on Telangana government district portals. The full text of the 2018 notification — the vacancy break-up, fee, age rule, paper structure and syllabus — is no longer hosted on a government site, because the application portal it lived on has been taken down; those details are reported here as the notification stated them.`,
+      },
+      {
+        type: 'links',
+        title: 'Official and primary sources for this page',
+        items: [
+          { label: 'TGPSC notifications list', href: 'https://websitenew.tgpsc.gov.in/notifications' },
+          { label: 'Telangana Panchayat Raj department portal', href: 'https://epanchayat.telangana.gov.in/' },
+          { label: 'Mahabubnagar district: 2018 recruitment results and verification notice', href: 'https://mahabubnagar.telangana.gov.in/junior-panchayat-secretary-recruitment-2018-results/' },
+          { label: 'Nalgonda district: 2018 category-wise selection list', href: 'https://nalgonda.telangana.gov.in/notice/jr-panchayat-secretary-selection-list-category-wise/' },
+          { label: 'Adilabad district: 2018 selection list', href: 'https://adilabad.telangana.gov.in/selection-list-of-candidates-in-junior-panchayat-secretary-recruitment-adilabad-district/' },
+        ],
       },
     ],
     resources: {
@@ -2388,6 +3328,146 @@ const telangana = [
           'Results are published as passes against the prescribed standard rather than as a merit list. A pass in a paper stands on its own record, and papers can be cleared across different sessions.',
       },
     ],
+    /*
+     * TGPSC runs two different examination series that both get called "the
+     * departmental test", and conflating them sends the wrong reader to the
+     * wrong notification:
+     *
+     *   Departmental Tests   — May and November sessions, for serving state
+     *                          government employees. This page's subject.
+     *   Half Yearly Exams    — March and September terms, for All-India and
+     *                          State Service officers under probation.
+     *
+     * The distinction is stated first because a search for "TGPSC departmental
+     * test September 2026" lands on the Half Yearly notification, which most
+     * employees arriving here cannot sit.
+     */
+    updates: [
+      {
+        type: 'table',
+        caption: `Two separate series, two separate notification streams. Checked ${CHECKED}.`,
+        head: ['', 'Departmental Tests', 'Half Yearly Examinations'],
+        rows: [
+          [
+            'Who sits them',
+            'Serving Telangana government employees, for the tests their own service rules prescribe.',
+            'All-India Service and State Service officers — probationary Deputy Collectors, DSPs, Assistant Commandants and equivalents.',
+          ],
+          ['Sessions a year', 'Two — May and November.', 'Two — the March and September terms.'],
+          [
+            'Latest notified',
+            'No. 02/2026 dated 26 February 2026, for the May 2026 session. Results and response sheets are published.',
+            'No. 03/2026 dated 27 July 2026, for the September 2026 term.',
+          ],
+          [
+            'Where it is held',
+            'Centres within the HMDA area — Hyderabad, Ranga Reddy and Medchal-Malkajgiri.',
+            'The TGPSC office in Hyderabad only.',
+          ],
+        ],
+      },
+      {
+        type: 'list',
+        title: `Where each series stands as at ${CHECKED}`,
+        items: [
+          { text: 'May 2026 Departmental Tests — finished', note: 'the session ran from 23 May to 1 June 2026. Results are published for the session and response sheets are on the departmental test dashboard.' },
+          { text: 'November 2026 Departmental Tests — not yet notified', note: 'no November session notification had appeared at the date above. Any date circulating for it is a guess; watch the departmental test page.' },
+          { text: 'September 2026 Half Yearly — applications have closed', note: 'the window ran to 11 September 2026, 5 PM, after an extension that carried a ₹1,000 late fee. The examinations themselves run 28 September to 1 October 2026.' },
+        ],
+      },
+      {
+        type: 'note',
+        title: 'The criminal law papers now examine BNS, BNSS and BSA',
+        text: 'An addendum dated 6 August 2026 to the September 2026 Half Yearly notification replaces the Indian Penal Code with the Bharatiya Nyaya Sanhita 2023, the Criminal Procedure Code with the Bharatiya Nagarik Suraksha Sanhita 2023, and the Indian Evidence Act with the Bharatiya Sakshya Adhiniyam 2023. It affects twelve paper codes — AS-2 to AS-5, AS-8, AS-9 and PS-2 to PS-7. Everything else in the original notification stands. Note the scope: this addendum is to the Half Yearly series. The Departmental Tests notification of February 2026 still carries the pre-BNS paper names, so do not assume the same substitution has been made to the PC-numbered criminal judicial papers.',
+      },
+      {
+        type: 'links',
+        title: 'The two notification streams',
+        items: [
+          { label: 'TGPSC departmental tests — notifications, syllabus and sessions', href: 'https://websitenew.tgpsc.gov.in/departmentalTest' },
+          { label: 'TGPSC half yearly examination notifications', href: 'https://websitenew.tgpsc.gov.in/halfyearnotifications' },
+        ],
+      },
+    ],
+    eligibility: [
+      {
+        type: 'p',
+        text: 'Eligibility for a departmental test is not a general rule about graduates and age — it is a question about your post. Only employees working in the relevant department may sit the tests their own service rules prescribe, and Secretariat employees may sit tests where the rules permit it in order to become eligible for appointment by transfer or promotion.',
+      },
+      {
+        type: 'list',
+        title: 'Three things that decide whether you can sit a given paper',
+        items: [
+          { text: 'Your service rules name the paper', note: 'the tests you must pass, the period within which you must pass them, and what happens if you do not, are set by the rules for your post — not by the commission.' },
+          { text: 'Some papers are open to everyone', note: 'a defined set of paper codes may be taken whether or not you are in government service. Most are not: several test families are restricted to their own department, such as the Commercial Taxes, Treasuries and Accounts, Sericulture and Works Accounts papers.' },
+          { text: 'Some papers are now compulsory during probation', note: 'under orders of December 2025, Assistant Section Officers, stenographers, typists, junior assistants and equivalents recruited after 12 May 2014 must pass the Proficiency in Office Automation test, paper code 162, during probation.' },
+        ],
+      },
+      {
+        type: 'table',
+        caption:
+          'Fees as notified for the May 2026 Departmental Tests session and the September 2026 Half Yearly term. Both series charge the same way, and neither refunds.',
+        head: ['Charge', 'Amount', 'Notes'],
+        rows: [
+          ['Examination fee', '₹200 per paper', 'Charged for each paper registered. No fee for the Gujarathi and Marwari language tests.'],
+          ['Application processing fee', '₹1,000 per test', 'Charged in addition to the per-paper examination fee.'],
+          ['Late fee, where an extension is granted', '₹1,000', 'Applied to the September 2026 Half Yearly extension. An extension is not routine — do not plan on one.'],
+          ['Exemptions', 'None', 'Fee concessions were withdrawn by government order in August 2002. Payment is online only; postal orders and demand drafts are not accepted.'],
+        ],
+      },
+    ],
+    pattern: [
+      {
+        type: 'table',
+        caption:
+          'How a departmental test paper is actually conducted. The mode depends on the paper, not on the session.',
+        head: ['Paper type', 'Mode', 'Duration'],
+        rows: [
+          ['Most papers', 'Objective, computer-based', '2 hours'],
+          ['Language and Survey & Settlement papers', 'Conventional and descriptive, answered in an OMR-attached booklet in blue or black pen with the question paper shown on screen', '3 hours'],
+          ['Second Class Language Test (PC 005)', 'Conventional', '2 hours'],
+          ['Proficiency in Office Automation (PC 162)', 'As notified', '1 hour'],
+        ],
+      },
+      {
+        type: 'list',
+        title: 'The rules that catch people out',
+        items: [
+          { text: 'With books does not mean with notes', note: 'where a paper is notified WITH BOOKS you may bring bare Acts only. Guides, commentaries, made-easy books, photocopies, diaries, coaching notes and handbooks are all barred, and calculators are not allowed except in the Survey papers.' },
+          { text: 'Part I without books, Part II with books', note: 'in the Half Yearly law papers each subject is split this way — the first part tests recall, the second tests whether you can find and apply the provision. They are different exams and need different preparation.' },
+          { text: 'Questions are set in English', note: 'the exception is the Survey & Settlement Surveyor’s test and the translation tests, which use the chosen language alongside English.' },
+          { text: 'Report ninety minutes early', note: 'gates close thirty minutes before the paper starts.' },
+          { text: 'Underlined codes are combination papers', note: 'they have to be passed together rather than one at a time, so registering for only half of a pair wastes the session.' },
+        ],
+      },
+      {
+        type: 'note',
+        title: 'What the result is, and what you will never be sent',
+        text: 'The results bulletin published by the commission is itself the authentic publication for extending service benefits — no individual pass certificate and no confirmation certificate is issued, so do not wait for one. Unsuccessful candidates may buy a memorandum of marks for ₹200 per test within a month of the result. Revaluation and re-verification are never permitted; a recount is allowed only for conventional written papers, within fifteen days, at ₹100 a paper.',
+      },
+      {
+        type: 'p',
+        text: 'One figure this page does not state is the pass mark. The May 2026 notification does not print qualifying marks, and neither the syllabus index nor the results index carries them — they sit in the Telangana Departmental Test Rules 1965 and in the syllabus document for the individual paper. Take the number from your paper’s own syllabus PDF rather than from any general claim about departmental tests.',
+      },
+    ],
+    sources: [
+      {
+        type: 'p',
+        text: `Checked ${CHECKED} against the commission’s own notifications and result pages. Session dates, fees, paper modes and the BNS addendum are quoted from the notifications named below; qualifying marks are deliberately absent because no official page consulted stated them.`,
+      },
+      {
+        type: 'links',
+        title: 'Official notifications, syllabus and results',
+        items: [
+          { label: 'Departmental tests: sessions, notifications and syllabus', href: 'https://websitenew.tgpsc.gov.in/departmentalTest' },
+          { label: 'Half yearly examination notifications', href: 'https://websitenew.tgpsc.gov.in/halfyearnotifications' },
+          { label: 'Departmental test syllabus index, paper by paper', href: 'https://tspscdeptltest.telangana.gov.in/HomePages/Syllabus.aspx' },
+          { label: 'May 2026 session results', href: 'https://tspscdeptltest.telangana.gov.in/HomePages/DeptTestResults_May_2026.aspx' },
+          { label: 'Response sheets dashboard', href: 'https://tspscdeptltest.telangana.gov.in/HomePages/DepartmentalResponseSheetsDashboard.aspx' },
+          { label: 'Departmental test bulletins archive', href: 'https://websitenew.tgpsc.gov.in/DeptTstBlltncmsStatic' },
+        ],
+      },
+    ],
     resources: {
       syllabus: {
         description:
@@ -2633,5 +3713,20 @@ const telangana = [
     ],
   },
 ]
+
+/*
+ * The extra sections written in telangana-depth.js are appended onto the
+ * matching resource here rather than being pasted inline, so this file stays
+ * readable as a record of what each recruitment is. A depth entry for a
+ * resource that does not exist is ignored rather than creating an orphan page.
+ */
+for (const exam of telangana) {
+  const extra = DEPTH[exam.slug]
+  if (!extra) continue
+  for (const [resource, blocks] of Object.entries(extra)) {
+    const written = exam.resources?.[resource]
+    if (written) written.blocks = [...written.blocks, ...blocks]
+  }
+}
 
 export default telangana

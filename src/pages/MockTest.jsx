@@ -2,8 +2,10 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { Arrow } from '../components/Icon'
 import { ContentSection } from '../components/Blocks'
+import Doc from '../components/Doc'
 import { PageHero, SectionHead, canonicalFor, useSeo } from '../components/ui'
 import { getTest, orderedQuestions, specOf, TESTS } from '../data/mock-tests'
+import { getTestGuide } from '../data/mock-tests/guides'
 import { humanise } from '../lib/labels'
 import { FinalCta } from './home/sections'
 import MockTests, { isMockFamily } from './MockTests'
@@ -197,6 +199,7 @@ function grade(test, questions, answers) {
 /* ── Instructions ─────────────────────────────────────────────── */
 
 function Intro({ test, questions, onStart }) {
+  const guide = getTestGuide(test.slug)
   const counts = test.sections.map((section) => ({
     ...section,
     total: questions.filter((question) => question.section === section.id).length,
@@ -284,7 +287,8 @@ function Intro({ test, questions, onStart }) {
         </div>
       </section>
 
-      <ContentSection
+      <Doc>
+        <ContentSection
         id="use-this-test"
         eyebrow="Use the result"
         heading={`How to learn from this ${test.exam} mock`}
@@ -308,6 +312,20 @@ function Intro({ test, questions, onStart }) {
         ]}
         background
       />
+
+      {/* What this particular paper's structure implies — the part the shared
+          review advice above cannot say, because it is true of one exam. */}
+      {guide && (
+        <ContentSection
+          id="about-this-exam"
+          eyebrow="This exam"
+          heading={guide.heading}
+          intro={guide.intro}
+          blocks={guide.blocks}
+        />
+      )}
+
+      </Doc>
 
       <OtherTests slug={test.slug} />
     </>

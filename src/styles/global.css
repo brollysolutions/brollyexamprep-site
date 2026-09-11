@@ -625,8 +625,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{
 h2.h{margin:0;font-size:clamp(25px,3vw,36px);font-weight:800;letter-spacing:-1px;
   line-height:1.16;color:var(--k)}
 h3.h3{margin:0;font-size:17px;font-weight:700;letter-spacing:-.35px;color:var(--k)}
-.lead{margin:14px 0 0;font-size:16px;line-height:1.68;color:var(--mu);max-width:62ch}
-.shead{max-width:64ch;margin-bottom:40px}
+.lead{margin:14px 0 0;font-size:16px;line-height:1.68;color:var(--mu);max-width:38rem}
+.shead{max-width:40rem;margin-bottom:40px}
 .sbar{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;
   flex-wrap:wrap;margin-bottom:40px}
 .sbar .shead{margin-bottom:0;flex:1;min-width:260px}
@@ -770,6 +770,9 @@ h3.h3{margin:0;font-size:17px;font-weight:700;letter-spacing:-.35px;color:var(--
   place-items:center;color:var(--y-deep);margin-bottom:16px}
 .ft h3{margin:0 0 8px;font-size:16.5px;font-weight:700;color:var(--k);letter-spacing:-.35px}
 .ft p{margin:0;font-size:14px;color:var(--mu);line-height:1.62}
+/* Most cards hold a single paragraph; ones that stack a scope line, the body
+   and a practice note need the paragraphs told apart. */
+.ft p+p{margin-top:10px}
 
 /* ── STEPS ── */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;position:relative}
@@ -788,7 +791,10 @@ h3.h3{margin:0;font-size:17px;font-weight:700;letter-spacing:-.35px;color:var(--
   padding:11px 18px;font-family:var(--ff);font-size:14px;font-weight:700;color:var(--tx);
   cursor:pointer;transition:.16s ease}
 .tab:hover{border-color:var(--k)}
-.tab[aria-selected="true"]{background:var(--k);border-color:var(--k);color:var(--y)}
+/* Selected tab, and the same treatment for a `.tab` used as a filter toggle,
+   where aria-pressed is the honest state instead of aria-selected. */
+.tab[aria-selected="true"],.tab[aria-pressed="true"]{background:var(--k);border-color:var(--k);
+  color:var(--y)}
 .panel[hidden]{display:none}
 .pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .pe{background:var(--w);border:1px solid var(--bd);border-radius:var(--r-m);padding:20px}
@@ -905,7 +911,7 @@ h3.h3{margin:0;font-size:17px;font-weight:700;letter-spacing:-.35px;color:var(--
 .art__f b{font-weight:700;color:var(--k)}
 
 /* ── FAQ ── */
-.faq{max-width:82ch}
+.faq{max-width:54rem}
 .faq__answer{background:var(--w);border:1px solid var(--bd);border-radius:var(--r-m);
   margin-bottom:10px;overflow:hidden}
 .faq__answer h3{margin:0;padding:18px 22px 8px;font-size:16px;font-weight:700;
@@ -925,7 +931,7 @@ h3.h3{margin:0;font-size:17px;font-weight:700;letter-spacing:-.35px;color:var(--
 .answer-box{margin:0 0 22px;padding:22px 24px;border-left:5px solid var(--y);
   background:var(--bg);border-radius:0 var(--r-m) var(--r-m) 0}
 .answer-box--after{margin:26px 0 0}
-.answer-box p{margin:0;font-size:16px;line-height:1.7;color:var(--tx);max-width:74ch}
+.answer-box p{margin:0;font-size:16px;line-height:1.7;color:var(--tx);max-width:42rem}
 
 /* Numbered decision list — what to settle before committing study time. */
 .choose{margin-top:32px}
@@ -946,18 +952,25 @@ h3.h3{margin:0;font-size:17px;font-weight:700;letter-spacing:-.35px;color:var(--
    so the page body never scrolls sideways. */
 .ctable-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;background:var(--w);
   border:1px solid var(--bd);border-radius:var(--r-m)}
-.ctable{width:100%;min-width:820px;border-collapse:collapse;font-size:14px}
-.ctable caption{caption-side:bottom;text-align:left;padding:16px 20px;font-size:12.5px;
-  color:var(--mu);line-height:1.62;border-top:1px solid var(--bd)}
+.ctable{width:100%;min-width:640px;border-collapse:collapse;font-size:14.5px}
+/* Caption above the table: a reader should know what they are looking at
+   before they start reading rows, not after. */
+.ctable caption{caption-side:top;text-align:left;padding:0 0 14px;font-size:13.5px;
+  color:var(--mu);line-height:1.62;max-width:44rem}
 .ctable thead th{background:var(--y-tint);color:var(--k);text-align:left;font-weight:800;
-  font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;
+  font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;
   border-bottom:1px solid var(--y-line)}
-.ctable th,.ctable td{padding:15px 20px;vertical-align:top;line-height:1.62;
+.ctable th,.ctable td{padding:14px 18px;vertical-align:top;line-height:1.62;
   border-bottom:1px solid var(--bd)}
-.ctable tbody th{text-align:left;font-weight:800;color:var(--k);white-space:nowrap}
-.ctable tbody td{color:var(--mu)}
+/* The row head carries the thing being compared, so it wraps rather than
+   forcing the whole table wide enough to keep it on one line. */
+.ctable tbody th{text-align:left;font-weight:750;color:var(--k);white-space:normal;
+  min-width:8rem}
+.ctable tbody td{color:var(--tx)}
+/* Banding, so the eye can track a row across several columns. */
+.ctable tbody tr:nth-child(even) th,.ctable tbody tr:nth-child(even) td{background:#FAFBFC}
 .ctable tbody tr:last-child th,.ctable tbody tr:last-child td{border-bottom:0}
-.ctable tbody tr:hover th,.ctable tbody tr:hover td{background:var(--bg)}
+.ctable tbody tr:hover th,.ctable tbody tr:hover td{background:var(--y-soft)}
 
 @media(max-width:820px){
   .ctable{min-width:0}
@@ -970,6 +983,9 @@ h3.h3{margin:0;font-size:17px;font-weight:700;letter-spacing:-.35px;color:var(--
     font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;
     color:var(--y-deep)}
   .ctable tbody tr:last-child td:last-child{padding-bottom:18px}
+  .ctable tbody tr:nth-child(even) th,.ctable tbody tr:nth-child(even) td{background:none}
+  .ctable tbody tr:nth-child(even){background:#FAFBFC}
+  .ctable caption{padding:0 0 12px}
 }
 .demo{background:var(--k);color:var(--w)}
 .demo .h,.demo .lead{color:var(--w)}
@@ -996,9 +1012,15 @@ h3.h3{margin:0;font-size:17px;font-weight:700;letter-spacing:-.35px;color:var(--
 
 /* Supporting conversion CTA — registration step of the funnel */
 .acct{margin:18px 0 0;font-size:14px;color:var(--mu);line-height:1.6}
-.acct a{font-weight:700;color:var(--k);text-decoration:none;
+/* Inline links in body copy. The base `a` is deliberately undecorated because
+   most links on this site are whole cards or buttons, so a link sitting inside
+   a sentence needs bringing back — otherwise a citation in a callout, table
+   caption or card paragraph reads as plain text and nobody clicks it. */
+.acct a,.answer-box a,.ctable caption a,.source-note p a,.ft p a,.col>p a{
+  font-weight:700;color:var(--k);text-decoration:none;
   border-bottom:2px solid var(--y);padding-bottom:1px}
-.acct a:hover{background:var(--y)}
+.acct a:hover,.answer-box a:hover,.ctable caption a:hover,.source-note p a:hover,
+.ft p a:hover,.col>p a:hover{background:var(--y)}
 .fin__acct{margin:22px auto 0;font-size:14.5px;color:#A9AEB7}
 .fin__acct a{font-weight:700;color:var(--y);text-decoration:none;
   border-bottom:1px solid rgba(255,201,40,.5)}

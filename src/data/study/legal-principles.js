@@ -34,7 +34,7 @@ export default {
     { icon: 'layers', title: 'Types of principle', sub: 'How each behaves', href: '#types' },
     { icon: 'refresh', title: 'Multiple principles', sub: 'Conflict and interaction', href: '#multiple' },
     { icon: 'search', title: 'Reading the language', sub: 'Shall, may, and, or, unless', href: '#language' },
-    { icon: 'chart', title: 'Practice approach', sub: 'How to build the skill', href: '#practice' },
+    { icon: 'chart', title: 'Practice approach', sub: 'How to build the skill', href: '#practice-approach' },
     { icon: 'check', title: 'Solved examples', sub: 'Eight questions worked through', href: '#examples' },
   ],
 
@@ -267,7 +267,7 @@ export default {
 
     /* ── 7 ─────────────────────────────────────────────────────── */
     {
-      id: 'practice',
+      id: 'practice-approach',
       heading: 'Practice approach',
       eyebrow: 'How to build the skill',
       intro:

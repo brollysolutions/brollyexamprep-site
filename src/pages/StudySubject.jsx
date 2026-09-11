@@ -1,12 +1,14 @@
 import { Link, useParams } from 'react-router-dom'
 import Icon, { Arrow } from '../components/Icon'
 import { ContentSection } from '../components/Blocks'
+import Doc from '../components/Doc'
 import { PageHero, SectionHead, useJsonLd, useMeta, useTitle } from '../components/ui'
 import { NAV } from '../data/nav'
 import { getTopic, SUBJECTS, topicsInSubject } from '../data/study'
 import { getGuidance } from '../data/study-guidance'
+import { getSubjectFaqs } from '../data/study-faqs'
 import { humanise } from '../lib/labels'
-import { FinalCta } from './home/sections'
+import { FaqSection, FinalCta } from './home/sections'
 
 const ORIGIN = 'https://brollyexamprep.com'
 
@@ -52,13 +54,14 @@ export default function StudySubject() {
   const written = topicsInSubject(subject)
   const planned = plannedFor(subject)
   const guidance = getGuidance(subject)
+  const faqs = getSubjectFaqs(subject)
 
   const canonical = `${ORIGIN}/study-material/${subject}/`
   const description = subjectDescription(name, meta && written)
 
   useTitle(`${name} Study Material for Competitive Exams`, { exact: true })
   useMeta({ description, canonical })
-  useJsonLd(structuredData({ subject, name, description, canonical, written }))
+  useJsonLd(structuredData({ subject, name, description, canonical, written, faqs }))
 
   return (
     <>
@@ -115,7 +118,7 @@ export default function StudySubject() {
       )}
 
       {planned.length > 0 && (
-        <section className={`s${written.length ? ' s--bg' : ''}`}>
+        <section className="s explore">
           <div className="wrap">
             <SectionHead
               eyebrow="Coming next"
@@ -165,18 +168,54 @@ export default function StudySubject() {
         </section>
       )}
 
-      {/* How this particular subject should be studied — the advice a topic
-          page cannot give and a syllabus never mentions. */}
-      {guidance && (
-        <ContentSection
-          id="how-to-study"
-          eyebrow="Method"
-          heading={guidance.heading}
-          intro={guidance.intro}
-          blocks={guidance.blocks}
-          background={(written.length ? 1 : 0) + (planned.length ? 1 : 0) === 1}
-        />
-      )}
+      {/* Where the subject's marks actually are, assembled from the weighting
+          each written lesson records for itself. Derived rather than written,
+          so it cannot drift away from the topic pages it summarises. */}
+      <Doc extra={faqs?.length ? [{ id: 'faq', label: 'FAQs' }] : []}>
+        {written.length > 0 && (
+          <ContentSection
+            id="what-it-is-worth"
+            eyebrow="Weighting"
+            heading={`Where ${name} marks actually sit`}
+            intro={[
+              `A syllabus lists topics with equal visual weight, and no paper treats them that way. The table below collects what each ${name} lesson records about the exams that examine it, so the reading order on this page can be checked against the exams you are actually sitting.`,
+              'Counts are ranges observed across cycles rather than promises. The notification for your cycle is what fixes the paper, and a topic can move.',
+            ]}
+            blocks={[
+              {
+                type: 'table',
+                caption: `${name} topics, the exams that weight them, and how much of each lesson is practice.`,
+                head: ['Topic', 'Examined most in', 'Typical volume', 'Lesson'],
+                rows: written.map((topic) => [
+                  topic.title,
+                  topic.weightage.map((w) => w.exam).slice(0, 3).join('; ') || 'Across competitive papers',
+                  topic.weightage[0]?.count || 'Varies by paper',
+                  `${topic.readMinutes} min · ${topic.practice.length} questions`,
+                ]),
+              },
+              {
+                type: 'note',
+                title: 'How to use the table rather than read it',
+                text: 'Find the rows naming the exam you are preparing for, and study those first regardless of where they sit in the reading order above — the order on this page is pedagogical, built so each lesson can rest on the one before it, and it is not a priority list. Where a topic you are weak at also carries the highest volume in your paper, that row is the whole of your next fortnight.',
+              },
+            ]}
+          />
+        )}
+
+        {/* How this particular subject should be studied — the advice a topic
+            page cannot give and a syllabus never mentions. */}
+        {guidance && (
+          <ContentSection
+            id="how-to-study"
+            eyebrow="Method"
+            heading={guidance.heading}
+            intro={guidance.intro}
+            blocks={guidance.blocks}
+          />
+        )}
+      </Doc>
+
+      {faqs && <FaqSection items={faqs} title={`${name} — FAQs`} />}
 
       <FinalCta
         title="Read the concept, then test it the same day"
@@ -202,8 +241,22 @@ function plannedFor(subject) {
     .map((link) => ({ label: link.label.replace(/\s*→$/, ''), to: link.to }))
 }
 
-function structuredData({ name, description, canonical, written }) {
+function structuredData({ name, description, canonical, written, faqs }) {
   return [
+    // FAQPage only where the questions are rendered on the page itself.
+    ...(faqs?.length
+      ? [
+          {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map((faq) => ({
+              '@type': 'Question',
+              name: faq.q,
+              acceptedAnswer: { '@type': 'Answer', text: faq.a },
+            })),
+          },
+        ]
+      : []),
     {
       '@context': 'https://schema.org',
       '@type': 'CollectionPage',

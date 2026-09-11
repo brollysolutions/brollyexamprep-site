@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import Icon, { Arrow } from '../components/Icon'
-import Block, { Example } from '../components/Blocks'
+import { ContentSection, Example } from '../components/Blocks'
+import Doc from '../components/Doc'
 import { PageHero, SectionHead, useJsonLd, useMeta, useTitle } from '../components/ui'
 import { getTopic } from '../data/study'
 import { humanise } from '../lib/labels'
@@ -56,91 +57,65 @@ export default function StudyTopic() {
         }
       />
 
-      {/* ── On this page ── */}
-      <section className="s">
-        <div className="wrap">
-          <SectionHead
-            eyebrow="On this page"
-            title="What this topic covers"
-            lead="Each block below is written for one part of the topic. Jump straight to the one you need."
-          />
-          <div className="g3">
-            {topic.contents.map((item) => (
-              <a className="tile" key={item.href} href={item.href}>
-                <span className="tile__i">
-                  <Icon name={item.icon} />
-                </span>
-                <span>
-                  <b>{item.title}</b>
-                  <span>{item.sub}</span>
-                </span>
-                <span className="tile__a">
-                  <Arrow />
-                </span>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/*
+        The lesson, as one document.
 
-      {/* ── Weightage ── */}
-      <section className="s s--bg">
-        <div className="wrap">
-          <SectionHead
-            eyebrow="Why it matters"
-            title={`${topic.title} in the exam`}
-            lead="Direct question counts move between cycles, so treat these as ranges rather than promises. Always check the latest official notification for the pattern you are sitting."
-          />
-          <div className="ctable-wrap">
-            <table className="ctable">
-              <thead>
-                <tr>
-                  <th scope="col">Exam</th>
-                  <th scope="col">Expected questions</th>
-                  <th scope="col">How it usually appears</th>
-                </tr>
-              </thead>
-              <tbody>
-                {topic.weightage.map((row) => (
-                  <tr key={row.exam}>
-                    <th scope="row">{row.exam}</th>
-                    <td data-label="Expected questions">{row.count}</td>
-                    <td data-label="How it usually appears">{row.note}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
+        The contents used to be a grid of large tiles — sixteen of them on a
+        topic like Percentages, filling a screen before the reading started and
+        scrolling away the moment it did. The same list works far better as a
+        rail that stays beside the text, so the reader can see where they are
+        in the lesson rather than only where they began. `topic.contents` is
+        hand-written per topic, so its labels are used rather than derived.
+      */}
+      <Doc
+        items={topic.contents.map((item) => ({ id: item.href.replace('#', ''), label: item.title }))}
+        extra={[
+          { id: 'examples', label: 'Worked examples' },
+          { id: 'practice', label: 'Practice questions' },
+          { id: 'faq', label: 'FAQs' },
+        ]}
+      >
+        <ContentSection
+          id="weightage"
+          eyebrow="Why it matters"
+          heading={`${topic.title} in the exam`}
+          blocks={[
+            {
+              type: 'table',
+              caption:
+                'Direct question counts move between cycles, so treat these as ranges rather than promises. Check the notification for the pattern you are sitting.',
+              head: ['Exam', 'Expected questions', 'How it usually appears'],
+              rows: topic.weightage.map((row) => [row.exam, row.count, row.note]),
+            },
+          ]}
+        />
 
-      {/* ── The body ── */}
-      {topic.sections.map((section, i) => (
-        <section className={`s${i % 2 === 1 ? ' s--bg' : ''}`} id={section.id} key={section.id}>
+        {topic.sections.map((section) => (
+          <ContentSection
+            key={section.id}
+            id={section.id}
+            eyebrow={section.eyebrow}
+            heading={section.heading}
+            intro={section.intro}
+            blocks={section.blocks}
+          />
+        ))}
+
+        <section className="s" id="examples">
           <div className="wrap">
-            <SectionHead eyebrow={section.eyebrow} title={section.heading} lead={section.intro} />
-            {section.blocks.map((block, bi) => (
-              <Block block={block} key={bi} />
-            ))}
+            <SectionHead
+              eyebrow="Solved examples"
+              title="Worked line by line"
+              lead="Read the steps rather than the answer. The method is what transfers to the next question."
+            />
+            <div className="two">
+              {topic.examples.map((example) => (
+                <Example example={example} key={example.q} />
+              ))}
+            </div>
           </div>
         </section>
-      ))}
-
-      {/* ── Worked examples ── */}
-      <section className={`s${topic.sections.length % 2 === 1 ? ' s--bg' : ''}`} id="examples">
-        <div className="wrap">
-          <SectionHead
-            eyebrow="Solved examples"
-            title="Worked line by line"
-            lead="Read the steps rather than the answer. The method is what transfers to the next question."
-          />
-          <div className="two">
-            {topic.examples.map((example) => (
-              <Example example={example} key={example.q} />
-            ))}
-          </div>
-        </div>
-      </section>
+      </Doc>
 
       {/* ── Practice ── */}
       <Practice items={topic.practice} title={topic.title} />

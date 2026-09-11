@@ -42,7 +42,38 @@ function itemParts(item) {
   return { lead: item.text, rest: item.note || null }
 }
 
-export default function Block({ block }) {
+/**
+ * A stable anchor for a block's sub-heading.
+ *
+ * Long single-section pages — every exam resource page is one — carry their
+ * structure in the `title` of each list, steps or note block rather than in
+ * separate sections. Giving those titles ids lets the contents rail point at
+ * them, so a 900-word page can be scanned instead of only scrolled.
+ */
+const slugify = (value) =>
+  String(value)
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 60)
+
+/**
+ * One entry per block that renders a sub-heading, in render order, with null
+ * where a block has none. Ids are namespaced by the section and de-duplicated,
+ * so two blocks sharing a title on one page cannot collide.
+ */
+export function subHeadings(blocks, sectionId) {
+  const seen = new Map()
+  return (blocks || []).map((block) => {
+    if (!sectionId || !block?.title) return null
+    const base = `${sectionId}-${slugify(block.title)}`
+    const n = (seen.get(base) || 0) + 1
+    seen.set(base, n)
+    return { id: n > 1 ? `${base}-${n}` : base, label: block.title }
+  })
+}
+
+export default function Block({ block, subId }) {
   if (!block) return null
 
   if (block.type === 'p') return <p className="sm-p">{block.text}</p>
@@ -50,7 +81,11 @@ export default function Block({ block }) {
   if (block.type === 'list') {
     return (
       <div className="s__block">
-        {block.title && <h3 className="s__sub">{block.title}</h3>}
+        {block.title && (
+          <h3 className="s__sub" id={subId}>
+            {block.title}
+          </h3>
+        )}
         <ul className="sm-list">
           {block.items.map((item) => {
             const { lead, rest } = itemParts(item)
@@ -69,7 +104,11 @@ export default function Block({ block }) {
   if (block.type === 'steps') {
     return (
       <div className="s__block">
-        {block.title && <h3 className="s__sub">{block.title}</h3>}
+        {block.title && (
+          <h3 className="s__sub" id={subId}>
+            {block.title}
+          </h3>
+        )}
         <ol className="sm-steps">
           {block.items.map((item) => {
             const { lead, rest } = itemParts(item)
@@ -132,7 +171,11 @@ export default function Block({ block }) {
   if (block.type === 'formula') {
     return (
       <div className="s__block">
-        {block.title && <h3 className="s__sub">{block.title}</h3>}
+        {block.title && (
+          <h3 className="s__sub" id={subId}>
+            {block.title}
+          </h3>
+        )}
         <ul className="sm-formulas">
           {block.items.map((item) => (
             <li key={item.expr}>
@@ -156,7 +199,7 @@ export default function Block({ block }) {
   if (block.type === 'note') {
     return (
       <div className="source-note s__block">
-        <h3>{block.title}</h3>
+        <h3 id={subId}>{block.title}</h3>
         <p>{block.text}</p>
       </div>
     )
@@ -170,7 +213,11 @@ export default function Block({ block }) {
   if (block.type === 'links') {
     return (
       <div className="s__block">
-        {block.title && <h3 className="s__sub">{block.title}</h3>}
+        {block.title && (
+          <h3 className="s__sub" id={subId}>
+            {block.title}
+          </h3>
+        )}
         <p className="sm-links">
           {block.items.map((item) =>
             item.href ? (
@@ -210,6 +257,7 @@ export function Example({ example }) {
 /** A whole section of written copy: heading, intro, then its blocks. */
 export function ContentSection({ id, eyebrow, heading, intro, blocks, background = false }) {
   if (!blocks || !blocks.length) return null
+  const subs = subHeadings(blocks, id)
   return (
     <section className={`s${background ? ' s--bg' : ''}`} id={id}>
       <div className="wrap">
@@ -224,7 +272,7 @@ export function ContentSection({ id, eyebrow, heading, intro, blocks, background
             ))}
         </div>
         {blocks.map((block, i) => (
-          <Block block={block} key={i} />
+          <Block block={block} key={i} subId={subs[i]?.id} />
         ))}
       </div>
     </section>

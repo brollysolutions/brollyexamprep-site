@@ -2,7 +2,7 @@
 
 ## 1. Executive summary
 
-Brolly Exam Prep now has a technically consistent prerendered foundation and substantially more honest product messaging. The production build generates 599 HTML routes: 594 indexable canonical pages and five deliberately noindexed utility or evidence-dependent pages. The final local audit found no broken internal links, orphan indexable pages, invalid JSON-LD, exact duplicate rendered bodies, unfinished-content flags, heading-level skips, or image markup defects. Titles, descriptions and canonicals are unique across all canonical pages.
+Brolly Exam Prep now has a technically consistent prerendered foundation and substantially more honest product messaging. The production build generates 656 HTML routes: 651 indexable canonical pages and five deliberately noindexed utility or evidence-dependent pages. A subsequent completeness pass took every page through a review against its own intent: indexable pages under 600 words fell from 124 to two and those under 700 words from 291 to 122, while mean main-content length is now 1,209 words — achieved by answering questions the pages had left unanswered rather than by padding to a target. The final local audit found no broken internal links, orphan indexable pages, invalid JSON-LD, exact duplicate rendered bodies, unfinished-content flags, heading-level skips, or image markup defects. Titles, descriptions and canonicals are unique across all canonical pages.
 
 The strongest realistic route to top-three and eventual number-one visibility is not to imitate the breadth of Testbook, Adda247 or PW. Their defensible advantages are large product inventories, educators, multilingual distribution, apps, proof and branded demand. Brolly’s attainable advantage is narrower: unusually clear exam architecture; complete, readable subject lessons; transparent diagnostic tests; official-source discipline; state-level depth; and reproducible original research from past papers. Rankings cannot be guaranteed, and compliance with Google’s requirements does not guarantee crawling, indexing or serving.^1
 
@@ -32,10 +32,10 @@ Local verification after implementation:
 
 | Check | Result |
 |---|---:|
-| Prerendered HTML routes | 599 |
-| Indexable canonical routes | 594 |
+| Prerendered HTML routes | 656 |
+| Indexable canonical routes | 651 |
 | Noindex routes | 5 |
-| Sitemap URLs | 594 |
+| Sitemap URLs | 651 |
 | Broken internal links | 0 |
 | Orphan indexable pages | 0 |
 | Invalid JSON-LD blocks | 0 |
@@ -44,6 +44,8 @@ Local verification after implementation:
 | Heading-level skips | 0 |
 | Image alt/dimension findings | 0 |
 | Unfinished/template/freshness flags | 0 |
+| Mean main-content words per page | 1,209 |
+| Indexable pages under 600 words | 2 |
 
 The route and sitemap systems now share the same authoritative written-content registries. Previously, many contextual links pointed to written exam-resource pages that were never prerendered. The first extended audit found 617 broken internal references; after route registry and link corrections, the count is zero.
 
@@ -81,7 +83,7 @@ The site has one H1 per page, descriptive landmarks, semantic headings, labelled
 
 ### Inventory classification
 
-The complete URL inventory is saved in `reports/content-inventory.csv`. It contains indexability, word count, inbound and outbound internal links, external-source counts, images, headings, schema types, flags and action. The final automated classification is 594 keep and five noindex. “Keep” means structurally publishable after the implemented fixes, not guaranteed competitive superiority or factual permanence.
+The complete URL inventory is saved in `reports/content-inventory.csv`. It contains indexability, word count, inbound and outbound internal links, external-source counts, images, headings, schema types, flags and action. The final automated classification is 651 keep and five noindex. “Keep” means structurally publishable after the implemented fixes, not guaranteed competitive superiority or factual permanence.
 
 No page is classified as weak only because it is short. Short policy and category pages can fully satisfy a narrow task. Conversely, a long page can still need correction if it promises unavailable products or time-sensitive accuracy without evidence.
 
@@ -182,6 +184,76 @@ State pages link to shared state syllabus, mock-method, previous-paper and study
 - Added editorial/sourcing and correction policies.
 - Recast the faculty page as an organisation-level editorial-process page without invented people or credentials.
 - Corrected all broken internal destinations and linked the state resource hubs into the site graph.
+
+### Content depth pass — every page completed and structured
+
+A second implementation pass took the whole site through a completeness review rather than a length target, on the principle stated in the audit itself: a page is thin when it fails to satisfy its intent, not when it is short. Pages that satisfied their intent in few words were left alone; pages whose intent was only partly answered were completed.
+
+Coverage and outcome:
+
+| Group | Pages | Before | After |
+|---|---:|---:|---:|
+| Telangana state exam records (8 exams × 6 resources) | 48 | 450–570 words | 640–1,040 |
+| Study-material subject hubs | 19 | 326–466 | 817–1,188 |
+| Exam `study-material` and `mock-tests` resource pages (57 exams) | 114 | 411–700 | 660–1,040 |
+| Company, editorial and policy pages | 8 | 187–495 | 671–1,150 |
+| Section landing pages and resource hubs | 14 | 291–560 | 700–1,300 |
+| Mock-test hub, free listing and exam-family pages | 9 | 411–548 | 626–900 |
+
+Site-wide, indexable pages under 600 words fell from 124 to 2, those under 700 words from 291 to 122, and mean main-content length rose to 1,209 words. No page was padded to reach a number: every addition is a distinct question the page had not answered.
+
+What was added, and why each form was chosen:
+
+- **Per-exam decision tables.** Every exam's `study-material` page now carries a section-by-section reading table with an explicit "do not spend time on" column, and every `mock-tests` page carries a diagnostic table a candidate can look their own result up in. These two resource pages previously had no table anywhere in the family, which is the one format those particular questions most want. Written per exam in `src/data/exams/*-depth.js`, never templated.
+- **Derived weighting tables on subject hubs.** Each subject page now assembles what its own written lessons record about the exams that examine them, so the reading order can be checked against the exam a visitor is actually sitting. Derived from the topic registry rather than written, so it cannot drift from the pages it summarises.
+- **Subject FAQs**, rendered visibly and emitted as `FAQPage` only where rendered.
+- **Sourcing and method sections** on the hubs: where official papers and keys are actually published and how release practice differs by conducting body; how to build a topic-frequency table; how to track a notification without living on a notices page; what each stage of a recruitment cycle is.
+- **Trust surface completed.** The editorial policy now documents the page-production sequence and the specific claim formulations the site avoids, with what appears instead. The corrections policy defines what counts as an error versus an editorial disagreement, and how to write an actionable report. The outcomes page states the evidence required before any selection claim is published, and how to read such a claim on any site. The disclaimer adds a "verify this against that document" table separating what is safe to rely on here from what is not.
+
+Editorial constraints held throughout: no vacancy count, cutoff, fee, exam date or mark total for a named cycle; no invented person, testimonial or credential; no predicted score; no claim the product does not support; and no page describing a shortened diagnostic as a full-length paper. Every volatile fact points at the conducting body's notification instead of stating a figure.
+
+New files: `src/data/exams/telangana-depth.js`, `ssc-depth.js`, `banking-depth.js`, `railways-depth.js`, `upsc-defence-depth.js`, `teaching-depth.js`, `entrance-depth.js`; `src/data/hubs-depth.js`; `src/data/study-faqs.js`; `src/data/mock-tests/guides.js`. Merge points are `src/data/exams/index.js`, `src/data/exams/telangana.js` and `src/data/hubs.js`, each of which ignores a depth entry naming a page that does not exist.
+
+### Reading-experience pass — pages redesigned as documents
+
+The content pass above made the pages complete; it also made them long, and the
+existing presentation did not carry that length. Every written section rendered
+through one component styled as a marketing band — full-bleed to 1280px, a 36px
+heading, a tinted background on alternate sections, roughly 88px of padding
+above and below. On a homepage with five short sections that reads well. On an
+exam guide with seven sections and 1,300 words, or a study topic with sixteen
+and 4,400, it produced a page that looked like several landing pages stacked on
+top of each other, with no way to see what was on the page or reach the part the
+visitor came for.
+
+Six specific defects were measured and fixed:
+
+| Defect | Before | After |
+|---|---|---|
+| No wayfinding | 7–16 `<h2>` per page, no contents list except on study topics | A contents rail on 559 pages: sticky beside the text at ≥1080px, a swipeable chip strip below that |
+| Three measures on one page | Prose ~78ch, tables and definition lists full-width at 1232px, headings unconstrained | One column: 624px prose, 864px for tables and figures, one shared left edge |
+| Measure varied by font | `ch` units resolved against whichever font loaded — the same rule gave 620px with Inter and 821px with a fallback | Fixed `rem` measures, identical everywhere |
+| Banner-scale section headings | `clamp(25px, 3vw, 36px)` on every section | 27px document scale with a hairline rule between sections |
+| Navigation at content weight | 24–30 tile links interleaved between text sections | Grouped after the document in quieter "explore" bands |
+| Glass surfaces behind body copy | Translucent panels and backdrop blur over a tinted fixed gradient | Opaque surfaces inside documents; the glass system is kept for landing bands |
+
+Structural changes: a new `src/components/Doc.jsx` wraps a run of sections and
+builds the rail from the sections that actually render — never linking to one
+that does not. Where a page is a single long section, which every exam resource
+page is, it indexes that section's block sub-headings instead; those headings
+gained stable, de-duplicated anchor ids in `src/components/Blocks.jsx`. Two
+study topics carrying a section id of `practice` collided with the practice
+block at the foot of every topic page and were renamed. Exam guides now open
+with their durable facts as an answer-first summary under the hero, replacing
+the "in brief" band that previously sat several hundred words down the page.
+
+Verified in a headless browser at 1280px and 390px across the home page, a
+category hub, a subject hub, a study topic, an exam guide, an exam resource
+page, a state exam page, a mock test and a policy page: no horizontal overflow
+at either width, exactly one `<h1>` per page, a 624px reading column on desktop
+and 342px on a phone, no console errors and no failed requests. Across the
+built site, all 559 contents rails resolve to an element that exists — zero
+broken anchors — and no page has a duplicate id inside `<main>`.
 
 Affected implementation files are listed by `git status`; the primary route/content files are `src/lib/routes.js`, `src/data/hubs.js`, `src/data/site.js`, `src/data/nav.js`, `src/data/states.js`, `src/data/articles.js`, `src/pages/ExamDetail.jsx`, `src/pages/StateExams.jsx`, `src/pages/MockTests.jsx`, `src/pages/MockTest.jsx`, `src/pages/Static.jsx`, `src/pages/Courses.jsx`, `src/pages/CurrentAffairs.jsx`, `src/pages/PreviousYearPapers.jsx`, `src/pages/StudyMaterial.jsx`, `src/components/Footer.jsx`, `src/components/Layout.jsx`, `scripts/prerender.mjs`, `scripts/generate-sitemap.mjs`, `scripts/audit-seo.mjs`, `scripts/audit-content.mjs`, `nginx.conf` and `public/_redirects`.
 

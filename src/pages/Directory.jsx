@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom'
 import { Arrow } from '../components/Icon'
 import { ContentSection } from '../components/Blocks'
+import Doc from '../components/Doc'
 import { PageHero, SectionHead, Tile, canonicalFor, useJsonLd, useSeo } from '../components/ui'
 import { LINK_INDEX, NAV } from '../data/nav'
 import { PREP_SUBLINKS, PREP_TABS } from '../data/site'
@@ -113,8 +114,9 @@ export default function Directory() {
       />
 
       {/* ── The written body, or a generic orientation where none exists ── */}
-      {hub
-        ? hub.sections.map((s, i) => (
+      <Doc extra={hub?.faqs?.length ? [{ id: 'faq', label: 'FAQs' }] : []}>
+        {hub ? (
+          hub.sections.map((s) => (
             <ContentSection
               key={s.id}
               id={s.id}
@@ -122,13 +124,15 @@ export default function Directory() {
               heading={s.heading}
               intro={s.intro}
               blocks={s.blocks}
-              background={i % 2 === 1}
             />
           ))
-        : <UnwrittenHub label={label} section={section} />}
+        ) : (
+          <UnwrittenHub label={label} section={section} />
+        )}
+      </Doc>
 
       {tab && (
-        <section className="s">
+        <section className="s explore">
           <div className="wrap">
             <SectionHead
               eyebrow="Exams in this category"
@@ -156,7 +160,7 @@ export default function Directory() {
       )}
 
       {siblings.length > 0 && (
-        <section className={`s${tab ? ' s--bg' : ''}`}>
+        <section className="s explore">
           <div className="wrap">
             <SectionHead
               eyebrow="Also in this group"
@@ -172,7 +176,7 @@ export default function Directory() {
       )}
 
       {section && (
-        <section className={`s${siblings.length && !tab ? ' s--bg' : ''}`}>
+        <section className="s explore">
           <div className="wrap">
             <SectionHead eyebrow="Explore" title={`Everything under ${section.title}`} />
             <div className="lcols" style={{ '--lcols': 3 }}>

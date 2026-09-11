@@ -22,6 +22,7 @@
  */
 
 import UPDATE_HUBS from './hubs-updates'
+import HUB_DEPTH from './hubs-depth'
 
 const STATE_RESOURCE_HUBS = {
   '/government-exams/state/syllabus/': {
@@ -2427,6 +2428,19 @@ const HUBS = {
       },
     ],
   },
+}
+
+/*
+ * The extra sections written in hubs-depth.js are appended onto the hub they
+ * name, and their FAQs are used only where the hub has none of its own, so
+ * nothing written above is ever replaced. A depth entry for a path with no
+ * hub is ignored rather than creating a page with no heading.
+ */
+for (const [path, extra] of Object.entries(HUB_DEPTH)) {
+  const hub = HUBS[path]
+  if (!hub) continue
+  if (extra.sections) hub.sections = [...hub.sections, ...extra.sections]
+  if (extra.faqs && !hub.faqs) hub.faqs = extra.faqs
 }
 
 /** Written hub content for a path, or undefined if none exists yet. */

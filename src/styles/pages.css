@@ -68,7 +68,7 @@
   font-size:16.5px;
   line-height:1.7;
   color:var(--mu);
-  max-width:70ch;
+  max-width:44rem;
 }
 .phero__cta{
   display:flex;
@@ -813,7 +813,7 @@
 
 .sm-p{
   margin:0 0 18px;
-  max-width:78ch;
+  max-width:44rem;
   font-size:16.5px;
   line-height:1.78;
   color:var(--tx);
@@ -832,31 +832,37 @@
 }
 .sm-defs>div{
   display:grid;
-  grid-template-columns:250px 1fr;
-  gap:22px;
-  padding:16px 24px;
+  /* The term column sizes to its content within a band rather than being
+     pinned at a width that leaves short terms stranded and wraps long
+     ones to four lines. */
+  grid-template-columns:minmax(140px,215px) 1fr;
+  gap:8px 26px;
+  padding:16px 22px;
   border-bottom:1px solid var(--bd);
 }
 .sm-defs>div:last-child{border-bottom:0}
-.sm-defs>div:hover{background:var(--bg)}
+.sm-defs>div:nth-child(even){background:#FAFBFC}
+.sm-defs>div:hover{background:var(--y-soft)}
 .sm-defs dt{
   font-size:15px;
-  font-weight:800;
+  font-weight:750;
+  line-height:1.5;
   color:var(--k);
   letter-spacing:-.2px;
 }
 .sm-defs dd{
   margin:0;
-  font-size:15px;
-  line-height:1.68;
-  color:var(--mu);
+  font-size:15.5px;
+  line-height:1.7;
+  color:var(--tx);
+  max-width:38rem;
 }
 
 /* ── Bulleted and numbered points ─────────────────────────────── */
 .sm-list,.sm-steps{
   margin:0;
   padding:0 0 0 4px;
-  max-width:78ch;
+  max-width:44rem;
   display:grid;
   gap:11px;
   list-style:none;
@@ -1098,4 +1104,301 @@
   letter-spacing:.02em;
   font-variant-numeric:tabular-nums;
   color:var(--k);
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   DOCUMENT READING LAYOUT
+   ------------------------------------------------------------------
+   Applied by src/components/Doc.jsx. See that file for why it exists.
+
+   The rules below only take effect inside `.doc__body`, so a section
+   renders as a full-bleed band on the homepage and as a document
+   section on a guide, from exactly the same markup. Nothing here
+   changes any component's JSX.
+   ══════════════════════════════════════════════════════════════════ */
+
+.doc-shell{
+  /* Documents open closer to the hero than a band-styled section does:
+     the reader has just read the lead and wants the first heading. */
+  padding-top:clamp(30px,3.2vw,46px);
+  padding-bottom:clamp(34px,3.6vw,54px);
+}
+
+.doc{
+  /* One column by default; the rail moves alongside on wide screens. */
+  --doc-w:54rem;      /* 864px */
+  --measure:39rem;    /* ~620px — roughly 70 characters of Inter at 16.5px */
+}
+@media(min-width:1080px){
+  .doc:not(.doc--plain){
+    display:grid;
+    grid-template-columns:230px minmax(0,1fr);
+    gap:60px;
+    align-items:start;
+  }
+}
+
+/* ── The contents rail ────────────────────────────────────────── */
+.doc__toc{
+  margin:0 0 30px;
+  padding:16px 18px;
+  background:var(--bg);
+  border:1px solid var(--bd);
+  border-radius:var(--r-m);
+}
+.doc__toc-t{
+  margin:0 0 10px;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  color:var(--y-deep);
+}
+.doc__toc ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+  /* On a phone the rail is a swipeable strip of chips rather than a
+     list you have to scroll past before reaching the article. */
+  display:flex;
+  gap:8px;
+  overflow-x:auto;
+  scrollbar-width:none;
+  -webkit-overflow-scrolling:touch;
+}
+.doc__toc ul::-webkit-scrollbar{display:none}
+.doc__toc li{flex:none}
+.doc__toc a{
+  display:block;
+  padding:8px 13px;
+  background:var(--w);
+  border:1px solid var(--bd);
+  border-radius:99px;
+  font-size:13px;
+  font-weight:650;
+  line-height:1.35;
+  color:var(--tx);
+  white-space:nowrap;
+}
+.doc__toc a:hover{border-color:var(--k);color:var(--k)}
+
+@media(min-width:1080px){
+  .doc:not(.doc--plain) .doc__toc{
+    position:sticky;
+    /* Clears the sticky header. */
+    top:96px;
+    margin:0;
+    padding:0 0 0 16px;
+    background:none;
+    border:0;
+    border-left:1px solid var(--bd);
+    max-height:calc(100vh - 130px);
+    overflow-y:auto;
+  }
+  .doc__toc ul{display:block;overflow:visible}
+  .doc__toc li{margin-top:2px}
+  .doc__toc a{
+    padding:6px 0 6px 12px;
+    margin-left:-17px;
+    background:none;
+    border:0;
+    border-left:2px solid transparent;
+    border-radius:0;
+    font-size:13.5px;
+    font-weight:600;
+    color:var(--mu);
+    white-space:normal;
+  }
+  .doc__toc a:hover{color:var(--k);border-left-color:var(--y)}
+}
+
+/* ── The article column ───────────────────────────────────────── */
+.doc__body{
+  min-width:0;
+  max-width:var(--doc-w);
+}
+
+/*
+ * Undo the band styling. A section inside a document is a heading and
+ * its content, separated from the next by a rule — not a coloured
+ * panel with its own padding and its own container.
+ */
+.doc__body .s{padding:0;background:none}
+.doc__body .s .wrap{max-width:none;padding-left:0;padding-right:0}
+.doc__body>.s+.s,
+.doc__body>section+section{
+  margin-top:clamp(32px,3.4vw,46px);
+  padding-top:clamp(32px,3.4vw,46px);
+  border-top:1px solid var(--bd);
+}
+
+/* Headings drop from banner scale to document scale. */
+.doc__body h2.h{
+  font-size:clamp(21px,2.15vw,27px);
+  letter-spacing:-.5px;
+  line-height:1.24;
+  max-width:30rem;
+}
+.doc__body .shead{max-width:var(--measure);margin-bottom:22px}
+.doc__body .eyebrow{margin-bottom:8px}
+.doc__body .lead{font-size:16px;line-height:1.7;max-width:var(--measure);margin-top:11px}
+.doc__body .lead+.lead{margin-top:12px}
+.doc__body .s__sub{font-size:17px;margin-bottom:12px}
+.doc__body .s__block{margin-top:24px}
+.doc__body .s__block:first-of-type{margin-top:20px}
+
+/* Every prose block shares one measure and one left edge. */
+.doc__body .sm-p,
+.doc__body .sm-list,
+.doc__body .sm-steps{max-width:var(--measure)}
+.doc__body .sm-p{font-size:16.5px;line-height:1.75}
+.doc__body .sm-list,.doc__body .sm-steps{gap:13px}
+.doc__body .sm-list li,.doc__body .sm-steps li{font-size:16px;line-height:1.72}
+
+/* Tables and definition lists are figures: same left edge, allowed to
+   run wider than the prose because their content is tabular. */
+.doc__body .ctable-wrap,
+.doc__body .sm-defs,
+.doc__body .source-note,
+.doc__body .sm-formulas{max-width:100%}
+
+/* ── Anchor targets clear the sticky header ───────────────────── */
+.doc__body .s[id],
+.doc__body section[id]{scroll-margin-top:92px}
+
+/* ── Callout: the caveat or source note ───────────────────────── */
+.doc__body .source-note{
+  margin-top:26px;
+  padding:18px 22px;
+  background:var(--y-soft);
+  border:1px solid var(--y-line);
+  border-left:4px solid var(--y);
+  border-radius:0 var(--r-m) var(--r-m) 0;
+}
+.doc__body .source-note h3{
+  font-size:14.5px;
+  font-weight:800;
+  letter-spacing:-.2px;
+  margin-bottom:7px;
+}
+.doc__body .source-note p{font-size:15.5px;line-height:1.7;color:var(--tx);max-width:38rem}
+
+/* ── Descriptive link rows read as a next-step list ───────────── */
+.doc__body .sm-links{
+  gap:8px;
+  flex-direction:column;
+  align-items:flex-start;
+  padding:16px 20px;
+  background:var(--bg);
+  border-radius:var(--r-m);
+  max-width:var(--measure);
+}
+.doc__body .sm-links a{font-size:15px}
+.doc__body .sm-links a:hover{color:var(--y-deep)}
+
+/* ══ The short version — answer-first summary under a page hero ══ */
+.keyp{
+  margin:0 0 34px;
+  padding:20px 24px;
+  background:var(--y-soft);
+  border:1px solid var(--y-line);
+  border-radius:var(--r-m);
+  max-width:var(--doc-w);
+}
+.keyp__t{
+  margin:0 0 12px;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  color:var(--y-deep);
+}
+.keyp ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.keyp li{
+  position:relative;
+  padding-left:22px;
+  font-size:15.5px;
+  line-height:1.65;
+  color:var(--tx);
+  max-width:42rem;
+}
+.keyp li::before{
+  content:"";
+  position:absolute;
+  left:4px;
+  top:9px;
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:var(--y-deep);
+}
+.keyp b{font-weight:750;color:var(--k)}
+.keyp span{color:var(--mu)}
+
+/* ══ Explore band — the tile grids that follow a document ══════ */
+/*
+ * Card grids used to sit between text sections at the same visual
+ * weight as the writing, which made a 1,300-word guide read as a page
+ * of links interrupted by paragraphs. Grouped after the document and
+ * quietened down, they become what they are: navigation.
+ */
+.explore{background:var(--bg);border-top:1px solid var(--bd)}
+.explore .shead{margin-bottom:26px}
+.explore h2.h{font-size:clamp(19px,1.8vw,23px);letter-spacing:-.4px}
+.explore .lead{font-size:15px;margin-top:8px}
+.explore+.explore{border-top:0;padding-top:0}
+
+/* ── Narrow screens ───────────────────────────────────────────── */
+@media(max-width:860px){
+  .doc__body .ctable-wrap{border-radius:var(--r-m)}
+  .doc__toc{margin-bottom:24px;padding:14px}
+  .keyp{padding:18px 18px}
+}
+
+/* ── FAQs read at the document measure ───────────────────────── */
+.faq{max-width:54rem}
+.faq .a{max-width:42rem;font-size:15.5px;color:var(--tx)}
+
+/* ══ Documents sit on a calm surface ═══════════════════════════
+   The glass system — translucent panels, backdrop blur, a tinted
+   fixed gradient behind everything — is right for the landing
+   bands it was designed for. Behind 900 words of body copy it
+   lowers contrast exactly where contrast matters most, so inside
+   a document the surfaces go opaque and the blur is dropped. */
+.doc-shell{background:var(--w)}
+.doc__body .ctable-wrap,
+.doc__body .sm-defs{
+  background:var(--w) !important;
+  border:1px solid var(--bd) !important;
+  box-shadow:none !important;
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+}
+.doc__body .source-note{
+  background:var(--y-soft) !important;
+  box-shadow:none;
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+}
+.doc__body .sm-eg,
+.doc__body .sm-formulas li{
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+}
+
+/* The chip strip scrolls on a phone; a fade tells the reader so,
+   rather than leaving a chip clipped mid-word as if it were broken. */
+@media(max-width:1079px){
+  .doc__toc{position:relative;overflow:hidden}
+  .doc__toc ul{scroll-padding-right:18px}
+  .doc__toc::after{
+    content:"";
+    position:absolute;
+    right:0;
+    bottom:14px;
+    width:34px;
+    height:36px;
+    pointer-events:none;
+    background:linear-gradient(90deg,rgba(247,248,250,0),var(--bg) 72%);
+  }
 }

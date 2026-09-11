@@ -486,6 +486,62 @@ const LEGAL = {
         ],
       },
       {
+        id: 'verify',
+        heading: 'What to verify before you act, and where',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Some things on this site are stable enough to rely on and some are not, and the difference is worth stating plainly rather than leaving to a general warning. The table below says which is which and names the document that actually settles each one.',
+          },
+          {
+            type: 'table',
+            head: ['Before you act on', 'Check it against', 'Why'],
+            rows: [
+              [
+                'Eligibility — age, qualification, category, domicile',
+                'The current notification for that recruitment, including its reckoning date.',
+                'Eligibility is decided at document verification against conditions as they stood on a specified date. A claim cannot be repaired afterwards.',
+              ],
+              [
+                'Application and fee deadlines',
+                'The conducting body’s own announcement and its notices page.',
+                'Windows are occasionally extended and never reliably so, and any aggregator is one step behind the source.',
+              ],
+              [
+                'Paper structure, marking and negative marking',
+                'The pattern clause of the current notification, plus any corrigendum.',
+                'Structures are revised between cycles, and an attempt strategy built on a superseded rule is a self-inflicted loss.',
+              ],
+              [
+                'Syllabus scope',
+                'The syllabus published with the notification.',
+                'Descriptions elsewhere, including here, are interpretations of that document rather than replacements for it.',
+              ],
+              [
+                'Physical, medical and skill standards',
+                'The standards set out in the notification for your own post and entry.',
+                'They differ by post, by entry and by cycle, and they take months of preparation that cannot be arranged after a result.',
+              ],
+              [
+                'Results, keys and cutoffs',
+                'The conducting body’s published result and final answer key.',
+                'A provisional key is not the final one, and a cutoff is an outcome of a cycle rather than a figure that can be predicted.',
+              ],
+              [
+                'Concepts, methods and preparation advice',
+                'Nothing further — this is what the site is for.',
+                'Stable subject material and preparation method do not change between cycles, which is why they are written here in full.',
+              ],
+            ],
+          },
+          {
+            type: 'note',
+            title: 'Where this site and an official document disagree',
+            text: 'The official document is correct and this site is wrong, without exception. If you find such a disagreement, it is a factual error on our part rather than a difference of opinion: please report it with the page URL and, if you have it, a link to the official source. It will be checked against that source and corrected on every page carrying the same claim.',
+          },
+        ],
+      },
+      {
         id: 'liability',
         heading: 'Limitation of liability',
         blocks: [

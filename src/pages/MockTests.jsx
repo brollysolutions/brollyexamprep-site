@@ -1,7 +1,10 @@
 import { Link, useLocation } from 'react-router-dom'
+import { ContentSection } from '../components/Blocks'
+import Doc from '../components/Doc'
 import { PageHero, SectionHead, canonicalFor, useSeo } from '../components/ui'
 import { FREE_MOCKS } from '../data/site'
 import { TESTS } from '../data/mock-tests'
+import { getFamilyGuide } from '../data/mock-tests/guides'
 import { Analytics, FaqSection, FinalCta } from './home/sections'
 import { Arrow } from '../components/Icon'
 
@@ -56,6 +59,7 @@ export default function MockTests({ familySlug = null }) {
   const isFree = useLocation().pathname.startsWith('/mock-tests/free')
   const family = familySlug ? FAMILIES[familySlug] : null
   const familyTests = family ? TESTS.filter((test) => test.cat === family) : []
+  const familyGuide = familySlug ? getFamilyGuide(familySlug) : null
 
   useSeo(
     family
@@ -139,7 +143,7 @@ export default function MockTests({ familySlug = null }) {
         </div>
       </section>
 
-      <section className="s s--bg">
+      <section className="s explore">
         <div className="wrap">
           <SectionHead
             eyebrow="Find by exam"
@@ -164,6 +168,96 @@ export default function MockTests({ familySlug = null }) {
           </div>
         </div>
       </section>
+
+      {/* Family pages get advice about that family of examinations; the hub
+          and the free listing get the method that applies to any diagnostic. */}
+      <Doc extra={[{ id: 'faq', label: 'FAQs' }]}>
+      {familyGuide ? (
+        <ContentSection
+          id="family-guidance"
+          eyebrow="Method"
+          heading={familyGuide.heading}
+          intro={familyGuide.intro}
+          blocks={familyGuide.blocks}
+        />
+      ) : (
+        <>
+          <ContentSection
+            id="what-a-diagnostic-is"
+            eyebrow="What these are"
+            heading="What a shortened diagnostic can and cannot tell you"
+            intro={[
+              'Every test listed here is deliberately shorter than the paper it is modelled on, and each card states its real question count and duration before you start. That is a design decision rather than an omission: a twenty-minute set can be sat inside a study slot, which means it gets sat weekly instead of monthly.',
+              'The trade-off is that a shortened set measures some things well and others not at all. Knowing which is which stops a score being read as something it is not.',
+            ]}
+            blocks={[
+              {
+                type: 'table',
+                head: ['What it measures well', 'What it cannot measure'],
+                rows: [
+                  [
+                    'Accuracy per section, and which section is weakest.',
+                    'Endurance across a full paper, which only a full-length sitting exposes.',
+                  ],
+                  [
+                    'Whether your errors are knowledge, method, misreading or time.',
+                    'How you perform in the last twenty minutes of a long paper, when most candidates decline.',
+                  ],
+                  [
+                    'Guessing discipline under the exam’s own marking rule.',
+                    'Your position relative to other candidates, which depends on the field in a given cycle.',
+                  ],
+                  [
+                    'Change in your own performance over weeks, which is the useful signal.',
+                    'A cutoff, which is the score of the last candidate selected and is not knowable in advance.',
+                  ],
+                ],
+              },
+              {
+                type: 'note',
+                title: 'Use full official papers for the endurance half',
+                text: 'A shortened diagnostic and a full past paper do different jobs, and a preparation needs both. Use these sets weekly for measurement and correction, and sit a full-length official paper to time at least every few weeks to rehearse the thing a short set cannot reproduce.',
+              },
+            ]}
+          />
+
+          <ContentSection
+            id="how-to-review"
+            eyebrow="After the test"
+            heading="Spend longer on the review than on the test"
+            background
+            intro="The attempt produces the data; the review is where the marks come from. Candidates who take many tests and review none plateau, and the plateau is usually mistaken for a ceiling."
+            blocks={[
+              {
+                type: 'steps',
+                items: [
+                  {
+                    title: 'Sort every loss by cause before looking at any topic.',
+                    text: 'Did not know, knew and misread, knew and used the wrong method, knew and slipped in calculation, ran out of time. Five causes, five different fixes, and only the first is solved by studying.',
+                  },
+                  {
+                    title: 'Add every correct guess to the list.',
+                    text: 'A lucky mark is unresolved knowledge. It will not be lucky twice.',
+                  },
+                  {
+                    title: 'Pick three corrections, not thirty.',
+                    text: 'The three highest-frequency causes. A correction list longer than three is a reading list, and it will not be done.',
+                  },
+                  {
+                    title: 'Work those three before the next full test.',
+                    text: 'A test taken before the correction has had time to change anything measures the same thing again.',
+                  },
+                  {
+                    title: 'Re-test after two weeks, not two days.',
+                    text: 'And compare the causes rather than the scores. A score can move on luck; a cause disappearing cannot.',
+                  },
+                ],
+              },
+            ]}
+          />
+        </>
+      )}
+      </Doc>
 
       <Analytics />
       <FaqSection items={MOCK_FAQS} title="Mock Tests — FAQs" background={false} />

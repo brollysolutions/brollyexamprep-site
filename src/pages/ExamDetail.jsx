@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom'
 import Icon, { Arrow } from '../components/Icon'
-import Block, { ContentSection } from '../components/Blocks'
+import { ContentSection } from '../components/Blocks'
+import Doc, { KeyPoints } from '../components/Doc'
 import { PageHero, SectionHead, Tile, canonicalFor, useJsonLd, useSeo } from '../components/ui'
 import { LINK_INDEX } from '../data/nav'
 import { PREP_SUBLINKS } from '../data/site'
@@ -116,64 +117,113 @@ export default function ExamDetail() {
         }
       />
 
-      {/* ── The base page: what the exam is, quick facts, the stages ── */}
-      {!resource && exam && (
-        <>
-          <ContentSection
-            id="overview"
-            eyebrow="Overview"
-            heading={`What ${exam.name} is, and who it suits`}
-            blocks={exam.overview}
-          />
+      {/*
+        The document. On a base page the durable facts move up under the hero
+        as the answer-first summary, so a reader gets them before the prose
+        rather than in a band halfway down the page.
+      */}
+      <Doc extra={faqs ? [{ id: 'faq', label: 'FAQs' }] : []}>
+        {!resource && exam && (
+          <>
+            <KeyPoints title={`${exam.name} in brief`} items={quickPoints(exam)} />
 
-          <section className="s s--bg">
-            <div className="wrap">
-              <SectionHead
-                eyebrow="At a glance"
-                title={`${exam.name} in brief`}
-                lead="The durable facts. Anything that changes between cycles — dates, vacancies, cutoffs — belongs in the official notification rather than here."
-              />
-              <Block block={{ type: 'defs', items: exam.quickFacts }} />
-            </div>
-          </section>
+            {/*
+              Cycle status before the evergreen prose. A reader arriving from
+              "<exam> notification 2026" wants to know whether anything is open
+              before they want to know what the exam is. Records that carry no
+              `updates` array skip this and read exactly as they did before —
+              ContentSection returns null for an empty block list, and Doc's
+              contents rail is built from the sections that actually render.
+            */}
+            <ContentSection
+              id="updates"
+              eyebrow="Notification"
+              heading={`${exam.name} notification and key dates`}
+              blocks={exam.updates || []}
+            />
 
-          <section className="s">
-            <div className="wrap">
-              <SectionHead
-                eyebrow="Selection process"
-                title={`How ${exam.name} selection works`}
-                lead="Each stage in order, and what it actually tests."
-              />
-              <Block
-                block={{
+            <ContentSection
+              id="overview"
+              eyebrow="Overview"
+              heading={`What ${exam.name} is, and who it suits`}
+              blocks={exam.overview}
+            />
+
+            <ContentSection
+              id="eligibility"
+              eyebrow="Eligibility"
+              heading={`Who can apply for ${exam.name}`}
+              blocks={exam.eligibility || []}
+            />
+
+            <ContentSection
+              id="selection"
+              eyebrow="Selection process"
+              heading={`How ${exam.name} selection works`}
+              intro="Each stage in order, and what it actually tests."
+              blocks={[
+                {
                   type: 'table',
+                  caption:
+                    'Stages change between cycles. Confirm the structure in the notification for the cycle you are sitting.',
                   head: ['Stage', 'Format', 'What it involves'],
                   rows: exam.stages.map((stage) => [stage.name, stage.mode, stage.detail]),
-                }}
-              />
-            </div>
-          </section>
-        </>
-      )}
+                },
+              ]}
+            />
 
-      {/* ── A resource sub-page: its written body ── */}
-      {resource && written && (
-        <ContentSection id={resource} eyebrow={eyebrow} heading={`${examName} — ${heading}`} blocks={written.blocks} />
-      )}
+            {/* The marks-and-minutes summary. The full treatment stays on the
+                exam-pattern resource page; this is what fits on one screen. */}
+            <ContentSection
+              id="pattern"
+              eyebrow="Exam pattern"
+              heading={`${exam.name} exam pattern and marking`}
+              blocks={exam.pattern || []}
+            />
 
-      {/* ── Nothing written for this exam yet ── */}
-      {!written && (!exam || resource) && (
-        <UnwrittenBody
-          examName={examName}
-          categoryName={categoryName}
-          categoryPath={categoryPath}
-          resource={resource}
-          resourceLabel={resourceLabel}
-          base={base}
-        />
-      )}
+            <ContentSection
+              id="study-plan"
+              eyebrow="Study plan"
+              heading={`How to prepare for ${exam.name}`}
+              blocks={exam.studyPlan || []}
+            />
 
-      <section className={`s${resource ? ' s--bg' : ''}`}>
+            {/* Last section in the document: the notices every dated fact above
+                was read off, so a reader can check the page against the source. */}
+            <ContentSection
+              id="sources"
+              eyebrow="Sources"
+              heading="Official notifications and sources"
+              blocks={exam.sources || []}
+            />
+          </>
+        )}
+
+        {/* ── A resource sub-page: its written body ── */}
+        {resource && written && (
+          <ContentSection
+            id={resource}
+            eyebrow={eyebrow}
+            heading={`${examName} — ${heading}`}
+            blocks={written.blocks}
+          />
+        )}
+
+        {/* ── Nothing written for this exam yet ── */}
+        {!written && (!exam || resource) && (
+          <UnwrittenBody
+            examName={examName}
+            categoryName={categoryName}
+            categoryPath={categoryPath}
+            resource={resource}
+            resourceLabel={resourceLabel}
+            base={base}
+          />
+        )}
+      </Doc>
+
+      {/* ── Navigation, grouped after the document rather than inside it ── */}
+      <section className="s explore">
         <div className="wrap">
           <SectionHead
             eyebrow="Exam resources"
@@ -194,7 +244,7 @@ export default function ExamDetail() {
         </div>
       </section>
 
-      <section className={`s${resource ? '' : ' s--bg'}`}>
+      <section className="s explore">
         <div className="wrap">
           <SectionHead eyebrow="Related" title={`More ${categoryName} preparation`} />
           <div className="g4">
@@ -224,6 +274,19 @@ export default function ExamDetail() {
       />
     </>
   )
+}
+
+/**
+ * The durable facts as an answer-first summary.
+ *
+ * These used to render as a definition-list band partway down the page,
+ * which put the one thing most visitors arrive for — who conducts it, what
+ * the stages are, what qualification it needs — below several hundred words
+ * of prose. As a summary under the hero they are read first, which is where
+ * they belong.
+ */
+function quickPoints(exam) {
+  return exam.quickFacts.map(([label, value]) => ({ text: label, note: value }))
 }
 
 /* ── Head ─────────────────────────────────────────────────────── */

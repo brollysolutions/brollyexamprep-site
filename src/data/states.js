@@ -51,7 +51,7 @@ const TELANGANA = {
       {
         name: 'TGPSC Group 1',
         desc: 'Senior administrative and police posts including Deputy Collector and DSP.',
-        stages: 'Prelims · Mains · Interview',
+        stages: 'Prelims · Descriptive Mains',
         to: '/government-exams/state/telangana/tgpsc-group-1/',
       },
       {
@@ -116,7 +116,7 @@ const TELANGANA = {
       [
         'Group 1',
         'Bachelor’s degree',
-        'Prelims, descriptive Mains, interview',
+        'Prelims (screening), then six descriptive Mains papers — no interview under the current scheme',
         'Deputy Collector, DSP, Commercial Tax Officer and other senior state-cadre posts',
       ],
       [
@@ -178,7 +178,10 @@ const TELANGANA = {
 
   sources: [
     { label: 'Telangana Public Service Commission (TGPSC)', href: 'https://websitenew.tgpsc.gov.in/' },
-    { label: 'TS Level Police Recruitment Board (TSLPRB)', href: 'https://www.tslprb.in/' },
+    // tslprb.in is the board's old domain. It still redirects here, but its
+    // certificate no longer validates, so linking it hands some readers a
+    // security warning on the way to a page that has moved anyway.
+    { label: 'Telangana Police Recruitment Board (TGPRB)', href: 'https://www.tgprb.in/' },
     { label: 'Telangana School Education Department', href: 'https://schooledu.telangana.gov.in/' },
   ],
 }
@@ -1349,7 +1352,10 @@ export function stateFaqs(state) {
     },
     {
       q: `How different is ${senior} preparation from ${junior}?`,
-      a: `The reading overlaps a great deal — history, polity, economy, geography, science and ${state.name} state-specific topics. The difference is the descriptive Mains and the interview in ${senior}, which need writing practice on top of the same syllabus.`,
+      // Deliberately does not name an interview: most state commissions hold
+      // one at this level, but not all do, and the stage list belongs on each
+      // exam's own page where it can be checked against that notification.
+      a: `The reading overlaps a great deal — history, polity, economy, geography, science and ${state.name} state-specific topics. The difference is the descriptive Mains in ${senior}: the same ground, answered in prose against a clock, which needs writing practice rather than more reading. Check the ${senior} page for the stages that follow it, because those vary between commissions.`,
     },
   ]
 }

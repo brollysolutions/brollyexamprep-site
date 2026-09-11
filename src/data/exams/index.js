@@ -59,6 +59,13 @@ import pgResearch from './pg-research'
 import international from './international'
 import telangana from './telangana'
 
+import sscDepth from './ssc-depth'
+import bankingDepth from './banking-depth'
+import railwaysDepth from './railways-depth'
+import upscDefenceDepth from './upsc-defence-depth'
+import teachingDepth from './teaching-depth'
+import entranceDepth from './entrance-depth'
+
 /** The six sub-pages every exam gets, in the order they are shown. */
 export const RESOURCE_SLUGS = [
   'syllabus',
@@ -91,6 +98,41 @@ const FAMILIES = [
 export const EXAMS = new Map()
 for (const family of FAMILIES) {
   for (const exam of family) EXAMS.set(exam.path, exam)
+}
+
+/*
+ * ── Resource depth ──────────────────────────────────────────────
+ *
+ * The `study-material` and `mock-tests` pages were written across every family
+ * as prose, lists and notes, and carried no table — which left them the two
+ * lightest of the six resource pages and missing the format those particular
+ * questions most want: a reading list you can scan by section, and a
+ * diagnostic you can look your own result up in.
+ *
+ * Those tables are written per exam in the *-depth files rather than threaded
+ * back through record files that already run to thousands of lines. Each depth
+ * file maps exam slug → resource slug → blocks, and the blocks are appended
+ * after whatever the record already carries.
+ *
+ * A depth entry naming a slug or a resource that does not exist is ignored,
+ * so a typo cannot silently produce a page with a table and no context.
+ * (Telangana merges its own depth file inside telangana.js, because that one
+ * adds whole sections across all six resources rather than one table across
+ * two.)
+ */
+const RESOURCE_DEPTH = [sscDepth, bankingDepth, railwaysDepth, upscDefenceDepth, teachingDepth, entranceDepth]
+
+const EXAMS_BY_SLUG = new Map([...EXAMS.values()].map((exam) => [exam.slug, exam]))
+
+for (const depth of RESOURCE_DEPTH) {
+  for (const [slug, resources] of Object.entries(depth)) {
+    const exam = EXAMS_BY_SLUG.get(slug)
+    if (!exam) continue
+    for (const [resource, blocks] of Object.entries(resources)) {
+      const written = exam.resources?.[resource]
+      if (written) written.blocks = [...written.blocks, ...blocks]
+    }
+  }
 }
 
 /** The written record for a base path, or undefined if none exists yet. */

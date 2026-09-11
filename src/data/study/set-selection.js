@@ -34,7 +34,7 @@ export default {
     { icon: 'bell', title: 'Warning signs', sub: 'What to avoid', href: '#warnings' },
     { icon: 'clock', title: 'Sequencing and time', sub: 'Order and budget', href: '#sequencing' },
     { icon: 'target', title: 'Partial attempts', sub: 'When half a set is worth it', href: '#partial' },
-    { icon: 'refresh', title: 'Building the skill', sub: 'What to do in mocks', href: '#practice' },
+    { icon: 'refresh', title: 'Building the skill', sub: 'What to do in mocks', href: '#building-the-skill' },
     { icon: 'layers', title: 'Solved examples', sub: 'Eight decisions worked through', href: '#examples' },
   ],
 
@@ -271,7 +271,7 @@ export default {
 
     /* ── 7 ─────────────────────────────────────────────────────── */
     {
-      id: 'practice',
+      id: 'building-the-skill',
       heading: 'Building the skill',
       eyebrow: 'What to do in mocks',
       intro:

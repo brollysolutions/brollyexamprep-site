@@ -1,6 +1,6 @@
 # SEO, GEO, AEO and AIO deliverables
 
-Generated and verified on 9 September 2026.
+Generated and verified on 9 September 2026. Content-completeness pass and re-verification: 10 September 2026 (656 rendered routes, 651 indexable, mean 1,209 main-content words per page).
 
 - [Executive audit and implementation report](./SEO-GEO-AIO-AUDIT.md)
 - [Rendered URL and content inventory](./content-inventory.csv)
