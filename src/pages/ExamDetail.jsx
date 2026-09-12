@@ -111,7 +111,7 @@ export default function ExamDetail() {
     <>
       <PageHero
         eyebrow={`${categoryName} · ${rootName}`}
-        title={resourceLabel ? `${examName} ${resourceLabel}` : examName}
+        title={resourceLabel ? `${examName} ${resourceLabel}` : exam?.heroTitle || examName}
         lead={heroLead({ exam, resource, resourceLabel, examName, written })}
         trail={trail}
         actions={

@@ -2753,6 +2753,7 @@ const mba = [
     slug: 'gmat',
     path: '/entrance-exams/mba/gmat/',
     name: 'GMAT',
+    heroTitle: 'Online GMAT Coaching and the GMAT Guide 2026',
     fullName: 'Graduate Management Admission Test',
     authority: 'Graduate Management Admission Council (GMAC)',
     official: 'mba.com',
@@ -2760,7 +2761,7 @@ const mba = [
     metaDescription:
       'Online GMAT coaching explained, with the full GMAT guide — three 45-minute sections, 205–805 scoring, Data Insights, US$275 fee, retake rules.',
     lead: [
-      'The GMAT is the international entrance test for graduate management programmes, used by business schools worldwide and by a growing number of Indian institutions for their executive and international programmes. Its current Focus Edition has three sections — Quantitative Reasoning, Verbal Reasoning and Data Insights — of forty-five minutes each.',
+      'Looking for online GMAT coaching? Know the three-section test first, then judge any course against it. The GMAT is the international entrance test for graduate management programmes, used by business schools worldwide and by a growing number of Indian institutions for their executive and international programmes. Its current Focus Edition has three sections — Quantitative Reasoning, Verbal Reasoning and Data Insights — of forty-five minutes each.',
       'Two features make it unlike the Indian management entrances. It is computer adaptive, so the difficulty of each question depends on how you have answered the previous ones, and it allows you to review and edit a limited number of answers within a section before it closes. Both change strategy in ways that are worth understanding before you start preparing.',
     ],
     quickFacts: [

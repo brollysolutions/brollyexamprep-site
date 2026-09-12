@@ -28,6 +28,7 @@ const international = [
     slug: 'gre',
     path: '/entrance-exams/international/gre/',
     name: 'GRE',
+    heroTitle: 'Online GRE Coaching and the GRE Guide 2026',
     fullName: 'Graduate Record Examinations General Test',
     authority: 'Educational Testing Service (ETS)',
     official: 'ets.org/gre',
@@ -35,7 +36,7 @@ const international = [
     metaDescription:
       'Online GRE coaching explained, with the full GRE guide — under-two-hour format, 130–170 scoring, US$249 fee, 8–10 day results, and what a course should include.',
     lead: [
-      'The GRE General Test is used for admission to graduate programmes worldwide, across the sciences, engineering, humanities and social sciences, and by a growing number of business schools as an alternative to the GMAT. It tests verbal reasoning, quantitative reasoning and analytical writing.',
+      'Looking for online GRE coaching? Know the shorter test first, then judge any course against it. The GRE General Test is used for admission to graduate programmes worldwide, across the sciences, engineering, humanities and social sciences, and by a growing number of business schools as an alternative to the GMAT. It tests verbal reasoning, quantitative reasoning and analytical writing.',
       'Its shortened format runs under two hours and is section-adaptive: your performance in the first section of each type determines the difficulty of the second. That is a different mechanism from the question-by-question adaptation the GMAT uses, and it has its own strategic consequence — the first section of each pair carries disproportionate weight.',
     ],
     quickFacts: [
@@ -593,6 +594,7 @@ const international = [
     slug: 'ielts',
     path: '/entrance-exams/international/ielts/',
     name: 'IELTS',
+    heroTitle: 'Online IELTS Coaching, Online IELTS Classes and the IELTS Guide 2026',
     fullName: 'International English Language Testing System',
     authority: 'British Council, IDP: IELTS Australia and Cambridge',
     official: 'ielts.org',
@@ -600,7 +602,7 @@ const international = [
     metaDescription:
       'Online IELTS coaching and classes explained, with the full IELTS guide — 2 h 45 format, ₹19,000 fee, results in 1–2 days, and what to look for in a course.',
     lead: [
-      'IELTS assesses English proficiency across four skills — listening, reading, writing and speaking — and is accepted for study, work and migration in the United Kingdom, Australia, Canada, New Zealand and increasingly elsewhere. It comes in two versions, and choosing the wrong one is a costly mistake.',
+      'Looking for online IELTS coaching or online IELTS classes? Start with what the test actually is, then judge any course against it. IELTS assesses English proficiency across four skills — listening, reading, writing and speaking — and is accepted for study, work and migration in the United Kingdom, Australia, Canada, New Zealand and increasingly elsewhere. It comes in two versions, and choosing the wrong one is a costly mistake.',
       'The Academic module is for university admission; General Training is for migration and certain work and training purposes. The listening and speaking components are identical between them, but the reading and writing components differ substantially, and a test taken in the wrong module cannot be repurposed.',
     ],
     quickFacts: [
@@ -1147,6 +1149,7 @@ const international = [
     slug: 'toefl',
     path: '/entrance-exams/international/toefl/',
     name: 'TOEFL',
+    heroTitle: 'Online TOEFL Coaching and the TOEFL iBT Guide 2026',
     fullName: 'Test of English as a Foreign Language (iBT)',
     authority: 'Educational Testing Service (ETS)',
     official: 'ets.org/toefl',
@@ -1154,7 +1157,7 @@ const international = [
     metaDescription:
       'Online TOEFL coaching for the 2026 redesign, with the full TOEFL iBT guide — twelve task types, adaptive two-hour test, 1–6 scoring, US$173 fee.',
     lead: [
-      'TOEFL iBT is the English test of ETS, accepted by more than 13,000 institutions in over 160 countries and the most widely used in North American admissions. It is taken on a computer at a test centre or, as the Home Edition, at home under a live proctor, and it is scored centrally rather than by an examiner in the room. From 21 January 2026 it is a different test from the one described in most preparation books: ETS replaced the long academic passages and integrated lecture tasks with twelve shorter task types, made the test adaptive, cut it to about two hours, and moved scoring to a 1–6 band scale aligned to the CEFR.',
+      'Looking for online TOEFL coaching? Make sure it teaches the test as it has run since January 2026. TOEFL iBT is the English test of ETS, accepted by more than 13,000 institutions in over 160 countries and the most widely used in North American admissions. It is taken on a computer at a test centre or, as the Home Edition, at home under a live proctor, and it is scored centrally rather than by an examiner in the room. From 21 January 2026 it is a different test from the one described in most preparation books: ETS replaced the long academic passages and integrated lecture tasks with twelve shorter task types, made the test adaptive, cut it to about two hours, and moved scoring to a 1–6 band scale aligned to the CEFR.',
       'The four sections remain reading, listening, writing and speaking, but the content now runs from everyday English — completing words, reading a notice, writing an email, repeating what you hear — up to an academic passage, an academic talk and a discussion post, with a recorded interview closing the speaking section. Each section is reported on the 1–6 scale in half bands, the overall score is their average, and until January 2028 the score report also carries a comparable total on the old 0–120 scale so that institutions still quoting the old requirement can read it.',
     ],
     quickFacts: [
@@ -1582,6 +1585,7 @@ const international = [
     slug: 'sat',
     path: '/entrance-exams/international/sat/',
     name: 'SAT',
+    heroTitle: 'Online SAT Coaching and the Digital SAT Guide 2026',
     fullName: 'Scholastic Assessment Test',
     authority: 'The College Board',
     official: 'satsuite.collegeboard.org',
@@ -1589,7 +1593,7 @@ const international = [
     metaDescription:
       'Online SAT coaching explained, with the full SAT guide — the digital adaptive format, 2026–27 dates, US$68 plus $43 fee, 400–1600 scoring.',
     lead: [
-      'The SAT is an undergraduate admissions test used by universities in the United States and, increasingly, by institutions elsewhere including a number in India. It tests reading, writing and mathematics, and reports a score out of 1600.',
+      'Looking for online SAT coaching? Know the digital test first, then judge any course against it. The SAT is an undergraduate admissions test used by universities in the United States and, increasingly, by institutions elsewhere including a number in India. It tests reading, writing and mathematics, and reports a score out of 1600.',
       'Its digital format is multistage adaptive: each section has two modules, and your performance in the first determines the difficulty of the second. That structure is short — about two and a quarter hours — and it means the first module of each section carries disproportionate weight in setting your scoring ceiling.',
     ],
     quickFacts: [
@@ -2170,6 +2174,7 @@ const international = [
     slug: 'pte',
     path: '/entrance-exams/international/pte/',
     name: 'PTE Academic',
+    heroTitle: 'Online PTE Coaching and the PTE Academic Guide 2026',
     fullName: 'Pearson Test of English Academic',
     authority: 'Pearson',
     official: 'pearsonpte.com',
@@ -2177,7 +2182,7 @@ const international = [
     metaDescription:
       'Online PTE coaching explained, with the full PTE Academic guide — two-hour format, 2025 question types, 10–90 scoring, ₹18,900 fee.',
     lead: [
-      'PTE Academic is Pearson’s computer-based English test for university admission and for visas to Australia, New Zealand and, in its UKVI form, the United Kingdom. It is taken in a single sitting of about two hours at a Pearson test centre, every answer — spoken, written or clicked — is captured by the computer, and the marking is automated, with human review of some responses before a score is finalised. Results typically arrive within two business days.',
+      'Looking for online PTE coaching? Know the test first, then judge any course against it. PTE Academic is Pearson’s computer-based English test for university admission and for visas to Australia, New Zealand and, in its UKVI form, the United Kingdom. It is taken in a single sitting of about two hours at a Pearson test centre, every answer — spoken, written or clicked — is captured by the computer, and the marking is automated, with human review of some responses before a score is finalised. Results typically arrive within two business days.',
       'What distinguishes it from IELTS and TOEFL is the design of its tasks. Most of the twenty question types score more than one skill at once — reading a text aloud is marked for reading and speaking, retelling a lecture for listening and speaking, summarising a spoken text for listening and writing — so the four communicative scores are built from overlapping evidence rather than four separate papers. The test was revised in 2025, when two speaking tasks, Summarize Group Discussion and Respond to a Situation, were added and the IELTS concordance was republished.',
     ],
     quickFacts: [
@@ -3841,6 +3846,7 @@ const international = [
     slug: 'oet',
     path: '/entrance-exams/international/oet/',
     name: 'OET',
+    heroTitle: 'Online OET Coaching and the OET Guide 2026',
     fullName: 'Occupational English Test',
     authority: 'Cambridge Boxhill Language Assessment (CBLA)',
     official: 'occupationalenglishtest.org',
@@ -3848,7 +3854,7 @@ const international = [
     metaDescription:
       'Online OET coaching for nurses, doctors and allied professionals, with the full OET guide — four sub-tests, A–E grades, twelve professions, modes and fees.',
     lead: [
-      'The Occupational English Test is the English test written for healthcare. It assesses the listening, reading, writing and speaking a nurse, doctor, dentist or pharmacist needs at work — a handover, a referral letter, a consultation — and is accepted by regulators and employers in the UK, Ireland, Australia, New Zealand, the US, Singapore, Dubai and elsewhere as proof of English for registration. It is owned by Cambridge Boxhill Language Assessment, a venture of Cambridge English and Box Hill Institute.',
+      'Looking for online OET coaching for nursing, medicine or another healthcare profession? Know the test first, then judge any course against it. The Occupational English Test is the English test written for healthcare. It assesses the listening, reading, writing and speaking a nurse, doctor, dentist or pharmacist needs at work — a handover, a referral letter, a consultation — and is accepted by regulators and employers in the UK, Ireland, Australia, New Zealand, the US, Singapore, Dubai and elsewhere as proof of English for registration. It is owned by Cambridge Boxhill Language Assessment, a venture of Cambridge English and Box Hill Institute.',
       'Listening and reading are the same for every candidate; writing and speaking are specific to one of twelve professions — dentistry, dietetics, medicine, nursing, occupational therapy, optometry, pharmacy, physiotherapy, podiatry, radiography, speech pathology and veterinary science — so that a nurse writes a nursing letter and role-plays a nursing consultation. The test can be taken on paper at a centre, on computer at a centre, or at home with remote proctoring, and each sub-test is scored from 0 to 500 with a letter grade.',
     ],
     quickFacts: [
@@ -4206,6 +4212,7 @@ const international = [
     slug: 'ucat',
     path: '/entrance-exams/international/ucat/',
     name: 'UCAT',
+    heroTitle: 'Online UCAT Coaching in India and the UCAT Guide 2026',
     fullName: 'University Clinical Aptitude Test',
     authority: 'UCAT Consortium',
     official: 'ucat.ac.uk',
@@ -4213,7 +4220,7 @@ const international = [
     metaDescription:
       'Online UCAT coaching for Indian medical and dental applicants, with the full UCAT guide — four subtests, 900–2700 scoring, the 2026 window, £115 fee.',
     lead: [
-      'The UCAT is the admissions test for medicine and dentistry at a consortium of UK universities and a handful of partner schools abroad, among them the Lee Kong Chian and Yong Loo Lin medical schools in Singapore. It is a two-hour computer test of mental aptitude rather than science — verbal reasoning, decision making, quantitative reasoning and situational judgement — sat once in a summer testing window at Pearson VUE centres in the UK and more than 130 countries, India included, and its result is valid for the single admissions cycle that follows.',
+      'Looking for online UCAT coaching in India? Know the test first, then judge any course against it. The UCAT is the admissions test for medicine and dentistry at a consortium of UK universities and a handful of partner schools abroad, among them the Lee Kong Chian and Yong Loo Lin medical schools in Singapore. It is a two-hour computer test of mental aptitude rather than science — verbal reasoning, decision making, quantitative reasoning and situational judgement — sat once in a summer testing window at Pearson VUE centres in the UK and more than 130 countries, India included, and its result is valid for the single admissions cycle that follows.',
       'The 2026 cycle runs from registration on 20 May through booking from 23 June, testing from 13 July to 24 September, and delivery of results to universities in early November, ahead of the 15 October UCAS deadline for medicine and dentistry that candidates must meet separately. The cognitive subtests are scaled to 300–900 each for a total of 900–2700, and the Situational Judgement Test is reported as a band from 1 to 4; universities use the result in different ways, from a cut-off to a weighted component, and publish how.',
     ],
     quickFacts: [
