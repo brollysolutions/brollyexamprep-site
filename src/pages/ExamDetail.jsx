@@ -158,6 +158,22 @@ export default function ExamDetail() {
               blocks={exam.overview}
             />
 
+            {/*
+              An optional coaching section, for exams where readers arrive
+              searching for online coaching or classes rather than for the
+              notification. The record supplies the heading so that the exact
+              phrase people search for is the H2, and the body says what such
+              coaching must include for this test and what is free here.
+            */}
+            <ContentSection
+              id="coaching"
+              eyebrow={exam.coaching?.eyebrow || 'Online coaching'}
+              heading={exam.coaching?.heading || `Online ${exam.name} coaching`}
+              intro={exam.coaching?.intro}
+              blocks={exam.coaching?.blocks || []}
+              background
+            />
+
             <ContentSection
               id="eligibility"
               eyebrow="Eligibility"

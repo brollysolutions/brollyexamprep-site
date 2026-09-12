@@ -31,9 +31,9 @@ const international = [
     fullName: 'Graduate Record Examinations General Test',
     authority: 'Educational Testing Service (ETS)',
     official: 'ets.org/gre',
-    seoTitle: 'GRE 2026: Shorter Test Format, Sections, Scoring & Strategy',
+    seoTitle: 'Online GRE Coaching 2026: Shorter Format, Scoring, Fees & Dates',
     metaDescription:
-      'GRE exam guide — the shorter test format, verbal, quantitative and analytical writing sections, section-adaptive scoring and preparation.',
+      'Online GRE coaching explained, with the full GRE guide — under-two-hour format, 130–170 scoring, US$249 fee, 8–10 day results, and what a course should include.',
     lead: [
       'The GRE General Test is used for admission to graduate programmes worldwide, across the sciences, engineering, humanities and social sciences, and by a growing number of business schools as an alternative to the GMAT. It tests verbal reasoning, quantitative reasoning and analytical writing.',
       'Its shortened format runs under two hours and is section-adaptive: your performance in the first section of each type determines the difficulty of the second. That is a different mechanism from the question-by-question adaptation the GMAT uses, and it has its own strategic consequence — the first section of each pair carries disproportionate weight.',
@@ -146,6 +146,47 @@ const international = [
         ],
       },
     ],
+    coaching: {
+      eyebrow: 'Online GRE coaching',
+      heading: 'Online GRE coaching: what a course must include for the shorter test',
+      intro: 'The GRE is a reasoning test with a vocabulary component, and for most Indian candidates the quantitative section is revision while the verbal section is new work. Online GRE coaching earns its fee on the verbal side — text completion, sentence equivalence and dense reading — and on teaching the section-adaptive structure, where the first section of each measure sets the ceiling for the second.',
+      blocks: [
+        {
+          type: 'list',
+          title: 'What online GRE coaching has to deliver',
+          items: [
+            { text: 'Verbal method, not word lists', note: 'text completion and sentence equivalence turn on the logic of the sentence and on connotation; a course should teach how to read the blank before the options, and build vocabulary from context.' },
+            { text: 'Quantitative comparison as its own type', note: 'the one question type with no Indian equivalent, with its traps around negatives, fractions and zero; it needs a dedicated block.' },
+            { text: 'Official adaptive practice', note: 'only ETS’s POWERPREP tests reproduce section-level adaptation; coaching should schedule them across the preparation and read the first-section performance separately.' },
+            { text: 'Essay feedback', note: 'one Analyze an Issue task in 30 minutes, scored 0–6; it improves through critique, so the course should return marked essays.' },
+          ],
+        },
+        {
+          type: 'defs',
+          items: [
+            ['Batch or one-to-one', 'Quantitative revision and verbal method work in a batch; essay marking and a personal error log need individual attention. A batch plus fortnightly one-to-one reviews is a common shape.'],
+            ['How the trainer knows the test', 'Ask whether the course is built for the shortened GRE — one essay, verbal sections of 12 and 15 questions, quantitative of 12 and 15 — and uses ETS’s own practice. Material for the old two-essay, five-section test wastes your time.'],
+            ['What a fair course costs', 'Online GRE coaching in India runs from short crash courses to multi-month programmes; the US$249 test fee is the benchmark. Pay for verbal method, essay marking and official practice, not for a quantitative course you may not need.'],
+            ['Free first', 'The GRE syllabus, exam-pattern, practice, mock-test, preparation and study-material pages here explain the format, the adaptive logic and the vocabulary approach at no cost.'],
+          ],
+        },
+        {
+          type: 'note',
+          title: 'What Brolly gives you free, and where coaching starts',
+          text: 'This guide and its six sub-pages are free, as are the diagnostic tests and the quantitative and English study material. Brolly Academy runs online training from Hyderabad for students anywhere in India; enquire there for live online GRE coaching, a demo class and batch dates.',
+        },
+        {
+          type: 'links',
+          title: 'Take the next step',
+          items: [
+            { label: 'Enquire about online GRE coaching at Brolly Academy', href: 'https://brollyacademy.com/' },
+            { label: 'GRE preparation strategy', to: '/entrance-exams/international/gre/preparation/' },
+            { label: 'GRE practice and mock tests', to: '/entrance-exams/international/gre/mock-tests/' },
+            { label: 'Quantitative aptitude notes', to: '/study-material/quantitative-aptitude/' },
+          ],
+        },
+      ],
+    },
     resources: {
       syllabus: {
         description:
@@ -534,6 +575,14 @@ const international = [
         q: 'How long is the GRE and when do scores come?',
         a: 'Just under two hours: a 30-minute essay, two verbal sections of 12 and 15 questions in 18 and 23 minutes, and two quantitative sections of 12 and 15 questions in 21 and 26 minutes, with no unscored section since the 2023 shortening. Official scores appear in the ETS account eight to ten days after the test.',
       },
+      {
+        q: 'Is online GRE coaching necessary for a 320-plus score?',
+        a: 'Not for the quantitative section, which most Indian engineering and science graduates can revise alone with official material. It helps most on the verbal section — vocabulary in context, dense reading and the two-blank questions — and on essay feedback. A candidate scoring 160-plus in quantitative on a first practice test should buy verbal coaching only.',
+      },
+      {
+        q: 'What should an online GRE course cover?',
+        a: 'The shortened format and its section-adaptive logic; verbal method for text completion, sentence equivalence and reading comprehension; quantitative comparison as a separate type; marked Analyze an Issue essays; and ETS’s POWERPREP adaptive tests spaced through the course with first-section analysis. Check that the material is written for the test as it has run since September 2023.',
+      },
     ],
   },
 
@@ -547,9 +596,9 @@ const international = [
     fullName: 'International English Language Testing System',
     authority: 'British Council, IDP: IELTS Australia and Cambridge',
     official: 'ielts.org',
-    seoTitle: 'IELTS 2026: Academic vs General, Band Scores & Strategy',
+    seoTitle: 'Online IELTS Coaching & Classes 2026: Format, Fees, Bands, Results',
     metaDescription:
-      'IELTS exam guide — Academic and General Training modules, the four skills, band scoring, the speaking test and preparation strategy.',
+      'Online IELTS coaching and classes explained, with the full IELTS guide — 2 h 45 format, ₹19,000 fee, results in 1–2 days, and what to look for in a course.',
     lead: [
       'IELTS assesses English proficiency across four skills — listening, reading, writing and speaking — and is accepted for study, work and migration in the United Kingdom, Australia, Canada, New Zealand and increasingly elsewhere. It comes in two versions, and choosing the wrong one is a costly mistake.',
       'The Academic module is for university admission; General Training is for migration and certain work and training purposes. The listening and speaking components are identical between them, but the reading and writing components differ substantially, and a test taken in the wrong module cannot be repurposed.',
@@ -663,6 +712,47 @@ const international = [
         ],
       },
     ],
+    coaching: {
+      eyebrow: 'Online IELTS coaching',
+      heading: 'Online IELTS coaching and online IELTS classes: what they must include',
+      intro: 'IELTS is the most searched-for coaching among the international tests, and online IELTS classes now outnumber classroom ones. The test has not changed to suit them: the speaking test is still a live examiner, the writing is still marked by a human against four public criteria, and the reading and listening still turn on speed. Good online IELTS coaching is built around those three facts.',
+      blocks: [
+        {
+          type: 'list',
+          title: 'What online IELTS coaching has to deliver',
+          items: [
+            { text: 'Live speaking practice with a trained assessor', note: 'the speaking test is 11 to 14 minutes with an examiner; recorded lessons cannot rehearse it. Look for one-to-one or small-group sessions scored on fluency, lexical resource, grammar and pronunciation.' },
+            { text: 'Writing marked against the public band descriptors', note: 'Task 1 and Task 2 essays returned with a band per criterion — task achievement, coherence, vocabulary, grammar — not a single mark and a comment.' },
+            { text: 'Timed computer-based mocks', note: 'most Indian candidates now sit IELTS on computer; practice should be on screen with the same 30, 60 and 60-minute clocks and the same navigation.' },
+            { text: 'A plan to the target band', note: 'a course that promises Band 8 to everyone is selling; one that diagnoses a Band 6 writer and sets a 6.5 or 7 plan is coaching.' },
+          ],
+        },
+        {
+          type: 'defs',
+          items: [
+            ['Batch or one-to-one', 'Batch online IELTS classes suit listening and reading strategy; speaking and writing improve fastest one-to-one. Many candidates do both — a batch for the receptive skills, individual sessions for the productive ones.'],
+            ['How the trainer knows the test', 'Ask what band descriptors the trainer marks to, and whether they have examined or been trained by IDP or the British Council. The public descriptors are on ielts.org; a trainer who cannot cite them is guessing.'],
+            ['What a fair course costs', 'Online IELTS coaching in India is typically priced per month or per batch, well below the ₹19,000 test fee for a group course and above it for intensive one-to-one work. Pay for assessment and feedback, not for video hours.'],
+            ['Free first', 'Everything on this page and its six sub-pages is free: the format, scoring, the One Skill Retake rule, a preparation plan, study material and timed practice. Read them before paying anyone.'],
+          ],
+        },
+        {
+          type: 'note',
+          title: 'What Brolly gives you free, and where coaching starts',
+          text: 'This guide, the IELTS syllabus, exam-pattern, previous-papers, mock-test, preparation and study-material pages, and the free diagnostic tests are open to everyone. Brolly Academy runs online and classroom training from Hyderabad with the same trainers for students anywhere in India; enquire there for live online IELTS classes, a demo session and current batch dates.',
+        },
+        {
+          type: 'links',
+          title: 'Take the next step',
+          items: [
+            { label: 'Enquire about online IELTS classes at Brolly Academy', href: 'https://brollyacademy.com/' },
+            { label: 'IELTS preparation plan', to: '/entrance-exams/international/ielts/preparation/' },
+            { label: 'IELTS mock tests', to: '/entrance-exams/international/ielts/mock-tests/' },
+            { label: 'Free mock tests on Brolly', to: '/mock-tests/free/' },
+          ],
+        },
+      ],
+    },
     resources: {
       syllabus: {
         description:
@@ -1036,6 +1126,14 @@ const international = [
         q: 'What is IELTS One Skill Retake?',
         a: 'A retake of one of the four skills — listening, reading, writing or speaking — booked after a computer-based IELTS and taken within 60 days of the original test, once per original test, at centres that offer it. The new score replaces the old one on a fresh Test Report Form that many institutions and immigration authorities accept; check the organisation’s policy.',
       },
+      {
+        q: 'Is online IELTS coaching worth it, or can I prepare alone?',
+        a: 'Listening and reading can be prepared alone with the official practice material and a timer. Writing and speaking are where online IELTS coaching earns its fee, because both are marked against band descriptors a candidate cannot apply to their own work. If you can only afford one thing, buy assessed writing and live speaking practice rather than recorded lessons.',
+      },
+      {
+        q: 'What should online IELTS classes include?',
+        a: 'Live speaking sessions with an assessor, essays returned with a band per criterion, timed computer-based mocks that mirror IELTS on computer, and a plan to a specific target band. Check that the trainer marks to the public IELTS band descriptors and can show a candidate’s progress from a diagnostic to a mock, and use the free material here first so that you pay for feedback rather than for information.',
+      },
     ],
   },
 
@@ -1052,9 +1150,9 @@ const international = [
     fullName: 'Test of English as a Foreign Language (iBT)',
     authority: 'Educational Testing Service (ETS)',
     official: 'ets.org/toefl',
-    seoTitle: 'TOEFL iBT 2026: New Format, 1–6 Scale, Task Types, Fees & Scores',
+    seoTitle: 'Online TOEFL Coaching 2026: New Format, 1–6 Scale, Fees & Scores',
     metaDescription:
-      'TOEFL iBT guide for the 2026 redesign — four sections, twelve task types, an adaptive two-hour sitting, 1–6 scoring with a 0–120 equivalent, India fee, results.',
+      'Online TOEFL coaching for the 2026 redesign, with the full TOEFL iBT guide — twelve task types, adaptive two-hour test, 1–6 scoring, US$173 fee.',
     lead: [
       'TOEFL iBT is the English test of ETS, accepted by more than 13,000 institutions in over 160 countries and the most widely used in North American admissions. It is taken on a computer at a test centre or, as the Home Edition, at home under a live proctor, and it is scored centrally rather than by an examiner in the room. From 21 January 2026 it is a different test from the one described in most preparation books: ETS replaced the long academic passages and integrated lecture tasks with twelve shorter task types, made the test adaptive, cut it to about two hours, and moved scoring to a 1–6 band scale aligned to the CEFR.',
       'The four sections remain reading, listening, writing and speaking, but the content now runs from everyday English — completing words, reading a notice, writing an email, repeating what you hear — up to an academic passage, an academic talk and a discussion post, with a recorded interview closing the speaking section. Each section is reported on the 1–6 scale in half bands, the overall score is their average, and until January 2028 the score report also carries a comparable total on the old 0–120 scale so that institutions still quoting the old requirement can read it.',
@@ -1180,6 +1278,47 @@ const international = [
         ],
       },
     ],
+    coaching: {
+      eyebrow: 'Online TOEFL coaching',
+      heading: 'Online TOEFL coaching for the 2026 test: what a course must now include',
+      intro: 'TOEFL changed on 21 January 2026, and most online TOEFL coaching has not caught up. Courses built on integrated tasks, lecture note-taking and a 0–120 target teach a test that no longer exists. A course worth paying for teaches the twelve new task types — from Complete the Words to Take an Interview — the adaptive two-hour sitting, and the 1–6 scale with its 0–120 equivalent.',
+      blocks: [
+        {
+          type: 'list',
+          title: 'What online TOEFL coaching has to deliver',
+          items: [
+            { text: 'The twelve task types, not the old four', note: 'Complete the Words, Read in Daily Life, Read an Academic Passage; four listening types; Build a Sentence, Write an Email, Write for an Academic Discussion; Listen and Repeat and Take an Interview.' },
+            { text: 'Speed and accuracy on short items', note: 'the reading and writing bands are built from many quick items; coaching should drill vocabulary, grammar and sentence-building against a clock.' },
+            { text: 'Recorded speaking with feedback', note: 'Listen and Repeat and the interview are recorded and scored centrally; a trainer should listen to your recordings for accuracy, stress and fullness of answer.' },
+            { text: 'ETS practice on the 1–6 scale', note: 'TOEFL Practice Online tests rebuilt for the 2026 format, read against the band a university requires and its 0–120 equivalent.' },
+          ],
+        },
+        {
+          type: 'defs',
+          items: [
+            ['Batch or one-to-one', 'Vocabulary, grammar and reading strategy suit a batch; the discussion post, the email and recorded speaking need individual feedback.'],
+            ['How the trainer knows the test', 'Ask the trainer to name the task types in the 2026 test and to explain how a 5 on the 1–6 scale maps to 0–120. A course that answers with “integrated writing” or “note-taking strategies” is teaching the old test.'],
+            ['What a fair course costs', 'Online TOEFL coaching in India is usually a short course; the US$173 test fee is the benchmark. Pay for feedback on writing and recorded speaking and for format-correct practice.'],
+            ['Free first', 'The TOEFL syllabus, exam-pattern, practice, mock-test, preparation and study-material pages here describe the 2026 test in full at no cost.'],
+          ],
+        },
+        {
+          type: 'note',
+          title: 'What Brolly gives you free, and where coaching starts',
+          text: 'This guide and its six sub-pages describe the redesigned TOEFL at no cost, with free diagnostic tests and English study material. Brolly Academy runs online training from Hyderabad for students anywhere in India; enquire there for live online TOEFL coaching built for the 2026 format, a demo class and batch dates.',
+        },
+        {
+          type: 'links',
+          title: 'Take the next step',
+          items: [
+            { label: 'Enquire about online TOEFL coaching at Brolly Academy', href: 'https://brollyacademy.com/' },
+            { label: 'TOEFL syllabus — the twelve task types', to: '/entrance-exams/international/toefl/syllabus/' },
+            { label: 'TOEFL preparation for the 2026 test', to: '/entrance-exams/international/toefl/preparation/' },
+            { label: 'Free mock tests on Brolly', to: '/mock-tests/free/' },
+          ],
+        },
+      ],
+    },
     resources: {
       syllabus: {
         description:
@@ -1425,6 +1564,14 @@ const international = [
         q: 'TOEFL or IELTS — which should I take?',
         a: 'Both are accepted almost everywhere for admission. TOEFL is now about two hours, adaptive, recorded rather than interviewed, and scored on 1–6 with results in three days; IELTS is 2 hours 45 minutes with a face-to-face speaking test, band scores 0–9, and results in one to two days on computer. Visa acceptance differs — IELTS is accepted by all four immigration authorities that require an English test — so check the visa rule before the admission rule.',
       },
+      {
+        q: 'Is my TOEFL coaching out of date?',
+        a: 'If it teaches integrated speaking and writing tasks, lecture note-taking, three or four long reading passages or a 0–120 target without the 1–6 scale, yes. ETS replaced the test on 21 January 2026 with twelve new task types in an adaptive two-hour sitting scored 1–6. Only Write for an Academic Discussion survived. Ask any provider to name the current task types before paying.',
+      },
+      {
+        q: 'What should online TOEFL coaching cover in 2026?',
+        a: 'The twelve task types and their timing; speed and accuracy on the short reading and writing items; the email and the academic discussion post with marked feedback; recorded speaking — Listen and Repeat and Take an Interview — reviewed by a trainer; and ETS practice tests scored on the 1–6 scale, read against the band and the 0–120 equivalent your university quotes.',
+      },
     ],
   },
 
@@ -1438,9 +1585,9 @@ const international = [
     fullName: 'Scholastic Assessment Test',
     authority: 'The College Board',
     official: 'satsuite.collegeboard.org',
-    seoTitle: 'SAT 2026: Digital Adaptive Format, Sections & Strategy',
+    seoTitle: 'Online SAT Coaching 2026: Digital Format, Dates, Fees & Scores',
     metaDescription:
-      'SAT exam guide — the digital adaptive format, Reading and Writing and Math modules, scoring out of 1600, and preparation strategy.',
+      'Online SAT coaching explained, with the full SAT guide — the digital adaptive format, 2026–27 dates, US$68 plus $43 fee, 400–1600 scoring.',
     lead: [
       'The SAT is an undergraduate admissions test used by universities in the United States and, increasingly, by institutions elsewhere including a number in India. It tests reading, writing and mathematics, and reports a score out of 1600.',
       'Its digital format is multistage adaptive: each section has two modules, and your performance in the first determines the difficulty of the second. That structure is short — about two and a quarter hours — and it means the first module of each section carries disproportionate weight in setting your scoring ceiling.',
@@ -1564,6 +1711,47 @@ const international = [
         ],
       },
     ],
+    coaching: {
+      eyebrow: 'Online SAT coaching',
+      heading: 'Online SAT coaching: what a course must include for the digital test',
+      intro: 'The digital SAT is short, adaptive and taken in the Bluebook app, and its content — grammar, reading in short passages, and school mathematics with a calculator — is familiar to Indian students from class 10 and 11. Online SAT coaching earns its fee on pacing, on the module-adaptive logic, and on the reading and writing conventions that Indian school English does not test.',
+      blocks: [
+        {
+          type: 'list',
+          title: 'What online SAT coaching has to deliver',
+          items: [
+            { text: 'Module-adaptive strategy', note: 'the first module of each section decides the difficulty of the second; a careful first module protects the score ceiling.' },
+            { text: 'Reading and writing conventions', note: 'transitions, punctuation, concision and evidence questions in short passages — the categories Indian candidates lose most on.' },
+            { text: 'Bluebook practice', note: 'the College Board’s free official practice tests in the same app and interface as test day, with the Desmos calculator.' },
+            { text: 'A date plan', note: 'eight worldwide dates a year with registration two weeks before; coaching should fix the date, the registration deadline and the score-release date at the start.' },
+          ],
+        },
+        {
+          type: 'defs',
+          items: [
+            ['Batch or one-to-one', 'Mathematics revision and reading strategy work in a batch; a personal error log by content domain benefits from individual review.'],
+            ['How the trainer knows the test', 'Ask whether the course is built for the digital SAT — 54 reading and writing questions in 64 minutes, 44 math in 70, two adaptive modules each — and uses Bluebook. Paper-SAT material and the old essay are irrelevant.'],
+            ['What a fair course costs', 'Online SAT coaching in India runs from short courses to year-long programmes; the US$68 plus $43 fee is the benchmark. Pay for strategy, official practice analysis and the reading and writing conventions.'],
+            ['Free first', 'The SAT syllabus, exam-pattern, practice, mock-test, preparation and study-material pages here cover the digital format, dates and fees at no cost, and the College Board’s practice is free.'],
+          ],
+        },
+        {
+          type: 'note',
+          title: 'What Brolly gives you free, and where coaching starts',
+          text: 'This guide and its six sub-pages are free, with the 2026–27 dates and fees, and the College Board’s Bluebook practice costs nothing. Brolly Academy runs online training from Hyderabad for students anywhere in India; enquire there for live online SAT coaching, a demo class and batch dates.',
+        },
+        {
+          type: 'links',
+          title: 'Take the next step',
+          items: [
+            { label: 'Enquire about online SAT coaching at Brolly Academy', href: 'https://brollyacademy.com/' },
+            { label: 'SAT preparation strategy', to: '/entrance-exams/international/sat/preparation/' },
+            { label: 'ACT guide — the other US admissions test', to: '/entrance-exams/international/act/' },
+            { label: 'Mathematics notes', to: '/study-material/mathematics/' },
+          ],
+        },
+      ],
+    },
     resources: {
       syllabus: {
         description:
@@ -1964,6 +2152,14 @@ const international = [
         q: 'How long is the digital SAT and when do scores come?',
         a: '2 hours 14 minutes: Reading and Writing, 54 questions in 64 minutes, and Math, 44 questions in 70 minutes, each in two adaptive modules with a 10-minute break between sections. Scores are released about two weeks after the test date — 16 October 2026 for the 3 October test, for example — and the first four score reports are free if ordered within nine days.',
       },
+      {
+        q: 'Do I need online SAT coaching for a 1400-plus score?',
+        a: 'The mathematics is usually within reach alone for Indian students with official Bluebook practice; the reading and writing section is where coaching helps, because its conventions questions and short-passage reasoning are not what Indian school English tests. A candidate scoring 700-plus in math on a first practice test should buy reading and writing coaching only.',
+      },
+      {
+        q: 'What should an online SAT course cover?',
+        a: 'The digital, module-adaptive format and the Bluebook app; reading and writing conventions — transitions, punctuation, concision, evidence; the four math domains with the calculator; pacing to the 64- and 70-minute sections; official practice tests analysed by content domain; and a plan around the 2026–27 worldwide dates and their registration deadlines.',
+      },
     ],
   },
 
@@ -1977,9 +2173,9 @@ const international = [
     fullName: 'Pearson Test of English Academic',
     authority: 'Pearson',
     official: 'pearsonpte.com',
-    seoTitle: 'PTE Academic 2026: Format, New Question Types, Scoring & Fees',
+    seoTitle: 'Online PTE Coaching 2026: PTE Academic Format, Scores & Fees',
     metaDescription:
-      'PTE Academic guide — the three-part two-hour format, the 2025 speaking question types, 10–90 scoring, results in two days, fees and the IELTS concordance.',
+      'Online PTE coaching explained, with the full PTE Academic guide — two-hour format, 2025 question types, 10–90 scoring, ₹18,900 fee.',
     lead: [
       'PTE Academic is Pearson’s computer-based English test for university admission and for visas to Australia, New Zealand and, in its UKVI form, the United Kingdom. It is taken in a single sitting of about two hours at a Pearson test centre, every answer — spoken, written or clicked — is captured by the computer, and the marking is automated, with human review of some responses before a score is finalised. Results typically arrive within two business days.',
       'What distinguishes it from IELTS and TOEFL is the design of its tasks. Most of the twenty question types score more than one skill at once — reading a text aloud is marked for reading and speaking, retelling a lecture for listening and speaking, summarising a spoken text for listening and writing — so the four communicative scores are built from overlapping evidence rather than four separate papers. The test was revised in 2025, when two speaking tasks, Summarize Group Discussion and Respond to a Situation, were added and the IELTS concordance was republished.',
@@ -2043,6 +2239,47 @@ const international = [
           'Every response is scored by Pearson’s automated system, with some open responses reviewed by a human expert before the score is finalised. The Score Report gives the overall and communicative-skill scores; the Skills Profile breaks performance down further. Scores are released to the myPTE account, usually within two business days and at most five, and are valid for two years.',
       },
     ],
+    coaching: {
+      eyebrow: 'Online PTE coaching',
+      heading: 'Online PTE coaching: what a course must do for a machine-marked test',
+      intro: 'PTE Academic is scored by Pearson’s automated system, which makes it the test most suited to online coaching — and the test where bad coaching does most harm, because the marking rewards habits that can be drilled and punishes ones that feel natural. A good online PTE course teaches the twenty question types as twenty routines, scores practice the way the machine does, and stops when the target score is met.',
+      blocks: [
+        {
+          type: 'list',
+          title: 'What online PTE coaching has to deliver',
+          items: [
+            { text: 'A template for every speaking type', note: 'Describe Image, Retell Lecture, Summarize Group Discussion and Respond to a Situation are scored on content, fluency and pronunciation; a fixed structure delivered without pauses lifts two of the three at once.' },
+            { text: 'Scored practice on the 10–90 scale', note: 'practice marked by a trainer’s ear tells you less than Pearson’s scored practice tests, which the coaching should use and interpret.' },
+            { text: 'Form rules drilled to reflex', note: 'one sentence of 5–75 words for Summarize Written Text, 50–70 words for the spoken summary, 200–300 for the essay; a form error scores zero.' },
+            { text: 'Microphone discipline', note: 'speaking immediately after the tone, keeping going, finishing before the clock; the recording closes after a few seconds of silence.' },
+          ],
+        },
+        {
+          type: 'defs',
+          items: [
+            ['Batch or one-to-one', 'PTE strategy transfers well in a batch; pronunciation and fluency need a trainer listening to your recordings. A short batch course followed by recorded-response reviews is a common and sensible shape.'],
+            ['How the trainer knows the test', 'Ask whether the course covers the two speaking types added in 2025 and uses the July 2025 IELTS concordance; material that stops at the old question list is out of date.'],
+            ['What a fair course costs', 'Online PTE coaching in India is usually a short course of a few weeks priced below the ₹18,900 test fee; the money is best spent on scored practice tests and recording reviews rather than on long video libraries.'],
+            ['Free first', 'The PTE syllabus, pattern, practice, mock-test, preparation and study-material pages here list every question type with its timing and scoring rule, free.'],
+          ],
+        },
+        {
+          type: 'note',
+          title: 'What Brolly gives you free, and where coaching starts',
+          text: 'This guide and its six sub-pages carry every PTE question type, the scoring rules, the IELTS concordance and a preparation routine at no cost, with free diagnostic tests. Brolly Academy runs online training from Hyderabad for students anywhere in India; enquire there for live online PTE coaching, a demo session and batch dates.',
+        },
+        {
+          type: 'links',
+          title: 'Take the next step',
+          items: [
+            { label: 'Enquire about online PTE coaching at Brolly Academy', href: 'https://brollyacademy.com/' },
+            { label: 'PTE Academic syllabus — every question type', to: '/entrance-exams/international/pte/syllabus/' },
+            { label: 'PTE preparation routine', to: '/entrance-exams/international/pte/preparation/' },
+            { label: 'Free mock tests on Brolly', to: '/mock-tests/free/' },
+          ],
+        },
+      ],
+    },
     resources: {
       syllabus: {
         description:
@@ -2292,6 +2529,14 @@ const international = [
       {
         q: 'What is the PTE Academic fee in India?',
         a: 'Fees are set by country and shown at booking. In India the fee was ₹18,900 including GST from March 2026, the same for PTE Academic and PTE Academic UKVI. Cancellation is free 14 or more days before the test, refunds half the fee from 13 to 8 days before, and nothing inside 7 days.',
+      },
+      {
+        q: 'Do I need online PTE coaching to score 65 or 79?',
+        a: 'Many candidates reach 65 with the official guide, scored practice tests and disciplined use of templates; 79 usually needs a trainer listening to recordings, because the fluency and pronunciation traits that separate 70 from 79 are hard to hear in one’s own speech. Choose coaching that reviews your recordings and uses Pearson’s scored practice tests rather than one that sells video hours.',
+      },
+      {
+        q: 'What should an online PTE course cover?',
+        a: 'All twenty question types with their prompt lengths, time limits and scoring rules, including Summarize Group Discussion and Respond to a Situation added in 2025; speaking templates and microphone discipline; the form rules for the summaries and essay; the negative-scoring items in reading and listening; and scored full-length practice interpreted against your target score.',
       },
     ],
   },
@@ -3599,9 +3844,9 @@ const international = [
     fullName: 'Occupational English Test',
     authority: 'Cambridge Boxhill Language Assessment (CBLA)',
     official: 'occupationalenglishtest.org',
-    seoTitle: 'OET 2026: Sub-tests, 12 Professions, Grades A–E, Delivery Modes & Fees',
+    seoTitle: 'Online OET Coaching 2026: Sub-tests, Grades A–E, Modes & Fees',
     metaDescription:
-      'OET guide for healthcare professionals — the four sub-tests, the 0–500 score and A–E grades, the twelve professions, three delivery modes, results and fees.',
+      'Online OET coaching for nurses, doctors and allied professionals, with the full OET guide — four sub-tests, A–E grades, twelve professions, modes and fees.',
     lead: [
       'The Occupational English Test is the English test written for healthcare. It assesses the listening, reading, writing and speaking a nurse, doctor, dentist or pharmacist needs at work — a handover, a referral letter, a consultation — and is accepted by regulators and employers in the UK, Ireland, Australia, New Zealand, the US, Singapore, Dubai and elsewhere as proof of English for registration. It is owned by Cambridge Boxhill Language Assessment, a venture of Cambridge English and Box Hill Institute.',
       'Listening and reading are the same for every candidate; writing and speaking are specific to one of twelve professions — dentistry, dietetics, medicine, nursing, occupational therapy, optometry, pharmacy, physiotherapy, podiatry, radiography, speech pathology and veterinary science — so that a nurse writes a nursing letter and role-plays a nursing consultation. The test can be taken on paper at a centre, on computer at a centre, or at home with remote proctoring, and each sub-test is scored from 0 to 500 with a letter grade.',
@@ -3665,6 +3910,47 @@ const international = [
           'Each sub-test is reported as a score from 0 to 500 and a grade. Computer and at-home results typically arrive within six calendar days and sometimes within 48 hours; paper results from five days after the test in India and the Philippines and from 13 days elsewhere. Organisations verify results through the account. A remark can be requested within 72 hours of release, for a fee refunded if the grade changes.',
       },
     ],
+    coaching: {
+      eyebrow: 'Online OET coaching',
+      heading: 'Online OET coaching for nurses, doctors and allied professionals: what it must include',
+      intro: 'OET is a healthcare English test, and its writing and speaking sub-tests are set for your profession — a nursing letter, a physiotherapy role play. Online OET coaching that is not profession-specific misses the two sub-tests where a grade B is hardest to reach. A good course pairs a nurse with nursing case notes and role cards, marks the letter to OET’s six criteria, and plays the patient in role plays until the clinical-communication criteria are met.',
+      blocks: [
+        {
+          type: 'list',
+          title: 'What online OET coaching has to deliver',
+          items: [
+            { text: 'Profession-specific writing marked to the criteria', note: 'purpose, content, conciseness and clarity, genre and style, organisation and layout, language — a letter returned with a mark against each, not a corrected draft.' },
+            { text: 'Role plays with a partner playing the patient', note: 'two five-minute role plays scored on four linguistic and five clinical-communication criteria; they cannot be prepared from a book.' },
+            { text: 'Part A drills', note: 'listening note completion and reading expeditious location, both against tight clocks, both where clinicians lose marks by reading too carefully.' },
+            { text: 'A regulator-specific target', note: 'B in every sub-test for the NMC, GMC and AHPRA, with their sitting and mode rules; coaching should know which apply to you.' },
+          ],
+        },
+        {
+          type: 'defs',
+          items: [
+            ['Batch or one-to-one', 'Listening and reading strategy suit a batch of the same profession; writing marking and role plays need one-to-one time with a trainer who knows the criteria.'],
+            ['How the trainer knows the test', 'Ask which professions the trainer has prepared, whether letters are marked to OET’s published criteria, and whether role plays are scored on clinical communication as well as language.'],
+            ['What a fair course costs', 'Online OET coaching in India is often priced per sub-test or as a full course; the AU$587 test fee and single sub-test retakes are the benchmarks. Pay for marked letters and role plays.'],
+            ['Free first', 'The OET syllabus, exam-pattern, practice, mock-test, preparation and study-material pages here set out every part, the criteria and the grades at no cost, and OET’s own sample tests are free for every profession.'],
+          ],
+        },
+        {
+          type: 'note',
+          title: 'What Brolly gives you free, and where coaching starts',
+          text: 'This guide and its six sub-pages are free, and OET publishes sample tests for all twelve professions. Brolly Academy runs online training from Hyderabad for students anywhere in India; enquire there for live online OET coaching for your profession, a demo session and batch dates.',
+        },
+        {
+          type: 'links',
+          title: 'Take the next step',
+          items: [
+            { label: 'Enquire about online OET coaching at Brolly Academy', href: 'https://brollyacademy.com/' },
+            { label: 'OET syllabus — every part and criterion', to: '/entrance-exams/international/oet/syllabus/' },
+            { label: 'OET preparation', to: '/entrance-exams/international/oet/preparation/' },
+            { label: 'IELTS guide — the alternative for registration', to: '/entrance-exams/international/ielts/' },
+          ],
+        },
+      ],
+    },
     resources: {
       syllabus: {
         description:
@@ -3903,6 +4189,14 @@ const international = [
         q: 'What does OET cost?',
         a: 'Fees are published in Australian dollars and converted at booking, varying by country and delivery mode; the full test was AU$587 at the date checked, with single sub-tests available for candidates retaking part of the test. Rescheduling and cancellation fees depend on the mode and the notice given.',
       },
+      {
+        q: 'Is online OET coaching better than IELTS coaching for nurses?',
+        a: 'Both tests are accepted by the NMC, AHPRA and most regulators. Nurses who find academic IELTS passages alien and clinical letters natural usually score higher on OET, and online OET coaching for nursing — nursing case notes, nursing role plays, letters marked to the six criteria — is more targeted than general English coaching. The choice is the test, and the coaching should follow it.',
+      },
+      {
+        q: 'What should online OET coaching include?',
+        a: 'Profession-specific writing tasks marked against OET’s six criteria; role plays with a trainer as the patient, scored on the linguistic and clinical-communication criteria; timed Part A listening and reading drills; full sub-test mocks in the mode you will book; and knowledge of your regulator’s grade, sitting and delivery-mode rules. Confirm the trainer’s experience with your profession.',
+      },
     ],
   },
   /* ══════════════════════════════════════════════════════════════
@@ -3915,9 +4209,9 @@ const international = [
     fullName: 'University Clinical Aptitude Test',
     authority: 'UCAT Consortium',
     official: 'ucat.ac.uk',
-    seoTitle: 'UCAT 2026: Subtests, Scoring, Key Dates, Fees & Test Centres in India',
+    seoTitle: 'Online UCAT Coaching 2026: Subtests, Scoring, Dates & Fees',
     metaDescription:
-      'UCAT guide — the four subtests and their timings, 300–900 scaled scores and the SJT band, the 2026 test window and deadlines, fees, and sitting it from India.',
+      'Online UCAT coaching for Indian medical and dental applicants, with the full UCAT guide — four subtests, 900–2700 scoring, the 2026 window, £115 fee.',
     lead: [
       'The UCAT is the admissions test for medicine and dentistry at a consortium of UK universities and a handful of partner schools abroad, among them the Lee Kong Chian and Yong Loo Lin medical schools in Singapore. It is a two-hour computer test of mental aptitude rather than science — verbal reasoning, decision making, quantitative reasoning and situational judgement — sat once in a summer testing window at Pearson VUE centres in the UK and more than 130 countries, India included, and its result is valid for the single admissions cycle that follows.',
       'The 2026 cycle runs from registration on 20 May through booking from 23 June, testing from 13 July to 24 September, and delivery of results to universities in early November, ahead of the 15 October UCAS deadline for medicine and dentistry that candidates must meet separately. The cognitive subtests are scaled to 300–900 each for a total of 900–2700, and the Situational Judgement Test is reported as a band from 1 to 4; universities use the result in different ways, from a cut-off to a weighted component, and publish how.',
@@ -3981,6 +4275,47 @@ const international = [
           'After the UCAS deadline UCAT matches candidates to their application choices and delivers results to the UK universities concerned; partner universities receive results through the account or their own request. Universities accept only results provided by the UCAT Office. Results are valid for the 2027 admissions cycle only.',
       },
     ],
+    coaching: {
+      eyebrow: 'Online UCAT coaching',
+      heading: 'Online UCAT coaching for Indian applicants: what it must include',
+      intro: 'The UCAT is a two-hour aptitude test sat once a year in a July–September window, and Indian applicants to UK and Singapore medical schools sit it at Pearson VUE centres here. It cannot be revised for — there is no syllabus — so online UCAT coaching is a matter of technique and pace: a method for each of the four subtests, drilled against the real per-question clock, with full timed mocks in the last weeks.',
+      blocks: [
+        {
+          type: 'list',
+          title: 'What online UCAT coaching has to deliver',
+          items: [
+            { text: 'A technique per subtest', note: 'keyword scanning for Verbal Reasoning, a triage rule for Decision Making, fast data location for Quantitative Reasoning, and the professional-standards logic for Situational Judgement.' },
+            { text: 'Timed practice from the first week', note: '30 seconds a question in Verbal Reasoning, about a minute in Decision Making, 43 seconds in Quantitative Reasoning, 22 seconds in Situational Judgement; untimed practice teaches the wrong skill.' },
+            { text: 'Full mocks on the official interface', note: 'the consortium’s free practice tests in the live format, sat in one two-hour block without a pause.' },
+            { text: 'The calendar', note: 'registration in May, booking from June, testing 13 July to 24 September 2026, results to universities in November, and a UCAS deadline of 15 October; coaching should plan the summer around it.' },
+          ],
+        },
+        {
+          type: 'defs',
+          items: [
+            ['Batch or one-to-one', 'Technique transfers well in a batch; the Situational Judgement band and a personal pacing plan benefit from individual review. Brolly Academy offers classroom, online and one-to-one UCAT options with a free demo.'],
+            ['How the trainer knows the test', 'Ask for the trainer’s own subtest scores and for the number of candidates prepared; the consortium publishes deciles each September, so a claimed result can be placed.'],
+            ['What a fair course costs', 'The consortium says paid preparation is unnecessary and its own material is free and complete; coaching adds structure, pacing discipline and accountability. Pay for timed, analysed practice and technique, not for question banks the consortium already provides.'],
+            ['Free first', 'The UCAT syllabus, exam-pattern, practice, mock-test, preparation and study-material pages here, and the consortium’s tutorials, question banks and practice tests, are free.'],
+          ],
+        },
+        {
+          type: 'note',
+          title: 'What Brolly gives you free, and where coaching starts',
+          text: 'This guide and its six sub-pages are free, and the UCAT Consortium’s official preparation is free and complete. Brolly Academy runs UCAT coaching in India — classroom in Hyderabad, online across the country, and one-to-one — with full-length timed mocks and a free demo class; its UCAT page carries the current batches.',
+        },
+        {
+          type: 'links',
+          title: 'Take the next step',
+          items: [
+            { label: 'Brolly Academy — UCAT coaching in India', href: 'https://brollyacademy.com/ucat-coaching-in-india/' },
+            { label: 'UCAT preparation plan', to: '/entrance-exams/international/ucat/preparation/' },
+            { label: 'UCAT practice and mock tests', to: '/entrance-exams/international/ucat/mock-tests/' },
+            { label: 'NEET UG guide', to: '/entrance-exams/medical/neet-ug/' },
+          ],
+        },
+      ],
+    },
     resources: {
       syllabus: {
         description:
@@ -4214,6 +4549,14 @@ const international = [
       {
         q: 'Do I need to send my UCAT score to universities?',
         a: 'No. After the 15 October UCAS deadline the UCAT Office matches candidates to their applications and delivers results directly to UK consortium universities in early November; universities accept only results provided this way. Partner universities abroad receive results through the account or on request.',
+      },
+      {
+        q: 'Is online UCAT coaching available in India?',
+        a: 'Yes. Brolly Academy runs UCAT coaching for Indian applicants in the classroom in Hyderabad and online across the country, with one-to-one tutoring, full-length timed mocks and a free demo class. The consortium’s own preparation material is free and complete; coaching adds technique, pacing discipline and a plan around the July–September testing window.',
+      },
+      {
+        q: 'What should online UCAT coaching cover?',
+        a: 'A technique for each of the four subtests — Verbal Reasoning, Decision Making, Quantitative Reasoning and Situational Judgement — timed practice at the real per-question pace from the start, full two-hour mocks on the official interface, analysis against the published deciles, and the 2026 calendar: registration from 20 May, booking from 23 June, testing 13 July to 24 September, results to universities in early November.',
       },
     ],
   },

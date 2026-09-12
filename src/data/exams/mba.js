@@ -2756,9 +2756,9 @@ const mba = [
     fullName: 'Graduate Management Admission Test',
     authority: 'Graduate Management Admission Council (GMAC)',
     official: 'mba.com',
-    seoTitle: 'GMAT 2026: Focus Edition Pattern, Adaptive Scoring & Strategy',
+    seoTitle: 'Online GMAT Coaching 2026: Format, 205–805 Scoring, Fees & Retakes',
     metaDescription:
-      'GMAT exam guide — Focus Edition structure with Quantitative, Verbal and Data Insights, adaptive scoring, review and edit, and preparation.',
+      'Online GMAT coaching explained, with the full GMAT guide — three 45-minute sections, 205–805 scoring, Data Insights, US$275 fee, retake rules.',
     lead: [
       'The GMAT is the international entrance test for graduate management programmes, used by business schools worldwide and by a growing number of Indian institutions for their executive and international programmes. Its current Focus Edition has three sections — Quantitative Reasoning, Verbal Reasoning and Data Insights — of forty-five minutes each.',
       'Two features make it unlike the Indian management entrances. It is computer adaptive, so the difficulty of each question depends on how you have answered the previous ones, and it allows you to review and edit a limited number of answers within a section before it closes. Both change strategy in ways that are worth understanding before you start preparing.',
@@ -2869,6 +2869,47 @@ const mba = [
         ],
       },
     ],
+    coaching: {
+      eyebrow: 'Online GMAT coaching',
+      heading: 'Online GMAT coaching: what a course must include for the three-section test',
+      intro: 'The GMAT is question-adaptive, has no essay and no sentence correction, and gives a third of its weight to Data Insights — data sufficiency, multi-source reasoning, tables and graphs. Online GMAT coaching built for the old four-section test teaches the wrong things. A good course teaches the three sections as GMAC now sets them, the adaptive pacing that punishes unfinished sections, and the review-and-edit rule.',
+      blocks: [
+        {
+          type: 'list',
+          title: 'What online GMAT coaching has to deliver',
+          items: [
+            { text: 'Data Insights as a section in its own right', note: 'data sufficiency, two-part analysis, multi-source reasoning, table analysis and graphics interpretation, 20 questions in 45 minutes; it is where most candidates lose the most.' },
+            { text: 'Adaptive pacing', note: 'about two minutes a question with a penalty for leaving questions unanswered; coaching should drill the decision to guess and move on.' },
+            { text: 'Official practice and the 205–805 scale', note: 'GMAC’s Official Practice Exams reproduce the adaptive engine; a course should use them for scoring and read section scores on 60–90.' },
+            { text: 'Section-order strategy and review-and-edit', note: 'you choose the order and can change up to three answers per section at the end; both are worth planning, not discovering on the day.' },
+          ],
+        },
+        {
+          type: 'defs',
+          items: [
+            ['Batch or one-to-one', 'Quantitative and verbal method work in a batch; Data Insights and pacing benefit from individual error analysis. Many candidates take a batch course and buy a few one-to-one reviews before the test.'],
+            ['How the trainer knows the test', 'Ask whether the course is built for the current GMAT — three sections, no essay, Data Insights — and whether it uses GMAC’s Official Guide and practice exams. Ask what score the trainer has and when.'],
+            ['What a fair course costs', 'Online GMAT coaching in India spans crash courses to multi-month programmes; the US$275 test fee and the 16-day retake gap are the practical constraints. Pay for adaptive practice, Data Insights teaching and error analysis.'],
+            ['Free first', 'The GMAT syllabus, exam-pattern, practice, mock-test, preparation and study-material pages here cover the format, the scale and a plan at no cost.'],
+          ],
+        },
+        {
+          type: 'note',
+          title: 'What Brolly gives you free, and where coaching starts',
+          text: 'This guide and its six sub-pages are free, as are the diagnostic tests and the quantitative and verbal study material. Brolly Academy runs online training from Hyderabad for students anywhere in India; enquire there for live online GMAT coaching, a demo class and batch dates.',
+        },
+        {
+          type: 'links',
+          title: 'Take the next step',
+          items: [
+            { label: 'Enquire about online GMAT coaching at Brolly Academy', href: 'https://brollyacademy.com/' },
+            { label: 'GMAT preparation strategy', to: '/entrance-exams/mba/gmat/preparation/' },
+            { label: 'GMAT mock tests', to: '/entrance-exams/mba/gmat/mock-tests/' },
+            { label: 'CAT and Indian MBA entrances', to: '/entrance-exams/mba/' },
+          ],
+        },
+      ],
+    },
     resources: {
       syllabus: {
         description:
@@ -3253,6 +3294,14 @@ const mba = [
       {
         q: 'When are GMAT scores released and how long are they valid?',
         a: 'An unofficial score appears at the end of the test; the official score report is usually available within five days and occasionally up to 20. Up to 35 free score reports can be sent within 48 hours of release, and schools typically receive them within eight hours. Scores are valid for five years and available for reporting for ten.',
+      },
+      {
+        q: 'Is online GMAT coaching worth it for a 655-plus score?',
+        a: 'For most candidates the quantitative section is revision and the verbal section is method; Data Insights is the section that most rewards teaching, because its question types are unfamiliar and its pacing unforgiving. Buy coaching that spends real time on Data Insights and adaptive pacing and uses GMAC’s official practice exams; a course still teaching sentence correction and the essay is out of date.',
+      },
+      {
+        q: 'What should an online GMAT course cover?',
+        a: 'The three 45-minute sections as GMAC sets them, the 205–805 scale and 60–90 section scores, Data Insights in full, quantitative and verbal method, adaptive pacing and the guess-and-move rule, section-order strategy and the review-and-edit allowance, and official adaptive practice exams with error analysis. It should also cover the retake rules — a 16-day gap and five attempts in 12 months — so that a second attempt is planned, not improvised.',
       },
     ],
   },
