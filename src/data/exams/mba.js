@@ -2911,6 +2911,163 @@ const mba = [
         },
       ],
     },
+    eligibility: [
+      {
+        type: 'table',
+        caption: 'Who can take the GMAT, and what GMAC checks.',
+        head: ['Condition', 'Rule'],
+        rows: [
+          ['Age', 'Eighteen or older; candidates aged 13 to 17 may test with written parental or guardian consent lodged with GMAC before the appointment.'],
+          ['Qualification', 'None; business schools set their own degree requirements for admission, not for the test.'],
+          ['Identity document', 'An original, physical, valid government photo ID whose name matches the mba.com registration exactly; requirements are set by testing location, and candidates testing outside their country of citizenship must present a passport. Check GMAC’s location-specific regulations for India before booking. A candidate without acceptable ID is not admitted and the fee is forfeited.'],
+          ['Where', 'At test centres worldwide throughout the year, or online from home or another private location; both are scored and accepted alike, and both count together for attempt limits.'],
+          ['Attempts', 'At least 16 calendar days between appointments and no more than five in any rolling 12-month period; cancelled or missed appointments do not count.'],
+          ['Accommodations', 'Requested and approved through GMAC before scheduling; a standard appointment should not be booked first.'],
+        ],
+      },
+    ],
+    procedure: {
+      heading: 'How to register for the GMAT, what happens at the centre or online, and how scores are sent',
+      intro: 'Everything runs through an mba.com account: registration, appointment changes, the official score and score sending.',
+      blocks: [
+        {
+          type: 'steps',
+          title: 'From mba.com account to score report',
+          items: [
+            {
+              title: 'Create an mba.com account',
+              text: 'Name exactly as on the ID you will present, correct country of citizenship, and a profile that is complete before scheduling.',
+            },
+            {
+              title: 'Register for a test-centre or online appointment',
+              text: 'Select the format, read and agree to the exam policies, choose a centre, date and time — or an online slot — and pay at checkout: US$275 at a centre and US$300 online in India, plus 18 per cent GST.',
+            },
+            {
+              title: 'Prepare with GMAC material',
+              text: 'The Official Guide and the Official Practice Exams reproduce the question-adaptive engine and the 205–805 scale; two practice exams are free with an account.',
+            },
+            {
+              title: 'Before the day',
+              text: 'For the online exam, run the system check on the computer you will use and clear the room to GMAC’s rules; for a centre, check the ID rule for the location and the reporting time.',
+            },
+            {
+              title: 'Test day',
+              text: 'ID check, photograph and security procedures, then three 45-minute sections in the order you choose with an optional ten-minute break. Within a section, up to three answers may be changed at the end using the review-and-edit screen. Online candidates use an on-screen whiteboard or an erasable physical one.',
+            },
+            {
+              title: 'At the end',
+              text: 'An unofficial score is shown; there is no score cancellation because nothing is sent to schools until you choose to send it.',
+            },
+            {
+              title: 'Official score',
+              text: 'In the mba.com account usually within five days, occasionally up to 20, with an email. Up to 35 score reports can be sent free within 48 hours of release; additional reports are paid afterwards. Schools typically receive them within eight hours.',
+            },
+            {
+              title: 'If the score is short',
+              text: 'A retake can be booked for at least 16 days later, within the five-per-year cap; scores stay valid for five years and only the ones you send are seen.',
+            },
+          ],
+        },
+        {
+          type: 'table',
+          caption: 'Fees and rules, from GMAC.',
+          head: ['Item', 'Rule'],
+          rows: [
+            ['Test fee in India', 'US$275 at a test centre; US$300 online; plus GST, at booking'],
+            ['Rescheduling and cancellation', 'Fees depend on how close to the appointment the change is made and are listed on the exam payment page; changes closer to the date cost more'],
+            ['Emergencies and missed appointments', 'A request with evidence through GMAC Customer Care; not guaranteed'],
+            ['Score reports', 'Up to 35 free within 48 hours of the official score; paid additional reports after that'],
+            ['Validity', 'Five years; reportable for ten'],
+            ['Attempts', '16 days between appointments; five in 12 months, online and centre combined'],
+          ],
+        },
+        {
+          type: 'links',
+          title: 'Official pages',
+          items: [
+            {
+              label: 'GMAC support — schedule, reschedule or cancel a test-centre appointment',
+              href: 'https://support.mba.com/hc/en-us/articles/49946954687131-GMAT-How-to-Schedule-Reschedule-or-Cancel-a-Test-Center-Appointment',
+            },
+            {
+              label: 'GMAC support — identification requirements',
+              href: 'https://support.mba.com/hc/en-us/articles/6606093596571-GMAT-Identification-ID-Requirements-for-the-Exam',
+            },
+            {
+              label: 'GMAC support — retake policies and attempt limits',
+              href: 'https://support.mba.com/hc/en-us/articles/10118337626139-GMAT-Retake-Policies-and-Attempt-Limits',
+            },
+            {
+              label: 'GMAC support — sending official scores',
+              href: 'https://support.mba.com/hc/en-us/articles/37304507641243-GMAT-How-Do-I-Send-My-Official-Score-to-a-School-or-Program',
+            },
+          ],
+        },
+      ],
+    },
+    pattern: [
+      {
+        type: 'table',
+        caption: 'The GMAT as GMAC sets it. Sections may be taken in any order; one optional ten-minute break.',
+        head: ['Section', 'Questions', 'Time', 'Content', 'Score'],
+        rows: [
+          ['Quantitative Reasoning', '21', '45 minutes', 'Problem solving in arithmetic and algebra; no geometry; no calculator', '60–90'],
+          ['Verbal Reasoning', '23', '45 minutes', 'Reading comprehension and critical reasoning; no sentence correction', '60–90'],
+          ['Data Insights', '20', '45 minutes', 'Data sufficiency, multi-source reasoning, table analysis, graphics interpretation, two-part analysis; on-screen calculator', '60–90'],
+          ['Total', '64', '2 hours 15 minutes', 'Question-adaptive within each section; up to three answers changeable per section at the end', '205–805 in steps of 10'],
+        ],
+      },
+      {
+        type: 'defs',
+        items: [
+          ['How the total is built', 'Each section is question-adaptive: the difficulty of the next question follows the answer to the last. Section scores on 60–90 combine, with equal weight, into a total on 205–805 reported with a percentile. Unanswered questions at the end of a section carry a penalty that grows with the number left, which makes pacing to the last question the central skill.'],
+          ['The review-and-edit rule', 'Questions may be bookmarked and, at the end of a section, up to three answers changed within the section’s remaining time. It rewards moving on from a doubtful question and returning rather than stalling.'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'What business schools commonly look for on the 205–805 scale. Schools publish class averages; these are typical ranges.',
+        head: ['Programme tier', 'Typical range'],
+        rows: [
+          ['The most selective US and European MBAs', 'Class averages around 675–705; competitive applications from 655'],
+          ['Top-30 US and leading Asian and European schools', 'Averages around 625–665'],
+          ['Indian programmes accepting the GMAT — ISB, IIM executive and one-year programmes, XLRI and others', 'Commonly 605–665 for competitive applications; each publishes its own'],
+          ['Specialised master’s in finance, analytics and management', 'Typically 585–655, with Data Insights and quantitative scores weighed'],
+        ],
+      },
+    ],
+    studyPlan: [
+      {
+        type: 'steps',
+        title: 'A ten-week plan for a 655-plus score',
+        items: [
+          {
+            title: 'Week 1 — diagnose',
+            text: 'One free GMAC Official Practice Exam under time; record the three section scores and where time ran out.',
+          },
+          {
+            title: 'Weeks 2–4 — quantitative and verbal method',
+            text: 'Arithmetic and algebra problem-solving drills without a calculator; critical-reasoning argument structure and reading comprehension on dense passages, one set a day each.',
+          },
+          {
+            title: 'Weeks 2–6 — Data Insights as a subject',
+            text: 'Data sufficiency logic first, then multi-source reasoning, tables, graphs and two-part analysis; the section most candidates neglect and the one the scale rewards.',
+          },
+          {
+            title: 'Weeks 4–8 — adaptive pacing',
+            text: 'Timed sections at two minutes a question with a rule for guessing and moving on; practise bookmarking and the three-answer review.',
+          },
+          {
+            title: 'Weeks 5 and 8 — Official Practice Exams',
+            text: 'Two more paid GMAC exams, spaced; read the section scores on 60–90 and the total.',
+          },
+          {
+            title: 'Weeks 9–10 — order strategy and sit',
+            text: 'Decide the section order from the practice data, book the appointment, and keep 16 days clear afterwards in case a retake is needed before deadlines.',
+          },
+        ],
+      },
+    ],
     resources: {
       syllabus: {
         description:
@@ -3303,6 +3460,22 @@ const mba = [
       {
         q: 'What should an online GMAT course cover?',
         a: 'The three 45-minute sections as GMAC sets them, the 205–805 scale and 60–90 section scores, Data Insights in full, quantitative and verbal method, adaptive pacing and the guess-and-move rule, section-order strategy and the review-and-edit allowance, and official adaptive practice exams with error analysis. It should also cover the retake rules — a 16-day gap and five attempts in 12 months — so that a second attempt is planned, not improvised.',
+      },
+      {
+        q: 'How do I register for the GMAT in India?',
+        a: 'Create an mba.com account with your name exactly as on the ID you will present, choose a test-centre or online appointment, agree to the policies, pick a centre and slot, and pay at checkout — US$275 at a centre or US$300 online, plus 18 per cent GST. Check GMAC’s location-specific ID regulations for India before booking, and request any accommodations before scheduling.',
+      },
+      {
+        q: 'What happens on GMAT test day?',
+        a: 'ID check, photograph and security procedures, then three 45-minute sections — Quantitative Reasoning, Verbal Reasoning and Data Insights — in the order you choose, with an optional ten-minute break. Up to three answers per section can be changed at the end. An unofficial score appears immediately; the official score reaches your account usually within five days.',
+      },
+      {
+        q: 'Do I need to cancel a bad GMAT score?',
+        a: 'No. Nothing is sent to schools until you choose to send it. After the official score appears you decide whether to send it — up to 35 reports free within 48 hours — or to retake after 16 days and send the better result. Scores are valid for five years.',
+      },
+      {
+        q: 'What GMAT score do Indian and international business schools expect?',
+        a: 'Class averages at the most selective US and European MBAs sit around 675–705 on the 205–805 scale; top-30 programmes around 625–665; ISB, the IIM executive and one-year programmes and other Indian schools accepting the GMAT commonly see competitive applications from about 605. Each school publishes its own figures.',
       },
     ],
   },

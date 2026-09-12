@@ -188,6 +188,169 @@ const international = [
         },
       ],
     },
+    eligibility: [
+      {
+        type: 'table',
+        caption: 'Who can take the GRE, and what ETS checks.',
+        head: ['Condition', 'Rule'],
+        rows: [
+          ['Age and qualification', 'No minimum age and no qualification; the test is registered for by the candidate directly.'],
+          ['Identity document', 'An original, physical, valid government ID with name, photograph and signature that matches the registration name exactly, excluding accents. In India ETS requires a passport; a candidate without acceptable ID is turned away and the fee is not refunded.'],
+          ['Where', 'More than 1,000 test centres in 160-plus countries, or at home on your own computer with a human proctor, available around the clock; the at-home option is offered wherever the centre test is.'],
+          ['Retakes', 'Once every 21 days and no more than five times in any rolling 12-month period, counting attempts whose scores were cancelled.'],
+          ['Accommodations', 'Extra time, breaks, screen magnification and other arrangements through ETS Disability Services, approved before registering.'],
+          ['Fee reduction', 'A voucher for candidates who can show financial need brings the test to US$100 and includes ETS practice material; applied for on ETS’s form.'],
+        ],
+      },
+    ],
+    procedure: {
+      heading: 'How to register for the GRE, what happens on test day, and how scores are reported',
+      intro: 'Registration, rescheduling, score viewing and score sending all run through the ETS account.',
+      blocks: [
+        {
+          type: 'steps',
+          title: 'From ETS account to score report',
+          items: [
+            {
+              title: 'Create an ETS account',
+              text: 'With your name exactly as on the passport, date of birth and an email you will keep; the account holds every GRE registration and score.',
+            },
+            {
+              title: 'Register for a date',
+              text: 'Choose a test centre or the at-home test, then a date and time; pay US$249 — ₹25,522 on the ETS India site — by card, or with a fee-reduction voucher. Indian candidates pay through the ETS India payment options.',
+            },
+            {
+              title: 'Prepare with ETS material',
+              text: 'The free POWERPREP Online practice tests reproduce the section-adaptive design; the sample questions and the Analytical Writing topic pool are free downloads.',
+            },
+            {
+              title: 'Before the day',
+              text: 'For a centre test, check the venue and arrive early with the passport. For the at-home test, run ETS’s equipment check on the computer you will use, clear the room and desk to the rules, and have a second camera or mirror as required.',
+            },
+            {
+              title: 'Test day',
+              text: 'ID check, photograph and security screening at the centre, or ID verification by the proctor at home; the Analytical Writing task first, then the verbal and quantitative sections with a scheduled break. Personal items are stored; scratch paper is provided.',
+            },
+            {
+              title: 'At the end',
+              text: 'Choose to report or cancel the scores. If reported, the unofficial verbal and quantitative scores appear on screen, and up to four free score recipients are named with the ScoreSelect choice of most recent or all scores.',
+            },
+            {
+              title: 'Official scores',
+              text: 'In the ETS account 8 to 10 days after the test, with an email; the Analytical Writing score arrives with them. Additional reports cost $40 each and can be sent with ScoreSelect for five years.',
+            },
+            {
+              title: 'Reviews',
+              text: 'A score review of the Analytical Writing measure can be requested within 90 days for $60; the verbal and quantitative sections are machine-scored and not reviewed.',
+            },
+          ],
+        },
+        {
+          type: 'table',
+          caption: 'Fees and deadlines, from the 2026–27 GRE Information Bulletin.',
+          head: ['Item', 'Rule'],
+          rows: [
+            ['Test fee', 'US$249 outside China from 1 August 2026; ₹25,522 on ETS India'],
+            ['Rescheduling', 'No later than four days before the test date, in the ETS account, for $55; appointments cannot be moved beyond a year from the original date'],
+            ['Cancellation', 'No later than four days before the test date for a refund of half the fee; nothing after'],
+            ['Test centre change', '$55'],
+            ['Additional score reports', '$40 per recipient, in the account'],
+            ['Analytical Writing score review', '$60, within 90 days; results in about four weeks'],
+            ['Retakes', 'Every 21 days, five in any 365 days'],
+          ],
+        },
+        {
+          type: 'links',
+          title: 'Official pages',
+          items: [
+            {
+              label: 'ETS — GRE Information Bulletin 2026–27 (PDF)',
+              href: 'https://www.ets.org/content/dam/ets-org/pdfs/gre/gre-info-bulletin.pdf',
+            },
+            {
+              label: 'ETS — GRE ID requirements',
+              href: 'https://www.ets.org/gre/test-takers/general-test/register/id-requirements.html',
+            },
+            {
+              label: 'ETS — GRE at-home testing',
+              href: 'https://www.ets.org/gre/test-takers/general-test/register/at-home-testing.html',
+            },
+            {
+              label: 'ETS — GRE test day',
+              href: 'https://www.ets.org/gre/test-takers/general-test/test-day.html',
+            },
+          ],
+        },
+      ],
+    },
+    pattern: [
+      {
+        type: 'table',
+        caption: 'The shortened GRE General Test, from ETS. Just under two hours; no unscored section.',
+        head: ['Measure', 'Sections', 'Questions', 'Time', 'Score'],
+        rows: [
+          ['Analytical Writing', '1', 'One "Analyze an Issue" task', '30 minutes', '0–6 in half points'],
+          ['Verbal Reasoning', '2', '12, then 15', '18, then 23 minutes', '130–170 in one-point steps'],
+          ['Quantitative Reasoning', '2', '12, then 15', '21, then 26 minutes', '130–170 in one-point steps'],
+        ],
+      },
+      {
+        type: 'defs',
+        items: [
+          ['Verbal question types', 'Reading comprehension on passages from the sciences, social sciences and humanities, including select-in-passage and multiple-answer items; text completion with one to three blanks, all of which must be right for credit; sentence equivalence, choosing two of six words that produce sentences alike in meaning.'],
+          ['Quantitative question types', 'Quantitative comparison of two quantities; multiple choice with one or several answers; numeric entry; and data interpretation sets on a table or graph. Content is arithmetic, algebra, geometry and data analysis with an on-screen calculator.'],
+          ['Adaptivity and scoring', 'The second verbal and second quantitative sections are selected on performance in the first of each. Raw scores across both sections convert to the 130–170 scale with the section difficulty taken into account. No marks are deducted for wrong answers, and within a section questions can be skipped, flagged and revisited.'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'What programmes commonly look for. These are typical ranges, not rules; every department publishes its own, and many are test-optional.',
+        head: ['Programme', 'Typical range'],
+        rows: [
+          ['Master’s in engineering or computer science at selective US universities', 'Quantitative 165–170; verbal 155–160; writing 3.5–4.0; totals around 320–330'],
+          ['Master’s in business, economics or data fields', 'Quantitative 160–168; verbal 155–162; writing 4.0'],
+          ['Humanities and social sciences', 'Verbal 160–168 weighted more than quantitative; writing 4.5 or more'],
+          ['MBA programmes accepting the GRE', 'Balanced scores around 320 and above at the most selective schools; ETS publishes a GRE-to-GMAT comparison tool'],
+          ['Middle-ranked US and European programmes', 'Totals of 300–315 with a quantitative score of 155 or more'],
+        ],
+      },
+    ],
+    studyPlan: [
+      {
+        type: 'steps',
+        title: 'A ten-week plan for a 320-plus score',
+        items: [
+          {
+            title: 'Week 1 — diagnose with POWERPREP',
+            text: 'One official adaptive test under time; note the verbal and quantitative scores and, separately, the first-section performance in each.',
+          },
+          {
+            title: 'Weeks 2–5 — verbal method',
+            text: 'Text completion and sentence equivalence by sentence logic first, vocabulary second; a personal word list built from errors with the sentence each word appeared in; one dense reading passage a day with the question types mapped.',
+          },
+          {
+            title: 'Weeks 2–4 — quantitative revision',
+            text: 'Arithmetic, algebra, geometry and data analysis from ETS’s review material; quantitative comparison in its own blocks with the negative, fraction and zero traps.',
+          },
+          {
+            title: 'Weeks 3–8 — timed section practice',
+            text: 'Alternate verbal and quantitative sections against the real clocks, answering everything and using the two-pass approach within a section.',
+          },
+          {
+            title: 'Weeks 4–9 — the essay',
+            text: 'One Analyze an Issue essay a week from ETS’s published topic pool, thirty minutes, read by someone who will critique the reasoning.',
+          },
+          {
+            title: 'Weeks 6 and 9 — full adaptive tests',
+            text: 'The second POWERPREP tests, spaced; review the first section of each measure as the ceiling-setter.',
+          },
+          {
+            title: 'Week 10 — sit',
+            text: 'Book at least a fortnight before any application deadline; scores take 8 to 10 days and ScoreSelect lets a better later attempt be sent instead.',
+          },
+        ],
+      },
+    ],
     resources: {
       syllabus: {
         description:
@@ -584,6 +747,22 @@ const international = [
         q: 'What should an online GRE course cover?',
         a: 'The shortened format and its section-adaptive logic; verbal method for text completion, sentence equivalence and reading comprehension; quantitative comparison as a separate type; marked Analyze an Issue essays; and ETS’s POWERPREP adaptive tests spaced through the course with first-section analysis. Check that the material is written for the test as it has run since September 2023.',
       },
+      {
+        q: 'How do I register for the GRE in India?',
+        a: 'Create an ETS account with your name exactly as in your passport, choose a test centre or the at-home test and a date, and pay US$249 — ₹25,522 through the ETS India site. The passport is the ID required in India. Rescheduling and cancellation must be done at least four days before the date, for $55 and a 50 per cent refund respectively.',
+      },
+      {
+        q: 'What happens on GRE test day?',
+        a: 'At a centre: ID check, photograph and security screening, then the 30-minute essay followed by the verbal and quantitative sections with a scheduled break, about two hours in all. At home: the proctor verifies ID and the room by camera before the same test. At the end you choose to report or cancel, see the unofficial verbal and quantitative scores if reported, and name up to four free score recipients.',
+      },
+      {
+        q: 'How is the GRE scored and what score do I need?',
+        a: 'Verbal and quantitative each on 130–170 from the number correct across two sections adjusted for the difficulty of the second, writing on 0–6, with no deduction for wrong answers. Selective engineering and computer-science programmes typically see quantitative 165–170 and totals around 320–330; many programmes publish their ranges, and many are test-optional.',
+      },
+      {
+        q: 'Can I send only my best GRE score?',
+        a: 'Yes. ScoreSelect lets you send the scores from your most recent test or from all tests in the five-year reportable period, chosen at the end of the test for the four free recipients and again for each additional $40 report. Scores you cancel at the end of a test are never reported.',
+      },
     ],
   },
 
@@ -755,6 +934,173 @@ const international = [
         },
       ],
     },
+    eligibility: [
+      {
+        type: 'table',
+        caption: 'Who can take IELTS, and what the test centre checks. From IELTS and IDP India.',
+        head: ['Condition', 'Rule'],
+        rows: [
+          ['Age', 'No formal minimum, but IELTS is not recommended for candidates under 16; the content is written for adults.'],
+          ['Nationality and qualification', 'Anyone may register; no educational qualification is required.'],
+          ['Identity document in India', 'A valid passport. IDP India asks for the passport details at booking and a photocopy of its first, last and observation pages, and the original passport is presented on test day. The document used to register must be the one shown at the centre.'],
+          ['Which module', 'Academic for university admission and professional registration; General Training for migration, work and training below degree level; IELTS for UKVI where a UK visa route requires a Secure English Language Test; IELTS Life Skills for UK family and settlement routes.'],
+          ['Attempts', 'No limit; each attempt is a full fee, and One Skill Retake allows one skill to be resat once within 60 days of a computer-based test.'],
+          ['Special arrangements', 'Extra time, modified papers, a lip-reading speaking version and other arrangements are available on application to the centre with medical evidence, usually at least six weeks before the test.'],
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Book the module the receiving organisation names, not the one that seems easier. A university that asks for Academic will not accept General Training, and a UK visa route that needs a SELT will not accept a standard IELTS taken at a non-UKVI centre. IDP India lists which centres run the UKVI test.',
+      },
+    ],
+    procedure: {
+      heading: 'How to register for IELTS in India, what happens on test day, and how results reach you',
+      intro: 'IDP is the sole IELTS test partner in India; every booking, whether on paper, on computer or online, runs through IDP’s portal or its branches.',
+      blocks: [
+        {
+          type: 'steps',
+          title: 'From booking to Test Report Form',
+          items: [
+            {
+              title: 'Choose the module, the mode and the city',
+              text: 'Academic or General Training; on paper, on computer or IELTS Online; and a centre. Computer-based dates run several times a week in most cities and return results fastest.',
+            },
+            {
+              title: 'Register on the IDP India portal',
+              text: 'Create a candidate login, enter passport details exactly as printed, choose the date and, for the paper test, a speaking slot, and pay ₹19,000 by card. Registration is also possible in person at an IDP branch or by courier with a demand draft; confirmation follows once payment and the passport copy are verified.',
+            },
+            {
+              title: 'Upload or send the passport copy',
+              text: 'First and last pages plus any observation page, uploaded at booking or couriered to IDP’s head office for offline registrations.',
+            },
+            {
+              title: 'Before the day',
+              text: 'Take the free IELTS on Computer familiarisation test, check the venue address and reporting time in the confirmation email, and read the test rules; the speaking test may fall on the same day or within a few days of the written papers.',
+            },
+            {
+              title: 'Test day',
+              text: 'Arrive early with the original passport; check-in includes a photograph and finger scan. Listening, reading and writing run without a break — 2 hours 40 minutes on computer, with an extra 10 minutes of answer transfer on paper. No dictionary, phone, watch or notes; a supervisor is told of any problem by raising a hand.',
+            },
+            {
+              title: 'Results',
+              text: 'One to two days on computer in India, seven days on paper, 13 for UKVI paper, in the candidate login, with an email alert. The electronic Test Report Form can be downloaded within two working days.',
+            },
+            {
+              title: 'Sending the result',
+              text: 'One original TRF is issued; up to five institutions receive it free, and additional TRFs are sent for a fee. Many universities and immigration authorities receive results electronically, so a paper copy is often unnecessary.',
+            },
+            {
+              title: 'If the result is short',
+              text: 'Book One Skill Retake for one skill within 60 days of a computer-based test, or apply for an Enquiry on Results within six weeks — the fee is refunded if the band rises, and the answer takes two to three weeks.',
+            },
+          ],
+        },
+        {
+          type: 'table',
+          caption: 'Fees, deadlines and refunds, as IDP India publishes them.',
+          head: ['Item', 'Rule'],
+          rows: [
+            ['Test fee', '₹19,000 in 2026 for Academic and General Training'],
+            ['Transfer of date', 'Through the candidate login; requests at least 14 days before the test are accepted with a deduction; a One Skill Retake booking may be transferred once'],
+            ['Cancellation', 'At least 4 days before the test: 25 per cent deducted, the rest refunded in 7 to 10 working days; inside 4 days, on the day or after: no refund'],
+            ['Enquiry on Results', 'Within six weeks of the test date, online only; fee refunded if any band rises'],
+            ['Additional TRFs', 'Five institutions free; further copies for an administration fee each'],
+            ['Speaking slot', 'Chosen at booking for the paper test; assigned around the written papers for the computer test'],
+          ],
+        },
+        {
+          type: 'links',
+          title: 'Official pages',
+          items: [
+            {
+              label: 'IDP India — how to register',
+              href: 'https://ieltsidpindia.com/information/how-to-register-for-ielts',
+            },
+            {
+              label: 'IDP India — transfer and cancellation',
+              href: 'https://ieltsidpindia.com/information/transfer-cancellation',
+            },
+            {
+              label: 'IDP India — Enquiry on Results',
+              href: 'https://ieltsidpindia.com/information/enquiry-on-results',
+            },
+            {
+              label: 'IDP India — the Test Report Form',
+              href: 'https://ieltsidpindia.com/information/ielts-results/trf',
+            },
+            {
+              label: 'IELTS — One Skill Retake',
+              href: 'https://ielts.org/take-a-test/booking-your-test/one-skill-retake',
+            },
+          ],
+        },
+      ],
+    },
+    pattern: [
+      {
+        type: 'table',
+        caption: 'The four papers. Listening and speaking are common to both modules; reading and writing differ.',
+        head: ['Paper', 'Time', 'Content', 'Marking'],
+        rows: [
+          ['Listening', 'About 30 minutes, plus 10 minutes to transfer answers on paper', 'Four recordings — a social conversation, a monologue, a discussion among up to four people, an academic lecture — with 40 questions: form and note completion, multiple choice, matching, map and diagram labelling, sentence completion', 'One mark a question; 40 raw marks converted to a band'],
+          ['Reading', '60 minutes', 'Academic: three long passages from books, journals and newspapers. General Training: several shorter everyday and workplace texts then one longer passage. 40 questions: true/false/not given, matching headings and information, summary and sentence completion, multiple choice', 'One mark a question; Academic and General Training use different conversion tables'],
+          ['Writing', '60 minutes', 'Task 1 of at least 150 words — Academic describes a graph, chart, table, map or process; General Training writes a letter. Task 2 of at least 250 words — an essay responding to an argument, a problem or a question, weighted twice Task 1', 'Task achievement or response, coherence and cohesion, lexical resource, grammatical range and accuracy, each on 0–9'],
+          ['Speaking', '11–14 minutes', 'Part 1 introduction and familiar topics; Part 2 a one-minute preparation and up to two minutes of talk on a cue card; Part 3 a discussion extending the Part 2 topic', 'Fluency and coherence, lexical resource, grammatical range and accuracy, pronunciation, each on 0–9'],
+        ],
+      },
+      {
+        type: 'defs',
+        items: [
+          ['How the overall band is computed', 'The four band scores are averaged and rounded to the nearest half band: an average ending in .25 rounds up to .5, one ending in .75 rounds up to the next whole band. Bands are reported in half steps from 0 to 9, and each band has a published descriptor from expert user at 9 to non-user at 1.'],
+          ['The listening and reading conversions', 'Approximately 30 of 40 gives band 7 in listening and Academic reading, 23 gives band 6 and 16 gives band 5; General Training reading needs a few more correct answers for the same band. The exact tables vary a little between test forms.'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'What destinations commonly ask for. University figures are the usual ranges, not rules; the visa figures are the authorities’ own.',
+        head: ['Purpose', 'Typical requirement'],
+        rows: [
+          ['UK Student visa', 'A Secure English Language Test at CEFR B2 for degree-level study — IELTS for UKVI with 5.5 in each component — or the university’s own assessment; universities themselves usually ask 6.0 to 7.0 overall with 5.5 to 6.5 in each part'],
+          ['Australia subclass 500', 'IELTS 6.0 overall as the standard minimum, 5.5 with ten weeks of ELICOS packaged, 5.0 with twenty; universities commonly 6.5 with no band below 6.0'],
+          ['Canada study', 'Set by the designated learning institution, commonly 6.0 to 6.5 overall with no band below 5.5 to 6.0'],
+          ['Canada Express Entry', 'Stated in CLB; on IELTS General Training CLB 7 is 6.0 in every skill and CLB 9 is 8.0 listening with 7.0 in the other three'],
+          ['United States universities', 'Commonly 6.5 to 7.0 overall for undergraduate and graduate admission; some programmes set 7.5 for teaching assistantships'],
+          ['Healthcare registration', 'The NMC and GMC ask 7.0 overall with 7.0 in each component (the NMC allows 6.5 in writing); AHPRA 7.0 in each'],
+        ],
+      },
+    ],
+    studyPlan: [
+      {
+        type: 'steps',
+        title: 'An eight-week plan to a target band',
+        items: [
+          {
+            title: 'Week 1 — diagnose',
+            text: 'Sit a full official practice test under time, in the mode you will book. Note the band per skill and the question types that cost marks.',
+          },
+          {
+            title: 'Weeks 2–3 — listening and reading technique',
+            text: 'One listening section and one reading passage a day against the clock; learn the trap in each question type — true/false/not given, matching headings, map labelling — and the transfer discipline for paper.',
+          },
+          {
+            title: 'Weeks 2–6 — writing, assessed',
+            text: 'Two Task 2 essays and one Task 1 a week, each marked against the four public criteria by a trainer or a careful peer; keep a list of the errors that recur.',
+          },
+          {
+            title: 'Weeks 3–6 — speaking, recorded',
+            text: 'Daily Part 2 talks to a two-minute timer, recorded and played back; Part 3 practice on abstract topics with a partner; pronunciation work on the sounds and stress patterns that obscure meaning.',
+          },
+          {
+            title: 'Week 7 — full mocks',
+            text: 'Two complete tests on separate days, including a mock speaking interview, scored to bands; compare with the target and the destination table.',
+          },
+          {
+            title: 'Week 8 — book and rest',
+            text: 'Book the date only once mocks meet the target in every skill; the last week is for revision of error lists, not new material. Results come in one to two days on computer, so a retake or a One Skill Retake can be planned quickly if one skill falls short.',
+          },
+        ],
+      },
+    ],
     resources: {
       syllabus: {
         description:
@@ -1136,6 +1482,26 @@ const international = [
         q: 'What should online IELTS classes include?',
         a: 'Live speaking sessions with an assessor, essays returned with a band per criterion, timed computer-based mocks that mirror IELTS on computer, and a plan to a specific target band. Check that the trainer marks to the public IELTS band descriptors and can show a candidate’s progress from a diagnostic to a mock, and use the free material here first so that you pay for feedback rather than for information.',
       },
+      {
+        q: 'How do I register for IELTS in India?',
+        a: 'Through IDP, the only IELTS partner in India: online at the IDP IELTS India portal with passport details and card payment of ₹19,000, in person at an IDP branch, or by courier with a demand draft and a passport copy. Choose Academic or General Training, paper or computer, and a city and date; the paper test lets you choose a speaking slot. Confirmation follows verification of payment and the passport copy.',
+      },
+      {
+        q: 'What ID do I need on IELTS test day in India?',
+        a: 'The original valid passport used at registration. The details entered at booking must match it exactly, a photocopy of the first, last and observation pages is submitted with the application, and a candidate without the passport on the day is not admitted and forfeits the fee. Check-in includes a photograph and finger scan.',
+      },
+      {
+        q: 'How is the IELTS band score calculated?',
+        a: 'Each skill is scored 0–9 in half bands — listening and reading by converting 40 raw marks, writing and speaking against four criteria each — and the overall band is the average of the four rounded to the nearest half band, with .25 rounding up to .5 and .75 rounding up to the next whole band.',
+      },
+      {
+        q: 'What IELTS score do I need for a UK, Australian or Canadian visa?',
+        a: 'For a UK Student visa at degree level, a SELT at CEFR B2 — IELTS for UKVI with 5.5 in each component — unless the university assesses English itself. Australia’s subclass 500 lists 6.0 overall, lower with a packaged English course. Canada’s study permit leaves it to the institution, while Express Entry works in CLB, where CLB 7 is 6.0 in every skill on General Training.',
+      },
+      {
+        q: 'Can I cancel or move my IELTS date?',
+        a: 'Yes, through the IDP candidate login. A cancellation at least four days before the test is refunded with 25 per cent deducted, within 7 to 10 working days; inside four days, on the day or afterwards there is no refund. Date transfers are requested the same way with notice of at least 14 days, and a One Skill Retake booking may be transferred once.',
+      },
     ],
   },
 
@@ -1322,6 +1688,159 @@ const international = [
         },
       ],
     },
+    eligibility: [
+      {
+        type: 'table',
+        caption: 'Who can take the TOEFL iBT, and what ETS checks.',
+        head: ['Condition', 'Rule'],
+        rows: [
+          ['Age and qualification', 'No minimum age and no qualification.'],
+          ['Identity document', 'An original, physical, valid government ID with name, photograph and signature matching the registration name exactly; in India a passport. Digital IDs are not accepted; a candidate without acceptable ID is refused and the fee forfeited.'],
+          ['Where', 'At a test centre or as the Home Edition on your own computer with a live proctor. Home Edition candidates must meet the equipment and room rules and pass the pre-test check.'],
+          ['Retakes', 'No limit on the number of attempts, but not more than once in any three-day period, and no second registration within three days of an existing appointment.'],
+          ['For Australia', 'Since 21 January 2026 candidates must select “Taking TOEFL for Australia” at registration for the result to count for an Australian visa, and the Home Edition is not accepted for Australian visas.'],
+          ['Accommodations', 'Through ETS Disability Services, approved before registration.'],
+        ],
+      },
+    ],
+    procedure: {
+      heading: 'How to register for the TOEFL iBT, what happens on test day, and how scores are released',
+      intro: 'Registration, rescheduling, results and score sending all run through the ETS account.',
+      blocks: [
+        {
+          type: 'steps',
+          title: 'From ETS account to score report',
+          items: [
+            {
+              title: 'Create an ETS account',
+              text: 'Name exactly as on the passport, date of birth, email. Indian candidates follow the ETS India bulletin for payment options.',
+            },
+            {
+              title: 'Register at least seven days ahead',
+              text: 'Regular online registration closes seven full days before the test date; express registration is open until two days before for a $49 surcharge. Choose a centre or the Home Edition, a date and time, and pay US$173 for India.',
+            },
+            {
+              title: 'Choose free score recipients',
+              text: 'Up to four institutions can be named before the test at no charge; additional reports cost $29 each afterwards.',
+            },
+            {
+              title: 'Prepare in the current format',
+              text: 'ETS’s free sample questions and the paid TOEFL Practice Online tests are rebuilt for the twelve 2026 task types; practice written for the old integrated tasks does not match.',
+            },
+            {
+              title: 'Test day',
+              text: 'At a centre: ID check, photograph and security screening, then about two hours across reading, listening, writing and speaking with a headset and microphone. Home Edition: the proctor checks ID, the room and the computer by camera before the same test.',
+            },
+            {
+              title: 'At the end',
+              text: 'Unofficial reading and listening scores appear on screen with the date official scores are due; you may report or cancel all sections, not some.',
+            },
+            {
+              title: 'Official scores',
+              text: 'Posted to the ETS account three days after the test, with an email; the PDF report follows within 24 to 48 hours. Section and overall scores on 1–6, the comparable 0–120 total, and MyBest superscores from tests in the last two years.',
+            },
+            {
+              title: 'Reviews',
+              text: 'A rescore of the speaking or writing section can be requested within 30 days for $80 each, or $160 for both, unless scores have already been sent to an institution.',
+            },
+          ],
+        },
+        {
+          type: 'table',
+          caption: 'Deadlines and fees, from the TOEFL iBT Information Bulletin and the fee page for India.',
+          head: ['Item', 'Rule'],
+          rows: [
+            ['Test fee', 'US$173 in India, excluding taxes'],
+            ['Registration deadline', 'Seven full days before the test; express registration to two days before for $49'],
+            ['Rescheduling', 'At least four full days before the test, in the account, for $69'],
+            ['Cancellation', 'At least four full days before for an automatic refund of 50 per cent; nothing after, and nothing if ID rules were not met'],
+            ['Additional score reports', '$29 per institution, ordered in the account; not changeable once placed'],
+            ['Score review', 'Speaking or writing, $80 each, within 30 days and before any score is sent'],
+            ['Retakes', 'Any number, not more than once in three days'],
+          ],
+        },
+        {
+          type: 'links',
+          title: 'Official pages',
+          items: [
+            {
+              label: 'ETS — TOEFL iBT Information Bulletin (PDF)',
+              href: 'https://www.ets.org/content/dam/ets-org/pdfs/toefl/toefl-ibt-bulletin.pdf',
+            },
+            {
+              label: 'ETS — registration fees',
+              href: 'https://www.ets.org/toefl/test-takers/ibt/register/fees.html',
+            },
+            {
+              label: 'ETS — Home Edition',
+              href: 'https://www.ets.org/toefl/test-takers/ibt/about/testing-options/at-home.html',
+            },
+            {
+              label: 'ETS — getting your scores',
+              href: 'https://www.ets.org/toefl/test-takers/ibt/scores/get-scores.html',
+            },
+          ],
+        },
+      ],
+    },
+    pattern: [
+      {
+        type: 'table',
+        caption: 'The redesigned TOEFL iBT, section by section. Counts and times are approximate because the test adapts.',
+        head: ['Section', 'Task types', 'Items', 'Time', 'Score'],
+        rows: [
+          ['Reading', 'Complete the Words; Read in Daily Life; Read an Academic Passage', 'About 50', 'About 30 minutes', '1–6'],
+          ['Listening', 'Listen and Choose a Response; Listen to a Conversation; Listen to an Announcement; Listen to an Academic Talk', 'About 47', 'About 29 minutes', '1–6'],
+          ['Writing', 'Build a Sentence; Write an Email; Write for an Academic Discussion', 'About 12', 'About 23 minutes', '1–6'],
+          ['Speaking', 'Listen and Repeat; Take an Interview', 'About 11', 'About 8 minutes', '1–6'],
+          ['Overall', '—', '—', 'About two hours', 'Average of the four, rounded to the nearest half band; 0–120 total also shown'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'What institutions commonly ask for, in both scales. University figures are typical ranges; ETS’s own table gives the conversions.',
+        head: ['Purpose', 'Typical requirement'],
+        rows: [
+          ['Selective US graduate programmes', 'Old 100 or more, which is 5.5 on the new scale (107+) or a high 5 (95–106); some ask section minimums'],
+          ['Most US and Canadian universities', 'Old 80–90, which is 4.5 (86+) to 5 (95+); undergraduate programmes often 4 (72+) to 4.5'],
+          ['UK universities', 'Commonly the equivalent of IELTS 6.0–6.5, around 4.5–5 on the new scale; the TOEFL iBT is not a UK Secure English Language Test, so a visa applicant needing a SELT must take another test unless the university assesses English itself'],
+          ['Australia subclass 500', 'The Department of Home Affairs lists TOEFL iBT among accepted tests; the result must be taken at a centre with “Taking TOEFL for Australia” selected, and the minimum is on its published table'],
+          ['Canada study permit', 'Set by the institution; Express Entry does not accept the TOEFL'],
+        ],
+      },
+    ],
+    studyPlan: [
+      {
+        type: 'steps',
+        title: 'A six-week plan for the 2026 test',
+        items: [
+          {
+            title: 'Week 1 — learn the twelve tasks',
+            text: 'Work ETS’s sample questions for every task type and sit one TOEFL Practice Online test for a baseline on the 1–6 scale.',
+          },
+          {
+            title: 'Weeks 2–3 — the short items',
+            text: 'Daily vocabulary and grammar work for Complete the Words, Build a Sentence and Listen and Choose a Response; speed with accuracy is the skill.',
+          },
+          {
+            title: 'Weeks 2–5 — the academic items',
+            text: 'One academic passage and one lecture extract a day with comprehension questions; note the main idea, purpose and detail structure.',
+          },
+          {
+            title: 'Weeks 3–5 — writing and speaking, reviewed',
+            text: 'Two discussion posts and two emails a week to a timer, marked for register and reasoning; daily Listen and Repeat drills and recorded interview answers played back for stress and fullness.',
+          },
+          {
+            title: 'Week 5 — second practice test',
+            text: 'Compare section bands with the target in both scales; put the last week on the lowest section.',
+          },
+          {
+            title: 'Week 6 — register and sit',
+            text: 'Register at least seven days ahead to avoid the express fee; scores arrive three days after the test, so a retake three days later is possible if a section falls short.',
+          },
+        ],
+      },
+    ],
     resources: {
       syllabus: {
         description:
@@ -1575,6 +2094,22 @@ const international = [
         q: 'What should online TOEFL coaching cover in 2026?',
         a: 'The twelve task types and their timing; speed and accuracy on the short reading and writing items; the email and the academic discussion post with marked feedback; recorded speaking — Listen and Repeat and Take an Interview — reviewed by a trainer; and ETS practice tests scored on the 1–6 scale, read against the band and the 0–120 equivalent your university quotes.',
       },
+      {
+        q: 'How do I register for the TOEFL in India?',
+        a: 'Create an ETS account with your name exactly as in your passport, choose a test centre or the Home Edition and a date at least seven days ahead — express registration is open until two days before for $49 more — name up to four free score recipients, and pay US$173. Rescheduling costs $69 and cancellation refunds half the fee, both with at least four days’ notice.',
+      },
+      {
+        q: 'What happens on TOEFL test day?',
+        a: 'At a centre: ID check with the passport, photograph, security screening, then about two hours through reading, listening, writing and speaking with a headset. For the Home Edition the live proctor checks ID, the room and the computer first. At the end you see unofficial reading and listening scores and choose whether to report or cancel; official scores appear in three days.',
+      },
+      {
+        q: 'How often can I retake the TOEFL?',
+        a: 'As often as you like, but not more than once in any three-day period, and you cannot hold two appointments within three days of each other. Scores are valid for two years and MyBest superscores combine the best section scores from tests in that period.',
+      },
+      {
+        q: 'Does the TOEFL work for a UK or Australian visa?',
+        a: 'For the UK it is not a Secure English Language Test, so a Student visa applicant who needs a SELT must take IELTS for UKVI, PTE Academic UKVI or another listed test unless the university assesses English itself. For Australia the Department of Home Affairs accepts the TOEFL iBT taken at a centre with “Taking TOEFL for Australia” selected at registration, at the minimum on its table; the Home Edition is not accepted.',
+      },
     ],
   },
 
@@ -1756,6 +2291,163 @@ const international = [
         },
       ],
     },
+    eligibility: [
+      {
+        type: 'table',
+        caption: 'Who can take the SAT, and what the College Board checks.',
+        head: ['Condition', 'Rule'],
+        rows: [
+          ['Age and class', 'No minimum; most students test in class 11 and again early in class 12. Students under 13 register by a special process rather than online.'],
+          ['Who registers', 'The student, in their own College Board account; a parent or counsellor cannot register on their behalf.'],
+          ['Identity document', 'An acceptable physical photo ID whose name matches the registration exactly; for international test takers a valid passport, which is the document to carry in India. A photo uploaded at registration must resemble the ID and the candidate on the day.'],
+          ['Device', 'A personal or school-managed Windows laptop or tablet, Mac laptop or iPad, or a school-managed Chromebook with the Bluebook app installed and exam setup completed; a device can be borrowed from the College Board if requested at least 30 days before the test.'],
+          ['Attempts', 'No limit; each date is a full fee, and colleges receive only the dates you send.'],
+          ['Accommodations', 'Extended time, breaks and other arrangements approved through the College Board’s Services for Students with Disabilities before registering.'],
+        ],
+      },
+    ],
+    procedure: {
+      heading: 'How to register for the SAT from India, what happens on test day, and how scores are sent',
+      intro: 'Registration, the admission ticket, scores and score sending all run through the College Board account and the Bluebook app.',
+      blocks: [
+        {
+          type: 'steps',
+          title: 'From account to score report',
+          items: [
+            {
+              title: 'Create a College Board account',
+              text: 'The student’s own, with full legal name as on the passport, date of birth, address, phone and current grade; the same account holds PSAT and AP records.',
+            },
+            {
+              title: 'Register online',
+              text: 'About 30 minutes: choose a test date and search centres — several may be needed, since seats fill — enter the high-school name and code, choose the testing device, upload a compliant photo, accept the testing rules and pay US$68 plus the $43 international fee. Registration closes about two weeks before each date; late registration is open for four more days at $38 extra.',
+            },
+            {
+              title: 'Download Bluebook',
+              text: 'On the device you will bring; sign in, accept the rules and take the free full-length practice tests in the same interface. Request a loaned device at least 30 days before the test if you have none.',
+            },
+            {
+              title: 'Five days before',
+              text: 'Open Bluebook, complete the short exam setup and save the admission ticket — printed, photographed or emailed. Check the test-centre closings page the night before and on the morning.',
+            },
+            {
+              title: 'Test day',
+              text: 'Arrive by 7:45 a.m. with the charged device, its charger, the admission ticket, the passport and a pencil; a permitted calculator is optional since Bluebook has one built in. Phones and smartwatches are collected. The test runs 2 hours 14 minutes with a ten-minute break between the two sections.',
+            },
+            {
+              title: 'Scores',
+              text: 'About two weeks after the date — 16 October for the 3 October 2026 test — in the College Board account, with section scores, percentiles and a breakdown by content domain.',
+            },
+            {
+              title: 'Send scores',
+              text: 'Four score reports are free if ordered within nine days of the test; afterwards $15 each, $31 to rush. Colleges receive only the dates you send, and many superscore across dates.',
+            },
+            {
+              title: 'If the score is short',
+              text: 'Register for the next worldwide date; there are eight a year and no limit on attempts.',
+            },
+          ],
+        },
+        {
+          type: 'table',
+          caption: 'Fees and deadlines outside the US, from the College Board.',
+          head: ['Item', 'Rule'],
+          rows: [
+            ['Registration', 'US$68 plus a $43 international fee; some centres add a $24 centre fee'],
+            ['Deadlines', 'Regular registration about two weeks before the date; late registration four days after that for $38'],
+            ['Changing the centre', '$34; a date change is a cancellation and a new registration'],
+            ['Cancellation', '$34 by the change deadline; $44 after it until the Thursday before the test; nothing on or after test day'],
+            ['Score reports', 'Four free within nine days of the test; $15 each afterwards; $31 rush; $35 for archived scores'],
+            ['Sunday testing', 'Not available in India'],
+          ],
+        },
+        {
+          type: 'links',
+          title: 'Official pages',
+          items: [
+            {
+              label: 'College Board — registering for the SAT',
+              href: 'https://satsuite.collegeboard.org/sat/registration/online-registration/registering',
+            },
+            {
+              label: 'College Board — SAT Registration and Test Day Guide (PDF)',
+              href: 'https://satsuite.collegeboard.org/media/pdf/digital-sat-registration-test-day-guide.pdf',
+            },
+            {
+              label: 'College Board — policies for international testing',
+              href: 'https://satsuite.collegeboard.org/sat/registration/international-testing/policies',
+            },
+            {
+              label: 'College Board — international fees',
+              href: 'https://satsuite.collegeboard.org/sat/registration/international-testing/fees',
+            },
+          ],
+        },
+      ],
+    },
+    pattern: [
+      {
+        type: 'table',
+        caption: 'The digital SAT. Two sections, each in two adaptive modules; 98 questions in 2 hours 14 minutes.',
+        head: ['Section', 'Modules', 'Questions', 'Time', 'Content', 'Score'],
+        rows: [
+          ['Reading and Writing', 'Two of 32 minutes', '54', '64 minutes', 'Short passages with one question each across craft and structure, information and ideas, standard English conventions, and expression of ideas', '200–800'],
+          ['Math', 'Two of 35 minutes', '44', '70 minutes', 'Algebra, advanced math, problem-solving and data analysis, geometry and trigonometry; about a quarter are student-produced responses; calculator allowed throughout', '200–800'],
+          ['Total', '4', '98', '2 hours 14 minutes plus a 10-minute break', '—', '400–1600'],
+        ],
+      },
+      {
+        type: 'defs',
+        items: [
+          ['Module adaptivity', 'The first module of each section mixes easy, medium and hard questions; performance on it decides whether the second module is harder or easier, and the harder module gives access to the highest scores. A careful first module protects the ceiling.'],
+          ['Scoring', 'No penalty for wrong answers. Raw scores are converted to the 200–800 section scales with the module difficulty taken into account, and the two section scores add to the total. Reports also give percentiles and a breakdown by the four content domains in each section.'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'What colleges commonly look for. Many are test-optional; the published middle-50 per cent ranges of admitted students are the guide.',
+        head: ['College tier', 'Typical middle range'],
+        rows: [
+          ['The most selective US universities', '1500–1570'],
+          ['Highly selective private and flagship public universities', '1400–1520'],
+          ['Selective state universities and liberal-arts colleges', '1250–1420'],
+          ['Universities outside the US that accept the SAT', 'Commonly 1200 and above where a score is required; often used alongside board results'],
+          ['Merit scholarships', 'Often 1400 and above, with programme-specific thresholds'],
+        ],
+      },
+    ],
+    studyPlan: [
+      {
+        type: 'steps',
+        title: 'A ten-week plan for a 1400-plus score',
+        items: [
+          {
+            title: 'Week 1 — diagnose in Bluebook',
+            text: 'One full official practice test in the app; read the section scores and the content-domain breakdown at My Practice.',
+          },
+          {
+            title: 'Weeks 2–5 — reading and writing conventions',
+            text: 'Transitions, punctuation, concision, evidence and vocabulary-in-context questions daily in short timed sets; these carry most of the marks Indian candidates lose.',
+          },
+          {
+            title: 'Weeks 2–4 — mathematics revision',
+            text: 'Algebra, advanced math, data analysis and geometry from class 10–11 material, with the Desmos calculator used only where it saves time; drill the student-produced response format.',
+          },
+          {
+            title: 'Weeks 4–8 — timed modules',
+            text: 'Alternate 32-minute reading and writing modules and 35-minute math modules; a careful first module, everything answered, and a pass-back for flagged items.',
+          },
+          {
+            title: 'Weeks 5 and 8 — full official tests',
+            text: 'Two more Bluebook practice tests spaced apart; compare with the target college’s middle range.',
+          },
+          {
+            title: 'Weeks 9–10 — register and sit',
+            text: 'Register about three weeks before the chosen date to avoid the late fee, complete exam setup five days before, and keep a later date in reserve since scores take two weeks.',
+          },
+        ],
+      },
+    ],
     resources: {
       syllabus: {
         description:
@@ -2164,6 +2856,22 @@ const international = [
         q: 'What should an online SAT course cover?',
         a: 'The digital, module-adaptive format and the Bluebook app; reading and writing conventions — transitions, punctuation, concision, evidence; the four math domains with the calculator; pacing to the 64- and 70-minute sections; official practice tests analysed by content domain; and a plan around the 2026–27 worldwide dates and their registration deadlines.',
       },
+      {
+        q: 'How do I register for the SAT in India?',
+        a: 'In your own College Board account: choose a date and centre, enter your school details, choose the device you will bring, upload a compliant photo, accept the testing rules and pay US$68 plus the $43 international fee, at least two weeks before the date. Download Bluebook on the device, complete exam setup five days before the test and save the admission ticket. Sunday testing is not offered in India.',
+      },
+      {
+        q: 'What do I bring on SAT test day?',
+        a: 'A fully charged laptop or tablet with Bluebook installed and exam setup completed, its charger, the admission ticket, an acceptable photo ID — the passport for Indian candidates — and a pencil. A permitted calculator is optional because Bluebook includes one. Arrive by 7:45 a.m.; phones and smartwatches are collected before the test.',
+      },
+      {
+        q: 'How is the digital SAT scored?',
+        a: 'Each section is scored 200–800 from the number correct across its two modules with the second module’s difficulty taken into account, and the two add to a 400–1600 total. There is no penalty for wrong answers. Scores arrive about two weeks after the test with percentiles and a breakdown by content domain.',
+      },
+      {
+        q: 'How many times can I take the SAT and which scores do colleges see?',
+        a: 'There is no limit; there are eight worldwide dates a year. Colleges receive only the test dates you send — four reports are free within nine days of a test, $15 each afterwards — and many superscore, taking the best section scores across dates.',
+      },
     ],
   },
 
@@ -2285,6 +2993,162 @@ const international = [
         },
       ],
     },
+    eligibility: [
+      {
+        type: 'table',
+        caption: 'Who can take PTE Academic, and what Pearson checks.',
+        head: ['Condition', 'Rule'],
+        rows: [
+          ['Age', 'Sixteen or older; candidates aged 16 and 17 must submit a parental consent form before the test.'],
+          ['Nationality and qualification', 'Anyone may book; no qualification is required.'],
+          ['Identity document', 'A valid passport, in any country. Testing inside your country of citizenship, an alternative government photo ID may be accepted where Pearson’s exceptions list allows it; outside it, only a passport. The ID selected at booking is the one presented, the booking name must match it exactly, and a candidate without it is refused entry and loses the fee.'],
+          ['Which PTE test', 'PTE Academic for study and for Australian and New Zealand visas; PTE Academic UKVI for UK visa routes needing a four-skills SELT; PTE Core for Canadian immigration; the PTE Home tests for UK family and settlement routes.'],
+          ['Attempts', 'No limit; a new booking can be made as soon as the previous score is released, each at the full fee.'],
+          ['Accommodations', 'Extra time, breaks and comfort aids on application with evidence before booking, through the myPTE account.'],
+        ],
+      },
+    ],
+    procedure: {
+      heading: 'How to book PTE Academic, what happens at the test centre, and how scores are released',
+      intro: 'Everything runs through a myPTE account: booking, rescheduling, results and score sending.',
+      blocks: [
+        {
+          type: 'steps',
+          title: 'From booking to score report',
+          items: [
+            {
+              title: 'Create a myPTE account',
+              text: 'Enter your name exactly as printed in the passport, including middle names in the given-names field, and your email and phone. One account serves every PTE booking.',
+            },
+            {
+              title: 'Choose the test and a centre',
+              text: 'Answer the booking questions — where you want to go and what for — to be shown the right test, then pick a centre and a date and time at least 24 hours ahead. India has centres in more than sixty cities and slots most days.',
+            },
+            {
+              title: 'Pay',
+              text: 'By Visa, Mastercard, American Express or Discover, or with a voucher; ₹18,900 including GST in India in 2026. The confirmation appears in the account and by email.',
+            },
+            {
+              title: 'Prepare with the free and scored material',
+              text: 'Smart Prep in the account carries free video courses and a study plan; Pearson’s scored practice tests are the only practice marked by the live scoring system.',
+            },
+            {
+              title: 'Test day',
+              text: 'Arrive at least 30 minutes early with the passport. The administrator checks the ID, takes a digital photograph and a digital signature, and seats you in a partitioned booth with a computer, headset, notepad and pencil among 10 to 15 other candidates. The test runs about two hours without a scheduled break.',
+            },
+            {
+              title: 'Results',
+              text: 'Typically within 48 hours and at most five working days, by email alert to the myPTE account: an overall score, four communicative-skill scores and a Skills Profile with recommendations.',
+            },
+            {
+              title: 'Send scores',
+              text: 'From the account to any number of institutions, free, at any time while the score is valid; recipients verify it online.',
+            },
+            {
+              title: 'If the score is short',
+              text: 'Rebook as soon as the result is out, or request a rescore of the spoken and written responses for a fee — rarely productive, since the scoring is automated and consistent.',
+            },
+          ],
+        },
+        {
+          type: 'table',
+          caption: 'Rescheduling and cancellation, from Pearson’s policy centre.',
+          head: ['Timing', 'Reschedule', 'Cancel'],
+          rows: [
+            ['More than 14 full calendar days before the test', 'Free, up to six times per booking', 'Full refund'],
+            ['14 to 7 full calendar days before', 'Not possible — cancel and rebook', '50 per cent refund'],
+            ['7 days or fewer', 'Not possible', 'No refund'],
+            ['Illness or family emergency', 'Pearson may allow a free reschedule at its discretion on an emergency form with evidence, submitted up to 72 hours after the appointment', '—'],
+          ],
+        },
+        {
+          type: 'links',
+          title: 'Official pages',
+          items: [
+            {
+              label: 'Pearson — how to book your PTE test',
+              href: 'https://www.pearsonpte.com/articles/how-to-book-your-pte-exam/',
+            },
+            {
+              label: 'Pearson — on test day',
+              href: 'https://www.pearsonpte.com/on-test-day/',
+            },
+            {
+              label: 'Pearson — identification policy',
+              href: 'https://www.pearsonpte.com/policy-center/identification-policy/',
+            },
+            {
+              label: 'Pearson — cancellations and rescheduling',
+              href: 'https://www.pearsonpte.com/policy-center/cancellations-rescheduling/',
+            },
+          ],
+        },
+      ],
+    },
+    pattern: [
+      {
+        type: 'table',
+        caption: 'The three parts in order, with what each question type scores.',
+        head: ['Part', 'Time', 'Question types', 'Skills scored'],
+        rows: [
+          ['Speaking and Writing', '76–84 minutes', 'Personal Introduction (unscored); Read Aloud; Repeat Sentence; Describe Image; Retell Lecture; Answer Short Question; Summarize Group Discussion; Respond to a Situation; Summarize Written Text; Write Essay', 'Speaking, and listening through the integrated tasks; reading and writing through the two written tasks'],
+          ['Reading', '23–30 minutes', 'Fill in the Blanks (drop-down); Multiple Choice, multiple answers; Re-order Paragraphs; Fill in the Blanks (drag and drop); Multiple Choice, single answer', 'Reading, with writing credited in the drop-down blanks'],
+          ['Listening', '31–39 minutes', 'Summarize Spoken Text; Multiple Choice, multiple answers; Fill in the Blanks; Highlight Correct Summary; Multiple Choice, single answer; Select Missing Word; Highlight Incorrect Words; Write from Dictation', 'Listening, with writing through the summary, blanks and dictation and reading through the summary and incorrect-words items'],
+        ],
+      },
+      {
+        type: 'defs',
+        items: [
+          ['How the score is built', 'Every response is scored automatically on correctness and, for open responses, on traits — content, oral fluency and pronunciation for speech; content, form, grammar, vocabulary, spelling and structure for writing. Each trait feeds the communicative skills it evidences, so one task can move two scores. The overall score is not an average of the four but a separate estimate from all items.'],
+          ['Negative scoring', 'Multiple-answer questions and Highlight Incorrect Words lose a mark per wrong selection to a floor of zero; every other item scores zero or positive.'],
+          ['Form rules with zero for a breach', 'Summarize Written Text must be one sentence of 5 to 75 words; Summarize Spoken Text 50 to 70 words; Write Essay 200 to 300 words. Under or over the limit, or a second sentence in the first, scores nothing for that item.'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'What destinations commonly ask for, with Pearson’s July 2025 IELTS concordance for reference.',
+        head: ['Purpose', 'Typical requirement'],
+        rows: [
+          ['Australia subclass 500', 'PTE Academic 47 as the standard minimum, 39 with ten weeks of ELICOS, 31 with twenty; universities commonly 58 overall with 50 in each skill'],
+          ['Australian skilled and other visas', 'Home Affairs bands — Competent English at 50 in each skill, Proficient at 65, Superior at 79'],
+          ['UK Student visa', 'PTE Academic UKVI at CEFR B2 for degree level — 59 in each component — unless the university assesses English itself; universities commonly 59 to 67 overall'],
+          ['United States and Canadian universities', 'Commonly 58 to 65 overall for graduate admission, 50 to 58 for undergraduate; a few ask 68 or more'],
+          ['IELTS equivalence', '47 = 6.0, 55 = 6.5, 63 = 7.0, 71 = 7.5, 79 = 8.0 by Pearson’s concordance; institutions set their own PTE figure'],
+        ],
+      },
+    ],
+    studyPlan: [
+      {
+        type: 'steps',
+        title: 'A six-week plan to a target score',
+        items: [
+          {
+            title: 'Week 1 — learn the twenty tasks',
+            text: 'Work Pearson’s free sample questions type by type, reading the scoring rule for each; sit one scored practice test at the end of the week for a baseline.',
+          },
+          {
+            title: 'Weeks 2–3 — speaking templates and microphone habits',
+            text: 'A fixed structure for Describe Image, Retell Lecture, Summarize Group Discussion and Respond to a Situation; daily Read Aloud and Repeat Sentence with recordings played back; speak on the tone, no pauses, finish inside the clock.',
+          },
+          {
+            title: 'Weeks 2–4 — writing to the form rules',
+            text: 'One-sentence summaries of 5 to 75 words, essays of 200 to 300 in twenty minutes, spoken-text summaries of 50 to 70; check the count before every submit.',
+          },
+          {
+            title: 'Weeks 3–5 — listening and reading under negative scoring',
+            text: 'Daily dictation and gap-fill practice; drill the multiple-answer and Highlight Incorrect Words items to select only when sure; Re-order Paragraphs on topic sentences and reference words.',
+          },
+          {
+            title: 'Week 5 — second scored practice test',
+            text: 'Compare the trait scores with the baseline; spend the remaining time on the trait, not the skill, that is lowest.',
+          },
+          {
+            title: 'Week 6 — book and sit',
+            text: 'Book a date at least 24 hours ahead once the practice score clears the target in every skill; results follow within two days, so a retake can be booked immediately if needed.',
+          },
+        ],
+      },
+    ],
     resources: {
       syllabus: {
         description:
@@ -2542,6 +3406,26 @@ const international = [
       {
         q: 'What should an online PTE course cover?',
         a: 'All twenty question types with their prompt lengths, time limits and scoring rules, including Summarize Group Discussion and Respond to a Situation added in 2025; speaking templates and microphone discipline; the form rules for the summaries and essay; the negative-scoring items in reading and listening; and scored full-length practice interpreted against your target score.',
+      },
+      {
+        q: 'How do I book PTE Academic in India?',
+        a: 'Create a myPTE account with your name exactly as in your passport, answer the booking questions to select PTE Academic, choose a centre and a slot at least 24 hours ahead, and pay ₹18,900 by card or voucher. Confirmation is emailed and shown in the account, which is also where rescheduling, results and score sending happen.',
+      },
+      {
+        q: 'What happens on PTE test day?',
+        a: 'Arrive at least 30 minutes early with the passport. The administrator checks the ID, takes a digital photograph and a digital signature, and seats you in a partitioned booth with a headset, notepad and pencil among 10 to 15 candidates. The test runs about two hours with no scheduled break, and results follow within 48 hours in most cases.',
+      },
+      {
+        q: 'Can I reschedule or cancel a PTE booking?',
+        a: 'Rescheduling is free with more than 14 full calendar days to go, up to six times per booking; inside 14 days a booking cannot be rescheduled and must be cancelled and rebooked. Cancellation refunds the full fee with more than 14 days’ notice, half between 14 and 7 days, and nothing with 7 days or fewer. Illness or family emergency can be put to Pearson on an emergency form with evidence.',
+      },
+      {
+        q: 'Is there negative marking in PTE?',
+        a: 'Only on the multiple-answer questions in reading and listening and on Highlight Incorrect Words, where each wrong selection loses a mark down to zero for that item. Everything else scores zero or positive — but a form breach, such as a two-sentence Summarize Written Text or a 190-word essay, scores zero for the item.',
+      },
+      {
+        q: 'What PTE score do I need for Australia or the UK?',
+        a: 'For an Australian Student visa the Department of Home Affairs lists PTE Academic 47, or 39 and 31 with packaged English courses; its Competent, Proficient and Superior bands for other visas are 50, 65 and 79 in each skill. For a UK Student visa at degree level the SELT requirement is B2, which PTE Academic UKVI meets with 59 in each component. Universities commonly ask 58 to 67 overall.',
       },
     ],
   },
@@ -3957,6 +4841,168 @@ const international = [
         },
       ],
     },
+    eligibility: [
+      {
+        type: 'table',
+        caption: 'Who takes OET, and what CBLA checks.',
+        head: ['Condition', 'Rule'],
+        rows: [
+          ['Who it is for', 'Healthcare professionals in one of twelve professions — dentistry, dietetics, medicine, nursing, occupational therapy, optometry, pharmacy, physiotherapy, podiatry, radiography, speech pathology and veterinary science — seeking registration, employment or study in an English-speaking setting. OET advises that it is not the right test for others.'],
+          ['Profession', 'Chosen at booking and fixed for the sitting; it determines the writing and speaking tasks.'],
+          ['Identity document', 'A valid ID uploaded at booking with a photo meeting OET’s guidelines, and the same document presented on the day; a passport is the standard choice, and the booking name must match it.'],
+          ['Mode', 'On paper at a centre, on computer at a venue, or OET@Home on your own computer with remote proctoring where no venue is available in your country or for access needs; the same test and standard in all three, but not every regulator accepts the at-home mode.'],
+          ['Attempts', 'No limit; one booking per test administration; single sub-tests can be booked separately where available.'],
+          ['Special arrangements', 'Extra time, modified materials, large print, Braille and lip-reading versions for candidates who apply with evidence and receive confirmation before the test.'],
+        ],
+      },
+    ],
+    procedure: {
+      heading: 'How to book OET, what happens on test day, and how results are shared',
+      intro: 'Booking, results and sharing run through the OET account; the Test Regulations set the rules for every mode.',
+      blocks: [
+        {
+          type: 'steps',
+          title: 'From booking to Statement of Results',
+          items: [
+            {
+              title: 'Register with a personal email',
+              text: 'Not a university or workplace address — unless applying for ECFMG certification, in which case the same email used with ECFMG. Accept the Terms and Conditions, Privacy Policy and Collection Notice.',
+            },
+            {
+              title: 'Choose profession, mode and venue',
+              text: 'Confirm that the mode, the profession and the venue are available in your country on the booking page; not every date and mode is offered everywhere.',
+            },
+            {
+              title: 'Upload ID and a photo, and pay',
+              text: 'A valid ID document and a photo meeting OET’s requirements; the fee is charged in Australian dollars at booking — AU$587 for the full test at the date checked.',
+            },
+            {
+              title: 'Prepare with official material',
+              text: 'Free sample tests for every sub-test and profession in paper and computer formats, the Test Handbook, masterclasses and the assessment criteria for writing and speaking.',
+            },
+            {
+              title: 'Test day',
+              text: 'Present the same ID for verification. Listening, reading and writing run in one session — about 40 minutes, 60 minutes and 45 minutes — and speaking is a 20-minute session with an interlocutor, on the same day or a scheduled slot. OET@Home candidates follow the technical and room rules with a remote proctor.',
+            },
+            {
+              title: 'Results',
+              text: 'Computer and at-home results typically within six calendar days and sometimes within 48 hours of the last sub-test; paper results from five days after the test in India. The Statement of Results in the account shows a score of 0–500 and a grade for each sub-test.',
+            },
+            {
+              title: 'Share results',
+              text: 'Grant recognising organisations access through the OET account; they verify online, and access can be withdrawn at any time. There is no fixed validity — each organisation sets its own, commonly two years.',
+            },
+            {
+              title: 'If a grade is short',
+              text: 'Request a remark of one or more sub-tests within 72 hours of results, with the fee refunded if the grade changes; or book the single sub-test again where available.',
+            },
+          ],
+        },
+        {
+          type: 'table',
+          caption: 'Fees and rules, from OET.',
+          head: ['Item', 'Rule'],
+          rows: [
+            ['Test fee', 'Published in Australian dollars and converted at booking; AU$587 for the full test at the date checked; single sub-tests priced separately'],
+            ['Rescheduling', 'Options and fees depend on the mode, where the test was booked and the notice given; published on the OET site'],
+            ['Cancellation', 'A cancellation fee applies after booking; check the Terms and Conditions before cancelling'],
+            ['Remark', 'Within 72 hours of results; fee refunded if the grade changes'],
+            ['Appeal', 'Within five calendar days of a remark, complaint or malpractice decision; fee refunded if successful'],
+            ['Validity', 'Set by each recognising organisation'],
+          ],
+        },
+        {
+          type: 'links',
+          title: 'Official pages',
+          items: [
+            {
+              label: 'OET — Test Handbook 2026 (PDF)',
+              href: 'https://cdn-aus.aglty.io/oet/pdf-files/OET%20Test%20Handbook%202026.pdf',
+            },
+            {
+              label: 'OET — test information',
+              href: 'https://www.occupationalenglishtest.org/test-information/',
+            },
+            {
+              label: 'OET — book a test',
+              href: 'https://www.occupationalenglishtest.org/test/book-a-test',
+            },
+            {
+              label: 'OET — results and scoring',
+              href: 'https://www.occupationalenglishtest.org/test/results-and-scoring',
+            },
+          ],
+        },
+      ],
+    },
+    pattern: [
+      {
+        type: 'table',
+        caption: 'The four sub-tests, part by part.',
+        head: ['Sub-test', 'Part', 'Task', 'Questions', 'Time'],
+        rows: [
+          ['Listening', 'A', 'Note completion from two consultation recordings', '24', 'About 40 minutes in all; heard once'],
+          ['Listening', 'B', 'Six short workplace extracts, one three-option question each', '6', ''],
+          ['Listening', 'C', 'Two presentations or interviews, six three-option questions each', '12', ''],
+          ['Reading', 'A', 'Expeditious reading of four short texts — matching, short answer, completion', '20', '15 minutes'],
+          ['Reading', 'B', 'Six short workplace texts, one three-option question each', '6', '45 minutes for B and C'],
+          ['Reading', 'C', 'Two long articles, eight four-option questions each', '16', ''],
+          ['Writing', '—', 'One profession-specific letter from case notes', '1 task', '45 minutes — 5 reading, 40 writing'],
+          ['Speaking', '—', 'Two profession-specific role plays with an interlocutor', '2 tasks', '20 minutes — warm-up, 3 minutes’ preparation and 5 minutes per role play'],
+        ],
+      },
+      {
+        type: 'defs',
+        items: [
+          ['Scoring', 'Listening and reading: one mark per question, 42 marks converted to the 500 scale. Writing: six criteria — purpose, content, conciseness and clarity, genre and style, organisation and layout, language — combined and converted. Speaking: four linguistic criteria out of six and five clinical-communication criteria out of three, combined and converted. Each sub-test is reported 0–500 in ten-point steps with a grade: A 450–500, B 350–440, C+ 300–340, C 200–290, D 100–190, E 0–90.'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'What regulators ask for. Each publishes its own rule; confirm before booking.',
+        head: ['Regulator', 'Requirement as commonly stated'],
+        rows: [
+          ['Nursing and Midwifery Council, UK', 'B in listening, reading and speaking and at least C+ in writing, in one sitting or two sittings within six months with no sub-test below C+'],
+          ['General Medical Council, UK', 'B in every sub-test in one sitting, or two sittings within six months with no sub-test below B'],
+          ['AHPRA, Australia', 'B in every sub-test in one sitting, or across two sittings within six months with no sub-test below C'],
+          ['Medical Council of Ireland and NMBI', 'B in every sub-test, with the council’s own sitting rules'],
+          ['ECFMG, United States', 'OET Medicine accepted for certification with a minimum of B in every sub-test'],
+          ['Australian Department of Home Affairs', 'OET listed for Student visas at the minimum on its table; the at-home mode is not accepted for visas'],
+        ],
+      },
+    ],
+    studyPlan: [
+      {
+        type: 'steps',
+        title: 'An eight-week plan for grade B',
+        items: [
+          {
+            title: 'Week 1 — diagnose',
+            text: 'One official sample test for your profession under the real timings, including a role play with a partner; grade each sub-test roughly against the criteria.',
+          },
+          {
+            title: 'Weeks 2–4 — listening and reading',
+            text: 'Part A note completion and Part A expeditious reading daily against the clock; Parts B and C for purpose and argument; build the clinical vocabulary the recordings and texts use.',
+          },
+          {
+            title: 'Weeks 2–7 — writing, marked',
+            text: 'One letter a week from case notes in 45 minutes, marked against the six criteria by someone who knows them; practise selecting and ordering the history the reader needs.',
+          },
+          {
+            title: 'Weeks 3–7 — speaking, recorded',
+            text: 'Two role plays a week with a partner as the patient, recorded and reviewed for the clinical-communication criteria as much as the language.',
+          },
+          {
+            title: 'Week 7 — full mock',
+            text: 'All four sub-tests in one day in the mode you will book.',
+          },
+          {
+            title: 'Week 8 — book and sit',
+            text: 'Book the mode your regulator accepts; results follow in days, so a single sub-test retake can be planned quickly if one grade is short.',
+          },
+        ],
+      },
+    ],
     resources: {
       syllabus: {
         description:
@@ -4203,6 +5249,22 @@ const international = [
         q: 'What should online OET coaching include?',
         a: 'Profession-specific writing tasks marked against OET’s six criteria; role plays with a trainer as the patient, scored on the linguistic and clinical-communication criteria; timed Part A listening and reading drills; full sub-test mocks in the mode you will book; and knowledge of your regulator’s grade, sitting and delivery-mode rules. Confirm the trainer’s experience with your profession.',
       },
+      {
+        q: 'How do I book OET from India?',
+        a: 'Register on the OET site with a personal email, choose your profession, the delivery mode — paper or computer at a venue in India, or OET@Home — and a date, upload a valid ID and a compliant photo, and pay in Australian dollars at booking. One booking per administration is allowed, and the mode must be one your regulator accepts.',
+      },
+      {
+        q: 'What happens on OET test day?',
+        a: 'ID verification with the document uploaded at booking, then listening, reading and writing in one session — about 40, 60 and 45 minutes — and a 20-minute speaking session with an interlocutor who plays the patient, either the same day or in a scheduled slot. At-home candidates are proctored remotely under the same rules.',
+      },
+      {
+        q: 'When do OET results come and how are they shared?',
+        a: 'Computer and at-home results typically within six calendar days, sometimes within 48 hours of the last sub-test; paper results from five days after the test in India. The Statement of Results shows a 0–500 score and a grade per sub-test, and you share it by granting organisations access through your OET account.',
+      },
+      {
+        q: 'What OET grade do the NMC, GMC and AHPRA require?',
+        a: 'Grade B in every sub-test is the common standard: the NMC allows C+ in writing, the GMC asks B across the board, and AHPRA accepts B in each in one sitting or across two within six months with no sub-test below C. Each regulator publishes its own rule, and ECFMG accepts OET Medicine at B in every sub-test.',
+      },
     ],
   },
   /* ══════════════════════════════════════════════════════════════
@@ -4323,6 +5385,153 @@ const international = [
         },
       ],
     },
+    eligibility: [
+      {
+        type: 'table',
+        caption: 'Who can sit the UCAT, and what the consortium checks.',
+        head: ['Condition', 'Rule'],
+        rows: [
+          ['Who must sit it', 'Applicants to medicine and dentistry at UCAT Consortium universities and partner schools for 2027 entry or deferred 2028 entry; the same test is required of UK, EU and international applicants.'],
+          ['Age and qualification', 'No minimum age; candidates are normally in their final two years of school or graduates.'],
+          ['Identity document', 'One form of permitted photo ID meeting the Test Centre Photo ID Policy and accepted in the country of testing; a valid passport is the safe choice in India. Without it a candidate cannot test and loses the fee.'],
+          ['One sitting', 'Once per test cycle; the 2026 result is valid only for the 2027 admissions cycle. Sitting both the UCAT and the UCAT ANZ in the same year is misconduct.'],
+          ['Not eligible', 'Anyone affiliated with a UCAT coaching business as a tutor, content developer or with a financial interest.'],
+          ['Access arrangements and bursary', 'Extended-time versions and rest breaks on application with evidence by 10 September 2026; a bursary for UK candidates on certain benefits, applied for before booking.'],
+        ],
+      },
+    ],
+    procedure: {
+      heading: 'How to register and book the UCAT from India, what happens at the Pearson VUE centre, and how results reach universities',
+      intro: 'Registration and booking run through a UCAT account; the test is delivered by Pearson VUE; results go to universities from the UCAT Office.',
+      blocks: [
+        {
+          type: 'steps',
+          title: 'From account to results',
+          items: [
+            {
+              title: 'Create a UCAT account from 20 May 2026',
+              text: 'New and returning candidates alike; check the details, agree to the testing policies and register. Registration only signals an intention to sit; booking is separate.',
+            },
+            {
+              title: 'Apply for arrangements or a bursary first',
+              text: 'Access arrangements must be approved before booking so that the right test version is booked; the bursary waives the fee at checkout for eligible UK candidates.',
+            },
+            {
+              title: 'Book from 23 June 2026',
+              text: 'Choose a Pearson VUE centre in India and a slot in the 13 July to 24 September window and pay £115 by card. July and August are recommended; September fills, and a late date leaves no room to reschedule. The booking deadline is 16 September at 15:00 UK time.',
+            },
+            {
+              title: 'Prepare with the official material',
+              text: 'The tour tutorial, question tutorials, question banks and timed practice tests on the consortium site are free and complete.',
+            },
+            {
+              title: 'Test day',
+              text: 'Arrive 15 minutes early; check-in verifies the photo ID and takes a photograph, and you sign the test rules. The test cannot be paused, so breaks between subtests are the only way to leave the room without losing time; an on-screen calculator and a whiteboard are provided.',
+            },
+            {
+              title: 'Results',
+              text: 'A printed score report on leaving the centre and the scores in the UCAT account within about 24 hours; preliminary deciles in mid-September and final statistics after the window.',
+            },
+            {
+              title: 'Delivery to universities',
+              text: 'Apply through UCAS by 15 October 2026 naming your medicine and dentistry choices; after the deadline the UCAT Office matches candidates to applications and delivers results to UK universities in early November. Partner universities receive results through the account or on request; results go only to consortium and partner institutions.',
+            },
+            {
+              title: 'If the result disappoints',
+              text: 'There is no resit in the cycle; use the published deciles and each university’s stated use of the score to choose where a realistic application lies.',
+            },
+          ],
+        },
+        {
+          type: 'table',
+          caption: 'Fees and rules, from the consortium.',
+          head: ['Item', 'Rule'],
+          rows: [
+            ['Test fee', '£70 at UK centres; £115 outside the UK, including India'],
+            ['Rescheduling', 'Free up to 24 hours before the appointment, through the account'],
+            ['Cancellation', 'Full refund if cancelled at least 24 hours before the appointment; a missed test forfeits the fee and cannot be rebooked until it shows as a no-show'],
+            ['Deadlines', 'Booking 16 September 2026; access arrangements 10 September; bursary 24 September; testing ends 24 September'],
+            ['OnVUE', 'Online proctored testing for candidates who cannot reach a centre, applied for before booking'],
+            ['Validity', 'The 2027 admissions cycle only'],
+          ],
+        },
+        {
+          type: 'links',
+          title: 'Official pages',
+          items: [
+            {
+              label: 'UCAT — booking your test',
+              href: 'https://www.ucat.ac.uk/register/booking-your-test/',
+            },
+            {
+              label: 'UCAT — rescheduling and cancelling',
+              href: 'https://www.ucat.ac.uk/register/rescheduling-and-cancelling/',
+            },
+            {
+              label: 'UCAT — test day',
+              href: 'https://www.ucat.ac.uk/sit/test-day/',
+            },
+            {
+              label: 'UCAT — results',
+              href: 'https://www.ucat.ac.uk/results/ucat-results/',
+            },
+          ],
+        },
+      ],
+    },
+    pattern: [
+      {
+        type: 'table',
+        caption: 'The four subtests, with question types and pace.',
+        head: ['Subtest', 'Questions', 'Time', 'Per question', 'Question types', 'Score'],
+        rows: [
+          ['Verbal Reasoning', '44', '22 minutes', 'About 30 seconds', 'Eleven passages with four questions each: true, false or cannot tell; which statement is supported', '300–900'],
+          ['Decision Making', '35', '37 minutes', 'About a minute', 'Logical puzzles, syllogisms, interpreting information, recognising assumptions, Venn diagrams, probabilistic reasoning; some as five yes-or-no statements', '300–900'],
+          ['Quantitative Reasoning', '36', '26 minutes', 'About 43 seconds', 'Problem solving from tables, charts and graphs with an on-screen calculator', '300–900'],
+          ['Situational Judgement', '69', '26 minutes', 'About 22 seconds', 'Scenarios with responses rated for appropriateness or considerations rated for importance', 'Band 1–4'],
+        ],
+      },
+      {
+        type: 'defs',
+        items: [
+          ['Scoring', 'One mark per correct answer, two for a fully correct Decision Making multiple-statement item and one for a partly correct one, partial credit for near answers in Situational Judgement, no deduction for wrong answers. Cognitive raw marks are scaled to 300–900 so subtests with different question counts can be compared, giving a total of 900–2700. Situational Judgement is reported as Band 1 to 4 against an expert panel.'],
+          ['How universities use it', 'Some rank all applicants by total score, some set a cut-off that varies with the year’s cohort, some weight the score with predicted grades and the personal statement, and some screen on the band. Each publishes its method, and the consortium collects them on its How Universities Use the UCAT page.'],
+        ],
+      },
+      {
+        type: 'note',
+        title: 'Placing a score',
+        text: 'The mean total has sat around 2500 in recent cycles, and the consortium publishes deciles and percentiles each year — preliminary figures in mid-September and final ones after the window closes — on its Test Statistics page. A score is judged against that year’s cohort and against each university’s published use of it; Band 1 or 2 in Situational Judgement satisfies most universities, and several reject Band 4 outright.',
+      },
+    ],
+    studyPlan: [
+      {
+        type: 'steps',
+        title: 'An eight-week summer plan',
+        items: [
+          {
+            title: 'Week 1 — tour and tutorials',
+            text: 'The tour tutorial for the tools, then a question tutorial for each subtest, untimed; one official practice test cold at the end of the week.',
+          },
+          {
+            title: 'Weeks 2–3 — technique per subtest',
+            text: 'Keyword scanning and the cannot-tell logic for Verbal Reasoning; a triage rule for Decision Making puzzles; data location and mental arithmetic for Quantitative Reasoning; the professional-standards logic behind Situational Judgement.',
+          },
+          {
+            title: 'Weeks 3–6 — timed question banks',
+            text: 'Daily blocks at the real per-question pace — 30, 60, 43 and 22 seconds — with a rule for leaving a question and guessing.',
+          },
+          {
+            title: 'Weeks 5 and 7 — full official practice tests',
+            text: 'Two hours without a pause, subtests in order; compare with the published deciles.',
+          },
+          {
+            title: 'Week 8 — sit',
+            text: 'A July or August date booked well ahead; arrive 15 minutes early with the passport, and read the score report the same day.',
+          },
+        ],
+      },
+    ],
     resources: {
       syllabus: {
         description:
@@ -4564,6 +5773,22 @@ const international = [
       {
         q: 'What should online UCAT coaching cover?',
         a: 'A technique for each of the four subtests — Verbal Reasoning, Decision Making, Quantitative Reasoning and Situational Judgement — timed practice at the real per-question pace from the start, full two-hour mocks on the official interface, analysis against the published deciles, and the 2026 calendar: registration from 20 May, booking from 23 June, testing 13 July to 24 September, results to universities in early November.',
+      },
+      {
+        q: 'How do I book the UCAT from India?',
+        a: 'Create a UCAT account from 20 May 2026, register, apply for any access arrangements or bursary first, then from 23 June book a Pearson VUE centre in India and a slot in the 13 July to 24 September window, paying £115 by card. Book July or August if you can; the booking deadline is 16 September at 15:00 UK time and September slots run short.',
+      },
+      {
+        q: 'What happens on UCAT test day?',
+        a: 'Arrive 15 minutes early with your permitted photo ID — a passport in India. Check-in verifies the ID, takes your photograph and has you sign the test rules. The test runs just under two hours and cannot be paused, so leave the room only between subtests; an on-screen calculator and a whiteboard are provided. A score report is printed as you leave and the scores appear in your account within about 24 hours.',
+      },
+      {
+        q: 'Can I reschedule or cancel a UCAT booking?',
+        a: 'Yes, through your account up to 24 hours before the appointment: rescheduling is free and cancellation refunds the full fee. Inside 24 hours or after a missed test the fee is lost, and a new booking is possible only once the missed appointment shows as a no-show, at the full fee again.',
+      },
+      {
+        q: 'How does my UCAT score reach universities?',
+        a: 'You apply through UCAS by 15 October 2026; after that the UCAT Office matches you to your medicine and dentistry choices and delivers the result to UK consortium universities in early November. Universities accept results only from the UCAT Office, and partner universities abroad receive them through the account or on request.',
       },
     ],
   },

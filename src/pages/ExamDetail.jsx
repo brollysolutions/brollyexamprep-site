@@ -198,6 +198,20 @@ export default function ExamDetail() {
               ]}
             />
 
+            {/*
+              An optional procedure section — registration, booking, test day,
+              results, sending scores, retakes — for exams a candidate books
+              and pays for themselves rather than applies to through a
+              notification. Rendered only when the record supplies it.
+            */}
+            <ContentSection
+              id="procedure"
+              eyebrow={exam.procedure?.eyebrow || 'Procedure'}
+              heading={exam.procedure?.heading || `How to register for ${exam.name}, what happens on test day, and how results reach you`}
+              intro={exam.procedure?.intro}
+              blocks={exam.procedure?.blocks || []}
+            />
+
             {/* The marks-and-minutes summary. The full treatment stays on the
                 exam-pattern resource page; this is what fits on one screen. */}
             <ContentSection
