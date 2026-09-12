@@ -350,9 +350,9 @@ const HUBS = {
      ══════════════════════════════════════════════════════════════ */
 
   '/government-exams/ssc/': {
-    title: 'SSC Exams 2026: CGL, CHSL, MTS, GD, CPO, JE Guide',
+    title: 'SSC Exams 2026: CGL, CHSL, MTS, GD, CPO, JE Exam Pattern & Dates',
     description:
-      'SSC exam guide — how the six Staff Selection Commission examinations differ, which suits your qualification, and how to prepare for each.',
+      'SSC exams 2026 — CGL, CHSL, MTS, GD, CPO and JE exam pattern, negative marking, notification dates and vacancies from the official notices, and which fits you.',
     lead: [
       'The Staff Selection Commission conducts six recruitment examinations that between them fill most non-gazetted central government posts. They are usually discussed as one family, and for preparation purposes that is roughly right — the subjects overlap heavily — but the exams differ in qualification, in depth and, crucially, in how they punish a wrong answer.',
       'Choosing between them is mostly a question of what you hold. A degree opens CGL and CPO; an engineering diploma opens JE; class 12 opens CHSL; class 10 opens GD and MTS. Beyond that, the choice turns on whether you want a desk, a uniform, or a technical post.',
@@ -375,13 +375,52 @@ const HUBS = {
               ['SSC CHSL', 'Class 12', 'Clerical and data entry posts', 'A typing or data entry skill test'],
               ['SSC MTS', 'Class 10', 'Multi-Tasking Staff and Havaldar', 'Two sessions with different negative marking rules'],
               ['SSC GD', 'Class 10', 'Constable in the central armed police forces', 'Physical and medical standards'],
-              ['SSC CPO', 'Bachelor’s degree', 'Sub-Inspector in Delhi Police and CAPFs', 'A full second paper on English'],
+              ['SSC CPO', 'Bachelor’s degree', 'Sub-Inspector in Delhi Police and CAPFs', 'Physical tests between the papers, and an English-heavy Paper 2 that builds the merit'],
               ['SSC JE', 'Engineering diploma or degree', 'Junior Engineer posts', 'Technical papers in your own discipline'],
             ],
           },
           {
             type: 'p',
             text: 'Most candidates apply for more than one, which is sensible: the reasoning, quantitative aptitude, English and general awareness syllabi overlap enough that one preparation serves several exams. What does not transfer is the specifics — the negative marking rate, the skill tests, the physical standards and the technical papers all differ, and each needs its own attention in the weeks before that particular exam.',
+          },
+        ],
+      },
+      {
+        id: 'cycle',
+        eyebrow: '2026 cycle',
+        heading: 'Where each SSC exam stands, and the pattern it is running on',
+        intro:
+          'Checked 12 September 2026 against the notices on ssc.gov.in. Dates marked tentative are the notice’s own windows; the exam-city intimation and admission certificate through the candidate login are what confirm them.',
+        blocks: [
+          {
+            type: 'table',
+            caption: 'The 2026 cycle of each examination, from the official notices.',
+            head: ['Exam', 'Notice', 'Applications', 'Written exam', 'Tentative vacancies'],
+            rows: [
+              ['SSC CGL 2026', '21 May 2026', '21 May – 22 June, reopened 23–25 June 2026', 'Tier 1 August–September 2026, Tier 2 December 2026 (tentative)', 'About 12,256'],
+              ['SSC CHSL 2026', '7 September 2026', '7 September – 7 October 2026', 'Tier 1 and Tier 2 to be notified', 'About 2,536'],
+              ['SSC MTS 2026', 'Not yet issued', '—', 'Calendar had placed the CBE in September–November 2026; expect a later date', '—'],
+              ['SSC GD Constable 2026', '1 December 2025', '1–31 December 2025', 'CBE held 27 April – 31 May 2026; result awaited', '25,487'],
+              ['SSC CPO 2026', '10 September 2026', '10–30 September 2026', 'Paper 1 to be notified; October–November 2026 in the calendar', '2,018'],
+              ['SSC JE 2026', '2 September 2026', '2–22 September 2026', 'Paper 1 October–November 2026, Paper 2 December 2026 (tentative)', '1,748'],
+            ],
+          },
+          {
+            type: 'table',
+            caption: 'SSC exam pattern at a glance — the first written stage of each exam and what a wrong answer costs, from the 2026 notices (2025 notice for MTS).',
+            head: ['Exam', 'First stage', 'Negative marking', 'What builds the merit list'],
+            rows: [
+              ['SSC CGL', 'Tier 1: 100 questions, 200 marks, 60 minutes with 15-minute sectional timers', '0.50 in Tier 1; 1 mark in Tier 2 Paper 1', 'Tier 2 Paper 1 Sections 1 and 2 (390 marks), plus Paper 2 or 3 for JSO and AAO'],
+              ['SSC CHSL', 'Tier 1: 100 questions, 200 marks, 60 minutes with 15-minute sectional timers', '0.50 in Tier 1; 1 mark in Tier 2', 'Tier 2 Sections 1 and 2 (360 marks); typing or skill test qualifying'],
+              ['SSC MTS', 'Session 1: 40 questions, 120 marks, 45 minutes; Session 2: 50 questions, 150 marks, 45 minutes', 'None in Session 1; 1 mark in Session 2', 'Session 2 only'],
+              ['SSC GD', 'CBE: 80 questions, 160 marks, 60 minutes', '0.25', 'The CBE, normalised, plus NCC bonus; PET/PST and medical qualifying'],
+              ['SSC CPO', 'Paper 1: 100 questions, 100 marks, 60 minutes with 15-minute sectional timers', '0.25 in Paper 1; 0.50 in Paper 2', 'Paper 2: 160 questions, 320 marks, of which 200 are English'],
+              ['SSC JE', 'Paper 1: 200 questions, 200 marks, 2 hours', '0.25 in Paper 1; 1 mark in Paper 2', 'Paper 2: 100 engineering questions, 300 marks'],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Every application runs through the One-Time Registration login on ssc.gov.in, the fee is ₹100 with women and SC, ST, PwBD and ex-servicemen candidates exempt, the correction window costs ₹200 for a first correction and ₹500 for a second, and marks in every multi-shift paper are normalised by the Commission’s formula of 2 June 2025 before cut-offs are set. The exam guides below carry the full tier-wise tables, the eligibility and physical standards, the procedure from OTR to appointment and the previous cycle’s cut-offs.',
           },
         ],
       },
@@ -438,6 +477,14 @@ const HUBS = {
       {
         q: 'Can I prepare for several SSC exams at once?',
         a: 'Yes, and most candidates do. The reasoning, quantitative aptitude, English and general awareness syllabi overlap substantially, so one core preparation serves several exams. What needs separate attention is each exam’s specifics — the negative marking rate, typing or data entry skill tests, physical and medical standards, and technical papers. Those differ enough that treating the exams as identical will cost you marks in the weeks that matter.',
+      },
+      {
+        q: 'What is the SSC CGL exam pattern for 2026?',
+        a: 'Tier 1 is 100 questions for 200 marks in 60 minutes with a 15-minute sectional timer on each of reasoning, general awareness, quantitative aptitude and English, and 0.50 deducted per wrong answer; it is qualifying. Tier 2 Paper 1 is 130 merit questions for 390 marks across a mathematics and reasoning section and an English and general awareness section, plus a qualifying computer module and a data entry test, with one mark deducted per wrong answer. The SSC CGL guide has the full tier-wise tables.',
+      },
+      {
+        q: 'What is the SSC GD exam pattern?',
+        a: 'A single computer-based paper of 80 questions for 160 marks in 60 minutes — reasoning, general knowledge and general awareness, elementary mathematics, and English or Hindi, 20 questions each — with 0.25 deducted per wrong answer, followed by a qualifying PET, PST and medical examination. The CBE marks, normalised and with NCC bonus, are the merit list.',
       },
       {
         q: 'Does negative marking work the same way across SSC exams?',

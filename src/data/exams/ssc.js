@@ -22,20 +22,21 @@ const ssc = [
     fullName: 'Staff Selection Commission Combined Graduate Level Examination',
     authority: 'Staff Selection Commission (SSC)',
     official: 'ssc.gov.in',
-    seoTitle: 'SSC CGL 2026: Syllabus, Exam Pattern & Free Mock Tests',
+    seoTitle: 'SSC CGL Exam Pattern 2026: Tier 1 & Tier 2 Syllabus, Marks, Cut-off',
     metaDescription:
-      'SSC CGL exam guide — Tier 1 and Tier 2 pattern, section-wise syllabus, eligibility, post list, previous papers and free full-length mock tests.',
+      'SSC CGL exam pattern and syllabus 2026 — Tier 1 and Tier 2 marks, time, sectional timers, negative marking, cut-offs, eligibility, dates and free mock tests.',
+    heroTitle: 'SSC CGL Exam Pattern and Syllabus 2026: Tier 1, Tier 2 and Free Mock Tests',
     lead: [
       'SSC CGL is the largest graduate-level recruitment in the country, and the reason it attracts several million applicants is the post list: Assistant Section Officer in a central ministry, Inspector in Income Tax or CGST, Assistant Audit Officer under the CAG, Sub-Inspector in the CBI. One exam, one merit list, and the post you get depends on your rank and your preference order.',
       'It is also an exam with an unusually clear shape. Tier 1 is a 60-minute screening test that everybody sits; Tier 2 is where the merit list is actually built. Understanding that split is the single most useful thing a first-time candidate can do, because it changes what you practise and when.',
     ],
     quickFacts: [
       ['Conducted by', 'Staff Selection Commission (SSC)'],
-      ['Level', 'Graduate — a bachelor’s degree in any discipline'],
-      ['Stages', 'Tier 1 (screening) → Tier 2 (merit) → document verification'],
-      ['Mode', 'Computer-based test at SSC centres nationwide'],
-      ['Frequency', 'Once a year, with the notification usually early in the cycle'],
-      ['Posts filled', 'Group B and Group C posts across ministries, departments and organisations'],
+      ['Level', 'Graduate — a bachelor’s degree in any discipline as on the closing date'],
+      ['Stages', 'Tier 1 (qualifying, 200 marks) → Tier 2 (merit, 390 + qualifying modules) → document verification'],
+      ['2026 cycle', 'Notice 21 May 2026; about 12,256 tentative vacancies; Tier 1 tentatively August–September 2026'],
+      ['Age', '18–27, 18–30, 20–30 or 18–32 depending on the post, as on 1 August 2026'],
+      ['Fee', '₹100; nil for women, SC, ST, PwBD and ex-servicemen'],
     ],
     overview: [
       {
@@ -71,21 +72,327 @@ const ssc = [
     stages: [
       {
         name: 'Tier 1 — Computer Based Examination',
-        mode: 'Objective, 60 minutes',
-        detail:
-          'A qualifying screen taken by every applicant. Four sections of 25 questions each — General Intelligence and Reasoning, General Awareness, Quantitative Aptitude and English Comprehension — for 200 marks in an hour. Marks here decide who reaches Tier 2 but do not count towards the final merit list.',
+        mode: 'Objective, 100 questions, 200 marks, 60 minutes',
+        detail: 'Four sections of 25 questions for 50 marks each — General Intelligence and Reasoning, General Awareness, Quantitative Aptitude and English Comprehension — with a 15-minute sectional timer on each. Half a mark is deducted for a wrong answer. Tier 1 is qualifying: it decides who sits Tier 2 but its marks do not enter the final merit list.',
       },
       {
-        name: 'Tier 2 — Computer Based Examination',
-        mode: 'Objective, multiple sessions',
-        detail:
-          'The stage that builds the merit list. Paper 1 is compulsory for all posts and runs in modules covering mathematical abilities, reasoning, English, general awareness and computer knowledge, followed by a data entry speed test. Paper 2 (statistics) and Paper 3 (general studies — finance and economics) are taken only by candidates who applied for Junior Statistical Officer and Assistant Audit Officer respectively.',
+        name: 'Tier 2 — Paper 1 (all posts)',
+        mode: 'Objective, two sessions on one day',
+        detail: 'Session 1: Section 1 (Mathematical Abilities 30 questions + Reasoning 30 questions, 180 marks, one hour), Section 2 (English 45 + General Awareness 25, 210 marks, one hour) and Section 3 Module 1 (Computer Knowledge, 20 questions, 60 marks, 15 minutes, qualifying). Session 2: the Data Entry Speed Test of about 2,000 key depressions in 15 minutes, qualifying. One mark is deducted per wrong answer in Sections 1, 2 and 3.',
       },
       {
-        name: 'Document verification and medical',
-        mode: 'Offline',
-        detail:
-          'Candidates who clear the written stages are called for verification of educational, category and identity documents. Posts with physical requirements — CBI Sub-Inspector, for instance — add physical and medical standards at this point.',
+        name: 'Tier 2 — Paper 2 (Junior Statistical Officer) and Paper 3 (Assistant Audit / Accounts Officer)',
+        mode: 'Objective, 100 questions, 200 marks, two hours each',
+        detail: 'Paper 2 is Statistics; Paper 3 is General Studies (Finance and Economics). Only candidates who opted for those posts and clear the separate Tier 1 cut-off for them sit these papers. Half a mark is deducted per wrong answer.',
+      },
+      {
+        name: 'Option-cum-preference form, final result and verification',
+        mode: 'Online form, then offline verification',
+        detail: 'After Tier 2 marks are published, candidates fill a post preference form; the final merit list allots posts by rank and preference. Document verification, and the physical and medical standards for posts such as Sub-Inspector in the CBI and NIA, Inspector (Examiner and Preventive Officer) and Inspector in the Narcotics Bureau, are handled by the user departments before appointment.',
+      },
+    ],
+    updates: [
+      {
+        type: 'p',
+        text: 'Checked 12 September 2026 against the SSC notice board. The notice for the Combined Graduate Level Examination 2026 was published on 21 May 2026 with about 12,256 tentative vacancies. Online applications were accepted from 21 May to 22 June 2026, and the window was reopened from 23 to 25 June 2026 for candidates who had been unable to complete registration on the new portal; the Commission received more than 28 lakh applications. The correction window ran from 29 June to 1 July 2026. The notice gives Tier 1 a tentative window of August–September 2026 and Tier 2 December 2026; the actual dates, exam-city intimation and admission certificates reach candidates only through the login on ssc.gov.in.',
+      },
+      {
+        type: 'table',
+        caption: 'Key dates of the SSC CGL 2026 cycle, from the notice of 21 May 2026 and the reopening notice of 23 June 2026.',
+        head: ['Event', 'Date'],
+        rows: [
+          ['Notice published', '21 May 2026'],
+          ['Online applications', '21 May – 22 June 2026, reopened 23–25 June 2026'],
+          ['Last date for fee payment', '26 June 2026'],
+          ['Application correction window', '29 June – 1 July 2026 (₹200 first correction, ₹500 second)'],
+          ['Tier 1 (Computer Based Examination)', 'August–September 2026, tentative'],
+          ['Tier 2 (Computer Based Examination)', 'December 2026, tentative'],
+          ['Tentative vacancies', 'About 12,256, post-wise list on the Commission’s Tentative Vacancy page'],
+        ],
+      },
+      {
+        type: 'p',
+        text: 'The 2025 cycle shows how the calendar actually runs. Tier 1 of CGL 2025 was held from 12 to 26 September 2025 with a re-examination on 14 October 2025 for affected centres; the Tier 1 result came on 18 December 2025, and for the general post list the cut-offs were 136.83 (UR), 130.37 (OBC), 127.42 (EWS), 114.97 (SC) and 106.37 (ST) out of 200, with the Junior Statistical Officer list closing at 153.46 for UR. Over 1.3 lakh candidates were shortlisted for Tier 2, which was held in January 2026 with the tentative key on 30 January; final vacancies were fixed at 15,118 on 6 March 2026, the option-cum-preference form ran in March, the first round of tentative allocation came on 8 April, and the final result on 14 May 2026 recommended 15,118 candidates.',
+      },
+      {
+        type: 'note',
+        title: 'What changed in the 2026 notice',
+        text: 'Tier 1 now runs with a 15-minute sectional timer on each of the four sections instead of one open hour, so you can no longer bank time from reasoning and spend it on mathematics. Registration moved to the new One-Time Registration system with Aadhaar-based verification. Everything else — the Tier 2 structure, the negative marking rates and the qualifying computer and typing modules — carries forward from the 2025 scheme.',
+      },
+    ],
+    eligibility: [
+      {
+        type: 'p',
+        text: 'Eligibility is judged on the closing date for applications, and in 2026 that is the date the reopened window closed. The Commission does not verify documents at the application stage, so a candidate who does not meet a condition can sit every tier and be rejected at verification a year later. Read the conditions for the specific posts you intend to opt for, not just the general ones.',
+      },
+      {
+        type: 'list',
+        title: 'Educational qualification as on the closing date',
+        items: [
+          {
+            text: 'All posts except the two below',
+            note: 'A bachelor’s degree in any discipline from a recognised university, or an equivalent qualification. Final-year students are eligible only if the degree is complete by the closing date.',
+          },
+          {
+            text: 'Junior Statistical Officer',
+            note: 'A bachelor’s degree in any subject with at least 60 per cent in Mathematics at the class 12 level, or a bachelor’s degree with Statistics as one of the subjects at degree level.',
+          },
+          {
+            text: 'Assistant Audit Officer and Assistant Accounts Officer',
+            note: 'A bachelor’s degree in any discipline. Chartered Accountancy, Cost and Management Accountancy, Company Secretaryship, a Master’s in Commerce, Business Studies, Business Administration (Finance), Business Economics or Economics are listed as desirable, not essential.',
+          },
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'Age bands as on 1 August 2026. The post-wise table in the notice assigns every post to one of four bands; these are the common examples.',
+        head: ['Age band', 'Posts in the band'],
+        rows: [
+          ['18–27 years', 'Auditor, Accountant and Accountant/Junior Accountant, Tax Assistant, Upper Division Clerk, Senior Secretariat Assistant and most other Group C posts'],
+          ['18–30 years', 'Inspector (Income Tax, Central Excise/CGST, Examiner, Preventive Officer), Assistant Enforcement Officer, Assistant Audit Officer, Assistant Accounts Officer, Assistant Section Officer in most organisations'],
+          ['20–30 years', 'Assistant Section Officer in the Central Secretariat Service, Intelligence Bureau and Ministry of External Affairs; Sub-Inspector in the CBI'],
+          ['18–32 years', 'Junior Statistical Officer'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'Upper-age relaxation beyond the band, from the notice. Relaxations are cumulative within the rules — an OBC ex-serviceman gets both — and category is claimed at application and proved at verification.',
+        head: ['Category', 'Relaxation'],
+        rows: [
+          ['SC and ST', '5 years'],
+          ['OBC (non-creamy layer)', '3 years'],
+          ['Persons with benchmark disabilities', '10 years (UR), 13 years (OBC), 15 years (SC/ST)'],
+          ['Ex-servicemen', '3 years after deducting military service from actual age'],
+          ['Defence personnel disabled in operations', '3 years (8 years for SC/ST)'],
+          ['Central Government civilian employees with 3 years’ regular service', 'Up to 40 years (45 for SC/ST) for Group C posts'],
+          ['Widows, divorced women and judicially separated women who have not remarried', 'Up to 35 years (40 for SC/ST) for Group C posts'],
+        ],
+      },
+      {
+        type: 'list',
+        title: 'Other conditions',
+        items: [
+          {
+            text: 'Nationality',
+            note: 'Citizens of India, subjects of Nepal and Bhutan, and the categories of persons of Indian origin who have migrated to settle permanently, as listed in the notice, with an eligibility certificate where required.',
+          },
+          {
+            text: 'Physical standards',
+            note: 'Sub-Inspector in the CBI and NIA, Inspector (Examiner and Preventive Officer) in CBIC and Inspector in the Central Bureau of Narcotics carry height, chest and vision standards and a physical test, described in the notice’s annexures and conducted by the department after the final result.',
+          },
+          {
+            text: 'Number of attempts',
+            note: 'No limit; the age band for the post is the only ceiling.',
+          },
+          {
+            text: 'Fee',
+            note: '₹100, payable online by BHIM UPI, net banking or Visa, Mastercard, Maestro or RuPay cards. Women and candidates of the SC, ST, PwBD and ex-servicemen categories pay nothing.',
+          },
+        ],
+      },
+    ],
+    procedure: {
+      eyebrow: 'Application to appointment',
+      heading: 'How to apply for SSC CGL 2026, what the tiers look like on the day, and how the post is allotted',
+      intro: 'The whole process runs through one login on ssc.gov.in. These are the steps in the order they happen, with the fees and windows the 2026 notice specifies.',
+      blocks: [
+        {
+          type: 'steps',
+          title: 'The SSC CGL process from registration to result',
+          items: [
+            {
+              title: 'One-Time Registration on ssc.gov.in',
+              text: 'Create an OTR profile once on the Commission’s portal. Registration asks for Aadhaar-based verification, a mobile number and e-mail that remain with you for the whole cycle, and your basic educational and category details. The OTR number and password are what you log in with at every later stage — exam-city intimation, admit card, answer-key challenge, result and option form — so keep them safe.',
+            },
+            {
+              title: 'Fill the online application for SSC CGL',
+              text: 'Log in, pick the examination, confirm the OTR details, choose the examination centre preferences and the medium of the paper, and upload or capture the photograph and signature exactly as the notice specifies. The declaration you sign at the end binds you to the eligibility conditions, and the Commission verifies documents only at the end of the process — an ineligible candidate can go through every stage and be dropped at verification.',
+            },
+            {
+              title: 'Pay the fee',
+              text: 'The fee is ₹100, paid online; in 2026 the last date for payment was 26 June, four days after applications closed. Women and SC, ST, PwBD and ex-servicemen candidates are exempt. A fee paid is not refunded, including when an application is later found ineligible.',
+            },
+            {
+              title: 'Use the correction window if you need it',
+              text: 'A three-day correction window opens about a week after applications close. The Commission charges ₹200 for the first corrected submission and ₹500 for the second, from every candidate regardless of category. Some fields — notably the OTR identity details — cannot be changed at this point, which is why the OTR should be filled carefully in the first place.',
+            },
+            {
+              title: 'Exam-city intimation, then the admission certificate',
+              text: 'Roughly two weeks before the examination the candidate login shows the city allotted; the admission certificate itself is released only three to four days before the date. Print it, and carry it with an original photo identity document that carries the same date of birth as your application.',
+            },
+            {
+              title: 'On the day: biometrics, frisking and the clock',
+              text: 'Report at the time on the admission certificate; entry closes before the shift begins. Expect biometric capture and frisking, and expect the paper to be delivered with the timers the notice describes — a section or session that has closed cannot be reopened. Rough sheets are provided; nothing electronic is allowed inside.',
+            },
+            {
+              title: 'Tentative answer key and challenge',
+              text: 'A few days after the last shift the Commission uploads tentative answer keys with each candidate’s response sheet. Objections are filed online only, within the announced window, on payment of a per-question fee that is not refunded. Subject-matter experts examine the objections and the final key is used for evaluation.',
+            },
+            {
+              title: 'Result, marks and the next stage',
+              text: 'Results are published as PDF write-ups on the notice board with category-wise cut-offs and the count of candidates shortlisted; individual marks are released in the login shortly afterwards. Candidates for the next stage receive fresh admission certificates through the same login.',
+            },
+            {
+              title: 'Tier 1 result and the three shortlists',
+              text: 'Tier 1 produces separate cut-offs for three post groups: candidates who opted for Junior Statistical Officer (who go on to Paper 2), those who opted for Assistant Audit or Accounts Officer (Paper 3), and everyone else (Paper 1 only). Clearing the general cut-off does not automatically put you in the JSO or AAO list — those cut-offs have been higher every cycle. Tentative answer-key challenges cost ₹100 per question.',
+            },
+            {
+              title: 'Tier 2, marks and the option-cum-preference form',
+              text: 'Tier 2 Paper 1 runs in two sessions on one day; Papers 2 and 3 are scheduled separately for those who qualify for them. After the final key and marks are published, every candidate in the merit zone fills an option-cum-preference form ranking the posts and, for some, the departments they are willing to join. Preferences submitted here are final.',
+            },
+            {
+              title: 'Final result, first round of tentative allocation, verification and appointment',
+              text: 'The final result allots posts by rank and preference, with a first round of tentative allocation followed by identity verification. The user department then conducts document verification, and the physical and medical examinations where the post requires them, before the offer of appointment. In the 2025 cycle this ran from the final result on 14 May 2026 into the following months.',
+            },
+          ],
+        },
+        {
+          type: 'note',
+          title: 'The mistake that costs candidates a post rather than marks',
+          text: 'The option-cum-preference form is filled after Tier 2, quickly, and it is final. Decide your post order before the result — pay level, department, transfer liability and promotion route differ a great deal between an Assistant Section Officer in the CSS, an Income Tax Inspector and an Auditor under the CAG — rather than in the few days the form is open.',
+        },
+      ],
+    },
+    pattern: [
+      {
+        type: 'p',
+        text: 'The pattern below is the scheme in the SSC CGL 2026 notice of 21 May 2026. Every figure — questions, marks, time and the deduction for a wrong answer — comes from that notice; the full treatment, including the syllabus for each section, is on the exam pattern and syllabus pages.',
+      },
+      {
+        type: 'table',
+        caption: 'SSC CGL Tier 1 exam pattern 2026: 100 questions, 200 marks, 60 minutes with a 15-minute sectional timer on each section; 0.50 marks deducted for a wrong answer. Qualifying only.',
+        head: ['Section', 'Questions', 'Marks', 'Time'],
+        rows: [
+          ['General Intelligence and Reasoning', '25', '50', '15 minutes'],
+          ['General Awareness', '25', '50', '15 minutes'],
+          ['Quantitative Aptitude', '25', '50', '15 minutes'],
+          ['English Comprehension', '25', '50', '15 minutes'],
+          ['Total', '100', '200', '60 minutes'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'SSC CGL Tier 2 exam pattern 2026, Paper 1 (compulsory for every post). One mark is deducted for a wrong answer in Sections 1, 2 and 3; Section 3 and the typing test are qualifying and the merit list is built from Sections 1 and 2.',
+        head: ['Session', 'Section and module', 'Questions', 'Marks', 'Time'],
+        rows: [
+          ['Session 1', 'Section 1 — Module 1 Mathematical Abilities; Module 2 Reasoning and General Intelligence', '30 + 30 = 60', '180', '1 hour'],
+          ['Session 1', 'Section 2 — Module 1 English Language and Comprehension; Module 2 General Awareness', '45 + 25 = 70', '210', '1 hour'],
+          ['Session 1', 'Section 3 — Module 1 Computer Knowledge Test (qualifying)', '20', '60', '15 minutes'],
+          ['Session 2', 'Section 3 — Module 2 Data Entry Speed Test (qualifying)', 'About 2,000 key depressions', '—', '15 minutes'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'Tier 2 Papers 2 and 3, for the two specialist post groups only. 0.50 marks deducted for a wrong answer.',
+        head: ['Paper', 'For', 'Questions', 'Marks', 'Time'],
+        rows: [
+          ['Paper 2 — Statistics', 'Junior Statistical Officer', '100', '200', '2 hours'],
+          ['Paper 3 — General Studies (Finance and Economics)', 'Assistant Audit Officer and Assistant Accounts Officer', '100', '200', '2 hours'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'Minimum qualifying marks that apply before any shortlisting — a candidate below these in any paper is not considered regardless of the cut-off.',
+        head: ['Category', 'Minimum qualifying marks'],
+        rows: [
+          ['Unreserved', '30%'],
+          ['OBC and EWS', '25%'],
+          ['All other categories', '20%'],
+        ],
+      },
+      {
+        type: 'p',
+        text: 'The examination is conducted in multiple shifts, and marks are normalised by the formula the Commission published on 2 June 2025 before cut-offs and merit are computed. Normalised scores can therefore differ from raw scores, in either direction, depending on the difficulty of the shift you sat. Candidates for posts that require computer proficiency — Assistant Section Officer in the CSS, MEA and AFHQ, Assistant in the Serious Fraud Investigation Office and a few others — are held to a higher standard in the computer module.',
+      },
+    ],
+    studyPlan: [
+      {
+        type: 'p',
+        text: 'SSC CGL rewards accuracy under a clock more than breadth. Tier 1 is four 15-minute sprints; Tier 2 Section 1 asks 60 questions of harder mathematics and reasoning in an hour for three marks each with a full mark off for every mistake. A plan that builds speed on a small syllabus, then adds Tier 2 depth, fits that shape better than one that tries to cover everything at once.',
+      },
+      {
+        type: 'steps',
+        title: 'A six-month plan for a first attempt',
+        items: [
+          {
+            title: 'Months 1–2: foundations and a diagnostic',
+            text: 'Sit one full Tier 1 mock in the first week to find your weakest section, then work arithmetic (percentages, ratio, averages, profit and loss, time and work, speed and distance), the reasoning question types, English grammar and vocabulary, and a static general awareness spine. Learn the exam’s shortcuts as you go; there is no marks for method.',
+          },
+          {
+            title: 'Months 3–4: Tier 2 depth',
+            text: 'Add algebra, geometry, trigonometry and mensuration and data interpretation, which Tier 2 Section 1 leans on. Start reading comprehension and cloze passages under time. Begin a daily current affairs habit covering the six months before the exam. Take a sectional test every day and a full Tier 1 mock every week.',
+          },
+          {
+            title: 'Month 5: mocks on the sectional timer',
+            text: 'Practise the Tier 1 paper with 15-minute sections, because the strategy of borrowing time no longer exists. Alternate Tier 1 and Tier 2 full mocks, and keep an error log by topic. Start the Data Entry Speed Test practice — 2,000 key depressions in 15 minutes is roughly 35 words per minute with high accuracy.',
+          },
+          {
+            title: 'Month 6: revision and the exam window',
+            text: 'Revise from your own notes and error log rather than fresh material, keep general awareness current, and taper mocks to two a week in the final fortnight. Read the pattern section of the notice once more before the exam.',
+          },
+        ],
+      },
+      {
+        type: 'list',
+        title: 'Section-by-section priorities',
+        items: [
+          {
+            text: 'Quantitative Aptitude and Mathematical Abilities',
+            note: 'The section with the highest ceiling and the most differentiation in Tier 2. Speed comes from recognising question types, not from solving fresh each time.',
+          },
+          {
+            text: 'Reasoning',
+            note: 'The easiest section to bring to near-full marks; puzzles, series, coding, syllogisms and figure questions repeat their forms year after year.',
+          },
+          {
+            text: 'English',
+            note: 'Forty-five questions in Tier 2 carrying 135 marks — grammar rules, vocabulary, idioms, error spotting, cloze tests and comprehension. Read something every day.',
+          },
+          {
+            text: 'General Awareness',
+            note: 'Recall, not reasoning; you either know it or move on in seconds. Static GK (history, polity, geography, economy, science) plus six months of current affairs.',
+          },
+          {
+            text: 'Computer Knowledge and typing',
+            note: 'Qualifying, but a fail here is a fail. Twenty questions of basic computer fundamentals, software, networking and security; typing practice on a QWERTY keyboard for 15 minutes a day is enough.',
+          },
+        ],
+      },
+    ],
+    sources: [
+      {
+        type: 'p',
+        text: 'Checked 12 September 2026 against the notice of examination for CGL 2026, the reopening notice, and the Tier 1 result, final vacancy and final result write-ups of CGL 2025, all on the SSC notice board. Dates for Tier 1 and Tier 2 are tentative in the notice and are confirmed only through the candidate login and later notices.',
+      },
+      {
+        type: 'links',
+        title: 'Official documents',
+        items: [
+          {
+            label: 'Notice of Combined Graduate Level Examination 2026 (21 May 2026)',
+            href: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_cgl_2026.pdf',
+          },
+          {
+            label: 'Reopening of the application window for CGL 2026 (23 June 2026)',
+            href: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/CGLE_Reopen_23062026.pdf',
+          },
+          {
+            label: 'CGL 2025 Tier 1 result write-up with cut-offs (18 December 2025)',
+            href: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_181225.pdf',
+          },
+          {
+            label: 'CGL 2025 final vacancies (6 March 2026)',
+            href: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/CGLE_2025_Final_Vacancies_09032026.pdf',
+          },
+          {
+            label: 'CGL 2025 final result write-up (14 May 2026)',
+            href: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_14052026.pdf',
+          },
+          {
+            label: 'SSC home page — notices, calendar and candidate login',
+            href: 'https://ssc.gov.in/',
+          },
+        ],
       },
     ],
     resources: {
@@ -140,47 +447,127 @@ const ssc = [
         ],
       },
       'exam-pattern': {
-        description:
-          'SSC CGL exam pattern — Tier 1 and Tier 2 structure, section-wise marks, timing and how negative marking differs between the stages.',
-        lead: [
-          'Tier 1 screens, Tier 2 ranks. Both punish wrong answers, but not equally, and the difference should change how you guess.',
-        ],
+        description: 'SSC CGL exam pattern 2026 — Tier 1 and Tier 2 tables with questions, marks, time, sectional timers and negative marking, plus the qualifying marks and cut-offs.',
+        heading: 'SSC CGL exam pattern 2026: Tier 1 and Tier 2, marks, time and negative marking',
+        lead: ['The SSC CGL tier exam pattern in one place, from the notice of 21 May 2026: what each tier asks, how long you get, what a wrong answer costs, and which marks actually build the merit list.'],
         blocks: [
           {
+            type: 'p',
+            text: 'SSC CGL has two computer-based tiers. Tier 1 is a one-hour, 200-mark screening paper that every applicant sits; Tier 2 is a longer, harder paper held about three months later that the final merit list is built from. The 2026 notice keeps the Tier 2 scheme introduced in 2022 and adds one change to Tier 1 — a sectional timer of 15 minutes on each of the four sections — that changes how the paper should be attempted.',
+          },
+          {
             type: 'table',
-            caption:
-              'Tier 1 structure. Confirm marks, timing and the negative marking rate against the current official notification before you sit the paper.',
-            head: ['Section', 'Questions', 'Marks', 'Notes'],
+            caption: 'SSC CGL Tier 1 exam pattern 2026. Objective multiple choice; questions in Hindi and English except English Comprehension; 0.50 marks deducted per wrong answer; unanswered questions carry no penalty.',
+            head: ['Part', 'Section', 'Questions', 'Marks', 'Time'],
             rows: [
-              ['General Intelligence and Reasoning', '25', '50', 'Verbal and non-verbal; the fastest section to score in'],
-              ['General Awareness', '25', '50', 'Pure recall — you either know it or you move on'],
-              ['Quantitative Aptitude', '25', '50', 'Arithmetic-heavy at this stage'],
-              ['English Comprehension', '25', '50', 'Grammar and vocabulary rather than long passages'],
-              ['Total', '100', '200', '60 minutes for the whole paper'],
+              ['A', 'General Intelligence and Reasoning', '25', '50', '15 minutes'],
+              ['B', 'General Awareness', '25', '50', '15 minutes'],
+              ['C', 'Quantitative Aptitude', '25', '50', '15 minutes'],
+              ['D', 'English Comprehension', '25', '50', '15 minutes'],
+              ['', 'Total', '100', '200', '60 minutes (80 minutes for scribe-eligible candidates)'],
             ],
           },
           {
             type: 'p',
-            text: 'Sixty minutes for a hundred questions works out to roughly thirty-six seconds each, and that number is the real design constraint of Tier 1. There is no sectional timing, so the paper rewards candidates who bank the reasoning and general awareness sections quickly and spend what is left on quantitative aptitude. Wrong answers carry a deduction of half a mark, which makes a blind guess a losing bet but keeps a two-option guess worth taking.',
+            text: 'Tier 1 is qualifying. Its marks decide who is called for Tier 2 — through separate cut-offs for the Junior Statistical Officer list, the Assistant Audit and Accounts Officer list, and the general list — but they are not added to anything afterwards. The sectional timer means each 25-question section has to be finished in its own 15 minutes; when the timer ends the section locks. That removes the old tactic of racing through reasoning and general awareness to buy time for mathematics, and puts a premium on knowing which questions to skip inside each block.',
           },
           {
-            type: 'p',
-            text: 'Tier 2 runs as Paper 1 for every candidate, plus Paper 2 or Paper 3 for the two specialist post groups. Paper 1 is delivered in modules across two sessions: a mathematics and reasoning session, then a session covering English and general awareness and a computer knowledge module, followed by a data entry speed test. The computer module and the data entry test are qualifying in nature for most posts rather than merit-counting, but skipping them is not an option.',
+            type: 'table',
+            caption: 'SSC CGL Tier 2 exam pattern 2026, Paper 1. Compulsory for all posts; conducted in two sessions on the same day; one mark deducted per wrong answer in Sections 1, 2 and 3.',
+            head: ['Session', 'Section', 'Module', 'Questions', 'Marks', 'Time'],
+            rows: [
+              ['Session 1', 'Section 1', 'Module 1 — Mathematical Abilities', '30', '90', '1 hour for the section'],
+              ['Session 1', 'Section 1', 'Module 2 — Reasoning and General Intelligence', '30', '90', ''],
+              ['Session 1', 'Section 2', 'Module 1 — English Language and Comprehension', '45', '135', '1 hour for the section'],
+              ['Session 1', 'Section 2', 'Module 2 — General Awareness', '25', '75', ''],
+              ['Session 1', 'Section 3', 'Module 1 — Computer Knowledge Test', '20', '60', '15 minutes'],
+              ['Session 2', 'Section 3', 'Module 2 — Data Entry Speed Test', 'One passage, about 2,000 key depressions', 'Qualifying', '15 minutes'],
+            ],
           },
           {
             type: 'list',
-            title: 'What changes between the two tiers',
+            title: 'How Tier 2 Paper 1 is scored',
             items: [
-              { text: 'Marks that count', note: 'Tier 1 decides who advances; only Tier 2 marks build the final merit list.' },
-              { text: 'Depth of mathematics', note: 'Tier 1 leans arithmetic; Tier 2 brings algebra, geometry, trigonometry and mensuration properly into play.' },
-              { text: 'Negative marking', note: 'The deduction differs between Tier 1 and the Tier 2 modules — check the notification, because the guessing arithmetic changes with it.' },
-              { text: 'Sectional timing', note: 'Tier 1 is one open hour; Tier 2 modules are separately timed, so you cannot borrow minutes from a section you find easy.' },
+              {
+                text: 'Merit is built from Sections 1 and 2',
+                note: '130 questions for 390 marks. Section 3 (computer knowledge) is mandatory and qualifying for every post, with a higher standard applied when shortlisting for posts that require computer proficiency.',
+              },
+              {
+                text: 'The Data Entry Speed Test is qualifying',
+                note: 'Errors are allowed up to 20 per cent of the passage for UR candidates, 25 per cent for OBC and EWS, and 30 per cent for other categories. Ex-servicemen and some PwBD candidates are exempt on production of the prescribed certificate; the test is not required for a few posts listed in the notice.',
+              },
+              {
+                text: 'A wrong answer costs one full mark',
+                note: 'Against three marks for a right one. A blind guess across four options loses on average; a guess narrowed to two is worth taking. That arithmetic is different from Tier 1, where the deduction is half a mark against two.',
+              },
+              {
+                text: 'Both sections in Session 1 have a fixed hour',
+                note: 'You cannot carry time from mathematics into English or the other way round. Each section closes when its hour ends.',
+              },
             ],
           },
           {
-            type: 'note',
-            title: 'Why the pattern is worth re-reading each cycle',
-            text: 'SSC restructured Tier 2 substantially in recent years — merging papers, adding the computer module and changing how sessions are timed. Candidates preparing from older material have arrived at the exam expecting a structure that no longer exists. Read the pattern section of the current notification even if you have sat the exam before.',
+            type: 'table',
+            caption: 'Tier 2 Papers 2 and 3. Objective; 0.50 marks deducted per wrong answer; each paper counts in the merit list only for its own post group.',
+            head: ['Paper', 'Who sits it', 'Subject', 'Questions', 'Marks', 'Time'],
+            rows: [
+              ['Paper 2', 'Candidates shortlisted for Junior Statistical Officer', 'Statistics', '100', '200', '2 hours'],
+              ['Paper 3', 'Candidates shortlisted for Assistant Audit Officer and Assistant Accounts Officer', 'General Studies — Finance and Economics', '100', '200', '2 hours'],
+            ],
+          },
+          {
+            type: 'table',
+            caption: 'Minimum qualifying marks that apply before any shortlisting — a candidate below these in any paper is not considered regardless of the cut-off.',
+            head: ['Category', 'Minimum qualifying marks'],
+            rows: [
+              ['Unreserved', '30%'],
+              ['OBC and EWS', '25%'],
+              ['All other categories', '20%'],
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Marks in both tiers are normalised across shifts by the Commission’s formula of 2 June 2025, and the normalised scores are what the cut-offs and the merit list are computed from. For reference, the CGL 2025 Tier 1 cut-offs for the general post list were 136.83 (UR), 130.37 (OBC), 127.42 (EWS), 114.97 (SC) and 106.37 (ST) out of 200; the Junior Statistical Officer list closed at 153.46 for UR and the Assistant Audit Officer list higher still. Final selection in 2025 came from Tier 2 marks plus the post preferences, with 15,118 candidates recommended on 14 May 2026.',
+          },
+          {
+            type: 'list',
+            title: 'What the pattern means for how you attempt the paper',
+            items: [
+              {
+                text: 'Tier 1: work each 15-minute block as its own test',
+                note: 'Skip anything that takes more than 40 seconds on a first pass, come back inside the block if time remains, and leave rather than guess at four-option questions.',
+              },
+              {
+                text: 'Tier 2 Section 1: accuracy first',
+                note: 'Sixty questions in an hour at three marks each with one off for a mistake. Ten wrong answers wipe out the credit from four right ones; a clean 45 beats a scrappy 55.',
+              },
+              {
+                text: 'Tier 2 Section 2: read fast, decide fast',
+                note: 'Forty-five English questions carry 135 marks — the single largest block of marks in the exam. Cloze tests, comprehension passages, error spotting and vocabulary reward daily reading more than rules learned the week before.',
+              },
+              {
+                text: 'Do not neglect the qualifying modules',
+                note: 'Every cycle candidates with merit-list marks are dropped for failing the computer module or the typing test. Fifteen minutes of typing practice a day from the Tier 1 result onwards is enough.',
+              },
+            ],
+          },
+          {
+            type: 'links',
+            title: 'Related SSC CGL pages',
+            items: [
+              {
+                label: 'SSC CGL syllabus, section by section',
+                to: '/government-exams/ssc/ssc-cgl/syllabus/',
+              },
+              {
+                label: 'Free SSC CGL mock tests on the 2026 pattern',
+                to: '/government-exams/ssc/ssc-cgl/mock-tests/',
+              },
+              {
+                label: 'SSC CGL previous year papers',
+                to: '/government-exams/ssc/ssc-cgl/previous-year-papers/',
+              },
+            ],
           },
         ],
       },
@@ -430,10 +817,6 @@ const ssc = [
     },
     faqs: [
       {
-        q: 'What is the SSC CGL exam pattern?',
-        a: 'SSC CGL runs in two computer-based stages. Tier 1 is a 60-minute screening paper of 100 questions across reasoning, general awareness, quantitative aptitude and English, carrying 200 marks. Tier 2 is the stage that builds the merit list and covers mathematics, reasoning, English, general awareness and computer knowledge in timed modules, followed by a data entry speed test. Candidates applying for Junior Statistical Officer additionally sit a statistics paper, and Assistant Audit Officer applicants sit a finance and economics paper.',
-      },
-      {
         q: 'Do Tier 1 marks count towards the final SSC CGL merit list?',
         a: 'No. Tier 1 is a qualifying and screening stage — it decides who is called for Tier 2, but the final merit list is built from Tier 2 marks. This is why candidates who clear Tier 1 comfortably but prepare only at Tier 1 depth tend to struggle: the exam that decides their rank is a harder one they have not practised for.',
       },
@@ -442,16 +825,44 @@ const ssc = [
         a: 'The general requirement is a bachelor’s degree in any discipline from a recognised university. Some posts add conditions — Junior Statistical Officer expects statistics or mathematics at the twelfth or degree level, and Assistant Audit Officer carries a preference for commerce, economics or a chartered accountancy background. Age limits vary by post rather than applying uniformly, so check the post-wise table in the current notification.',
       },
       {
-        q: 'How much negative marking is there in SSC CGL?',
-        a: 'Tier 1 deducts half a mark for a wrong answer. The Tier 2 modules apply their own deduction, which has changed between cycles, so confirm the rate in the current notification. Practically, the Tier 1 rate means a blind guess across four options loses money over time, while a guess narrowed to two options is still worth taking.',
-      },
-      {
         q: 'Are free SSC CGL mock tests available?',
         a: 'Yes. A full-length free SSC CGL mock test on the current Tier 1 pattern is available without payment — 100 questions in 60 minutes, with the same negative marking as the real paper, followed by your score, the answer key and a section-wise breakdown.',
       },
       {
         q: 'How long does it take to prepare for SSC CGL?',
         a: 'A graduate with a reasonable mathematics background and consistent daily study is usually competitive in six to eight months. Someone rebuilding mathematics from the beginning should plan for a full exam cycle. The variable that matters most is daily consistency rather than total months, because vocabulary, general awareness and calculation speed all respond to repeated contact rather than long isolated sessions.',
+      },
+      {
+        q: 'What is the SSC CGL Tier 1 exam pattern for 2026?',
+        a: 'Tier 1 is a computer-based objective paper of 100 questions for 200 marks in 60 minutes: General Intelligence and Reasoning, General Awareness, Quantitative Aptitude and English Comprehension, 25 questions of 2 marks each. The 2026 notice adds a 15-minute sectional timer to each section, and 0.50 marks are deducted for every wrong answer. Tier 1 is qualifying; its marks decide who sits Tier 2 but do not count towards the final merit list.',
+      },
+      {
+        q: 'What is the SSC CGL Tier 2 exam pattern?',
+        a: 'Tier 2 Paper 1 is compulsory for all posts and runs in two sessions on one day. Session 1 has Section 1 (Mathematical Abilities 30 questions and Reasoning 30 questions, 180 marks, one hour), Section 2 (English 45 questions and General Awareness 25 questions, 210 marks, one hour) and Section 3 Module 1 (Computer Knowledge, 20 questions, 60 marks, 15 minutes, qualifying). Session 2 is the Data Entry Speed Test, qualifying, about 2,000 key depressions in 15 minutes. One mark is deducted per wrong answer. Paper 2 (Statistics) and Paper 3 (Finance and Economics) are 100-question, 200-mark, two-hour papers for Junior Statistical Officer and Assistant Audit/Accounts Officer candidates respectively, with 0.50 marks deducted per wrong answer.',
+      },
+      {
+        q: 'What is the negative marking in SSC CGL?',
+        a: 'Tier 1 deducts 0.50 marks for a wrong answer against 2 marks for a correct one. Tier 2 Paper 1 deducts 1 mark against 3 in Sections 1, 2 and 3; Papers 2 and 3 deduct 0.50 marks against 2. Unanswered questions carry no penalty in any paper.',
+      },
+      {
+        q: 'What were the SSC CGL 2025 Tier 1 cut-off marks?',
+        a: 'For the general post list (all posts other than JSO and AAO/AAO), the Tier 1 cut-offs declared on 18 December 2025 were 136.83 for UR, 130.37 for OBC, 127.42 for EWS, 114.97 for SC and 106.37 for ST out of 200. The Junior Statistical Officer list closed at 153.46 for UR. Cut-offs are on normalised marks and move with the vacancy count and the difficulty of the shifts, so treat them as a guide rather than a target.',
+      },
+      {
+        q: 'What is the SSC CGL exam pattern and syllabus for Quantitative Aptitude and Mathematical Abilities?',
+        a: 'Tier 1 Quantitative Aptitude is 25 questions in 15 minutes, mostly arithmetic: number system, percentages, ratio and proportion, averages, profit and loss, simple and compound interest, time and work, speed and distance, mixtures, and basic algebra, geometry, trigonometry, mensuration and data interpretation. Tier 2 Mathematical Abilities is 30 questions in the one-hour Section 1, with the same topics at greater depth — algebra of polynomials and quadratic equations, geometry of triangles, circles and chords, trigonometric identities and heights and distances, mensuration of solids, and statistics-based data interpretation. The full topic list is on the syllabus page.',
+      },
+      {
+        q: 'What is a cloze test in the SSC CGL English section?',
+        a: 'A cloze test is a short passage with several words removed; each blank is a question with four options, and you pick the word that fits the grammar and the sense of the passage. Cloze tests appear in Tier 1 English Comprehension and carry more weight in Tier 2 Section 2, where a passage of five to ten blanks is common. They test vocabulary, prepositions, tense agreement and idiom together, and the reliable way to practise is to read the whole passage before answering any blank.',
+      },
+      {
+        q: 'What are the SSC CGL 2026 exam dates?',
+        a: 'The notice of 21 May 2026 gives Tier 1 a tentative window of August–September 2026 and Tier 2 December 2026. Applications ran from 21 May to 22 June 2026, with a reopening from 23 to 25 June, and the correction window from 29 June to 1 July 2026. The exact Tier 1 dates and the exam-city intimation are published through the candidate login and the SSC notice board, so confirm them there.',
+      },
+      {
+        q: 'How many vacancies are there in SSC CGL 2026?',
+        a: 'The notice lists about 12,256 tentative vacancies, with the post-wise and category-wise break-up on the Commission’s Tentative Vacancy page. Vacancies are revised during the cycle as departments confirm their requirements; CGL 2025 was notified with a tentative count and finalised at 15,118 on 6 March 2026, all of which were filled in the final result of 14 May 2026.',
       },
     ],
   },
@@ -466,20 +877,21 @@ const ssc = [
     fullName: 'Staff Selection Commission Combined Higher Secondary Level Examination',
     authority: 'Staff Selection Commission (SSC)',
     official: 'ssc.gov.in',
-    seoTitle: 'SSC CHSL 2026: Syllabus, Exam Pattern, Typing Test & Mocks',
+    seoTitle: 'SSC CHSL Exam Pattern 2026: Tier 1, Tier 2 Syllabus, Typing Test, Dates',
     metaDescription:
-      'SSC CHSL exam guide for 12th-pass candidates — Tier 1 and Tier 2 pattern, syllabus, typing and skill test requirements, previous papers and free mock tests.',
+      'SSC CHSL 2026 exam pattern and syllabus — Tier 1 and Tier 2 marks, time, negative marking, DEO and LDC typing test, cut-offs, eligibility, dates and free mocks.',
+    heroTitle: 'SSC CHSL Exam Pattern and Syllabus 2026: Tier 1, Tier 2, Typing Test and Free Mock Tests',
     lead: [
       'SSC CHSL is the commission’s class-12 recruitment, and it is the shortest route from school-leaving qualification to a central government desk job. Lower Division Clerk, Junior Secretariat Assistant and Data Entry Operator posts across ministries and departments are all filled from this one examination.',
       'It is often described as an easier CGL. That is true of the difficulty and false of the competition — with a far larger eligible pool and fewer posts, the cutoff behaves quite differently, and the typing and skill test at the end eliminates candidates who cleared the written papers comfortably.',
     ],
     quickFacts: [
       ['Conducted by', 'Staff Selection Commission (SSC)'],
-      ['Level', 'Class 12 (10+2) from a recognised board'],
-      ['Stages', 'Tier 1 (screening) → Tier 2 (merit, includes a skill or typing test)'],
-      ['Mode', 'Computer-based, followed by a typing or data entry test'],
-      ['Posts filled', 'Lower Division Clerk, Junior Secretariat Assistant, Data Entry Operator'],
-      ['Typical age band', 'Around 18 to 27 — confirm the exact band and relaxations in the notification'],
+      ['Level', 'Class 12 pass from a recognised board as on the closing date'],
+      ['Posts', 'Lower Division Clerk / Junior Secretariat Assistant (Level 2), Data Entry Operator (Level 4 and 5), DEO Grade A (Level 4)'],
+      ['2026 cycle', 'Notice 7 September 2026; applications to 7 October 2026; about 2,536 tentative vacancies'],
+      ['Age', '18–27 years as on 1 August 2026, with the usual relaxations'],
+      ['Stages', 'Tier 1 (qualifying, 200 marks) → Tier 2 (merit 360 marks + qualifying computer and typing modules) → verification'],
     ],
     overview: [
       {
@@ -507,21 +919,303 @@ const ssc = [
     stages: [
       {
         name: 'Tier 1 — Computer Based Examination',
-        mode: 'Objective, 60 minutes',
-        detail:
-          'Four sections of 25 questions — English language, general intelligence, quantitative aptitude and general awareness — for 200 marks in an hour. A screening stage: it decides who advances but does not build the final merit.',
+        mode: 'Objective, 100 questions, 200 marks, 60 minutes',
+        detail: 'English Language, General Intelligence, Quantitative Aptitude and General Awareness, 25 questions of 2 marks each, with a 15-minute sectional timer on every part. Half a mark is deducted for a wrong answer. Qualifying — Tier 1 marks decide who reaches Tier 2 and are not counted afterwards.',
       },
       {
-        name: 'Tier 2 — Computer Based Examination and skill test',
-        mode: 'Objective modules plus a typing or data entry test',
-        detail:
-          'Modules covering mathematical abilities and reasoning, English language and general awareness, and computer knowledge, followed by the skill or typing test appropriate to the post applied for. Tier 2 marks decide the merit list; the skill test is qualifying.',
+        name: 'Tier 2 — Session 1 (objective)',
+        mode: 'Objective, 135 questions, 405 marks, 2 hours 15 minutes',
+        detail: 'Section 1: Mathematical Abilities 30 questions and Reasoning 30 questions, 180 marks, one hour with a 30-minute timer on each module. Section 2: English Language and Comprehension 40 questions and General Awareness 20 questions, 180 marks, one hour. Section 3 Module 1: Computer Knowledge, 15 questions, 45 marks, 15 minutes, qualifying. One mark deducted per wrong answer.',
       },
       {
-        name: 'Document verification',
-        mode: 'Offline',
-        detail:
-          'Verification of educational, category and identity documents for candidates who clear the written stages and the skill test.',
+        name: 'Tier 2 — Session 2 (skill and typing tests)',
+        mode: 'Practical, on the same day',
+        detail: 'Data Entry Operator candidates take a data entry skill test — 8,000 key depressions per hour, or 15,000 for the DEO posts in the offices listed in the notice — on a printed passage for 15 minutes. LDC and JSA candidates take a typing test of 35 words per minute in English or 30 in Hindi on a passage for 10 minutes. Both are qualifying.',
+      },
+      {
+        name: 'Option-cum-preference form, final result and verification',
+        mode: 'Online form, then verification by the department',
+        detail: 'Merit is built from Tier 2 Sections 1 and 2. Candidates fill a preference form for posts and departments, the Commission publishes a first round of tentative allocation and then the final result, and the department verifies documents before appointment.',
+      },
+    ],
+    updates: [
+      {
+        type: 'p',
+        text: 'Checked 12 September 2026 against the SSC notice board. The notice for the Combined Higher Secondary (10+2) Level Examination 2026 was published on 7 September 2026 with about 2,536 tentative vacancies. Online applications run from 7 September to 7 October 2026 (23:00), fee payment closes on 8 October, and the correction window is 14 to 16 October 2026. The dates of Tier 1 and Tier 2 are “to be notified later”; the Commission’s calendar had placed Tier 1 tentatively in July–September 2026 before the notice slipped, so expect Tier 1 no earlier than the end of 2026 and watch the candidate login for the exam-city intimation.',
+      },
+      {
+        type: 'table',
+        caption: 'Key dates of the SSC CHSL 2026 cycle, from the notice of 7 September 2026.',
+        head: ['Event', 'Date'],
+        rows: [
+          ['Notice published', '7 September 2026'],
+          ['Online applications', '7 September – 7 October 2026 (23:00)'],
+          ['Last date for fee payment', '8 October 2026 (23:00)'],
+          ['Application correction window', '14–16 October 2026 (₹200 first correction, ₹500 second)'],
+          ['Tier 1 (Computer Based Examination)', 'To be notified'],
+          ['Tier 2 (Computer Based Examination and skill/typing test)', 'To be notified'],
+          ['Tentative vacancies', 'About 2,536; post-wise list on the Tentative Vacancy page'],
+        ],
+      },
+      {
+        type: 'p',
+        text: 'The 2025 cycle is the best guide to how long the process takes. CHSL 2025 Tier 1 was held from 12 to 30 November 2025; the result on 27 February 2026 shortlisted 37,520 candidates, with LDC/JSA cut-offs of 144.26 (UR), 143.83 (OBC), 141.42 (EWS), 125.40 (SC) and 115.25 (ST) out of 200. Tier 2 followed in April 2026 with the tentative key on 20 April; final vacancies were fixed at 3,522 on 18 June 2026, the option-cum-preference form ran in late June, and the first round of tentative allocation was declared on 17 August 2026 — roughly a year from notice to allocation.',
+      },
+      {
+        type: 'note',
+        title: 'What the 2026 notice changed',
+        text: 'Tier 1 now has a 15-minute sectional timer on each of the four parts, as CGL 2026 does, and Tier 2 Section 1 has a 30-minute timer on each of its two modules. Registration is through the One-Time Registration system on the new portal. The Tier 2 scheme — 60 questions of mathematics and reasoning, 60 of English and general awareness, a 15-question computer module and the skill or typing test — is otherwise unchanged from 2025.',
+      },
+    ],
+    eligibility: [
+      {
+        type: 'p',
+        text: 'Conditions are checked as on the closing date, 7 October 2026, and verified only after the final result — an ineligible candidate can sit both tiers and be dropped at verification. The specific DEO posts with a science requirement are listed by department in the notice.',
+      },
+      {
+        type: 'list',
+        title: 'Educational qualification as on 7 October 2026',
+        items: [
+          {
+            text: 'LDC, JSA, DEO and DEO Grade A in general',
+            note: 'Class 12 or equivalent from a recognised board or university.',
+          },
+          {
+            text: 'DEO in the departments listed in the notice (including the office of the Comptroller and Auditor General)',
+            note: 'Class 12 in the Science stream with Mathematics as a subject.',
+          },
+          {
+            text: 'Final-year students',
+            note: 'Not eligible unless the class 12 result is declared by the closing date.',
+          },
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'Age as on 1 August 2026: 18–27 years, i.e. born between 2 August 1999 and 1 August 2008. Relaxations beyond 27 from the notice.',
+        head: ['Category', 'Relaxation'],
+        rows: [
+          ['SC and ST', '5 years'],
+          ['OBC (non-creamy layer)', '3 years'],
+          ['Persons with benchmark disabilities', '10 years (UR), 13 years (OBC), 15 years (SC/ST)'],
+          ['Ex-servicemen', '3 years after deducting military service from actual age'],
+          ['Central Government civilian employees with 3 years’ regular service', 'Up to 40 years (45 for SC/ST)'],
+          ['Widows, divorced women and judicially separated women who have not remarried', 'Up to 35 years (40 for SC/ST)'],
+        ],
+      },
+      {
+        type: 'list',
+        title: 'Other conditions',
+        items: [
+          {
+            text: 'Nationality',
+            note: 'Indian citizens, and the other categories the notice lists with an eligibility certificate where required.',
+          },
+          {
+            text: 'Fee',
+            note: '₹100 online; women and SC, ST, PwBD and ex-servicemen candidates are exempt.',
+          },
+          {
+            text: 'Pay',
+            note: 'LDC and JSA are in Pay Level 2 (₹19,900–63,200); DEO in Level 4 (₹25,500–81,100) or Level 5 (₹29,200–92,300); DEO Grade A in Level 4.',
+          },
+          {
+            text: 'Typing and data entry standards',
+            note: 'Not an eligibility condition at application, but a qualifying test in Tier 2 that decides whether a merit-list candidate is appointed. PwBD candidates who are exempt under the notice must produce the prescribed certificate.',
+          },
+        ],
+      },
+    ],
+    procedure: {
+      eyebrow: 'Application to appointment',
+      heading: 'How to apply for SSC CHSL 2026, what Tier 1 and Tier 2 look like on the day, and how posts are allotted',
+      intro: 'The steps in the order they happen, with the windows and fees the 7 September 2026 notice specifies.',
+      blocks: [
+        {
+          type: 'steps',
+          title: 'The SSC CHSL process from registration to result',
+          items: [
+            {
+              title: 'One-Time Registration on ssc.gov.in',
+              text: 'Create an OTR profile once on the Commission’s portal. Registration asks for Aadhaar-based verification, a mobile number and e-mail that remain with you for the whole cycle, and your basic educational and category details. The OTR number and password are what you log in with at every later stage — exam-city intimation, admit card, answer-key challenge, result and option form — so keep them safe.',
+            },
+            {
+              title: 'Fill the online application for SSC CHSL',
+              text: 'Log in, pick the examination, confirm the OTR details, choose the examination centre preferences and the medium of the paper, and upload or capture the photograph and signature exactly as the notice specifies. The declaration you sign at the end binds you to the eligibility conditions, and the Commission verifies documents only at the end of the process — an ineligible candidate can go through every stage and be dropped at verification.',
+            },
+            {
+              title: 'Pay the fee',
+              text: 'The fee is ₹100, paid online by BHIM UPI, net banking or Visa, Mastercard, Maestro or RuPay cards, with 8 October 2026 (23:00) as the last date. Women and SC, ST, PwBD and ex-servicemen candidates pay nothing. Fees are not refunded.',
+            },
+            {
+              title: 'Use the correction window if you need it',
+              text: 'A three-day correction window opens about a week after applications close. The Commission charges ₹200 for the first corrected submission and ₹500 for the second, from every candidate regardless of category. Some fields — notably the OTR identity details — cannot be changed at this point, which is why the OTR should be filled carefully in the first place.',
+            },
+            {
+              title: 'Exam-city intimation, then the admission certificate',
+              text: 'Roughly two weeks before the examination the candidate login shows the city allotted; the admission certificate itself is released only three to four days before the date. Print it, and carry it with an original photo identity document that carries the same date of birth as your application.',
+            },
+            {
+              title: 'On the day: biometrics, frisking and the clock',
+              text: 'Report at the time on the admission certificate; entry closes before the shift begins. Expect biometric capture and frisking, and expect the paper to be delivered with the timers the notice describes — a section or session that has closed cannot be reopened. Rough sheets are provided; nothing electronic is allowed inside.',
+            },
+            {
+              title: 'Tentative answer key and challenge',
+              text: 'A few days after the last shift the Commission uploads tentative answer keys with each candidate’s response sheet. Objections are filed online only, within the announced window, on payment of a per-question fee that is not refunded. Subject-matter experts examine the objections and the final key is used for evaluation.',
+            },
+            {
+              title: 'Result, marks and the next stage',
+              text: 'Results are published as PDF write-ups on the notice board with category-wise cut-offs and the count of candidates shortlisted; individual marks are released in the login shortly afterwards. Candidates for the next stage receive fresh admission certificates through the same login.',
+            },
+            {
+              title: 'Tier 1 result and the two shortlists',
+              text: 'Tier 1 produces cut-offs for the DEO posts and for the LDC/JSA posts separately, because the two groups have different Tier 2 skill tests. Answer-key challenges cost ₹100 per question, filed online within the window.',
+            },
+            {
+              title: 'Tier 2: objective session in the morning, skill or typing test after',
+              text: 'Section 1 and Section 2 are separately timed hours; the computer module is 15 minutes. After Session 1 closes, DEO candidates take the data entry skill test and LDC/JSA candidates the typing test on the same computer. Both are qualifying and both are compulsory unless the notice exempts you.',
+            },
+            {
+              title: 'Marks, option-cum-preference form and allocation',
+              text: 'Final answer keys and marks are published; candidates in the merit zone fill an option-cum-preference form ranking posts and departments. The Commission then declares a first round of tentative allocation, verifies identity, and publishes the final result; the department completes document verification before appointment.',
+            },
+          ],
+        },
+        {
+          type: 'note',
+          title: 'Practise the typing test on a computer, not a phone',
+          text: 'The LDC/JSA test is 35 words per minute in English or 30 in Hindi — roughly 10,500 and 9,000 key depressions per hour — judged on accuracy over a 10-minute passage. Candidates who type fast on a phone keyboard and slowly on a physical one fail it every cycle. Fifteen minutes a day on a QWERTY keyboard from the Tier 1 result onwards is enough for most people.',
+        },
+      ],
+    },
+    pattern: [
+      {
+        type: 'p',
+        text: 'The pattern is taken from the SSC CHSL 2026 notice of 7 September 2026. The full treatment, with the syllabus for each section and the skill-test rules, is on the exam pattern and syllabus pages.',
+      },
+      {
+        type: 'table',
+        caption: 'SSC CHSL Tier 1 exam pattern 2026: 100 questions, 200 marks, 60 minutes with a 15-minute sectional timer per part; 0.50 marks deducted per wrong answer; qualifying.',
+        head: ['Part', 'Section', 'Questions', 'Marks', 'Time'],
+        rows: [
+          ['I', 'English Language (basic knowledge)', '25', '50', '15 minutes'],
+          ['II', 'General Intelligence', '25', '50', '15 minutes'],
+          ['III', 'Quantitative Aptitude (basic arithmetic skill)', '25', '50', '15 minutes'],
+          ['IV', 'General Awareness', '25', '50', '15 minutes'],
+          ['', 'Total', '100', '200', '60 minutes'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'SSC CHSL Tier 2 exam pattern 2026. One mark deducted per wrong answer in Sections 1, 2 and 3; Section 3 and the typing or skill test are qualifying; merit is built from Sections 1 and 2.',
+        head: ['Session', 'Section and module', 'Questions', 'Marks', 'Time'],
+        rows: [
+          ['Session 1', 'Section 1 — Module 1 Mathematical Abilities; Module 2 Reasoning and General Intelligence', '30 + 30 = 60', '180', '1 hour (30 minutes per module)'],
+          ['Session 1', 'Section 2 — Module 1 English Language and Comprehension; Module 2 General Awareness', '40 + 20 = 60', '180', '1 hour'],
+          ['Session 1', 'Section 3 — Module 1 Computer Knowledge (qualifying)', '15', '45', '15 minutes'],
+          ['Session 2', 'Section 3 — Module 2 Skill test (DEO): 8,000 key depressions per hour; 15,000 for the listed DEO posts', 'One printed passage', 'Qualifying', '15 minutes'],
+          ['Session 2', 'Section 3 — Module 2 Typing test (LDC/JSA): 35 wpm English or 30 wpm Hindi', 'One passage', 'Qualifying', '10 minutes'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'Minimum qualifying marks that apply before any shortlisting — a candidate below these in any paper is not considered regardless of the cut-off.',
+        head: ['Category', 'Minimum qualifying marks'],
+        rows: [
+          ['Unreserved', '30%'],
+          ['OBC and EWS', '25%'],
+          ['All other categories', '20%'],
+        ],
+      },
+      {
+        type: 'p',
+        text: 'The examination is conducted in multiple shifts, and marks are normalised by the formula the Commission published on 2 June 2025 before cut-offs and merit are computed. Normalised scores can therefore differ from raw scores, in either direction, depending on the difficulty of the shift you sat.',
+      },
+    ],
+    studyPlan: [
+      {
+        type: 'p',
+        text: 'CHSL is a class-12-level paper, but the competition is graduate-heavy and the cut-offs sit above 140 out of 200 for the general category. The syllabus is small enough that speed and accuracy, not coverage, decide the result — and the sectional timers in 2026 make speed inside each 15-minute block the thing to train.',
+      },
+      {
+        type: 'steps',
+        title: 'A four-month plan',
+        items: [
+          {
+            title: 'Month 1: a diagnostic and the basics',
+            text: 'Sit a full Tier 1 mock in week one. Then work the arithmetic that fills Quantitative Aptitude — percentages, ratio, averages, profit and loss, interest, time and work, speed and distance — alongside the reasoning question types, English grammar rules and a static general awareness spine.',
+          },
+          {
+            title: 'Month 2: sections under the timer',
+            text: 'Practise each section as a 15-minute block. Add algebra, geometry, trigonometry and mensuration for Tier 2 Section 1, and cloze tests and comprehension passages for Section 2. Start daily current affairs.',
+          },
+          {
+            title: 'Month 3: full mocks and the error log',
+            text: 'A full Tier 1 mock every two days, a Tier 2 mock every week, and an error log by topic that you revise from. Begin typing practice on a physical keyboard.',
+          },
+          {
+            title: 'Month 4: revision and the exam',
+            text: 'Revise from your own notes, keep current affairs going, and taper mocks in the last ten days. Read the pattern in the notice once more before the paper.',
+          },
+        ],
+      },
+      {
+        type: 'list',
+        title: 'Where the marks are',
+        items: [
+          {
+            text: 'Quantitative Aptitude and Mathematical Abilities',
+            note: 'The widest spread of scores; arithmetic speed in Tier 1, algebra and geometry depth in Tier 2.',
+          },
+          {
+            text: 'Reasoning',
+            note: 'Near-full marks are realistic with practice on series, analogies, coding, puzzles and figure questions.',
+          },
+          {
+            text: 'English',
+            note: 'Forty questions for 120 marks in Tier 2 — grammar, vocabulary, error spotting, cloze tests and comprehension. Daily reading matters more than rule lists.',
+          },
+          {
+            text: 'General Awareness',
+            note: 'Recall; static GK plus six months of current affairs.',
+          },
+          {
+            text: 'Computer module and typing',
+            note: 'Qualifying, and a fail is a fail. Practise both.',
+          },
+        ],
+      },
+    ],
+    sources: [
+      {
+        type: 'p',
+        text: 'Checked 12 September 2026 against the notice of examination for CHSL 2026 and the Tier 1 result, final vacancy and first-round allocation write-ups of CHSL 2025 on the SSC notice board. Tier 1 and Tier 2 dates for 2026 have not been notified.',
+      },
+      {
+        type: 'links',
+        title: 'Official documents',
+        items: [
+          {
+            label: 'Notice of Combined Higher Secondary (10+2) Level Examination 2026 (7 September 2026)',
+            href: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_chsle_2026.pdf',
+          },
+          {
+            label: 'CHSL 2025 Tier 1 result write-up with cut-offs (27 February 2026)',
+            href: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_27022026.pdf',
+          },
+          {
+            label: 'CHSL 2025 final vacancies (18 June 2026)',
+            href: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/final_vacancies_18062026.pdf',
+          },
+          {
+            label: 'CHSL 2025 first round of tentative allocation (17 August 2026)',
+            href: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/FRTA_CHSLE_2025_17082026.pdf',
+          },
+          {
+            label: 'SSC home page — notices, calendar and candidate login',
+            href: 'https://ssc.gov.in/',
+          },
+        ],
       },
     ],
     resources: {
@@ -583,64 +1277,105 @@ const ssc = [
         ],
       },
       'exam-pattern': {
-        description:
-          'SSC CHSL exam pattern — Tier 1 and Tier 2 structure, marks, timing, negative marking and the typing and data entry speed requirements.',
-        lead: [
-          'Two written tiers and one speed test. The speed test carries no marks and ends more candidacies than most people expect.',
-        ],
+        description: 'SSC CHSL exam pattern 2026 — Tier 1 and Tier 2 tables with questions, marks, time, sectional timers, negative marking and the DEO and LDC typing test standards.',
+        heading: 'SSC CHSL exam pattern 2026: Tier 1, Tier 2, typing test and negative marking',
+        lead: ['Every figure here is from the notice of 7 September 2026 — what each tier asks, how long each block runs, what a wrong answer costs and which marks build the merit list.'],
         blocks: [
           {
+            type: 'p',
+            text: 'CHSL has two computer-based tiers. Tier 1 is a one-hour, 200-mark screening paper; Tier 2 is a longer paper of harder questions with a computer module and a skill or typing test attached, and the merit list is built from its two objective sections. The 2026 notice keeps the Tier 2 scheme of recent cycles and adds sectional timers to Tier 1.',
+          },
+          {
             type: 'table',
-            caption:
-              'Tier 1 structure. Confirm the marks, duration and negative marking rate against the current official notification.',
-            head: ['Section', 'Questions', 'Marks', 'Notes'],
+            caption: 'SSC CHSL Tier 1 exam pattern 2026. Objective multiple choice in English, Hindi and the regional language chosen for Parts II–IV; 0.50 marks deducted per wrong answer.',
+            head: ['Part', 'Section', 'Questions', 'Marks', 'Time'],
             rows: [
-              ['English Language', '25', '50', 'Grammar, vocabulary and a short comprehension'],
-              ['General Intelligence', '25', '50', 'Verbal and non-verbal reasoning'],
-              ['Quantitative Aptitude', '25', '50', 'Arithmetic-dominant'],
-              ['General Awareness', '25', '50', 'Recall-based; static knowledge outweighs current affairs'],
-              ['Total', '100', '200', '60 minutes, no sectional timing'],
+              ['I', 'English Language (basic knowledge)', '25', '50', '15 minutes'],
+              ['II', 'General Intelligence', '25', '50', '15 minutes'],
+              ['III', 'Quantitative Aptitude (basic arithmetic skill)', '25', '50', '15 minutes'],
+              ['IV', 'General Awareness', '25', '50', '15 minutes'],
+              ['', 'Total', '100', '200', '60 minutes (80 for scribe-eligible candidates)'],
             ],
           },
           {
             type: 'p',
-            text: 'Tier 1 deducts half a mark for each wrong answer. With no sectional timing, the paper rewards a deliberate order of attempt — most successful candidates take English and general awareness first because they are fast and largely knowledge-bound, then reasoning, then quantitative aptitude with whatever remains.',
+            text: 'Tier 1 is qualifying. Separate cut-offs are declared for the DEO posts and for LDC/JSA, and candidates are shortlisted for Tier 2 in each list; the marks are not carried forward. Each part locks when its 15 minutes end, so the paper is four short tests rather than one hour to distribute.',
           },
           {
-            type: 'p',
-            text: 'Tier 2 is delivered in modules across sessions covering mathematical abilities and reasoning, then English and general awareness, then computer knowledge, with the skill or typing test attached. Unlike Tier 1, the modules are separately timed, so a section you find easy cannot subsidise one you do not.',
+            type: 'table',
+            caption: 'SSC CHSL Tier 2 exam pattern 2026, Session 1. One mark deducted per wrong answer; Section 3 is qualifying.',
+            head: ['Section', 'Module', 'Questions', 'Marks', 'Time'],
+            rows: [
+              ['Section 1', 'Module 1 — Mathematical Abilities', '30', '90', '1 hour for the section, 30 minutes per module'],
+              ['Section 1', 'Module 2 — Reasoning and General Intelligence', '30', '90', ''],
+              ['Section 2', 'Module 1 — English Language and Comprehension', '40', '120', '1 hour for the section'],
+              ['Section 2', 'Module 2 — General Awareness', '20', '60', ''],
+              ['Section 3', 'Module 1 — Computer Knowledge Test', '15', '45', '15 minutes'],
+            ],
+          },
+          {
+            type: 'table',
+            caption: 'SSC CHSL Tier 2, Session 2 — the qualifying skill and typing tests, held on the same day after Session 1.',
+            head: ['Test', 'Who', 'Standard', 'Duration'],
+            rows: [
+              ['Skill test, Part A', 'DEO in the departments listed in the notice', '15,000 key depressions per hour, judged on correct entry of a printed English passage of about 3,700–4,000 key depressions', '15 minutes'],
+              ['Skill test, Part B', 'All other DEO and DEO Grade A posts', '8,000 key depressions per hour on a printed passage of about 2,000–2,200 key depressions', '15 minutes'],
+              ['Typing test', 'LDC and JSA', '35 words per minute in English (about 10,500 key depressions per hour) or 30 in Hindi (about 9,000), on accuracy over a set passage', '10 minutes'],
+            ],
           },
           {
             type: 'list',
-            title: 'The skill and typing requirement',
+            title: 'How Tier 2 is scored',
             items: [
-              { text: 'Clerical posts (LDC / JSA)', note: 'a typing test at a prescribed speed on an English or Hindi keyboard, taken on a computer.' },
-              { text: 'Data Entry Operator posts', note: 'a data entry speed test measured in key depressions per hour, with higher-level DEO posts carrying a stiffer requirement.' },
-              { text: 'Status', note: 'qualifying in nature — it does not add to your merit score, but failing it removes you from consideration regardless of your written marks.' },
+              {
+                text: 'Merit comes from Sections 1 and 2',
+                note: '120 questions for 360 marks. Section 3 Module 1 is mandatory and qualifying; Module 2 is qualifying and has no marks.',
+              },
+              {
+                text: 'Session 2 is evaluated only for candidates who qualify Session 1',
+                note: 'A candidate below the qualifying marks in Session 1 does not have the skill or typing test evaluated.',
+              },
+              {
+                text: 'Wrong answers cost a full mark against three',
+                note: 'The same arithmetic as CGL Tier 2: a four-option blind guess loses on average, a two-option guess is worth taking.',
+              },
+              {
+                text: 'Timers are per section, and per module in Section 1',
+                note: 'You cannot carry unused minutes from mathematics into reasoning, or from Section 1 into Section 2.',
+              },
             ],
           },
           {
-            type: 'note',
-            title: 'Confirm the speed thresholds',
-            text: 'The exact words-per-minute and key-depressions-per-hour thresholds, and the relaxations available to candidates with disabilities, are set out in the notification and have been revised between cycles. Do not train to a number you read in an old guide.',
+            type: 'table',
+            caption: 'Minimum qualifying marks that apply before any shortlisting — a candidate below these in any paper is not considered regardless of the cut-off.',
+            head: ['Category', 'Minimum qualifying marks'],
+            rows: [
+              ['Unreserved', '30%'],
+              ['OBC and EWS', '25%'],
+              ['All other categories', '20%'],
+            ],
           },
           {
             type: 'p',
-            text: 'Because Tier 1 has no sectional timing, the order in which you attempt the four sections is a decision to make before the exam rather than during it. One ordering that works is general awareness first, because it is pure recall and costs almost nothing in time; then English, which is quick if your grammar is solid; then reasoning; and quantitative aptitude last, where whatever minutes remain are most usefully spent. The point is not this particular order but having one at all — candidates who improvise the sequence lose several minutes simply deciding.',
+            text: 'Marks are normalised across shifts by the Commission’s formula of 2 June 2025, and cut-offs are computed on normalised marks. For reference, the CHSL 2025 Tier 1 cut-offs for LDC/JSA, declared on 27 February 2026, were 144.26 (UR), 143.83 (OBC), 141.42 (EWS), 125.40 (SC) and 115.25 (ST) out of 200, with 37,520 candidates shortlisted for Tier 2.',
           },
           {
-            type: 'steps',
-            title: 'How the sixty minutes usually break down',
+            type: 'links',
+            title: 'Related SSC CHSL pages',
             items: [
-              { title: 'First pass, roughly forty minutes', text: 'Answer everything you can do confidently, in your chosen section order, marking anything that needs a second look rather than fighting it.' },
-              { title: 'Second pass, roughly fifteen minutes', text: 'Return to the marked questions, working the ones where you have narrowed the options rather than the ones that are simply hard.' },
-              { title: 'Final minutes', text: 'Decide the remaining guesses deliberately. With half a mark deducted for an error, a two-option guess is worth taking and a four-option guess is not.' },
+              {
+                label: 'SSC CHSL syllabus, section by section',
+                to: '/government-exams/ssc/ssc-chsl/syllabus/',
+              },
+              {
+                label: 'Free SSC CHSL mock tests on the 2026 pattern',
+                to: '/government-exams/ssc/ssc-chsl/mock-tests/',
+              },
+              {
+                label: 'SSC CHSL previous year papers',
+                to: '/government-exams/ssc/ssc-chsl/previous-year-papers/',
+              },
             ],
-          },
-          {
-            type: 'note',
-            title: 'The skill test is pass or fail, not a score',
-            text: 'It is easy to misread a qualifying requirement as a soft one. The typing and data entry tests add nothing to your merit position, but failing one removes you from the process entirely, no matter how well the written tiers went. That asymmetry — no upside, complete downside — is exactly why it deserves regular practice from the start rather than a fortnight of panic at the end.',
           },
         ],
       },
@@ -883,14 +1618,6 @@ const ssc = [
     },
     faqs: [
       {
-        q: 'What is the SSC CHSL exam pattern?',
-        a: 'SSC CHSL has two computer-based tiers plus a skill test. Tier 1 is a 60-minute paper of 100 questions across English, general intelligence, quantitative aptitude and general awareness, carrying 200 marks, with half a mark deducted for a wrong answer. Tier 2 covers mathematical abilities and reasoning, English and general awareness, and computer knowledge in separately timed modules, and includes the typing or data entry skill test for the post applied for.',
-      },
-      {
-        q: 'Is the SSC CHSL typing test compulsory?',
-        a: 'Yes, and it is qualifying rather than merit-counting — it adds nothing to your score, but failing it removes you from consideration however well you did in the written tiers. Clerical posts require a typing speed on an English or Hindi keyboard; data entry posts require a data entry speed in key depressions per hour. Because typing improves gradually, the practical advice is to start a short daily practice at the beginning of your preparation rather than after the Tier 2 result.',
-      },
-      {
         q: 'What qualification do I need for SSC CHSL?',
         a: 'A class 12 (10+2) pass from a recognised board is the general requirement, which is what makes CHSL the most widely accessible SSC examination. Some Data Entry Operator posts specify subject requirements at the twelfth level, so check the post-wise eligibility table in the current notification.',
       },
@@ -901,6 +1628,30 @@ const ssc = [
       {
         q: 'Which posts are filled through SSC CHSL?',
         a: 'Lower Division Clerk and Junior Secretariat Assistant posts in central government ministries, departments and subordinate offices, and Data Entry Operator posts across various ministries. The skill test differs between the clerical and data entry streams.',
+      },
+      {
+        q: 'What is the SSC CHSL Tier 1 exam pattern for 2026?',
+        a: 'Tier 1 is 100 objective questions for 200 marks in 60 minutes — English Language, General Intelligence, Quantitative Aptitude and General Awareness, 25 questions of 2 marks each — with a 15-minute sectional timer on each part from 2026. Half a mark is deducted for a wrong answer. It is qualifying; the merit list is built from Tier 2.',
+      },
+      {
+        q: 'What is the SSC CHSL Tier 2 exam pattern?',
+        a: 'Session 1 has Section 1 (Mathematical Abilities 30 questions and Reasoning 30 questions, 180 marks, one hour with 30 minutes per module), Section 2 (English 40 and General Awareness 20, 180 marks, one hour) and Section 3 Module 1 (Computer Knowledge, 15 questions, 45 marks, 15 minutes, qualifying), with one mark deducted per wrong answer. Session 2 is the qualifying skill test for DEO (8,000 key depressions per hour, or 15,000 for the DEO posts the notice lists, 15 minutes) or the typing test for LDC/JSA (35 wpm English or 30 wpm Hindi, 10 minutes).',
+      },
+      {
+        q: 'What were the SSC CHSL 2025 cut-off marks?',
+        a: 'The Tier 1 result of 27 February 2026 put the LDC/JSA cut-offs at 144.26 for UR, 143.83 for OBC, 141.42 for EWS, 125.40 for SC and 115.25 for ST out of 200 on normalised marks, with 37,520 candidates shortlisted for Tier 2. DEO cut-offs are declared separately and are usually higher.',
+      },
+      {
+        q: 'What are the SSC CHSL 2026 exam dates?',
+        a: 'The notice was published on 7 September 2026 with applications open until 7 October 2026, fee payment until 8 October and the correction window from 14 to 16 October 2026. The Tier 1 and Tier 2 dates are to be notified later; the 2025 cycle ran Tier 1 in November and Tier 2 the following April.',
+      },
+      {
+        q: 'What is a cloze test in SSC CHSL English?',
+        a: 'A cloze test is a passage with several words removed; each blank is a question with four options and the right answer is the word that fits both the grammar and the meaning of the passage. Cloze tests appear in Tier 1 English and in Tier 2 Section 2, and reward reading the whole passage first, then filling the blanks that are certain before the ones that are not.',
+      },
+      {
+        q: 'Is the typing test compulsory in SSC CHSL, and what happens if I fail it?',
+        a: 'Yes for every post. LDC and JSA candidates must type 35 words per minute in English or 30 in Hindi for 10 minutes; DEO candidates must reach 8,000 key depressions per hour (15,000 for the listed departments) for 15 minutes. The tests are qualifying, so failing one removes you from the final result regardless of your Tier 2 marks. PwBD candidates exempt under the notice must produce the prescribed certificate.',
       },
     ],
   },
@@ -915,20 +1666,21 @@ const ssc = [
     fullName: 'Staff Selection Commission Multi-Tasking (Non-Technical) Staff Examination',
     authority: 'Staff Selection Commission (SSC)',
     official: 'ssc.gov.in',
-    seoTitle: 'SSC MTS 2026: Syllabus, Exam Pattern, Havaldar PET & Mocks',
+    seoTitle: 'SSC MTS Exam Pattern 2026: Session 1 & 2 Syllabus, Havaldar PET, Dates',
     metaDescription:
-      'SSC MTS exam guide for 10th-pass candidates — two-session paper structure, syllabus, Havaldar physical test, previous papers and free mock practice.',
+      'SSC MTS 2026 exam pattern and syllabus — Session 1 and Session 2 marks, time, negative marking, Havaldar PET/PST, eligibility, vacancies, dates and free mocks.',
+    heroTitle: 'SSC MTS Exam Pattern and Syllabus 2026: Session 1, Session 2, Havaldar PET and Free Mock Tests',
     lead: [
       'SSC MTS is the commission’s class-10 recruitment, filling Multi-Tasking Staff posts across central government offices and Havaldar posts in the CBIC and the Narcotics Control Bureau. It is the entry point that asks least in qualification terms and, for a great many candidates, the first realistic route into central government service.',
       'Its paper has one structural feature that no other SSC examination shares, and it changes how you should attempt it: the two sessions apply different negative marking rules.',
     ],
     quickFacts: [
       ['Conducted by', 'Staff Selection Commission (SSC)'],
-      ['Level', 'Class 10 (matriculation) from a recognised board'],
-      ['Stages', 'Computer-based examination in two sessions; Havaldar posts add a physical test'],
-      ['Mode', 'Computer-based test at SSC centres'],
-      ['Posts filled', 'Multi-Tasking Staff in central offices; Havaldar in CBIC and CBN'],
-      ['Distinctive feature', 'Session I carries no negative marking; Session II does'],
+      ['Level', 'Class 10 pass from a recognised board as on the cut-off date'],
+      ['Posts', 'Multi Tasking (Non-Technical) Staff, Pay Level 1; Havaldar in CBIC and CBN, Pay Level 1'],
+      ['Stages', 'Computer Based Examination in two sessions (Session 1 qualifying, Session 2 merit) → PET/PST for Havaldar → verification'],
+      ['Age', '18–25 for MTS, 18–27 for Havaldar and some MTS posts, on the cut-off date'],
+      ['Next cycle', 'MTS 2026 notice not issued as of 12 September 2026; the calendar had placed the CBE tentatively in September–November 2026'],
     ],
     overview: [
       {
@@ -955,27 +1707,286 @@ const ssc = [
     ],
     stages: [
       {
-        name: 'Computer Based Examination — Session I',
-        mode: 'Objective, 45 minutes, no negative marking',
-        detail:
-          'Numerical and mathematical ability, and reasoning ability and problem solving. Because nothing is deducted for a wrong answer in this session, every question should be attempted — leaving one blank is a guaranteed zero where a guess is a free chance.',
+        name: 'Computer Based Examination — Session 1',
+        mode: 'Objective, 40 questions, 120 marks, 45 minutes, no negative marking',
+        detail: 'Numerical and Mathematical Ability (20 questions, 60 marks) and Reasoning Ability and Problem Solving (20 questions, 60 marks). Session 1 is qualifying: a candidate who does not reach the minimum marks here does not have Session 2 evaluated. The session closes automatically at 45 minutes and Session 2 starts immediately.',
       },
       {
-        name: 'Computer Based Examination — Session II',
-        mode: 'Objective, 45 minutes, with negative marking',
-        detail:
-          'General awareness and English language. A wrong answer here does cost marks, so the guessing discipline that would waste marks in Session I becomes necessary in Session II.',
+        name: 'Computer Based Examination — Session 2',
+        mode: 'Objective, 50 questions, 150 marks, 45 minutes, one mark deducted per wrong answer',
+        detail: 'General Awareness (25 questions, 75 marks) and English Language and Comprehension (25 questions, 75 marks). Merit for both MTS and Havaldar is built solely from Session 2, on normalised marks.',
       },
       {
-        name: 'Physical test (Havaldar posts only)',
-        mode: 'Physical efficiency and standard test',
-        detail:
-          'Applicants for Havaldar posts in CBIC and CBN sit a physical efficiency test and a physical standard test with separate criteria for male and female candidates. Qualifying in nature.',
+        name: 'PET and PST — Havaldar only',
+        mode: 'Physical, conducted by CBIC and CBN',
+        detail: 'Candidates are shortlisted for Havaldar in the ratio 1:7 on Session 2 marks. Men walk 1,600 metres in 15 minutes; women walk 1 kilometre in 20 minutes. Height 157.5 cm and chest 81 cm with 5 cm expansion for men; height 152 cm and weight 48 kg for women, with relaxations for Garhwalis, Assamese, Gorkhas and Scheduled Tribes. Qualifying only.',
       },
       {
-        name: 'Document verification',
-        mode: 'Offline',
-        detail: 'Verification of educational, category, age and identity documents for shortlisted candidates.',
+        name: 'Option-cum-preference, tentative allocation and verification',
+        mode: 'Online form, then verification by the department',
+        detail: 'Candidates are considered only for the state or region (CCA) they opted for. The Commission publishes a first round of tentative allocation for MTS and Havaldar together after the Havaldar PET/PST, then the final result; the department verifies documents before appointment.',
+      },
+    ],
+    updates: [
+      {
+        type: 'p',
+        text: 'Checked 12 September 2026 against the SSC notice board. No notice for the MTS and Havaldar Examination 2026 had been issued by this date. The Commission’s 2026 calendar, published in January, had placed the notice tentatively at the end of June and the Computer Based Examination in September–November 2026, but the schedule has slipped — as CGL 2026 did — so the notice should be expected in the coming weeks and the CBE at the end of 2026 or early 2027. The 2025 cycle is still running: the Havaldar PET/PST was held from 24 to 31 August 2026 and the first round of tentative allocation for MTS and Havaldar is due next.',
+      },
+      {
+        type: 'table',
+        caption: 'The SSC MTS 2025 cycle, which the 2026 cycle will follow in shape.',
+        head: ['Event', 'Date'],
+        rows: [
+          ['Notice published', '26 June 2025'],
+          ['Online applications', '26 June – 24 July 2025; fee to 25 July; correction 29–31 July 2025'],
+          ['Applications received', '36,19,834'],
+          ['Tentative vacancies (list of 27 November 2025)', '7,948 for MTS and Havaldar combined'],
+          ['Computer Based Examination', 'Originally 20 September – 24 October 2025; held 4–20 February 2026 with self-slot selection; 8,04,633 candidates appeared'],
+          ['Tentative answer key', '3 March 2026'],
+          ['Result of CBE (Havaldar shortlist for PET/PST)', '3 August 2026'],
+          ['Havaldar PET/PST by CBIC', '24–31 August 2026'],
+          ['First round of tentative allocation (MTS and Havaldar)', 'To follow'],
+        ],
+      },
+      {
+        type: 'note',
+        title: 'What to prepare for while the 2026 notice is awaited',
+        text: 'The two-session scheme — Session 1 qualifying with no negative marking, Session 2 counting for merit with one mark deducted per wrong answer — has been stable since 2023 and the 2025 notice retained it. Eligibility, age and the Havaldar physical standards below are from the 2025 notice; confirm them against the 2026 notice on the day it appears.',
+      },
+    ],
+    eligibility: [
+      {
+        type: 'p',
+        text: 'These conditions are from the MTS and Havaldar notice of 26 June 2025, the latest issued; the 2026 notice will restate them with a new cut-off date. Eligibility is verified only at document verification after the result.',
+      },
+      {
+        type: 'list',
+        title: 'Educational qualification',
+        items: [
+          {
+            text: 'MTS and Havaldar',
+            note: 'Matriculation (class 10) or equivalent from a recognised board, as on the cut-off date in the notice (1 August 2025 in the last cycle).',
+          },
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'Age on the cut-off date, from the 2025 notice, with relaxations beyond the upper limit.',
+        head: ['Post or category', 'Age'],
+        rows: [
+          ['MTS (most posts)', '18–25 years'],
+          ['Havaldar in CBIC and CBN, and a few MTS posts', '18–27 years'],
+          ['SC and ST', '+5 years'],
+          ['OBC (non-creamy layer)', '+3 years'],
+          ['Persons with benchmark disabilities', '+10 years (UR), +13 (OBC), +15 (SC/ST)'],
+          ['Ex-servicemen', '+3 years after deducting military service'],
+          ['Central Government civilian employees with 3 years’ regular service', 'Up to 40 years (45 for SC/ST)'],
+          ['Widows, divorced and judicially separated women who have not remarried', 'Up to 35 years (40 for SC/ST)'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'Physical standards for Havaldar in CBIC and CBN, tested at PET/PST after the CBE.',
+        head: ['Standard', 'Male', 'Female'],
+        rows: [
+          ['Walk', '1,600 metres in 15 minutes', '1 kilometre in 20 minutes'],
+          ['Height', '157.5 cm (relaxable by 5 cm for Garhwalis, Assamese, Gorkhas and Scheduled Tribes)', '152 cm (relaxable by 2.5 cm for the same groups)'],
+          ['Chest', '81 cm fully expanded with minimum 5 cm expansion', '—'],
+          ['Weight', '—', '48 kg (relaxable by 2 kg for the same groups)'],
+        ],
+      },
+      {
+        type: 'list',
+        title: 'Other conditions',
+        items: [
+          {
+            text: 'Fee',
+            note: '₹100 online; women and SC, ST, PwBD and ex-servicemen candidates are exempt.',
+          },
+          {
+            text: 'Choice of region',
+            note: 'Candidates opt for the state or union territory (CCA) whose vacancies they wish to be considered for, and are considered only there. MTS vacancies are state-wise.',
+          },
+          {
+            text: 'Pay',
+            note: 'Pay Level 1 of the 7th CPC pay matrix (₹18,000–56,900) for both MTS and Havaldar.',
+          },
+        ],
+      },
+    ],
+    procedure: {
+      eyebrow: 'Application to appointment',
+      heading: 'How to apply for SSC MTS, what the two sessions look like on the day, and how MTS and Havaldar are allotted',
+      intro: 'The steps as they ran in the 2025 cycle; the 2026 notice will set the dates.',
+      blocks: [
+        {
+          type: 'steps',
+          title: 'The SSC MTS process from registration to result',
+          items: [
+            {
+              title: 'One-Time Registration on ssc.gov.in',
+              text: 'Create an OTR profile once on the Commission’s portal. Registration asks for Aadhaar-based verification, a mobile number and e-mail that remain with you for the whole cycle, and your basic educational and category details. The OTR number and password are what you log in with at every later stage — exam-city intimation, admit card, answer-key challenge, result and option form — so keep them safe.',
+            },
+            {
+              title: 'Fill the online application for SSC MTS',
+              text: 'Log in, pick the examination, confirm the OTR details, choose the examination centre preferences and the medium of the paper, and upload or capture the photograph and signature exactly as the notice specifies. The declaration you sign at the end binds you to the eligibility conditions, and the Commission verifies documents only at the end of the process — an ineligible candidate can go through every stage and be dropped at verification.',
+            },
+            {
+              title: 'Pay the fee',
+              text: 'The fee is ₹100, paid online, with the last date a day after applications close. Women and SC, ST, PwBD and ex-servicemen candidates are exempt. The fee is not refunded.',
+            },
+            {
+              title: 'Use the correction window if you need it',
+              text: 'A three-day correction window opens about a week after applications close. The Commission charges ₹200 for the first corrected submission and ₹500 for the second, from every candidate regardless of category. Some fields — notably the OTR identity details — cannot be changed at this point, which is why the OTR should be filled carefully in the first place.',
+            },
+            {
+              title: 'Exam-city intimation, then the admission certificate',
+              text: 'Roughly two weeks before the examination the candidate login shows the city allotted; the admission certificate itself is released only three to four days before the date. Print it, and carry it with an original photo identity document that carries the same date of birth as your application.',
+            },
+            {
+              title: 'On the day: biometrics, frisking and the clock',
+              text: 'Report at the time on the admission certificate; entry closes before the shift begins. Expect biometric capture and frisking, and expect the paper to be delivered with the timers the notice describes — a section or session that has closed cannot be reopened. Rough sheets are provided; nothing electronic is allowed inside.',
+            },
+            {
+              title: 'Tentative answer key and challenge',
+              text: 'A few days after the last shift the Commission uploads tentative answer keys with each candidate’s response sheet. Objections are filed online only, within the announced window, on payment of a per-question fee that is not refunded. Subject-matter experts examine the objections and the final key is used for evaluation.',
+            },
+            {
+              title: 'Result, marks and the next stage',
+              text: 'Results are published as PDF write-ups on the notice board with category-wise cut-offs and the count of candidates shortlisted; individual marks are released in the login shortly afterwards. Candidates for the next stage receive fresh admission certificates through the same login.',
+            },
+            {
+              title: 'Self-slot selection',
+              text: 'In the 2025 cycle the Commission let candidates choose their examination date and shift from the slots available in their city, through the login, a few weeks before the CBE. Slots are first come, first served, so log in on the day the facility opens.',
+            },
+            {
+              title: 'The two sessions on one screen',
+              text: 'Session 1 runs for 45 minutes and closes automatically; Session 2 starts at once for another 45 minutes. Scribe-eligible candidates get 60 minutes per session. You cannot return to Session 1, and Session 2 is evaluated only if you qualify Session 1.',
+            },
+            {
+              title: 'Result of the CBE and the Havaldar shortlist',
+              text: 'The result is published in the ratio 1:7 (vacancies to candidates) for Havaldar, on Session 2 marks, with CCA-wise and category-wise cut-offs. PET/PST is conducted by CBIC and CBN a few weeks later; a candidate who fails it is still considered for MTS.',
+            },
+            {
+              title: 'Option-cum-preference, first round of tentative allocation and verification',
+              text: 'The Commission publishes a first round of tentative allocation for MTS and Havaldar together after the Havaldar PET/PST, verifies identity, and then declares the final result; departments verify documents before appointment.',
+            },
+          ],
+        },
+      ],
+    },
+    pattern: [
+      {
+        type: 'p',
+        text: 'The pattern is the scheme in the MTS and Havaldar notice of 26 June 2025, carried unchanged from 2023 and expected in the 2026 notice. Both sessions are held on the same day, back to back, and both are mandatory.',
+      },
+      {
+        type: 'table',
+        caption: 'SSC MTS exam pattern — Session 1: 40 questions, 120 marks, 45 minutes, no negative marking, qualifying.',
+        head: ['Part', 'Subject', 'Questions', 'Marks'],
+        rows: [
+          ['I', 'Numerical and Mathematical Ability', '20', '60'],
+          ['II', 'Reasoning Ability and Problem Solving', '20', '60'],
+          ['', 'Total', '40', '120'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'SSC MTS exam pattern — Session 2: 50 questions, 150 marks, 45 minutes, one mark deducted per wrong answer. Merit for MTS and Havaldar is built from Session 2 only.',
+        head: ['Part', 'Subject', 'Questions', 'Marks'],
+        rows: [
+          ['I', 'General Awareness', '25', '75'],
+          ['II', 'English Language and Comprehension', '25', '75'],
+          ['', 'Total', '50', '150'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'Minimum qualifying marks that apply before any shortlisting — a candidate below these in any paper is not considered regardless of the cut-off.',
+        head: ['Category', 'Minimum qualifying marks'],
+        rows: [
+          ['Unreserved', '30%'],
+          ['OBC and EWS', '25%'],
+          ['All other categories', '20%'],
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Session 1 is evaluated first; Session 2 is evaluated only for candidates who reach the qualifying marks in Session 1. The examination is conducted in multiple shifts, and marks are normalised by the formula the Commission published on 2 June 2025 before cut-offs and merit are computed. Normalised scores can therefore differ from raw scores, in either direction, depending on the difficulty of the shift you sat. The CBE is offered in English, Hindi and 13 regional languages, and in the 2025 cycle the Commission fixed CCA-wise and category-wise cut-offs in Session 2.',
+      },
+    ],
+    studyPlan: [
+      {
+        type: 'p',
+        text: 'MTS is a class-10-level paper with over 36 lakh applicants, which means the paper is not hard but the cut-off is unforgiving. Session 2 — general awareness and English — builds the merit list and carries negative marking; Session 1 only needs to be cleared. Most candidates prepare in the reverse proportion.',
+      },
+      {
+        type: 'steps',
+        title: 'A three-month plan',
+        items: [
+          {
+            title: 'Month 1: Session 1 to a safe level, Session 2 foundations',
+            text: 'Number system, fractions, percentages, ratio, averages, profit and loss, simple interest, time and work, and basic geometry and data interpretation for numerical ability; series, analogies, coding, classification, blood relations, directions and figure questions for reasoning. Alongside, English grammar basics, vocabulary and a static general awareness spine — history, polity, geography, science, economy.',
+          },
+          {
+            title: 'Month 2: Session 2 depth and timing',
+            text: 'Daily reading for English comprehension, cloze tests, error spotting and sentence improvement. Daily current affairs covering the six months before the exam. Sectional tests of 45 minutes to fix pace: 40 questions in Session 1 is 67 seconds each, 50 in Session 2 is 54.',
+          },
+          {
+            title: 'Month 3: full mocks and revision',
+            text: 'A full two-session mock every second day, an error log by topic, and revision from your own notes. Havaldar candidates should start a daily brisk walk to be sure of 1,600 metres in 15 minutes.',
+          },
+        ],
+      },
+      {
+        type: 'list',
+        title: 'Two rules that follow from the pattern',
+        items: [
+          {
+            text: 'Attempt everything in Session 1',
+            note: 'There is no negative marking, so an unanswered question is a mark left on the table. Mark the best guess on every question before the 45 minutes end.',
+          },
+          {
+            text: 'Guess selectively in Session 2',
+            note: 'One mark off against three on; a four-option blind guess loses, a two-option guess is worth taking. General awareness is the section where unknown means unknown — move on.',
+          },
+        ],
+      },
+    ],
+    sources: [
+      {
+        type: 'p',
+        text: 'Checked 12 September 2026 against the notice of examination for MTS and Havaldar 2025, the tentative vacancy list of 27 November 2025, the CBE result write-up of 3 August 2026 and the PET/PST schedule of 20 August 2026 on the SSC notice board, and the Commission’s 2026 examination calendar. The 2026 notice was not yet published.',
+      },
+      {
+        type: 'links',
+        title: 'Official documents',
+        items: [
+          {
+            label: 'Notice of MTS and Havaldar (CBIC and CBN) Examination 2025 (26 June 2025)',
+            href: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_mts_2025.pdf',
+          },
+          {
+            label: 'Tentative vacancies of MTS and Havaldar 2025 (27 November 2025)',
+            href: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Tentative_Vacancy_27112025.pdf',
+          },
+          {
+            label: 'Self-slot selection notice for the MTS 2025 CBE (16 January 2026)',
+            href: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_16012026.pdf',
+          },
+          {
+            label: 'MTS 2025 result of the CBE — Havaldar shortlist and cut-offs (3 August 2026)',
+            href: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_mts_03082026.pdf',
+          },
+          {
+            label: 'Schedule of PET/PST for Havaldar, MTS 2025 (20 August 2026)',
+            href: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_20082026.pdf',
+          },
+          {
+            label: 'SSC home page — notices, calendar and candidate login',
+            href: 'https://ssc.gov.in/',
+          },
+        ],
       },
     ],
     resources: {
@@ -1033,63 +2044,92 @@ const ssc = [
         ],
       },
       'exam-pattern': {
-        description:
-          'SSC MTS exam pattern — two sessions, section-wise marks and the negative marking rule that differs between Session I and Session II.',
-        lead: [
-          'One paper, two sessions, two different rules about guessing. Getting this wrong in either direction costs marks.',
-        ],
+        description: 'SSC MTS exam pattern 2026 — Session 1 and Session 2 tables with questions, marks, time and negative marking, the qualifying rule and Havaldar PET/PST standards.',
+        heading: 'SSC MTS exam pattern 2026: Session 1, Session 2, negative marking and the Havaldar PET',
+        lead: ['One computer-based test in two back-to-back sessions. Session 1 is qualifying with no penalty for a wrong answer; Session 2 builds the merit list and deducts a mark for every mistake.'],
         blocks: [
           {
+            type: 'p',
+            text: 'The MTS Computer Based Examination is a single sitting of 90 minutes divided into two sessions of 45 minutes each, on the same screen, with no gap. Session 1 closes automatically and Session 2 opens immediately. Both sessions are compulsory, and the way they are scored is different enough that they should be attempted differently.',
+          },
+          {
             type: 'table',
-            caption:
-              'The two-session structure. Confirm question counts, marks, timing and the negative marking rate against the current official notification.',
-            head: ['Session', 'Subjects', 'Duration', 'Negative marking'],
+            caption: 'SSC MTS exam pattern, Session 1. Objective; no negative marking; qualifying only.',
+            head: ['Part', 'Subject', 'Questions', 'Marks', 'Time'],
             rows: [
-              ['Session I', 'Numerical and mathematical ability; reasoning ability and problem solving', '45 minutes', 'None — attempt every question'],
-              ['Session II', 'General awareness; English language and comprehension', '45 minutes', 'Applies — guess only when you can narrow the options'],
+              ['I', 'Numerical and Mathematical Ability', '20', '60', '45 minutes for the session (60 for scribe-eligible candidates)'],
+              ['II', 'Reasoning Ability and Problem Solving', '20', '60', ''],
+              ['', 'Total', '40', '120', ''],
             ],
           },
           {
-            type: 'p',
-            text: 'The absence of negative marking in Session I is the most actionable fact about this exam. There is no such thing as a bad guess in that session — an unanswered question and a wrong answer score identically, so leaving anything blank is a pure loss. Candidates who carry a cautious habit over from other SSC exams routinely give away marks here for no reason.',
-          },
-          {
-            type: 'p',
-            text: 'Session II flips the logic. With a deduction applied, the discipline that helps is the ordinary one: answer what you know, narrow what you can, and let go of the rest. The two sessions are separately timed, so time saved in one cannot be spent in the other.',
+            type: 'table',
+            caption: 'SSC MTS exam pattern, Session 2. Objective; one mark deducted per wrong answer; merit is built from this session alone.',
+            head: ['Part', 'Subject', 'Questions', 'Marks', 'Time'],
+            rows: [
+              ['I', 'General Awareness', '25', '75', '45 minutes for the session (60 for scribe-eligible candidates)'],
+              ['II', 'English Language and Comprehension', '25', '75', ''],
+              ['', 'Total', '50', '150', ''],
+            ],
           },
           {
             type: 'list',
-            title: 'Practical consequences for how you sit the paper',
+            title: 'The rules that shape the paper',
             items: [
-              { text: 'Reserve the last minute of Session I for filling blanks', note: 'even a random selection is strictly better than leaving the question empty.' },
-              { text: 'Do not carry Session I speed into Session II', note: 'accuracy matters more once answers can cost you.' },
-              { text: 'Havaldar applicants should train physically in parallel', note: 'the physical test comes soon after the written result, which is not enough time to build fitness from nothing.' },
+              {
+                text: 'Session 1 is evaluated first',
+                note: 'A candidate who does not reach the minimum qualifying marks in Session 1 — 30 per cent for UR, 25 for OBC and EWS, 20 for the rest — is not evaluated in Session 2 at all.',
+              },
+              {
+                text: 'Merit is Session 2 only',
+                note: 'Session 1 marks are not added. Two candidates with 120 and 60 in Session 1 and the same Session 2 score are tied on merit.',
+              },
+              {
+                text: 'Negative marking applies only in Session 2',
+                note: 'One mark per wrong answer against three for a correct one. Attempt every question in Session 1; guess only between two options in Session 2.',
+              },
+              {
+                text: 'Languages',
+                note: 'The paper is offered in English, Hindi and 13 regional languages, chosen at application; English Language and Comprehension is in English only.',
+              },
+              {
+                text: 'No maps, graphs or statistical data',
+                note: 'The notice states that there is no component of maps, graphs, diagrams or statistical data in the paper, which matters for visually impaired candidates and for what to practise.',
+              },
             ],
           },
           {
-            type: 'note',
-            title: 'Pattern revisions',
-            text: 'SSC has changed the MTS structure more than once in recent years, including how the sessions are split and what each contains. Read the pattern section of the current notification rather than relying on a guide written for an earlier cycle.',
-          },
-          {
-            type: 'steps',
-            title: 'How to sit the two sessions',
-            items: [
-              { title: 'Session I — first pass', text: 'Move through the arithmetic and reasoning answering only what you can do quickly, marking anything that will take real work.' },
-              { title: 'Session I — second pass', text: 'Return to the marked questions with whatever time is left, working the reasoning ones first since they usually resolve faster than a long calculation.' },
-              { title: 'Session I — last sixty seconds', text: 'Fill every remaining blank. With no deduction applied, an unanswered question is strictly worse than a random one, and this single habit is worth several marks.' },
-              { title: 'Session II — answer what you know', text: 'General awareness is recall: you either have the fact or you do not, and staring at a question you do not know costs time without changing the outcome.' },
-              { title: 'Session II — guess only after narrowing', text: 'Once a deduction applies, a guess between two plausible options is reasonable and a guess across all four is not.' },
+            type: 'table',
+            caption: 'Havaldar in CBIC and CBN — PET and PST, qualifying, conducted by the departments after the CBE.',
+            head: ['Standard', 'Male', 'Female'],
+            rows: [
+              ['Walk', '1,600 metres in 15 minutes', '1 kilometre in 20 minutes'],
+              ['Height', '157.5 cm (relaxable by 5 cm for Garhwalis, Assamese, Gorkhas and Scheduled Tribes)', '152 cm (relaxable by 2.5 cm for the same groups)'],
+              ['Chest', '81 cm fully expanded, minimum 5 cm expansion', '—'],
+              ['Weight', '—', '48 kg (relaxable by 2 kg for the same groups)'],
             ],
           },
           {
             type: 'p',
-            text: 'Forty-five minutes per session sounds generous until you sit one. The sessions are short enough that a single stubborn question can distort the whole result, and long enough that concentration genuinely lapses in the middle. Practising in forty-five minute blocks, rather than in whatever time you happen to have free, is the closest thing to a free mark available in this preparation.',
+            text: 'Havaldar candidates are shortlisted for PET/PST in the ratio of 1:7 on Session 2 marks, with the Commission fixing CCA-wise and category-wise cut-offs. The examination is conducted in multiple shifts, and marks are normalised by the formula the Commission published on 2 June 2025 before cut-offs and merit are computed. Normalised scores can therefore differ from raw scores, in either direction, depending on the difficulty of the shift you sat. In the 2025 cycle, 8,04,633 candidates appeared in the CBE held from 4 to 20 February 2026 and the result of 3 August 2026 shortlisted candidates for the Havaldar PET/PST held from 24 to 31 August 2026.',
           },
           {
-            type: 'note',
-            title: 'For Havaldar applicants',
-            text: 'The physical efficiency and standard tests apply only to Havaldar posts in the CBIC and the Narcotics Control Bureau, and they follow the written result closely. If you have applied for those posts, physical preparation is not a later phase — it runs in parallel from the day you start, because the interval between the written result and the test is not long enough to build fitness from a standing start.',
+            type: 'links',
+            title: 'Related SSC MTS pages',
+            items: [
+              {
+                label: 'SSC MTS syllabus for both sessions',
+                to: '/government-exams/ssc/ssc-mts/syllabus/',
+              },
+              {
+                label: 'Free SSC MTS mock tests in the two-session format',
+                to: '/government-exams/ssc/ssc-mts/mock-tests/',
+              },
+              {
+                label: 'SSC MTS previous year papers',
+                to: '/government-exams/ssc/ssc-mts/previous-year-papers/',
+              },
+            ],
           },
         ],
       },
@@ -1332,14 +2372,6 @@ const ssc = [
     },
     faqs: [
       {
-        q: 'What is the SSC MTS exam pattern?',
-        a: 'SSC MTS is a computer-based examination in two separately timed sessions of about 45 minutes each. Session I covers numerical and mathematical ability and reasoning ability and problem solving, and carries no negative marking. Session II covers general awareness and English language and comprehension, and does apply negative marking. Confirm question counts, marks and the deduction rate in the current notification, since the structure has been revised between cycles.',
-      },
-      {
-        q: 'Is there negative marking in SSC MTS?',
-        a: 'Only in Session II. Session I has no deduction for wrong answers, which means every question there should be attempted — a blank and a wrong answer score the same, so guessing is strictly better than leaving anything empty. Session II does deduct for errors, so the usual discipline of answering what you know and narrowing before guessing applies there.',
-      },
-      {
         q: 'What qualification is needed for SSC MTS?',
         a: 'A class 10 (matriculation) pass from a recognised board. This makes MTS the SSC examination with the lowest qualification requirement, and correspondingly the largest field of applicants.',
       },
@@ -1350,6 +2382,26 @@ const ssc = [
       {
         q: 'How long does SSC MTS preparation take?',
         a: 'Three to four months of consistent daily study is a realistic window for a candidate whose school arithmetic is intact. The sections that decide results — arithmetic speed, general awareness breadth and basic English — all respond better to daily contact over months than to intensive study over weeks.',
+      },
+      {
+        q: 'What is the SSC MTS exam pattern for 2026?',
+        a: 'One computer-based test in two sessions of 45 minutes each on the same day. Session 1 is Numerical and Mathematical Ability (20 questions, 60 marks) and Reasoning Ability and Problem Solving (20 questions, 60 marks), with no negative marking, and is qualifying. Session 2 is General Awareness (25 questions, 75 marks) and English Language and Comprehension (25 questions, 75 marks), with one mark deducted per wrong answer, and builds the merit list on its own. The scheme is from the 2025 notice and is expected unchanged in 2026.',
+      },
+      {
+        q: 'Is there negative marking in SSC MTS?',
+        a: 'Not in Session 1. In Session 2 one mark is deducted for every wrong answer against three marks for a correct one. Unanswered questions carry no penalty in either session.',
+      },
+      {
+        q: 'When is the SSC MTS 2026 notification?',
+        a: 'It had not been issued as of 12 September 2026. The Commission’s 2026 calendar had placed the notice tentatively at the end of June with the CBE in September–November 2026, but the schedule has slipped; expect the notice on the SSC notice board in the coming weeks with the CBE towards the end of 2026 or early 2027. The 2025 notice came on 26 June 2025 with the CBE eventually held from 4 to 20 February 2026.',
+      },
+      {
+        q: 'What is the Havaldar PET in SSC MTS?',
+        a: 'Candidates who opt for Havaldar in CBIC and CBN and are shortlisted on Session 2 marks (in the ratio 1:7) take a physical efficiency and standard test run by the departments: men walk 1,600 metres in 15 minutes, women walk 1 kilometre in 20 minutes; men need a height of 157.5 cm and a chest of 81 cm with 5 cm expansion, women a height of 152 cm and a weight of 48 kg, with relaxations for Garhwalis, Assamese, Gorkhas and Scheduled Tribes. It is qualifying, and a candidate who fails it is still considered for MTS.',
+      },
+      {
+        q: 'How many vacancies were there in SSC MTS 2025?',
+        a: 'The tentative vacancy list of 27 November 2025 showed 7,948 vacancies for MTS and Havaldar combined, state- and region-wise, against 36,19,834 applications. Vacancies for the 2026 cycle will be published with or after the notice on the Commission’s Tentative Vacancy page.',
       },
     ],
   },
@@ -1364,20 +2416,21 @@ const ssc = [
     fullName: 'Staff Selection Commission General Duty Constable Examination',
     authority: 'Staff Selection Commission (SSC)',
     official: 'ssc.gov.in',
-    seoTitle: 'SSC GD Constable 2026: Syllabus, PET/PST & Free Mock Tests',
+    seoTitle: 'SSC GD Exam Pattern 2026: 80 Questions, 160 Marks, PET/PST, Syllabus',
     metaDescription:
-      'SSC GD Constable exam guide — CBT pattern and syllabus, physical efficiency and standard tests, medical standards, previous papers and free mocks.',
+      'SSC GD Constable exam pattern 2026 — 80 questions, 160 marks, 60 minutes, 0.25 negative marking, PET/PST standards, eligibility, vacancies and free mocks.',
+    heroTitle: 'SSC GD Exam Pattern 2026: 80 Questions, 160 Marks, PET/PST Standards and Free Mock Tests',
     lead: [
-      'SSC GD Constable is the common recruitment for General Duty Constables across the central armed police forces — BSF, CISF, CRPF, SSB, ITBP and Assam Rifles — along with Sepoy posts in the Narcotics Control Bureau and constable posts in the Secretariat Security Force. One written examination, one merit list, and a force allocation that follows from rank and preference.',
+      'SSC GD Constable is the common recruitment for General Duty Constables across the central armed police forces — BSF, CISF, CRPF, SSB, ITBP and Assam Rifles — along with constable posts in the Secretariat Security Force; Sepoy posts in the Narcotics Control Bureau were part of the 2025 cycle but not the 2026 notice. One written examination, one merit list, and a force allocation that follows from rank and preference.',
       'It is one of the few central examinations where the written paper is genuinely the easier half. The physical efficiency test, the physical standard test and the detailed medical examination eliminate more candidates than the CBT does, and they are the parts that cannot be prepared for in the final month.',
     ],
     quickFacts: [
-      ['Conducted by', 'Staff Selection Commission (SSC)'],
-      ['Level', 'Class 10 (matriculation) from a recognised board'],
-      ['Forces covered', 'BSF, CISF, CRPF, SSB, ITBP, Assam Rifles, SSF and NCB'],
-      ['Stages', 'Computer-based test → physical efficiency and standard tests → medical examination'],
-      ['Written paper', 'Objective CBT available in several regional languages'],
-      ['Decisive stage', 'The physical and medical stages, not the written paper'],
+      ['Conducted by', 'Staff Selection Commission for the Ministry of Home Affairs'],
+      ['Level', 'Class 10 pass as on 1 January 2026'],
+      ['Posts', 'Constable (GD) in BSF, CISF, CRPF, SSB, ITBP and SSF; Rifleman (GD) in Assam Rifles — Pay Level 3 (₹21,700–69,100)'],
+      ['2026 cycle', 'Notice 1 December 2025; 25,487 tentative vacancies; CBE held 27 April – 31 May 2026; result awaited'],
+      ['Age', '18–23 years as on 1 January 2026, with relaxations'],
+      ['Stages', 'CBE 80 questions/160 marks → PET/PST → Detailed Medical Examination and document verification → force allocation'],
     ],
     overview: [
       {
@@ -1405,28 +2458,323 @@ const ssc = [
     ],
     stages: [
       {
-        name: 'Computer Based Test',
-        mode: 'Objective, 60 minutes',
-        detail:
-          'Four sections — general intelligence and reasoning, general knowledge and general awareness, elementary mathematics, and English or Hindi — for 80 questions and 160 marks, with a deduction for wrong answers. The paper is offered in multiple regional languages in addition to English and Hindi.',
+        name: 'Computer Based Examination',
+        mode: 'Objective, 80 questions, 160 marks, 60 minutes',
+        detail: 'Four parts of 20 questions for 40 marks each: General Intelligence and Reasoning, General Knowledge and General Awareness, Elementary Mathematics, and English or Hindi. Offered in English, Hindi and 13 regional languages. 0.25 marks deducted per wrong answer. Marks are normalised across shifts and, with NCC bonus marks, decide both the PET/PST shortlist and the final merit.',
       },
       {
-        name: 'Physical Efficiency Test (PET)',
-        mode: 'Timed run, qualifying',
-        detail:
-          'A run over a prescribed distance within a prescribed time, with different distances and timings for male and female candidates and relaxations for certain categories and regions. Qualifying in nature — it does not add to your merit score.',
+        name: 'Physical Efficiency Test and Physical Standard Test',
+        mode: 'Physical, conducted by the CAPFs',
+        detail: 'PET: men run 5 km in 24 minutes, women 1.6 km in 8½ minutes (Ladakh region: 1.6 km in 7 minutes and 800 m in 5 minutes). PST: height 170 cm for men and 157 cm for women, chest 80 cm unexpanded with 5 cm expansion for men, with relaxed standards for Scheduled Tribes, hill-area and North-Eastern candidates. Ex-servicemen are measured but exempt from the race. Qualifying only; there is no appeal against the race.',
       },
       {
-        name: 'Physical Standard Test (PST)',
-        mode: 'Measurement, qualifying',
-        detail:
-          'Height, chest measurement and expansion for male candidates, and height and weight for female candidates, against standards that vary by category and by region of origin.',
+        name: 'Detailed Medical Examination and document verification',
+        mode: 'Medical board of the CAPFs',
+        detail: 'Candidates who clear PET/PST are shortlisted for a detailed medical examination and verification of the domicile, category, age and education certificates. A review medical examination is available on appeal. Vacancies are state-wise, with reservations for border and militancy- or Naxal-affected districts, so the domicile certificate is checked against the state claimed in the application.',
       },
       {
-        name: 'Detailed Medical Examination',
-        mode: 'Medical board',
-        detail:
-          'Vision including colour perception, hearing, general physical condition, and screening for conditions that would preclude armed police service. Candidates found temporarily unfit may be given a review medical examination.',
+        name: 'Final result and force allocation',
+        mode: 'Merit-cum-preference',
+        detail: 'The final result allots forces by CBE merit and the order of force preference given in the application, within the state-wise vacancies and reserved categories. In the 2025 cycle the final result of 15 January 2026 filled 53,690 vacancies.',
+      },
+    ],
+    updates: [
+      {
+        type: 'p',
+        text: 'Checked 12 September 2026 against the SSC notice board. The notice for Constable (GD) in the CAPFs and SSF, and Rifleman (GD) in Assam Rifles, Examination 2026 was published on 1 December 2025 with 25,487 tentative vacancies (23,467 male and 2,020 female). Applications ran from 1 to 31 December 2025, fee payment to 1 January 2026, and the correction window from 8 to 10 January 2026. The Computer Based Examination, originally scheduled for February–April 2026, was held from 27 April to 31 May 2026 in four weekly windows that candidates could rank by preference; the tentative answer key was released on 15 June 2026 with challenges until 20 June at ₹50 per question. The result of the CBE and the PET/PST schedule are awaited.',
+      },
+      {
+        type: 'table',
+        caption: 'Key dates of the SSC GD Constable 2026 cycle, from the notice of 1 December 2025 and the schedule notices of 11 April and 22 May 2026.',
+        head: ['Event', 'Date'],
+        rows: [
+          ['Notice published', '1 December 2025'],
+          ['Online applications', '1–31 December 2025 (23:00)'],
+          ['Last date for fee payment', '1 January 2026'],
+          ['Application correction window', '8–10 January 2026'],
+          ['Exam-city intimation', '19 April 2026'],
+          ['Computer Based Examination', '27 April – 31 May 2026, in four windows (27 April–2 May, 4–9 May, 18–23 May, 25–30 May); the 28 May shift moved to 27 May'],
+          ['Tentative answer key and challenge', '15–20 June 2026, ₹50 per question'],
+          ['Result of the CBE, PET/PST', 'Awaited'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'Tentative vacancies for SSC GD 2026 by force, from the notice.',
+        head: ['Force', 'Male', 'Female', 'Total'],
+        rows: [
+          ['BSF', '524', '92', '616'],
+          ['CISF', '13,135', '1,460', '14,595'],
+          ['CRPF', '5,366', '124', '5,490'],
+          ['SSB', '1,764', '0', '1,764'],
+          ['ITBP', '1,099', '194', '1,293'],
+          ['Assam Rifles', '1,556', '150', '1,706'],
+          ['SSF', '23', '0', '23'],
+          ['Total', '23,467', '2,020', '25,487'],
+        ],
+      },
+      {
+        type: 'p',
+        text: 'The 2025 cycle gives the timeline. The CBE ran from 4 to 25 February 2025; the result of 17 June 2025 shortlisted 3,94,121 candidates for PET/PST, which the CAPFs held from 20 August to 15 September 2025 under CRPF as nodal force; 95,575 candidates cleared PET/PST on 13 October 2025 and went to medical examination and document verification; the final result of 15 January 2026 allocated 53,690 vacancies across BSF, CISF, CRPF, SSB, ITBP, Assam Rifles, NCB and SSF. Final marks were published on 16 February 2026.',
+      },
+    ],
+    eligibility: [
+      {
+        type: 'p',
+        text: 'Eligibility for the 2026 cycle is judged as on 1 January 2026 for both age and education. The vacancies are state-wise, so the state or union territory of domicile claimed in the application is verified with a domicile or permanent residence certificate at the medical and verification stage — a candidate who cannot produce it is rejected.',
+      },
+      {
+        type: 'list',
+        title: 'Educational qualification',
+        items: [
+          {
+            text: 'All posts',
+            note: 'Matriculation or class 10 from a recognised board or university, passed on or before 1 January 2026.',
+          },
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'Age 18–23 years as on 1 January 2026 — born between 2 January 2003 and 1 January 2008 — with these relaxations beyond 23.',
+        head: ['Category', 'Relaxation'],
+        rows: [
+          ['SC and ST', '5 years'],
+          ['OBC (non-creamy layer)', '3 years'],
+          ['Ex-servicemen', '3 years after deducting military service from actual age'],
+          ['Children and dependants of victims killed in the 1984 riots', '5 years (UR/EWS), 8 years (OBC), 10 years (SC/ST)'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'Physical standards (PST) for Constable (GD). Ex-servicemen are measured for record but exempt from the race.',
+        head: ['Standard', 'Male', 'Female'],
+        rows: [
+          ['Height, general', '170 cm', '157 cm'],
+          ['Height, Scheduled Tribes', '162.5 cm', '150 cm'],
+          ['Height, ST candidates of North-Eastern states', '157 cm', '147.5 cm'],
+          ['Height, ST candidates of Left-Wing Extremism affected districts', '160 cm', '147.5 cm'],
+          ['Height, Garhwalis, Kumaonis, Dogras, Marathas and candidates of Assam, Himachal Pradesh, J&K and Ladakh', '165 cm', '155 cm'],
+          ['Chest, general', '80 cm unexpanded, minimum 5 cm expansion', '—'],
+          ['Chest, Scheduled Tribes', '76 cm, minimum 5 cm expansion', '—'],
+          ['Chest, the hill and state categories above', '78 cm, minimum 5 cm expansion', '—'],
+          ['Weight', 'Proportionate to height and age as per medical standards', 'Proportionate to height and age'],
+        ],
+      },
+      {
+        type: 'list',
+        title: 'Other conditions',
+        items: [
+          {
+            text: 'Nationality and domicile',
+            note: 'Indian citizens; vacancies are filled state-wise from the domicile claimed, with SSF vacancies on an all-India basis and reservations for border-guarding and militancy- or Naxal-affected districts listed in the notice’s annexures.',
+          },
+          {
+            text: 'Fee',
+            note: '₹100 online; women and SC, ST and ex-servicemen candidates are exempt.',
+          },
+          {
+            text: 'Reservation for ex-servicemen',
+            note: '10 per cent of vacancies, filled by non-ESM candidates of the category if suitable ESM candidates are not available.',
+          },
+          {
+            text: 'NCC certificate bonus',
+            note: 'NCC C certificate 5 per cent of maximum marks, B certificate 3 per cent, A certificate 2 per cent, added to normalised CBE marks if claimed in the application.',
+          },
+          {
+            text: 'Medical',
+            note: 'Vision, hearing and general fitness standards are set out in the notice; a review medical examination can be requested on payment within the time allowed.',
+          },
+        ],
+      },
+    ],
+    procedure: {
+      eyebrow: 'Application to appointment',
+      heading: 'How to apply for SSC GD Constable, what the CBE, PET/PST and medical involve, and how forces are allotted',
+      intro: 'The steps as they ran in the 2026 cycle, with the fees and windows the notice of 1 December 2025 specifies.',
+      blocks: [
+        {
+          type: 'steps',
+          title: 'The SSC GD Constable process from registration to result',
+          items: [
+            {
+              title: 'One-Time Registration on ssc.gov.in',
+              text: 'Create an OTR profile once on the Commission’s portal. Registration asks for Aadhaar-based verification, a mobile number and e-mail that remain with you for the whole cycle, and your basic educational and category details. The OTR number and password are what you log in with at every later stage — exam-city intimation, admit card, answer-key challenge, result and option form — so keep them safe.',
+            },
+            {
+              title: 'Fill the online application for SSC GD Constable',
+              text: 'Log in, pick the examination, confirm the OTR details, choose the examination centre preferences and the medium of the paper, and upload or capture the photograph and signature exactly as the notice specifies. The declaration you sign at the end binds you to the eligibility conditions, and the Commission verifies documents only at the end of the process — an ineligible candidate can go through every stage and be dropped at verification.',
+            },
+            {
+              title: 'Pay the fee',
+              text: 'The fee is ₹100 online; in the 2026 cycle the last date was 1 January 2026, a day after applications closed. Women and SC, ST and ex-servicemen candidates are exempt. Fees are not refunded.',
+            },
+            {
+              title: 'Use the correction window if you need it',
+              text: 'A three-day correction window opens about a week after applications close. The Commission charges ₹200 for the first corrected submission and ₹500 for the second, from every candidate regardless of category. Some fields — notably the OTR identity details — cannot be changed at this point, which is why the OTR should be filled carefully in the first place.',
+            },
+            {
+              title: 'Exam-city intimation, then the admission certificate',
+              text: 'Roughly two weeks before the examination the candidate login shows the city allotted; the admission certificate itself is released only three to four days before the date. Print it, and carry it with an original photo identity document that carries the same date of birth as your application.',
+            },
+            {
+              title: 'On the day: biometrics, frisking and the clock',
+              text: 'Report at the time on the admission certificate; entry closes before the shift begins. Expect biometric capture and frisking, and expect the paper to be delivered with the timers the notice describes — a section or session that has closed cannot be reopened. Rough sheets are provided; nothing electronic is allowed inside.',
+            },
+            {
+              title: 'Tentative answer key and challenge',
+              text: 'A few days after the last shift the Commission uploads tentative answer keys with each candidate’s response sheet. Objections are filed online only, within the announced window, on payment of a per-question fee that is not refunded. Subject-matter experts examine the objections and the final key is used for evaluation.',
+            },
+            {
+              title: 'Result, marks and the next stage',
+              text: 'Results are published as PDF write-ups on the notice board with category-wise cut-offs and the count of candidates shortlisted; individual marks are released in the login shortly afterwards. Candidates for the next stage receive fresh admission certificates through the same login.',
+            },
+            {
+              title: 'Preference for weeks',
+              text: 'In 2026 the Commission let candidates rank the four examination windows in order of preference through the login before the CBE. The facility is first-come and cannot be changed once submitted.',
+            },
+            {
+              title: 'Result of the CBE and the PET/PST shortlist',
+              text: 'Candidates above the minimum qualifying marks are shortlisted for PET/PST state-wise and category-wise on normalised marks plus NCC bonus. The CAPFs conduct PET/PST at their own centres a few months later; the admission certificate for it comes through the same login and biometric verification is done on reporting.',
+            },
+            {
+              title: 'PET first, then PST',
+              text: 'The race is run first and there is no appeal against it. Candidates who pass are measured for height, chest and weight; a candidate who fails PST can appeal to the appellate board on the spot. Women submit a pregnancy self-declaration before PET.',
+            },
+            {
+              title: 'Detailed medical examination and document verification',
+              text: 'A shortlist from the PET/PST qualifiers goes to the CAPF medical boards, where the domicile, age, education, category and NCC certificates are verified. A candidate declared unfit can request a review medical examination within the time allowed on payment of the fee.',
+            },
+            {
+              title: 'Final result and force allocation',
+              text: 'The Commission declares the final result by merit and the force preferences given in the application, within state-wise vacancies and the reservations for border and Naxal-affected districts. Final marks are published afterwards, and appointment follows through the allotted force.',
+            },
+          ],
+        },
+        {
+          type: 'note',
+          title: 'Give the force preference order some thought before you apply',
+          text: 'Force allocation is by merit-cum-preference from the order you submit in the application, and it is not changed later. CISF carried more than half the 2026 vacancies; the others are much smaller. Read the deployment, posting and promotion differences before ranking them.',
+        },
+      ],
+    },
+    pattern: [
+      {
+        type: 'p',
+        text: 'The SSC GD exam pattern is the scheme in the notice of 1 December 2025 — a single objective paper of 80 questions carrying two marks each, in one hour, with a quarter mark deducted for every wrong answer. The full treatment is on the exam pattern page.',
+      },
+      {
+        type: 'table',
+        caption: 'SSC GD Constable exam pattern 2026: 80 questions, 160 marks, 60 minutes; 0.25 marks deducted per wrong answer; offered in English, Hindi and 13 regional languages.',
+        head: ['Part', 'Subject', 'Questions', 'Marks'],
+        rows: [
+          ['A', 'General Intelligence and Reasoning', '20', '40'],
+          ['B', 'General Knowledge and General Awareness', '20', '40'],
+          ['C', 'Elementary Mathematics', '20', '40'],
+          ['D', 'English or Hindi', '20', '40'],
+          ['Total', '', '80', '160'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'Minimum qualifying marks that apply before any shortlisting — a candidate below these in any paper is not considered regardless of the cut-off.',
+        head: ['Category', 'Minimum qualifying marks'],
+        rows: [
+          ['Unreserved', '30%'],
+          ['OBC and EWS', '25%'],
+          ['All other categories', '20%'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'NCC bonus, added to normalised CBE marks for candidates who claim it in the application.',
+        head: ['Certificate', 'Bonus'],
+        rows: [
+          ['NCC C', '5 per cent of maximum marks (8 marks)'],
+          ['NCC B', '3 per cent (4.8 marks)'],
+          ['NCC A', '2 per cent (3.2 marks)'],
+        ],
+      },
+      {
+        type: 'p',
+        text: 'The examination is conducted in multiple shifts, and marks are normalised by the formula the Commission published on 2 June 2025 before cut-offs and merit are computed. Normalised scores can therefore differ from raw scores, in either direction, depending on the difficulty of the shift you sat. The minimum qualifying marks are applied before NCC bonus is added; the shortlist for PET/PST and the final merit both use normalised marks with the bonus.',
+      },
+    ],
+    studyPlan: [
+      {
+        type: 'p',
+        text: 'The GD paper is short and basic, and the competition is enormous — 3.94 lakh candidates were shortlisted for PET/PST in 2025 for 53,690 posts. Two things decide the outcome: a high, accurate CBE score in 60 minutes, and passing a 5-kilometre run that many candidates underestimate. Prepare both from the first week.',
+      },
+      {
+        type: 'steps',
+        title: 'A three-month plan',
+        items: [
+          {
+            title: 'Month 1: the four parts, and start running',
+            text: 'Reasoning question types (series, analogies, coding, classification, figure questions); a static general awareness spine; class-10 arithmetic — number system, fractions, percentages, ratio, averages, profit and loss, interest, time and work, mensuration; and grammar and vocabulary in the language you will sit the paper in. Begin a running programme aimed at 5 km in 24 minutes for men or 1.6 km in 8½ minutes for women.',
+          },
+          {
+            title: 'Month 2: speed and current affairs',
+            text: 'Sectional tests of 20 questions in 15 minutes; daily current affairs for the six months before the exam; running three or four times a week with timed runs.',
+          },
+          {
+            title: 'Month 3: full mocks and revision',
+            text: 'A full 80-question mock every second day with the 0.25 deduction applied, an error log, and revision from it. Time a 5 km run every week; be under the limit with a margin before the CBE, because PET can come only weeks after the result.',
+          },
+        ],
+      },
+      {
+        type: 'list',
+        title: 'What the pattern means for the attempt',
+        items: [
+          {
+            text: 'Forty-five seconds a question',
+            note: 'Eighty questions in 60 minutes with no sectional timer. Take reasoning and mathematics first if they are your strengths, and leave general awareness — which is recall — to the end.',
+          },
+          {
+            text: 'The penalty is small but real',
+            note: 'A quarter mark off against two on: a guess between two options is clearly worth taking, and even a three-option guess breaks even. Skip only the questions you know nothing about.',
+          },
+          {
+            text: 'Choose the paper language carefully',
+            note: 'The paper is available in 13 regional languages besides English and Hindi. Sit it in the language you read fastest; Part D is English or Hindi by the choice you make in the application.',
+          },
+        ],
+      },
+    ],
+    sources: [
+      {
+        type: 'p',
+        text: 'Checked 12 September 2026 against the notice of examination for Constable (GD) 2026, the tentative vacancy list of 8 December 2025, the schedule notices of 11 April and 22 May 2026, the tentative answer key notice of 15 June 2026, and the final result write-up of the 2025 examination, all on the SSC notice board.',
+      },
+      {
+        type: 'links',
+        title: 'Official documents',
+        items: [
+          {
+            label: 'Notice of Constable (GD) in CAPFs, SSF and Rifleman (GD) in Assam Rifles Examination 2026 (1 December 2025)',
+            href: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_CTGD_2026.pdf',
+          },
+          {
+            label: 'Tentative vacancies of Constable (GD) 2026 (8 December 2025)',
+            href: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Tentative_Vacancy_08122025.pdf',
+          },
+          {
+            label: 'Schedule of the Constable (GD) 2026 examination with week preferences (11 April 2026)',
+            href: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/CTGD_2026_Notice_11042026.pdf',
+          },
+          {
+            label: 'Tentative answer key and challenge window (15 June 2026)',
+            href: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/tentative_answerkey_15062026.pdf',
+          },
+          {
+            label: 'Constable (GD) 2025 final result write-up (15 January 2026)',
+            href: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Final%20Result_CTGD2025_Write-up_15012026.pdf',
+          },
+          {
+            label: 'SSC home page — notices, calendar and candidate login',
+            href: 'https://ssc.gov.in/',
+          },
+        ],
       },
     ],
     resources: {
@@ -1484,61 +2832,95 @@ const ssc = [
         ],
       },
       'exam-pattern': {
-        description:
-          'SSC GD Constable exam pattern — CBT structure and marks, physical efficiency and standard test requirements, and the medical examination.',
-        lead: [
-          'Three stages, and only the first one is a test of what you know. Plan for all three from the beginning, because two of them take months of physical preparation.',
-        ],
+        description: 'SSC GD exam pattern 2026 — the 80-question, 160-mark CBE with subject-wise marks, time and 0.25 negative marking, NCC bonus and PET/PST standards.',
+        heading: 'SSC GD exam pattern 2026: 80 questions, 160 marks, negative marking and PET/PST',
+        lead: ['One objective paper of an hour decides the shortlist and the merit; a run and a measurement decide whether the marks count. Every figure here is from the notice of 1 December 2025.'],
         blocks: [
           {
-            type: 'table',
-            caption:
-              'Computer Based Test structure. Confirm question counts, marks, duration and the negative marking rate against the current official notification.',
-            head: ['Section', 'Questions', 'Marks', 'Notes'],
-            rows: [
-              ['General Intelligence and Reasoning', '20', '40', 'Largely non-verbal pattern recognition'],
-              ['General Knowledge and General Awareness', '20', '40', 'Everyday awareness rather than specialist depth'],
-              ['Elementary Mathematics', '20', '40', 'Arithmetic only; speed matters more than difficulty'],
-              ['English or Hindi', '20', '40', 'Candidate chooses one language'],
-              ['Total', '80', '160', '60 minutes for the whole paper'],
-            ],
+            type: 'p',
+            text: 'The SSC GD Constable examination has one written stage — a Computer Based Examination of 80 questions in 60 minutes — followed by physical tests, a medical examination and document verification that are all qualifying. There is no second written paper and no interview: the CBE marks, normalised and with any NCC bonus, are the entire merit list.',
           },
           {
-            type: 'p',
-            text: 'A deduction applies for wrong answers in the CBT, so blind guessing is a losing strategy, though narrowing to two plausible options and choosing between them remains worthwhile. The paper is available in several regional languages beyond English and Hindi, which removes a genuine disadvantage for candidates schooled in a regional medium — choose the language you read fastest, not the one you think looks better.',
+            type: 'table',
+            caption: 'SSC GD Constable exam pattern 2026. Objective multiple choice; 2 marks per question; 0.25 marks deducted for each wrong answer; no sectional timer.',
+            head: ['Part', 'Subject', 'Questions', 'Marks', 'Time'],
+            rows: [
+              ['A', 'General Intelligence and Reasoning', '20', '40', '60 minutes for the paper (80 minutes for scribe-eligible candidates)'],
+              ['B', 'General Knowledge and General Awareness', '20', '40', ''],
+              ['C', 'Elementary Mathematics', '20', '40', ''],
+              ['D', 'English or Hindi', '20', '40', ''],
+              ['', 'Total', '80', '160', ''],
+            ],
           },
           {
             type: 'list',
-            title: 'Physical and medical stages',
+            title: 'How the CBE is scored',
             items: [
-              { text: 'Physical Efficiency Test', note: 'a run over a prescribed distance within a prescribed time. Distances and timings differ for male and female candidates, and relaxed standards apply to candidates from certain regions and categories.' },
-              { text: 'Physical Standard Test', note: 'height and chest measurement for male candidates, height and weight for female candidates, against standards that vary by category and region of origin.' },
-              { text: 'Detailed Medical Examination', note: 'vision including colour perception, hearing, and general fitness. This stage disqualifies more successful written candidates than most applicants expect.' },
+              {
+                text: 'Negative marking is 0.25 per wrong answer',
+                note: 'Against 2 for a correct one. A guess between two options gains on average; a three-option guess breaks even; only a four-option blind guess loses.',
+              },
+              {
+                text: 'Minimum qualifying marks apply before the shortlist',
+                note: '30 per cent for UR, 25 for OBC and EWS, 20 for all other categories, judged without NCC bonus.',
+              },
+              {
+                text: 'Marks are normalised across shifts',
+                note: 'By the Commission’s formula of 2 June 2025; normalised marks are used for the shortlist, the cut-offs and the final merit.',
+              },
+              {
+                text: 'NCC bonus is added to normalised marks',
+                note: '5 per cent of maximum marks (8) for a C certificate, 3 per cent (4.8) for B, 2 per cent (3.2) for A, only if claimed in the application.',
+              },
+              {
+                text: 'Languages',
+                note: 'English, Hindi and Assamese, Bengali, Gujarati, Kannada, Konkani, Malayalam, Manipuri, Marathi, Odia, Punjabi, Tamil, Telugu and Urdu, chosen at application.',
+              },
             ],
           },
           {
-            type: 'note',
-            title: 'Confirm the standards that apply to you',
-            text: 'PET distances and timings, and PST height and chest standards, vary by gender, by category and by whether the candidate comes from a region with relaxed standards. Because they differ between groups and have been revised between cycles, read the standards table in the current notification rather than training to a figure from a general guide.',
+            type: 'table',
+            caption: 'Physical Efficiency Test — the race, run before measurement. No appeal against the PET.',
+            head: ['Candidates', 'Male', 'Female'],
+            rows: [
+              ['All except Ladakh region', '5 km in 24 minutes', '1.6 km in 8½ minutes'],
+              ['Ladakh region', '1.6 km in 7 minutes', '800 m in 5 minutes'],
+              ['Ex-servicemen', 'Exempt from the race; measured for record', 'Exempt from the race; measured for record'],
+            ],
+          },
+          {
+            type: 'table',
+            caption: 'Physical Standard Test — height and chest, with the relaxed standards from the notice.',
+            head: ['Category', 'Height, male', 'Height, female', 'Chest, male (unexpanded / expansion)'],
+            rows: [
+              ['General', '170 cm', '157 cm', '80 cm / 5 cm'],
+              ['Scheduled Tribes', '162.5 cm', '150 cm', '76 cm / 5 cm'],
+              ['ST of North-Eastern states', '157 cm', '147.5 cm', '76 cm / 5 cm'],
+              ['ST of Left-Wing Extremism affected districts', '160 cm', '147.5 cm', '76 cm / 5 cm'],
+              ['Garhwalis, Kumaonis, Dogras, Marathas; candidates of Assam, Himachal Pradesh, J&K and Ladakh', '165 cm', '155 cm', '78 cm / 5 cm'],
+            ],
           },
           {
             type: 'p',
-            text: 'A useful way to think about the three stages is that each one removes a different kind of candidate. The CBT removes those who did not prepare academically. The PET and PST remove those who did not prepare physically, and they do so on standards published in advance, which makes those failures unusually avoidable. The medical removes those with conditions they often did not know they had — which is why reading the medical standards early is a practical step and not a formality.',
+            text: 'After PET/PST, candidates are shortlisted for the Detailed Medical Examination and document verification, which the CAPFs conduct; a review medical examination is available on appeal. The final result allots forces by merit and preference within state-wise vacancies. In the 2025 cycle, 3,94,121 candidates were shortlisted for PET/PST from the CBE, 95,575 cleared PET/PST, and 53,690 were allocated in the final result of 15 January 2026.',
           },
           {
-            type: 'steps',
-            title: 'Sitting the sixty-minute CBT',
+            type: 'links',
+            title: 'Related SSC GD pages',
             items: [
-              { title: 'Reasoning first', text: 'It is the fastest section for most candidates and banking it early builds the time cushion the mathematics section will need.' },
-              { title: 'General awareness second', text: 'Pure recall. Answer, skip or move on within a few seconds each; deliberating here never converts into a mark.' },
-              { title: 'Language third', text: 'The passage takes a fixed amount of reading time whatever you do, so give it a clean uninterrupted block rather than fragments.' },
-              { title: 'Mathematics last', text: 'This is where remaining minutes are most productively spent, because arithmetic questions genuinely reward the extra thirty seconds in a way recall questions do not.' },
+              {
+                label: 'SSC GD syllabus for all four parts',
+                to: '/government-exams/ssc/ssc-gd/syllabus/',
+              },
+              {
+                label: 'Free SSC GD mock tests, 80 questions in 60 minutes',
+                to: '/government-exams/ssc/ssc-gd/mock-tests/',
+              },
+              {
+                label: 'SSC GD previous year papers',
+                to: '/government-exams/ssc/ssc-gd/previous-year-papers/',
+              },
             ],
-          },
-          {
-            type: 'note',
-            title: 'Standards differ, and yours are the only ones that matter',
-            text: 'PET distances and timings and PST measurements vary by gender, by category and in some cases by region, and relaxations apply to particular groups. Generic figures circulated online are a poor substitute for the table in the current notification. Find the row that applies to you, write it down, and train against that number rather than against a remembered one.',
           },
         ],
       },
@@ -1779,16 +3161,8 @@ const ssc = [
     },
     faqs: [
       {
-        q: 'What is the SSC GD Constable exam pattern?',
-        a: 'The computer-based test has four sections — general intelligence and reasoning, general knowledge and general awareness, elementary mathematics, and English or Hindi — with 20 questions each, for 80 questions and 160 marks in 60 minutes. A deduction applies for wrong answers. The CBT is followed by a physical efficiency test, a physical standard test and a detailed medical examination, all of which are qualifying. Confirm marks and the deduction rate in the current notification.',
-      },
-      {
         q: 'Which forces recruit through SSC GD Constable?',
-        a: 'The examination fills General Duty Constable posts in the Border Security Force, Central Industrial Security Force, Central Reserve Police Force, Sashastra Seema Bal, Indo-Tibetan Border Police and Assam Rifles, along with Sepoy posts in the Narcotics Control Bureau and constable posts in the Secretariat Security Force. Force allocation follows from your merit position and the preference order you submitted, so you do not apply to a single force.',
-      },
-      {
-        q: 'What are the physical requirements for SSC GD Constable?',
-        a: 'A physical efficiency test requires a run over a prescribed distance within a prescribed time, and a physical standard test measures height and chest for male candidates and height and weight for female candidates. Both sets of standards vary by gender, by category and by region of origin, with relaxations for candidates from certain areas. Because these differ between groups and have been revised between cycles, read the standards table in the current notification rather than a general summary.',
+        a: 'The examination fills General Duty Constable posts in the Border Security Force, Central Industrial Security Force, Central Reserve Police Force, Sashastra Seema Bal, Indo-Tibetan Border Police and Assam Rifles, along with constable posts in the Secretariat Security Force; Sepoy posts in the Narcotics Control Bureau were part of the 2025 cycle but not the 2026 notice. Force allocation follows from your merit position and the preference order you submitted, so you do not apply to a single force.',
       },
       {
         q: 'Can I take the SSC GD exam in a regional language?',
@@ -1797,6 +3171,30 @@ const ssc = [
       {
         q: 'Which stage eliminates the most SSC GD candidates?',
         a: 'The physical and medical stages, not the written paper. The CBT is pitched at matriculation level and is cleared by a large number of candidates; the physical efficiency test, physical standard test and detailed medical examination are where most eliminations happen. This is why physical training and an early check of the medical standards should run in parallel with written preparation from the first week rather than being left until the CBT result.',
+      },
+      {
+        q: 'What is the SSC GD exam pattern for 2026?',
+        a: 'A single computer-based paper of 80 objective questions for 160 marks in 60 minutes: General Intelligence and Reasoning, General Knowledge and General Awareness, Elementary Mathematics, and English or Hindi, 20 questions of 2 marks each. There is no sectional timer, 0.25 marks are deducted for each wrong answer, and the paper is offered in English, Hindi and 13 regional languages. PET/PST and the medical examination that follow are qualifying, so the CBE marks — normalised, plus NCC bonus — are the whole merit list.',
+      },
+      {
+        q: 'What is the negative marking in SSC GD?',
+        a: '0.25 marks for every wrong answer, against 2 marks for a correct one. Unanswered questions are not penalised. Because the penalty is small relative to the credit, a guess narrowed to two or even three options is worth taking.',
+      },
+      {
+        q: 'What are the SSC GD 2026 PET and PST standards?',
+        a: 'PET: men run 5 km in 24 minutes and women 1.6 km in 8½ minutes; for the Ladakh region it is 1.6 km in 7 minutes and 800 m in 5 minutes. PST: height 170 cm for men and 157 cm for women, chest 80 cm unexpanded with 5 cm expansion for men, with relaxed standards — for example 162.5 cm and 150 cm for Scheduled Tribes, 165 cm and 155 cm for Garhwalis, Kumaonis, Dogras, Marathas and candidates of Assam, Himachal Pradesh, J&K and Ladakh. Ex-servicemen are measured but exempt from the race.',
+      },
+      {
+        q: 'When is the SSC GD 2026 result?',
+        a: 'The CBE was held from 27 April to 31 May 2026 and the tentative answer key was released on 15 June 2026 with challenges until 20 June. As of 12 September 2026 the result had not been declared. In the 2025 cycle the CBE result came about four months after the exam and PET/PST began about two months after that.',
+      },
+      {
+        q: 'How many vacancies are there in SSC GD 2026?',
+        a: '25,487 tentative vacancies — 23,467 male and 2,020 female — across BSF (616), CISF (14,595), CRPF (5,490), SSB (1,764), ITBP (1,293), Assam Rifles (1,706) and SSF (23), with 10 per cent reserved for ex-servicemen and state-wise distribution published on 8 December 2025. The 2025 cycle finished with 53,690 vacancies filled.',
+      },
+      {
+        q: 'What is the age limit for SSC GD Constable 2026?',
+        a: '18 to 23 years as on 1 January 2026 — born between 2 January 2003 and 1 January 2008 — with five years’ relaxation for SC and ST, three for OBC, three after deducting service for ex-servicemen, and five, eight or ten years for children and dependants of victims killed in the 1984 riots.',
       },
     ],
   },
@@ -1811,20 +3209,21 @@ const ssc = [
     fullName: 'Staff Selection Commission Central Police Organisation Sub-Inspector Examination',
     authority: 'Staff Selection Commission (SSC)',
     official: 'ssc.gov.in',
-    seoTitle: 'SSC CPO SI 2026: Syllabus, Paper 1 & 2 Pattern, PET & Mocks',
+    seoTitle: 'SSC CPO SI Exam Pattern 2026: Paper 1, Paper 2, PET/PST and Syllabus',
     metaDescription:
-      'SSC CPO Sub-Inspector exam guide — Delhi Police and CAPF SI recruitment, Paper 1 and Paper 2 pattern, syllabus, physical tests and free mock practice.',
+      'SSC CPO Sub-Inspector 2026 exam pattern — Paper 1 and Paper 2 marks, time, negative marking, PET/PST standards, eligibility, 2,018 vacancies and free mocks.',
+    heroTitle: 'SSC CPO SI Exam Pattern 2026: Paper 1, Paper 2, PET/PST Standards and Free Mock Tests',
     lead: [
       'SSC CPO recruits Sub-Inspectors for the Delhi Police and for the central armed police forces. It is a graduate-level uniformed entry, and it sits in an unusual place: more demanding physically than the office-based SSC examinations, and more demanding academically than constable-level recruitment.',
-      'The feature that defines its preparation is Paper 2 — an entire second paper devoted to English language and comprehension. No other SSC examination weights a single subject that heavily, and candidates who treat it as an afterthought discover too late that it is worth as much as the whole of Paper 1.',
+      'The feature that defines its preparation is Paper 2 — the paper the merit list is built from, in which 200 of the 320 marks are English language and comprehension. No other SSC examination weights a single subject that heavily, and candidates who treat English as an afterthought discover too late that it is worth twice the rest of Paper 2 put together.',
     ],
     quickFacts: [
-      ['Conducted by', 'Staff Selection Commission (SSC)'],
-      ['Post', 'Sub-Inspector in Delhi Police and in the central armed police forces'],
-      ['Level', 'Bachelor’s degree in any discipline'],
-      ['Stages', 'Paper 1 → physical efficiency and standard tests → Paper 2 → medical'],
-      ['Distinctive feature', 'Paper 2 is entirely English language and comprehension'],
-      ['Additional requirement', 'Male candidates for Delhi Police SI have historically needed a valid LMV driving licence'],
+      ['Conducted by', 'Staff Selection Commission for Delhi Police and the CAPFs'],
+      ['Level', 'Bachelor’s degree as on the closing date (B.Sc. with PCM or an engineering diploma for SI Fire)'],
+      ['Posts', 'Sub-Inspector (Executive) in Delhi Police, Sub-Inspector (GD) in CRPF, BSF, ITBP, CISF and SSB, Sub-Inspector (Fire) in CISF — Pay Level 6 (₹35,400–1,12,400)'],
+      ['2026 cycle', 'Notice 10 September 2026; applications to 30 September 2026; 2,018 tentative vacancies; Paper 1 tentatively October–November 2026'],
+      ['Age', '20–25 years as on 1 August 2026 (18–30 for SI Fire), with relaxations'],
+      ['Stages', 'Paper 1 (100 marks) → PST/PET → Paper 2 (320 marks) → Detailed Medical Examination → document verification'],
     ],
     overview: [
       {
@@ -1839,7 +3238,7 @@ const ssc = [
         type: 'list',
         title: 'What makes CPO distinct among SSC exams',
         items: [
-          { text: 'A full second paper on English', note: 'Paper 2 carries the same marks as the entire Paper 1, devoted to language and comprehension alone.' },
+          { text: 'An English-heavy second paper', note: 'Paper 2 is 320 marks and builds the merit list; 200 of those marks are a one-hour, 100-question English language and comprehension section.' },
           { text: 'Physical tests between the two papers', note: 'so fitness gates access to the second written stage.' },
           { text: 'A narrower age band', note: 'the upper limit is lower than for CGL or MTS, so the window of eligibility is shorter.' },
           { text: 'A driving licence requirement for some posts', note: 'male candidates applying for Delhi Police Sub-Inspector have historically needed a valid licence for a light motor vehicle at a specified stage.' },
@@ -1854,35 +3253,329 @@ const ssc = [
     stages: [
       {
         name: 'Paper 1 — Computer Based Examination',
-        mode: 'Objective, 2 hours',
-        detail:
-          'Four sections of 50 questions each — general intelligence and reasoning, general knowledge and general awareness, quantitative aptitude, and English comprehension — for 200 questions and 200 marks. A deduction applies for wrong answers.',
+        mode: 'Objective, 100 questions, 100 marks, 60 minutes',
+        detail: 'General Intelligence and Reasoning, General Knowledge and General Awareness, Quantitative Aptitude and English Comprehension — 25 questions of one mark each, with a 15-minute sectional timer on each part. 0.25 marks deducted per wrong answer. Paper 1 marks, with NCC bonus, shortlist candidates for PST/PET; the final merit is built from Paper 2.',
       },
       {
-        name: 'Physical Endurance Test and Physical Standard Test',
-        mode: 'Qualifying',
-        detail:
-          'Running, long jump, high jump and shot put for male candidates, with a corresponding set of events for female candidates, plus height and chest measurement against prescribed standards. Qualifying in nature, but it gates entry to Paper 2.',
+        name: 'Physical Standard Test and Physical Endurance Test',
+        mode: 'Physical, conducted by the CAPFs',
+        detail: 'PST: height 170 cm and chest 80–85 cm for men (165 cm for hill-area candidates, 162.5 cm and 77–82 cm for Scheduled Tribes), height 157 cm for women (155 and 154 cm with relaxation), no chest requirement for women. PET for men: 100 m in 16 seconds, 1.6 km in 6.5 minutes, long jump 3.65 m, high jump 1.2 m and 16 lb shot put 4.5 m, each in three chances; for women: 100 m in 18 seconds, 800 m in 4 minutes, long jump 2.7 m and high jump 0.9 m. Qualifying; ex-servicemen are exempt from PET.',
       },
       {
-        name: 'Paper 2 — English Language and Comprehension',
-        mode: 'Objective, 2 hours',
-        detail:
-          'A single paper of 200 questions and 200 marks devoted entirely to English language and comprehension, taken only by candidates who cleared Paper 1 and the physical tests. Its marks count towards the final merit.',
+        name: 'Paper 2 — Computer Based Examination',
+        mode: 'Objective, 160 questions, 320 marks, 2 hours',
+        detail: 'Parts I–III — General Intelligence and Reasoning, General Knowledge and General Awareness, Quantitative Aptitude — 20 questions of 2 marks each in one hour with a 20-minute timer per part; Part IV English Language and Comprehension, 100 questions for 200 marks in one hour. 0.50 marks deducted per wrong answer. The standard is higher than Paper 1, and the final merit and force allocation come from Paper 2 marks plus NCC bonus and the preference order.',
       },
       {
-        name: 'Detailed Medical Examination',
-        mode: 'Medical board',
-        detail:
-          'Vision including colour perception, hearing, and general fitness assessed against the standards required for armed police service.',
+        name: 'Detailed Medical Examination and document verification',
+        mode: 'CAPF medical board, then verification',
+        detail: 'Candidates who qualify Paper 2 are medically examined: distant vision 6/6 and 6/9 and near vision N6 and N9 without correction, plus the general standards in the notice, with a review medical examination on appeal. Male candidates for SI in Delhi Police must hold a valid LMV (motorcycle and car) driving licence on the date of PET; those without one are considered only for the CAPF posts.',
+      },
+    ],
+    updates: [
+      {
+        type: 'p',
+        text: 'Checked 12 September 2026 against the SSC notice board. The notice for the Sub-Inspector in Delhi Police and Central Armed Police Forces Examination 2026 was published on 10 September 2026 with 2,018 tentative vacancies. Online applications run from 10 to 30 September 2026 (23:00), fee payment closes on 1 October and the correction window is 8 to 10 October 2026. The date of the Computer Based Examination (Paper 1) is to be notified; the Commission’s 2026 calendar had placed it in October–November 2026.',
+      },
+      {
+        type: 'table',
+        caption: 'Key dates of the SSC CPO 2026 cycle, from the notice of 10 September 2026.',
+        head: ['Event', 'Date'],
+        rows: [
+          ['Notice published', '10 September 2026'],
+          ['Online applications', '10–30 September 2026 (23:00)'],
+          ['Last date for fee payment', '1 October 2026 (23:00)'],
+          ['Application correction window', '8–10 October 2026 (₹200 first correction, ₹500 second)'],
+          ['Paper 1 (Computer Based Examination)', 'To be notified; October–November 2026 in the calendar'],
+          ['PST/PET, Paper 2, medical', 'To follow Paper 1'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'Tentative vacancies for SSC CPO 2026, from the notice.',
+        head: ['Post', 'Male', 'Female', 'Total'],
+        rows: [
+          ['Sub-Inspector (Executive), Delhi Police', '205', '112', '317'],
+          ['Sub-Inspector (GD), CAPFs — CRPF 254, BSF 457, ITBP 187, CISF 250, SSB 172 male', '1,320', '147', '1,467'],
+          ['Sub-Inspector (Fire), CISF', '234', '—', '234'],
+          ['Total', '1,759', '259', '2,018'],
+        ],
+      },
+      {
+        type: 'p',
+        text: 'The 2025 cycle shows the timeline. Paper 1 of CPO 2025 was held from 9 to 12 December 2025; the result of 30 March 2026 shortlisted candidates for PET/PST with cut-offs, out of 200 under the previous scheme, of 128.02 (UR), 124.22 (OBC), 126.56 (EWS), 100.92 (SC) and 95.20 (ST) for women and 119.48 (UR), 115.03 (OBC), 114.60 (EWS), 88.95 (SC) and 89.06 (ST) for men — 4,320 women and 44,067 men were shortlisted. Tentative vacancies for 2025 had been published on 16 February 2026.',
+      },
+      {
+        type: 'note',
+        title: 'What the 2026 notice changed',
+        text: 'Paper 1 is now 100 questions of one mark each — 100 marks instead of 200 — with 15-minute sectional timers and 0.25 deducted per wrong answer. Paper 2 is no longer an English-only paper: it has three 20-question parts on reasoning, general awareness and quantitative aptitude for 120 marks with 20-minute timers, and then 100 English questions for 200 marks, 320 marks in two hours, with 0.50 deducted per wrong answer. Final selection is on Paper 2. The 2025 cut-offs above are therefore not comparable to the new Paper 1 scale.',
+      },
+    ],
+    eligibility: [
+      {
+        type: 'p',
+        text: 'Eligibility is judged as on the closing date, 30 September 2026, except age, which is judged as on 1 August 2026, and the driving licence, which is judged on the date of PET. Documents are verified only after Paper 2.',
+      },
+      {
+        type: 'list',
+        title: 'Educational qualification as on 30 September 2026',
+        items: [
+          {
+            text: 'Sub-Inspector in Delhi Police and Sub-Inspector (GD) in CAPFs',
+            note: 'A bachelor’s degree from a recognised university or equivalent; candidates who have appeared in the final examination may apply if the degree is complete by the closing date.',
+          },
+          {
+            text: 'Sub-Inspector (Fire) in CISF',
+            note: 'A bachelor’s degree in science with physics, chemistry and mathematics, or matriculation with a three-year diploma in mechanical, civil, electrical, automobile, chemical, mining, aeronautical or telecommunication engineering, or equivalent.',
+          },
+          {
+            text: 'Male candidates for SI in Delhi Police',
+            note: 'A valid driving licence for LMV (motorcycle and car) on the date of the physical tests; without it a male candidate is considered for the CAPF posts only.',
+          },
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'Age as on 1 August 2026: 20–25 years for all posts except SI (Fire), which is 18–30. Relaxations beyond the upper limit, from the notice.',
+        head: ['Category', 'Relaxation'],
+        rows: [
+          ['SC and ST', '5 years'],
+          ['OBC (non-creamy layer)', '3 years'],
+          ['Ex-servicemen', '3 years after deducting military service from actual age'],
+          ['Widows, divorced women and judicially separated women who have not remarried, for SI in Delhi Police only', 'Up to 35 years (40 for SC/ST)'],
+          ['Departmental candidates of Delhi Police with 3 years’ regular service, against Delhi Police vacancies only', 'Up to 30 years (33 for OBC, 35 for SC/ST)'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'Physical standards (PST). No chest requirement for women.',
+        head: ['Category', 'Height', 'Chest, unexpanded / expanded'],
+        rows: [
+          ['Men, general', '170 cm', '80 / 85 cm'],
+          ['Men of hill areas of Garhwal, Kumaon, Himachal Pradesh, Gorkhas, Dogras, Marathas, Kashmir Valley, Leh and Ladakh, North-Eastern states and Sikkim', '165 cm', '80 / 85 cm'],
+          ['Men of Scheduled Tribes', '162.5 cm', '77 / 82 cm'],
+          ['Women, general', '157 cm', '—'],
+          ['Women of the hill areas and regions above', '155 cm', '—'],
+          ['Women of Scheduled Tribes', '154 cm', '—'],
+        ],
+      },
+      {
+        type: 'list',
+        title: 'Other conditions',
+        items: [
+          {
+            text: 'Nationality',
+            note: 'Indian citizens, and the categories the notice lists with an eligibility certificate.',
+          },
+          {
+            text: 'Fee',
+            note: '₹100 online; women and SC, ST and ex-servicemen candidates are exempt.',
+          },
+          {
+            text: 'Medical',
+            note: 'Distant vision 6/6 in the better eye and 6/9 in the worse, near vision N6 and N9, without glasses or corrective surgery; the full standards are in the notice and are examined after Paper 2, with a review medical examination on appeal.',
+          },
+          {
+            text: 'NCC bonus',
+            note: 'C certificate 5 per cent of maximum marks, B 3 per cent, A 2 per cent, in each of Paper 1 and Paper 2, added to normalised marks and substantiated at verification.',
+          },
+        ],
+      },
+    ],
+    procedure: {
+      eyebrow: 'Application to appointment',
+      heading: 'How to apply for SSC CPO 2026, what Paper 1, the physical tests and Paper 2 involve, and how posts are allotted',
+      intro: 'The steps in the order they happen, with the windows and fees the 10 September 2026 notice specifies.',
+      blocks: [
+        {
+          type: 'steps',
+          title: 'The SSC CPO process from registration to result',
+          items: [
+            {
+              title: 'One-Time Registration on ssc.gov.in',
+              text: 'Create an OTR profile once on the Commission’s portal. Registration asks for Aadhaar-based verification, a mobile number and e-mail that remain with you for the whole cycle, and your basic educational and category details. The OTR number and password are what you log in with at every later stage — exam-city intimation, admit card, answer-key challenge, result and option form — so keep them safe.',
+            },
+            {
+              title: 'Fill the online application for SSC CPO',
+              text: 'Log in, pick the examination, confirm the OTR details, choose the examination centre preferences and the medium of the paper, and upload or capture the photograph and signature exactly as the notice specifies. The declaration you sign at the end binds you to the eligibility conditions, and the Commission verifies documents only at the end of the process — an ineligible candidate can go through every stage and be dropped at verification.',
+            },
+            {
+              title: 'Pay the fee',
+              text: 'The fee is ₹100, paid online, with 1 October 2026 (23:00) as the last date. Women and SC, ST and ex-servicemen candidates are exempt. Fees are not refunded.',
+            },
+            {
+              title: 'Use the correction window if you need it',
+              text: 'A three-day correction window opens about a week after applications close. The Commission charges ₹200 for the first corrected submission and ₹500 for the second, from every candidate regardless of category. Some fields — notably the OTR identity details — cannot be changed at this point, which is why the OTR should be filled carefully in the first place.',
+            },
+            {
+              title: 'Exam-city intimation, then the admission certificate',
+              text: 'Roughly two weeks before the examination the candidate login shows the city allotted; the admission certificate itself is released only three to four days before the date. Print it, and carry it with an original photo identity document that carries the same date of birth as your application.',
+            },
+            {
+              title: 'On the day: biometrics, frisking and the clock',
+              text: 'Report at the time on the admission certificate; entry closes before the shift begins. Expect biometric capture and frisking, and expect the paper to be delivered with the timers the notice describes — a section or session that has closed cannot be reopened. Rough sheets are provided; nothing electronic is allowed inside.',
+            },
+            {
+              title: 'Tentative answer key and challenge',
+              text: 'A few days after the last shift the Commission uploads tentative answer keys with each candidate’s response sheet. Objections are filed online only, within the announced window, on payment of a per-question fee that is not refunded. Subject-matter experts examine the objections and the final key is used for evaluation.',
+            },
+            {
+              title: 'Result, marks and the next stage',
+              text: 'Results are published as PDF write-ups on the notice board with category-wise cut-offs and the count of candidates shortlisted; individual marks are released in the login shortly afterwards. Candidates for the next stage receive fresh admission certificates through the same login.',
+            },
+            {
+              title: 'Paper 1 result and the PST/PET shortlist',
+              text: 'Candidates above the minimum qualifying marks are shortlisted for PST/PET on normalised Paper 1 marks plus NCC bonus, in separate male and female lists. Answer-key challenges cost ₹50 per question, filed online within the window.',
+            },
+            {
+              title: 'PST first, then PET, run by the CAPFs',
+              text: 'Height and chest are measured before the endurance events; a candidate who fails measurement can appeal to the appellate board on the spot. The events follow — 100 m, 1.6 km or 800 m, long jump, high jump and, for men, shot put, each in three chances. Ex-servicemen are exempt from PET but must qualify the medical. Male Delhi Police candidates bring the LMV licence to this stage.',
+            },
+            {
+              title: 'Paper 2',
+              text: 'Candidates who qualify PST/PET sit Paper 2 — 160 questions for 320 marks in two hours — a few weeks later. Marks are normalised, and the notice states that the standard of Paper 2 is higher than Paper 1.',
+            },
+            {
+              title: 'Detailed medical examination, verification and allocation',
+              text: 'Candidates who qualify Paper 2 are medically examined by the CAPF medical boards, with a review medical examination on appeal, and their documents — degree, category, age, NCC and driving licence — are verified. Final selection and allocation of post and force are by Paper 2 marks with NCC bonus and the preference order given in the application; once a candidate is allotted the first available preference by merit, no other option is considered.',
+            },
+          ],
+        },
+        {
+          type: 'note',
+          title: 'The preference order is used once and cannot be changed',
+          text: 'Rank Delhi Police, each CAPF and SI (Fire) in the application in the order you would actually accept them. A candidate allotted a lower preference by merit is not reconsidered for a higher one later, and the notice is explicit that the first available preference is final.',
+        },
+      ],
+    },
+    pattern: [
+      {
+        type: 'p',
+        text: 'The SSC CPO exam pattern below is the scheme in the notice of 10 September 2026, which changed both papers from the 2025 cycle. The full treatment is on the exam pattern page.',
+      },
+      {
+        type: 'table',
+        caption: 'SSC CPO Paper 1 exam pattern 2026: 100 questions, 100 marks, 60 minutes with a 15-minute sectional timer per part; 0.25 marks deducted per wrong answer; shortlists for PST/PET.',
+        head: ['Part', 'Subject', 'Questions', 'Marks', 'Time'],
+        rows: [
+          ['I', 'General Intelligence and Reasoning', '25', '25', '15 minutes'],
+          ['II', 'General Knowledge and General Awareness', '25', '25', '15 minutes'],
+          ['III', 'Quantitative Aptitude', '25', '25', '15 minutes'],
+          ['IV', 'English Comprehension', '25', '25', '15 minutes'],
+          ['', 'Total', '100', '100', '60 minutes'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'SSC CPO Paper 2 exam pattern 2026: 160 questions, 320 marks, 2 hours; 0.50 marks deducted per wrong answer; the final merit is built from this paper.',
+        head: ['Part', 'Subject', 'Questions', 'Marks', 'Time'],
+        rows: [
+          ['I', 'General Intelligence and Reasoning', '20', '40', '1 hour for Parts I–III, 20 minutes per part'],
+          ['II', 'General Knowledge and General Awareness', '20', '40', ''],
+          ['III', 'Quantitative Aptitude', '20', '40', ''],
+          ['IV', 'English Language and Comprehension', '100', '200', '1 hour'],
+          ['', 'Total', '160', '320', '2 hours'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'Minimum qualifying marks that apply before any shortlisting — a candidate below these in any paper is not considered regardless of the cut-off.',
+        head: ['Category', 'Minimum qualifying marks'],
+        rows: [
+          ['Unreserved', '30%'],
+          ['OBC and EWS', '25%'],
+          ['All other categories', '20%'],
+        ],
+      },
+      {
+        type: 'p',
+        text: 'The examination is conducted in multiple shifts, and marks are normalised by the formula the Commission published on 2 June 2025 before cut-offs and merit are computed. Normalised scores can therefore differ from raw scores, in either direction, depending on the difficulty of the shift you sat. Parts I–III of both papers are set in Hindi and English; the English parts are in English only. NCC bonus is added to normalised marks in each paper.',
+      },
+    ],
+    studyPlan: [
+      {
+        type: 'p',
+        text: 'CPO is the SSC exam where physical preparation is as decisive as the written one: the PET events — a 1.6 km run in 6.5 minutes for men, high jump and long jump for everyone — drop a large share of Paper 1 qualifiers every cycle. The 2026 pattern also moves the weight of the written exam onto Paper 2, where English alone is 200 of the 320 marks.',
+      },
+      {
+        type: 'steps',
+        title: 'A five-month plan',
+        items: [
+          {
+            title: 'Months 1–2: foundations, and start the PET events',
+            text: 'The four Paper 1 subjects at CGL Tier 1 depth — arithmetic and basic algebra and geometry, the reasoning question types, a static general awareness spine and English grammar and vocabulary. Begin sprint, middle-distance and jumping practice; the events are technical and the three-chance rule rewards practice.',
+          },
+          {
+            title: 'Month 3: Paper 2 English and the sectional timers',
+            text: 'Daily reading comprehension, cloze tests, error spotting, sentence improvement, idioms and vocabulary — 100 questions in an hour is 36 seconds each. Practise Paper 1 as four 15-minute blocks.',
+          },
+          {
+            title: 'Month 4: full mocks',
+            text: 'A Paper 1 mock every second day with 0.25 deducted, a Paper 2 mock every week with 0.50 deducted, and an error log. Time every PET event weekly.',
+          },
+          {
+            title: 'Month 5: revision and the exam',
+            text: 'Revise from your own notes and error log, keep current affairs going, and taper mocks in the final ten days. Be inside every PET standard with a margin before Paper 1, because PET follows the result within weeks.',
+          },
+        ],
+      },
+      {
+        type: 'list',
+        title: 'Where the marks are in the 2026 scheme',
+        items: [
+          {
+            text: 'Paper 2 English: 200 marks',
+            note: 'The largest block in the examination, at 0.50 off per wrong answer. Comprehension speed and grammar accuracy decide the merit list.',
+          },
+          {
+            text: 'Paper 2 Parts I–III: 120 marks in 20-minute blocks',
+            note: 'Twenty questions each of reasoning, general awareness and quantitative aptitude at a higher standard than Paper 1.',
+          },
+          {
+            text: 'Paper 1: qualifying, but the cut-off is real',
+            note: 'In 2025 the male UR cut-off was about 60 per cent of the paper. Do not treat the shortlist as a formality.',
+          },
+        ],
+      },
+    ],
+    sources: [
+      {
+        type: 'p',
+        text: 'Checked 12 September 2026 against the notice of examination for the Sub-Inspector in Delhi Police and CAPFs Examination 2026, and the Paper 1 result write-up and tentative vacancy list of the 2025 examination, on the SSC notice board. The Paper 1 date for 2026 has not been notified.',
+      },
+      {
+        type: 'links',
+        title: 'Official documents',
+        items: [
+          {
+            label: 'Notice of Sub-Inspector in Delhi Police and CAPFs Examination 2026 (10 September 2026)',
+            href: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_capf_2026.pdf',
+          },
+          {
+            label: 'CPO 2025 Paper 1 result write-up with cut-offs (30 March 2026)',
+            href: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/write-up%20CPO%202025.pdf',
+          },
+          {
+            label: 'Tentative vacancies for SI in Delhi Police and CAPFs 2025 (16 February 2026)',
+            href: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Tentative%20Vacancies-%20SI%20CPO,%202025.pdf',
+          },
+          {
+            label: 'CPO 2024 revised final result (26 November 2025)',
+            href: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_26112025.pdf',
+          },
+          {
+            label: 'SSC home page — notices, calendar and candidate login',
+            href: 'https://ssc.gov.in/',
+          },
+        ],
       },
     ],
     resources: {
       syllabus: {
         description:
-          'SSC CPO syllabus — Paper 1 reasoning, general awareness, quantitative aptitude and English, plus the full Paper 2 English language syllabus.',
+          'SSC CPO syllabus — Paper 1 reasoning, general awareness, quantitative aptitude and English, plus the Paper 2 syllabus with its 200-mark English section.',
         lead: [
-          'Two papers, and the second one is a specialist English examination. Read the Paper 2 syllabus as carefully as the Paper 1 syllabus, because it carries equal weight.',
+          'Two papers, and the second one is where the merit list is built — 320 marks, of which 200 are English. Read the Paper 2 syllabus more carefully than the Paper 1 syllabus, because it carries the weight.',
         ],
         blocks: [
           {
@@ -1912,75 +3605,124 @@ const ssc = [
           },
           {
             type: 'p',
-            text: 'The practical implication of this syllabus is a study split most candidates get wrong. Paper 2 is worth as much as all four Paper 1 sections combined, and English is a subject that improves slowly through daily exposure rather than quickly through intensive revision. It should be the first thing you start and the last thing you stop.',
+            text: 'The practical implication of this syllabus is a study split most candidates get wrong. Paper 2 is worth more than three times Paper 1 and its English section alone is worth twice Paper 1, and English is a subject that improves slowly through daily exposure rather than quickly through intensive revision. It should be the first thing you start and the last thing you stop.',
           },
           {
             type: 'p',
-            text: 'The two English syllabi are worth comparing side by side rather than reading in sequence. The Paper 1 English section is a compact test of the same ground Paper 2 covers at length, which means every hour spent on Paper 2 preparation is also Paper 1 preparation. No other pairing in this exam has that property — quantitative aptitude, reasoning and general awareness appear in Paper 1 only, so work done on them stops paying the moment Paper 1 ends.',
+            text: 'The two English syllabi are worth comparing side by side rather than reading in sequence. The Paper 1 English section is a compact test of the same ground the Paper 2 English section covers at length, which means every hour spent on Paper 2 English is also Paper 1 preparation. Since the 2026 notice, quantitative aptitude, reasoning and general awareness also reappear in Paper 2 as 20-question parts at a higher standard, so work on them keeps paying too — but at 40 marks each against 200 for English.',
           },
           {
             type: 'note',
             title: 'Read the Paper 2 syllabus as a specification, not a summary',
-            text: 'Phrases such as error recognition, fill in the blanks and comprehension look generic, but at two hundred questions the paper has room to test each of them systematically rather than by sampling. Every listed item will appear, and several will appear many times. Treat the list as an exhaustive specification of what to prepare, because in this paper it very nearly is.',
+            text: 'Phrases such as error recognition, fill in the blanks and comprehension look generic, but at one hundred English questions in an hour the paper has room to test each of them systematically rather than by sampling. Every listed item will appear, and several will appear many times. Treat the list as an exhaustive specification of what to prepare, because in this paper it very nearly is.',
           },
         ],
       },
       'exam-pattern': {
-        description:
-          'SSC CPO exam pattern — Paper 1 and Paper 2 structure and marks, physical endurance and standard tests, and the order the stages run in.',
-        lead: [
-          'The order of the stages is the thing to plan around: Paper 1, then physicals, then Paper 2. Fitness sits between you and the paper that carries half the marks.',
-        ],
+        description: 'SSC CPO exam pattern 2026 — Paper 1 and Paper 2 tables with questions, marks, time, sectional timers, negative marking and PST/PET standards.',
+        heading: 'SSC CPO SI exam pattern 2026: Paper 1, Paper 2, PST/PET and negative marking',
+        lead: ['Both papers were restructured in the notice of 10 September 2026. Every figure here is from that notice — what each paper asks, how the sectional timers run, what a wrong answer costs and which marks decide the post.'],
         blocks: [
           {
+            type: 'p',
+            text: 'The Sub-Inspector examination has four stages, all mandatory: Paper 1, the physical standard and endurance tests, Paper 2, and the detailed medical examination. Paper 1 shortlists for the physical tests; Paper 2 — set to a higher standard — builds the final merit list and decides the allocation of post and force.',
+          },
+          {
             type: 'table',
-            caption:
-              'Paper 1 structure. Confirm marks, duration and the negative marking rate against the current official notification.',
-            head: ['Section', 'Questions', 'Marks', 'Notes'],
+            caption: 'SSC CPO Paper 1 exam pattern 2026. Objective; Parts I–III in Hindi and English; one mark per question; 0.25 marks deducted per wrong answer.',
+            head: ['Part', 'Subject', 'Questions', 'Marks', 'Time'],
             rows: [
-              ['General Intelligence and Reasoning', '50', '50', 'Verbal and non-verbal in roughly equal measure'],
-              ['General Knowledge and General Awareness', '50', '50', 'Broad general awareness rather than specialist depth'],
-              ['Quantitative Aptitude', '50', '50', 'Arithmetic, algebra, geometry, mensuration and trigonometry'],
-              ['English Comprehension', '50', '50', 'A preview of the far larger Paper 2'],
-              ['Total', '200', '200', '2 hours for the whole paper'],
+              ['I', 'General Intelligence and Reasoning', '25', '25', '1 hour, with a 15-minute sectional timer on each part'],
+              ['II', 'General Knowledge and General Awareness', '25', '25', ''],
+              ['III', 'Quantitative Aptitude', '25', '25', ''],
+              ['IV', 'English Comprehension', '25', '25', ''],
+              ['', 'Total', '100', '100', ''],
             ],
           },
           {
-            type: 'p',
-            text: 'Paper 2 is a single 200-question, 200-mark paper of English language and comprehension over two hours. Taken together with Paper 1, that means English accounts for 250 of the 400 written marks in this examination. It is difficult to overstate how much this should shape a preparation plan, and how often it does not.',
+            type: 'table',
+            caption: 'SSC CPO Paper 2 exam pattern 2026. Objective; two marks per question; 0.50 marks deducted per wrong answer; the final merit is built from this paper.',
+            head: ['Part', 'Subject', 'Questions', 'Marks', 'Time'],
+            rows: [
+              ['I', 'General Intelligence and Reasoning', '20', '40', '1 hour for Parts I–III, with a 20-minute sectional timer on each'],
+              ['II', 'General Knowledge and General Awareness', '20', '40', ''],
+              ['III', 'Quantitative Aptitude', '20', '40', ''],
+              ['IV', 'English Language and Comprehension', '100', '200', '1 hour'],
+              ['', 'Total', '160', '320', '2 hours'],
+            ],
           },
           {
             type: 'list',
-            title: 'The physical stage, which sits between the papers',
+            title: 'How the two papers are scored',
             items: [
-              { text: 'Physical Endurance Test', note: 'running over prescribed distances against the clock, plus long jump, high jump and shot put for male candidates, with a corresponding set of events for female candidates.' },
-              { text: 'Physical Standard Test', note: 'height and chest measurement with expansion for male candidates, and height for female candidates, against standards that vary by category and region.' },
-              { text: 'Consequence', note: 'candidates who do not clear these do not sit Paper 2 at all, regardless of their Paper 1 marks.' },
+              {
+                text: 'Paper 1 shortlists, Paper 2 ranks',
+                note: 'Candidates are shortlisted for PST/PET on normalised Paper 1 marks with NCC bonus; final selection and allocation are on normalised Paper 2 marks with NCC bonus and the preference order.',
+              },
+              {
+                text: 'Minimum qualifying marks in both papers',
+                note: '30 per cent for UR, 25 for OBC and EWS, 20 for all other categories, judged before NCC bonus is added.',
+              },
+              {
+                text: 'Negative marking differs between the papers',
+                note: '0.25 per wrong answer against one mark in Paper 1; 0.50 against two in Paper 2. The guessing arithmetic is the same in both — a two-option guess gains, a four-option guess loses.',
+              },
+              {
+                text: 'Sectional timers',
+                note: 'Fifteen minutes per part in Paper 1; twenty minutes per part in Parts I–III of Paper 2, then a separate hour for English. A part that has closed cannot be reopened.',
+              },
+              {
+                text: 'NCC bonus in each paper',
+                note: '5 per cent of maximum marks for a C certificate, 3 for B, 2 for A, if claimed in the application and substantiated at verification.',
+              },
             ],
           },
           {
-            type: 'note',
-            title: 'Confirm standards, timings and the licence condition',
-            text: 'Event standards differ by gender and by category, the negative marking rate has varied, and the driving licence condition applies to particular posts and groups at a particular stage. All three are set out in the notification and all three have changed between cycles.',
+            type: 'table',
+            caption: 'Physical Endurance Test — each event in three chances where the notice allows; qualifying; ex-servicemen exempt.',
+            head: ['Event', 'Male', 'Female'],
+            rows: [
+              ['100 metres', '16 seconds', '18 seconds'],
+              ['Middle distance', '1.6 km in 6.5 minutes', '800 m in 4 minutes'],
+              ['Long jump', '3.65 m', '2.7 m'],
+              ['High jump', '1.2 m', '0.9 m'],
+              ['Shot put (16 lb)', '4.5 m', '—'],
+            ],
+          },
+          {
+            type: 'table',
+            caption: 'Physical Standard Test. No chest requirement for women.',
+            head: ['Category', 'Height', 'Chest, unexpanded / expanded'],
+            rows: [
+              ['Men, general', '170 cm', '80 / 85 cm'],
+              ['Men of the listed hill areas, Gorkhas, Dogras, Marathas, Kashmir Valley, Leh and Ladakh, North-Eastern states and Sikkim', '165 cm', '80 / 85 cm'],
+              ['Men of Scheduled Tribes', '162.5 cm', '77 / 82 cm'],
+              ['Women, general', '157 cm', '—'],
+              ['Women of the listed hill areas and regions', '155 cm', '—'],
+              ['Women of Scheduled Tribes', '154 cm', '—'],
+            ],
           },
           {
             type: 'p',
-            text: 'Two hours for two hundred Paper 1 questions gives you about thirty-six seconds each, and the four sections are equal in size, which makes the pacing arithmetic unusually clean: roughly thirty minutes a section, and any section that runs long is borrowing from another. Because there is no sectional timing, that budget is yours to enforce. Candidates who do not set it in advance almost always overspend on quantitative aptitude and arrive at the English section with too little time to collect the marks they had already earned through preparation.',
+            text: 'For reference, under the previous 200-mark Paper 1 the CPO 2025 cut-offs declared on 30 March 2026 were 128.02 for women and 119.48 for men in the UR category, with 4,320 women and 44,067 men shortlisted for PET/PST. The 2026 Paper 1 is scored out of 100, so those figures indicate the proportion of the paper needed rather than a target score.',
           },
           {
-            type: 'steps',
-            title: 'A workable Paper 1 order',
+            type: 'links',
+            title: 'Related SSC CPO pages',
             items: [
-              { title: 'General awareness, briskly', text: 'Fifty recall questions that should take well under the thirty-minute share. Whatever you save here funds the mathematics later.' },
-              { title: 'English next', text: 'Fast if your Paper 2 preparation is on track, and a useful confidence check on that preparation.' },
-              { title: 'Reasoning third', text: 'Steady, mechanical, and the section where practice most reliably converts into speed.' },
-              { title: 'Quantitative aptitude last', text: 'Give it the accumulated surplus. It is the only section where extra minutes genuinely produce extra marks.' },
+              {
+                label: 'SSC CPO syllabus for Paper 1 and Paper 2',
+                to: '/government-exams/ssc/ssc-cpo/syllabus/',
+              },
+              {
+                label: 'Free SSC CPO mock tests on the 2026 pattern',
+                to: '/government-exams/ssc/ssc-cpo/mock-tests/',
+              },
+              {
+                label: 'SSC CPO previous year papers',
+                to: '/government-exams/ssc/ssc-cpo/previous-year-papers/',
+              },
             ],
-          },
-          {
-            type: 'note',
-            title: 'Plan around the gap between the stages',
-            text: 'Paper 1, then the physical tests, then Paper 2 — with real intervals between them. Those intervals are the most misused weeks in this preparation. The window after Paper 1 belongs to physical readiness, and the window after the physical tests belongs almost entirely to English. Candidates who treat both gaps as rest arrive at the paper carrying half the marks under-rehearsed.',
           },
         ],
       },
@@ -2018,7 +3760,7 @@ const ssc = [
             type: 'list',
             title: 'What to extract from past Paper 2 sets',
             items: [
-              { text: 'A consolidated vocabulary list', note: 'synonyms, antonyms, one-word substitutions and idioms, merged across every year into one document. At two hundred questions a cycle, four years of papers yield a list large enough to be genuinely representative of the commission’s taste.' },
+              { text: 'A consolidated vocabulary list', note: 'synonyms, antonyms, one-word substitutions and idioms, merged across every year into one document. At one to two hundred English questions a cycle, four years of papers yield a list large enough to be genuinely representative of the commission’s taste.' },
               { text: 'A grammar rule frequency count', note: 'tag each error-spotting and sentence-improvement question with the rule it tests — subject-verb agreement, preposition use, article use, tense sequence, parallelism, modifier placement. A short list of rules will account for most of the section.' },
               { text: 'Comprehension passage types', note: 'note the subject matter and length of the passages. They are more predictable than candidates expect, and knowing the register in advance meaningfully improves reading speed.' },
               { text: 'Cloze and para-jumble patterns', note: 'these reward a specific technique rather than general English ability, and the technique is best learned from the papers themselves.' },
@@ -2026,7 +3768,7 @@ const ssc = [
           },
           {
             type: 'p',
-            text: 'Paper 1 past papers serve a different purpose and should be used differently. Their value is pacing rehearsal — two hours, two hundred questions, four sections — rather than content discovery, because the Paper 1 content is broadly the standard SSC graduate-level ground covered better by CGL material. Use CPO Paper 1 papers late, under full timing, to confirm that your section budget survives contact with a real paper.',
+            text: 'Paper 1 past papers serve a different purpose and should be used differently. Their value is pacing rehearsal — an hour, a hundred questions, four sections each on a 15-minute timer since 2026 — rather than content discovery, because the Paper 1 content is broadly the standard SSC graduate-level ground covered better by CGL material. Use CPO Paper 1 papers late, under full timing, to confirm that your section budget survives contact with a real paper.',
           },
           {
             type: 'note',
@@ -2037,14 +3779,14 @@ const ssc = [
       },
       'mock-tests': {
         description:
-          'SSC CPO mock tests — timed Paper 1 practice and dedicated English practice for the 200-mark Paper 2.',
+          'SSC CPO mock tests — timed Paper 1 practice on the 2026 sectional timers, and Paper 2 practice weighted to its 200-mark English section.',
         lead: [
           'Practise both papers, separately. They test different things and reward completely different pacing.',
         ],
         blocks: [
           {
             type: 'p',
-            text: 'Paper 1 is a breadth test: two hundred questions across four subjects in two hours, where the skill is moving on quickly from anything that resists you. Paper 2 is an endurance test in a single subject, where concentration over two hours of continuous English is itself the challenge. A candidate who only ever practises Paper 1 arrives at Paper 2 unprepared for how tiring it is.',
+            text: 'Paper 1 is a breadth test: a hundred questions across four subjects in four 15-minute blocks, where the skill is moving on quickly from anything that resists you. Paper 2 is an endurance test: three 20-minute parts at a higher standard, then a hundred English questions in a continuous hour where concentration is itself the challenge. A candidate who only ever practises Paper 1 arrives at Paper 2 unprepared for how tiring it is.',
           },
           {
             type: 'list',
@@ -2071,13 +3813,13 @@ const ssc = [
             items: [
               { title: 'Until three months out', text: 'Sectional practice only — English daily, and the other three sections in rotation. Full mocks this early measure a candidate who does not exist yet.' },
               { title: 'Three months out', text: 'One full Paper 1 mock a week under real timing, with the section budget written down before you start and checked afterwards.' },
-              { title: 'Two months out', text: 'Add a full Paper 2 mock every fortnight. Two hundred English questions in two hours is a stamina exercise and the only way to prepare for it is to do it.' },
-              { title: 'After Paper 1 is sat', text: 'Paper 2 mocks weekly, with physical training maintained. This window is short and it decides half of your written total.' },
+              { title: 'Two months out', text: 'Add a full Paper 2 mock every fortnight. A hundred English questions in an hour, after three timed parts, is a stamina exercise and the only way to prepare for it is to do it.' },
+              { title: 'After Paper 1 is sat', text: 'Paper 2 mocks weekly, with physical training maintained. This window is short and it decides the merit list.' },
             ],
           },
           {
             type: 'p',
-            text: 'The most informative number in a Paper 2 mock is not the score but the accuracy split between the first hundred questions and the second. A clear drop in the second half is a concentration and stamina finding rather than a knowledge one, and the remedy is more full-length practice rather than more grammar revision. A flat profile with mediocre accuracy throughout is the opposite diagnosis and calls for the opposite response.',
+            text: 'The most informative number in a Paper 2 mock is not the score but the accuracy split between the first half of the English section and the second. A clear drop in the second half is a concentration and stamina finding rather than a knowledge one, and the remedy is more full-length practice rather than more grammar revision. A flat profile with mediocre accuracy throughout is the opposite diagnosis and calls for the opposite response.',
           },
           {
             type: 'note',
@@ -2090,7 +3832,7 @@ const ssc = [
         description:
           'SSC CPO preparation strategy — how to weight English for Paper 2, train for the physical stage, and sequence the two written papers.',
         lead: [
-          'Weight your preparation the way the marks are weighted. English is 250 of 400 written marks, and fitness decides whether you sit the second paper at all.',
+          'Weight your preparation the way the marks are weighted. English is 225 of 420 written marks and 200 of the 320 that build the merit list, and fitness decides whether you sit the second paper at all.',
         ],
         blocks: [
           {
@@ -2109,7 +3851,7 @@ const ssc = [
             type: 'list',
             title: 'Where CPO candidates go wrong',
             items: [
-              { text: 'Treating Paper 2 as a formality', note: 'it carries as many marks as all of Paper 1 and is the usual difference between selection and a near miss.' },
+              { text: 'Treating Paper 2 as a formality', note: 'it carries 320 marks against 100 in Paper 1, builds the merit list on its own, and is the usual difference between selection and a near miss.' },
               { text: 'Postponing physical training until after Paper 1', note: 'the gap between the paper and the physical test is short.' },
               { text: 'Leaving the driving licence requirement late', note: 'where it applies, it takes time to obtain and cannot be arranged at the last minute.' },
               { text: 'Preparing English through vocabulary lists alone', note: 'grammar rules and reading speed carry more of Paper 2 than isolated word lists do.' },
@@ -2124,7 +3866,7 @@ const ssc = [
             items: [
               [
                 'The mark arithmetic that should drive your timetable',
-                'Paper 1 carries two hundred marks, of which fifty are English. Paper 2 carries two hundred marks, all of them English. That is a substantial majority of the written total resting on one subject, and a timetable that gives English a quarter of your hours is not matched to the exam you are sitting.',
+                'Paper 1 carries a hundred marks, of which twenty-five are English. Paper 2 carries 320 marks, of which 200 are English. That is a clear majority of the written total resting on one subject, and a timetable that gives English a quarter of your hours is not matched to the exam you are sitting.',
               ],
               [
                 'Fitness as a parallel track, not a phase',
@@ -2149,7 +3891,7 @@ const ssc = [
       },
       'study-material': {
         description:
-          'SSC CPO study material — English notes weighted for the 200-mark Paper 2, plus quantitative aptitude, reasoning and general awareness.',
+          'SSC CPO study material — English notes weighted for the 200-mark Paper 2 English section, plus quantitative aptitude, reasoning and general awareness.',
         lead: [
           'English first, and by a wide margin. The rest of the material supports Paper 1, which is worth half of what English is worth across the two papers.',
         ],
@@ -2192,7 +3934,7 @@ const ssc = [
               ],
               [
                 'Reading — the part everyone neglects',
-                'Comprehension speed is what lets you finish two hundred questions in two hours. A daily passage read against a clock does more for it than any amount of grammar study.',
+                'Comprehension speed is what lets you finish a hundred English questions in an hour. A daily passage read against a clock does more for it than any amount of grammar study.',
               ],
               [
                 'The Paper 1 supporting subjects',
@@ -2214,24 +3956,36 @@ const ssc = [
     },
     faqs: [
       {
-        q: 'What is the SSC CPO exam pattern?',
-        a: 'SSC CPO runs in two written papers with the physical tests between them. Paper 1 has four sections of 50 questions each — general intelligence and reasoning, general knowledge and general awareness, quantitative aptitude and English comprehension — for 200 questions and 200 marks in two hours. Candidates who clear Paper 1 sit the physical endurance and standard tests, and those who clear those sit Paper 2: 200 questions and 200 marks of English language and comprehension in two hours. A detailed medical examination follows.',
-      },
-      {
         q: 'Why is English so important in SSC CPO?',
-        a: 'Because English accounts for 250 of the 400 written marks — 50 in Paper 1 and the entire 200-mark Paper 2. No other SSC examination weights one subject so heavily. Since language ability improves through daily exposure over months rather than through intensive revision over weeks, English should be the first subject you start and the one you practise every day until the exam.',
-      },
-      {
-        q: 'What are the physical requirements for SSC CPO?',
-        a: 'A physical endurance test with running over prescribed distances against the clock, plus long jump, high jump and shot put for male candidates and a corresponding set of events for female candidates, and a physical standard test measuring height and chest with expansion for male candidates and height for female candidates. Standards vary by gender, category and region. Importantly, these tests sit between Paper 1 and Paper 2, so a candidate who does not clear them never sits the second written paper.',
-      },
-      {
-        q: 'Do I need a driving licence for SSC CPO?',
-        a: 'Male candidates applying for Sub-Inspector in the Delhi Police have historically been required to hold a valid driving licence for a light motor vehicle by a specified stage of the process. The condition applies to particular posts and candidate groups rather than to every applicant, and obtaining a licence takes time, so confirm whether it applies to you in the current notification early rather than late.',
+        a: 'Because under the 2026 scheme English accounts for 225 of the 420 written marks — 25 in Paper 1 and 200 of the 320 in Paper 2, where 100 English questions fill the second hour — and Paper 2 is the paper the merit list is built from. No other SSC examination weights one subject so heavily. Since language ability improves through daily exposure over months rather than through intensive revision over weeks, English should be the first subject you start and the one you practise every day until the exam.',
       },
       {
         q: 'Who is eligible for SSC CPO?',
         a: 'A bachelor’s degree in any discipline from a recognised university, within an age band that is narrower than most other SSC examinations. Because the upper age limit is lower here, candidates typically have fewer attempts available than they would for SSC CGL, which is a reason to treat the first attempt seriously rather than as practice.',
+      },
+      {
+        q: 'What is the SSC CPO exam pattern for 2026?',
+        a: 'Paper 1 is 100 objective questions for 100 marks in 60 minutes — reasoning, general awareness, quantitative aptitude and English, 25 questions of one mark each with a 15-minute timer per part and 0.25 deducted per wrong answer. Candidates shortlisted on Paper 1 take the physical standard and endurance tests, then Paper 2: 20 questions each of reasoning, general awareness and quantitative aptitude for 120 marks in an hour with 20-minute timers, followed by 100 English questions for 200 marks in an hour — 320 marks in two hours with 0.50 deducted per wrong answer. The final merit and the post are decided on Paper 2. Both papers changed in the notice of 10 September 2026.',
+      },
+      {
+        q: 'What are the SSC CPO PET and PST standards?',
+        a: 'PET for men: 100 m in 16 seconds, 1.6 km in 6.5 minutes, long jump 3.65 m, high jump 1.2 m and 16 lb shot put 4.5 m, each in three chances; for women: 100 m in 18 seconds, 800 m in 4 minutes, long jump 2.7 m and high jump 0.9 m. PST: height 170 cm and chest 80 cm unexpanded, 85 cm expanded for men (165 cm for hill-area candidates; 162.5 cm and 77–82 cm for Scheduled Tribes), and height 157 cm for women (155 cm for hill areas, 154 cm for Scheduled Tribes) with no chest requirement. Ex-servicemen are exempt from PET.',
+      },
+      {
+        q: 'What are the SSC CPO 2026 exam dates and vacancies?',
+        a: 'The notice was published on 10 September 2026; applications close on 30 September, fee payment on 1 October, and the correction window runs from 8 to 10 October 2026. Paper 1 is to be notified, with October–November 2026 in the Commission’s calendar. There are 2,018 tentative vacancies: 317 for SI in Delhi Police (205 male, 112 female), 1,467 for SI (GD) in the CAPFs (1,320 male, 147 female) and 234 for SI (Fire) in CISF.',
+      },
+      {
+        q: 'What is the negative marking in SSC CPO?',
+        a: '0.25 marks per wrong answer in Paper 1, against one mark for a correct answer, and 0.50 marks per wrong answer in Paper 2, against two. Unanswered questions carry no penalty.',
+      },
+      {
+        q: 'Is a driving licence compulsory for SSC CPO?',
+        a: 'Only for male candidates who want Sub-Inspector in Delhi Police: they must hold a valid LMV (motorcycle and car) licence on the date of the physical tests. Male candidates without it are considered for the CAPF posts only; there is no licence requirement for women or for the CAPF and SI (Fire) posts.',
+      },
+      {
+        q: 'What were the SSC CPO 2025 cut-off marks?',
+        a: 'The Paper 1 result of 30 March 2026, on the previous 200-mark paper, put the UR cut-off at 128.02 for women and 119.48 for men, with OBC at 124.22 and 115.03, EWS at 126.56 and 114.60, SC at 100.92 and 88.95 and ST at 95.20 and 89.06; 4,320 women and 44,067 men were shortlisted for PET/PST. Paper 1 in 2026 is out of 100, so compare the proportion, not the number.',
       },
     ],
   },
@@ -2246,20 +4000,21 @@ const ssc = [
     fullName: 'Staff Selection Commission Junior Engineer Examination',
     authority: 'Staff Selection Commission (SSC)',
     official: 'ssc.gov.in',
-    seoTitle: 'SSC JE 2026: Civil, Mechanical & Electrical Syllabus and Mocks',
+    seoTitle: 'SSC JE Exam Pattern 2026: Paper 1, Paper 2 Syllabus, Civil, Mech, Electrical',
     metaDescription:
-      'SSC JE Junior Engineer exam guide — Paper 1 and Paper 2 pattern, discipline-wise technical syllabus for civil, mechanical and electrical, and free mocks.',
+      'SSC JE 2026 exam pattern and syllabus — Paper 1 and Paper 2 marks, negative marking, Civil, Mechanical and Electrical topics, eligibility, vacancies and mocks.',
+    heroTitle: 'SSC JE Exam Pattern and Syllabus 2026: Paper 1, Paper 2 for Civil, Mechanical and Electrical',
     lead: [
       'SSC JE recruits Junior Engineers for central government departments and organisations — the Central Public Works Department, the Military Engineer Services, the Border Roads Organisation, the Central Water Commission and others. It is a technical recruitment, and unlike every other SSC examination, most of its marks come from an engineering discipline rather than from general aptitude.',
       'That single fact should reshape how you prepare. General intelligence and general awareness together carry a minority of Paper 1; the technical paper is where the exam is won, and it is where diploma-holders with a solid grounding have a decisive advantage over candidates relying on general SSC preparation.',
     ],
     quickFacts: [
-      ['Conducted by', 'Staff Selection Commission (SSC)'],
-      ['Post', 'Junior Engineer in central government departments and organisations'],
-      ['Disciplines', 'Civil, Mechanical and Electrical engineering'],
-      ['Level', 'Diploma or degree in the relevant engineering discipline'],
-      ['Stages', 'Paper 1 (objective) → Paper 2 (technical) → document verification'],
-      ['Where the marks are', 'The general engineering sections, not the aptitude sections'],
+      ['Conducted by', 'Staff Selection Commission for central engineering departments and the IMD'],
+      ['Level', 'Diploma or degree in Civil, Electrical or Mechanical engineering, as the department specifies; science or engineering degree for Scientific Assistant in IMD'],
+      ['Posts', 'Junior Engineer (Civil, Electrical, Mechanical, Telecom) and Scientific Assistant in IMD — Group B, Pay Level 6 (₹35,400–1,12,400)'],
+      ['2026 cycle', 'Notice 2 September 2026; applications to 22 September 2026; 1,748 tentative vacancies; Paper 1 tentatively October–November 2026, Paper 2 December 2026'],
+      ['Age', 'Up to 30 years for most posts, up to 32 for CPWD, as on 1 August 2026, with relaxations'],
+      ['Stages', 'Paper 1 (200 marks, qualifying) → Paper 2 (300 marks, merit) → document verification by the department'],
     ],
     overview: [
       {
@@ -2289,21 +4044,289 @@ const ssc = [
     stages: [
       {
         name: 'Paper 1 — Computer Based Examination',
-        mode: 'Objective, 2 hours',
-        detail:
-          'General intelligence and reasoning, general awareness, and general engineering in the chosen discipline. The technical section carries the largest share of the marks, which makes Paper 1 substantially a technical paper with an aptitude component attached.',
+        mode: 'Objective, 200 questions, 200 marks, 2 hours',
+        detail: 'General Intelligence and Reasoning (50 questions, 50 marks), General Awareness (50, 50) and General Engineering in the discipline applied for (100, 100): Civil and Structural, Electrical or Mechanical for JE; Computer Science and IT, Electronics and Telecommunication or Physics for Scientific Assistant in IMD; Telecommunication for JE (Telecom). 0.25 marks deducted per wrong answer. Qualifying — Paper 1 shortlists for Paper 2 through separate merit lists for each post group.',
       },
       {
-        name: 'Paper 2 — Technical Examination',
-        mode: 'Discipline-specific, 2 hours',
-        detail:
-          'A deeper examination in the chosen engineering discipline — civil and structural, electrical, or mechanical. The paper format has been revised between cycles, so confirm whether the current one is objective or descriptive in the notification.',
+        name: 'Paper 2 — Computer Based Examination',
+        mode: 'Objective, 100 questions, 300 marks, 2 hours',
+        detail: 'General Engineering in the discipline only — Part A Civil and Structural, Part B Electrical, Part C Mechanical, or the IMD and Telecom parts — 100 questions of three marks each with one mark deducted per wrong answer. The IS 456:2000 tables and steam tables are available on the console where needed. The final merit list is built from Paper 2 normalised marks.',
       },
       {
-        name: 'Document verification',
-        mode: 'Offline',
-        detail:
-          'Verification of the engineering qualification, experience where required, category and identity documents. Because eligibility differs by post, this stage is where mismatched qualifications surface.',
+        name: 'Option-cum-preference, allocation and document verification',
+        mode: 'Online form, sliding and verification',
+        detail: 'After Paper 2 marks, candidates submit preferences for the organisations; the Commission publishes a first round of tentative allocation, runs an identity verification and fix/float sliding process at its regional offices, and declares the final result. The user department verifies the diploma or degree, experience where required, category and age certificates before appointment.',
+      },
+    ],
+    updates: [
+      {
+        type: 'p',
+        text: 'Checked 12 September 2026 against the SSC notice board. The notice for the Junior Engineer Examination 2026 was published on 2 September 2026 with 1,748 tentative vacancies, and for the first time the examination also recruits Scientific Assistant in the India Meteorological Department and Junior Engineer (Telecom) in the Department of Telecommunications. Online applications run from 2 to 22 September 2026 (23:00), fee payment closes on 23 September, and the correction window is 28 to 30 September 2026. Paper 1 is tentatively scheduled for October–November 2026 and Paper 2 for December 2026. An addendum of 10 September 2026 revised the essential qualification for Scientific Assistant in IMD.',
+      },
+      {
+        type: 'table',
+        caption: 'Key dates of the SSC JE 2026 cycle, from the notice of 2 September 2026.',
+        head: ['Event', 'Date'],
+        rows: [
+          ['Notice published', '2 September 2026'],
+          ['Online applications', '2–22 September 2026 (23:00)'],
+          ['Last date for fee payment', '23 September 2026 (23:00)'],
+          ['Application correction window', '28–30 September 2026 (₹200 first correction, ₹500 second)'],
+          ['Paper 1 (Computer Based Examination)', 'October–November 2026, tentative'],
+          ['Paper 2 (Computer Based Examination)', 'December 2026, tentative'],
+          ['Tentative vacancies', '1,748; post-wise and category-wise list on the Tentative Vacancy page'],
+        ],
+      },
+      {
+        type: 'p',
+        text: 'The 2025 cycle gives the timeline. JE 2025 Paper 1, placed in late October in the calendar, was held from 3 to 6 December and on 13 December 2025 with self-slot selection; the Paper 1 result came on 6 March 2026, Paper 2 followed in April with the tentative key on 16 April, final vacancies were fixed on 24 June 2026, the first round of tentative allocation was declared on 9 July 2026, the sliding and identity verification ran on 20–21 July, and the final result of 3 August 2026 recommended 1,731 candidates — 270 SC, 122 ST, 432 OBC, 127 EWS and 780 UR — against 1,731 vacancies.',
+      },
+      {
+        type: 'note',
+        title: 'What the 2026 notice changed',
+        text: 'Two new post groups — Scientific Assistant in IMD (with Computer Science and IT, Electronics and Telecommunication, or Physics as the engineering part) and JE (Telecom) — each with its own Paper 1 merit list. The paper scheme for Civil, Electrical and Mechanical is unchanged: 200 marks in Paper 1 with 0.25 deducted, 300 marks in Paper 2 with one mark deducted, and merit on Paper 2.',
+      },
+    ],
+    eligibility: [
+      {
+        type: 'p',
+        text: 'Eligibility is post-specific: each organisation in the notice sets its own qualification — a degree, a diploma, or a diploma with two years’ experience — and its own age ceiling. Qualifications are judged as on the closing date, 22 September 2026, and age as on 1 August 2026. You are considered only for the organisations whose conditions you meet, so read the post table before choosing preferences.',
+      },
+      {
+        type: 'table',
+        caption: 'Essential qualifications by organisation, summarised from the post table in the notice. The notice itself governs.',
+        head: ['Organisation', 'Posts', 'Qualification'],
+        rows: [
+          ['Central Public Works Department (CPWD)', 'JE (Civil), JE (Electrical)', 'Diploma in Civil, or in Electrical or Mechanical engineering; age up to 32'],
+          ['Military Engineer Services (MES)', 'JE (Civil), JE (Electrical and Mechanical)', 'Degree in the discipline, or a three-year diploma with two years’ experience in planning, execution or maintenance of works'],
+          ['Border Roads Organisation', 'JE (Civil), JE (Electrical and Mechanical)', 'Degree in the discipline, or a three-year diploma with two years’ experience; BRO posts carry their own physical and medical standards'],
+          ['Central Water Commission', 'JE (Civil), JE (Mechanical)', 'Degree or diploma in the discipline'],
+          ['Central Water and Power Research Station; Farakka Barrage Project; Brahmaputra Board', 'JE (Civil), JE (Electrical)', 'Diploma in the discipline'],
+          ['DGQA (Naval), Ministry of Defence', 'JE (Mechanical), JE (Electrical)', 'Degree in the discipline, or a three-year diploma with two years’ experience'],
+          ['National Technical Research Organisation; Ministry of Fisheries, Animal Husbandry and Dairying', 'JE (Civil) and others as listed', 'As specified per post in the notice'],
+          ['Department of Telecommunications', 'JE (Telecom)', 'As specified in the notice; examined on Part G, Telecommunication'],
+          ['India Meteorological Department', 'Scientific Assistant', 'Per the addendum of 10 September 2026: a bachelor’s degree in science with Physics, or a bachelor’s degree in Computer Science, Computer Applications, Electronics, Electronics and Communication, Instrumentation, IT or Telecommunication engineering'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'Age as on 1 August 2026: up to 30 years for most posts (born 2 August 1996 to 1 August 2008), up to 32 for CPWD (born from 2 August 1994). Relaxations beyond the ceiling, from the notice.',
+        head: ['Category', 'Relaxation'],
+        rows: [
+          ['SC and ST', '5 years'],
+          ['OBC (non-creamy layer)', '3 years'],
+          ['Persons with benchmark disabilities', '10 years (UR/EWS), 13 years (OBC), 15 years (SC/ST)'],
+          ['Ex-servicemen', '3 years after deducting military service from actual age'],
+          ['Defence personnel disabled in operations', '3 years (8 years for SC/ST)'],
+        ],
+      },
+      {
+        type: 'list',
+        title: 'Other conditions',
+        items: [
+          {
+            text: 'Fee',
+            note: '₹100 online; women and SC, ST, PwBD and ex-servicemen candidates are exempt.',
+          },
+          {
+            text: 'Discipline',
+            note: 'You sit Paper 1 and Paper 2 in one discipline — Civil and Structural, Electrical, or Mechanical for JE; a candidate with a diploma in Electrical or Mechanical may be eligible for JE (Electrical and Mechanical) posts in MES and BRO in either part as the notice specifies.',
+          },
+          {
+            text: 'Experience',
+            note: 'Where a post asks for two years’ experience with a diploma, it is counted as on the closing date and verified by the department with an experience certificate.',
+          },
+        ],
+      },
+    ],
+    procedure: {
+      eyebrow: 'Application to appointment',
+      heading: 'How to apply for SSC JE 2026, what Paper 1 and Paper 2 look like on the day, and how organisations are allotted',
+      intro: 'The steps in the order they happen, with the windows and fees the 2 September 2026 notice specifies.',
+      blocks: [
+        {
+          type: 'steps',
+          title: 'The SSC JE process from registration to result',
+          items: [
+            {
+              title: 'One-Time Registration on ssc.gov.in',
+              text: 'Create an OTR profile once on the Commission’s portal. Registration asks for Aadhaar-based verification, a mobile number and e-mail that remain with you for the whole cycle, and your basic educational and category details. The OTR number and password are what you log in with at every later stage — exam-city intimation, admit card, answer-key challenge, result and option form — so keep them safe.',
+            },
+            {
+              title: 'Fill the online application for SSC JE',
+              text: 'Log in, pick the examination, confirm the OTR details, choose the examination centre preferences and the medium of the paper, and upload or capture the photograph and signature exactly as the notice specifies. The declaration you sign at the end binds you to the eligibility conditions, and the Commission verifies documents only at the end of the process — an ineligible candidate can go through every stage and be dropped at verification.',
+            },
+            {
+              title: 'Pay the fee',
+              text: 'The fee is ₹100, paid online, with 23 September 2026 (23:00) as the last date. Women and SC, ST, PwBD and ex-servicemen candidates are exempt. Fees are not refunded.',
+            },
+            {
+              title: 'Use the correction window if you need it',
+              text: 'A three-day correction window opens about a week after applications close. The Commission charges ₹200 for the first corrected submission and ₹500 for the second, from every candidate regardless of category. Some fields — notably the OTR identity details — cannot be changed at this point, which is why the OTR should be filled carefully in the first place.',
+            },
+            {
+              title: 'Exam-city intimation, then the admission certificate',
+              text: 'Roughly two weeks before the examination the candidate login shows the city allotted; the admission certificate itself is released only three to four days before the date. Print it, and carry it with an original photo identity document that carries the same date of birth as your application.',
+            },
+            {
+              title: 'On the day: biometrics, frisking and the clock',
+              text: 'Report at the time on the admission certificate; entry closes before the shift begins. Expect biometric capture and frisking, and expect the paper to be delivered with the timers the notice describes — a section or session that has closed cannot be reopened. Rough sheets are provided; nothing electronic is allowed inside.',
+            },
+            {
+              title: 'Tentative answer key and challenge',
+              text: 'A few days after the last shift the Commission uploads tentative answer keys with each candidate’s response sheet. Objections are filed online only, within the announced window, on payment of a per-question fee that is not refunded. Subject-matter experts examine the objections and the final key is used for evaluation.',
+            },
+            {
+              title: 'Result, marks and the next stage',
+              text: 'Results are published as PDF write-ups on the notice board with category-wise cut-offs and the count of candidates shortlisted; individual marks are released in the login shortly afterwards. Candidates for the next stage receive fresh admission certificates through the same login.',
+            },
+            {
+              title: 'Self-slot selection and Paper 1',
+              text: 'In the 2025 cycle candidates chose their Paper 1 date and shift from the slots available in their city through the login. Paper 1 is two hours with no sectional timer: 50 reasoning, 50 general awareness and 100 engineering questions. Answer-key challenges cost ₹50 per question.',
+            },
+            {
+              title: 'Paper 1 result: separate merit lists',
+              text: 'Candidates above the minimum qualifying marks are shortlisted for Paper 2 on normalised marks, through separate lists for JE (Civil), JE (Electrical and Mechanical), Scientific Assistant in IMD and JE (Telecom).',
+            },
+            {
+              title: 'Paper 2',
+              text: 'One hundred engineering questions of three marks each in two hours, with one mark deducted per wrong answer. The IS 456:2000 tables and steam tables are available on the console under Useful Data where the discipline needs them. Marks are normalised and the merit list is built from this paper.',
+            },
+            {
+              title: 'Option-cum-preference, first round of tentative allocation and sliding',
+              text: 'After marks are published, candidates in the merit zone submit preferences for organisations. The Commission publishes a first round of tentative allocation, then calls candidates to a regional office for identity verification and a fix/float sliding process — fix keeps the allotted post, float asks to be considered for a higher preference if a vacancy opens. A candidate who does not attend is treated as absent and dropped.',
+            },
+            {
+              title: 'Final result and verification by the department',
+              text: 'The final result allots organisations by merit-cum-preference and the fix/float choices; in 2025 it came on 3 August 2026, four weeks after the first round. The department verifies the degree or diploma, experience certificate, category and age before appointment, and BRO conducts its own physical and medical examination.',
+            },
+          ],
+        },
+      ],
+    },
+    pattern: [
+      {
+        type: 'p',
+        text: 'The SSC JE exam pattern below is the scheme in the notice of 2 September 2026. Both papers are computer-based and objective; the discipline you apply in decides which engineering part you answer. The full treatment is on the exam pattern page.',
+      },
+      {
+        type: 'table',
+        caption: 'SSC JE Paper 1 exam pattern 2026: 200 questions, 200 marks, 2 hours (2 hours 40 minutes for scribe-eligible candidates); 0.25 marks deducted per wrong answer; qualifying.',
+        head: ['Section', 'Questions', 'Marks'],
+        rows: [
+          ['General Intelligence and Reasoning', '50', '50'],
+          ['General Awareness', '50', '50'],
+          ['General Engineering — Part A Civil and Structural, Part B Electrical or Part C Mechanical (JE); Part D Computer Science and IT, Part E Electronics and Telecommunication or Part F Physics (Scientific Assistant, IMD); Part G Telecommunication (JE Telecom)', '100', '100'],
+          ['Total', '200', '200'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'SSC JE Paper 2 exam pattern 2026: 100 questions, 300 marks, 2 hours; one mark deducted per wrong answer; the merit list is built from this paper.',
+        head: ['Section', 'Questions', 'Marks'],
+        rows: [
+          ['General Engineering in the discipline — the same part as in Paper 1', '100', '300'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'Minimum qualifying marks that apply before any shortlisting — a candidate below these in any paper is not considered regardless of the cut-off.',
+        head: ['Category', 'Minimum qualifying marks'],
+        rows: [
+          ['Unreserved', '30%'],
+          ['OBC and EWS', '25%'],
+          ['All other categories', '20%'],
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Questions are set in Hindi and English. The examination is conducted in multiple shifts, and marks are normalised by the formula the Commission published on 2 June 2025 before cut-offs and merit are computed. Normalised scores can therefore differ from raw scores, in either direction, depending on the difficulty of the shift you sat. Separate merit lists are drawn for JE (Civil), JE (Electrical and Mechanical), Scientific Assistant in IMD and JE (Telecom) at both stages.',
+      },
+    ],
+    studyPlan: [
+      {
+        type: 'p',
+        text: 'JE is the SSC exam where the syllabus is the discipline you already studied, which makes the plan different: most of the marks — 100 of 200 in Paper 1 and all 300 in Paper 2 — come from diploma-level engineering, and the merit list is built entirely from Paper 2. Reasoning and general awareness only have to clear Paper 1 comfortably.',
+      },
+      {
+        type: 'steps',
+        title: 'A five-month plan',
+        items: [
+          {
+            title: 'Months 1–2: the core subjects of your discipline',
+            text: 'Civil: building materials, surveying, soil mechanics, hydraulics, RCC and steel design, estimating, environmental engineering, transportation. Mechanical: thermodynamics, fluid mechanics, strength of materials, theory of machines, production, IC engines, refrigeration. Electrical: circuits, machines, measurements, power systems, basic electronics, utilisation. Work from the standard diploma texts and the previous years’ papers together.',
+          },
+          {
+            title: 'Month 3: Paper 1 general sections and full engineering revision',
+            text: 'Reasoning question types and a general awareness spine with six months of current affairs, an hour a day; the rest on engineering numericals, which is where Paper 2 differentiates.',
+          },
+          {
+            title: 'Month 4: mocks with the negative marking applied',
+            text: 'A Paper 1 mock every third day with 0.25 deducted, a Paper 2 mock every week with one mark deducted, and an error log by subject. Practise using the IS 456 and steam tables on screen rather than from memory.',
+          },
+          {
+            title: 'Month 5: revision and the exam window',
+            text: 'Revise from formula sheets and the error log; taper mocks in the final ten days. Confirm the discipline and post preferences you will submit before the option form opens.',
+          },
+        ],
+      },
+      {
+        type: 'list',
+        title: 'What the pattern means for the attempt',
+        items: [
+          {
+            text: 'Paper 1 is qualifying but the cut-off is real',
+            note: 'Separate merit lists per discipline mean you compete only with your own branch; the shortlist for Paper 2 is still a small fraction of applicants.',
+          },
+          {
+            text: 'Paper 2 punishes guessing',
+            note: 'One mark off against three on: a two-option guess is worth taking, a three- or four-option guess is not. A clean 70 beats a scrappy 85.',
+          },
+          {
+            text: 'Numericals decide Paper 2',
+            note: 'Conceptual one-liners are shared knowledge; calculation questions in strength of materials, hydraulics, machines and circuits are where the spread is.',
+          },
+        ],
+      },
+    ],
+    sources: [
+      {
+        type: 'p',
+        text: 'Checked 12 September 2026 against the notice of the Junior Engineer Examination 2026, its addendum of 10 September 2026, and the Paper 1 result, final vacancy, first-round allocation and final result write-ups of JE 2025 on the SSC notice board. Paper dates for 2026 are tentative in the notice.',
+      },
+      {
+        type: 'links',
+        title: 'Official documents',
+        items: [
+          {
+            label: 'Notice of Junior Engineer Examination 2026 (2 September 2026)',
+            href: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_adv_je_2026.pdf',
+          },
+          {
+            label: 'Addendum on the qualification for Scientific Assistant in IMD (10 September 2026)',
+            href: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Addendum_JE_10092026.pdf',
+          },
+          {
+            label: 'JE 2025 Paper 1 result write-up (6 March 2026)',
+            href: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Writeup_06032026.pdf',
+          },
+          {
+            label: 'JE 2025 final vacancies (24 June 2026)',
+            href: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/JE2025_FINAL_VACANCY_24062026.pdf',
+          },
+          {
+            label: 'JE 2025 first round of tentative allocation (9 July 2026)',
+            href: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_je_09072026.pdf',
+          },
+          {
+            label: 'JE 2025 final result write-up (3 August 2026)',
+            href: 'https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/writeup_03082026.pdf',
+          },
+          {
+            label: 'SSC home page — notices, calendar and candidate login',
+            href: 'https://ssc.gov.in/',
+          },
+        ],
       },
     ],
     resources: {
@@ -2359,64 +4382,98 @@ const ssc = [
         ],
       },
       'exam-pattern': {
-        description:
-          'SSC JE exam pattern — Paper 1 and Paper 2 structure, the share of marks carried by the technical section, and negative marking.',
-        lead: [
-          'The headline number to internalise: the technical section carries more marks in Paper 1 than reasoning and general awareness combined.',
-        ],
+        description: 'SSC JE exam pattern 2026 — Paper 1 and Paper 2 tables with questions, marks, time and negative marking for Civil, Mechanical and Electrical.',
+        heading: 'SSC JE exam pattern 2026: Paper 1, Paper 2, marks, time and negative marking',
+        lead: ['Two computer-based papers in the discipline you apply in. Paper 1 screens with a quarter mark off per mistake; Paper 2 builds the merit list with a full mark off. Every figure here is from the notice of 2 September 2026.'],
         blocks: [
           {
+            type: 'p',
+            text: 'The Junior Engineer examination has two objective papers and no interview. Paper 1 mixes reasoning and general awareness with a 100-mark engineering section and is qualifying; Paper 2 is engineering only, 300 marks, and is the entire merit list. Since 2023 both papers have been computer-based, and the 2026 notice keeps the scheme while adding Scientific Assistant in IMD and JE (Telecom) as separate post groups with their own engineering parts.',
+          },
+          {
             type: 'table',
-            caption:
-              'Paper 1 structure. Confirm question counts, marks, duration and the negative marking rate against the current official notification.',
-            head: ['Section', 'Questions', 'Marks', 'Notes'],
+            caption: 'SSC JE Paper 1 exam pattern 2026. Objective; Hindi and English; one mark per question; 0.25 marks deducted per wrong answer; no sectional timer.',
+            head: ['Section', 'Questions', 'Marks', 'Time'],
             rows: [
-              ['General Intelligence and Reasoning', '50', '50', 'Common to all disciplines; largely learnable in weeks'],
-              ['General Awareness', '50', '50', 'General level; rewards steady revision more than study'],
-              ['General Engineering (chosen discipline)', '100', '100', 'Half the paper, in your own discipline'],
-              ['Total', '200', '200', '2 hours for the whole paper'],
+              ['General Intelligence and Reasoning', '50', '50', '2 hours for the paper (2 hours 40 minutes for scribe-eligible candidates)'],
+              ['General Awareness', '50', '50', ''],
+              ['General Engineering — Part A Civil and Structural, Part B Electrical, Part C Mechanical; Part D Computer Science and IT, Part E Electronics and Telecommunication, Part F Physics for Scientific Assistant in IMD; Part G Telecommunication for JE (Telecom)', '100', '100', ''],
+              ['Total', '200', '200', ''],
             ],
           },
           {
-            type: 'p',
-            text: 'Half of Paper 1 is technical, and Paper 2 is entirely technical. Across the two papers the engineering discipline accounts for the large majority of the marks available — which makes the common approach of preparing SSC-style aptitude first and technical subjects later exactly backwards for this exam.',
-          },
-          {
-            type: 'p',
-            text: 'Paper 2 examines the same discipline at greater depth over two hours. Its format has been revised between cycles — it has been a descriptive paper in the past and an objective one more recently — so the format section of the current notification is worth reading carefully, because it changes how you should practise.',
+            type: 'table',
+            caption: 'SSC JE Paper 2 exam pattern 2026. Objective; three marks per question; one mark deducted per wrong answer.',
+            head: ['Section', 'Questions', 'Marks', 'Time'],
+            rows: [
+              ['General Engineering in the same part as Paper 1', '100', '300', '2 hours (2 hours 40 minutes for scribe-eligible candidates)'],
+            ],
           },
           {
             type: 'list',
-            title: 'Planning consequences',
+            title: 'How the papers are scored',
             items: [
-              { text: 'Technical revision starts first', note: 'it carries the most marks and takes the longest to rebuild if your diploma is some years behind you.' },
-              { text: 'Reasoning is a short, high-return project', note: 'a few weeks of practice covers most of what Paper 1 asks.' },
-              { text: 'General awareness runs as a background habit', note: 'daily and light, never as an intensive block.' },
-              { text: 'Confirm the Paper 2 format before practising for it', note: 'descriptive and objective papers reward quite different preparation.' },
+              {
+                text: 'Paper 1 is qualifying',
+                note: 'Candidates above the minimum qualifying marks are shortlisted for Paper 2 on normalised Paper 1 marks, through separate merit lists for JE (Civil), JE (Electrical and Mechanical), Scientific Assistant in IMD and JE (Telecom). Paper 1 marks are not added afterwards.',
+              },
+              {
+                text: 'Paper 2 is the merit list',
+                note: 'Normalised Paper 2 marks decide the rank; the post preferences and the fix/float sliding decide the organisation.',
+              },
+              {
+                text: 'Minimum qualifying marks in both papers',
+                note: '30 per cent for UR, 25 for OBC and EWS, 20 for all other categories.',
+              },
+              {
+                text: 'Negative marking differs between the papers',
+                note: '0.25 per wrong answer against one mark in Paper 1; one mark against three in Paper 2. A three-option guess breaks even in Paper 1 and loses in Paper 2.',
+              },
+              {
+                text: 'Reference tables on screen',
+                note: 'The IS 456:2000 tables and steam tables are provided on the console under Useful Data where the discipline requires them; nothing may be carried in.',
+              },
             ],
           },
           {
-            type: 'note',
-            title: 'Negative marking applies',
-            text: 'A deduction is applied for wrong answers, and the rate has differed between the papers and between cycles. Since the technical sections are the ones where a half-remembered formula tempts a guess, knowing the exact rate before the exam is worth the two minutes it takes to check the notification.',
+            type: 'list',
+            title: 'Where the engineering marks are, by discipline',
+            items: [
+              {
+                text: 'Civil and Structural (Part A)',
+                note: 'Building materials, estimating and costing, surveying, soil mechanics, hydraulics, irrigation, transportation and environmental engineering; structural engineering with theory of structures, concrete technology, RCC design and steel design.',
+              },
+              {
+                text: 'Electrical (Part B)',
+                note: 'Basic concepts, circuit law, magnetic circuits, AC fundamentals, measurement and instruments, electrical machines, fractional-kilowatt motors and single-phase motors, synchronous machines, generation, transmission and distribution, estimation and costing, utilisation, basic electronics.',
+              },
+              {
+                text: 'Mechanical (Part C)',
+                note: 'Theory of machines and machine design, engineering mechanics and strength of materials, thermodynamics and its properties, air standard cycles, IC engines, boilers, refrigeration and air conditioning, fluid mechanics and machinery, production engineering.',
+              },
+            ],
           },
           {
             type: 'p',
-            text: 'The pacing problem in Paper 1 is created by the mixture. A reasoning question and a technical question both count for one mark, but the technical question may take three times as long, and the candidate who works straight through in question order will spend a disproportionate share of the two hours on the hardest half of the paper without ever having decided to. The fix is a deliberate order: clear reasoning and general awareness first, then give the remaining time — which should be the majority of it — to the hundred technical questions.',
+            text: 'For reference, the JE 2025 cycle shortlisted candidates for Paper 2 on 6 March 2026, held Paper 2 in April, and recommended 1,731 candidates in the final result of 3 August 2026 after the first round of tentative allocation on 9 July and the sliding process on 20–21 July.',
           },
           {
-            type: 'steps',
-            title: 'A two-hour plan for Paper 1',
+            type: 'links',
+            title: 'Related SSC JE pages',
             items: [
-              { title: 'General awareness, ten to fifteen minutes', text: 'Recall questions, answered or skipped quickly. Nothing here rewards deliberation.' },
-              { title: 'Reasoning, twenty to twenty-five minutes', text: 'Mechanical once practised, and the section that compresses most with preparation.' },
-              { title: 'Technical, the remaining eighty minutes or so', text: 'Half the paper, and the half where your diploma actually pays. Work it in two passes — the questions you can answer from memory, then the ones that need working out.' },
+              {
+                label: 'SSC JE syllabus for Civil, Mechanical and Electrical',
+                to: '/government-exams/ssc/ssc-je/syllabus/',
+              },
+              {
+                label: 'Free SSC JE mock tests on the 2026 pattern',
+                to: '/government-exams/ssc/ssc-je/mock-tests/',
+              },
+              {
+                label: 'SSC JE previous year papers',
+                to: '/government-exams/ssc/ssc-je/previous-year-papers/',
+              },
             ],
-          },
-          {
-            type: 'note',
-            title: 'Confirm the current Paper 2 format before you prepare for it',
-            text: 'The format of Paper 2 has been revised between cycles, and descriptive and objective papers reward genuinely different preparation — one rewards structured written answers and derivations, the other rewards recognition speed and formula recall. Read the current notification before you build a Paper 2 routine, because preparing for the wrong format wastes months rather than weeks.',
           },
         ],
       },
@@ -2653,16 +4710,8 @@ const ssc = [
     },
     faqs: [
       {
-        q: 'What is the SSC JE exam pattern?',
-        a: 'Paper 1 is a two-hour objective computer-based test with 200 questions and 200 marks: 50 questions of general intelligence and reasoning, 50 of general awareness, and 100 of general engineering in the discipline you applied in. Paper 2 is a further two-hour discipline-specific technical examination. Negative marking applies. The Paper 2 format has been revised between cycles, so confirm it in the current notification.',
-      },
-      {
         q: 'Which disciplines can I apply for in SSC JE?',
         a: 'Civil, mechanical and electrical engineering. You choose one at the application stage and are examined in that discipline in both the general engineering section of Paper 1 and the whole of Paper 2. Civil posts are typically the most numerous, but the right choice is the discipline you actually hold a qualification in.',
-      },
-      {
-        q: 'What qualification do I need for SSC JE?',
-        a: 'A diploma or degree in the relevant engineering discipline, with the exact requirement varying by post and by the department the post sits in. Some organisations accept a three-year diploma, others require a degree, and some ask for a diploma plus a period of relevant experience. Age limits also differ between departments, so read the post-wise eligibility table in the notification rather than assuming a single common standard.',
       },
       {
         q: 'How much of SSC JE is technical?',
@@ -2671,6 +4720,30 @@ const ssc = [
       {
         q: 'How long does SSC JE preparation take?',
         a: 'It depends mainly on how recently you completed your diploma. A final-year student or recent graduate is revising familiar material and can be competitive in about four months. A candidate several years removed from the syllabus is rebuilding it and should plan for six to eight months, with the bulk of that time on technical subjects rather than on aptitude.',
+      },
+      {
+        q: 'What is the SSC JE exam pattern for 2026?',
+        a: 'Paper 1 is 200 objective questions for 200 marks in two hours — General Intelligence and Reasoning (50), General Awareness (50) and General Engineering in your discipline (100) — with 0.25 marks deducted per wrong answer; it is qualifying and shortlists for Paper 2 through separate lists per discipline. Paper 2 is 100 engineering questions for 300 marks in two hours with one mark deducted per wrong answer, and the merit list is built from it alone. Both papers are computer-based, and the IS 456 and steam tables are provided on screen where needed.',
+      },
+      {
+        q: 'What is the SSC JE syllabus for Civil, Mechanical and Electrical?',
+        a: 'Civil and Structural: building materials, estimating and costing, surveying, soil mechanics, hydraulics, irrigation, transportation, environmental engineering, theory of structures, concrete technology, RCC and steel design. Mechanical: theory of machines and machine design, engineering mechanics and strength of materials, thermodynamics, air standard cycles, IC engines, boilers, refrigeration and air conditioning, fluid mechanics and machinery, production engineering. Electrical: basic concepts, circuit law, magnetic circuits, AC fundamentals, measurement, electrical machines, single-phase and fractional-kilowatt motors, synchronous machines, generation, transmission and distribution, estimation and costing, utilisation and basic electronics. The full topic list is on the syllabus page.',
+      },
+      {
+        q: 'What are the SSC JE 2026 exam dates and vacancies?',
+        a: 'The notice was published on 2 September 2026; applications close on 22 September, fee payment on 23 September, and the correction window runs from 28 to 30 September 2026. Paper 1 is tentatively in October–November 2026 and Paper 2 in December 2026. There are 1,748 tentative vacancies across CPWD, MES, BRO, the Central Water Commission, CWPRS, the Farakka Barrage Project, the Brahmaputra Board, DGQA (Naval), NTRO, the Department of Telecommunications, the IMD and the Ministry of Fisheries, Animal Husbandry and Dairying.',
+      },
+      {
+        q: 'Who is eligible for SSC JE 2026?',
+        a: 'It depends on the organisation: CPWD, CWPRS, the Farakka Barrage Project and the Brahmaputra Board accept a diploma in the discipline; the Central Water Commission accepts a degree or diploma; MES, BRO and DGQA (Naval) want a degree, or a three-year diploma with two years’ experience. Age is up to 30 on 1 August 2026 for most posts and up to 32 for CPWD, with five years’ relaxation for SC and ST, three for OBC and 10 to 15 for PwBD. Scientific Assistant in IMD needs a science degree with Physics or a degree in computer science, electronics, IT or telecommunication as revised by the addendum of 10 September 2026.',
+      },
+      {
+        q: 'What is the negative marking in SSC JE?',
+        a: '0.25 marks per wrong answer in Paper 1, against one mark for a correct answer, and one mark per wrong answer in Paper 2, against three. Unanswered questions carry no penalty.',
+      },
+      {
+        q: 'Is there an interview in SSC JE?',
+        a: 'No. Selection is on Paper 2 marks, normalised, with post preferences and the fix/float sliding process deciding the organisation, followed by document verification by the department. BRO additionally applies its own physical and medical standards.',
       },
     ],
   },
