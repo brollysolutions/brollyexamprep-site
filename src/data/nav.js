@@ -169,11 +169,21 @@ export const NAV = [
       {
         heading: 'International Exams',
         links: [
-          { label: 'GMAT', to: '/entrance-exams/mba/gmat/' },
-          { label: 'GRE', to: '/entrance-exams/international/gre/' },
           { label: 'IELTS', to: '/entrance-exams/international/ielts/' },
+          { label: 'PTE Academic', to: '/entrance-exams/international/pte/' },
           { label: 'TOEFL', to: '/entrance-exams/international/toefl/' },
+          { label: 'Duolingo English Test', to: '/entrance-exams/international/duolingo-english-test/' },
+          { label: 'GRE', to: '/entrance-exams/international/gre/' },
+          { label: 'GMAT', to: '/entrance-exams/mba/gmat/' },
           { label: 'SAT', to: '/entrance-exams/international/sat/' },
+          { label: 'ACT', to: '/entrance-exams/international/act/' },
+          { label: 'LSAT', to: '/entrance-exams/international/lsat/' },
+          { label: 'UCAT', to: '/entrance-exams/international/ucat/' },
+          { label: 'LNAT', to: '/entrance-exams/international/lnat/' },
+          { label: 'CELPIP', to: '/entrance-exams/international/celpip/' },
+          { label: 'OET', to: '/entrance-exams/international/oet/' },
+          { label: 'Student Visa Process', to: '/entrance-exams/international/visa-process/' },
+          { label: 'All International Exams →', to: '/entrance-exams/international/', strong: true },
         ],
       },
       {

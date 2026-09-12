@@ -10,6 +10,7 @@ const ACRONYMS = new Set([
   'tgpsc', 'tspsc', 'appsc', 'ts', 'dsc', 'ae', 'aee', 'dao',
   'tn', 'tnpsc', 'tnusrb', 'trb', 'vao', '2a', 'kpsc', 'kas', 'kea', 'psi', 'fda', 'sda', 'gpstr',
   'mpsc', 'tait', 'uppsc', 'upsssc', 'uptet', 'pcs', 'ro', 'aro', 'pet', 'sdm', 'bdo', 'hsc',
+  'pte', 'act', 'lsat', 'celpip', 'oet', 'ucat', 'lnat',
 ])
 
 const LOWERCASE_WORDS = new Set(['and', 'or', 'of', 'the', 'for', 'to', 'in', 'by', 'with'])

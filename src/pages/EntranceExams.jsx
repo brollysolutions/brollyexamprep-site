@@ -15,7 +15,7 @@ const STREAMS = [
   { title: 'Law', sub: 'CLAT, AILET and other law entrances', to: '/entrance-exams/law/', icon: 'book' },
   { title: 'University Entrance', sub: 'CUET UG and CUET PG', to: '/entrance-exams/university/', icon: 'user' },
   { title: 'PG & Research', sub: 'GATE, IIT JAM, UGC NET and CSIR NET', to: '/entrance-exams/pg-research/', icon: 'refresh' },
-  { title: 'International Exams', sub: 'GMAT, GRE, IELTS, TOEFL and SAT', to: '/entrance-exams/international/', icon: 'globe' },
+  { title: 'International Exams', sub: 'IELTS, PTE, TOEFL, Duolingo, GRE, GMAT, SAT, ACT, LSAT, UCAT, LNAT, CELPIP, OET and the visa process', to: '/entrance-exams/international/', icon: 'globe' },
   { title: 'All Entrance Exams', sub: 'The complete A–Z index', to: '/entrance-exams/', icon: 'doc' },
 ]
 

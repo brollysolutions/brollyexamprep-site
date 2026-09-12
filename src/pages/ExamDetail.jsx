@@ -73,9 +73,16 @@ export default function ExamDetail() {
   const categoryName =
     LINK_INDEX.get(categoryPath)?.label || humanise(baseSegments[baseSegments.length - 2])
   const rootName = root === 'entrance-exams' ? 'Entrance Exams' : 'Government Exams'
-  const resourceLabel = resource
-    ? PREP_SUBLINKS.find(([, slug]) => slug === resource)?.[0] || humanise(resource)
-    : null
+  /*
+   * A record may relabel its six sub-pages. The slugs are fixed — every exam
+   * has /syllabus/, /mock-tests/ and so on — but a guide that is not an
+   * examination (the student visa process, say) reads badly under "Syllabus"
+   * and "Mock Tests", so it can carry `resourceLabels` mapping slug → label,
+   * and its resource records may carry an `eyebrow` and `heading` of their own.
+   */
+  const labelFor = (slug) =>
+    exam?.resourceLabels?.[slug] || PREP_SUBLINKS.find(([, s]) => s === slug)?.[0] || humanise(slug)
+  const resourceLabel = resource ? labelFor(resource) : null
 
   const written = resource ? exam?.resources?.[resource] : null
 
@@ -96,7 +103,9 @@ export default function ExamDetail() {
   ]
 
   const faqs = resource ? null : exam?.faqs || genericFaqs(examName)
-  const [eyebrow, heading] = RESOURCE_HEADINGS[resource] || []
+  const [eyebrow, heading] = written?.heading
+    ? [written.eyebrow || RESOURCE_HEADINGS[resource]?.[0], written.heading]
+    : RESOURCE_HEADINGS[resource] || []
 
   return (
     <>
@@ -108,10 +117,10 @@ export default function ExamDetail() {
         actions={
           <>
             <Link className="btn btn--y" to={`${base}mock-tests/`}>
-              Take a Free {examName} Mock
+              {exam?.resourceLabels ? `${examName} ${labelFor('mock-tests')}` : `Take a Free ${examName} Mock`}
             </Link>
             <Link className="btn btn--o" to={`${base}syllabus/`}>
-              {examName} Syllabus
+              {examName} {labelFor('syllabus')}
             </Link>
           </>
         }
@@ -158,13 +167,14 @@ export default function ExamDetail() {
 
             <ContentSection
               id="selection"
-              eyebrow="Selection process"
-              heading={`How ${exam.name} selection works`}
-              intro="Each stage in order, and what it actually tests."
+              eyebrow={exam.stagesEyebrow || 'Selection process'}
+              heading={exam.stagesHeading || `How ${exam.name} selection works`}
+              intro={exam.stagesIntro || 'Each stage in order, and what it actually tests.'}
               blocks={[
                 {
                   type: 'table',
                   caption:
+                    exam.stagesCaption ||
                     'Stages change between cycles. Confirm the structure in the notification for the cycle you are sitting.',
                   head: ['Stage', 'Format', 'What it involves'],
                   rows: exam.stages.map((stage) => [stage.name, stage.mode, stage.detail]),
@@ -228,16 +238,16 @@ export default function ExamDetail() {
           <SectionHead
             eyebrow="Exam resources"
             title={`Everything for ${examName}`}
-            lead="Six resource pages, each kept in step with the latest official notification."
+            lead={exam?.resourceLabels ? 'Six pages, each kept in step with the official sources.' : 'Six resource pages, each kept in step with the latest official notification.'}
           />
           <div className="g3">
-            {PREP_SUBLINKS.map(([label, slug]) => (
+            {PREP_SUBLINKS.map(([, slug]) => (
               <Tile
                 key={slug}
                 to={`${base}${slug}/`}
                 icon={RESOURCE_ICONS[slug]}
-                title={`${examName} ${label}`}
-                sub={RESOURCE_BLURBS[slug]}
+                title={`${examName} ${labelFor(slug)}`}
+                sub={exam?.resources?.[slug]?.description || RESOURCE_BLURBS[slug]}
               />
             ))}
           </div>
