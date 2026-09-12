@@ -2764,12 +2764,12 @@ const mba = [
       'Two features make it unlike the Indian management entrances. It is computer adaptive, so the difficulty of each question depends on how you have answered the previous ones, and it allows you to review and edit a limited number of answers within a section before it closes. Both change strategy in ways that are worth understanding before you start preparing.',
     ],
     quickFacts: [
-      ['Administered by', 'Graduate Management Admission Council (GMAC)'],
+      ['Administered by', 'Graduate Management Admission Council (GMAC), at test centres and online, year-round'],
       ['Used by', 'Business schools worldwide, and Indian executive and international programmes'],
-      ['Current format', 'GMAT Focus Edition — three sections of 45 minutes each'],
-      ['Sections', 'Quantitative Reasoning, Verbal Reasoning, Data Insights'],
-      ['Scoring', 'Adaptive, on a scale from 205 to 805'],
-      ['Distinctive features', 'Section order choice, and a limited review-and-edit facility'],
+      ['Format', 'Three 45-minute sections — Quantitative Reasoning, Verbal Reasoning, Data Insights — 2 hours 15 minutes plus an optional 10-minute break; section order chosen by the candidate'],
+      ['Scoring', 'Total 205–805 in ten-point steps; sections 60–90; question-adaptive with a review-and-edit allowance'],
+      ['Fee and results', 'US$275 at a centre and US$300 online in India, plus GST, at booking; official score usually within five days, up to 20'],
+      ['Validity and retakes', 'Valid five years, reportable ten; a 16-day gap between attempts; five attempts in any rolling 12 months, online and centre combined'],
     ],
     overview: [
       {
@@ -2820,6 +2820,53 @@ const mba = [
         mode: 'Within each section, then at the end',
         detail:
           'A limited number of answers may be bookmarked and revisited at the end of each section. Scores are reported on a 205 to 805 scale, and candidates may choose which scores to send to schools.',
+      },
+    ],
+    updates: [
+      {
+        type: 'p',
+        text: 'Checked 12 September 2026 on mba.com and GMAC’s support centre. The GMAT is the three-section test introduced as the Focus Edition and now simply called the GMAT: 45 minutes each of Quantitative Reasoning, Verbal Reasoning and Data Insights, taken in any order the candidate chooses, with an optional ten-minute break and a scale of 205 to 805. It is offered at test centres and online throughout the year, both formats scored and accepted alike. The official score report is usually ready within five days, occasionally up to 20, and up to 35 free score reports can be sent within 48 hours of its release; scores are valid for five years and reportable for ten. Attempts must be 16 calendar days apart and are capped at five in any rolling 12 months, online and centre combined. The fee in India is US$275 at a centre and US$300 online, plus GST, shown at booking.',
+      },
+      {
+        type: 'table',
+        caption: 'The current facts, from GMAC at the date checked.',
+        head: ['Item', 'Detail'],
+        rows: [
+          ['Structure', 'Quantitative Reasoning 21 questions; Verbal Reasoning 23; Data Insights 20; 45 minutes each; 2 hours 15 minutes'],
+          ['Order and review', 'Any section order; an optional 10-minute break; within a section, up to three answers can be changed at the end'],
+          ['Scale', 'Total 205–805 in steps of 10; each section 60–90'],
+          ['Fee', 'US$275 at a test centre and US$300 online for India, plus 18 per cent GST, at booking; rescheduling and cancellation fees rise closer to the date'],
+          ['Results', 'Unofficial score on screen; official report usually within five days, up to 20; 35 free reports within 48 hours of release, then paid additional reports'],
+          ['Validity', 'Five years; reportable for ten'],
+          ['Retakes', '16 calendar days between attempts; five in any rolling 12 months, online and centre combined; cancelled or missed appointments do not count'],
+        ],
+      },
+      {
+        type: 'links',
+        title: 'Check GMAC directly',
+        items: [
+          { label: 'mba.com — about the GMAT exam', href: 'https://www.mba.com/exams/gmat-exam/about' },
+          { label: 'GMAC support — retake policies and attempt limits', href: 'https://support.mba.com/hc/en-us/articles/10118337626139-GMAT-Retake-Policies-and-Attempt-Limits' },
+          { label: 'GMAC support — when will my score be available', href: 'https://support.mba.com/hc/en-us/articles/14445842113435-GMAT-When-Will-My-Score-Be-Available' },
+          { label: 'GMAC support — how long scores are valid', href: 'https://support.mba.com/hc/en-us/articles/13894860085531-GMAT-How-Long-Are-My-Scores-Valid' },
+          { label: 'GMAC support — sending official scores', href: 'https://support.mba.com/hc/en-us/articles/37304507641243-GMAT-How-Do-I-Send-My-Official-Score-to-a-School-or-Program' },
+        ],
+      },
+    ],
+    sources: [
+      {
+        type: 'p',
+        text: 'Checked 12 September 2026 against GMAC’s support-centre articles on retake limits, score validity, score release and score sending, and mba.com for the exam description. The India fee is as shown at booking on mba.com at the date checked and is stated before GST; confirm when registering.',
+      },
+      {
+        type: 'links',
+        title: 'Official pages',
+        items: [
+          { label: 'mba.com — the GMAT exam', href: 'https://www.mba.com/exams/gmat-exam' },
+          { label: 'GMAC support — retake policies', href: 'https://support.mba.com/hc/en-us/articles/10118337626139-GMAT-Retake-Policies-and-Attempt-Limits' },
+          { label: 'GMAC support — score availability', href: 'https://support.mba.com/hc/en-us/articles/14445842113435-GMAT-When-Will-My-Score-Be-Available' },
+          { label: 'GMAC support — score validity', href: 'https://support.mba.com/hc/en-us/articles/13894860085531-GMAT-How-Long-Are-My-Scores-Valid' },
+        ],
       },
     ],
     resources: {
@@ -3198,6 +3245,14 @@ const mba = [
       {
         q: 'How is the GMAT different from CAT?',
         a: 'Almost entirely, apart from broad subject areas. The GMAT is adaptive rather than fixed, taken year-round rather than annually, valid for several years, retakeable after a short interval, and sendable to schools selectively — which gives candidates far more control over their record. Its content is narrower but tested more precisely: no geometry, no sentence correction, and critical reasoning examined on exact logical structure. CAT, by contrast, rewards breadth of problem-solving and set selection under severe sectional time pressure.',
+      },
+      {
+        q: 'What does the GMAT cost in India and how often can it be taken?',
+        a: 'US$275 at a test centre and US$300 online, plus 18 per cent GST, at the date checked. Attempts must be 16 calendar days apart and are limited to five in any rolling 12-month period, with online and centre tests counted together; cancelled or missed appointments do not count.',
+      },
+      {
+        q: 'When are GMAT scores released and how long are they valid?',
+        a: 'An unofficial score appears at the end of the test; the official score report is usually available within five days and occasionally up to 20. Up to 35 free score reports can be sent within 48 hours of release, and schools typically receive them within eight hours. Scores are valid for five years and available for reporting for ten.',
       },
     ],
   },

@@ -39,12 +39,12 @@ const international = [
       'Its shortened format runs under two hours and is section-adaptive: your performance in the first section of each type determines the difficulty of the second. That is a different mechanism from the question-by-question adaptation the GMAT uses, and it has its own strategic consequence — the first section of each pair carries disproportionate weight.',
     ],
     quickFacts: [
-      ['Administered by', 'Educational Testing Service (ETS)'],
-      ['Used for', 'Graduate admission worldwide, and by many business schools'],
-      ['Sections', 'Verbal Reasoning, Quantitative Reasoning, Analytical Writing'],
-      ['Format', 'Section-adaptive — the second section adapts to performance in the first'],
-      ['Scoring', 'Verbal and quantitative on a 130–170 scale each; writing on 0–6'],
-      ['Validity', 'Five years, with scores sendable selectively'],
+      ['Administered by', 'Educational Testing Service (ETS), at 1,000+ test centres in 160+ countries and at home'],
+      ['Used for', 'Graduate admission worldwide, and by many business schools in place of the GMAT'],
+      ['Format', 'Under two hours — one 30-minute essay, two verbal sections of 12 and 15 questions in 18 and 23 minutes, two quantitative sections of 12 and 15 in 21 and 26'],
+      ['Scoring', 'Verbal and quantitative on 130–170 in one-point steps; writing on 0–6 in half points; section-adaptive'],
+      ['Fee and results', 'US$249 (₹25,522 on ETS India) from 1 August 2026; scores in the ETS account 8–10 days after the test'],
+      ['Validity and retakes', 'Reportable for five years; once every 21 days, up to five times in any rolling 12 months'],
     ],
     overview: [
       {
@@ -95,6 +95,55 @@ const international = [
         mode: 'Selective, valid five years',
         detail:
           'Scores are reported for each measure separately and may be sent to selected institutions. Retakes are permitted after a specified interval, subject to a limit within any twelve-month period.',
+      },
+    ],
+    updates: [
+      {
+        type: 'p',
+        text: 'Checked 12 September 2026 on ets.org. The GRE General Test is offered year-round at test centres and at home, and has run in its shortened form since September 2023: one Analyze an Issue essay of 30 minutes, verbal sections of 12 and 15 questions in 18 and 23 minutes, and quantitative sections of 12 and 15 questions in 21 and 26 minutes, with no unscored section — just under two hours in all. Fees effective 1 August 2026 are US$249 everywhere except China, which ETS India shows as ₹25,522; rescheduling and a centre change cost $55, each additional score report $40, and a fee-reduction voucher brings the test to $100 for those who qualify. Official scores appear in the ETS account eight to ten days after the test and are reportable for five years; the test may be taken once every 21 days and at most five times in a rolling 12-month period.',
+      },
+      {
+        type: 'table',
+        caption: 'The current facts, from ETS at the date checked.',
+        head: ['Item', 'Detail'],
+        rows: [
+          ['Structure', 'Analytical Writing, one task, 30 minutes; Verbal Reasoning, 12 questions in 18 minutes then 15 in 23; Quantitative Reasoning, 12 in 21 then 15 in 26'],
+          ['Adaptivity', 'Section-level: the second verbal and second quantitative section are chosen by performance on the first of each'],
+          ['Scale', '130–170 for verbal and quantitative; 0–6 for writing'],
+          ['Fee', 'US$249 from 1 August 2026 outside China; ₹25,522 on the ETS India site; $55 to reschedule or change centre; $40 per additional score report; $60 for a writing score review'],
+          ['Results', '8–10 days after the test; ScoreSelect lets you choose which test dates to send'],
+          ['Validity', 'Five years from the test date'],
+          ['Retakes', 'Once every 21 days; five times in any rolling 12 months, including tests whose scores were cancelled'],
+          ['Where', '1,000+ test centres in 160+ countries, or at home under proctoring'],
+        ],
+      },
+      {
+        type: 'links',
+        title: 'Check ETS directly',
+        items: [
+          { label: 'ETS — GRE test structure', href: 'https://www.ets.org/gre/test-takers/general-test/prepare/test-structure.html' },
+          { label: 'ETS — GRE fees', href: 'https://www.ets.org/gre/test-takers/general-test/register/fees.html' },
+          { label: 'ETS India — GRE fees in rupees', href: 'https://www.in.ets.org/gre/test-takers/general-test/register/fees.html' },
+          { label: 'ETS — getting your GRE scores', href: 'https://www.ets.org/gre/test-takers/general-test/scores/get-scores.html' },
+          { label: 'ETS — GRE registration and retake rules', href: 'https://www.ets.org/gre/test-takers/general-test/register.html' },
+        ],
+      },
+    ],
+    sources: [
+      {
+        type: 'p',
+        text: 'Checked 12 September 2026 against ETS’s GRE test-structure, fees, score-release and registration pages, and the ETS India fee page for the rupee figure. Fees are stated by ETS as effective 1 August 2026 and subject to change; confirm at registration.',
+      },
+      {
+        type: 'links',
+        title: 'Official pages',
+        items: [
+          { label: 'ETS — GRE test structure', href: 'https://www.ets.org/gre/test-takers/general-test/prepare/test-structure.html' },
+          { label: 'ETS — GRE fees', href: 'https://www.ets.org/gre/test-takers/general-test/register/fees.html' },
+          { label: 'ETS India — GRE fees', href: 'https://www.in.ets.org/gre/test-takers/general-test/register/fees.html' },
+          { label: 'ETS — getting your GRE scores', href: 'https://www.ets.org/gre/test-takers/general-test/scores/get-scores.html' },
+          { label: 'ETS — learn about the GRE', href: 'https://www.ets.org/gre/test-takers/general-test/about.html' },
+        ],
       },
     ],
     resources: {
@@ -477,6 +526,14 @@ const international = [
         q: 'How long is a GRE score valid?',
         a: 'Five years, and scores may be sent to institutions selectively, with retakes permitted after a specified interval subject to a limit within any twelve-month period. That combination makes an early attempt genuinely low-risk — a disappointing score need not be reported — and makes a good score a durable asset usable across several application cycles.',
       },
+      {
+        q: 'What does the GRE cost in India and how often can it be taken?',
+        a: 'US$249 from 1 August 2026, which the ETS India site shows as ₹25,522, with $55 to reschedule and $40 for each additional score report. The test can be taken once every 21 days and up to five times in any rolling 12-month period, and scores are reportable for five years.',
+      },
+      {
+        q: 'How long is the GRE and when do scores come?',
+        a: 'Just under two hours: a 30-minute essay, two verbal sections of 12 and 15 questions in 18 and 23 minutes, and two quantitative sections of 12 and 15 questions in 21 and 26 minutes, with no unscored section since the 2023 shortening. Official scores appear in the ETS account eight to ten days after the test.',
+      },
     ],
   },
 
@@ -498,12 +555,12 @@ const international = [
       'The Academic module is for university admission; General Training is for migration and certain work and training purposes. The listening and speaking components are identical between them, but the reading and writing components differ substantially, and a test taken in the wrong module cannot be repurposed.',
     ],
     quickFacts: [
-      ['Administered by', 'British Council, IDP: IELTS Australia and Cambridge'],
-      ['Modules', 'Academic — for university admission; General Training — for migration and work'],
-      ['Skills tested', 'Listening, Reading, Writing and Speaking'],
-      ['Scoring', 'Band scores from 1 to 9, in half bands, per skill and overall'],
-      ['Speaking test', 'A face-to-face or video interview with a certified examiner'],
-      ['Validity', 'Generally two years'],
+      ['Administered by', 'British Council, IDP: IELTS Australia and Cambridge University Press & Assessment, at 4,500+ locations in 160+ countries'],
+      ['Modules', 'Academic for university admission and professional registration; General Training for migration and work; UKVI versions for UK visas'],
+      ['Format', '2 hours 45 minutes — Listening about 30 minutes, Reading 60, Writing 60, Speaking 11–14 with an examiner; on paper, on computer, or online'],
+      ['Scoring', 'Band scores 0–9 in half bands per skill and overall'],
+      ['Results', 'On computer, most within two days — one to two days in India; on paper, seven days in India, 13 for UKVI paper'],
+      ['Fee and validity', '₹19,000 in India in 2026; scores valid two years; One Skill Retake within 60 days on computer'],
     ],
     overview: [
       {
@@ -554,6 +611,56 @@ const international = [
         mode: '11 to 14 minutes, in three parts',
         detail:
           'Part 1 is an introduction and questions on familiar topics; Part 2 is a long turn of one to two minutes on a topic given on a card, after a minute of preparation; Part 3 is a discussion developing the Part 2 theme. Conducted with a certified examiner.',
+      },
+    ],
+    updates: [
+      {
+        type: 'p',
+        text: 'Checked 12 September 2026 on ielts.org and IDP India. The test runs year-round on paper and on computer at centres across India, and online in many countries; the format and the 2 hours 45 minutes are the same in every mode. Results on computer are the fastest — 80 per cent within two days globally, one to two days in India — with paper results in seven days and UKVI paper in 13. The 2026 fee in India is ₹19,000. A candidate who misses a target in one skill can book IELTS One Skill Retake once, within 60 days of a computer-based test, and receive a new report combining the four scores. IELTS remains the only English test accepted by all four immigration authorities that require one — the UK, Australia, Canada and New Zealand — though the online version is not accepted for every visa route.',
+      },
+      {
+        type: 'table',
+        caption: 'The current facts, from IELTS and IDP India at the date checked.',
+        head: ['Item', 'Detail'],
+        rows: [
+          ['Format', 'Listening about 30 minutes; Reading 60 minutes including transfer time; Writing 60 minutes; Speaking 11–14 minutes face to face or by video with an examiner; 2 hours 45 minutes'],
+          ['Modes', 'IELTS on paper; IELTS on computer; IELTS Online in many countries; IELTS for UKVI and Life Skills at approved centres'],
+          ['Scale', 'Bands 0–9 in half bands per skill; overall is the mean rounded to the nearest half band'],
+          ['Fee in India', '₹19,000 in 2026 for Academic and General Training; cancellations forfeit 25 per cent of the fee'],
+          ['Results', 'Computer: most within two days; paper: seven days in India; UKVI paper: 13 days; electronic Test Report Form downloadable within two working days'],
+          ['One Skill Retake', 'One skill, once, within 60 days of the original computer-based test, where the centre offers it'],
+          ['Remark', 'Enquiry on Results within six weeks of the test date; two to three weeks to decide'],
+          ['Validity', 'Two years'],
+        ],
+      },
+      {
+        type: 'links',
+        title: 'Check IELTS directly',
+        items: [
+          { label: 'IELTS — Academic test format', href: 'https://ielts.org/take-a-test/test-types/ielts-academic-test' },
+          { label: 'IELTS — General Training test', href: 'https://ielts.org/take-a-test/test-types/ielts-general-training-test' },
+          { label: 'IELTS — fast results', href: 'https://ielts.org/take-a-test/your-results/fast-test-results-and-sharing' },
+          { label: 'IELTS — One Skill Retake', href: 'https://ielts.org/take-a-test/booking-your-test/one-skill-retake' },
+          { label: 'IELTS — scoring in detail', href: 'https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail' },
+          { label: 'IDP India — IELTS test fee', href: 'https://ieltsidpindia.com/information/ielts-test-fee' },
+        ],
+      },
+    ],
+    sources: [
+      {
+        type: 'p',
+        text: 'Checked 12 September 2026 against ielts.org’s test-type, results, One Skill Retake and scoring pages, IDP India’s results page for Indian result times, and IDP India’s fee page for the 2026 fee. Fees are reviewed periodically; confirm at booking.',
+      },
+      {
+        type: 'links',
+        title: 'Official pages',
+        items: [
+          { label: 'IELTS — Academic test', href: 'https://ielts.org/take-a-test/test-types/ielts-academic-test' },
+          { label: 'IELTS — booking your test', href: 'https://ielts.org/take-a-test/booking-your-test' },
+          { label: 'IELTS — your results', href: 'https://ielts.org/take-a-test/your-results' },
+          { label: 'IDP India — results', href: 'https://ielts.idp.com/india/results' },
+          { label: 'IDP India — test fee', href: 'https://ieltsidpindia.com/information/ielts-test-fee' },
+        ],
       },
     ],
     resources: {
@@ -921,11 +1028,22 @@ const international = [
         q: 'How long is an IELTS score valid?',
         a: 'Generally two years, though the accepting institution or authority sets its own rules about how recent a score it will consider. Plan your test date against your application deadlines with that in mind — taking the test very early risks the score expiring before you apply, while leaving it late removes the option of a retake if a per-skill minimum is narrowly missed.',
       },
+      {
+        q: 'What is the IELTS fee in India and how soon do results come?',
+        a: '₹19,000 in 2026 for both Academic and General Training, per IDP India. Results for IELTS on computer arrive in one to two days in India — globally 80 per cent within two days — while paper results take seven days and UKVI paper 13. The electronic Test Report Form can be downloaded within two working days of the result.',
+      },
+      {
+        q: 'What is IELTS One Skill Retake?',
+        a: 'A retake of one of the four skills — listening, reading, writing or speaking — booked after a computer-based IELTS and taken within 60 days of the original test, once per original test, at centres that offer it. The new score replaces the old one on a fresh Test Report Form that many institutions and immigration authorities accept; check the organisation’s policy.',
+      },
     ],
   },
 
   /* ══════════════════════════════════════════════════════════════
-     TOEFL
+     TOEFL — rewritten September 2026 for the redesigned test that ETS
+     introduced on 21 January 2026: new task types, an adaptive two-hour
+     sitting, and a 1–6 band scale with a comparable 0–120 score during a
+     two-year transition. Every figure is from ets.org at the date checked.
      ══════════════════════════════════════════════════════════════ */
   {
     slug: 'toefl',
@@ -934,464 +1052,378 @@ const international = [
     fullName: 'Test of English as a Foreign Language (iBT)',
     authority: 'Educational Testing Service (ETS)',
     official: 'ets.org/toefl',
-    seoTitle: 'TOEFL iBT 2026: Sections, Integrated Tasks & IELTS Comparison',
+    seoTitle: 'TOEFL iBT 2026: New Format, 1–6 Scale, Task Types, Fees & Scores',
     metaDescription:
-      'TOEFL iBT exam guide — the four sections, integrated speaking and writing tasks, 120-point scoring, and how it compares with IELTS.',
+      'TOEFL iBT guide for the 2026 redesign — four sections, twelve task types, an adaptive two-hour sitting, 1–6 scoring with a 0–120 equivalent, India fee, results.',
     lead: [
-      'TOEFL iBT assesses English proficiency for academic study and is accepted by universities worldwide, particularly in the United States. Like IELTS it tests reading, listening, speaking and writing — but it tests them in a way that is distinctively academic and, in one respect, distinctively demanding.',
-      'That respect is integration. Several TOEFL tasks require you to read a passage, listen to a lecture on the same subject, and then speak or write a response that draws on both. It is a closer simulation of actual university work than any other English test attempts, and it is the part candidates most often under-prepare.',
+      'TOEFL iBT is the English test of ETS, accepted by more than 13,000 institutions in over 160 countries and the most widely used in North American admissions. It is taken on a computer at a test centre or, as the Home Edition, at home under a live proctor, and it is scored centrally rather than by an examiner in the room. From 21 January 2026 it is a different test from the one described in most preparation books: ETS replaced the long academic passages and integrated lecture tasks with twelve shorter task types, made the test adaptive, cut it to about two hours, and moved scoring to a 1–6 band scale aligned to the CEFR.',
+      'The four sections remain reading, listening, writing and speaking, but the content now runs from everyday English — completing words, reading a notice, writing an email, repeating what you hear — up to an academic passage, an academic talk and a discussion post, with a recorded interview closing the speaking section. Each section is reported on the 1–6 scale in half bands, the overall score is their average, and until January 2028 the score report also carries a comparable total on the old 0–120 scale so that institutions still quoting the old requirement can read it.',
     ],
     quickFacts: [
-      ['Administered by', 'Educational Testing Service (ETS)'],
-      ['Used for', 'University admission worldwide, particularly in the United States'],
-      ['Sections', 'Reading, Listening, Speaking and Writing'],
-      ['Scoring', '0 to 30 per section, 0 to 120 overall'],
-      ['Distinctive feature', 'Integrated tasks combining reading, listening and response'],
-      ['Speaking format', 'Recorded responses rather than an interview'],
+      ['Administered by', 'ETS, at test centres and as the TOEFL iBT Home Edition under a live proctor'],
+      ['Used for', 'University admission at 13,000+ institutions in 160+ countries, above all in the United States and Canada'],
+      ['Format since 21 January 2026', 'Adaptive; about two hours — Reading 50 items in about 30 minutes, Listening 47 in 29, Writing 12 in 23, Speaking 11 in 8'],
+      ['Scoring', 'Four section scores and an overall on a 1–6 scale in half bands; a comparable 0–120 total also reported until January 2028'],
+      ['Results', 'In the ETS account three days after the test; PDF report a day or two later; MyBest superscores across two years'],
+      ['Fee and validity', 'US$173 in India; scores valid two years'],
     ],
     overview: [
       {
         type: 'p',
-        text: 'TOEFL iBT is delivered on a computer at test centres and at home, year-round. It reports a score from 0 to 30 for each of the four sections and a total out of 120, and universities set their own minimum requirements, frequently both overall and per section.',
+        text: 'Reading has three task types: Complete the Words, a text with letters missing from words that tests vocabulary and grammar at speed; Read in Daily Life, short practical texts of the kind met on a campus or in a workplace; and Read an Academic Passage, a longer university-level text with comprehension questions. Listening has four: Listen and Choose a Response, Listen to a Conversation, Listen to an Announcement and Listen to an Academic Talk. Writing has three: Build a Sentence, Write an Email and Write for an Academic Discussion, the last carried over from the old test. Speaking has two: Listen and Repeat, and Take an Interview, a recorded simulated interview.',
       },
       {
         type: 'p',
-        text: 'Its content is deliberately academic. Reading passages come from university-level textbooks; listening material comprises lectures and campus conversations; and the speaking and writing tasks ask you to summarise and respond to academic content rather than to discuss general topics. That makes it a closer proxy for university study than a general proficiency test, and it also makes note-taking a genuine examinable skill.',
+        text: 'The test adapts, so the number of items and the time vary a little from candidate to candidate; ETS gives about 50 reading items in 30 minutes, 47 listening in 29, 12 writing in 23 and 11 speaking in 8, and asks candidates to allow about two hours. Scores are reported on a 1–6 scale for each section and overall, the overall being the average of the four rounded to the nearest half band, and ETS publishes the correspondence with the old scale: an overall 5 sits at 95 and above on the 0–120 total, 5.5 at 107 and above, 4.5 at 86 and above and 4 at 72 and above.',
       },
       {
         type: 'list',
-        title: 'The four sections',
+        title: 'What makes the redesigned TOEFL distinctive',
         items: [
-          { text: 'Reading', note: 'academic passages from university-level material, with questions on detail, inference, vocabulary, sentence function and passage organisation.' },
-          { text: 'Listening', note: 'academic lectures and campus conversations, with questions on main idea, detail, function, attitude and organisation. Note-taking is permitted and necessary.' },
-          { text: 'Speaking', note: 'recorded responses to prompts — one independent task expressing an opinion, and integrated tasks drawing on a reading passage and a listening extract.' },
-          { text: 'Writing', note: 'an integrated task requiring you to relate a lecture to a reading passage, and a second task requiring a written contribution to an academic discussion.' },
+          { text: 'Everyday and academic English in one test', note: 'the early tasks in each section are practical and short; the later ones are academic, which is where the old test lived entirely.' },
+          { text: 'Adaptive and about two hours', note: 'shorter than IELTS and close to PTE Academic in length, with the difficulty and count of items adjusting as you go.' },
+          { text: 'A CEFR-aligned 1–6 scale', note: 'section and overall scores in half bands, with the 0–120 equivalent alongside for two years.' },
+          { text: 'Central scoring and a home option', note: 'no examiner at the centre; the Home Edition is the same test with a live human proctor.' },
         ],
       },
       {
         type: 'note',
-        title: 'Speaking is recorded, not interviewed',
-        text: 'TOEFL speaking responses are spoken into a microphone against a timer, with no examiner present. Candidates who find an interview intimidating often prefer this; candidates who draw energy from interaction often do not. It is a genuine consideration when choosing between TOEFL and IELTS, and worth deciding on the basis of how you actually perform rather than which sounds easier.',
+        title: 'If you prepared for the old TOEFL',
+        text: 'Material written before 2026 describes three or four long reading passages, lectures with note-taking, integrated speaking and writing tasks and a 0–30 section score. None of that is on the current test except Write for an Academic Discussion. The reading and listening practice is still useful for the academic passage and the academic talk; the integrated-task drills are not. ETS’s own practice tests are rebuilt for the new format.',
       },
     ],
     stages: [
       {
         name: 'Reading',
-        mode: 'Academic passages with questions',
+        mode: 'About 30 minutes; about 50 items; three task types',
         detail:
-          'Passages drawn from university-level textbook material across the sciences, social sciences and humanities, with questions on factual detail, inference, vocabulary in context, sentence simplification, rhetorical purpose and passage summary.',
+          'Complete the Words — restore a text in which letters are missing from some words; Read in Daily Life — short practical texts such as notices, messages and schedules with questions; Read an Academic Passage — a university-level passage with comprehension questions on detail, inference, vocabulary and structure.',
       },
       {
         name: 'Listening',
-        mode: 'Lectures and conversations',
+        mode: 'About 29 minutes; about 47 items; four task types',
         detail:
-          'Academic lectures, some with classroom discussion, and conversations in a campus context. Questions cover the main idea, supporting detail, the function of what is said, the speaker’s attitude, and how the material is organised. Note-taking is permitted throughout.',
-      },
-      {
-        name: 'Speaking',
-        mode: 'Recorded responses, timed',
-        detail:
-          'An independent task asking for an opinion on a familiar topic, and integrated tasks requiring you to read a short passage, listen to a related extract, and then speak a response drawing on both — each with a short preparation time and a strict response limit.',
+          'Listen and Choose a Response — pick the reply that fits what was said; Listen to a Conversation — an everyday or campus exchange with questions; Listen to an Announcement — a short public message with questions; Listen to an Academic Talk — a lecture extract with questions on main idea, detail and purpose.',
       },
       {
         name: 'Writing',
-        mode: 'Two tasks',
+        mode: 'About 23 minutes; about 12 items; three task types',
         detail:
-          'An integrated task requiring you to read a passage, listen to a lecture that responds to it, and write an explanation of how they relate; and a second task requiring a written contribution to an online academic discussion, responding to a professor’s question and other students’ posts.',
+          'Build a Sentence — assemble a correct sentence from given parts; Write an Email — a short email to a set purpose and reader; Write for an Academic Discussion — a reasoned post in an online class discussion responding to a professor’s question and other students’ views, the one task retained from the previous test.',
+      },
+      {
+        name: 'Speaking, then scores',
+        mode: 'About 8 minutes; about 11 items; two task types; scores three days after the test',
+        detail:
+          'Listen and Repeat — hear a sentence and say it back; Take an Interview — answer a series of recorded interview questions. Responses are recorded and scored centrally. Section and overall scores on the 1–6 scale, the comparable 0–120 total and MyBest superscores appear in the ETS account three days after the test, with a PDF report a day or two later; scores are valid for two years.',
+      },
+    ],
+    updates: [
+      {
+        type: 'p',
+        text: 'Checked 12 September 2026 on ets.org. The redesigned TOEFL iBT has been the only version administered since 21 January 2026; the two-year transition during which score reports carry both the 1–6 and the 0–120 total runs to January 2028, and institutions are still updating their published requirements from one scale to the other. Candidates taking the test for an Australian visa must select “Taking TOEFL for Australia” at registration, a requirement in force since the same date. Registration is year-round at test centres and for the Home Edition, and the fee for India is US$173 excluding taxes.',
+      },
+      {
+        type: 'table',
+        caption: 'The current facts, from ETS at the date checked.',
+        head: ['Item', 'Detail'],
+        rows: [
+          ['Format', 'Adaptive; four sections; about two hours; test centre or Home Edition with a live proctor'],
+          ['Sections', 'Reading about 50 items / 30 min; Listening 47 / 29; Writing 12 / 23; Speaking 11 / 8'],
+          ['Scale', '1–6 per section and overall, in half bands; overall is the rounded average; 0–120 total also reported to January 2028'],
+          ['Fee in India', 'US$173; express registration within 7 days $49; rescheduling $69; additional score reports $29 each; speaking or writing rescore $80'],
+          ['Results', 'Three days after the test in the ETS account; PDF report 24–48 hours later; MyBest scores combine the best section scores from tests in the last two years'],
+          ['Validity', 'Two years'],
+          ['Retakes', 'Once every three days; no annual limit'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'ETS’s correspondence between the 1–6 scale and the 0–120 scale, overall and by section.',
+        head: ['Band', 'Reading 0–30', 'Listening 0–30', 'Speaking 0–30', 'Writing 0–30', 'Total 0–120'],
+        rows: [
+          ['6', '29–30', '28–30', '28–30', '29–30', '114+'],
+          ['5.5', '27–28', '26–27', '27', '27–28', '107+'],
+          ['5', '24–26', '22–25', '25–26', '24–26', '95+'],
+          ['4.5', '22–23', '20–21', '23–24', '21–23', '86+'],
+          ['4', '18–21', '17–19', '20–22', '17–20', '72+'],
+          ['3.5', '12–17', '13–16', '18–19', '15–16', '58+'],
+          ['3', '6–11', '9–12', '16–17', '13–14', '44+'],
+        ],
+      },
+      {
+        type: 'links',
+        title: 'Check ETS directly',
+        items: [
+          { label: 'ETS — TOEFL iBT test content and structure', href: 'https://www.ets.org/toefl/test-takers/ibt/about/content.html' },
+          { label: 'ETS — understanding TOEFL scores', href: 'https://www.ets.org/toefl/test-takers/ibt/scores/understand-scores.html' },
+          { label: 'ETS — getting your scores', href: 'https://www.ets.org/toefl/test-takers/ibt/scores/get-scores.html' },
+          { label: 'ETS — registration fees', href: 'https://www.ets.org/toefl/test-takers/ibt/register/fees.html' },
+          { label: 'ETS — Home Edition', href: 'https://www.ets.org/toefl/test-takers/ibt/about/testing-options/at-home.html' },
+        ],
+      },
+    ],
+    sources: [
+      {
+        type: 'p',
+        text: 'Checked 12 September 2026 against ETS’s TOEFL iBT content and structure page, its score-understanding and score-release pages, the registration fee page with India selected, and the Home Edition page. The 1–6 to 0–120 table is reproduced from ETS. The retake interval is ETS’s standing rule; confirm it and the fee at registration.',
+      },
+      {
+        type: 'links',
+        title: 'Official pages',
+        items: [
+          { label: 'ETS — TOEFL iBT test content and structure', href: 'https://www.ets.org/toefl/test-takers/ibt/about/content.html' },
+          { label: 'ETS — understanding TOEFL scores', href: 'https://www.ets.org/toefl/test-takers/ibt/scores/understand-scores.html' },
+          { label: 'ETS — getting your scores', href: 'https://www.ets.org/toefl/test-takers/ibt/scores/get-scores.html' },
+          { label: 'ETS — registration fees', href: 'https://www.ets.org/toefl/test-takers/ibt/register/fees.html' },
+          { label: 'ETS — TOEFL iBT for test takers', href: 'https://www.ets.org/toefl/test-takers/ibt/about.html' },
+        ],
       },
     ],
     resources: {
       syllabus: {
         description:
-          'TOEFL iBT content — the four sections, the integrated task types and what each assesses.',
+          'TOEFL iBT syllabus for the 2026 test — the twelve task types across reading, listening, writing and speaking, what each asks, and how the sections are timed.',
         lead: [
-          'TOEFL has task types rather than a syllabus, and the integrated tasks are the ones that need specific preparation.',
+          'TOEFL has task types rather than a syllabus, and since January 2026 there are twelve of them, from a gap-fill to an academic discussion post.',
         ],
         blocks: [
+          {
+            type: 'table',
+            caption: 'Task types by section, as ETS lists them. Item counts and times are approximate because the test adapts.',
+            head: ['Section', 'Task types', 'Items', 'Time'],
+            rows: [
+              ['Reading', 'Complete the Words; Read in Daily Life; Read an Academic Passage', 'About 50', 'About 30 minutes'],
+              ['Listening', 'Listen and Choose a Response; Listen to a Conversation; Listen to an Announcement; Listen to an Academic Talk', 'About 47', 'About 29 minutes'],
+              ['Writing', 'Build a Sentence; Write an Email; Write for an Academic Discussion', 'About 12', 'About 23 minutes'],
+              ['Speaking', 'Listen and Repeat; Take an Interview', 'About 11', 'About 8 minutes'],
+            ],
+          },
           {
             type: 'defs',
             items: [
               [
                 'Reading',
-                'Academic passages of several hundred words from university-level textbook material, with question types covering factual information, negative factual information, inference, rhetorical purpose, vocabulary in context, reference, sentence simplification, sentence insertion and a final summary or table-completion question worth more than the others.',
+                'Complete the Words presents a short text with letters removed from words and asks you to restore them — a test of vocabulary, spelling and grammar at reading speed. Read in Daily Life uses short practical texts: a notice, a message, a schedule, a set of instructions. Read an Academic Passage is the descendant of the old reading section — a university-level passage with questions on detail, inference, vocabulary in context and organisation.',
               ],
               [
                 'Listening',
-                'Academic lectures, some including student questions or discussion, and conversations between students or between a student and university staff. Question types cover the main idea, detail, the function of a statement, the speaker’s attitude, connecting content and making inferences. Material is played once and note-taking is essential.',
+                'Listen and Choose a Response plays a short utterance and asks for the reply that fits. Listen to a Conversation and Listen to an Announcement use everyday and campus audio with comprehension questions. Listen to an Academic Talk is a lecture extract with questions on the main idea, supporting detail and the speaker’s purpose. Audio plays once.',
               ],
               [
-                'Speaking — independent task',
-                'A question about a familiar topic — a preference, an opinion, a choice — with a short preparation time and a strict response limit. Assessed on delivery, language use and topic development.',
+                'Writing',
+                'Build a Sentence gives the parts of a sentence to assemble correctly. Write an Email sets a purpose and a reader and asks for a short, appropriately toned message. Write for an Academic Discussion presents a professor’s question and two students’ posts and asks for a reasoned contribution of your own — the task carried over from the previous test, and the longest piece of writing in the current one.',
               ],
               [
-                'Speaking — integrated tasks',
-                'Tasks requiring you to read a short passage, listen to a related lecture or conversation, and then speak a response that accurately relates the two. These test comprehension and synthesis under time as much as they test spoken English, and they are what most distinguishes TOEFL from other proficiency tests.',
-              ],
-              [
-                'Writing — integrated task',
-                'A reading passage presenting a position, followed by a lecture that challenges or complicates it, and a written response explaining how the lecture relates to the reading. Accuracy of the summary matters more than the elegance of the prose.',
-              ],
-              [
-                'Writing — academic discussion task',
-                'A professor’s question and short student responses in an online discussion format, to which you contribute a reasoned post of your own within a short time limit. Assessed on the relevance and development of the contribution as well as on language.',
+                'Speaking',
+                'Listen and Repeat plays a sentence to be said back accurately, testing pronunciation and processing of connected speech. Take an Interview asks a sequence of recorded interview questions to be answered aloud, scored on delivery, language and how fully the question is addressed. There is no examiner; responses are recorded and scored centrally.',
               ],
             ],
-          },
-          {
-            type: 'p',
-            text: 'The integrated tasks are the heart of TOEFL and the reason note-taking is a genuinely examinable skill here. You cannot re-listen to the lecture, and your response must accurately represent what it said. A candidate with excellent English who takes poor notes will score below one with adequate English and a reliable note-taking system.',
-          },
-          {
-            type: 'list',
-            title: 'Why the integrated tasks define this test',
-            items: [
-              { text: 'They combine skills the way academic work does', note: 'read a source, hear it challenged or extended, then respond in a way that represents both accurately. No other proficiency test asks for that operation directly.' },
-              { text: 'They depend on notes rather than memory', note: 'the lecture plays once, and your response has to reproduce its points. What you wrote down while listening is what you have to work with.' },
-              { text: 'They reward accuracy over elegance', note: 'a response that represents the lecture correctly in plain prose scores better than a well-written response that misstates it.' },
-              { text: 'They are the tasks candidates practise least', note: 'because they are effortful to simulate. That is precisely why they repay preparation more than any amount of general English study.' },
-            ],
-          },
-          {
-            type: 'p',
-            text: 'The consequence for planning is that TOEFL preparation is not primarily an English project for a candidate who already reads and writes competently. It is a note-taking and task-familiarity project. A strong English user with no note-taking system will underperform a moderate one who has practised capturing a lecture’s structure quickly — which is an unusual thing to be true of a language test.',
           },
           {
             type: 'note',
-            title: 'Reading and listening are academic in register',
-            text: 'Passages are drawn from university textbook material and lectures are genuine academic monologues, often with digressions and student interruptions. Candidates whose English is fluent in conversational registers but untested on dense expository material find this the harder adjustment, and daily academic reading and listening is the remedy.',
+            title: 'The one task that survived, and why it still matters',
+            text: 'Write for an Academic Discussion is the only task shared with the pre-2026 test and the one that most resembles university work: read a question and two positions, take a view, give reasons, and write it in the register of a class forum. It is the task where preparation moves a band most, because the others are short and reward accuracy over development.',
+          },
+          {
+            type: 'links',
+            title: 'Official pages',
+            items: [
+              { label: 'ETS — TOEFL iBT test content and structure', href: 'https://www.ets.org/toefl/test-takers/ibt/about/content.html' },
+              { label: 'IELTS guide', to: '/entrance-exams/international/ielts/' },
+              { label: 'PTE Academic guide', to: '/entrance-exams/international/pte/' },
+            ],
           },
         ],
       },
       'exam-pattern': {
         description:
-          'TOEFL iBT exam pattern — section structure, scoring out of 120, timing and the recorded speaking format.',
+          'TOEFL iBT exam pattern since January 2026 — the adaptive two-hour sitting, section timings, the 1–6 scale and its 0–120 equivalent, MyBest, fees and results.',
         lead: [
-          'Four sections, thirty points each, and a format that mirrors academic work more closely than any other proficiency test.',
+          'Two hours, four sections, twelve task types, and a score on 1–6 that comes with its old-scale equivalent for two years.',
         ],
         blocks: [
           {
             type: 'table',
-            caption:
-              'Test structure. Confirm current section lengths and task counts on the official site, as the test has been shortened.',
-            head: ['Section', 'Content', 'Score range'],
+            caption: 'Section timing as ETS publishes it; directions are not included and the adaptive design varies the count a little.',
+            head: ['Section', 'Items', 'Base time', 'Score'],
             rows: [
-              ['Reading', 'Academic passages with question sets', '0–30'],
-              ['Listening', 'Lectures and campus conversations', '0–30'],
-              ['Speaking', 'Independent and integrated tasks, recorded', '0–30'],
-              ['Writing', 'Integrated task and academic discussion task', '0–30'],
-              ['Total', '', '0–120'],
+              ['Reading', 'About 50', 'About 30 minutes', '1–6 in half bands'],
+              ['Listening', 'About 47', 'About 29 minutes', '1–6 in half bands'],
+              ['Writing', 'About 12', 'About 23 minutes', '1–6 in half bands'],
+              ['Speaking', 'About 11', 'About 8 minutes', '1–6 in half bands'],
+              ['Overall', '—', 'About two hours', 'Average of the four, rounded to the nearest half band; 0–120 equivalent also shown'],
             ],
-          },
-          {
-            type: 'p',
-            text: 'Universities set their own requirements, commonly specifying both a total and per-section minimums. As with IELTS, that means your weakest section may determine your outcome — and for many candidates the weakest section is speaking, precisely because recording a timed response with no interlocutor is an unfamiliar task.',
-          },
-          {
-            type: 'list',
-            title: 'Practical points',
-            items: [
-              { text: 'Note-taking is permitted and necessary', note: 'particularly in listening and the integrated tasks, where material is played once.' },
-              { text: 'Speaking responses are strictly timed', note: 'with short preparation and a hard stop. Practising to the clock is essential.' },
-              { text: 'The test is delivered at centres and at home', note: 'with the same content; choose based on your own conditions.' },
-              { text: 'Scores are generally valid for two years', note: 'and can be sent to institutions you nominate.' },
-            ],
-          },
-          {
-            type: 'note',
-            title: 'The test has been shortened',
-            text: 'ETS revised the TOEFL iBT to a shorter format, changing section lengths and replacing the independent essay with the academic discussion task. Preparation material written for the earlier version therefore includes a task the test no longer sets. Confirm the current structure on the official site before selecting materials.',
-          },
-          {
-            type: 'p',
-            text: 'The recorded speaking format is unlike anything in Indian assessment and is worth understanding before you meet it. You hear or read a prompt, you get a short preparation window measured in seconds, and then you speak into a microphone until a hard stop. There is no examiner reacting to you, no opportunity to restart, and no partial credit for a point you were about to make when the timer ended. Candidates who have never rehearsed that sequence lose points to the format rather than to their English.',
           },
           {
             type: 'defs',
             items: [
               [
-                'Why note-taking is not optional',
-                'Material in the listening section and in the integrated tasks plays once. Everything you will need in your response has to be captured while you listen, which makes a compact, consistent note-taking system a scored skill rather than a study aid.',
+                'How the scale works',
+                'Each section is scored 1 to 6 in half-band steps, and the overall score is the mean of the four rounded to the nearest half band — an average of 5.125 reports as 5. ETS’s published correspondence puts an overall 5 at 95 or more on the 0–120 total, 5.5 at 107 or more and 6 at 114 or more. Institutions are updating their requirements; where a university still quotes 0–120, the report’s comparable total answers it.',
               ],
               [
-                'What per-section minimums imply',
-                'Universities commonly specify both a total and minimums in individual sections. As with IELTS, your weakest section can fail a requirement your total comfortably meets, which makes it the right target for your final weeks.',
+                'MyBest scores',
+                'The report also shows superscores — the best section scores from all tests taken in the previous two years, combined — which many institutions accept; check the admissions page.',
               ],
               [
-                'Centre or at home',
-                'The same content is delivered both ways. The choice should turn on your own conditions — a reliable quiet space and connection, or a centre — rather than on a belief that one is easier, because the test itself is not.',
+                'Delivery',
+                'At a test centre, or as the Home Edition on your own computer with a live human proctor. The same test, timing and scoring apply. Some visa authorities do not accept the Home Edition; Australia requires the “Taking TOEFL for Australia” selection at registration.',
+              ],
+              [
+                'Fees and services',
+                'US$173 in India, before taxes. Express registration inside seven days of the date is $49, rescheduling $69, each additional score report $29, a speaking or writing rescore $80 or both for $160, express scoring $129.',
+              ],
+              [
+                'Results',
+                'Available in the ETS account three days after the test, with the exact date shown at the end of the test and an email when ready; the PDF report follows in 24 to 48 hours. Scores are valid for two years.',
               ],
             ],
-          },
-          {
-            type: 'note',
-            title: 'The test was shortened — check your material',
-            text: 'ETS revised TOEFL iBT to a shorter format, changing section lengths and replacing one writing task with the academic discussion task. A great deal of widely circulated preparation material still describes the older, longer test, and practising a task type that no longer appears is time taken from one that does.',
           },
         ],
       },
       'previous-year-papers': {
         description:
-          'TOEFL practice material — official ETS tests, integrated task practice and note-taking systems.',
+          'TOEFL iBT practice — ETS’s rebuilt practice tests for the 2026 format, what older material still teaches, and what to take from each attempt.',
         lead: [
-          'Practise with official ETS material, and treat the integrated tasks as a skill to build rather than questions to answer.',
+          'ETS does not release past papers, and practice material dated before 2026 describes a different test. Use the official practice built for the new format.',
         ],
         blocks: [
           {
             type: 'p',
-            text: 'The integrated tasks are what most repay practice, because they combine several skills under time in a way no other test does. Building a reliable note-taking system — abbreviations, a consistent layout, a way of marking the relationship between the reading and the lecture — is preparation that pays across the speaking and writing sections simultaneously.',
+            text: 'ETS sells TOEFL Practice Online tests scored like the live test, singly or in packs, and publishes free sample questions for each task type. Because the test adapts, the point of a practice test is to learn the twelve task mechanics and to see a scored estimate on the 1–6 scale, not to meet familiar questions. Older books remain useful for academic reading and listening — the academic passage and the academic talk are recognisable descendants — and useless for integrated tasks, which no longer exist.',
           },
           {
-            type: 'steps',
-            title: 'How to practise',
+            type: 'list',
+            title: 'What to take from each practice test',
             items: [
-              { text: 'Develop a note-taking system and use it consistently.', note: 'Abbreviations, layout, and a way of marking agreement or contradiction between sources.' },
-              { text: 'Practise speaking responses against the clock, recorded.', note: 'Then listen back. It is uncomfortable and it is the fastest way to improve.' },
-              { text: 'Practise integrated writing for accuracy first.', note: 'The task rewards representing the lecture correctly more than writing elegantly.' },
-              { text: 'Read academic material daily.', note: 'TOEFL reading passages come from textbook-style writing; familiarity with the register helps.' },
-              { text: 'Listen to lectures and take notes without pausing.', note: 'Exactly as the test presents them.' },
+              { text: 'Speed on the short tasks', note: 'Complete the Words, Build a Sentence and Listen and Choose a Response reward fast, accurate processing; hesitation costs more than difficulty.' },
+              { text: 'Register in the email and the discussion post', note: 'the reader and the purpose set the tone; a well-argued post in the wrong register loses marks.' },
+              { text: 'Accuracy in Listen and Repeat', note: 'every word and the stress pattern; it is closer to PTE’s Repeat Sentence than to anything in the old TOEFL.' },
+              { text: 'Fullness in the interview', note: 'answers that stop early leave the rater little to score.' },
             ],
           },
           {
             type: 'links',
-            title: 'Related pages',
+            title: 'Practise with',
             items: [
-              { label: 'IELTS exam guide', to: '/entrance-exams/international/ielts/' },
-              { label: 'GRE exam guide', to: '/entrance-exams/international/gre/' },
+              { label: 'ETS — TOEFL preparation and practice tests', href: 'https://www.ets.org/toefl/test-takers/ibt/prepare.html' },
               { label: 'English study material', to: '/study-material/english/' },
+              { label: 'IELTS guide', to: '/entrance-exams/international/ielts/' },
             ],
-          },
-          {
-            type: 'list',
-            title: 'What a usable note-taking system looks like',
-            items: [
-              { text: 'Structure before detail', note: 'capture the shape of the lecture — the claim, the two or three supports, the qualification — rather than trying to transcribe. A response built on structure is accurate; one built on scattered details is not.' },
-              { text: 'Consistent abbreviations', note: 'invented in the moment they slow you down; practised for weeks they become automatic. A small personal set, used every time, is worth more than a comprehensive one you have to think about.' },
-              { text: 'A split page for integrated tasks', note: 'reading points on one side, lecture points opposite. The relationship between the two is what the task asks you to describe, and the layout makes it visible.' },
-              { text: 'Legibility over completeness', note: 'notes you cannot read are worse than fewer notes you can. This is the most common failure and it only shows up when you try to use them.' },
-            ],
-          },
-          {
-            type: 'p',
-            text: 'Practise speaking responses against the clock and recorded, from early in the preparation. The discomfort of listening back is exactly what makes it useful: you hear the filler words, the pace that was too slow to finish, and the point that trailed off unmade. Candidates who prepare speaking silently arrive having never experienced the constraint the section is built around.',
-          },
-          {
-            type: 'p',
-            text: 'For integrated writing, check your response against the source rather than against a model. The task is to represent what the lecture said about the reading, and the characteristic failure is a fluent response that misstates the relationship — saying the lecture supports the passage when it challenged it, or attributing a point to the wrong source. Accuracy is the score; the prose is secondary.',
-          },
-          {
-            type: 'note',
-            title: 'Listen to academic lectures daily, taking notes',
-            text: 'Recorded university lectures, long-form academic talks and serious podcasts all work. The habit builds two things at once — comfort with the register the listening section uses, and the note-taking system that the integrated tasks depend on — and it is the closest daily approximation to what this test actually measures.',
           },
         ],
       },
       'mock-tests': {
         description:
-          'TOEFL practice tests — full four-section practice with recorded speaking and timed integrated tasks.',
+          'TOEFL iBT mock tests — full two-hour sittings of the 2026 format with a headset, scored on the 1–6 scale, and reading the result against a requirement.',
         lead: [
-          'Record your speaking responses in practice. Reading a response aloud without a timer is not practising this test.',
+          'Sit the full two hours with a headset and microphone, in the section order the test uses, and read the result in bands.',
         ],
         blocks: [
           {
-            type: 'p',
-            text: 'The speaking section is where candidates most often under-practise, because recording yourself is uncomfortable and there is no one to respond to. But the task — a short preparation, a hard time limit, a microphone — is unfamiliar enough that meeting it first on test day costs points that practice would have secured.',
-          },
-          {
-            type: 'list',
-            title: 'What to review',
+            type: 'steps',
+            title: 'A routine',
             items: [
-              { text: 'Your weakest section', note: 'universities frequently set per-section minimums, so it may decide your outcome.' },
-              { text: 'Speaking responses played back', note: 'listen for pace, filler words, and whether you completed your point within the limit.' },
-              { text: 'Integrated task accuracy', note: 'did your response actually represent what the lecture said?' },
-              { text: 'Note quality', note: 'if your notes were not usable, that is the fix rather than more listening practice.' },
+              { title: 'Take one official practice test before preparing', text: 'The 1–6 estimate by section shows which of the four needs the time; the sections are short enough that a weak one can move quickly.' },
+              { title: 'Rehearse the microphone tasks', text: 'Listen and Repeat and Take an Interview are recorded against a clock; practise speaking immediately and steadily.' },
+              { title: 'Time the writing', text: 'About 23 minutes covers Build a Sentence, an email and the discussion post; the post should get most of it.' },
+              { title: 'Convert the requirement, not the score', text: 'If a university still quotes 0–120, use ETS’s table to see which band it corresponds to and aim for the band.' },
+              { title: 'Book when the estimate meets every section minimum', text: 'Many institutions set section floors as well as an overall; MyBest can combine attempts if the admissions page allows it.' },
             ],
           },
           {
             type: 'links',
-            title: 'Start practising',
+            title: 'Start with',
             items: [
-              { label: 'English study material', to: '/study-material/english/' },
               { label: 'All free mock tests', to: '/mock-tests/free/' },
+              { label: 'English study material', to: '/study-material/english/' },
             ],
-          },
-          {
-            type: 'steps',
-            title: 'A practice routine for a four-section test',
-            items: [
-              { title: 'Take full tests in one sitting', text: 'Reading, listening, speaking and writing back to back. The writing tasks arrive when concentration is lowest, and practising them fresh never rehearses that.' },
-              { title: 'Record every speaking response', text: 'And listen back with a specific question: did I finish my point inside the time, and how much of the response was filler?' },
-              { title: 'Check integrated responses against the source', text: 'Not for style but for accuracy. Did the response represent the lecture correctly and connect it to the reading?' },
-              { title: 'Assess your notes, not just your answers', text: 'If the notes were unusable, that is the finding. More listening practice will not help; a better system will.' },
-              { title: 'Track the weakest section', text: 'Per-section minimums make it the constraint, and it should own your final fortnight.' },
-            ],
-          },
-          {
-            type: 'p',
-            text: 'The speaking section is where under-practice is most common and most costly. It is uncomfortable to record yourself, there is no interlocutor to make it feel like a conversation, and the timing is unforgiving. All of that argues for doing it more rather than less — a candidate who has recorded thirty responses meets the format as routine, and one who has recorded none meets it as an obstacle.',
-          },
-          {
-            type: 'note',
-            title: 'Use material written for the current format',
-            text: 'The shortened test changed section lengths and replaced a writing task. Practice tests built for the older format will misrepresent both the pacing and the tasks, which makes them worse than no practice for judging readiness — they produce a score against a test that no longer exists.',
           },
         ],
       },
       preparation: {
         description:
-          'TOEFL preparation — building note-taking, practising integrated tasks and choosing between TOEFL and IELTS.',
+          'TOEFL iBT preparation for the 2026 test — everyday and academic English together, the discussion post, recorded speaking, and registration choices for a visa.',
         lead: [
-          'Note-taking and integrated tasks are what TOEFL preparation is really about. General English work supports them rather than replacing them.',
+          'The redesigned TOEFL rewards breadth — practical English done accurately and fast, plus one academic task done well.',
         ],
         blocks: [
           {
-            type: 'p',
-            text: 'A candidate with strong English can still score moderately on TOEFL if their note-taking is weak, because the integrated tasks require accurately representing material heard once. Conversely, a candidate with adequate English and a reliable system performs above expectation. That makes note-taking the highest-leverage skill in the preparation, and it is one nobody thinks to practise.',
-          },
-          {
             type: 'steps',
-            title: 'A six to ten week plan',
+            title: 'From choosing the test to sending scores',
             items: [
-              { text: 'Week one — decide between TOEFL and IELTS deliberately.', note: 'Recorded speaking versus an interview; academic integrated tasks versus more general ones. Choose on how you actually perform.' },
-              { text: 'Week one — build a note-taking system.', note: 'Abbreviations, layout, and a way of marking how a lecture relates to a reading.' },
-              { text: 'Weeks one to three — task familiarity across all four sections.', note: 'Meet every task type before practising for score.' },
-              { text: 'Throughout — listen to academic lectures daily, taking notes.', note: 'Without pausing, exactly as the test presents them.' },
-              { text: 'Throughout — record speaking responses to the clock.', note: 'And listen back. Uncomfortable, and the fastest route to improvement.' },
-              { text: 'From week three — integrated writing practice.', note: 'Prioritising accuracy of representation over elegance of prose.' },
-              { text: 'Final weeks — full official practice tests.', note: 'With the current shortened format, and focused work on your weakest section.' },
+              { title: 'Confirm the scale the university quotes', text: 'Requirements are being restated from 0–120 to 1–6; the report carries both until January 2028, so either can be met, but know which band you need.' },
+              { title: 'Choose centre or Home Edition with the visa in mind', text: 'Universities accept both; Australia accepts neither for visas unless taken as “Taking TOEFL for Australia” at a centre, and other authorities have their own rules.' },
+              { title: 'Build vocabulary and grammar for the short tasks', text: 'Complete the Words, Build a Sentence and Listen and Choose a Response are quick and numerous; accuracy across many small items is where the reading and writing bands are made.' },
+              { title: 'Practise the academic passage and talk', text: 'The only long items; daily academic reading and lecture listening remain the preparation for them.' },
+              { title: 'Write discussion posts and emails to a timer', text: 'A clear position with two reasons and a reply to the other view for the post; purpose, tone and completeness for the email.' },
+              { title: 'Register early and read the score date', text: 'Scores arrive three days after the test and the exact date is shown at the end of it; add a week for the PDF and for sending to institutions.' },
             ],
-          },
-          {
-            type: 'list',
-            title: 'Where TOEFL candidates lose points',
-            items: [
-              { text: 'Weak note-taking', note: 'the integrated tasks depend on it and nobody practises it.' },
-              { text: 'Not recording speaking practice', note: 'the format is unfamiliar enough to cost points on first encounter.' },
-              { text: 'Writing elegantly but inaccurately in integrated tasks', note: 'the task rewards representing the source correctly.' },
-              { text: 'Using material for the older, longer format', note: 'the test was shortened and one task type replaced.' },
-              { text: 'Ignoring the weakest section', note: 'universities frequently set per-section minimums.' },
-            ],
-          },
-          {
-            type: 'defs',
-            items: [
-              [
-                'The note-taking system — build it first',
-                'A compact set of abbreviations, a consistent page layout, and the discipline of capturing structure rather than detail. It underpins the listening section and both integrated task types, and it takes a fortnight of daily practice to become automatic.',
-              ],
-              [
-                'Task familiarity — the next three weeks',
-                'Knowing exactly what each task asks, how long you have, and what a good response contains. Fast to acquire and the source of the largest early gains.',
-              ],
-              [
-                'Speaking under the clock — throughout',
-                'Recorded, timed, and reviewed. The most under-practised section of the test and the one where the format itself costs points on first encounter.',
-              ],
-              [
-                'Academic reading and listening — the daily base',
-                'The underlying proficiency in the specific register the test uses. It sets the ceiling and it improves slowly, which is why it should run from day one.',
-              ],
-            ],
-          },
-          {
-            type: 'p',
-            text: 'The choice between TOEFL and IELTS deserves a deliberate decision rather than a default. TOEFL is entirely computer-delivered with recorded speaking and integrated tasks; IELTS speaking is a live interaction and its tasks are more separable. Candidates who are comfortable speaking to a person and less comfortable with a microphone and a timer often do better in IELTS; candidates strong in academic reading and note-taking often do better in TOEFL. Check first that your target institutions accept both.',
           },
           {
             type: 'note',
-            title: 'A strong English user can still score moderately',
-            text: 'Because so much of this test depends on note-taking and on task-specific technique, fluency alone does not guarantee a high score. That is worth knowing early, because candidates confident in their English frequently allocate two weeks to a test whose distinctive demands take longer than that to learn.',
+            title: 'Note-taking is no longer the skill',
+            text: 'The old TOEFL turned on capturing a lecture accurately enough to summarise it. The current test plays shorter audio with questions that follow, and its writing tasks stand alone. Candidates coached on the old integrated method should redirect that effort to speed and accuracy on the short tasks and to the discussion post.',
           },
         ],
       },
       'study-material': {
         description:
-          'TOEFL study material — English notes to support proficiency, alongside official practice for task familiarity.',
+          'TOEFL iBT study material for the 2026 format — ETS’s official practice and guides, and everyday and academic English sources matched to the twelve task types.',
         lead: [
-          'Official ETS material for the tasks, general English work for the proficiency underneath them.',
+          'Official practice for the format; graded everyday reading, academic listening and short-form writing for the rest.',
         ],
         blocks: [
           {
-            type: 'p',
-            text: 'As with IELTS, TOEFL preparation divides into task familiarity, which only official practice material provides, and underlying proficiency, which comes from ordinary English study and daily use of the language. The notes below support the second, and are most useful for candidates who need to raise general reading speed, vocabulary and grammatical accuracy rather than only learn the format.',
+            type: 'table',
+            caption: 'By section.',
+            head: ['Section', 'What to use', 'Note'],
+            rows: [
+              ['Reading', 'ETS sample questions; notices, messages and schedules for daily-life reading; an academic passage a day', 'Three task types from gap-fill to passage.'],
+              ['Listening', 'Campus and workplace conversations, announcements, short lectures in several accents', 'Audio plays once.'],
+              ['Writing', 'Model emails by purpose; discussion-post practice with a timer; a grammar reference for Build a Sentence', 'The post is the longest task.'],
+              ['Speaking', 'Sentence repetition drills; recorded interview answers on study, work and everyday topics', 'Recorded, scored centrally.'],
+              ['Format', 'ETS TOEFL Practice Online tests built for the 2026 test', 'Scored on the 1–6 scale.'],
+            ],
           },
           {
             type: 'links',
-            title: 'Supporting notes',
+            title: 'Read next',
             items: [
-              { label: 'English grammar and vocabulary', to: '/study-material/english/' },
-              { label: 'Reading comprehension', to: '/study-material/varc/' },
-              { label: 'IELTS exam guide', to: '/entrance-exams/international/ielts/' },
-              { label: 'GRE exam guide', to: '/entrance-exams/international/gre/' },
+              { label: 'IELTS guide', to: '/entrance-exams/international/ielts/' },
+              { label: 'PTE Academic guide', to: '/entrance-exams/international/pte/' },
+              { label: 'Duolingo English Test guide', to: '/entrance-exams/international/duolingo-english-test/' },
+              { label: 'Student visa process', to: '/entrance-exams/international/visa-process/' },
             ],
-          },
-          {
-            type: 'list',
-            title: 'A daily routine',
-            items: [
-              'Listen to a recorded academic lecture and take notes without pausing.',
-              'Read a textbook-style academic passage and summarise its argument in writing.',
-              'Record a two-minute spoken response to a prompt, then listen back critically.',
-              'Practise one integrated task a week, checking your response against the source.',
-              'Build vocabulary through academic reading rather than isolated word lists.',
-            ],
-          },
-          {
-            type: 'defs',
-            items: [
-              [
-                'Official ETS practice — for the tasks',
-                'The only reliable source for the current format, the timings and the exact wording of the task types. This half of the preparation cannot be substituted.',
-              ],
-              [
-                'Academic lectures and textbook prose — for the register',
-                'Recorded lectures, serious podcasts and university-level expository writing. The test draws on this register specifically, and general English material rarely does.',
-              ],
-              [
-                'A recording device — for speaking',
-                'Any phone will do. What matters is that responses are produced under time and listened back to, because that is the only way the format becomes familiar.',
-              ],
-              [
-                'General English notes — for the proficiency underneath',
-                'Grammar for accuracy and vocabulary for range, supporting the writing and speaking sections rather than driving them.',
-              ],
-            ],
-          },
-          {
-            type: 'p',
-            text: 'Build vocabulary through academic reading rather than isolated lists. The register the test uses is expository and subject-specific, and words met in that context arrive with the collocations and the level of formality that a written or spoken response needs. A list learned separately supplies the word without the knowledge of where it belongs.',
-          },
-          {
-            type: 'note',
-            title: 'One integrated task a week, checked properly',
-            text: 'Write or record it, then go back to the reading and the lecture and confirm that your response represented both accurately. That checking step is the part that produces improvement, and it is the part candidates skip because the response felt fluent while they were producing it.',
-          },
-          {
-            type: 'p',
-            text: 'A closing word on sequencing the material across a preparation. Spend the first fortnight almost entirely on the note-taking system and on task familiarity, because those produce the largest early gains and because everything else depends on them. Give the middle weeks to the integrated tasks and to recorded speaking, which are the components that need repetition rather than understanding. Keep the daily academic reading and listening running throughout, and reserve the final fortnight for full official practice tests and for whichever section your scores keep identifying as the weakest. That order matters more than the total hours: a candidate who reverses it spends months raising a proficiency ceiling they never learn to reach.',
           },
         ],
       },
     },
     faqs: [
       {
-        q: 'What is the TOEFL iBT exam pattern?',
-        a: 'Four sections — Reading, Listening, Speaking and Writing — each scored from 0 to 30 for a total out of 120. Reading uses academic passages from university-level material; Listening uses lectures and campus conversations; Speaking requires recorded responses to independent and integrated prompts; and Writing comprises an integrated task relating a lecture to a reading passage, plus an academic discussion task. The test was shortened by ETS, so confirm current section lengths on the official site.',
+        q: 'What changed in the TOEFL iBT in 2026?',
+        a: 'From 21 January 2026 ETS replaced the long passages, lectures and integrated tasks with twelve shorter task types across the same four sections, made the test adaptive and about two hours long, and moved scoring to a 1–6 scale in half bands aligned to the CEFR. Score reports also show a comparable 0–120 total until January 2028 so that institutions still quoting the old scale can read them. Write for an Academic Discussion is the one task carried over.',
       },
       {
-        q: 'What are TOEFL integrated tasks?',
-        a: 'Tasks that require you to read a passage, listen to a lecture on the same subject, and then speak or write a response drawing accurately on both. They appear in the speaking and writing sections and are what most distinguishes TOEFL from other English tests, since they simulate actual academic work rather than testing language in isolation. They also make note-taking a genuinely examinable skill, because the listening material is played once and your response must represent it correctly.',
+        q: 'What is the TOEFL iBT exam pattern now?',
+        a: 'Reading, about 50 items in 30 minutes — Complete the Words, Read in Daily Life, Read an Academic Passage; Listening, about 47 in 29 — Listen and Choose a Response, Listen to a Conversation, Listen to an Announcement, Listen to an Academic Talk; Writing, about 12 in 23 — Build a Sentence, Write an Email, Write for an Academic Discussion; Speaking, about 11 in 8 — Listen and Repeat, Take an Interview. The test adapts, so counts and times vary slightly, and it can be taken at a centre or at home.',
       },
       {
-        q: 'Should I take TOEFL or IELTS?',
-        a: 'Check first which your target institutions accept, since most accept both but some prefer one. Beyond that, the practical difference is the speaking section: TOEFL records your responses against a timer with no examiner present, while IELTS is a face-to-face or video interview. Candidates who find interviews intimidating often prefer TOEFL; those who draw energy from interaction often prefer IELTS. TOEFL is also more distinctly academic in content, with its integrated tasks; IELTS reading and writing are more varied in register.',
+        q: 'How does the new TOEFL 1–6 score compare with the old 0–120?',
+        a: 'ETS publishes the correspondence: an overall 6 corresponds to 114 and above, 5.5 to 107 and above, 5 to 95 and above, 4.5 to 86 and above, 4 to 72 and above and 3.5 to 58 and above. Section scores map similarly — a reading 5 is 24–26 on the old 0–30 scale, a speaking 5 is 25–26. The report shows both until January 2028.',
       },
       {
-        q: 'How important is note-taking for TOEFL?',
-        a: 'More than most candidates realise. The integrated speaking and writing tasks require accurately representing a lecture heard once, so a candidate with excellent English but weak notes will score below one with adequate English and a reliable system. Building that system — consistent abbreviations, a clear layout, a way of marking how a lecture agrees with or challenges a reading — is the highest-leverage preparation available and almost nobody practises it deliberately.',
+        q: 'What does the TOEFL cost in India and how soon are scores released?',
+        a: 'US$173 excluding taxes, with express registration $49, rescheduling $69 and additional score reports $29 each. Scores appear in the ETS account three days after the test, with the exact date shown at the end of the test, and the PDF report follows within 24 to 48 hours. Scores are valid for two years.',
       },
       {
-        q: 'How long is a TOEFL score valid?',
-        a: 'Generally two years, with scores sent to institutions you nominate. As with IELTS, plan your test date against your application deadlines: taking it very early risks the score expiring before you apply, while leaving it late removes the option of a retake if a per-section minimum is narrowly missed. Universities frequently set minimums for individual sections as well as a total, so your weakest section may determine whether a score is usable.',
+        q: 'Can the TOEFL be taken at home?',
+        a: 'Yes, as the TOEFL iBT Home Edition on your own computer with a live human proctor — the same test, timing and scoring as the centre version. Universities accept it; some visa authorities do not, and Australia requires the “Taking TOEFL for Australia” selection at registration for a test to count for a visa.',
+      },
+      {
+        q: 'TOEFL or IELTS — which should I take?',
+        a: 'Both are accepted almost everywhere for admission. TOEFL is now about two hours, adaptive, recorded rather than interviewed, and scored on 1–6 with results in three days; IELTS is 2 hours 45 minutes with a face-to-face speaking test, band scores 0–9, and results in one to two days on computer. Visa acceptance differs — IELTS is accepted by all four immigration authorities that require an English test — so check the visa rule before the admission rule.',
       },
     ],
   },
@@ -1414,12 +1446,12 @@ const international = [
       'Its digital format is multistage adaptive: each section has two modules, and your performance in the first determines the difficulty of the second. That structure is short — about two and a quarter hours — and it means the first module of each section carries disproportionate weight in setting your scoring ceiling.',
     ],
     quickFacts: [
-      ['Administered by', 'The College Board'],
-      ['Used for', 'Undergraduate admission in the United States and by some institutions elsewhere'],
-      ['Format', 'Digital, multistage adaptive — two modules per section'],
-      ['Sections', 'Reading and Writing; Math'],
-      ['Scoring', '400–1600 total, with 200–800 per section'],
-      ['Calculator', 'Permitted throughout the Math section'],
+      ['Administered by', 'The College Board, digitally in the Bluebook app at test centres'],
+      ['Used for', 'Undergraduate admission in the United States and at universities elsewhere that accept it; policies are test-required, test-optional or test-blind by college'],
+      ['Format', '2 hours 14 minutes — Reading and Writing 54 questions in 64 minutes, Math 44 in 70, each in two adaptive modules, with a 10-minute break'],
+      ['Scoring', '200–800 per section, 400–1600 total; no penalty for wrong answers'],
+      ['Dates 2026–27', '22 August, 12 September, 3 October, 7 November, 5 December 2026; 6 March, 1 May, 5 June 2027 — the same worldwide'],
+      ['Fee and results', 'US$68 plus a $43 international fee; scores about two weeks after the test'],
     ],
     overview: [
       {
@@ -1470,6 +1502,66 @@ const international = [
         mode: 'Section and total scores',
         detail:
           'Scores of 200 to 800 for each of Reading and Writing and Math, giving a total of 400 to 1600. Candidates may retake the test and many universities consider the best scores across sittings.',
+      },
+    ],
+    updates: [
+      {
+        type: 'p',
+        text: 'Checked 12 September 2026 on satsuite.collegeboard.org. The SAT is digital everywhere, taken in the Bluebook app on a personal or centre device, and the 2026–27 dates are the same for US and international candidates: 22 August, 12 September, 3 October, 7 November and 5 December 2026, then 6 March, 1 May and 5 June 2027, with registration closing about two weeks before each date and a late deadline four days later. The fee outside the US is US$68 plus a $43 international fee; late registration adds $38, a centre change or cancellation $34, and some centres charge a $24 centre fee. Scores are released about two weeks after each date — 16 October for the 3 October test, 20 November for 7 November, 18 December for 5 December — and the first four score reports are free if ordered within nine days of the test.',
+      },
+      {
+        type: 'table',
+        caption: '2026–27 SAT dates and deadlines, as the College Board publishes them; deadlines are 11:59 p.m. US Eastern Time.',
+        head: ['Test date', 'Registration deadline', 'Late registration and changes', 'Scores released'],
+        rows: [
+          ['22 August 2026', '7 August', '11 August', '4 September'],
+          ['12 September 2026', '28 August', '1 September', '25 September'],
+          ['3 October 2026', '18 September', '22 September', '16 October'],
+          ['7 November 2026', '23 October', '27 October', '20 November'],
+          ['5 December 2026', '20 November', '24 November', '18 December'],
+          ['6 March 2027', '19 February', '23 February', 'About two weeks after'],
+          ['1 May 2027', '16 April', '20 April', 'About two weeks after'],
+          ['5 June 2027', '21 May', '25 May', 'About two weeks after'],
+        ],
+      },
+      {
+        type: 'table',
+        caption: 'Structure and fees.',
+        head: ['Item', 'Detail'],
+        rows: [
+          ['Reading and Writing', '54 questions in 64 minutes, two 32-minute modules; the second module’s difficulty follows the first'],
+          ['Math', '44 questions in 70 minutes, two 35-minute modules; calculator allowed throughout; some student-produced responses'],
+          ['Total', '98 questions in 2 hours 14 minutes with a 10-minute break'],
+          ['Scale', '200–800 per section; 400–1600 total'],
+          ['Fee outside the US', 'US$68 plus $43 international fee; late registration $38; centre change $34; cancellation $34, $44 after the change deadline; test-centre fee $24 at some centres'],
+          ['Score reports', 'Four free if ordered within nine days of the test; $15 each after; rush $31'],
+        ],
+      },
+      {
+        type: 'links',
+        title: 'Check the College Board directly',
+        items: [
+          { label: 'College Board — SAT dates and deadlines', href: 'https://satsuite.collegeboard.org/sat/dates-deadlines' },
+          { label: 'College Board — international fees', href: 'https://satsuite.collegeboard.org/sat/registration/international-testing/fees' },
+          { label: 'College Board — how the SAT is structured', href: 'https://satsuite.collegeboard.org/sat/whats-on-the-test/structure' },
+          { label: 'College Board — score release dates', href: 'https://satsuite.collegeboard.org/scores/score-release-dates' },
+        ],
+      },
+    ],
+    sources: [
+      {
+        type: 'p',
+        text: 'Checked 12 September 2026 against the College Board’s SAT dates and deadlines page, its international fees page, its test-structure page and its score-release page. Fees are listed as valid through December 2026; confirm at registration.',
+      },
+      {
+        type: 'links',
+        title: 'Official pages',
+        items: [
+          { label: 'College Board — SAT dates and deadlines', href: 'https://satsuite.collegeboard.org/sat/dates-deadlines' },
+          { label: 'College Board — international fees', href: 'https://satsuite.collegeboard.org/sat/registration/international-testing/fees' },
+          { label: 'College Board — how the SAT is structured', href: 'https://satsuite.collegeboard.org/sat/whats-on-the-test/structure' },
+          { label: 'College Board — score release dates', href: 'https://satsuite.collegeboard.org/scores/score-release-dates' },
+        ],
       },
     ],
     resources: {
@@ -1863,6 +1955,14 @@ const international = [
       {
         q: 'Should I retake the SAT?',
         a: 'Retakes are permitted and many universities consider the best scores across sittings, with some combining the best section scores from different dates. That makes a first attempt relatively low-risk and a considered retake worthwhile if a section score fell short of your target. As with the other international tests, the ability to sit again and report selectively is a structural advantage over once-a-year national entrances, and it is worth planning around rather than treating a single attempt as final.',
+      },
+      {
+        q: 'When is the SAT held in 2026–27 and what does it cost in India?',
+        a: 'On 22 August, 12 September, 3 October, 7 November and 5 December 2026, and 6 March, 1 May and 5 June 2027 — the same dates worldwide — with registration closing about two weeks before each. The fee outside the US is US$68 plus a $43 international fee, with $38 for late registration and $34 for a centre change or cancellation; some centres add a $24 fee.',
+      },
+      {
+        q: 'How long is the digital SAT and when do scores come?',
+        a: '2 hours 14 minutes: Reading and Writing, 54 questions in 64 minutes, and Math, 44 questions in 70 minutes, each in two adaptive modules with a 10-minute break between sections. Scores are released about two weeks after the test date — 16 October 2026 for the 3 October test, for example — and the first four score reports are free if ordered within nine days.',
       },
     ],
   },
